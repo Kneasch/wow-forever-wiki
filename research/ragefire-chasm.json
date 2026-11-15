@@ -1,0 +1,504 @@
+{
+  "dungeon": "Ragefire Chasm",
+  "game_version": "WoW Forever",
+  "level_range": "13-18",
+  "min_level": 10,
+  "zone": "Orgrimmar (Durotar)",
+  "location": "Entrance in the Cleft of Shadow, Orgrimmar (52.8, 49.6). Horde only; Alliance equivalent is Hall of Thanes.",
+  "new_in_forever": false,
+  "bosses": [
+    {
+      "name": "Oggleflint",
+      "level": 16,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Level 16 elite (per Warcraft Tavern). NPC id not verified for Forever; classic id would be 11517 but unconfirmed."
+    },
+    {
+      "name": "Taragaman the Hungerer",
+      "level": 16,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Level 16 elite (per Warcraft Tavern). NPC id not verified for Forever; classic id would be 11520 but unconfirmed."
+    },
+    {
+      "name": "Jergosh the Invoker",
+      "level": 16,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Level 16 elite (per Warcraft Tavern). NPC id not verified for Forever; classic id would be 11518 but unconfirmed."
+    },
+    {
+      "name": "Bazzalan",
+      "level": 16,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Level 16 elite (per Warcraft Tavern). NPC id not verified for Forever; classic id would be 11519 but unconfirmed."
+    }
+  ],
+  "items": [
+    {
+      "name": "Trogg Scepter",
+      "item_id": 272996,
+      "quality": "rare",
+      "slot": "Main Hand",
+      "type": "Mace",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 13,
+        "damage_max": 26,
+        "speed": 2.4,
+        "dps": 8.13
+      },
+      "armor": null,
+      "stats": [
+        "+4 Spirit",
+        "Equip: Increases healing done by up to 33 and damage done by up to 11 for all magical spells and effects."
+      ],
+      "sell_price": "13s 42c",
+      "source": "Oggleflint",
+      "source_type": "boss",
+      "drop_chance_pct": 31.89,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=272996",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Barbaric Crossbow",
+      "item_id": 272999,
+      "quality": "rare",
+      "slot": "Ranged",
+      "type": "Crossbow",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 15,
+        "damage_max": 23,
+        "speed": 2.0,
+        "dps": 9.5
+      },
+      "armor": null,
+      "stats": [
+        "Chance on hit: Wounds the target for 14 Physical damage."
+      ],
+      "sell_price": "9s 20c",
+      "source": "Oggleflint",
+      "source_type": "boss",
+      "drop_chance_pct": 30.82,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=272999",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Bone Knuckles",
+      "item_id": 272998,
+      "quality": "rare",
+      "slot": "Main Hand",
+      "type": "Fist Weapon",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 17,
+        "damage_max": 32,
+        "speed": 2.0,
+        "dps": 12.25
+      },
+      "armor": null,
+      "stats": [
+        "+6 Attack Power",
+        "+6 Attack Power against Beasts"
+      ],
+      "sell_price": "13s 52c",
+      "source": "Oggleflint",
+      "source_type": "boss",
+      "drop_chance_pct": 33.75,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=272998",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Subterranean Cape",
+      "item_id": 14149,
+      "quality": "rare",
+      "slot": "Back",
+      "type": "Cloth",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 17,
+      "stats": [
+        "+3 Strength",
+        "Equip: Restores 5 health every 5 sec."
+      ],
+      "sell_price": "3s 87c",
+      "source": "Taragaman the Hungerer",
+      "source_type": "boss",
+      "drop_chance_pct": 30.13,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=14149",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Crystalline Cuffs",
+      "item_id": 14148,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Cloth",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 15,
+      "stats": [
+        "+2 Stamina",
+        "+3 Spirit"
+      ],
+      "sell_price": "2s 58c",
+      "source": "Taragaman the Hungerer",
+      "source_type": "boss",
+      "drop_chance_pct": 28.23,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=14148",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Cursed Felblade",
+      "item_id": 14145,
+      "quality": "rare",
+      "slot": "Main Hand",
+      "type": "Sword",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 19,
+        "damage_max": 37,
+        "speed": 2.3,
+        "dps": 12.17
+      },
+      "armor": null,
+      "stats": [
+        "Chance on hit: Reduces target enemy's attack power by 24 for 30 sec."
+      ],
+      "sell_price": "12s 91c",
+      "source": "Taragaman the Hungerer",
+      "source_type": "boss",
+      "drop_chance_pct": 29.31,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=14145",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Robe of Evocation",
+      "item_id": 14150,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Cloth",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 35,
+      "stats": [
+        "+6 Stamina",
+        "+4 Intellect",
+        "+4 Spirit"
+      ],
+      "sell_price": "5s 16c",
+      "source": "Jergosh the Invoker",
+      "source_type": "boss",
+      "drop_chance_pct": 31.64,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=14150",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Cavedweller Bracers",
+      "item_id": 14147,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Mail",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 78,
+      "stats": [
+        "+2 Strength",
+        "+3 Spirit"
+      ],
+      "sell_price": "3s 87c",
+      "source": "Jergosh the Invoker",
+      "source_type": "boss",
+      "drop_chance_pct": 30.3,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=14147",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Chanting Blade",
+      "item_id": 14151,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Dagger",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 12,
+        "damage_max": 24,
+        "speed": 1.5,
+        "dps": 12.0
+      },
+      "armor": null,
+      "stats": [
+        "+2 Agility",
+        "+3 Stamina"
+      ],
+      "sell_price": "12s 91c",
+      "source": "Jergosh the Invoker",
+      "source_type": "boss",
+      "drop_chance_pct": 31.92,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=14151",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Chasm Walkers",
+      "item_id": 273007,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Leather",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 56,
+      "stats": [
+        "+5 Spirit",
+        "Equip: +4 Attack Power"
+      ],
+      "sell_price": "4s 75c",
+      "source": "Bazzalan",
+      "source_type": "boss",
+      "drop_chance_pct": 29.89,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=273007",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Satyrskin Cloak",
+      "item_id": 273005,
+      "quality": "rare",
+      "slot": "Back",
+      "type": "Cloth",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 17,
+      "stats": [
+        "+3 Stamina",
+        "+3 Fire Resistance"
+      ],
+      "sell_price": "3s 76c",
+      "source": "Bazzalan",
+      "source_type": "boss",
+      "drop_chance_pct": 32.73,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=273005",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Searing Dagger",
+      "item_id": 273003,
+      "quality": "rare",
+      "slot": "Main Hand",
+      "type": "Dagger",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 9,
+        "damage_max": 17,
+        "speed": 1.6,
+        "dps": 8.13
+      },
+      "armor": null,
+      "stats": [
+        "+4 Spirit",
+        "Equip: Harmful spell casts sear the target for 7 Fire damage. (10ms cooldown)"
+      ],
+      "sell_price": "12s 46c",
+      "source": "Bazzalan",
+      "source_type": "boss",
+      "drop_chance_pct": 34.07,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=273003",
+      "other_sources": [],
+      "notes": "Effect text verbatim from Wowhead Forever tooltip (verified by orchestrator), including the \"(10ms cooldown)\".",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Taragaman the Hungerer's Heart",
+      "item_id": 14540,
+      "quality": "common",
+      "slot": null,
+      "type": "Quest Item",
+      "item_level": null,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Taragaman the Hungerer",
+      "source_type": "quest_item",
+      "drop_chance_pct": 56.42,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=14540",
+      "other_sources": [],
+      "notes": "Quest item.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    }
+  ],
+  "quest_rewards": [
+    {
+      "quest": "Hidden Enemies",
+      "item": "Axe of Orgrimmar",
+      "slot": "Two-hand",
+      "type": "Axe"
+    },
+    {
+      "quest": "Hidden Enemies",
+      "item": "Kris of Orgrimmar",
+      "slot": "One-hand",
+      "type": "Dagger"
+    },
+    {
+      "quest": "Hidden Enemies",
+      "item": "Staff of Orgrimmar",
+      "slot": "Two-hand",
+      "type": "Staff"
+    },
+    {
+      "quest": "Hidden Enemies",
+      "item": "Hammer of Orgrimmar",
+      "slot": "Main hand",
+      "type": "Mace"
+    },
+    {
+      "quest": "The Power to Destroy...",
+      "item": "Ghastly Trousers",
+      "slot": "Legs",
+      "type": "Cloth"
+    },
+    {
+      "quest": "The Power to Destroy...",
+      "item": "Dredgemire Leggings",
+      "slot": "Legs",
+      "type": "Leather"
+    },
+    {
+      "quest": "The Power to Destroy...",
+      "item": "Gargoyle Leggings",
+      "slot": "Legs",
+      "type": "Mail"
+    },
+    {
+      "quest": "Returning the Lost Satchel",
+      "item": "Featherbead Bracers",
+      "slot": "Wrist",
+      "type": "Cloth"
+    },
+    {
+      "quest": "Returning the Lost Satchel",
+      "item": "Savannah Bracers",
+      "slot": "Wrist",
+      "type": "Leather"
+    },
+    {
+      "quest": "Returning the Lost Satchel",
+      "item": "Garrison Cuffs",
+      "slot": "Wrist",
+      "type": "Mail"
+    }
+  ],
+  "conflicts": [
+    "Bazzalan: some Classic-era sources say he drops no loot; Wowhead Forever shows 3 drops (recorded).",
+    "Classic item lists (Cursed Felblade etc.) match Forever; new ids 272996+ are Forever-specific."
+  ],
+  "gaps": [
+    "Boss NPC ids not verified.",
+    "No trash/rare drops found; not checked exhaustively.",
+    "Kills/drops counts unavailable.",
+    "Quest reward item ids/stats not fetched.",
+    "Boss levels from Warcraft Tavern only."
+  ],
+  "sources": [
+    "https://www.warcrafttavern.com/forever/guides/ragefire-chasm/",
+    "https://www.method.gg/wow-forever/dungeons/ragefire-chasm",
+    "https://wowtbc.gg/warcraftforever/loot-tables/dungeons/ragefire-chasm/",
+    "https://nether.wowhead.com/forever/tooltip/item/<ID>"
+  ],
+  "order": 1,
+  "notes_orchestrator": "All 12 boss drops match wowtbc.gg loot table exactly; Searing Dagger and Subterranean Cape re-verified by orchestrator.",
+  "recommended_level_range": "13-18",
+  "level_range_sources": [
+    "https://www.warcrafttavern.com/forever/guides/dungeons/",
+    "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Tipps/wow-forever-dungeons-1557420/"
+  ]
+}

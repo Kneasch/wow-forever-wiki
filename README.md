@@ -12,9 +12,16 @@ site/w/                 article pages, served at /w/<Page_name>
 
 ## Run
 
+Local, no Docker (needs Node 18+, no npm install):
+
 ```bash
-docker compose up
+npm run dev     # or: node server.js   (PORT=3000 to change port)
 ```
+
+`server.js` mirrors the nginx config (SSI includes, clean `/w/` URLs, hidden `_includes`)
+and has a `routes` table for future backend endpoints like `/api/search`.
+
+Docker/nginx still works for production-like runs: `docker compose up`.
 
 Then open http://localhost:8080/w/Hammer_of_Divine_Might
 
