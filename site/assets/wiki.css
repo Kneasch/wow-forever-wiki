@@ -1,0 +1,316 @@
+/* WoW Forever Wiki - parchment wiki skin (layout modelled on the legacy Vector / OSRS Wiki look). */
+
+:root {
+  --body-bg: #c0a886;
+  --body-main: #e2dbc8;
+  --body-light: #d8ccb4;
+  --body-mid: #d0bd97;
+  --body-dark: #b8a282;
+  --body-border: #94866d;
+  --table-alt: #d1c6a6;
+  --text: #000;
+  --subtle: #4c4c4c;
+  --link: #936039;
+  --link-on-bg: #52351e;
+  --redlink: #ba0000;
+
+  /* Item quality colours, darkened to stay readable on parchment. */
+  --q-poor: #6b6b6b;
+  --q-common: #1a1a1a;
+  --q-uncommon: #14790a;
+  --q-rare: #0058b8;
+  --q-epic: #8a2cc9;
+  --q-legendary: #c05a00;
+
+  /* Drop-rarity cell colours. */
+  --r-always: #afeeee;
+  --r-common: #56e156;
+  --r-uncommon: #ffed4c;
+  --r-rare: #ff863c;
+  --r-veryrare: #ff6262;
+
+  --panel-w: 11rem;
+  --font-body: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-head: 'PT Serif', Palatino, 'Palatino Linotype', Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 100%; }
+
+body {
+  margin: 0;
+  background: linear-gradient(#a48f6f, var(--body-bg) 22rem) var(--body-bg) no-repeat;
+  color: var(--text);
+  font: 0.875rem/1.6 var(--font-body);
+  min-height: 100vh;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a.external::after { content: " \2197"; font-size: 0.8em; }
+
+.skip-link { position: absolute; left: -999rem; }
+.skip-link:focus { left: 0.5rem; top: 0.5rem; background: var(--body-main); padding: 0.4rem 0.6rem; z-index: 10; }
+
+/* ---------- Top strip ---------- */
+#site-head {
+  margin-left: var(--panel-w);
+  height: 2.25rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1rem;
+}
+.personal a { color: var(--link-on-bg); font-size: 0.8rem; margin-left: 1rem; }
+
+/* ---------- Left panel ---------- */
+#site-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--panel-w);
+  padding: 1rem 0.75rem 2rem;
+}
+.wordmark {
+  display: block;
+  text-align: center;
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: #2b1d0e;
+  line-height: 1.05;
+  padding: 0.75rem 0 1.25rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+.wordmark:hover { text-decoration: none; }
+.wordmark-top { display: block; font-size: 1.3rem; letter-spacing: 0.01em; }
+.wordmark-bottom {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+  padding-top: 0.3rem;
+  border-top: 1px solid rgba(43, 29, 14, 0.45);
+}
+#site-panel h3 {
+  font: 400 0.75rem var(--font-body);
+  color: var(--subtle);
+  margin: 1rem 0 0.25rem;
+  padding: 0.25rem 0.35rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+#site-panel ul { list-style: none; margin: 0; padding: 0 0.35rem; }
+#site-panel li { padding: 0.15rem 0; font-size: 0.8rem; line-height: 1.3; }
+#site-panel li a { color: var(--link-on-bg); }
+
+/* ---------- Page column ---------- */
+#page { margin-left: var(--panel-w); padding-right: 1rem; }
+
+.tabs {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.25rem;
+  min-height: 2.25rem;
+}
+.tabs ul { display: flex; list-style: none; margin: 0; padding: 0; gap: 2px; }
+.tabs .tabs-right { margin-left: auto; }
+.tabs li a {
+  display: block;
+  padding: 0.5rem 0.8rem 0.35rem;
+  font-size: 0.8rem;
+  color: var(--link-on-bg);
+  background: linear-gradient(rgba(226, 219, 200, 0.15), rgba(226, 219, 200, 0.55));
+  border: 1px solid var(--body-border);
+  border-bottom: 0;
+}
+.tabs li.selected a { background: var(--body-main); color: var(--text); position: relative; top: 1px; }
+.tabs li a:hover { text-decoration: none; background: var(--body-main); }
+.search { align-self: center; margin-left: 0.75rem; }
+.tabs-left + .search { margin-left: auto; }
+.search input {
+  width: 15rem;
+  max-width: 100%;
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.5rem;
+  background: #efeee6;
+  border: 1px solid var(--body-border);
+  border-radius: 2px;
+}
+.search input:focus { outline: 2px solid var(--link); outline-offset: -1px; background: #fff; }
+
+#content {
+  background: var(--body-main);
+  border: 1px solid var(--body-border);
+  padding: 1.25rem 1.5rem 1.5rem;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  min-height: 30rem;
+}
+#content::after { content: ""; display: block; clear: both; }
+
+/* ---------- Typography ---------- */
+h1, h2, h3 { font-family: var(--font-head); font-weight: 400; line-height: 1.3; }
+.page-title { font-size: 1.8rem; margin: 0; padding-bottom: 0.1rem; border-bottom: 1px solid var(--body-border); }
+.byline { color: var(--subtle); font-size: 0.8rem; margin: 0.15rem 0 1rem; }
+#content h2 {
+  font-size: 1.45rem;
+  margin: 1.5rem 0 0.5rem;
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid var(--body-border);
+  overflow: hidden; /* keep the rule from running under the floated infobox */
+}
+#content h3 { font-size: 1.15rem; font-weight: 700; margin: 1.2rem 0 0.3rem; }
+#content p { margin: 0.5rem 0; }
+
+.unknown { color: var(--subtle); font-style: italic; }
+
+/* Item quality */
+.q-poor { color: var(--q-poor); }
+.q-common { color: var(--q-common); }
+.q-uncommon { color: var(--q-uncommon); }
+.q-rare { color: var(--q-rare); }
+.q-epic { color: var(--q-epic); }
+.q-legendary { color: var(--q-legendary); }
+a.q-rare, a.q-epic, a.q-uncommon, a.q-legendary { font-weight: 600; }
+
+/* ---------- Message box ---------- */
+.messagebox {
+  background: #ebebeb;
+  border: 1px solid #898989;
+  border-left-width: 6px;
+  padding: 0.5rem 0.8rem;
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  overflow: hidden;
+}
+.messagebox.warn { background: #dfc0ba; border-color: #861c10; }
+.messagebox.warn a { color: #8e221a; text-decoration: underline; }
+
+/* ---------- Infobox ---------- */
+.infobox {
+  float: right;
+  clear: right;
+  width: 300px;
+  margin: 0 0 1rem 1.25rem;
+  background: var(--body-light);
+  border: 1px solid var(--body-border);
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  box-shadow: 0 0.25rem 0.35rem -0.25rem rgba(0, 0, 0, 0.1);
+}
+.infobox th, .infobox td { padding: 0.3rem 0.5rem; vertical-align: top; text-align: left; }
+.infobox tr > th:first-child:not([colspan]) {
+  width: 42%;
+  text-align: right;
+  font-weight: 600;
+  border-right: 2px solid var(--body-dark);
+}
+.infobox .infobox-header {
+  background: var(--body-dark);
+  text-align: center;
+  font: 700 1.05rem/1.4 var(--font-body);
+  padding: 0.5rem;
+}
+.infobox .infobox-subheader { background: var(--body-dark); text-align: center; font-weight: 600; padding: 0.25rem; }
+.infobox-image { text-align: center !important; padding: 1rem 0.5rem !important; }
+
+.item-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #3a332b, #17130f);
+  color: #b9c7d6;
+  border: 2px solid #777;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+.item-icon img { width: 100%; height: 100%; display: block; border-radius: 2px; }
+.q-border-uncommon { border-color: #1eff00; }
+.q-border-rare { border-color: #0070dd; }
+.q-border-epic { border-color: #a335ee; }
+.q-border-legendary { border-color: #ff8000; }
+
+/* ---------- Table of contents ---------- */
+.toc {
+  display: inline-block;
+  background: var(--body-light);
+  border: 1px solid var(--body-border);
+  padding: 0.5rem 1rem 0.6rem;
+  margin: 0.75rem 0;
+  font-size: 0.85rem;
+}
+#content .toc h2 { font: 700 0.9rem var(--font-body); border: 0; margin: 0 0 0.25rem; text-align: center; }
+.toc ol { margin: 0; padding-left: 1.4rem; }
+
+/* ---------- In-game tooltip ---------- */
+.wow-tooltip {
+  display: inline-block;
+  min-width: 17rem;
+  max-width: 100%;
+  background: #0b0d1c;
+  color: #fff;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 1px #000, 0 2px 6px rgba(0, 0, 0, 0.35);
+  padding: 0.55rem 0.7rem;
+  font: 0.8rem/1.5 Verdana, 'Open Sans', Arial, sans-serif;
+}
+.wow-tooltip .tt-name { font-size: 0.95rem; }
+.wow-tooltip .tt-name.q-uncommon { color: #1eff00; }
+.wow-tooltip .tt-name.q-rare { color: #0070dd; }
+.wow-tooltip .tt-name.q-epic { color: #a335ee; }
+.wow-tooltip .tt-name.q-legendary { color: #ff8000; }
+.wow-tooltip .tt-split { display: flex; justify-content: space-between; gap: 2rem; }
+.wow-tooltip .tt-green { color: #1eff00; }
+.wow-tooltip .tt-dim { color: #ffd100; }
+
+/* ---------- Tables ---------- */
+.table-scroll { overflow-x: auto; max-width: 100%; }
+.wikitable {
+  background: var(--body-light);
+  border: 1px solid var(--body-border);
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  font-size: 0.85rem;
+}
+.wikitable caption { caption-side: top; text-align: left; color: var(--subtle); font-style: italic; font-size: 0.8rem; padding-bottom: 0.25rem; }
+.wikitable th, .wikitable td { border: 1px solid var(--body-border); padding: 0.35rem 0.6rem; text-align: left; }
+.wikitable th { background: var(--body-dark); font-weight: 600; white-space: nowrap; }
+.wikitable tbody tr:nth-child(even) td:not(.rarity) { background: var(--table-alt); }
+.wikitable .num { text-align: center; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.item-drops { min-width: 34rem; }
+.item-drops .rarity { text-align: center; font-variant-numeric: tabular-nums; white-space: nowrap; color: #000; min-width: 6rem; }
+
+.r-always { background: var(--r-always); }
+.r-common { background: var(--r-common); }
+.r-uncommon { background: var(--r-uncommon); }
+.r-rare { background: var(--r-rare); }
+.r-veryrare { background: var(--r-veryrare); }
+
+.rarity-key { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin: 0.25rem 0 0; padding: 0; font-size: 0.78rem; color: var(--subtle); }
+.rarity-key .swatch { display: inline-block; width: 0.8rem; height: 0.8rem; margin-right: 0.35rem; vertical-align: -0.1rem; border: 1px solid var(--body-border); }
+
+/* ---------- Footer ---------- */
+#site-foot { padding: 1rem 0.25rem 2rem; font-size: 0.75rem; color: #2b1d0e; }
+#site-foot p { margin: 0 0 0.25rem; }
+#site-foot ul { list-style: none; display: flex; gap: 1rem; margin: 0.5rem 0 0; padding: 0; }
+#site-foot a { color: var(--link-on-bg); }
+
+/* ---------- Narrow screens ---------- */
+@media (max-width: 760px) {
+  #site-head { margin-left: 0; position: absolute; top: 0; right: 0; }
+  #site-panel { position: static; width: auto; padding: 0.5rem 1rem 0; }
+  #site-panel nav { display: none; }
+  .wordmark { text-align: left; padding: 0.25rem 0 0.5rem; }
+  .wordmark-top, .wordmark-bottom { display: inline; font-size: 1.15rem; letter-spacing: 0; text-transform: none; border: 0; padding: 0; margin: 0; }
+  #page { margin-left: 0; padding: 0 0.5rem; }
+  .tabs { flex-wrap: wrap; }
+  .search { order: -1; width: 100%; margin: 0 0 0.5rem; }
+  .search input { width: 100%; }
+  #content { padding: 1rem; }
+  .page-title { font-size: 1.5rem; }
+  .infobox { float: none; width: 100%; margin: 0 0 1rem; }
+}
