@@ -1,0 +1,438 @@
+{
+  "dungeon": "Hall of Thanes",
+  "game_version": "WoW Forever",
+  "level_range": "13-20 (Wowhead dungeon overview says 13-18)",
+  "min_level": 13,
+  "zone": "Ironforge / Dun Morogh",
+  "location": "Beneath Ironforge (Old Ironforge, under the Throne Room). Enter the king's hall at The High Seat, turn left to a spiderweb-covered passage at ~43.5, 52.0 and follow it down.",
+  "new_in_forever": true,
+  "bosses": [
+    {
+      "name": "Faldrim Anvilmar",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": null
+    },
+    {
+      "name": "Magmatus",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": null
+    },
+    {
+      "name": "Plunder",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": null
+    },
+    {
+      "name": "Durgen Dirgehammer",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Spelled Dirgehammer/Direhammer/Durgen Direhammer across sources; Wowhead Forever item tooltips say 'Durgen Dirgehammer'."
+    }
+  ],
+  "items": [
+    {
+      "name": "Ephemeral Choker",
+      "item_id": 270227,
+      "quality": "rare",
+      "slot": "Neck",
+      "type": null,
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+5 Spirit"
+      ],
+      "sell_price": "5s 15c",
+      "source": "Faldrim Anvilmar",
+      "source_type": "boss",
+      "drop_chance_pct": 33.54,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=270227",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Aetherwisp Bracers",
+      "item_id": 271096,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Cloth",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 15,
+      "stats": [
+        "Equip: Increases damage and healing done by magical spells and effects by up to 3."
+      ],
+      "sell_price": "2s 62c",
+      "source": "Faldrim Anvilmar",
+      "source_type": "boss",
+      "drop_chance_pct": 32.25,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=271096",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Spiritwraith Drape",
+      "item_id": 271097,
+      "quality": "rare",
+      "slot": "Back",
+      "type": null,
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 17,
+      "stats": [
+        "+3 Agility",
+        "+4 Spirit"
+      ],
+      "sell_price": "4s 74c",
+      "source": "Faldrim Anvilmar",
+      "source_type": "boss",
+      "drop_chance_pct": 34.2,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=271097",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Kindlegem Girdle",
+      "item_id": 270230,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Mail",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 100,
+      "stats": [
+        "+7 Stamina"
+      ],
+      "sell_price": "3s 90c",
+      "source": "Magmatus",
+      "source_type": "boss",
+      "drop_chance_pct": 31.37,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=270230",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Flamefist Grips",
+      "item_id": 270231,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Leather",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 51,
+      "stats": [
+        "+5 Agility",
+        "+5 Spirit"
+      ],
+      "sell_price": "3s 38c",
+      "source": "Magmatus",
+      "source_type": "boss",
+      "drop_chance_pct": 32.79,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=270231",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Fang of Magmatus",
+      "item_id": 271095,
+      "quality": "rare",
+      "slot": "Main Hand",
+      "type": "Dagger",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 9,
+        "damage_max": 18,
+        "speed": 1.7,
+        "dps": 7.94
+      },
+      "armor": null,
+      "stats": [
+        "+4 Intellect",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 18."
+      ],
+      "sell_price": "13s 8c",
+      "source": "Magmatus",
+      "source_type": "boss",
+      "drop_chance_pct": 35.84,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=271095",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Golemheart Stave",
+      "item_id": 270228,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Staff",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 30,
+        "damage_max": 46,
+        "speed": 3.2,
+        "dps": 11.88
+      },
+      "armor": null,
+      "stats": [
+        "Equip: Increases damage and healing done by magical spells and effects by up to 18."
+      ],
+      "sell_price": "16s 17c",
+      "source": "Plunder",
+      "source_type": "boss",
+      "drop_chance_pct": 35.07,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=270228",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Treads of the Protector Golem",
+      "item_id": 270229,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Mail",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 122,
+      "stats": [
+        "+5 Strength"
+      ],
+      "sell_price": "5s 86c",
+      "source": "Plunder",
+      "source_type": "boss",
+      "drop_chance_pct": 32.68,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=270229",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Golemguard Chest",
+      "item_id": 271098,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Mail",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 178,
+      "stats": [
+        "+6 Stamina"
+      ],
+      "sell_price": "7s 93c",
+      "source": "Plunder",
+      "source_type": "boss",
+      "drop_chance_pct": 32.25,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=271098",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Durgen's Crescent Axe",
+      "item_id": 270256,
+      "quality": "rare",
+      "slot": "Main Hand",
+      "type": "Axe",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 20,
+        "damage_max": 39,
+        "speed": 2.4,
+        "dps": 12.29
+      },
+      "armor": null,
+      "stats": [
+        "+4 Strength"
+      ],
+      "sell_price": "12s 36c",
+      "source": "Durgen Dirgehammer",
+      "source_type": "boss",
+      "drop_chance_pct": 28.6,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=270256",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Direhammer Leggings",
+      "item_id": 270260,
+      "quality": "rare",
+      "slot": "Legs",
+      "type": "Leather",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 72,
+      "stats": [
+        "+4 Agility",
+        "+7 Stamina"
+      ],
+      "sell_price": "6s 27c",
+      "source": "Durgen Dirgehammer",
+      "source_type": "boss",
+      "drop_chance_pct": 27.08,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=270260",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Robes of the Disgraced Thane",
+      "item_id": 270261,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Cloth",
+      "item_level": 18,
+      "required_level": 13,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 35,
+      "stats": [
+        "+4 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 8."
+      ],
+      "sell_price": "5s 3c",
+      "source": "Durgen Dirgehammer",
+      "source_type": "boss",
+      "drop_chance_pct": 24.79,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=270261",
+      "other_sources": [],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    }
+  ],
+  "quest_rewards": [
+    {
+      "quest": "An Ancient Grudge",
+      "items": [
+        "Catacomb Cloak",
+        "Deepgrave Trousers"
+      ],
+      "item_id": null
+    },
+    {
+      "quest": "Important Heirlooms",
+      "items": [
+        "Dwarven Tome",
+        "Tomb Robber's Gloves"
+      ],
+      "item_id": null
+    },
+    {
+      "quest": "Old Ironforge Incursion",
+      "items": [
+        "Calibrated Blunderbuss",
+        "Ironforge Greathammer",
+        "Deepblaze"
+      ],
+      "item_id": null
+    },
+    {
+      "quest": "The Restless Dead",
+      "items": [
+        "Dusty Belt",
+        "Cryptwalker Bracers"
+      ],
+      "item_id": null
+    },
+    {
+      "quest": "The Treaty of Understanding",
+      "items": [],
+      "item_id": null
+    }
+  ],
+  "conflicts": [
+    "Level range: warcraftTavern 13-20 vs Wowhead guide/wiki 13-18 (all items req. level 13).",
+    "Fourth boss spelled Dirgehammer / Direhammer / Durgen Direhammer; Wowhead uses Durgen Dirgehammer."
+  ],
+  "gaps": [
+    "Boss levels and NPC IDs not found (Wowhead HTML/xml blocked).",
+    "Quest reward item IDs and stats not found (not in scanned nether ID ranges 269500-272600); names from wowtbc.gg and warcraft.wiki.gg only.",
+    "Kills/drops counts unavailable; only drop chance % from tooltips.",
+    "No named trash/rare drops found.",
+    "Level range: warcraftTavern says 13-20, Wowhead guide/wiki say 13-18."
+  ],
+  "sources": [
+    "https://www.warcrafttavern.com/forever/guides/hall-of-thanes/",
+    "https://wowtbc.gg/warcraftforever/loot-tables/dungeons/hall-of-thanes/",
+    "https://warcraft.wiki.gg/wiki/Hall_of_Thanes_(instance)",
+    "https://www.wowhead.com/forever/guide=34887",
+    "https://nether.wowhead.com/forever/tooltip/item/<ID>"
+  ],
+  "order": 2,
+  "notes_orchestrator": "All 12 boss drops match wowtbc.gg loot table exactly. Spiritwraith Drape is a cloth cloak (Back) with +3 Agility/+4 Spirit; the earlier \"conflict\" was not real and was removed.",
+  "recommended_level_range": "13-20",
+  "level_range_sources": [
+    "https://www.warcrafttavern.com/forever/guides/dungeons/",
+    "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Tipps/wow-forever-dungeons-1557420/"
+  ]
+}
