@@ -160,8 +160,9 @@ function itemPage(it) {
   ].filter(Boolean).join('\n');
 
   const srcLink = bossNames.has(it.source) ? link(it.source) : it.source ? esc(it.source) : 'unknown enemies';
+  const srcProse = /^Any /.test(srcLink) ? srcLink.replace(/^Any/, 'any') : srcLink; // "drops from any enemy" 
   const lvl = data.bosses.find((b) => b.name === it.source)?.level ?? null;
-  const intro = `<b>${esc(it.name)}</b> is a <span class="q-${it.quality}">${esc(it.quality)}</span> ${it.type ? esc(it.type.toLowerCase()) + ' ' : ''}${esc(String(it.slot || 'item').toLowerCase())} item that requires level ${it.required_level ?? '?'}. It drops from ${srcLink} in ${link(dungeonLoc)}.${it.source_type === 'quest_item' ? ' It is a quest item.' : ''}`;
+  const intro = `<b>${esc(it.name)}</b> is a <span class="q-${it.quality}">${esc(it.quality)}</span> ${it.type ? esc(it.type.toLowerCase()) + ' ' : ''}${esc(String(it.slot || 'item').toLowerCase())} item that requires level ${it.required_level ?? '?'}. It drops from ${srcProse} in ${link(dungeonLoc)}.${it.source_type === 'quest_item' ? ' It is a quest item.' : ''}`;
 
   const body = `
     <table class="infobox">

@@ -1271,16 +1271,18 @@
         "+4 Agility"
       ],
       "sell_price": "14s 84c",
-      "source": "Defias trash (per wowtbc.gg)",
+      "source": "Any enemy",
       "source_type": "trash",
-      "drop_chance_pct": null,
+      "drop_chance_pct": 6,
       "kills": null,
       "drops": null,
-      "drop_rate_display": null,
+      "drop_rate_display": "~1/17",
       "wowhead_url": "https://www.wowhead.com/forever/item=1951",
-      "other_sources": [],
-      "notes": "Name per wowtbc.gg trash list; Wowhead Forever tooltip shows no drop source/chance.",
-      "drop_rate_basis": null
+      "other_sources": [
+        "https://foreverchanges.pro/item/1951/blackwater-cutlass"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source. ForeverChanges (checked 2026-11-15): any enemy in The Deadmines 6%, plus two unnamed creature drops at 2.4% and 1.9%. Icy Veins reportedly lists Defias Pirate ~2.9% and Defias Squallshaper ~2.8%, but its page returned 403 and could not be checked. 6% used for display.",
+      "drop_rate_basis": "round(100 / 6) from ForeverChanges dungeon drop (any enemy in The Deadmines, 6%), which reads Forever client item tables via wago.tools; no kill/drop counts"
     },
     {
       "name": "Silk-threaded Trousers",
