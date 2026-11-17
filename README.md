@@ -34,6 +34,15 @@ Upload `dist/` to any static host. No nginx or Node is needed at runtime. Pages 
 `/w/<Page>`. Netlify, Cloudflare Pages and GitHub Pages serve those clean URLs and use `404.html` out of the box. On other
 hosts, turn on clean URLs (e.g. Vercel `"cleanUrls": true`).
 
+When the site is served from a subpath, set `BASE_PATH` (e.g. `BASE_PATH=/wow-forever-wiki npm run build`). The build then
+prefixes every root-absolute `href`/`src` with it.
+
+### GitHub Pages
+
+`.github/workflows/pages.yml` builds and deploys on every push to `main`, or on demand from the Actions tab. It sets
+`BASE_PATH` from the Pages config, so it works both at `<user>.github.io/wow-forever-wiki/` and on a custom domain. One-time
+setup: Settings > Pages > Source: **GitHub Actions**. A private repo needs a paid GitHub plan for Pages.
+
 Then open http://localhost:8080/w/Hammer_of_Divine_Might
 
 ## Drop rates
