@@ -1,21 +1,45 @@
 #!/usr/bin/env node
 // Generate dungeon, boss and item pages from a research JSON file.
 // Usage: node scripts/gen-dungeon.js research/hall-of-thanes.json
-// Writes to site/w/<Page_name>.html (overwrites).
+// Writes to site/w/<Page_name>.html (overwrites). Set WIKI_OUT to write somewhere else.
 const fs = require('fs');
 const path = require('path');
 
-const data = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
-normalize(data);
-const OUT = path.join(__dirname, '..', 'site', 'w');
+const RESEARCH = path.join(__dirname, '..', 'research');
+const load = (file) => {
+  const d = JSON.parse(fs.readFileSync(file, 'utf8'));
+  normalize(d);
+  return d;
+};
+const data = load(process.argv[2]);
+const OUT = process.env.WIKI_OUT || path.join(__dirname, '..', 'site', 'w');
+
+// Some items drop in several dungeons (the Scarlet Monastery wings share one trash list).
+// Index every research file so an item page lists all of its sources, whichever dungeon
+// was generated last.
+const allData = fs.readdirSync(RESEARCH).filter((f) => f.endsWith('.json')).map((f) => {
+  const file = path.join(RESEARCH, f);
+  return path.resolve(file) === path.resolve(process.argv[2]) ? data : load(file);
+});
+const itemSources = new Map(); // item name -> [{ d, it }]
+for (const d of allData) {
+  for (const it of d.items) {
+    if (!itemSources.has(it.name)) itemSources.set(it.name, []);
+    itemSources.get(it.name).push({ d, it });
+  }
+}
+// The same item can be more complete in another dungeon's file (an ID only one wing found)
+const best = (it) => itemSources.get(it.name).map((s) => s.it).find((x) => x.item_id) || it;
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-const slug = (name) => name.replace(/ /g, '_');
+// "Grand Crusader Dathrohan / Balnazzar" -> Grand_Crusader_Dathrohan_Balnazzar (no subdirectory)
+const slug = (name) => name.replace(/\s*\/\s*/g, ' ').replace(/ /g, '_');
 const href = (name) => '/w/' + encodeURI(slug(name));
 const link = (name, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="${esc(href(name))}">${esc(name)}</a>`;
 const unknown = '<span class="unknown">?</span>';
 const val = (v) => (v === null || v === undefined || v === '' ? unknown : esc(v));
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+const article = (w) => (/^[aeiou]/i.test(w) ? 'an' : 'a'); // "an uncommon", "an epic"
 const qBorder = (q) => (q === 'poor' || q === 'common' ? '' : ` q-border-${q}`);
 const rarityClass = (display) => {
   if (display === null || display === undefined) return '';
@@ -24,14 +48,18 @@ const rarityClass = (display) => {
 };
 const bossNames = new Set(data.bosses.map((b) => b.name));
 const rateCell = (d) => `<td class="rarity ${rarityClass(d)}">${val(d)}</td>`;
-const META_NOTE = /npc id|warcraft ?tavern|verified|^level /i;
+const META_NOTE = /npc id|warcraft ?tavern|timesaver|wowtbc|verified|^level /i; // research notes, not lore
 
 // Research JSON is hand-collected and inconsistent. Clean it up before rendering:
 // - strip "(rare, optional)" style suffixes from boss names, keep them as flags
 // - match item sources to bosses case-insensitively ("Rhahk'Zor" vs "Rhahk'zor")
 // - promote boss/rare item sources missing from bosses[] (e.g. Sneed) to bosses
-// - flatten the several quest_rewards shapes into [{quest, faction, items:[{name,id}]}]
+// - drop research remarks from item sources: "Trash (unspecified mob)", "Defias trash (per wowtbc.gg)"
+// - flatten the several quest_rewards shapes into [{quest, faction, items:[{name,id}]}];
+//   rewards whose quest is not known share one entry with quest: null
+// - drop items with no name (IDs Wowhead does not know); there is nothing to title a page with
 function normalize(d) {
+  d.items = d.items.filter((it) => it.name);
   for (const b of d.bosses) {
     const m = b.name.match(/^(.*?)\s*\(([^)]*)\)$/);
     if (m) { b.name = m[1]; b.rare = /rare/i.test(m[2]); b.optional = /optional/i.test(m[2]); }
@@ -39,6 +67,7 @@ function normalize(d) {
   }
   const byLower = new Map(d.bosses.map((b) => [b.name.toLowerCase(), b]));
   for (const it of d.items) {
+    if (it.source) it.source = it.source.replace(/\s*\((unspecified mob|per [^)]*)\)$/i, '');
     if (!it.source || !['boss', 'rare', 'quest_item'].includes(it.source_type)) continue;
     let b = byLower.get(it.source.toLowerCase());
     if (!b) {
@@ -51,16 +80,17 @@ function normalize(d) {
     if (it.source_type === 'rare') b.rare = true;
     it.source = b.name;
   }
-  d.quest_rewards = (d.quest_rewards || []).filter((q) => q.quest).reduce((acc, q) => {
-    let e = acc.find((x) => x.quest === q.quest);
-    if (!e) acc.push((e = { quest: q.quest, faction: q.faction || null, items: [] }));
-    const add = (name, id) => name && e.items.push({ name, id: id ?? null });
+  d.quest_rewards = (d.quest_rewards || []).reduce((acc, q) => {
+    let e = acc.find((x) => x.quest === (q.quest || null));
+    if (!e) acc.push((e = { quest: q.quest || null, faction: q.faction || null, items: [] }));
+    // skip repeats: class variants share a name (nine Royal Seals of Eldre'Thalas)
+    const add = (name, id) => name && !e.items.some((x) => x.name === name) && e.items.push({ name, id: id ?? null });
     if (q.items) q.items.forEach((n) => add(n, null));
     if (q.item) add(q.item, null);
     if (q.name) add(q.name, q.item_id);
     if (q.rewards) q.rewards.forEach((r) => { const n = r.replace(/\s*\(.*\)$/, ''); add(n, q.item_ids?.[n]); });
     return acc;
-  }, []);
+  }, []).filter((e) => e.quest || e.items.length); // a bare { note } entry has nothing to show
 }
 const dungeonLoc = data.dungeon;
 
@@ -104,7 +134,7 @@ ${body}
 const toc = (entries) => `    <nav class="toc" aria-label="Contents">
       <h2>Contents</h2>
       <ol>
-${entries.map(([id, label]) => `        <li><a href="#${id}">${label}</a></li>`).join('\n')}
+${entries.map(([id, label]) => `        <li><a href="#${esc(id)}">${esc(label)}</a></li>`).join('\n')}
       </ol>
     </nav>`;
 
@@ -120,10 +150,12 @@ const rateNote = `    <p>Drop rates are estimates rounded from Wowhead's drop pe
 
 // ---------- Item page ----------
 function itemPage(it) {
+  it = best(it);
   const w = it.weapon;
+  const knownQuality = it.quality; // null for stubs; still styled as common, but not claimed in text
   it = { ...it, quality: it.quality || 'common' };
   const rows = [
-    `      <tr><th>Quality</th><td><span class="q-${it.quality}">${cap(it.quality)}</span></td></tr>`,
+    `      <tr><th>Quality</th><td>${knownQuality ? `<span class="q-${it.quality}">${cap(it.quality)}</span>` : unknown}</td></tr>`,
     `      <tr><th>Item level</th><td>${val(it.item_level)}</td></tr>`,
     `      <tr><th>Requires level</th><td>${val(it.required_level)}</td></tr>`,
     `      <tr><th>Slot</th><td>${val(it.slot)}</td></tr>`,
@@ -159,10 +191,24 @@ function itemPage(it) {
     it.sell_price ? `      <div>Sell Price: ${esc(it.sell_price)}</div>` : '',
   ].filter(Boolean).join('\n');
 
-  const srcLink = bossNames.has(it.source) ? link(it.source) : it.source ? esc(it.source) : 'unknown enemies';
-  const srcProse = /^Any /.test(srcLink) ? srcLink.replace(/^Any/, 'any') : srcLink; // "drops from any enemy" 
-  const lvl = data.bosses.find((b) => b.name === it.source)?.level ?? null;
-  const intro = `<b>${esc(it.name)}</b> is a <span class="q-${it.quality}">${esc(it.quality)}</span> ${it.type ? esc(it.type.toLowerCase()) + ' ' : ''}${esc(String(it.slot || 'item').toLowerCase())} item that requires level ${it.required_level ?? '?'}. It drops from ${srcProse} in ${link(dungeonLoc)}.${it.source_type === 'quest_item' ? ' It is a quest item.' : ''}`;
+  const sources = itemSources.get(it.name);
+  const srcLink = ({ d, it: x }) => (d.bosses.some((b) => b.name === x.source) ? link(x.source) : x.source ? esc(x.source) : unknown);
+  const dungeons = [...new Set(sources.map((s) => s.d.dungeon))].map((n) => link(n));
+  const where = dungeons.length > 1
+    ? `It drops in ${dungeons.slice(0, -1).join(', ')} and ${dungeons[dungeons.length - 1]}.`
+    : sources[0].it.source
+      ? `It drops from ${srcLink(sources[0]).replace(/^(Any|Trash)\b/, (m) => m.toLowerCase())} in ${dungeons[0]}.` // "drops from any enemy"
+      : `It drops in ${dungeons[0]}; which enemies drop it is not known yet.`;
+  // "an uncommon cloth wrist item that requires level 20"; unknown parts are left out
+  const words = [...new Set([it.type, it.slot].filter(Boolean).map((s) => String(s).toLowerCase()))]
+    .filter((w, i, a) => !(i === 1 && a[0].endsWith(' ' + w))); // "10 slot bag", not "10 slot bag bag"
+  const desc = [knownQuality && `<span class="q-${it.quality}">${esc(it.quality)}</span>`, ...words.map(esc), !/item$/.test(words.join(' ')) && 'item'].filter(Boolean).join(' '); // no "quest item item"
+  const lvlReq = it.required_level != null ? ` that requires level ${esc(it.required_level)}` : '';
+  const intro = `<b>${esc(it.name)}</b> is ${article(knownQuality || words[0] || 'item')} ${desc}${lvlReq}. ${where}${it.source_type === 'quest_item' && !/quest item$/.test(desc) ? ' It is a quest item.' : ''}`;
+  const sourceRows = sources.map((s) => {
+    const lvl = s.d.bosses.find((b) => b.name === s.it.source)?.level ?? null;
+    return `          <tr><td>${srcLink(s)}</td><td class="num">${lvl ?? unknown}</td><td>${link(s.d.dungeon)}</td><td class="num">1</td>${rateCell(s.it.drop_rate_display)}</tr>`;
+  }).join('\n');
 
   const body = `
     <table class="infobox">
@@ -194,7 +240,7 @@ ${rateNote}
           <tr><th>Source</th><th>Level</th><th>Location</th><th>Quantity</th><th>Rarity</th></tr>
         </thead>
         <tbody>
-          <tr><td>${srcLink}</td><td class="num">${lvl ?? unknown}</td><td>${link(dungeonLoc)}</td><td class="num">1</td>${rateCell(it.drop_rate_display)}</tr>
+${sourceRows}
         </tbody>
       </table>
     </div>
@@ -212,7 +258,7 @@ function bossPage(b) {
       <table class="wikitable">
         <thead><tr><th>Item</th><th>Slot</th><th>Type</th><th>Rarity</th></tr></thead>
         <tbody>
-${drops.map(lootRow).join('\n')}
+${drops.map((i) => lootRow(i)).join('\n')}
         </tbody>
       </table>
     </div>
@@ -237,7 +283,10 @@ ${dropsSection}`;
 }
 
 // ---------- Dungeon page ----------
-const lootRow = (i) => `          <tr><td>${link(i.name, 'q-' + (i.quality || 'common'))}</td><td>${val(i.slot)}</td><td>${val(i.type)}</td>${rateCell(i.drop_rate_display)}</tr>`;
+const lootRow = (i, extraCell = '') => {
+  const b = best(i); // stats from the most complete record, drop rate from this dungeon's
+  return `          <tr><td>${link(i.name, 'q-' + (b.quality || 'common'))}</td><td>${val(b.slot)}</td><td>${val(b.type)}</td>${extraCell}${rateCell(i.drop_rate_display)}</tr>`;
+};
 
 function dungeonPage() {
   const d = data;
@@ -245,8 +294,8 @@ function dungeonPage() {
   const loot = d.bosses.map((b) => {
     const drops = d.items.filter((i) => i.source === b.name);
     if (!drops.length) return '';
-    const rows = drops.map(lootRow).join('\n');
-    return `    <h3 id="${slug(b.name)}">${link(b.name)}</h3>
+    const rows = drops.map((i) => lootRow(i)).join('\n');
+    return `    <h3 id="${esc(slug(b.name))}">${link(b.name)}</h3>
     <div class="table-scroll">
       <table class="wikitable">
         <thead><tr><th>Item</th><th>Slot</th><th>Type</th><th>Rarity</th></tr></thead>
@@ -262,11 +311,20 @@ ${rows}
       <table class="wikitable">
         <thead><tr><th>Item</th><th>Slot</th><th>Type</th><th>Source</th><th>Rarity</th></tr></thead>
         <tbody>
-${trash.map((i) => `          <tr><td>${link(i.name, 'q-' + (i.quality || 'common'))}</td><td>${val(i.slot)}</td><td>${val(i.type)}</td><td>${i.source ? esc(i.source) : unknown}</td>${rateCell(i.drop_rate_display)}</tr>`).join('\n')}
+${trash.map((i) => lootRow(i, `<td>${i.source ? esc(i.source) : unknown}</td>`)).join('\n')}
         </tbody>
       </table>
     </div>` : '';
-  const quests = d.quest_rewards.map((q) => `        <li><b>${esc(q.quest)}</b>${q.faction ? ` (${esc(q.faction)})` : ''}${q.items.length ? ': ' + q.items.map((i) => esc(i.name)).join(', ') : ' &ndash; no item reward listed'}</li>`).join('\n');
+  const quests = d.quest_rewards.filter((q) => q.quest).map((q) => `        <li><b>${esc(q.quest)}</b>${q.faction ? ` (${esc(q.faction)})` : ''}${q.items.length ? ': ' + q.items.map((i) => esc(i.name)).join(', ') : ' &ndash; no item reward listed'}</li>`).join('\n');
+  const unknownQuest = d.quest_rewards.find((q) => !q.quest)?.items || [];
+  const questSection = [
+    d.quest_rewards.length ? `    <p>Quest reward names are listed from community sources and have not been checked against item data.</p>` : '',
+    quests ? `    <ul>\n${quests}\n    </ul>` : `    <p>No quests are known yet.</p>`,
+    unknownQuest.length ? `    <p>These items are probably quest rewards, but their quests are not known yet:</p>
+    <ul>
+${unknownQuest.map((i) => `        <li>${esc(i.name)}</li>`).join('\n')}
+    </ul>` : '',
+  ].filter(Boolean).join('\n');
   const body = `
     <table class="infobox">
       <tr><th colspan="2" class="infobox-header">${esc(d.dungeon)}</th></tr>
@@ -283,7 +341,7 @@ ${trash.map((i) => `          <tr><td>${link(i.name, 'q-' + (i.quality || 'commo
 ${toc([['Location', 'Location'], ['Bosses', 'Bosses'], ['Loot', 'Loot'], ['Quests', 'Quests']])}
 
     <h2 id="Location">Location</h2>
-    <p>${esc(d.location)}</p>
+    <p>${d.location ? esc(d.location) : 'The entrance location is not known yet.'}</p>
 
     <h2 id="Bosses">Bosses</h2>
     <ol>
@@ -296,10 +354,7 @@ ${loot}${trashLoot ? '\n' + trashLoot : ''}
 ${rarityKey}
 
     <h2 id="Quests">Quests</h2>
-    <p>Quest reward names are listed from community sources and have not been checked against item data.</p>
-    <ul>
-${quests}
-    </ul>`;
+${questSection}`;
   return page({ title: d.dungeon, tabLabel: 'Dungeon', body });
 }
 
