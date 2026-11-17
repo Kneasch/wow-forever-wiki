@@ -1,0 +1,3370 @@
+{
+  "dungeon": "Stratholme (Main Gate)",
+  "order": 32,
+  "game_version": "WoW Forever",
+  "level_range": "58-60",
+  "recommended_level_range": "58-60",
+  "min_level": 58,
+  "zone": "Eastern Plaguelands",
+  "location": "Northwest Eastern Plaguelands. The Main Gate is the dungeon entrance and leads into the Living (Scarlet) side of Stratholme.",
+  "new_in_forever": false,
+  "bosses": [
+    {
+      "name": "Hearthsinger Forresten",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Rare."
+    },
+    {
+      "name": "Skul",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Rare."
+    },
+    {
+      "name": "The Unforgiven",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "NPC id not verified for Forever."
+    },
+    {
+      "name": "Postmaster Malown",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Summoned by opening the third Postbox."
+    },
+    {
+      "name": "Timmy the Cruel",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "NPC id not verified for Forever."
+    },
+    {
+      "name": "Crimson Hammersmith",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Forever-new rare/boss per timesaver.gg."
+    },
+    {
+      "name": "Cannon Master Willey",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "NPC id not verified for Forever."
+    },
+    {
+      "name": "Archivist Galford",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "NPC id not verified for Forever."
+    },
+    {
+      "name": "Grand Crusader Dathrohan / Balnazzar",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Tooltips list drops under Grand Crusader Dathrohan; some sources use Balnazzar."
+    },
+    {
+      "name": "Jarien and Sothos",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Summoned (Warcraft Tavern); no loot found."
+    },
+    {
+      "name": "Ezra Grimm",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Forever-new; listed by timesaver.gg."
+    },
+    {
+      "name": "Malor the Zealous",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Forever-new, Scarlet Bastion; listed by timesaver.gg."
+    }
+  ],
+  "items": [
+    {
+      "name": "Miniature Cannon Balls",
+      "item_id": 13377,
+      "quality": "rare",
+      "slot": "Ammo",
+      "type": "Bullet",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": "7c",
+      "source": "Cannon Master Willey",
+      "source_type": "boss",
+      "drop_chance_pct": 83.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/1",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13377",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Shadowcraft Spaulders",
+      "item_id": 16708,
+      "quality": "rare",
+      "slot": "Shoulder",
+      "type": "Leather",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 127,
+      "stats": [
+        "+22 Agility",
+        "+9 Stamina",
+        "Equip: Improves your chance to hit by 0.2%."
+      ],
+      "sell_price": "1g 87s 3c",
+      "source": "Cannon Master Willey",
+      "source_type": "boss",
+      "drop_chance_pct": 26.67,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=16708",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)",
+      "set": {
+        "name": "Shadowcraft Armor",
+        "pieces": [
+          "Shadowcraft Belt",
+          "Shadowcraft Boots",
+          "Shadowcraft Bracers",
+          "Shadowcraft Tunic",
+          "Shadowcraft Spaulders",
+          "Shadowcraft Pants",
+          "Shadowcraft Gloves",
+          "Shadowcraft Cap"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) +30 Attack Power.",
+          "(4) When struck in combat, has a 5% chance to remove a Snare effect from yourself. Can only occur once every 60 sec. (Proc chance: 5%, 1m cooldown)",
+          "(5) Chance on melee attack to restore 20 Energy.",
+          "(6) Restores 15 health per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Ash Covered Boots",
+      "item_id": 18716,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Leather",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 118,
+      "stats": [
+        "+13 Agility",
+        "+13 Stamina",
+        "Equip: Increased Defense +3.",
+        "Equip: Increases your chance to Dodge an attack by 1.0%."
+      ],
+      "sell_price": "1g 96s 38c",
+      "source": "Archivist Galford",
+      "source_type": "boss",
+      "drop_chance_pct": 11.36,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/9",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18716",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Lightforge Gauntlets",
+      "item_id": 16724,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Plate",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 386,
+      "stats": [
+        "+14 Strength",
+        "+9 Stamina",
+        "+5 Intellect",
+        "+14 Spirit"
+      ],
+      "sell_price": "1g 66s 75c",
+      "source": "Timmy the Cruel",
+      "source_type": "boss",
+      "drop_chance_pct": 5.56,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/18",
+      "wowhead_url": "https://www.wowhead.com/forever/item=16724",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)",
+      "set": {
+        "name": "Lightforge Armor",
+        "pieces": [
+          "Lightforge Belt",
+          "Lightforge Boots",
+          "Lightforge Bracers",
+          "Lightforge Breastplate",
+          "Lightforge Gauntlets",
+          "Lightforge Legplates",
+          "Lightforge Spaulders",
+          "Lightforge Helm"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 18.",
+          "(4) When struck by a harmful spell, has a 7% chance of Silencing the caster for 3 sec. Can only occur once every 60 sec. (Proc chance: 7%, 1m cooldown)",
+          "(5) Chance on melee autoattack and spellcast to increase your damage and healing done by magical spells and effects by up to 65 for 10 sec.",
+          "(6) Restores 8 mana per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Redemption",
+      "item_id": 22406,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Staff",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 65,
+        "damage_max": 98,
+        "speed": 2.1,
+        "dps": 38.81
+      },
+      "armor": null,
+      "stats": [
+        "+12 Spirit",
+        "Equip: Increases healing done by up to 131 and damage done by up to 43 for all magical spells and effects."
+      ],
+      "sell_price": "6g 52s 86c",
+      "source": "Cannon Master Willey",
+      "source_type": "boss",
+      "drop_chance_pct": 13.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/8",
+      "wowhead_url": "https://www.wowhead.com/forever/item=22406",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Timmy's Galoshes",
+      "item_id": 13402,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Mail",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 244,
+      "stats": [
+        "+18 Agility",
+        "+11 Stamina",
+        "+10 Intellect"
+      ],
+      "sell_price": "2g 24s 83c",
+      "source": "Timmy the Cruel",
+      "source_type": "boss",
+      "drop_chance_pct": 27.78,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13402",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Skul's Cold Embrace",
+      "item_id": 13394,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Plate",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 627,
+      "stats": [
+        "+19 Strength",
+        "+20 Stamina",
+        "Equip: Increased Defense +6."
+      ],
+      "sell_price": "3g 48s 19c",
+      "source": "Skul",
+      "source_type": "rare",
+      "drop_chance_pct": 33.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13394",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Plans: Heartseeker",
+      "item_id": 12839,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Dagger",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when equipped",
+      "weapon": {
+        "damage_min": 55,
+        "damage_max": 102,
+        "speed": 1.9,
+        "dps": 41.32
+      },
+      "armor": null,
+      "stats": [
+        "+4 Agility",
+        "Equip: Improves your chance to get a critical strike by 1.0%."
+      ],
+      "sell_price": "2g 82s 15c",
+      "source": "Cannon Master Willey",
+      "source_type": "boss",
+      "drop_chance_pct": 3.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/30",
+      "wowhead_url": "https://www.wowhead.com/forever/item=12839",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Cannonball Runner",
+      "item_id": 13382,
+      "quality": "rare",
+      "slot": "Trinket",
+      "type": null,
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "Equip: Improves your chance to hit by 0.5%.",
+        "Use: Summons a Scarlet Cannon that fires at targets, dealing 85 to 139 Holy damage. This effect deals 2 times as much damage to Undead enemies. (5 Min Cooldown)"
+      ],
+      "sell_price": "2g 8s 91c",
+      "source": "Cannon Master Willey",
+      "source_type": "boss",
+      "drop_chance_pct": 23.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13382",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Hand of the Zealous",
+      "item_id": 276397,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Mace",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 113,
+        "damage_max": 170,
+        "speed": 3.7,
+        "dps": 38.24
+      },
+      "armor": null,
+      "stats": [
+        "+22 Stamina",
+        "+16 Intellect",
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 68."
+      ],
+      "sell_price": "6g 25s 94c",
+      "source": "Malor the Zealous",
+      "source_type": "boss",
+      "drop_chance_pct": 36.73,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=276397",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Magister's Boots",
+      "item_id": 16682,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Cloth",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 58,
+      "stats": [
+        "+7 Stamina",
+        "+14 Intellect",
+        "+14 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 9."
+      ],
+      "sell_price": "1g 42s 11c",
+      "source": "Hearthsinger Forresten",
+      "source_type": "rare",
+      "drop_chance_pct": 16.13,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=16682",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)",
+      "set": {
+        "name": "Magister's Regalia",
+        "pieces": [
+          "Magister's Belt",
+          "Magister's Bindings",
+          "Magister's Crown",
+          "Magister's Gloves",
+          "Magister's Leggings",
+          "Magister's Mantle",
+          "Magister's Robes",
+          "Magister's Boots"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 18.",
+          "(4) When struck in combat has a 2% chance of freezing the attacker in place for 3 sec. Can only occur once every 60 sec. (Proc chance: 2%, 1m cooldown)",
+          "(5) Your spellcasts have a 5% chance to energize you for 200 mana. (Proc chance: 5%)",
+          "(6) Restores 8 mana per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Barrage Girdle",
+      "item_id": 18721,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Mail",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 202,
+      "stats": [
+        "+8 Stamina",
+        "+8 Intellect",
+        "+6 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 23."
+      ],
+      "sell_price": "1g 56s 68c",
+      "source": "Cannon Master Willey",
+      "source_type": "boss",
+      "drop_chance_pct": 26.67,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18721",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Woollies of the Prancing Minstrel",
+      "item_id": 13383,
+      "quality": "rare",
+      "slot": "Legs",
+      "type": "Mail",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 301,
+      "stats": [
+        "+12 Stamina",
+        "+10 Intellect",
+        "Equip: Increases healing done by up to 15 and damage done by up to 5 for all magical spells and effects."
+      ],
+      "sell_price": "2g 70s 70c",
+      "source": "Hearthsinger Forresten",
+      "source_type": "rare",
+      "drop_chance_pct": 16.13,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13383",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Ezra's Seal of Authenticity",
+      "item_id": 276396,
+      "quality": "rare",
+      "slot": "Finger",
+      "type": null,
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+9 Strength",
+        "+12 Stamina",
+        "Equip: Increased Defense +3.",
+        "Equip: Increases your chance to Dodge an attack by 0.5%."
+      ],
+      "sell_price": "1g 90s 6c",
+      "source": "Ezra Grimm",
+      "source_type": "boss",
+      "drop_chance_pct": 41.18,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=276396",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Skul's Fingerbone Claws",
+      "item_id": 13395,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Leather",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 106,
+      "stats": [
+        "+10 Stamina",
+        "+5 Intellect",
+        "Equip: +42 Attack Power."
+      ],
+      "sell_price": "1g 25s 35c",
+      "source": "Skul",
+      "source_type": "rare",
+      "drop_chance_pct": 16.67,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13395",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Grimgore Noose",
+      "item_id": 13403,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Cloth",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 48,
+      "stats": [
+        "+9 Stamina",
+        "+18 Intellect",
+        "+10 Spirit",
+        "Equip: Increases healing done by up to 11 and damage done by up to 4 for all magical spells and effects."
+      ],
+      "sell_price": "99s 48c",
+      "source": "Timmy the Cruel",
+      "source_type": "boss",
+      "drop_chance_pct": 16.67,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13403",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Helm of the New Moon",
+      "item_id": 22407,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Leather",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 139,
+      "stats": [
+        "+14 Stamina",
+        "+14 Intellect",
+        "+12 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 23."
+      ],
+      "sell_price": "1g 96s 38c",
+      "source": "Cannon Master Willey",
+      "source_type": "boss",
+      "drop_chance_pct": 23.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=22407",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Mask of the Unforgiven",
+      "item_id": 13404,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Leather",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 132,
+      "stats": [
+        "+13 Stamina",
+        "Equip: Increased Defense +6.",
+        "Equip: Improves your chance to hit by 2.0%.",
+        "Equip: Improves your chance to get a critical strike by 1.0%."
+      ],
+      "sell_price": "1g 60s 4c",
+      "source": "The Unforgiven",
+      "source_type": "boss",
+      "drop_chance_pct": 21.74,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13404",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "The Postmaster's Seal",
+      "item_id": 13392,
+      "quality": "rare",
+      "slot": "Finger",
+      "type": null,
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+6 Stamina",
+        "+3 Intellect",
+        "+12 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 13."
+      ],
+      "sell_price": "2g 8s 91c",
+      "source": "Postmaster Malown",
+      "source_type": "boss",
+      "drop_chance_pct": 14.29,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/7",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13392",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)",
+      "set": {
+        "name": "The Postmaster",
+        "pieces": [
+          "The Postmaster's Band",
+          "The Postmaster's Tunic",
+          "The Postmaster's Treads",
+          "The Postmaster's Seal",
+          "The Postmaster's Trousers"
+        ],
+        "bonuses": [
+          "(2) Increases run speed by 8%.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 23.",
+          "(4) Falling below 25% health grants Return to Sender, reflecting the next spell cast on you within 6 sec. Can only occur once every 3 min. (3m cooldown)",
+          "(5) Improves your chance to hit by 1.0%."
+        ]
+      }
+    },
+    {
+      "name": "Rainbow Girdle",
+      "item_id": 13384,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Plate",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 341,
+      "stats": [
+        "+10 Strength",
+        "+8 Agility",
+        "+10 Stamina",
+        "+8 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 12."
+      ],
+      "sell_price": "1g 58s 81c",
+      "source": "Hearthsinger Forresten",
+      "source_type": "rare",
+      "drop_chance_pct": 22.58,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13384",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Band of Mending",
+      "item_id": 22334,
+      "quality": "rare",
+      "slot": "Finger",
+      "type": null,
+      "item_level": 62,
+      "required_level": 57,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+7 Stamina",
+        "+7 Intellect",
+        "+6 Spirit",
+        "Equip: Increases healing done by up to 31 and damage done by up to 10 for all magical spells and effects."
+      ],
+      "sell_price": "2g 19s 36c",
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "boss",
+      "drop_chance_pct": 2.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/50",
+      "wowhead_url": "https://www.wowhead.com/forever/item=22334",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Crimson Hammersmith's Apron",
+      "item_id": 13351,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": "Quest Item",
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Crimson Hammersmith",
+      "source_type": "quest_item",
+      "drop_chance_pct": 7.69,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/13",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13351",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Devout Gloves",
+      "item_id": 16692,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Cloth",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 52,
+      "stats": [
+        "+8 Stamina",
+        "+10 Intellect",
+        "+17 Spirit",
+        "Equip: Increases healing done by up to 15 and damage done by up to 5 for all magical spells and effects."
+      ],
+      "sell_price": "94s 74c",
+      "source": "Archivist Galford",
+      "source_type": "boss",
+      "drop_chance_pct": 20.45,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=16692",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)",
+      "set": {
+        "name": "Vestments of the Devout",
+        "pieces": [
+          "Devout Belt",
+          "Devout Sandals",
+          "Devout Bracers",
+          "Devout Crown",
+          "Devout Gloves",
+          "Devout Mantle",
+          "Devout Skirt",
+          "Devout Robe"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 18.",
+          "(4) When struck in combat has a 2% chance of shielding the wearer in a protective shield which will absorb 488 damage. Can only occur once every 60 sec. (Proc chance: 2%, 1m cooldown)",
+          "(5) Your spellcasts have a 5% chance to energize you for 200 mana. (Proc chance: 5%)",
+          "(6) Restores 8 mana per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "King's Square Postbox Key",
+      "item_id": 13306,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Stratholme Courier",
+      "source_type": "quest_item",
+      "drop_chance_pct": 33.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13306",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Soul Breaker",
+      "item_id": 13408,
+      "quality": "rare",
+      "slot": "Main Hand",
+      "type": "Axe",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 42,
+        "damage_max": 78,
+        "speed": 1.6,
+        "dps": 37.5
+      },
+      "armor": null,
+      "stats": [
+        "Chance on hit: Target enemy loses 10 health and mana every 1 sec for 10 sec."
+      ],
+      "sell_price": "4g 25s 63c",
+      "source": "The Unforgiven",
+      "source_type": "boss",
+      "drop_chance_pct": 17.39,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13408",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "The Postmaster's Tunic",
+      "item_id": 13388,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Cloth",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 87,
+      "stats": [
+        "+13 Stamina",
+        "+20 Intellect",
+        "+10 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 18."
+      ],
+      "sell_price": "2g 8s 91c",
+      "source": "Postmaster Malown",
+      "source_type": "boss",
+      "drop_chance_pct": 28.57,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13388",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)",
+      "set": {
+        "name": "The Postmaster",
+        "pieces": [
+          "The Postmaster's Band",
+          "The Postmaster's Tunic",
+          "The Postmaster's Treads",
+          "The Postmaster's Seal",
+          "The Postmaster's Trousers"
+        ],
+        "bonuses": [
+          "(2) Increases run speed by 8%.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 23.",
+          "(4) Falling below 25% health grants Return to Sender, reflecting the next spell cast on you within 6 sec. Can only occur once every 3 min. (3m cooldown)",
+          "(5) Improves your chance to hit by 1.0%."
+        ]
+      }
+    },
+    {
+      "name": "The Postmaster's Trousers",
+      "item_id": 13389,
+      "quality": "rare",
+      "slot": "Legs",
+      "type": "Cloth",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 76,
+      "stats": [
+        "+12 Stamina",
+        "+20 Intellect",
+        "+15 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 13."
+      ],
+      "sell_price": "2g 8s 91c",
+      "source": "Postmaster Malown",
+      "source_type": "boss",
+      "drop_chance_pct": 14.29,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/7",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13389",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)",
+      "set": {
+        "name": "The Postmaster",
+        "pieces": [
+          "The Postmaster's Band",
+          "The Postmaster's Tunic",
+          "The Postmaster's Treads",
+          "The Postmaster's Seal",
+          "The Postmaster's Trousers"
+        ],
+        "bonuses": [
+          "(2) Increases run speed by 8%.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 23.",
+          "(4) Falling below 25% health grants Return to Sender, reflecting the next spell cast on you within 6 sec. Can only occur once every 3 min. (3m cooldown)",
+          "(5) Improves your chance to hit by 1.0%."
+        ]
+      }
+    },
+    {
+      "name": "Tearfall Bracers",
+      "item_id": 13409,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Cloth",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 35,
+      "stats": [],
+      "sell_price": "81s 19c",
+      "source": "The Unforgiven",
+      "source_type": "boss",
+      "drop_chance_pct": 19.57,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13409",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Ezra Grimm's Postbox Key",
+      "item_id": 13307,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Stratholme Courier",
+      "source_type": "quest_item",
+      "drop_chance_pct": 33.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13307",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Tome of Knowledge",
+      "item_id": 13385,
+      "quality": "rare",
+      "slot": "Held In Off-hand",
+      "type": null,
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+8 Strength",
+        "+8 Agility",
+        "+8 Stamina",
+        "+8 Intellect",
+        "Equip: Increases your effective stealth level by 1."
+      ],
+      "sell_price": "2g 8s 91c",
+      "source": "Archivist Galford",
+      "source_type": "boss",
+      "drop_chance_pct": 29.55,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13385",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Malown's Slam",
+      "item_id": 13393,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Mace",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 158,
+        "damage_max": 238,
+        "speed": 3.8,
+        "dps": 52.11
+      },
+      "armor": null,
+      "stats": [
+        "Chance on hit: Knocks target silly for 2 sec and increases Strength by 53 for 20 sec."
+      ],
+      "sell_price": "6g 52s 86c",
+      "source": "Postmaster Malown",
+      "source_type": "boss",
+      "drop_chance_pct": 28.57,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13393",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Wailing Nightbane Pauldrons",
+      "item_id": 13405,
+      "quality": "rare",
+      "slot": "Shoulder",
+      "type": "Plate",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 448,
+      "stats": [
+        "+14 Strength",
+        "+14 Stamina",
+        "Equip: Increased Defense +3."
+      ],
+      "sell_price": "2g 23s 3c",
+      "source": "The Unforgiven",
+      "source_type": "boss",
+      "drop_chance_pct": 19.57,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13405",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Festival Lane Postbox Key",
+      "item_id": 13304,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Stratholme Courier",
+      "source_type": "quest_item",
+      "drop_chance_pct": 66.67,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/1",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13304",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Book of the Dead",
+      "item_id": 13353,
+      "quality": "epic",
+      "slot": "Held In Off-hand",
+      "type": null,
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+8 Stamina",
+        "+15 Intellect",
+        "+10 Spirit",
+        "Equip: Increases damage done by Shadow spells and effects by up to 16.",
+        "Use: Summons a Skeleton that will protect you for 1 min. (15 Min Cooldown)"
+      ],
+      "sell_price": "3g 7s 10c",
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "boss",
+      "drop_chance_pct": 2.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/50",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13353",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Archivist Cape",
+      "item_id": 13386,
+      "quality": "rare",
+      "slot": "Back",
+      "type": "Cloth",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 43,
+      "stats": [],
+      "sell_price": "1g 56s 68c",
+      "source": "Archivist Galford",
+      "source_type": "boss",
+      "drop_chance_pct": 11.36,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/9",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13386",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "The Postmaster's Band",
+      "item_id": 13390,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Cloth",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 70,
+      "stats": [
+        "+10 Stamina",
+        "+25 Intellect",
+        "+10 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 15."
+      ],
+      "sell_price": "1g 56s 68c",
+      "source": "Postmaster Malown",
+      "source_type": "boss",
+      "drop_chance_pct": 14.29,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/7",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13390",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)",
+      "set": {
+        "name": "The Postmaster",
+        "pieces": [
+          "The Postmaster's Band",
+          "The Postmaster's Tunic",
+          "The Postmaster's Treads",
+          "The Postmaster's Seal",
+          "The Postmaster's Trousers"
+        ],
+        "bonuses": [
+          "(2) Increases run speed by 8%.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 23.",
+          "(4) Falling below 25% health grants Return to Sender, reflecting the next spell cast on you within 6 sec. Can only occur once every 3 min. (3m cooldown)",
+          "(5) Improves your chance to hit by 1.0%."
+        ]
+      }
+    },
+    {
+      "name": "Enchanted Scarlet Thread",
+      "item_id": 12734,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "quest_item",
+      "drop_chance_pct": 4.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/25",
+      "wowhead_url": "https://www.wowhead.com/forever/item=12734",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Grimm's Premium Tobacco",
+      "item_id": 13172,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": "Quest Item",
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Ezra Grimm",
+      "source_type": "quest_item",
+      "drop_chance_pct": 35.29,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13172",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Nacreous Shell Necklace",
+      "item_id": 22403,
+      "quality": "rare",
+      "slot": "Neck",
+      "type": null,
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+7 Stamina",
+        "+8 Intellect",
+        "Equip: Improves your chance to hit by 1.0%.",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 9."
+      ],
+      "sell_price": "2g 8s 91c",
+      "source": "Cannon Master Willey",
+      "source_type": "boss",
+      "drop_chance_pct": 26.67,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=22403",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "The Postmaster's Treads",
+      "item_id": 13391,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Cloth",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 60,
+      "stats": [
+        "+14 Stamina",
+        "+15 Intellect",
+        "+6 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 9."
+      ],
+      "sell_price": "1g 56s 68c",
+      "source": "Postmaster Malown",
+      "source_type": "boss",
+      "drop_chance_pct": 14.29,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/7",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13391",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)",
+      "set": {
+        "name": "The Postmaster",
+        "pieces": [
+          "The Postmaster's Band",
+          "The Postmaster's Tunic",
+          "The Postmaster's Treads",
+          "The Postmaster's Seal",
+          "The Postmaster's Trousers"
+        ],
+        "bonuses": [
+          "(2) Increases run speed by 8%.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 23.",
+          "(4) Falling below 25% health grants Return to Sender, reflecting the next spell cast on you within 6 sec. Can only occur once every 3 min. (3m cooldown)",
+          "(5) Improves your chance to hit by 1.0%."
+        ]
+      }
+    },
+    {
+      "name": "Of Love and Family",
+      "item_id": 14679,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": "Quest Item",
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "quest_item",
+      "drop_chance_pct": 2.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/50",
+      "wowhead_url": "https://www.wowhead.com/forever/item=14679",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Masterwork Crimson Hammer",
+      "item_id": 276404,
+      "quality": "rare",
+      "slot": "Main Hand",
+      "type": "Mace",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 44,
+        "damage_max": 82,
+        "speed": 2.4,
+        "dps": 26.25
+      },
+      "armor": null,
+      "stats": [
+        "+10 Stamina",
+        "+10 Spirit",
+        "Equip: Increases healing done by up to 127 and damage done by up to 42 for all magical spells and effects."
+      ],
+      "sell_price": "4g 76s 92c",
+      "source": "Crimson Hammersmith",
+      "source_type": "rare",
+      "drop_chance_pct": 30.77,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=276404",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Foresight Girdle",
+      "item_id": 13387,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Mail",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 202,
+      "stats": [],
+      "sell_price": "1g 56s 68c",
+      "source": "Archivist Galford",
+      "source_type": "boss",
+      "drop_chance_pct": 15.91,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13387",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Elders' Square Postbox Key",
+      "item_id": 13305,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Stratholme Courier",
+      "source_type": "quest_item",
+      "drop_chance_pct": 33.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13305",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Willey's Back Scratcher",
+      "item_id": 22404,
+      "quality": "rare",
+      "slot": "Main Hand",
+      "type": "Fist Weapon",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 73,
+        "damage_max": 136,
+        "speed": 2.6,
+        "dps": 40.19
+      },
+      "armor": null,
+      "stats": [
+        "+12 Stamina",
+        "Equip: +16 Attack Power."
+      ],
+      "sell_price": "5g 22s 29c",
+      "source": "Cannon Master Willey",
+      "source_type": "boss",
+      "drop_chance_pct": 10.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/10",
+      "wowhead_url": "https://www.wowhead.com/forever/item=22404",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Plate of the Scarlet Bastion",
+      "item_id": 276399,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Plate",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 627,
+      "stats": [
+        "+18 Stamina",
+        "Equip: Increases healing done by up to 35 and damage done by up to 12 for all magical spells and effects."
+      ],
+      "sell_price": "3g 53s 7c",
+      "source": "Malor the Zealous",
+      "source_type": "boss",
+      "drop_chance_pct": 24.49,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=276399",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Lightcrest Hammer",
+      "item_id": 276419,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Mace",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 66,
+        "damage_max": 123,
+        "speed": 2.4,
+        "dps": 39.38
+      },
+      "armor": null,
+      "stats": [
+        "Chance on hit: Smites a target for 105 Holy damage. Deals 2 times as much damage to Undead."
+      ],
+      "sell_price": "5g 17s 51c",
+      "source": "Crimson Hammersmith",
+      "source_type": "rare",
+      "drop_chance_pct": 34.62,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=276419",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Market Row Postbox Key",
+      "item_id": 13302,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Stratholme Courier",
+      "source_type": "quest_item",
+      "drop_chance_pct": 33.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13302",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Grimm's Packing Gloves",
+      "item_id": 276395,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Cloth",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 52,
+      "stats": [
+        "+20 Stamina",
+        "Equip: Improves your chance to hit by 1.0%.",
+        "Equip: Increased Herbalism +4."
+      ],
+      "sell_price": "94s 67c",
+      "source": "Ezra Grimm",
+      "source_type": "boss",
+      "drop_chance_pct": 26.47,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=276395",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Willey's Portable Howitzer",
+      "item_id": 13380,
+      "quality": "rare",
+      "slot": "Ranged",
+      "type": "Gun",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 63,
+        "damage_max": 118,
+        "speed": 2.9,
+        "dps": 31.21
+      },
+      "armor": null,
+      "stats": [
+        "+9 Stamina",
+        "Equip: +10 Attack Power."
+      ],
+      "sell_price": "3g 91s 71c",
+      "source": "Cannon Master Willey",
+      "source_type": "boss",
+      "drop_chance_pct": 10.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/10",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13380",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Scarlet Bonebreaker",
+      "item_id": 276403,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Mace",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 148,
+        "damage_max": 222,
+        "speed": 3.6,
+        "dps": 51.39
+      },
+      "armor": null,
+      "stats": [
+        "+23 Stamina",
+        "+15 Spirit",
+        "Equip: +22 Attack Power.",
+        "Equip: +21 Attack Power against Undead."
+      ],
+      "sell_price": "5g 93s 85c",
+      "source": "Crimson Hammersmith",
+      "source_type": "rare",
+      "drop_chance_pct": 30.77,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=276403",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Piccolo of the Flaming Fire",
+      "item_id": 13379,
+      "quality": "rare",
+      "slot": null,
+      "type": null,
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when used",
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": "1g 7s 34c",
+      "source": "Hearthsinger Forresten",
+      "source_type": "quest_item",
+      "drop_chance_pct": 22.58,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13379",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Skul's Ghastly Touch",
+      "item_id": 13396,
+      "quality": "rare",
+      "slot": "Ranged",
+      "type": "Wand",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "Equip: Increases damage done by Shadow spells and effects by up to 14."
+      ],
+      "sell_price": "3g 73s 6c",
+      "source": "Skul",
+      "source_type": "rare",
+      "drop_chance_pct": 50.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13396",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Vambraces of the Sadist",
+      "item_id": 13400,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Plate",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 274,
+      "stats": [
+        "+7 Strength",
+        "+8 Stamina",
+        "Equip: Improves your chance to get a critical strike by 1.0%."
+      ],
+      "sell_price": "1g 75s 9c",
+      "source": "Timmy the Cruel",
+      "source_type": "boss",
+      "drop_chance_pct": 19.44,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13400",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "The Cruel Hand of Timmy",
+      "item_id": 13401,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Mace",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 49,
+        "damage_max": 93,
+        "speed": 1.8,
+        "dps": 39.44
+      },
+      "armor": null,
+      "stats": [
+        "Chance on hit: Steals 85 life from target enemy."
+      ],
+      "sell_price": "4g 97s 42c",
+      "source": "Timmy the Cruel",
+      "source_type": "boss",
+      "drop_chance_pct": 16.67,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13401",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Songbird Blouse",
+      "item_id": 13378,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Leather",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 165,
+      "stats": [
+        "+14 Strength",
+        "+10 Agility",
+        "+22 Stamina",
+        "Equip: Increased Defense +7."
+      ],
+      "sell_price": "2g 25s 58c",
+      "source": "Hearthsinger Forresten",
+      "source_type": "rare",
+      "drop_chance_pct": 16.13,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13378",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Luxurious Smoking Jacket",
+      "item_id": 276394,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Cloth",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 84,
+      "stats": [
+        "+18 Intellect",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 17."
+      ],
+      "sell_price": "1g 88s 67c",
+      "source": "Ezra Grimm",
+      "source_type": "boss",
+      "drop_chance_pct": 20.59,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=276394",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Master Cannoneer Boots",
+      "item_id": 13381,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Plate",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 438,
+      "stats": [
+        "+10 Strength",
+        "+21 Stamina",
+        "Equip: Increases your chance to Block attacks with a shield by 1.0%."
+      ],
+      "sell_price": "2g 73s 68c",
+      "source": "Cannon Master Willey",
+      "source_type": "boss",
+      "drop_chance_pct": 6.67,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/15",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13381",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Crusaders' Square Postbox Key",
+      "item_id": 13303,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Stratholme Courier",
+      "source_type": "quest_item",
+      "drop_chance_pct": 33.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=13303",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Scarlet Cannonball",
+      "item_id": 12973,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": "Unique",
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Cannon Master Willey",
+      "source_type": "quest_item",
+      "drop_chance_pct": 6.67,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/15",
+      "wowhead_url": "https://www.wowhead.com/forever/item=12973",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Scarlet Malice",
+      "item_id": 276398,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Mace",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 63,
+        "damage_max": 118,
+        "speed": 2.3,
+        "dps": 39.35
+      },
+      "armor": null,
+      "stats": [
+        "+10 Stamina",
+        "Equip: +16 Attack Power.",
+        "Equip: +15 Attack Power against Undead."
+      ],
+      "sell_price": "5g 2s 59c",
+      "source": "Malor the Zealous",
+      "source_type": "boss",
+      "drop_chance_pct": 36.73,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=276398",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Mantle of the Scarlet Crusade",
+      "item_id": 22405,
+      "quality": "rare",
+      "slot": "Shoulder",
+      "type": "Cloth",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 65,
+      "stats": [
+        "+11 Stamina",
+        "+12 Intellect",
+        "+12 Spirit",
+        "Equip: Increases healing done by up to 20 and damage done by up to 7 for all magical spells and effects."
+      ],
+      "sell_price": "1g 56s 68c",
+      "source": "Cannon Master Willey",
+      "source_type": "boss",
+      "drop_chance_pct": 13.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/8",
+      "wowhead_url": "https://www.wowhead.com/forever/item=22405",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Wildheart Gloves",
+      "item_id": 16717,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Leather",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 105,
+      "stats": [
+        "+9 Intellect",
+        "+21 Spirit",
+        "Equip: Increases healing done by up to 11 and damage done by up to 4 for all magical spells and effects."
+      ],
+      "sell_price": "1g 19s 37c",
+      "source": "The Unforgiven",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=16717",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null,
+      "set": {
+        "name": "Wildheart Raiment",
+        "pieces": [
+          "Wildheart Belt",
+          "Wildheart Boots",
+          "Wildheart Bracers",
+          "Wildheart Cowl",
+          "Wildheart Vest",
+          "Wildheart Spaulders",
+          "Wildheart Kilt",
+          "Wildheart Gloves"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 18.",
+          "(3) +30 Attack Power.",
+          "(4) When struck in combat, has a 5% chance to increase your movement speed by 10% for 8 sec. Can only occur once every 60 sec. (Proc chance: 5%, 1m cooldown)",
+          "(5) Chance on spellcast to restore 200 Mana, on melee attack to regenerate 20 Energy over 5 sec, and when struck by a melee attack to generate 10 Rage.",
+          "(6) Restores 8 mana per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Maiden's Circle",
+      "item_id": 13001,
+      "quality": "rare",
+      "slot": "Finger",
+      "type": null,
+      "item_level": 61,
+      "required_level": 55,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+7 Intellect",
+        "+6 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 18."
+      ],
+      "sell_price": "1g 6s 48c",
+      "source": "Crimson Battle Mage",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=13001",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Devout Bracers",
+      "item_id": 16697,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Cloth",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 35,
+      "stats": [
+        "+7 Stamina",
+        "+8 Intellect",
+        "+10 Spirit",
+        "Equip: Increases healing done by up to 11 and damage done by up to 4 for all magical spells and effects."
+      ],
+      "sell_price": "85s 12c",
+      "source": "Crimson Priest",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=16697",
+      "other_sources": [
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null,
+      "set": {
+        "name": "Vestments of the Devout",
+        "pieces": [
+          "Devout Belt",
+          "Devout Sandals",
+          "Devout Bracers",
+          "Devout Crown",
+          "Devout Gloves",
+          "Devout Mantle",
+          "Devout Skirt",
+          "Devout Robe"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 18.",
+          "(4) When struck in combat has a 2% chance of shielding the wearer in a protective shield which will absorb 488 damage. Can only occur once every 60 sec. (Proc chance: 2%, 1m cooldown)",
+          "(5) Your spellcasts have a 5% chance to energize you for 200 mana. (Proc chance: 5%)",
+          "(6) Restores 8 mana per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Adventurer's Gloves",
+      "item_id": 10260,
+      "quality": "uncommon",
+      "slot": "Hands",
+      "type": "Leather",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 100,
+      "stats": [],
+      "sell_price": "1g 19s 45c",
+      "source": "Crimson Inquisitor",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=10260",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Demonshear",
+      "item_id": 13348,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Sword",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 163,
+        "damage_max": 246,
+        "speed": 3.8,
+        "dps": 53.82
+      },
+      "armor": null,
+      "stats": [
+        "Chance on hit: Sends a shadowy bolt at the enemy causing 150 Shadow damage and dealing 34 damage every 2 sec for 6 sec."
+      ],
+      "sell_price": "7g 19s 78c",
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=13348",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Wyrmtongue Shoulders",
+      "item_id": 13358,
+      "quality": "rare",
+      "slot": "Shoulder",
+      "type": "Leather",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 132,
+      "stats": [
+        "+23 Agility",
+        "+10 Stamina"
+      ],
+      "sell_price": "2g 16s 51c",
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=13358",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Crown of Tyranny",
+      "item_id": 13359,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Mail",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 301,
+      "stats": [
+        "+25 Stamina",
+        "-10 Spirit",
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Equip: +40 Attack Power."
+      ],
+      "sell_price": "2g 60s 27c",
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=13359",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Gift of the Elven Magi",
+      "item_id": 13360,
+      "quality": "rare",
+      "slot": "Main Hand",
+      "type": "Dagger",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 29,
+        "damage_max": 54,
+        "speed": 1.5,
+        "dps": 27.67
+      },
+      "armor": null,
+      "stats": [
+        "+6 Stamina",
+        "+10 Intellect",
+        "+7 Spirit",
+        "Equip: Increases healing done by up to 135 and damage done by up to 45 for all magical spells and effects."
+      ],
+      "sell_price": "5g 75s 82c",
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=13360",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Fire Striders",
+      "item_id": 13369,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Cloth",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 61,
+      "stats": [
+        "+5 Spirit",
+        "Equip: Increases damage done by Fire spells and effects by up to 29."
+      ],
+      "sell_price": "1g 72s 74c",
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=13369",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Hammer of the Grand Crusader",
+      "item_id": 18717,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Mace",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 86,
+        "damage_max": 130,
+        "speed": 2.7,
+        "dps": 40.0
+      },
+      "armor": null,
+      "stats": [
+        "+10 Stamina",
+        "+26 Intellect",
+        "+17 Spirit",
+        "Equip: Increases healing done by up to 135 and damage done by up to 45 for all magical spells and effects."
+      ],
+      "sell_price": "7g 19s 78c",
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18717",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Grand Crusader's Helm",
+      "item_id": 18718,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Plate",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 534,
+      "stats": [
+        "+16 Strength",
+        "+16 Stamina",
+        "+10 Spirit",
+        "Equip: Increases damage done by Holy spells and effects by up to 17."
+      ],
+      "sell_price": "3g 1s 73c",
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18718",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Shroud of the Nathrezim",
+      "item_id": 18720,
+      "quality": "rare",
+      "slot": "Shoulder",
+      "type": "Cloth",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 67,
+      "stats": [
+        "+16 Intellect",
+        "+8 Spirit",
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 7."
+      ],
+      "sell_price": "1g 72s 74c",
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18720",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Lightforge Boots",
+      "item_id": 16725,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Plate",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 424,
+      "stats": [
+        "+11 Strength",
+        "+18 Stamina",
+        "+9 Spirit"
+      ],
+      "sell_price": "2g 48s 23c",
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=16725",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null,
+      "set": {
+        "name": "Lightforge Armor",
+        "pieces": [
+          "Lightforge Belt",
+          "Lightforge Boots",
+          "Lightforge Bracers",
+          "Lightforge Breastplate",
+          "Lightforge Gauntlets",
+          "Lightforge Legplates",
+          "Lightforge Spaulders",
+          "Lightforge Helm"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 18.",
+          "(4) When struck by a harmful spell, has a 7% chance of Silencing the caster for 3 sec. Can only occur once every 60 sec. (Proc chance: 7%, 1m cooldown)",
+          "(5) Chance on melee autoattack and spellcast to increase your damage and healing done by magical spells and effects by up to 65 for 10 sec.",
+          "(6) Restores 8 mana per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Plaguehound Leggings",
+      "item_id": 18736,
+      "quality": "rare",
+      "slot": "Legs",
+      "type": "Leather",
+      "item_level": 62,
+      "required_level": 57,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 152,
+      "stats": [
+        "+30 Agility",
+        "+9 Stamina",
+        "Equip: Improves your chance to hit by 1.0%."
+      ],
+      "sell_price": "2g 74s 20c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18736",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Morlune's Bracer",
+      "item_id": 18741,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Plate",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 279,
+      "stats": [
+        "+12 Intellect",
+        "+11 Spirit",
+        "Equip: Increases healing done by up to 15 and damage done by up to 5 for all magical spells and effects."
+      ],
+      "sell_price": "1g 83s 84c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18741",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Stratholme Militia Shoulderguard",
+      "item_id": 18742,
+      "quality": "rare",
+      "slot": "Shoulder",
+      "type": "Mail",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 266,
+      "stats": [
+        "+22 Agility",
+        "+9 Stamina",
+        "+6 Intellect"
+      ],
+      "sell_price": "2g 24s 83c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18742",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Plague Defiled Buckler",
+      "item_id": 276456,
+      "quality": "rare",
+      "slot": "Off Hand",
+      "type": "Shield",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 2057,
+      "stats": [
+        "+8 Stamina",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 13."
+      ],
+      "sell_price": "3g 27s 61c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=276456",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Gracious Cape",
+      "item_id": 18743,
+      "quality": "rare",
+      "slot": "Back",
+      "type": "Cloth",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 42,
+      "stats": [
+        "+7 Intellect",
+        "Equip: Increases healing done by up to 7 and damage done by up to 3 for all magical spells and effects."
+      ],
+      "sell_price": "1g 42s 11c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18743",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Magister's Belt",
+      "item_id": 16685,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Cloth",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 46,
+      "stats": [
+        "+6 Stamina",
+        "+21 Intellect",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 7.",
+        "Equip: Your spells pierce 1 Magical Resistance."
+      ],
+      "sell_price": "90s 23c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=16685",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null,
+      "set": {
+        "name": "Magister's Regalia",
+        "pieces": [
+          "Magister's Belt",
+          "Magister's Bindings",
+          "Magister's Crown",
+          "Magister's Gloves",
+          "Magister's Leggings",
+          "Magister's Mantle",
+          "Magister's Robes",
+          "Magister's Boots"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 18.",
+          "(4) When struck in combat has a 2% chance of freezing the attacker in place for 3 sec. Can only occur once every 60 sec. (Proc chance: 2%, 1m cooldown)",
+          "(5) Your spellcasts have a 5% chance to energize you for 200 mana. (Proc chance: 5%)",
+          "(6) Restores 8 mana per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Dreadmist Belt",
+      "item_id": 16702,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Cloth",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 46,
+      "stats": [
+        "+10 Stamina",
+        "+14 Intellect",
+        "+9 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 9.",
+        "Equip: Your spells pierce 1 Magical Resistance."
+      ],
+      "sell_price": "90s 23c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=16702",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null,
+      "set": {
+        "name": "Dreadmist Raiment",
+        "pieces": [
+          "Dreadmist Belt",
+          "Dreadmist Bracers",
+          "Dreadmist Leggings",
+          "Dreadmist Mantle",
+          "Dreadmist Robe",
+          "Dreadmist Sandals",
+          "Dreadmist Mask",
+          "Dreadmist Wraps"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 18.",
+          "(4) When struck in combat has a 2% chance of causing the attacker to flee in terror for 2 sec. Can only occur once every 60 sec. (Proc chance: 2%, 1m cooldown)",
+          "(5) Your spellcasts have a 5% chance to heal you for 270 to 330. (Proc chance: 5%)",
+          "(6) Restores 8 mana per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Lightforge Belt",
+      "item_id": 16723,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Plate",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 341,
+      "stats": [
+        "+10 Strength",
+        "+9 Stamina",
+        "+15 Intellect",
+        "Equip: Improves your chance to hit by 0.5%.",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 7."
+      ],
+      "sell_price": "1g 58s 81c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=16723",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null,
+      "set": {
+        "name": "Lightforge Armor",
+        "pieces": [
+          "Lightforge Belt",
+          "Lightforge Boots",
+          "Lightforge Bracers",
+          "Lightforge Breastplate",
+          "Lightforge Gauntlets",
+          "Lightforge Legplates",
+          "Lightforge Spaulders",
+          "Lightforge Helm"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 18.",
+          "(4) When struck by a harmful spell, has a 7% chance of Silencing the caster for 3 sec. Can only occur once every 60 sec. (Proc chance: 7%, 1m cooldown)",
+          "(5) Chance on melee autoattack and spellcast to increase your damage and healing done by magical spells and effects by up to 65 for 10 sec.",
+          "(6) Restores 8 mana per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Belt of Valor",
+      "item_id": 16736,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Plate",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 341,
+      "stats": [
+        "+14 Strength",
+        "+7 Agility",
+        "+12 Stamina",
+        "+4 Spirit",
+        "Equip: Increased Defense +6."
+      ],
+      "sell_price": "1g 58s 81c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=16736",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null,
+      "set": {
+        "name": "Battlegear of Valor",
+        "pieces": [
+          "Belt of Valor",
+          "Boots of Valor",
+          "Bracers of Valor",
+          "Breastplate of Valor",
+          "Gauntlets of Valor",
+          "Helm of Valor",
+          "Legplates of Valor",
+          "Spaulders of Valor"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) +15 Strength.",
+          "(4) When struck in combat, has a 10% chance to remove a Disarm effect from yourself. Can only occur once every 60 sec. (Proc chance: 10%, 1m cooldown)",
+          "(5) Chance on melee attack to heal for 88 to 132 and generate 10 Rage",
+          "(6) Restores 15 health per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Plaguebat Fur Gloves",
+      "item_id": 18744,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Leather",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 103,
+      "stats": [
+        "+13 Agility",
+        "+14 Stamina",
+        "Equip: Increased Defense +4."
+      ],
+      "sell_price": "1g 13s 69c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18744",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Bindings of Elements",
+      "item_id": 16671,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Mail",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 148,
+      "stats": [
+        "+7 Stamina",
+        "+8 Intellect",
+        "+10 Spirit",
+        "Equip: Improves your chance to hit by 0.3%.",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 5."
+      ],
+      "sell_price": "1g 27s 69c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=16671",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null,
+      "set": {
+        "name": "The Elements",
+        "pieces": [
+          "Cord of Elements",
+          "Boots of Elements",
+          "Bindings of Elements",
+          "Coif of Elements",
+          "Gauntlets of Elements",
+          "Kilt of Elements",
+          "Pauldrons of Elements",
+          "Vest of Elements"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 18.",
+          "(4) When struck in melee combat, has a 5% chance of Disarming the attacker for 4 sec. Can only occur once every 60 sec. (Proc chance: 5%, 1m cooldown)",
+          "(5) Chance on melee autoattack and spellcast to increase your damage and healing done by magical spells and effects by up to 65 for 10 sec.",
+          "(6) Restores 8 mana per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Beaststalker's Bindings",
+      "item_id": 16681,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Mail",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 148,
+      "stats": [
+        "+15 Agility",
+        "+8 Stamina"
+      ],
+      "sell_price": "1g 27s 69c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=16681",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null,
+      "set": {
+        "name": "Beaststalker Armor",
+        "pieces": [
+          "Beaststalker's Belt",
+          "Beaststalker's Boots",
+          "Beaststalker's Bindings",
+          "Beaststalker's Cap",
+          "Beaststalker's Tunic",
+          "Beaststalker's Pants",
+          "Beaststalker's Mantle",
+          "Beaststalker's Gloves"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) +30 Attack Power.",
+          "(4) When struck in combat, has a 8% chance to remove a Root effect from yourself. Can only occur once every 60 sec. (Proc chance: 8%, 1m cooldown)",
+          "(5) Your melee and ranged autoattacks have a 5% chance to energize you for 200 mana. (Proc chance: 5%)",
+          "(6) Restores 8 mana per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Wildheart Bracers",
+      "item_id": 16714,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Leather",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 71,
+      "stats": [
+        "+5 Strength",
+        "+15 Intellect",
+        "Equip: Increases healing done by up to 9 and damage done by up to 3 for all magical spells and effects."
+      ],
+      "sell_price": "1g 7s 26c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=16714",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null,
+      "set": {
+        "name": "Wildheart Raiment",
+        "pieces": [
+          "Wildheart Belt",
+          "Wildheart Boots",
+          "Wildheart Bracers",
+          "Wildheart Cowl",
+          "Wildheart Vest",
+          "Wildheart Spaulders",
+          "Wildheart Kilt",
+          "Wildheart Gloves"
+        ],
+        "bonuses": [
+          "(2) +8 All Resistances.",
+          "(3) Increases damage and healing done by magical spells and effects by up to 18.",
+          "(3) +30 Attack Power.",
+          "(4) When struck in combat, has a 5% chance to increase your movement speed by 10% for 8 sec. Can only occur once every 60 sec. (Proc chance: 5%, 1m cooldown)",
+          "(5) Chance on spellcast to restore 200 Mana, on melee attack to regenerate 20 Energy over 5 sec, and when struck by a melee attack to generate 10 Rage.",
+          "(6) Restores 8 mana per 5 sec."
+        ]
+      }
+    },
+    {
+      "name": "Sacred Cloth Leggings",
+      "item_id": 18745,
+      "quality": "rare",
+      "slot": "Legs",
+      "type": "Cloth",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 71,
+      "stats": [
+        "+12 Stamina",
+        "+19 Intellect",
+        "+12 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 14."
+      ],
+      "sell_price": "1g 70s 25c",
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18745",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Star of Mystaria",
+      "item_id": null,
+      "quality": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Grand Crusader Dathrohan / Balnazzar",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": null,
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Listed by wowtbc.gg (no item link / \"Not yet discovered\"); ID not resolved against Wowhead Forever.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Juno's Shadow",
+      "item_id": null,
+      "quality": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Trash (unspecified mob)",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": null,
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Listed by wowtbc.gg (no item link / \"Not yet discovered\"); ID not resolved against Wowhead Forever.",
+      "drop_rate_basis": null
+    }
+  ],
+  "quest_rewards": [
+    {
+      "name": "Crown of the Penitent",
+      "item_id": 13216,
+      "quest": null,
+      "slot": "Head",
+      "type": "Cloth",
+      "item_level": 61,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=13216",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Band of the Penitent",
+      "item_id": 13217,
+      "quest": null,
+      "slot": "Finger",
+      "type": null,
+      "item_level": 61,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=13217",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Seal of the Dawn",
+      "item_id": 13209,
+      "quest": null,
+      "slot": "Trinket",
+      "type": null,
+      "item_level": 61,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=13209",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": null,
+      "item_id": 19812,
+      "quest": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=19812",
+      "notes": "ID not verified."
+    }
+  ],
+  "conflicts": [
+    "wowtbc.gg uses one Stratholme page for both gates; timesaver.gg also lists one Stratholme page. Wing assignment from Warcraft Tavern; wowtbc.gg \"Trash\" list (Scarlet Bastion gear, set belts, etc.) is placed here but may belong to either wing.",
+    "Grand Crusader Dathrohan appears as \"Dathrohan / Balnazzar\" on wowtbc.gg and \"Grand Crusader Dathrohan\" on timesaver.gg/tooltips.",
+    "Plague Defiled Buckler (276456): wowtbc.gg lists it under Trash, tooltip says dropped by Black Guard Swordsmith."
+  ],
+  "gaps": [
+    "Quest reward wing assignment unverified (wowtbc/timesaver list Stratholme rewards together).",
+    "Postmaster Malown set (Postmaster's) and Tier 0.5 quest set not researched beyond drops.",
+    "Wing assignment (Main Gate = Living/Scarlet side, Service Gate = Undead side) follows Warcraft Tavern.",
+    "2 item(s) from wowtbc.gg have no resolvable Wowhead Forever ID (stubs with item_id null): Star of Mystaria, Juno's Shadow.",
+    "Quest rewards: names/IDs from timesaver.gg and wowtbc.gg, quest mapping from wowtbc.gg/Warcraft Tavern; not all verified against quest pages.",
+    "kills/drops counts unavailable; drop_rate_display derived from drop_chance_pct.",
+    "Boss NPC IDs not verified (Wowhead NPC pages not readable).",
+    "Trash coverage limited to items found via tooltip source, timesaver.gg and wowtbc.gg; Forever-only drops those sources omit may be missing."
+  ],
+  "sources": [
+    "https://www.warcrafttavern.com/forever/guides/stratholme-living/",
+    "https://wowtbc.gg/warcraftforever/loot-tables/dungeons/stratholme/",
+    "https://timesaver.gg/tools/wow-forever/dungeon-loot/stratholme",
+    "https://nether.wowhead.com/forever/tooltip/item/<ID>"
+  ]
+}
