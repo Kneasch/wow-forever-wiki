@@ -1,0 +1,1232 @@
+{
+  "dungeon": "Blackmaw Hold",
+  "order": 28,
+  "game_version": "WoW Forever",
+  "level_range": "55-60",
+  "recommended_level_range": "55-60",
+  "min_level": 55,
+  "zone": "Azshara",
+  "location": "Entrance in Azshara inside a furbolg tunnel at 38.7, 33.4; the portal itself is on the Winterspring map at 66.6, 84.4 (Warcraft Tavern).",
+  "new_in_forever": true,
+  "bosses": [
+    {
+      "name": "Withermaw",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Only Varrox Bleakhoof is named in the Warcraft Tavern guide (appears in the Legacy challenge). Others come from loot sites. NPC id/level not verified."
+    },
+    {
+      "name": "Bonesnout the Unbroken",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Only Varrox Bleakhoof is named in the Warcraft Tavern guide (appears in the Legacy challenge). Others come from loot sites. NPC id/level not verified."
+    },
+    {
+      "name": "Moontouched Wanderer",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Only Varrox Bleakhoof is named in the Warcraft Tavern guide (appears in the Legacy challenge). Others come from loot sites. NPC id/level not verified."
+    },
+    {
+      "name": "Impaan the Imprisoner",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Only Varrox Bleakhoof is named in the Warcraft Tavern guide (appears in the Legacy challenge). Others come from loot sites. NPC id/level not verified."
+    },
+    {
+      "name": "Unbound Spirit",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Only Varrox Bleakhoof is named in the Warcraft Tavern guide (appears in the Legacy challenge). Others come from loot sites. NPC id/level not verified."
+    },
+    {
+      "name": "Blackmaw Behemoth",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Only Varrox Bleakhoof is named in the Warcraft Tavern guide (appears in the Legacy challenge). Others come from loot sites. NPC id/level not verified."
+    },
+    {
+      "name": "Varrox Bleakhoof",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Named by Warcraft Tavern; NPC id/level not verified."
+    },
+    {
+      "name": "Elder Shaman Bloodmane",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Only Varrox Bleakhoof is named in the Warcraft Tavern guide (appears in the Legacy challenge). Others come from loot sites. NPC id/level not verified."
+    },
+    {
+      "name": "Tunnelweb Matriarch",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Only Varrox Bleakhoof is named in the Warcraft Tavern guide (appears in the Legacy challenge). Others come from loot sites. NPC id/level not verified."
+    }
+  ],
+  "items": [
+    {
+      "name": "Lucky Shovelnose Tuft",
+      "item_id": 280060,
+      "quality": "rare",
+      "slot": "Trinket",
+      "type": null,
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+11 Strength",
+        "+11 Spirit",
+        "Use: Increases your chance to Dodge by 5% for 15 sec. (5 Min Cooldown)"
+      ],
+      "sell_price": "1g 95s 98c",
+      "source": "Bonesnout the Unbroken",
+      "source_type": "boss",
+      "drop_chance_pct": 39.68,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280060",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Horns of Varrox",
+      "item_id": 280076,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Leather",
+      "item_level": 62,
+      "required_level": 57,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 141,
+      "stats": [
+        "+18 Stamina",
+        "Equip: +48 Attack Power."
+      ],
+      "sell_price": "2g 5c",
+      "source": "Varrox Bleakhoof",
+      "source_type": "boss",
+      "drop_chance_pct": 28.36,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280076",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Flameslash Crescent",
+      "item_id": 280056,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Axe",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 145,
+        "damage_max": 219,
+        "speed": 3.6,
+        "dps": 50.56
+      },
+      "armor": null,
+      "stats": [
+        "+19 Strength",
+        "+8 Intellect",
+        "Equip: Improves your chance to hit by 1.5%.",
+        "Equip: Improves your chance to get a critical strike by 1.0%."
+      ],
+      "sell_price": "5g 74s 57c",
+      "source": "Impaan the Imprisoner",
+      "source_type": "boss",
+      "drop_chance_pct": 37.18,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280056",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Robes of Dark Summons",
+      "item_id": 280057,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Cloth",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 84,
+      "stats": [
+        "+14 Stamina",
+        "Equip: Improves your chance to hit by 1.8%.",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 21."
+      ],
+      "sell_price": "1g 84s 56c",
+      "source": "Impaan the Imprisoner",
+      "source_type": "boss",
+      "drop_chance_pct": 30.77,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280057",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Spike Crested Bracers",
+      "item_id": 280061,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Plate",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 274,
+      "stats": [
+        "+10 Stamina",
+        "Equip: Improves your chance to hit by 0.9%.",
+        "Equip: +20 Attack Power."
+      ],
+      "sell_price": "1g 73s 11c",
+      "source": "Bonesnout the Unbroken",
+      "source_type": "boss",
+      "drop_chance_pct": 28.57,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280061",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Tunnelweb Pincer",
+      "item_id": 280085,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Dagger",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 42,
+        "damage_max": 78,
+        "speed": 1.6,
+        "dps": 37.5
+      },
+      "armor": null,
+      "stats": [
+        "+7 Agility",
+        "+8 Stamina",
+        "Equip: Improves your chance to get a critical strike by 0.4%."
+      ],
+      "sell_price": "4g 38s 27c",
+      "source": "Tunnelweb Matriarch",
+      "source_type": "boss",
+      "drop_chance_pct": 40.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280085",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Trousers of the Ebon Giant",
+      "item_id": 280066,
+      "quality": "rare",
+      "slot": "Legs",
+      "type": "Cloth",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 76,
+      "stats": [
+        "+20 Stamina",
+        "+16 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 21."
+      ],
+      "sell_price": "2g 10s 37c",
+      "source": "Blackmaw Behemoth",
+      "source_type": "boss",
+      "drop_chance_pct": 36.92,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280066",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Veilpiercer Girdle",
+      "item_id": 280070,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Leather",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 97,
+      "stats": [
+        "+8 Agility",
+        "+13 Stamina",
+        "+8 Spirit",
+        "Equip: Increased Defense +9."
+      ],
+      "sell_price": "1g 37s 96c",
+      "source": "Elder Shaman Bloodmane",
+      "source_type": "boss",
+      "drop_chance_pct": 25.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280070",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Flamebreak Talisman",
+      "item_id": 280071,
+      "quality": "rare",
+      "slot": "Trinket",
+      "type": null,
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "Use: Increase your agility by 33 for 30 sec. If there is an elemental nearby, gain an additional 33. (5 Min Cooldown)"
+      ],
+      "sell_price": "1g 98s 84c",
+      "source": "Unbound Spirit",
+      "source_type": "boss",
+      "drop_chance_pct": 33.96,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280071",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Blackmaw Chain Belt",
+      "item_id": 280067,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Mail",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 202,
+      "stats": [
+        "+17 Agility",
+        "+12 Stamina",
+        "Equip: Increases your chance to Dodge an attack by 1.0%."
+      ],
+      "sell_price": "1g 58s 36c",
+      "source": "Blackmaw Behemoth",
+      "source_type": "boss",
+      "drop_chance_pct": 30.77,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280067",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Bloody Claws of Attack",
+      "item_id": 280068,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Fist Weapon",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 73,
+        "damage_max": 136,
+        "speed": 2.6,
+        "dps": 40.19
+      },
+      "armor": null,
+      "stats": [
+        "Equip: Improves your chance to get a critical strike by 0.5%.",
+        "Equip: +8 Attack Power.",
+        "Equip: Increased Fist Weapons +1."
+      ],
+      "sell_price": "5g 43s 65c",
+      "source": "Elder Shaman Bloodmane",
+      "source_type": "boss",
+      "drop_chance_pct": 37.5,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280068",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Cowl of Dark Ambition",
+      "item_id": 280072,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Cloth",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 70,
+      "stats": [
+        "+18 Stamina",
+        "+16 Intellect",
+        "Equip: Increases damage done by magical spells and effects by up to 21."
+      ],
+      "sell_price": "1g 49s 71c",
+      "source": "Unbound Spirit",
+      "source_type": "boss",
+      "drop_chance_pct": 26.42,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280072",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Withering Grips",
+      "item_id": 280064,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Leather",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 106,
+      "stats": [
+        "+14 Stamina",
+        "+12 Intellect",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 16."
+      ],
+      "sell_price": "1g 25s 31c",
+      "source": "Withermaw",
+      "source_type": "boss",
+      "drop_chance_pct": 29.31,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280064",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Behemoth Bones",
+      "item_id": 280065,
+      "quality": "rare",
+      "slot": "Trinket",
+      "type": null,
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "Equip: +34 Attack Power.",
+        "Use: Crack open the bone, healing yourself for 480 to 530 and your nearest ally for 480 to 530. (5 Min Cooldown)"
+      ],
+      "sell_price": "2g 9s 62c",
+      "source": "Blackmaw Behemoth",
+      "source_type": "boss",
+      "drop_chance_pct": 29.23,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280065",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Burnished Pridescales",
+      "item_id": 280073,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Plate",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 637,
+      "stats": [
+        "+16 Strength",
+        "+16 Stamina",
+        "+19 Spirit",
+        "Equip: Improves your chance to hit by 1.0%."
+      ],
+      "sell_price": "3g 50s 68c",
+      "source": "Unbound Spirit",
+      "source_type": "boss",
+      "drop_chance_pct": 37.74,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280073",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Octofinger Gauntlets",
+      "item_id": 280086,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Plate",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 373,
+      "stats": [
+        "+16 Stamina",
+        "Equip: Increases your chance to Dodge an attack by 1.0%.",
+        "Equip: Improves your chance to hit by 0.8%."
+      ],
+      "sell_price": "1g 54s 82c",
+      "source": "Tunnelweb Matriarch",
+      "source_type": "boss",
+      "drop_chance_pct": 60.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280086",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Shamanic Wristguards",
+      "item_id": 280069,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Mail",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 157,
+      "stats": [
+        "+13 Stamina",
+        "+10 Intellect"
+      ],
+      "sell_price": "1g 63s 67c",
+      "source": "Elder Shaman Bloodmane",
+      "source_type": "boss",
+      "drop_chance_pct": 22.92,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280069",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Scalding Flamehoof",
+      "item_id": 280074,
+      "quality": "rare",
+      "slot": "Trinket",
+      "type": null,
+      "item_level": 62,
+      "required_level": 57,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+4 Strength",
+        "+4 Agility",
+        "+4 Stamina",
+        "+4 Intellect",
+        "+4 Spirit",
+        "Use: Increases Fire damage taken by 14% and movement speed by 14% for 20 sec. (5 Min Cooldown)"
+      ],
+      "sell_price": "2g 11s 20c",
+      "source": "Varrox Bleakhoof",
+      "source_type": "boss",
+      "drop_chance_pct": 38.81,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280074",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Cloak of the Fleshborer",
+      "item_id": 280062,
+      "quality": "rare",
+      "slot": "Back",
+      "type": "Cloth",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 43,
+      "stats": [
+        "+6 Strength",
+        "+6 Agility",
+        "+6 Stamina",
+        "+6 Intellect",
+        "+6 Spirit"
+      ],
+      "sell_price": "1g 48s 7c",
+      "source": "Withermaw",
+      "source_type": "boss",
+      "drop_chance_pct": 34.48,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280062",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Impish Chain Hood",
+      "item_id": 280058,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Mail",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 284,
+      "stats": [
+        "+19 Stamina",
+        "+16 Spirit",
+        "Equip: +34 Attack Power."
+      ],
+      "sell_price": "2g 9s 35c",
+      "source": "Impaan the Imprisoner",
+      "source_type": "boss",
+      "drop_chance_pct": 26.92,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280058",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Claymore of Two Moons",
+      "item_id": 280080,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Sword",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 121,
+        "damage_max": 182,
+        "speed": 3.1,
+        "dps": 48.87
+      },
+      "armor": null,
+      "stats": [
+        "+17 Stamina",
+        "Equip: Your attacks have a chance to Wax, dealing 189 Arcane damage or Wane, granting 40 Strength for 10 sec."
+      ],
+      "sell_price": "5g 24s 1c",
+      "source": "Moontouched Wanderer",
+      "source_type": "boss",
+      "drop_chance_pct": 68.75,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/1",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280080",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Lunarlight Robe",
+      "item_id": 280079,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Leather",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 163,
+      "stats": [
+        "+17 Stamina",
+        "+14 Spirit",
+        "Equip: Your spells pierce 6 Magical Resistance."
+      ],
+      "sell_price": "2g 8s 81c",
+      "source": "Moontouched Wanderer",
+      "source_type": "boss",
+      "drop_chance_pct": 31.25,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280079",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Tuskblade Halberd",
+      "item_id": 280059,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Polearm",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 148,
+        "damage_max": 222,
+        "speed": 3.6,
+        "dps": 51.39
+      },
+      "armor": null,
+      "stats": [
+        "+14 Agility",
+        "+18 Stamina",
+        "Equip: Reduces chance to be Dodged or Parried by 2.0%."
+      ],
+      "sell_price": "6g 10s 14c",
+      "source": "Bonesnout the Unbroken",
+      "source_type": "boss",
+      "drop_chance_pct": 28.57,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280059",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Bloodfur Bulwark",
+      "item_id": 280063,
+      "quality": "rare",
+      "slot": "Off Hand",
+      "type": "Shield",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 2057,
+      "stats": [
+        "+10 Stamina",
+        "Equip: Increases your chance to Block attacks with a shield by 2.0%."
+      ],
+      "sell_price": "3g 17s 7c",
+      "source": "Withermaw",
+      "source_type": "boss",
+      "drop_chance_pct": 31.03,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280063",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Bleak Eye Shoulderplates",
+      "item_id": 280075,
+      "quality": "rare",
+      "slot": "Shoulder",
+      "type": "Plate",
+      "item_level": 62,
+      "required_level": 57,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 485,
+      "stats": [
+        "+14 Agility",
+        "+14 Stamina",
+        "+12 Intellect"
+      ],
+      "sell_price": "2g 77s 73c",
+      "source": "Varrox Bleakhoof",
+      "source_type": "boss",
+      "drop_chance_pct": 28.36,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280075",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Impenetrable Gauntlets",
+      "item_id": 15662,
+      "quality": "uncommon",
+      "slot": "Hands",
+      "type": "Mail",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 192,
+      "stats": [],
+      "sell_price": "1g 8s 1c",
+      "source": "Blackmaw Devotee",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=15662",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Furbolg Berserker's Boots",
+      "item_id": 287033,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Plate",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 417,
+      "stats": [
+        "+18 Strength",
+        "+9 Spirit",
+        "Equip: Reduces chance to be Dodged or Parried by 1.0%."
+      ],
+      "sell_price": "2g 27s 85c",
+      "source": "Blackmaw Devotee",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=287033",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Gryphonwing Long Bow",
+      "item_id": 13022,
+      "quality": "rare",
+      "slot": "Ranged",
+      "type": "Bow",
+      "item_level": 55,
+      "required_level": 50,
+      "binding": "Binds when equipped",
+      "weapon": {
+        "damage_min": 53,
+        "damage_max": 100,
+        "speed": 2.7,
+        "dps": 28.33
+      },
+      "armor": null,
+      "stats": [
+        "+8 Agility",
+        "+4 Stamina"
+      ],
+      "sell_price": "2g 79s 90c",
+      "source": "Blackmaw Spearfisher",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=13022",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Praetorian Padded Armor",
+      "item_id": 15179,
+      "quality": "uncommon",
+      "slot": "Chest",
+      "type": "Leather",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 148,
+      "stats": [],
+      "sell_price": "1g 85s 93c",
+      "source": "Blackmaw Shaman",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=15179",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    }
+  ],
+  "quest_rewards": [
+    {
+      "name": "Nama's Cherished Necklace",
+      "item_id": 279893,
+      "quest": null,
+      "slot": "Neck",
+      "type": null,
+      "item_level": 57,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279893",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Eagle's Head Signet",
+      "item_id": 260217,
+      "quest": null,
+      "slot": "Finger",
+      "type": null,
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=260217",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Ouroboros Ring",
+      "item_id": 260216,
+      "quest": null,
+      "slot": "Finger",
+      "type": null,
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=260216",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Engraved Band",
+      "item_id": 260219,
+      "quest": null,
+      "slot": "Finger",
+      "type": null,
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=260219",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Malefactor's End",
+      "item_id": 260218,
+      "quest": null,
+      "slot": "Finger",
+      "type": null,
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=260218",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Wild Malleus",
+      "item_id": 260215,
+      "quest": null,
+      "slot": "Two-Hand",
+      "type": "Mace",
+      "item_level": 60,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=260215",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Great Bear Claw",
+      "item_id": 260213,
+      "quest": null,
+      "slot": "One-Hand",
+      "type": "Fist Weapon",
+      "item_level": 60,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=260213",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Staff of Wild Beasts",
+      "item_id": 260214,
+      "quest": null,
+      "slot": "Two-Hand",
+      "type": "Staff",
+      "item_level": 60,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=260214",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Leggings of the Ursa",
+      "item_id": 21316,
+      "quest": null,
+      "slot": "Legs",
+      "type": "Plate",
+      "item_level": 55,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=21316",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Helm of the Pathfinder",
+      "item_id": 21317,
+      "quest": null,
+      "slot": "Head",
+      "type": "Leather",
+      "item_level": 55,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=21317",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": null,
+      "item_id": 15822,
+      "quest": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=15822",
+      "notes": "ID not verified."
+    },
+    {
+      "name": null,
+      "item_id": 15823,
+      "quest": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=15823",
+      "notes": "ID not verified."
+    },
+    {
+      "name": "Wisdom of Ursol",
+      "item_id": 279892,
+      "quest": null,
+      "slot": "Back",
+      "type": null,
+      "item_level": 57,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279892",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Guidance of Ursoc",
+      "item_id": 279891,
+      "quest": null,
+      "slot": "Back",
+      "type": null,
+      "item_level": 57,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279891",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Earth Warder's Gloves",
+      "item_id": 21318,
+      "quest": null,
+      "slot": "Hands",
+      "type": "Cloth",
+      "item_level": 58,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=21318",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Gloves of the Pathfinder",
+      "item_id": 21319,
+      "quest": null,
+      "slot": "Hands",
+      "type": "Leather",
+      "item_level": 58,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=21319",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Vest of the Den Watcher",
+      "item_id": 21320,
+      "quest": null,
+      "slot": "Chest",
+      "type": "Mail",
+      "item_level": 58,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=21320",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Ursa's Embrace",
+      "item_id": 21322,
+      "quest": null,
+      "slot": "Chest",
+      "type": "Plate",
+      "item_level": 58,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=21322",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    }
+  ],
+  "conflicts": [
+    "Warcraft Tavern knows only one boss (Varrox Bleakhoof); timesaver.gg and wowtbc.gg list 8-9 loot sources. Tunnelweb Matriarch appears on timesaver.gg only; Blackmaw Behemoth on wowtbc.gg only."
+  ],
+  "gaps": [
+    "Warcraft Tavern says no known quests; quest list is from timesaver.gg and wowtbc.gg, unmapped to quest names (21316-21322 and 15822/15823 look like classic Un'Goro/ Winterspring-era items; verify).",
+    "Boss levels and order unknown.",
+    "Quest rewards: names/IDs from timesaver.gg and wowtbc.gg, quest mapping from wowtbc.gg/Warcraft Tavern; not all verified against quest pages.",
+    "kills/drops counts unavailable; drop_rate_display derived from drop_chance_pct.",
+    "Boss NPC IDs not verified (Wowhead NPC pages not readable).",
+    "Trash coverage limited to items found via tooltip source, timesaver.gg and wowtbc.gg; Forever-only drops those sources omit may be missing."
+  ],
+  "sources": [
+    "https://www.warcrafttavern.com/forever/guides/blackmaw-hold/",
+    "https://wowtbc.gg/warcraftforever/loot-tables/dungeons/blackmaw-hold/",
+    "https://timesaver.gg/tools/wow-forever/dungeon-loot/blackmaw-hold",
+    "https://nether.wowhead.com/forever/tooltip/item/<ID>"
+  ]
+}

@@ -1,0 +1,1569 @@
+{
+  "dungeon": "Dire Maul (East)",
+  "order": 26,
+  "game_version": "WoW Forever",
+  "level_range": "54-60",
+  "recommended_level_range": "54-60",
+  "min_level": 54,
+  "zone": "Feralas",
+  "location": "Dire Maul, Feralas. Three entrances: east wall of the central courtyard, Eldreth Row at the Dire Maul entrance, and Lariss Pavilion NE of Camp Mojache (needs Crescent Key).",
+  "new_in_forever": false,
+  "bosses": [
+    {
+      "name": "Pusillin",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Level 56-57 elite imp per Warcraft Tavern; drops the Crescent Key. No loot on tooltip/loot sites."
+    },
+    {
+      "name": "Zevrim Thornhoof",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "NPC id not verified for Forever."
+    },
+    {
+      "name": "Hydrospawn",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "NPC id not verified for Forever."
+    },
+    {
+      "name": "Lethtendris",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "NPC id not verified for Forever."
+    },
+    {
+      "name": "Alzzin the Wildshaper",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "NPC id not verified for Forever."
+    },
+    {
+      "name": "Isalien",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Quest boss (Warcraft Tavern). NPC id not verified."
+    },
+    {
+      "name": "Pimgib",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Listed as a drop source by wowtbc.gg/timesaver.gg (minion of Lethtendris). Not in Warcraft Tavern boss list."
+    }
+  ],
+  "items": [
+    {
+      "name": "Riptide Shoes",
+      "item_id": 18307,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Cloth",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 57,
+      "stats": [
+        "+9 Intellect",
+        "Equip: Increases damage done by Frost spells and effects by up to 24."
+      ],
+      "sell_price": "1g 35s 35c",
+      "source": "Hydrospawn",
+      "source_type": "boss",
+      "drop_chance_pct": 25.49,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18307",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Ironweave Gloves",
+      "item_id": 22304,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Cloth",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 54,
+      "stats": [
+        "+17 Stamina",
+        "+11 Intellect",
+        "+90 Armor",
+        "Equip: Your spells pierce 3 Magical Resistance."
+      ],
+      "sell_price": "1g 4s 45c",
+      "source": "Isalien",
+      "source_type": "boss",
+      "drop_chance_pct": 20.58,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=22304",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Class-restricted: Priest, Mage, Warlock.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)",
+      "set": {
+        "name": "Ironweave Battlesuit",
+        "pieces": [
+          "Ironweave Belt",
+          "Ironweave Boots",
+          "Ironweave Bracers",
+          "Ironweave Cowl",
+          "Ironweave Gloves",
+          "Ironweave Mantle",
+          "Ironweave Pants",
+          "Ironweave Robe"
+        ],
+        "bonuses": [
+          "(2) +200 Armor.",
+          "(3) Decreases the magical resistances of your spell targets by 5.",
+          "(4) Reduces the hit chance of Silence and Interrupt effects against you by 10%.",
+          "(5) Increases damage and healing done by magical spells and effects by up to 23.",
+          "(6) The Ironweave hardens under duress, reducing damage taken while Stunned by 15%."
+        ]
+      }
+    },
+    {
+      "name": "Quel'dorai Channeling Rod",
+      "item_id": 18311,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Staff",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 82,
+        "damage_max": 124,
+        "speed": 2.8,
+        "dps": 36.79
+      },
+      "armor": null,
+      "stats": [
+        "+8 Stamina",
+        "+18 Intellect",
+        "+8 Spirit",
+        "Equip: Increases healing done by up to 124 and damage done by up to 41 for all magical spells and effects."
+      ],
+      "sell_price": "5g 63s 97c",
+      "source": "Lethtendris",
+      "source_type": "boss",
+      "drop_chance_pct": 25.93,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18311",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Whipvine Cord",
+      "item_id": 18327,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Cloth",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 47,
+      "stats": [
+        "+9 Intellect",
+        "Equip: Increases healing done by up to 29 and damage done by up to 10 for all magical spells and effects."
+      ],
+      "sell_price": "94s 74c",
+      "source": "Alzzin the Wildshaper",
+      "source_type": "boss",
+      "drop_chance_pct": 10.2,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/10",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18327",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Razor Gauntlets",
+      "item_id": 18326,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Plate",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 386,
+      "stats": [
+        "+9 Strength",
+        "Equip: When struck in combat, inflicts 7 Nature damage to the attacker."
+      ],
+      "sell_price": "1g 66s 75c",
+      "source": "Alzzin the Wildshaper",
+      "source_type": "boss",
+      "drop_chance_pct": 20.41,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18326",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Fiendish Machete",
+      "item_id": 18310,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Sword",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 65,
+        "damage_max": 121,
+        "speed": 2.4,
+        "dps": 38.75
+      },
+      "armor": null,
+      "stats": [
+        "+5 Agility",
+        "Equip: +18 Attack Power.",
+        "Equip: +18 Attack Power against Elementals."
+      ],
+      "sell_price": "4g 73s 73c",
+      "source": "Alzzin the Wildshaper",
+      "source_type": "boss",
+      "drop_chance_pct": 8.16,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/12",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18310",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Gloves of Shadowy Mist",
+      "item_id": 18306,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Cloth",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 52,
+      "stats": [
+        "+16 Stamina",
+        "Equip: Increases damage done by Shadow spells and effects by up to 19."
+      ],
+      "sell_price": "90s 23c",
+      "source": "Zevrim Thornhoof",
+      "source_type": "boss",
+      "drop_chance_pct": 13.79,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/7",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18306",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Energetic Rod",
+      "item_id": 18321,
+      "quality": "rare",
+      "slot": "Main Hand",
+      "type": "Mace",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 41,
+        "damage_max": 78,
+        "speed": 2.3,
+        "dps": 25.87
+      },
+      "armor": null,
+      "stats": [
+        "+5 Intellect",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 68.",
+        "Equip: Chance on landing a damaging spell to restore 48 mana to you."
+      ],
+      "sell_price": "4g 73s 73c",
+      "source": "Alzzin the Wildshaper",
+      "source_type": "boss",
+      "drop_chance_pct": 12.24,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/8",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18321",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Lethtendris's Wand",
+      "item_id": 18301,
+      "quality": "rare",
+      "slot": "Ranged",
+      "type": "Wand",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "Equip: Increases damage and healing done by magical spells and effects by up to 9."
+      ],
+      "sell_price": "3g 38s 38c",
+      "source": "Lethtendris",
+      "source_type": "boss",
+      "drop_chance_pct": 22.22,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18301",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Huntsman's Harpoon",
+      "item_id": 22314,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Polearm",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 150,
+        "damage_max": 226,
+        "speed": 3.6,
+        "dps": 52.22
+      },
+      "armor": null,
+      "stats": [
+        "+30 Agility",
+        "Equip: +36 Attack Power against Beasts."
+      ],
+      "sell_price": "6g 52s 86c",
+      "source": "Isalien",
+      "source_type": "boss",
+      "drop_chance_pct": 20.36,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=22314",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Tempest Talisman",
+      "item_id": 18317,
+      "quality": "rare",
+      "slot": "Neck",
+      "type": null,
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+6 Intellect",
+        "+6 Spirit",
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Equip: Increases healing done by up to 7 and damage done by up to 2 for all magical spells and effects."
+      ],
+      "sell_price": "1g 80s 47c",
+      "source": "Hydrospawn",
+      "source_type": "boss",
+      "drop_chance_pct": 11.76,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/9",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18317",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Obsidian Bauble",
+      "item_id": 18316,
+      "quality": "rare",
+      "slot": "Held In Off-hand",
+      "type": null,
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+9 Intellect",
+        "Equip: Improves your chance to get a critical strike by 0.5%.",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 15."
+      ],
+      "sell_price": "1g 80s 47c",
+      "source": "Pusillin",
+      "source_type": "boss",
+      "drop_chance_pct": 31.82,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18316",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Hammer of Revitalization",
+      "item_id": 22315,
+      "quality": "rare",
+      "slot": "Main Hand",
+      "type": "Mace",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 50,
+        "damage_max": 94,
+        "speed": 2.7,
+        "dps": 26.67
+      },
+      "armor": null,
+      "stats": [
+        "+5 Stamina",
+        "Equip: Increases healing done by up to 131 and damage done by up to 43 for all magical spells and effects."
+      ],
+      "sell_price": "5g 22s 29c",
+      "source": "Isalien",
+      "source_type": "boss",
+      "drop_chance_pct": 14.99,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/7",
+      "wowhead_url": "https://www.wowhead.com/forever/item=22315",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Demondash Spaulders",
+      "item_id": 18320,
+      "quality": "rare",
+      "slot": "Shoulder",
+      "type": "Mail",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 258,
+      "stats": [
+        "+9 Strength",
+        "+14 Agility",
+        "+14 Stamina"
+      ],
+      "sell_price": "2g 3s 93c",
+      "source": "Pusillin",
+      "source_type": "boss",
+      "drop_chance_pct": 13.64,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/7",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18320",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Satyr's Bow",
+      "item_id": 18323,
+      "quality": "rare",
+      "slot": "Ranged",
+      "type": "Bow",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 50,
+        "damage_max": 93,
+        "speed": 2.4,
+        "dps": 29.79
+      },
+      "armor": null,
+      "stats": [
+        "Equip: Improves your chance to hit by 1.0%.",
+        "Equip: +4 Attack Power.",
+        "Equip: +6 Attack Power against Elementals."
+      ],
+      "sell_price": "3g 38s 38c",
+      "source": "Zevrim Thornhoof",
+      "source_type": "boss",
+      "drop_chance_pct": 15.52,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18323",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Fervent Helm",
+      "item_id": 18319,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Mail",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 279,
+      "stats": [
+        "+14 Stamina",
+        "Equip: Increases your chance to Parry an attack by 1.0%."
+      ],
+      "sell_price": "2g 3s 93c",
+      "source": "Zevrim Thornhoof",
+      "source_type": "boss",
+      "drop_chance_pct": 29.31,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18319",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Ring of Demonic Potency",
+      "item_id": 18315,
+      "quality": "rare",
+      "slot": "Finger",
+      "type": null,
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+10 Stamina",
+        "Equip: Increased Defense +7."
+      ],
+      "sell_price": "1g 89s 49c",
+      "source": "Alzzin the Wildshaper",
+      "source_type": "boss",
+      "drop_chance_pct": 20.41,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18315",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Pimgib's Collar",
+      "item_id": 18354,
+      "quality": "rare",
+      "slot": "Trinket",
+      "type": null,
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "Equip: Increases damage done by Fire spells and effects by up to 14.",
+        "Equip: Restores 9 mana per 5 sec to your Imp."
+      ],
+      "sell_price": "1g 98s 96c",
+      "source": "Pimgib",
+      "source_type": "boss",
+      "drop_chance_pct": 12.5,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/8",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18354",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Class-restricted: Warlock. Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Nimble Buckler",
+      "item_id": 18303,
+      "quality": "uncommon",
+      "slot": "Off Hand",
+      "type": "Shield",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 1776,
+      "stats": [
+        "+9 Agility",
+        "Equip: Increases your chance to Block attacks with a shield by 2.0%."
+      ],
+      "sell_price": "2g 40s 62c",
+      "source": "Pusillin",
+      "source_type": "boss",
+      "drop_chance_pct": 11.36,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/9",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18303",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Band of Vigor",
+      "item_id": 18302,
+      "quality": "rare",
+      "slot": "Finger",
+      "type": null,
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+8 Strength",
+        "+7 Agility",
+        "+7 Stamina",
+        "+10 Spirit"
+      ],
+      "sell_price": "1g 80s 47c",
+      "source": "Lethtendris",
+      "source_type": "boss",
+      "drop_chance_pct": 20.37,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18302",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Ring of Demonic Guile",
+      "item_id": 18314,
+      "quality": "rare",
+      "slot": "Finger",
+      "type": null,
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+10 Intellect",
+        "Equip: Improves your chance to hit by 1.0%."
+      ],
+      "sell_price": "1g 89s 49c",
+      "source": "Alzzin the Wildshaper",
+      "source_type": "boss",
+      "drop_chance_pct": 16.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18314",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Merciful Greaves",
+      "item_id": 18318,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Mail",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 240,
+      "stats": [
+        "+14 Stamina",
+        "+14 Intellect",
+        "Equip: Increases healing done by up to 20 and damage done by up to 7 for all magical spells and effects."
+      ],
+      "sell_price": "2g 14s 12c",
+      "source": "Alzzin the Wildshaper",
+      "source_type": "boss",
+      "drop_chance_pct": 16.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18318",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Waterspout Boots",
+      "item_id": 18322,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Leather",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 114,
+      "stats": [
+        "+8 Intellect",
+        "+9 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 22."
+      ],
+      "sell_price": "1g 69s 64c",
+      "source": "Hydrospawn",
+      "source_type": "boss",
+      "drop_chance_pct": 21.57,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18322",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Phasing Boots",
+      "item_id": 18295,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Cloth",
+      "item_level": 55,
+      "required_level": 50,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 54,
+      "stats": [
+        "+6 Stamina",
+        "+6 Intellect"
+      ],
+      "sell_price": "1g 13s 64c",
+      "source": "Phase Lasher",
+      "source_type": "trash",
+      "drop_chance_pct": 2.78,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/36",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18295",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Helm of Awareness",
+      "item_id": 18313,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Plate",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 493,
+      "stats": [
+        "+17 Stamina",
+        "Equip: Increases your chance to Dodge an attack by 2.0%.",
+        "Equip: Increases your effective stealth detection level by 1."
+      ],
+      "sell_price": "2g 36s 41c",
+      "source": "Zevrim Thornhoof",
+      "source_type": "boss",
+      "drop_chance_pct": 15.52,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18313",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Breakwater Legguards",
+      "item_id": 18305,
+      "quality": "rare",
+      "slot": "Legs",
+      "type": "Plate",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 531,
+      "stats": [
+        "+22 Strength",
+        "Equip: Increases your chance to Parry an attack by 1.0%."
+      ],
+      "sell_price": "3g 15s 82c",
+      "source": "Hydrospawn",
+      "source_type": "boss",
+      "drop_chance_pct": 15.69,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18305",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Felhide Cap",
+      "item_id": 18325,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Leather",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 134,
+      "stats": [
+        "+21 Agility",
+        "+14 Stamina"
+      ],
+      "sell_price": "1g 69s 64c",
+      "source": "Lethtendris",
+      "source_type": "boss",
+      "drop_chance_pct": 27.78,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18325",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Hydrospawn Essence",
+      "item_id": 18299,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": "Quest Item",
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Hydrospawn",
+      "source_type": "quest_item",
+      "drop_chance_pct": 1.96,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/51",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18299",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Gloves of Restoration",
+      "item_id": 18309,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Leather",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 105,
+      "stats": [
+        "+13 Stamina",
+        "+12 Intellect",
+        "Equip: Increases healing done by up to 31 and damage done by up to 10 for all magical spells and effects."
+      ],
+      "sell_price": "1g 19s 37c",
+      "source": "Alzzin the Wildshaper",
+      "source_type": "boss",
+      "drop_chance_pct": 22.45,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18309",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Clever Hat",
+      "item_id": 18308,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Leather",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 134,
+      "stats": [
+        "+6 Stamina",
+        "+15 Intellect",
+        "Equip: Decreases all threat generated by 4%."
+      ],
+      "sell_price": "1g 69s 64c",
+      "source": "Zevrim Thornhoof",
+      "source_type": "boss",
+      "drop_chance_pct": 18.97,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18308",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Lethtendris's Web",
+      "item_id": 18426,
+      "quality": "common",
+      "slot": null,
+      "type": null,
+      "item_level": 1,
+      "required_level": null,
+      "binding": "Quest Item",
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Lethtendris",
+      "source_type": "quest_item",
+      "drop_chance_pct": 42.59,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18426",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Waveslicer",
+      "item_id": 18324,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Axe",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 123,
+        "damage_max": 185,
+        "speed": 3.1,
+        "dps": 49.68
+      },
+      "armor": null,
+      "stats": [
+        "+23 Strength",
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Chance on hit: Slice the target, dealing 70 Nature damage. Deals 3 times as much damage to Aquatic enemies."
+      ],
+      "sell_price": "5g 63s 97c",
+      "source": "Hydrospawn",
+      "source_type": "boss",
+      "drop_chance_pct": 15.69,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18324",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Greenroot Mail",
+      "item_id": 18304,
+      "quality": "uncommon",
+      "slot": "Chest",
+      "type": "Mail",
+      "item_level": 58,
+      "required_level": 53,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 313,
+      "stats": [
+        "+17 Intellect",
+        "+9 Spirit",
+        "Equip: Increases healing done by up to 26 and damage done by up to 9 for all magical spells and effects."
+      ],
+      "sell_price": "2g 25s 58c",
+      "source": "Pusillin",
+      "source_type": "boss",
+      "drop_chance_pct": 22.73,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18304",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Energized Chestplate",
+      "item_id": 18312,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Plate",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 617,
+      "stats": [
+        "+13 Strength",
+        "+20 Stamina",
+        "+12 Intellect",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 15."
+      ],
+      "sell_price": "3g 31s 61c",
+      "source": "Alzzin the Wildshaper",
+      "source_type": "boss",
+      "drop_chance_pct": 18.37,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18312",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Shadewood Cloak",
+      "item_id": 18328,
+      "quality": "rare",
+      "slot": "Back",
+      "type": "Cloth",
+      "item_level": 59,
+      "required_level": 54,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 42,
+      "stats": [
+        "+13 Strength",
+        "+8 Stamina"
+      ],
+      "sell_price": "1g 42s 11c",
+      "source": "Alzzin the Wildshaper",
+      "source_type": "boss",
+      "drop_chance_pct": 30.61,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18328",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Marksman Bands",
+      "item_id": 18296,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Mail",
+      "item_level": 56,
+      "required_level": 51,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 146,
+      "stats": [
+        "+12 Agility",
+        "+8 Stamina",
+        "Equip: Improves your chance to hit with ranged weapons by 1.0%."
+      ],
+      "sell_price": "1g 20s 46c",
+      "source": "Wildspawn Rogue",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18296",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Unbridled Leggings",
+      "item_id": 18298,
+      "quality": "rare",
+      "slot": "Legs",
+      "type": "Leather",
+      "item_level": 56,
+      "required_level": 51,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 140,
+      "stats": [
+        "+11 Strength",
+        "+18 Stamina",
+        "Equip: Increased Defense +9."
+      ],
+      "sell_price": "2g 77c",
+      "source": "Wildspawn Satyr",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18298",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Peerless Belt",
+      "item_id": 15428,
+      "quality": "uncommon",
+      "slot": "Waist",
+      "type": "Leather",
+      "item_level": 56,
+      "required_level": 51,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 82,
+      "stats": [],
+      "sell_price": "80s 24c",
+      "source": "Warpwood Treant",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=15428",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Arachnidian Legguards",
+      "item_id": 14295,
+      "quality": "uncommon",
+      "slot": "Legs",
+      "type": "Cloth",
+      "item_level": 55,
+      "required_level": 50,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 62,
+      "stats": [],
+      "sell_price": "1g 32s 36c",
+      "source": "Warpwood Treant",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=14295",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Resplendent Sarong",
+      "item_id": 14324,
+      "quality": "uncommon",
+      "slot": "Legs",
+      "type": "Cloth",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 68,
+      "stats": [],
+      "sell_price": "1g 67s 6c",
+      "source": "Ironbark Protector",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=14324",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Bonecaster's Spaulders",
+      "item_id": 14298,
+      "quality": "uncommon",
+      "slot": "Shoulder",
+      "type": "Cloth",
+      "item_level": 56,
+      "required_level": 51,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 54,
+      "stats": [],
+      "sell_price": "96s 28c",
+      "source": "Warpwood Tangler",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=14298",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Praetorian Leggings",
+      "item_id": 15186,
+      "quality": "uncommon",
+      "slot": "Legs",
+      "type": "Leather",
+      "item_level": 55,
+      "required_level": 50,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 126,
+      "stats": [],
+      "sell_price": "1g 53s 73c",
+      "source": "Phase Lasher",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=15186",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Totem of Rebirth",
+      "item_id": null,
+      "quality": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Isalien",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": null,
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Listed by wowtbc.gg (no item link / \"Not yet discovered\"); ID not resolved against Wowhead Forever.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Libram of Hope",
+      "item_id": null,
+      "quality": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Isalien",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": null,
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Listed by wowtbc.gg (no item link / \"Not yet discovered\"); ID not resolved against Wowhead Forever.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Boots of Ferocity",
+      "item_id": null,
+      "quality": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Isalien",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": null,
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Listed by wowtbc.gg (no item link / \"Not yet discovered\"); ID not resolved against Wowhead Forever.",
+      "drop_rate_basis": null
+    }
+  ],
+  "quest_rewards": [
+    {
+      "name": "Sprinter's Sword",
+      "item_id": 18410,
+      "quest": "Pusillin and the Elder Azj'Tordin",
+      "slot": "Two-Hand",
+      "type": "Sword",
+      "item_level": 57,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18410",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Spry Boots",
+      "item_id": 18411,
+      "quest": "Pusillin and the Elder Azj'Tordin",
+      "slot": "Feet",
+      "type": "Leather",
+      "item_level": 57,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18411",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Lorespinner",
+      "item_id": 18491,
+      "quest": "Lethtendris's Web",
+      "slot": "Main Hand",
+      "type": "Dagger",
+      "item_level": 57,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18491",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Warpwood Bracers",
+      "item_id": 270124,
+      "quest": "Lethtendris's Web",
+      "slot": "Wrist",
+      "type": "Leather",
+      "item_level": 57,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=270124",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Satyrhide Armbands",
+      "item_id": 270125,
+      "quest": "Lethtendris's Web",
+      "slot": "Wrist",
+      "type": "Mail",
+      "item_level": 57,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=270125",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Milli's Shield",
+      "item_id": null,
+      "quest": "Shards of the Felvine",
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "wowhead_url": null,
+      "notes": "Name only (wowtbc.gg); ID not found on Wowhead Forever tooltips."
+    },
+    {
+      "name": "Milli's Lexicon",
+      "item_id": null,
+      "quest": "Shards of the Felvine",
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "wowhead_url": null,
+      "notes": "Name only (wowtbc.gg); ID not found on Wowhead Forever tooltips."
+    }
+  ],
+  "conflicts": [
+    "Timesaver.gg lists all three Dire Maul wings on one page and wowtbc.gg repeats the same trash list under East, West and North; trash mobs were assigned to wings by Wowhead tooltip source where possible."
+  ],
+  "gaps": [
+    "wowtbc.gg repeats an identical 21-item \"Trash\" list under all three Dire Maul wings (Gordok Bracers of Power, Ogre Forged Hauberk, Cyclone Spaulders, Oddly Magical Belt, Shaggy Leggings, Carrion Scorpid Helm, Bulky Iron Spaulders, Denwatcher's Shoulders, Heliotrope Cloak, Sublime Wristguards, Hedgecutter, Orphic Bracers, Wand of Arcane Potency, Eidolon Cloak, Eidolon Talisman, Petrified Band, Stonebark Gauntlets, Barbed Thorn Necklace, Marksman Bands, Unbridled Leggings, Phasing Boots). Wing is unknown, so only trash with a mob named by timesaver.gg/Wowhead is listed per wing.",
+    "wowtbc.gg East lists Isalien extras (Huntsman's Harpoon, Hammer of Revitalization, Totem of Rebirth, Libram of Hope, Boots of Ferocity) as \"Not yet discovered\".",
+    "3 item(s) from wowtbc.gg have no resolvable Wowhead Forever ID (stubs with item_id null): Totem of Rebirth, Libram of Hope, Boots of Ferocity.",
+    "Quest rewards: names/IDs from timesaver.gg and wowtbc.gg, quest mapping from wowtbc.gg/Warcraft Tavern; not all verified against quest pages.",
+    "kills/drops counts unavailable; drop_rate_display derived from drop_chance_pct.",
+    "Boss NPC IDs not verified (Wowhead NPC pages not readable).",
+    "Trash coverage limited to items found via tooltip source, timesaver.gg and wowtbc.gg; Forever-only drops those sources omit may be missing."
+  ],
+  "sources": [
+    "https://www.warcrafttavern.com/forever/guides/dire-maul-east/",
+    "https://wowtbc.gg/warcraftforever/loot-tables/dungeons/dire-maul-east/",
+    "https://timesaver.gg/tools/wow-forever/dungeon-loot/dire-maul",
+    "https://nether.wowhead.com/forever/tooltip/item/<ID>"
+  ]
+}

@@ -1,0 +1,1005 @@
+{
+  "dungeon": "Shaper's Terrace",
+  "order": 31,
+  "game_version": "WoW Forever",
+  "level_range": "58-60",
+  "recommended_level_range": "58-60",
+  "min_level": 58,
+  "zone": "Un'Goro Crater",
+  "location": "Un'Goro Crater, on a hill overlooking Marshal's Refuge at 48.1, 6.1 (Warcraft Tavern).",
+  "new_in_forever": true,
+  "bosses": [
+    {
+      "name": "Cinder",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Boss list per Warcraft Tavern (Tor'Rel and Izha'Rel are one encounter). NPC id/level not verified."
+    },
+    {
+      "name": "Titanosaur",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Boss list per Warcraft Tavern (Tor'Rel and Izha'Rel are one encounter). NPC id/level not verified."
+    },
+    {
+      "name": "Snowtalon",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Boss list per Warcraft Tavern (Tor'Rel and Izha'Rel are one encounter). NPC id/level not verified."
+    },
+    {
+      "name": "Tor'Rel",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Boss list per Warcraft Tavern (Tor'Rel and Izha'Rel are one encounter). NPC id/level not verified."
+    },
+    {
+      "name": "Izha'Rel",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Boss list per Warcraft Tavern (Tor'Rel and Izha'Rel are one encounter). NPC id/level not verified."
+    },
+    {
+      "name": "Vitrix",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Boss list per Warcraft Tavern (Tor'Rel and Izha'Rel are one encounter). NPC id/level not verified."
+    },
+    {
+      "name": "Direhorn Matriarch",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Boss list per Warcraft Tavern (Tor'Rel and Izha'Rel are one encounter). NPC id/level not verified."
+    },
+    {
+      "name": "Thunderhoof",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Boss list per Warcraft Tavern (Tor'Rel and Izha'Rel are one encounter). NPC id/level not verified."
+    },
+    {
+      "name": "Venomridge",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Boss list per Warcraft Tavern (Tor'Rel and Izha'Rel are one encounter). NPC id/level not verified."
+    },
+    {
+      "name": "Bolt",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Boss list per Warcraft Tavern (Tor'Rel and Izha'Rel are one encounter). NPC id/level not verified."
+    },
+    {
+      "name": "Nanaya",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Boss list per Warcraft Tavern (Tor'Rel and Izha'Rel are one encounter). NPC id/level not verified."
+    }
+  ],
+  "items": [
+    {
+      "name": "Tooth of the Matriarch",
+      "item_id": 280021,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Dagger",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 49,
+        "damage_max": 92,
+        "speed": 1.7,
+        "dps": 41.47
+      },
+      "armor": null,
+      "stats": [
+        "+10 Agility",
+        "Equip: Improves your chance to get a critical strike by 0.5%."
+      ],
+      "sell_price": "5g 69s 43c",
+      "source": "Direhorn Matriarch",
+      "source_type": "boss",
+      "drop_chance_pct": 41.38,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280021",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Deep Jungle Rifle",
+      "item_id": 280020,
+      "quality": "rare",
+      "slot": "Ranged",
+      "type": "Gun",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 70,
+        "damage_max": 130,
+        "speed": 3.1,
+        "dps": 32.26
+      },
+      "armor": null,
+      "stats": [
+        "+5 Stamina",
+        "Equip: Improves your chance to hit by 0.5%.",
+        "Equip: +14 Attack Power."
+      ],
+      "sell_price": "4g 25s 52c",
+      "source": "Thunderhoof",
+      "source_type": "boss",
+      "drop_chance_pct": 24.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280020",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Cinderedge Crescent",
+      "item_id": 280029,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Axe",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 69,
+        "damage_max": 129,
+        "speed": 2.4,
+        "dps": 41.25
+      },
+      "armor": null,
+      "stats": [
+        "+10 Stamina",
+        "Equip: Improves your chance to get a critical strike by 0.5%.",
+        "Equip: +14 Attack Power."
+      ],
+      "sell_price": "5g 86s 36c",
+      "source": "Cinder",
+      "source_type": "boss",
+      "drop_chance_pct": 51.85,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280029",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Leggings of Curation",
+      "item_id": 280025,
+      "quality": "rare",
+      "slot": "Legs",
+      "type": "Cloth",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 78,
+      "stats": [
+        "+19 Stamina",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 22."
+      ],
+      "sell_price": "2g 31s 16c",
+      "source": "Nanaya",
+      "source_type": "boss",
+      "drop_chance_pct": 23.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280025",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Legplates of Reinforced Crystal",
+      "item_id": 280024,
+      "quality": "rare",
+      "slot": "Legs",
+      "type": "Plate",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 575,
+      "stats": [
+        "+18 Strength",
+        "+22 Stamina",
+        "Equip: Improves your chance to get a critical strike by 1.0%."
+      ],
+      "sell_price": "4g 3s 7c",
+      "source": "Nanaya",
+      "source_type": "boss",
+      "drop_chance_pct": 26.67,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280024",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Regal Direhorn Drape",
+      "item_id": 280045,
+      "quality": "rare",
+      "slot": "Back",
+      "type": "Cloth",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 45,
+      "stats": [
+        "+11 Stamina",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 12.",
+        "Equip: +18 Attack Power."
+      ],
+      "sell_price": "1g 73s 35c",
+      "source": "Direhorn Matriarch",
+      "source_type": "boss",
+      "drop_chance_pct": 20.69,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280045",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Nanaya's Control Spire",
+      "item_id": 280023,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Staff",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 102,
+        "damage_max": 154,
+        "speed": 3.2,
+        "dps": 40.0
+      },
+      "armor": null,
+      "stats": [
+        "+19 Intellect",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 72.",
+        "Equip: Your spells pierce 6 Magical Resistance."
+      ],
+      "sell_price": "7g 17s 11c",
+      "source": "Nanaya",
+      "source_type": "boss",
+      "drop_chance_pct": 43.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280023",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Scaleguard Scimitar",
+      "item_id": 280022,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Sword",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 63,
+        "damage_max": 119,
+        "speed": 2.2,
+        "dps": 41.36
+      },
+      "armor": null,
+      "stats": [
+        "+8 Stamina",
+        "Equip: +14 Attack Power."
+      ],
+      "sell_price": "5g 71s 56c",
+      "source": "Direhorn Matriarch",
+      "source_type": "boss",
+      "drop_chance_pct": 37.93,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280022",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Titanosaur Scale Pendant",
+      "item_id": 280009,
+      "quality": "rare",
+      "slot": "Neck",
+      "type": null,
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+10 Stamina",
+        "+8 Spirit",
+        "+4 to All Resistances"
+      ],
+      "sell_price": "2g 34s 59c",
+      "source": "Titanosaur",
+      "source_type": "boss",
+      "drop_chance_pct": 60.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280009",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Gargantuan Wristguards",
+      "item_id": 280010,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Plate",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 287,
+      "stats": [
+        "+11 Stamina",
+        "+5 Spirit",
+        "Equip: Improves your chance to hit by 0.8%.",
+        "Equip: +20 Attack Power."
+      ],
+      "sell_price": "2g 7s 17c",
+      "source": "Titanosaur",
+      "source_type": "boss",
+      "drop_chance_pct": 70.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/1",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280010",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Deeproar Cord",
+      "item_id": 280011,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Cloth",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 50,
+      "stats": [
+        "+12 Intellect",
+        "+14 Spirit",
+        "Equip: Improves your chance to get a critical strike by 1.0%."
+      ],
+      "sell_price": "1g 18s 13c",
+      "source": "Titanosaur",
+      "source_type": "boss",
+      "drop_chance_pct": 40.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280011",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Talon of Tor'Rel",
+      "item_id": 280012,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Sword",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 52,
+        "damage_max": 97,
+        "speed": 1.8,
+        "dps": 41.39
+      },
+      "armor": null,
+      "stats": [
+        "+5 Stamina",
+        "Equip: +2 Weapon Damage.",
+        "Equip: +16 Attack Power."
+      ],
+      "sell_price": "5g 92s 81c",
+      "source": "Tor'Rel",
+      "source_type": "boss",
+      "drop_chance_pct": 32.14,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280012",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Frostfang Mail Vest",
+      "item_id": 280013,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Mail",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 370,
+      "stats": [
+        "+17 Stamina",
+        "Equip: Increases healing done by up to 40 and damage done by up to 13 for all magical spells and effects."
+      ],
+      "sell_price": "3g 56s 93c",
+      "source": "Tor'Rel",
+      "source_type": "boss",
+      "drop_chance_pct": 27.37,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280013",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Raptorscale Bulwark",
+      "item_id": 280014,
+      "quality": "rare",
+      "slot": "Off Hand",
+      "type": "Shield",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 2153,
+      "stats": [
+        "+12 Strength",
+        "Equip: Increases your chance to Parry an attack by 0.6%."
+      ],
+      "sell_price": "3g 82s 9c",
+      "source": "Tor'Rel",
+      "source_type": "boss",
+      "drop_chance_pct": 35.71,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280014",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Venomvessel Ring",
+      "item_id": 280015,
+      "quality": "rare",
+      "slot": "Finger",
+      "type": null,
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+11 Stamina",
+        "+9 Spirit",
+        "Equip: Improves your chance to hit by 1.1%."
+      ],
+      "sell_price": "2g 39s 65c",
+      "source": "Venomridge",
+      "source_type": "boss",
+      "drop_chance_pct": 27.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280015",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Spiderchitin Wrap",
+      "item_id": 280016,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Leather",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 176,
+      "stats": [
+        "+18 Strength",
+        "+24 Stamina",
+        "Equip: Increases Feral Combat +1."
+      ],
+      "sell_price": "3g 63c",
+      "source": "Venomridge",
+      "source_type": "boss",
+      "drop_chance_pct": 33.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280016",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Octoclaw Chain Boots",
+      "item_id": 280017,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Mail",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 255,
+      "stats": [
+        "+11 Agility",
+        "+16 Stamina",
+        "+14 Intellect"
+      ],
+      "sell_price": "2g 72s 71c",
+      "source": "Venomridge",
+      "source_type": "boss",
+      "drop_chance_pct": 43.33,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280017",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Hammer of Thundering Hooves",
+      "item_id": 280018,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Mace",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 142,
+        "damage_max": 214,
+        "speed": 3.3,
+        "dps": 53.94
+      },
+      "armor": null,
+      "stats": [
+        "+24 Strength",
+        "+17 Stamina",
+        "Equip: Improves your chance to get a critical strike by 1.0%."
+      ],
+      "sell_price": "6g 84s 80c",
+      "source": "Thunderhoof",
+      "source_type": "boss",
+      "drop_chance_pct": 44.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280018",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Dinofrill Casque",
+      "item_id": 280019,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Mail",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 301,
+      "stats": [
+        "+17 Agility",
+        "+24 Stamina",
+        "Equip: Improves your chance to get a critical strike by 1.0%."
+      ],
+      "sell_price": "2g 55s 48c",
+      "source": "Thunderhoof",
+      "source_type": "boss",
+      "drop_chance_pct": 20.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=280019",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Bolt's Charged Eyeball",
+      "item_id": 280032,
+      "quality": "rare",
+      "slot": "Trinket",
+      "type": null,
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "Equip: Dealing damage has a chance to deal 60 Nature damage to you or your current target. Deals 3 times as much damage to Dinosaurs. (Proc chance: 15%, 3s cooldown)"
+      ],
+      "sell_price": "2g 37s 7c",
+      "source": "Vitrix",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=280032",
+      "other_sources": [
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Unique. Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Crownroar Chestplate",
+      "item_id": 280027,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Plate",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 657,
+      "stats": [
+        "+21 Spirit",
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Equip: Increases healing done by up to 40 and damage done by up to 13 for all magical spells and effects."
+      ],
+      "sell_price": "4g 7s 51c",
+      "source": "Vitrix",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=280027",
+      "other_sources": [
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Albinofur Grips",
+      "item_id": 280026,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Mail",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 231,
+      "stats": [
+        "+12 Agility",
+        "+18 Stamina",
+        "Equip: Increased Bows +1."
+      ],
+      "sell_price": "1g 74s",
+      "source": "Vitrix",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=280026",
+      "other_sources": [
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Heartflame Gauntlets",
+      "item_id": 280028,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Plate",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 410,
+      "stats": [
+        "+14 Intellect",
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Equip: Increases damage done by Holy spells and effects by up to 18."
+      ],
+      "sell_price": "2g 5s 67c",
+      "source": "Cinder",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=280028",
+      "other_sources": [
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Sparklance Wand",
+      "item_id": 280031,
+      "quality": "rare",
+      "slot": "Ranged",
+      "type": "Wand",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+4 Spirit",
+        "Equip: Improves your chance to get a critical strike by 0.5%.",
+        "Equip: Increases damage done by Arcane spells and effects by up to 7."
+      ],
+      "sell_price": "4g 42s 96c",
+      "source": "Bolt",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=280031",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    }
+  ],
+  "quest_rewards": [
+    {
+      "name": "Potent Treads",
+      "item_id": 279906,
+      "quest": null,
+      "slot": "Feet",
+      "type": "Leather",
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279906",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Crystalline Pauldrons",
+      "item_id": 279904,
+      "quest": null,
+      "slot": "Shoulder",
+      "type": "Mail",
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279904",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Lost Researcher's Hood",
+      "item_id": 279931,
+      "quest": null,
+      "slot": "Head",
+      "type": "Cloth",
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279931",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Expeditionary Legplates",
+      "item_id": 279901,
+      "quest": null,
+      "slot": "Legs",
+      "type": "Plate",
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279901",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Slime-Resistant Shroud",
+      "item_id": 279932,
+      "quest": null,
+      "slot": "Head",
+      "type": "Cloth",
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279932",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Reinforced Muck Protectors",
+      "item_id": 279902,
+      "quest": null,
+      "slot": "Legs",
+      "type": "Plate",
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279902",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Beastslayer's Trident",
+      "item_id": 279910,
+      "quest": null,
+      "slot": "Two-Hand",
+      "type": "Polearm",
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279910",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Crystal-Infused Cleaver",
+      "item_id": 279908,
+      "quest": null,
+      "slot": "One-Hand",
+      "type": "Axe",
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279908",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Faintly Glowing Orb",
+      "item_id": 279912,
+      "quest": null,
+      "slot": "Held In Off-hand",
+      "type": null,
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279912",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Diemetradon Scale Spaulders",
+      "item_id": 279903,
+      "quest": null,
+      "slot": "Shoulder",
+      "type": "Mail",
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279903",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Ravasaur Hide Footpads",
+      "item_id": 279905,
+      "quest": null,
+      "slot": "Feet",
+      "type": "Leather",
+      "item_level": 62,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=279905",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    }
+  ],
+  "conflicts": [
+    "wowtbc.gg lists the same items (Albinofur Grips, Crownroar Chestplate, Heartflame Gauntlets, Sparklance Wand, Bolt's Charged Eyeball) under Snowtalon, Vitrix, Cinder and Bolt; timesaver.gg lists Vitrix with Bolt's Charged Eyeball/Crownroar Chestplate/Albinofur Grips and Cinder with Heartflame Gauntlets/Cinderedge Crescent. Wowhead tooltip source used where present."
+  ],
+  "gaps": [
+    "Quests (Horde: Crystalline Elements, Essence of Seeping Slimes, The Dark Crystal; Alliance: Mapping the Way Forward, Panic at the Digsite, Digestible Research) not mapped to reward items.",
+    "An unknown raid portal is mentioned behind a closed gate (not researched).",
+    "Quest rewards: names/IDs from timesaver.gg and wowtbc.gg, quest mapping from wowtbc.gg/Warcraft Tavern; not all verified against quest pages.",
+    "kills/drops counts unavailable; drop_rate_display derived from drop_chance_pct.",
+    "Boss NPC IDs not verified (Wowhead NPC pages not readable).",
+    "Trash coverage limited to items found via tooltip source, timesaver.gg and wowtbc.gg; Forever-only drops those sources omit may be missing."
+  ],
+  "sources": [
+    "https://www.warcrafttavern.com/forever/guides/shapers-terrace/",
+    "https://wowtbc.gg/warcraftforever/loot-tables/dungeons/shaper-s-terrace/",
+    "https://timesaver.gg/tools/wow-forever/dungeon-loot/the-shapers-terrace",
+    "https://nether.wowhead.com/forever/tooltip/item/<ID>"
+  ]
+}

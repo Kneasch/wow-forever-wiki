@@ -1,0 +1,1564 @@
+{
+  "dungeon": "Dire Maul (North)",
+  "order": 30,
+  "game_version": "WoW Forever",
+  "level_range": "56-60",
+  "recommended_level_range": "56-60",
+  "min_level": 56,
+  "zone": "Feralas",
+  "location": "Dire Maul, Feralas: north wall of the central courtyard (Crescent Key from Pusillin). Also reachable from Dire Maul West via The Athenaeum.",
+  "new_in_forever": false,
+  "bosses": [
+    {
+      "name": "Guard Mol'dar",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "No loot found. Drops Gordok Inner Door Key per Warcraft Tavern."
+    },
+    {
+      "name": "Stomper Kreeg",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "NPC id not verified for Forever."
+    },
+    {
+      "name": "Guard Fengus",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Loot per wowtbc.gg."
+    },
+    {
+      "name": "Guard Slip'kik",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "No loot found."
+    },
+    {
+      "name": "Captain Kromcrush",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "NPC id not verified for Forever."
+    },
+    {
+      "name": "Cho'Rush the Observer",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "NPC id not verified for Forever."
+    },
+    {
+      "name": "King Gordok",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "NPC id not verified for Forever."
+    },
+    {
+      "name": "Mizzle the Crafty",
+      "level": null,
+      "npc_id": null,
+      "wowhead_url": null,
+      "notes": "Tribute-run NPC; tooltip lists many drops. Listed by wowtbc.gg as a loot source; not in Warcraft Tavern boss list."
+    }
+  ],
+  "items": [
+    {
+      "name": "Kreeg's Mug",
+      "item_id": 18425,
+      "quality": "rare",
+      "slot": "Held In Off-hand",
+      "type": null,
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+10 Stamina",
+        "-20 Intellect",
+        "+6 Spirit",
+        "Equip: Reduces the hit chance of Fear effects against you by 10%."
+      ],
+      "sell_price": "1g 98s 96c",
+      "source": "Stomper Kreeg",
+      "source_type": "boss",
+      "drop_chance_pct": 100.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/1",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18425",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Grimy Metal Boots",
+      "item_id": 18521,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Plate",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 452,
+      "stats": [
+        "+17 Strength",
+        "+7 Stamina",
+        "+100 Armor",
+        "Equip: Increases your chance to Dodge an attack by 1.0%."
+      ],
+      "sell_price": "3g 1s 73c",
+      "source": "King Gordok",
+      "source_type": "boss",
+      "drop_chance_pct": 17.24,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18521",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Barbarous Blade",
+      "item_id": 18520,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Sword",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 138,
+        "damage_max": 207,
+        "speed": 3.2,
+        "dps": 53.91
+      },
+      "armor": null,
+      "stats": [
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Equip: +50 Attack Power.",
+        "Equip: +33 Attack Power against Humanoids."
+      ],
+      "sell_price": "7g 19s 78c",
+      "source": "King Gordok",
+      "source_type": "boss",
+      "drop_chance_pct": 24.14,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18520",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Tarnished Elven Ring",
+      "item_id": 18500,
+      "quality": "rare",
+      "slot": "Finger",
+      "type": null,
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+10 Agility",
+        "Equip: Improves your chance to hit by 1.0%."
+      ],
+      "sell_price": "2g 8s 91c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18500",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Insightful Hood",
+      "item_id": 18490,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Leather",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 139,
+      "stats": [
+        "+12 Stamina",
+        "+15 Intellect",
+        "+9 Spirit",
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Equip: Increases healing done by up to 24 and damage done by up to 8 for all magical spells and effects."
+      ],
+      "sell_price": "1g 96s 38c",
+      "source": "Cho'Rush the Observer",
+      "source_type": "boss",
+      "drop_chance_pct": 30.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18490",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Harmonious Gauntlets",
+      "item_id": 18527,
+      "quality": "rare",
+      "slot": "Hands",
+      "type": "Mail",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 231,
+      "stats": [
+        "+10 Stamina",
+        "+10 Intellect",
+        "+10 Spirit",
+        "Equip: Increases healing done by up to 33 and damage done by up to 11 for all magical spells and effects."
+      ],
+      "sell_price": "1g 72s 74c",
+      "source": "King Gordok",
+      "source_type": "boss",
+      "drop_chance_pct": 24.14,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18527",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Hyena Hide Jerkin",
+      "item_id": 18478,
+      "quality": "uncommon",
+      "slot": "Chest",
+      "type": "Leather",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 154,
+      "stats": [
+        "+15 Agility",
+        "+13 Stamina",
+        "Equip: Increased Defense +7."
+      ],
+      "sell_price": "2g 7s 25c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18478",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Skullcracking Mace",
+      "item_id": 18481,
+      "quality": "uncommon",
+      "slot": "Two-Hand",
+      "type": "Mace",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 119,
+        "damage_max": 179,
+        "speed": 3.2,
+        "dps": 46.56
+      },
+      "armor": null,
+      "stats": [
+        "+22 Strength",
+        "+7 Agility",
+        "Equip: +18 Attack Power against Undead."
+      ],
+      "sell_price": "5g 18s 14c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18481",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Boots of the Full Moon",
+      "item_id": 18507,
+      "quality": "rare",
+      "slot": "Feet",
+      "type": "Cloth",
+      "item_level": 62,
+      "required_level": 57,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 60,
+      "stats": [
+        "+12 Stamina",
+        "+12 Intellect",
+        "+11 Spirit",
+        "Equip: Increases healing done by up to 26 and damage done by up to 9 for all magical spells and effects."
+      ],
+      "sell_price": "1g 64s 52c",
+      "source": "Captain Kromcrush",
+      "source_type": "boss",
+      "drop_chance_pct": 18.18,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18507",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Scarab Plate Helm",
+      "item_id": 18480,
+      "quality": "uncommon",
+      "slot": "Head",
+      "type": "Plate",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 463,
+      "stats": [
+        "+10 Stamina",
+        "+17 Intellect",
+        "Equip: Increases healing done by up to 22 and damage done by up to 7 for all magical spells and effects."
+      ],
+      "sell_price": "2g 17s 20c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18480",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Carrion Scorpid Helm",
+      "item_id": 18479,
+      "quality": "uncommon",
+      "slot": "Head",
+      "type": "Mail",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 262,
+      "stats": [
+        "+14 Stamina",
+        "Equip: Improves your chance to hit by 1.0%.",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 18."
+      ],
+      "sell_price": "1g 87s 36c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18479",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Crown of the Ogre King",
+      "item_id": 18526,
+      "quality": "rare",
+      "slot": "Head",
+      "type": "Cloth",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 73,
+      "stats": [
+        "+12 Stamina",
+        "+16 Intellect",
+        "+11 Spirit",
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Equip: Your spells pierce 4 Magical Resistance."
+      ],
+      "sell_price": "1g 72s 74c",
+      "source": "King Gordok",
+      "source_type": "boss",
+      "drop_chance_pct": 27.59,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18526",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Oddly Magical Belt",
+      "item_id": 18475,
+      "quality": "uncommon",
+      "slot": "Waist",
+      "type": "Cloth",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 44,
+      "stats": [
+        "+13 Stamina",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 16."
+      ],
+      "sell_price": "82s 90c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18475",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Ogre Forged Hauberk",
+      "item_id": 18530,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Mail",
+      "item_level": 62,
+      "required_level": 57,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 365,
+      "stats": [
+        "+8 Strength",
+        "+20 Agility",
+        "+13 Stamina",
+        "+8 Intellect",
+        "Equip: Improves your chance to get a critical strike by 1.0%."
+      ],
+      "sell_price": "3g 29s 4c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18530",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Bracers of Prosperity",
+      "item_id": 18525,
+      "quality": "rare",
+      "slot": "Wrist",
+      "type": "Leather",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 77,
+      "stats": [
+        "+8 Stamina",
+        "+10 Intellect",
+        "+5 Spirit",
+        "Equip: Increases healing done by up to 22 and damage done by up to 7 for all magical spells and effects."
+      ],
+      "sell_price": "1g 45s 10c",
+      "source": "King Gordok",
+      "source_type": "boss",
+      "drop_chance_pct": 13.79,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/7",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18525",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Barrier Shield",
+      "item_id": 18499,
+      "quality": "rare",
+      "slot": "Off Hand",
+      "type": "Shield",
+      "item_level": 62,
+      "required_level": 57,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 2121,
+      "stats": [
+        "Equip: Increases your chance to Block attacks with a shield by 2.0%."
+      ],
+      "sell_price": "3g 50s 98c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18499",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Mud Stained Boots",
+      "item_id": 18476,
+      "quality": "uncommon",
+      "slot": "Feet",
+      "type": "Leather",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 106,
+      "stats": [
+        "+7 Strength",
+        "+15 Stamina",
+        "Equip: Increased Defense +4."
+      ],
+      "sell_price": "1g 55s 85c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18476",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Mugger's Belt",
+      "item_id": 18505,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Leather",
+      "item_level": 62,
+      "required_level": 57,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 98,
+      "stats": [
+        "+15 Stamina",
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Equip: Increased Daggers +1."
+      ],
+      "sell_price": "1g 38s 19c",
+      "source": "Captain Kromcrush",
+      "source_type": "boss",
+      "drop_chance_pct": 36.36,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/3",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18505",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Elemental Plate Girdle",
+      "item_id": 18529,
+      "quality": "rare",
+      "slot": "Waist",
+      "type": "Plate",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 358,
+      "stats": [
+        "+17 Strength",
+        "+10 Stamina"
+      ],
+      "sell_price": "1g 83s 84c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18529",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Mana Channeling Wand",
+      "item_id": 18483,
+      "quality": "rare",
+      "slot": "Ranged",
+      "type": "Wand",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "Equip: Chance on hit to restore 65 mana. (10ms cooldown)"
+      ],
+      "sell_price": "3g 91s 71c",
+      "source": "Cho'Rush the Observer",
+      "source_type": "boss",
+      "drop_chance_pct": 70.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/1",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18483",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Redoubt Cloak",
+      "item_id": 18495,
+      "quality": "rare",
+      "slot": "Back",
+      "type": "Cloth",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 45,
+      "stats": [
+        "+15 Stamina",
+        "Equip: Increased Defense +7."
+      ],
+      "sell_price": "1g 72s 74c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18495",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Cyclone Spaulders",
+      "item_id": 18528,
+      "quality": "rare",
+      "slot": "Shoulder",
+      "type": "Leather",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 129,
+      "stats": [
+        "+11 Stamina",
+        "+11 Intellect",
+        "+9 Spirit",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 14."
+      ],
+      "sell_price": "1g 96s 38c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18528",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Ogre Toothpick Shooter",
+      "item_id": 18482,
+      "quality": "uncommon",
+      "slot": "Ranged",
+      "type": "Bow",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 61,
+        "damage_max": 62,
+        "speed": 2.2,
+        "dps": 27.95
+      },
+      "armor": null,
+      "stats": [
+        "+6 Agility",
+        "+5 Stamina"
+      ],
+      "sell_price": "3g 10s 88c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18482",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Shaggy Leggings",
+      "item_id": 18477,
+      "quality": "uncommon",
+      "slot": "Legs",
+      "type": "Leather",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 135,
+      "stats": [
+        "+19 Intellect",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 13."
+      ],
+      "sell_price": "2g 7s 25c",
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18477",
+      "other_sources": [
+        "wowhead forever tooltip"
+      ],
+      "notes": null,
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Leggings of Destruction",
+      "item_id": 18524,
+      "quality": "rare",
+      "slot": "Legs",
+      "type": "Mail",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 324,
+      "stats": [
+        "+14 Agility",
+        "+21 Stamina",
+        "+13 Intellect",
+        "Equip: Improves your chance to get a critical strike by 1.0%."
+      ],
+      "sell_price": "3g 45s 49c",
+      "source": "King Gordok",
+      "source_type": "boss",
+      "drop_chance_pct": 24.14,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18524",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Kromcrush's Chestplate",
+      "item_id": 18503,
+      "quality": "rare",
+      "slot": "Chest",
+      "type": "Plate",
+      "item_level": 62,
+      "required_level": 57,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 647,
+      "stats": [
+        "+16 Strength",
+        "+16 Stamina",
+        "+130 Armor",
+        "Equip: Increased Defense +10."
+      ],
+      "sell_price": "3g 83s 88c",
+      "source": "Captain Kromcrush",
+      "source_type": "boss",
+      "drop_chance_pct": 9.09,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/11",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18503",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Observer's Shield",
+      "item_id": 18485,
+      "quality": "rare",
+      "slot": "Off Hand",
+      "type": "Shield",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 2089,
+      "stats": [
+        "+7 Stamina",
+        "+14 Intellect",
+        "Equip: Improves your chance to hit by 1.0%."
+      ],
+      "sell_price": "3g 34s 26c",
+      "source": "Cho'Rush the Observer",
+      "source_type": "boss",
+      "drop_chance_pct": 40.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/2",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18485",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Brightly Glowing Stone",
+      "item_id": 18523,
+      "quality": "rare",
+      "slot": "Held In Off-hand",
+      "type": null,
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+14 Stamina",
+        "Equip: Increases healing done by up to 29 and damage done by up to 10 for all magical spells and effects."
+      ],
+      "sell_price": "2g 30s 33c",
+      "source": "King Gordok",
+      "source_type": "boss",
+      "drop_chance_pct": 20.69,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/5",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18523",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Band of the Ogre King",
+      "item_id": 18522,
+      "quality": "rare",
+      "slot": "Finger",
+      "type": null,
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+14 Strength",
+        "+13 Stamina"
+      ],
+      "sell_price": "2g 30s 33c",
+      "source": "King Gordok",
+      "source_type": "boss",
+      "drop_chance_pct": 27.59,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/4",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18522",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": "Unique.",
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Cho'Rush's Blade",
+      "item_id": 18484,
+      "quality": "rare",
+      "slot": "One-Hand",
+      "type": "Sword",
+      "item_level": 61,
+      "required_level": 56,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 67,
+        "damage_max": 125,
+        "speed": 2.4,
+        "dps": 40.0
+      },
+      "armor": null,
+      "stats": [
+        "Equip: +20 Attack Power.",
+        "Equip: +30 Attack Power against Humanoids."
+      ],
+      "sell_price": "5g 22s 29c",
+      "source": "Cho'Rush the Observer",
+      "source_type": "boss",
+      "drop_chance_pct": 10.0,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/10",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18484",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Monstrous Glaive",
+      "item_id": 18502,
+      "quality": "rare",
+      "slot": "Two-Hand",
+      "type": "Polearm",
+      "item_level": 62,
+      "required_level": 57,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 123,
+        "damage_max": 185,
+        "speed": 2.9,
+        "dps": 53.1
+      },
+      "armor": null,
+      "stats": [
+        "+23 Stamina",
+        "Equip: Increases your chance to Parry an attack by 1.0%.",
+        "Equip: +24 Attack Power.",
+        "Equip: +36 Attack Power against Humanoids."
+      ],
+      "sell_price": "6g 85s 50c",
+      "source": "Captain Kromcrush",
+      "source_type": "boss",
+      "drop_chance_pct": 18.18,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": "~1/6",
+      "wowhead_url": "https://www.wowhead.com/forever/item=18502",
+      "other_sources": [
+        "wowhead forever tooltip",
+        "timesaver.gg",
+        "wowtbc.gg"
+      ],
+      "notes": null,
+      "drop_rate_basis": "derived from wowhead drop_chance_pct (no kill/drop counts available)"
+    },
+    {
+      "name": "Hawkeye Bow",
+      "item_id": 15296,
+      "quality": "uncommon",
+      "slot": "Ranged",
+      "type": "Bow",
+      "item_level": 63,
+      "required_level": 58,
+      "binding": "Binds when equipped",
+      "weapon": {
+        "damage_min": 35,
+        "damage_max": 65,
+        "speed": 1.7,
+        "dps": 29.41
+      },
+      "armor": null,
+      "stats": [],
+      "sell_price": "3g 46s 57c",
+      "source": "Captain Kromcrush",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=15296",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Grand Belt",
+      "item_id": 15191,
+      "quality": "uncommon",
+      "slot": "Waist",
+      "type": "Leather",
+      "item_level": 57,
+      "required_level": 52,
+      "binding": "Binds when equipped",
+      "weapon": null,
+      "armor": 83,
+      "stats": [],
+      "sell_price": "90s 34c",
+      "source": "Gordok Mastiff",
+      "source_type": "trash",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=15191",
+      "other_sources": [
+        "timesaver.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Robe of Combustion",
+      "item_id": 18450,
+      "quality": "uncommon",
+      "slot": "Chest",
+      "type": "Cloth",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 77,
+      "stats": [
+        "+17 Intellect",
+        "Equip: Increases damage done by Fire spells and effects by up to 26."
+      ],
+      "sell_price": "1g 65s 80c",
+      "source": "Guard Fengus",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18450",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Hyena Hide Belt",
+      "item_id": 18451,
+      "quality": "uncommon",
+      "slot": "Waist",
+      "type": "Leather",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 87,
+      "stats": [
+        "+13 Stamina",
+        "+70 Armor",
+        "Equip: +22 Attack Power."
+      ],
+      "sell_price": "1g 4s 45c",
+      "source": "Guard Fengus",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18451",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Modest Armguards",
+      "item_id": 18458,
+      "quality": "uncommon",
+      "slot": "Wrist",
+      "type": "Mail",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 141,
+      "stats": [
+        "+10 Intellect",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 12."
+      ],
+      "sell_price": "1g 24s 35c",
+      "source": "Guard Fengus",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18458",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Gallant's Wristguards",
+      "item_id": 18459,
+      "quality": "uncommon",
+      "slot": "Wrist",
+      "type": "Plate",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": 249,
+      "stats": [
+        "+10 Intellect",
+        "Equip: Increases healing done by up to 22 and damage done by up to 7 for all magical spells and effects."
+      ],
+      "sell_price": "1g 45s 91c",
+      "source": "Guard Fengus",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18459",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Unsophisticated Hand Cannon",
+      "item_id": 18460,
+      "quality": "uncommon",
+      "slot": "Ranged",
+      "type": "Gun",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 48,
+        "damage_max": 91,
+        "speed": 2.5,
+        "dps": 27.8
+      },
+      "armor": null,
+      "stats": [
+        "+8 Strength"
+      ],
+      "sell_price": "3g 10s 88c",
+      "source": "Guard Fengus",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18460",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Jagged Bone Fist",
+      "item_id": 18462,
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "type": "Fist Weapon",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 45,
+        "damage_max": 84,
+        "speed": 1.8,
+        "dps": 35.83
+      },
+      "armor": null,
+      "stats": [
+        "+8 Strength",
+        "+7 Stamina"
+      ],
+      "sell_price": "4g 14s 51c",
+      "source": "Guard Fengus",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18462",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Ogre Pocket Knife",
+      "item_id": 18463,
+      "quality": "uncommon",
+      "slot": "One-Hand",
+      "type": "Sword",
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": {
+        "damage_min": 60,
+        "damage_max": 112,
+        "speed": 2.4,
+        "dps": 35.83
+      },
+      "armor": null,
+      "stats": [
+        "+5 Stamina",
+        "Equip: +16 Attack Power.",
+        "Equip: Increases the chance your Pick Pocket and Distract abilities are successful by 2%."
+      ],
+      "sell_price": "4g 14s 51c",
+      "source": "Guard Fengus",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18463",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Gordok Nose Ring",
+      "item_id": 18464,
+      "quality": "uncommon",
+      "slot": "Finger",
+      "type": null,
+      "item_level": 60,
+      "required_level": 55,
+      "binding": "Binds when picked up",
+      "weapon": null,
+      "armor": null,
+      "stats": [
+        "+8 Strength",
+        "+12 Stamina"
+      ],
+      "sell_price": "1g 65s 80c",
+      "source": "Guard Fengus",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18464",
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Wowhead Forever tooltip shows no drop source or %.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Rod of the Ogre Magi",
+      "item_id": null,
+      "quality": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": null,
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Listed by wowtbc.gg (no item link / \"Not yet discovered\"); ID not resolved against Wowhead Forever.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Counterattack Lodestone",
+      "item_id": null,
+      "quality": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": null,
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Listed by wowtbc.gg (no item link / \"Not yet discovered\"); ID not resolved against Wowhead Forever.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Unyielding Maul",
+      "item_id": null,
+      "quality": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": null,
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Listed by wowtbc.gg (no item link / \"Not yet discovered\"); ID not resolved against Wowhead Forever.",
+      "drop_rate_basis": null
+    },
+    {
+      "name": "Mindsurge Robe",
+      "item_id": null,
+      "quality": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "binding": null,
+      "weapon": null,
+      "armor": null,
+      "stats": [],
+      "sell_price": null,
+      "source": "Mizzle the Crafty",
+      "source_type": "boss",
+      "drop_chance_pct": null,
+      "kills": null,
+      "drops": null,
+      "drop_rate_display": null,
+      "wowhead_url": null,
+      "other_sources": [
+        "wowtbc.gg"
+      ],
+      "notes": "Listed by wowtbc.gg (no item link / \"Not yet discovered\"); ID not resolved against Wowhead Forever.",
+      "drop_rate_basis": null
+    }
+  ],
+  "quest_rewards": [
+    {
+      "name": null,
+      "item_id": 22150,
+      "quest": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=22150",
+      "notes": "ID not verified."
+    },
+    {
+      "name": null,
+      "item_id": 22149,
+      "quest": null,
+      "slot": null,
+      "type": null,
+      "item_level": null,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=22149",
+      "notes": "ID not verified."
+    },
+    {
+      "name": "Gordok's Gloves",
+      "item_id": 18368,
+      "quest": null,
+      "slot": "Hands",
+      "type": "Leather",
+      "item_level": 60,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18368",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Gordok's Gauntlets",
+      "item_id": 18367,
+      "quest": null,
+      "slot": "Hands",
+      "type": "Mail",
+      "item_level": 60,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18367",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Gordok's Handwraps",
+      "item_id": 18369,
+      "quest": null,
+      "slot": "Hands",
+      "type": "Cloth",
+      "item_level": 60,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18369",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    },
+    {
+      "name": "Gordok's Handguards",
+      "item_id": 18366,
+      "quest": null,
+      "slot": "Hands",
+      "type": "Plate",
+      "item_level": 60,
+      "required_level": null,
+      "wowhead_url": "https://www.wowhead.com/forever/item=18366",
+      "notes": "IDs from timesaver.gg; stats read from Wowhead Forever tooltip."
+    }
+  ],
+  "conflicts": [],
+  "gaps": [
+    "wowtbc.gg repeats an identical 21-item \"Trash\" list under all three Dire Maul wings (Gordok Bracers of Power, Ogre Forged Hauberk, Cyclone Spaulders, Oddly Magical Belt, Shaggy Leggings, Carrion Scorpid Helm, Bulky Iron Spaulders, Denwatcher's Shoulders, Heliotrope Cloak, Sublime Wristguards, Hedgecutter, Orphic Bracers, Wand of Arcane Potency, Eidolon Cloak, Eidolon Talisman, Petrified Band, Stonebark Gauntlets, Barbed Thorn Necklace, Marksman Bands, Unbridled Leggings, Phasing Boots). Wing is unknown, so only trash with a mob named by timesaver.gg/Wowhead is listed per wing.",
+    "Dire Maul North quest rewards (Beads of Ogre Might/Mojo, Gordok gloves) are from timesaver.gg and not mapped to quests (A Broken Trap, Free Knot!, The Gordok Ogre Suit, Unfinished Gordok Business).",
+    "4 item(s) from wowtbc.gg have no resolvable Wowhead Forever ID (stubs with item_id null): Rod of the Ogre Magi, Counterattack Lodestone, Unyielding Maul, Mindsurge Robe.",
+    "Quest rewards: names/IDs from timesaver.gg and wowtbc.gg, quest mapping from wowtbc.gg/Warcraft Tavern; not all verified against quest pages.",
+    "kills/drops counts unavailable; drop_rate_display derived from drop_chance_pct.",
+    "Boss NPC IDs not verified (Wowhead NPC pages not readable).",
+    "Trash coverage limited to items found via tooltip source, timesaver.gg and wowtbc.gg; Forever-only drops those sources omit may be missing."
+  ],
+  "sources": [
+    "https://www.warcrafttavern.com/forever/guides/dire-maul-north/",
+    "https://wowtbc.gg/warcraftforever/loot-tables/dungeons/dire-maul-north/",
+    "https://timesaver.gg/tools/wow-forever/dungeon-loot/dire-maul",
+    "https://nether.wowhead.com/forever/tooltip/item/<ID>"
+  ]
+}
