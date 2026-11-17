@@ -115,8 +115,6 @@ function page({ title, tabLabel, body, toc }) {
     </ul>
     <ul class="tabs-right">
       <li class="selected"><a href="${esc(self)}">Read</a></li>
-      <li><a href="#">Edit</a></li>
-      <li><a href="#">History</a></li>
     </ul>
     <form class="search" role="search" action="#"><input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki"></form>
   </nav>
