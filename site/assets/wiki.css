@@ -347,7 +347,7 @@ a.q-rare, a.q-epic, a.q-uncommon, a.q-legendary { font-weight: 600; }
 .wow-tooltip {
   display: inline-block;
   min-width: 17rem;
-  max-width: 100%;
+  max-width: min(100%, 24rem); /* wrap long Equip: lines like the in-game tooltip, so it stays beside the infobox */
   background: #0b0d1c;
   color: #fff;
   border: 1px solid #a9a9a9;
@@ -414,7 +414,8 @@ a.q-rare, a.q-epic, a.q-uncommon, a.q-legendary { font-weight: 600; }
 
 /* ---------- Narrow screens ---------- */
 @media (max-width: 760px) {
-  #site-head { margin-left: 0; position: absolute; top: 0; right: 0; }
+  /* own row above the wordmark; absolute positioning overlapped it once the theme toggle was added */
+  #site-head { margin-left: 0; height: auto; padding: 0.4rem 1rem 0; flex-wrap: wrap; }
   #site-panel { position: static; width: auto; padding: 0.5rem 1rem 0; }
   #site-panel nav { display: none; }
   .wordmark { text-align: left; padding: 0.25rem 0 0.5rem; }
