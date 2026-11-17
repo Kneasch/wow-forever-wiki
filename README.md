@@ -23,6 +23,17 @@ and has a `routes` table for future backend endpoints like `/api/search`.
 
 Docker/nginx still works for production-like runs: `docker compose up`.
 
+## Build for static hosting
+
+```bash
+npm run build     # writes dist/: plain HTML with the shared includes inlined
+npm run preview   # serves dist/ at http://localhost:4173 to check it
+```
+
+Upload `dist/` to any static host. No nginx or Node is needed at runtime. Pages are `dist/w/<Page>.html`, and the links use
+`/w/<Page>`. Netlify, Cloudflare Pages and GitHub Pages serve those clean URLs and use `404.html` out of the box. On other
+hosts, turn on clean URLs (e.g. Vercel `"cleanUrls": true`).
+
 Then open http://localhost:8080/w/Hammer_of_Divine_Might
 
 ## Drop rates

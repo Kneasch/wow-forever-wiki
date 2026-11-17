@@ -5,7 +5,7 @@ const http = require('http');
 const fs = require('fs/promises');
 const path = require('path');
 
-const ROOT = path.join(__dirname, 'site');
+const ROOT = path.resolve(__dirname, process.env.SITE_DIR || 'site'); // SITE_DIR=dist to preview a build
 const PORT = process.env.PORT || 8080;
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
