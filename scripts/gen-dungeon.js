@@ -28,6 +28,8 @@ for (const d of allData) {
   for (const it of d.items) {
     if (!itemSources.has(it.name)) itemSources.set(it.name, []);
     itemSources.get(it.name).push({ d, it });
+    // a shared boss drop: same item and rate, one more source row
+    for (const s of it.also_from) itemSources.get(it.name).push({ d, it: { ...it, source: s } });
   }
 }
 // The same item can be more complete in another dungeon's file (an ID only one wing found)
@@ -49,7 +51,8 @@ const rarityClass = (display) => {
   return n <= 1 ? 'r-always' : n <= 9 ? 'r-common' : n <= 99 ? 'r-uncommon' : n <= 999 ? 'r-rare' : 'r-veryrare';
 };
 const bossNames = new Set(data.bosses.map((b) => b.name));
-const rateCell = (d) => `<td class="rarity ${rarityClass(d)}">${val(d)}</td>`;
+const rateCell = (d) => `<td class="${['rarity', rarityClass(d)].filter(Boolean).join(' ')}">${val(d)}</td>`;
+const dropsFrom = (i, name) => i.source === name || i.also_from.includes(name);
 const META_NOTE = /npc id|warcraft ?tavern|timesaver|wowtbc|verified|^level /i; // research notes, not lore
 
 // Research JSON is hand-collected and inconsistent. Clean it up before rendering:
@@ -81,6 +84,12 @@ function normalize(d) {
     }
     if (it.source_type === 'rare') b.rare = true;
     it.source = b.name;
+  }
+  // other_sources holds either other bosses that drop the item (Lambent Scale Bracers) or the
+  // websites it was checked on, depending on the file. Keep only names that are bosses here.
+  for (const it of d.items) {
+    it.also_from = (it.other_sources || []).map((n) => byLower.get(String(n).toLowerCase())?.name)
+      .filter((n) => n && n !== it.source);
   }
   d.quest_rewards = (d.quest_rewards || []).reduce((acc, q) => {
     let e = acc.find((x) => x.quest === (q.quest || null));
@@ -146,7 +155,7 @@ const rarityKey = `    <ul class="rarity-key" aria-label="Rarity key">
       <li><span class="swatch r-veryrare"></span>Very rare (1/1,000+)</li>
     </ul>`;
 
-const rateNote = `    <p>Drop rates are estimates rounded from Wowhead's drop percentage (for example 32.25% is shown as ~1/3), not from counted kills and drops.</p>`;
+const rateNote = `    <p>Drop rates are estimates rounded from Wowhead's drop percentage (for example 32.25% is shown as ~1/3), not from counted kills and drops. A <span class="unknown">?</span> means no drop rate is known yet.</p>`;
 
 // ---------- Item page ----------
 // Wowhead icon when we have one (site/assets/icons, see scripts/fetch-icons.js), else the placeholder hammer
@@ -204,10 +213,11 @@ function itemPage(it) {
   const sources = itemSources.get(it.name);
   const srcLink = ({ d, it: x }) => (d.bosses.some((b) => b.name === x.source) ? link(x.source) : x.source ? esc(x.source) : unknown);
   const dungeons = [...new Set(sources.map((s) => s.d.dungeon))].map((n) => link(n));
+  const andList = (xs) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}` : xs[0]);
   const where = dungeons.length > 1
     ? `It drops in ${dungeons.slice(0, -1).join(', ')} and ${dungeons[dungeons.length - 1]}.`
     : sources[0].it.source
-      ? `It drops from ${srcLink(sources[0]).replace(/^(Any|Trash)\b/, (m) => m.toLowerCase())} in ${dungeons[0]}.` // "drops from any enemy"
+      ? `It drops from ${andList(sources.map(srcLink)).replace(/^(Any|Trash)\b/, (m) => m.toLowerCase())} in ${dungeons[0]}.` // "drops from any enemy"
       : `It drops in ${dungeons[0]}; which enemies drop it is not known yet.`;
   // "an uncommon cloth wrist item that requires level 20"; unknown parts are left out
   const words = [...new Set([it.type, it.slot].filter(Boolean).map((s) => String(s).toLowerCase()))]
@@ -258,7 +268,7 @@ ${rarityKey}`;
 
 // ---------- Boss page ----------
 function bossPage(b) {
-  const drops = data.items.filter((i) => i.source === b.name);
+  const drops = data.items.filter((i) => dropsFrom(i, b.name));
   const kind = b.rare ? 'rare' : 'boss';
   const note = b.notes && / /.test(b.notes) && !META_NOTE.test(b.notes) ? ' ' + esc(b.notes.replace(/[.;]?$/, '.')) : '';
   const dropsSection = drops.length ? `${rateNote}
@@ -300,7 +310,7 @@ function dungeonPage() {
   const d = data;
   const bossList = d.bosses.map((b) => `        <li>${link(b.name)}${b.rare ? ' (rare)' : b.optional ? ' (optional)' : ''}</li>`).join('\n');
   const loot = d.bosses.map((b) => {
-    const drops = d.items.filter((i) => i.source === b.name);
+    const drops = d.items.filter((i) => dropsFrom(i, b.name));
     if (!drops.length) return '';
     const rows = drops.map((i) => lootRow(i)).join('\n');
     return `    <h3 id="${esc(slug(b.name))}">${link(b.name)}</h3>
@@ -313,13 +323,20 @@ ${rows}
       </table>
     </div>`;
   }).filter(Boolean).join('\n');
+  // Items not tied to a boss. The research names the mob when it knows it ("Anvilrage Soldier"),
+  // writes plain "Trash" when only "trash in this dungeon" is known, and leaves source empty when
+  // nothing is known (world drops, unknown mobs). Label the section by what it holds.
   const trash = d.items.filter((i) => !bossNames.has(i.source));
-  const trashLoot = trash.length ? `    <h3 id="Trash">Trash and other drops</h3>
-    <div class="table-scroll">
+  const generic = (i) => /^trash$/i.test(i.source || '');
+  const allGeneric = trash.every(generic);
+  const anyUnknown = trash.some((i) => !i.source);
+  const trashTitle = anyUnknown ? 'Trash and other drops' : 'Trash drops';
+  const trashLoot = trash.length ? `    <h3 id="Trash">${trashTitle}</h3>
+${allGeneric ? `    <p>These drop from the dungeon's regular enemies; which ones is not known yet.</p>\n` : ''}    <div class="table-scroll">
       <table class="wikitable">
-        <thead><tr><th>Item</th><th>Slot</th><th>Type</th><th>Source</th><th>Rarity</th></tr></thead>
+        <thead><tr><th>Item</th><th>Slot</th><th>Type</th>${allGeneric ? '' : '<th>Source</th>'}<th>Rarity</th></tr></thead>
         <tbody>
-${trash.map((i) => lootRow(i, `<td>${i.source ? esc(i.source) : unknown}</td>`)).join('\n')}
+${trash.map((i) => lootRow(i, allGeneric ? '' : `<td>${i.source ? esc(i.source) : unknown}</td>`)).join('\n')}
         </tbody>
       </table>
     </div>` : '';
