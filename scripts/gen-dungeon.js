@@ -17,7 +17,9 @@ const OUT = process.env.WIKI_OUT || path.join(__dirname, '..', 'site', 'w');
 // Some items drop in several dungeons (the Scarlet Monastery wings share one trash list).
 // Index every research file so an item page lists all of its sources, whichever dungeon
 // was generated last.
-const allData = fs.readdirSync(RESEARCH).filter((f) => f.endsWith('.json')).map((f) => {
+const ICONS = path.join(RESEARCH, 'icons.json'); // item_id -> icon name, from scripts/fetch-icons.js
+const icons = fs.existsSync(ICONS) ? JSON.parse(fs.readFileSync(ICONS, 'utf8')) : {};
+const allData = fs.readdirSync(RESEARCH).filter((f) => f.endsWith('.json') && f !== 'icons.json').map((f) => {
   const file = path.join(RESEARCH, f);
   return path.resolve(file) === path.resolve(process.argv[2]) ? data : load(file);
 });
@@ -149,6 +151,16 @@ const rarityKey = `    <ul class="rarity-key" aria-label="Rarity key">
 const rateNote = `    <p>Drop rates are estimates rounded from Wowhead's drop percentage (for example 32.25% is shown as ~1/3), not from counted kills and drops.</p>`;
 
 // ---------- Item page ----------
+// Wowhead icon when we have one (site/assets/icons, see scripts/fetch-icons.js), else the placeholder hammer
+const iconHtml = (it) => {
+  const icon = icons[it.item_id];
+  const inner = icon
+    ? `<img src="/assets/icons/${esc(icon)}.jpg" alt="" width="56" height="56">`
+    : `<svg viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><path d="M9 7h13v9H9zM14 16h3v14h-3z" fill="currentColor"/></svg>`;
+  return `          <span class="item-icon${qBorder(it.quality)}" role="img" aria-label="${icon ? esc(it.name) + ' icon' : 'Item icon placeholder'}">
+            ${inner}
+          </span>`;
+};
 function itemPage(it) {
   it = best(it);
   const w = it.weapon;
@@ -215,9 +227,7 @@ function itemPage(it) {
       <tr><th colspan="2" class="infobox-header">${esc(it.name)}</th></tr>
       <tr>
         <td colspan="2" class="infobox-image">
-          <span class="item-icon${qBorder(it.quality)}" role="img" aria-label="Item icon placeholder">
-            <svg viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><path d="M9 7h13v9H9zM14 16h3v14h-3z" fill="currentColor"/></svg>
-          </span>
+${iconHtml(it)}
         </td>
       </tr>
 ${rows.filter(Boolean).join('\n')}

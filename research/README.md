@@ -204,10 +204,15 @@ Unknown values are `null`.
 ## Generating pages
 
 ```bash
+node scripts/fetch-icons.js                                 # icon names -> research/icons.json, images -> site/assets/icons/
 node scripts/gen-dungeon.js research/<file>.json            # writes site/w/<Page>.html, overwriting
 for f in research/*.json; do node scripts/gen-dungeon.js "$f"; done   # all 35
 WIKI_OUT=/some/dir node scripts/gen-dungeon.js research/<file>.json   # dry run elsewhere
 ```
+
+Item icons come from the same Wowhead tooltip endpoint as the stats (its `icon` field). The images are downloaded from
+Wowhead's icon CDN (56x56 JPG) and served locally. `fetch-icons.js` only fetches what is missing, so run it again after adding
+a dungeon. Items with no `item_id` keep the placeholder icon.
 
 The generator reads every research file on each run, so an item that drops in several dungeons gets one page listing all of
 its sources, whichever dungeon is generated last.
