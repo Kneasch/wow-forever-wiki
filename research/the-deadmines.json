@@ -10,58 +10,65 @@
     {
       "name": "Rhahk'zor",
       "level": 19,
-      "npc_id": null,
-      "wowhead_url": null,
-      "notes": "Level from warcrafttavern guide. Classic NPC id 644 not verified in Forever."
+      "npc_id": 644,
+      "wowhead_url": "https://www.wowhead.com/forever/npc=644",
+      "notes": "NPC id and level verified on the Wowhead Forever NPC tooltip (2026-11-26)."
     },
     {
       "name": "Miner Johnson (rare, optional)",
       "level": 19,
-      "npc_id": null,
-      "wowhead_url": null,
-      "notes": "Level from warcrafttavern guide. Classic NPC id 3586 not verified in Forever."
+      "npc_id": 3586,
+      "wowhead_url": "https://www.wowhead.com/forever/npc=3586",
+      "notes": "NPC id and level verified on the Wowhead Forever NPC tooltip (2026-11-26)."
     },
     {
       "name": "Sneed's Shredder",
       "level": 20,
-      "npc_id": null,
-      "wowhead_url": null,
-      "notes": "Level from warcrafttavern guide. Classic NPC id 642 not verified in Forever."
+      "npc_id": 642,
+      "wowhead_url": "https://www.wowhead.com/forever/npc=642",
+      "notes": "NPC id and level verified on the Wowhead Forever NPC tooltip (2026-11-26)."
+    },
+    {
+      "name": "Sneed",
+      "level": 20,
+      "npc_id": 643,
+      "wowhead_url": "https://www.wowhead.com/forever/npc=643",
+      "notes": "NPC id and level verified on the Wowhead Forever NPC tooltip (2026-11-26)."
     },
     {
       "name": "Gilnid",
       "level": 20,
-      "npc_id": null,
-      "wowhead_url": null,
-      "notes": "Level from warcrafttavern guide. Classic NPC id 1763 not verified in Forever."
+      "npc_id": 1763,
+      "wowhead_url": "https://www.wowhead.com/forever/npc=1763",
+      "notes": "NPC id and level verified on the Wowhead Forever NPC tooltip (2026-11-26)."
     },
     {
       "name": "Mr. Smite",
       "level": 20,
-      "npc_id": null,
-      "wowhead_url": null,
-      "notes": "Level from warcrafttavern guide. Classic NPC id 646 not verified in Forever."
+      "npc_id": 646,
+      "wowhead_url": "https://www.wowhead.com/forever/npc=646",
+      "notes": "NPC id and level verified on the Wowhead Forever NPC tooltip (2026-11-26)."
     },
     {
       "name": "Captain Greenskin",
       "level": 20,
-      "npc_id": null,
-      "wowhead_url": null,
-      "notes": "Level from warcrafttavern guide. Classic NPC id 647 not verified in Forever."
+      "npc_id": 647,
+      "wowhead_url": "https://www.wowhead.com/forever/npc=647",
+      "notes": "NPC id and level verified on the Wowhead Forever NPC tooltip (2026-11-26)."
     },
     {
       "name": "Edwin VanCleef",
       "level": 21,
-      "npc_id": null,
-      "wowhead_url": null,
-      "notes": "Level from warcrafttavern guide. Classic NPC id 639 not verified in Forever."
+      "npc_id": 639,
+      "wowhead_url": "https://www.wowhead.com/forever/npc=639",
+      "notes": "NPC id and level verified on the Wowhead Forever NPC tooltip (2026-11-26)."
     },
     {
       "name": "Cookie (optional)",
-      "level": null,
-      "npc_id": null,
-      "wowhead_url": null,
-      "notes": "Level from warcrafttavern guide. Classic NPC id 645 not verified in Forever."
+      "level": 20,
+      "npc_id": 645,
+      "wowhead_url": "https://www.wowhead.com/forever/npc=645",
+      "notes": "NPC id and level verified on the Wowhead Forever NPC tooltip (2026-11-26)."
     }
   ],
   "items": [
@@ -714,6 +721,8 @@
       "sell_price": "8s 13c",
       "source": "Defias Watchman",
       "source_type": "trash",
+      "source_npc_id": 1725,
+      "source_level": "16-18",
       "drop_chance_pct": 7.67,
       "kills": null,
       "drops": null,
@@ -776,6 +785,8 @@
       "sell_price": "7s 7c",
       "source": "Defias Henchman",
       "source_type": "trash",
+      "source_npc_id": 594,
+      "source_level": "15-16",
       "drop_chance_pct": 6.64,
       "kills": null,
       "drops": null,
@@ -808,6 +819,8 @@
       "sell_price": "10s 16c",
       "source": "Defias Magician",
       "source_type": "trash",
+      "source_npc_id": 1726,
+      "source_level": "16-17",
       "drop_chance_pct": 7.26,
       "kills": null,
       "drops": null,
@@ -834,6 +847,8 @@
       "sell_price": "4s 8c",
       "source": "Defias Miner",
       "source_type": "trash",
+      "source_npc_id": 598,
+      "source_level": "17-18",
       "drop_chance_pct": 3.29,
       "kills": null,
       "drops": null,
@@ -866,6 +881,8 @@
       "sell_price": "8s 84c",
       "source": "Defias Conjurer",
       "source_type": "trash",
+      "source_npc_id": 619,
+      "source_level": "15-16",
       "drop_chance_pct": 7.58,
       "kills": null,
       "drops": null,
@@ -893,6 +910,8 @@
       "sell_price": "8s 53c",
       "source": "Defias Blackguard",
       "source_type": "trash",
+      "source_npc_id": 636,
+      "source_level": "19-20",
       "drop_chance_pct": 2.49,
       "kills": null,
       "drops": null,
@@ -924,6 +943,8 @@
       "sell_price": "12s 91c",
       "source": "Goblin Engineer",
       "source_type": "trash",
+      "source_npc_id": 622,
+      "source_level": "18-19",
       "drop_chance_pct": 2.74,
       "kills": null,
       "drops": null,
@@ -951,6 +972,8 @@
       "sell_price": "7s 13c",
       "source": "Goblin Shipbuilder",
       "source_type": "trash",
+      "source_npc_id": 3947,
+      "source_level": "19-20",
       "drop_chance_pct": 8.65,
       "kills": null,
       "drops": null,
@@ -978,6 +1001,8 @@
       "sell_price": "2s 59c",
       "source": "Goblin Craftsman",
       "source_type": "trash",
+      "source_npc_id": 1731,
+      "source_level": "18-19",
       "drop_chance_pct": 8.15,
       "kills": null,
       "drops": null,
@@ -1005,6 +1030,8 @@
       "sell_price": "2s 67c",
       "source": "Goblin Woodcarver",
       "source_type": "trash",
+      "source_npc_id": 641,
+      "source_level": "18-19",
       "drop_chance_pct": 8.94,
       "kills": null,
       "drops": null,
@@ -1036,6 +1063,8 @@
       "sell_price": "9s 75c",
       "source": "Undead Dynamiter",
       "source_type": "trash",
+      "source_npc_id": 625,
+      "source_level": "17-18",
       "drop_chance_pct": 5.92,
       "kills": null,
       "drops": null,
@@ -1068,6 +1097,8 @@
       "sell_price": "12s 23c",
       "source": "Skeletal Miner",
       "source_type": "trash",
+      "source_npc_id": 623,
+      "source_level": "17-18",
       "drop_chance_pct": 7.14,
       "kills": null,
       "drops": null,
@@ -1095,6 +1126,8 @@
       "sell_price": "6s 42c",
       "source": "Defias Strip Miner",
       "source_type": "trash",
+      "source_npc_id": 4416,
+      "source_level": "18-19",
       "drop_chance_pct": 4.07,
       "kills": null,
       "drops": null,
@@ -1658,7 +1691,7 @@
     "wowtbc.gg lists Viridian Band as a Cookie drop; timesaver.gg does not. Kept as id-null stub."
   ],
   "gaps": [
-    "Boss NPC ids not verified on Wowhead Forever (npc pages blocked); classic ids in notes only.",
+    "Trash mob NPC ids and levels come from the Wowhead Forever NPC tooltip, matched by exact name. Defias Digger was not found. Henchman, Conjurer, Magician, Skeletal Miner and Undead Dynamiter are mapped to Westfall (zone 40), not the instance (1581).",
     "kills/drops counts unavailable; drop_rate_display derived from drop_chance_pct.",
     "Trash drop list built from classic item ID scan; Forever-new items not discoverable via tooltip endpoint, so may be missing.",
     "Guide lists no loot or quest rewards; guide quests: Collecting Memories, Oh Brother..., Underground Assault, Red Silk Bandanas, The Defias Brotherhood, The Unsent Letter, Destruction in Deadmines (one new Westfall chain quest). Rewards not fetched.",
@@ -1673,7 +1706,8 @@
   "sources": [
     "https://www.warcrafttavern.com/forever/guides/the-deadmines/",
     "https://nether.wowhead.com/forever/tooltip/item/<ID>",
-    "https://wowtbc.gg/warcraftforever/loot-tables/dungeons/the-deadmines/"
+    "https://wowtbc.gg/warcraftforever/loot-tables/dungeons/the-deadmines/",
+    "https://nether.wowhead.com/forever/tooltip/npc/<id>"
   ],
   "order": 5,
   "recommended_level_range": "17-26",

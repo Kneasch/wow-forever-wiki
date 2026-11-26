@@ -196,6 +196,8 @@ bosses[], items[], quest_rewards[], conflicts[], gaps[], sources[]`, plus an opt
 Each item has: `name, item_id, quality` (lowercase), `slot, type, item_level, required_level, binding, weapon{damage_min,
 damage_max,speed,dps}|null, armor, stats[], sell_price, source, source_type` (boss|rare|trash|quest_item), `drop_chance_pct,
 kills, drops, drop_rate_display, drop_rate_basis, wowhead_url, other_sources[], notes`. Some items also have a `set` object.
+Trash items may also have `source_npc_id` and `source_level` (a number, or a range string such as `"17-18"`) from the NPC
+tooltip, `https://nether.wowhead.com/forever/tooltip/npc/<id>`.
 Unknown values are `null`.
 
 `quest_rewards[]` comes in four shapes across the files (`{quest, items[]}`, `{quest, item}`, `{quest, name, item_id}`,

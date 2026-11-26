@@ -216,7 +216,7 @@ function itemPage(it) {
   const lvlReq = it.required_level != null ? ` that requires level ${esc(it.required_level)}` : '';
   const intro = `<b>${esc(it.name)}</b> is ${article(knownQuality || words[0] || 'item')} ${desc}${lvlReq}. ${where}${it.source_type === 'quest_item' && !/quest item$/.test(desc) ? ' It is a quest item.' : ''}`;
   const sourceRows = sources.map((s) => {
-    const lvl = s.d.bosses.find((b) => b.name === s.it.source)?.level ?? null;
+    const lvl = s.d.bosses.find((b) => b.name === s.it.source)?.level ?? s.it.source_level ?? null;
     return `          <tr><td>${srcLink(s)}</td><td class="num">${lvl ?? unknown}</td><td>${link(s.d.dungeon)}</td><td class="num">1</td>${rateCell(s.it.drop_rate_display)}</tr>`;
   }).join('\n');
 
