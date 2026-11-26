@@ -4,6 +4,7 @@
 // Writes to site/w/<Page_name>.html (overwrites). Set WIKI_OUT to write somewhere else.
 const fs = require('fs');
 const path = require('path');
+const { slug, slugRegistry } = require('./slug');
 
 const RESEARCH = path.join(__dirname, '..', 'research');
 const load = (file) => {
@@ -34,8 +35,7 @@ for (const d of allData) {
 const best = (it) => itemSources.get(it.name).map((s) => s.it).find((x) => x.item_id) || it;
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-// "Grand Crusader Dathrohan / Balnazzar" -> Grand_Crusader_Dathrohan_Balnazzar (no subdirectory)
-const slug = (name) => name.replace(/\s*\/\s*/g, ' ').replace(/ /g, '_');
+// Page file names and links both come from slug() in scripts/slug.js, which keeps them valid on every OS
 const href = (name) => '/w/' + encodeURI(slug(name));
 const link = (name, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="${esc(href(name))}">${esc(name)}</a>`;
 const unknown = '<span class="unknown">?</span>';
@@ -367,8 +367,9 @@ ${questSection}`;
 }
 
 const written = [];
+const fileFor = slugRegistry(); // throws if two titles would share a file
 function write(title, html) {
-  fs.writeFileSync(path.join(OUT, slug(title) + '.html'), html);
+  fs.writeFileSync(path.join(OUT, fileFor(title) + '.html'), html);
   written.push(title);
 }
 write(data.dungeon, dungeonPage());
