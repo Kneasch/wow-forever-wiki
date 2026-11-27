@@ -31,7 +31,7 @@
       "professions": [
         { "name": "Cooking", "file": null, "icon": "inv_misc_food_15", "spell_id": 2550, "summary": "Food that restores health and mana and gives buffs.", "feeds": [], "camp": ["Journeyman Campfire (90)", "Cookie's Feast (140)", "Expert Campfire (200)", "Iron Oven (300)"] },
         { "name": "First Aid", "file": null, "icon": "spell_holy_sealofsacrifice", "spell_id": 3273, "summary": "Bandages and anti-venoms from cloth.", "feeds": [], "camp": ["Toxin Study (140)", "Plague Doctor's Laboratory (300)"] },
-        { "name": "Fishing", "file": null, "icon": "trade_fishing", "spell_id": 7620, "summary": "Fish for Cooking, plus treasure and rare catches.", "feeds": ["Cooking"], "camp": ["Fishing Rack (140)", "Fishing Hut (300)"] }
+        { "name": "Fishing", "file": "fishing.json", "icon": "trade_fishing", "spell_id": 7620, "summary": "Fish for Cooking, plus treasure and rare catches.", "feeds": ["Cooking"], "camp": ["Fish Bowl (20)", "Fishing Rack (140)", "Fishing Hut (300)"] }
       ]
     }
   ]
