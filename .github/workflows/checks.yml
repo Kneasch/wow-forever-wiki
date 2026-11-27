@@ -41,6 +41,7 @@ jobs:
             WIKI_OUT="$out" node scripts/gen-dungeon.js "$f" > /dev/null
           done
           WIKI_OUT="$out" node scripts/gen-profession.js > /dev/null
+          WIKI_OUT="$out" node scripts/gen-zones.js > /dev/null
           echo "Generated $(ls "$out" | wc -l) pages"
 
       - run: npm run build

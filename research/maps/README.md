@@ -4,7 +4,9 @@ World map images for every WoW Forever zone, continent and battleground, and the
 
 | File | What it is |
 |---|---|
-| `zones.json` | One entry per map: `area_id`, `ui_map_id`, `name`, `kind` (zone, continent, battleground), `parent`, `map_id`, `width`, `height`, `image`, `new_in_forever`, `has_image`. |
+| `zones.json` | One entry per map: `area_id`, `ui_map_id`, `name`, `kind` (zone, city, battleground or continent: a battleground is a map whose `Map.InstanceType` is 3, and a city is an area with the capital flag 0x100), `parent`, `map_id`, `width`, `height`, `image`, `new_in_forever`, `has_image`, `thumb`. |
+| `../../site/assets/maps/thumb/<area id>.webp` | A 334px-wide thumbnail of each map, for the Zones page. `--data-only` remakes them from the full images. |
+| `../../scripts/gen-zones.js` | Writes the [Zones](../../site/w/Zones.html) page: every map, grouped by continent, then cities, battlegrounds and continents. |
 | `../../site/assets/maps/<area id>.webp` | The map, fully explored, 1002&times;668. Continents use `map-<ui map id>.webp`, since they have no area ID. |
 | `../../scripts/fetch-maps.py` | Fetches both of the above. |
 | `../../scripts/map.js` | `zoneMap({ zoneId, pins })`: the map with pins, as static HTML. |

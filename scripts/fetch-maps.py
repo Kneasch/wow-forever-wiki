@@ -11,6 +11,8 @@ Writes
   research/maps/zones.json        every zone, continent and battleground map: area ID, UiMap ID, name,
                                   parent, size, image path, and whether it is new in Forever
   site/assets/maps/<area>.webp    the zone's world map, stitched from its 256px tiles
+  site/assets/maps/thumb/<area>.webp  a 334px-wide copy for the Zones list page (made from the image above,
+                                  so --data-only also refreshes thumbnails without downloading anything)
 
 Why wago.tools and not Wowhead: Wowhead's map images (wow.zamimg.com/images/wow/classic/maps/...) are the
 Classic Era art, and Forever has redrawn some zones and added new ones (Zephras Isle, Riverglades, ...).
@@ -19,7 +21,7 @@ tooltips give node coordinates as percentages of these same maps, keyed by the s
 (tooltip `map.zone`), so the two line up without any conversion.
 
 Tables used (https://wago.tools/db2/<table>?build=<build>):
-  UiMap               map ID, name, parent map, type (2 continent, 3 zone, 6 battleground)
+  UiMap               map ID, name, parent map, type (2 continent, 3 zone, 6 orphan: a map outside the zone tree)
   UiMapAssignment     which area ID a map shows (AreaID), and the map's bounds
   UiMapXMapArt        map -> art
   UiMapArt            art -> art style
@@ -27,6 +29,8 @@ Tables used (https://wago.tools/db2/<table>?build=<build>):
   UiMapArtTile        art -> tile grid of BLP FileDataIDs
   WorldMapOverlay     the "explored area" pieces drawn over the base art (towns, roads, forests), and where
   WorldMapOverlayTile overlay -> tile grid of BLP FileDataIDs
+  Map                 InstanceType 3 marks a battleground
+  AreaTable           flag 0x100 marks a capital city
 The base art alone looks like an unexplored map, so every overlay without a player condition is drawn on
 top, giving the fully explored map that players (and Wowhead) see.
 """
@@ -51,9 +55,13 @@ IMG_DIR = os.path.join(ROOT, 'site', 'assets', 'maps')
 WAGO = 'https://wago.tools'
 # wago.tools refuses Python's default User-Agent
 HEADERS = {'User-Agent': 'wow-forever-wiki-map-fetcher/1.0'}
-# Map types to keep: continents, zones and battlegrounds. Dungeons have no UiMap in the Forever client yet.
-KEEP_TYPES = {2: 'continent', 3: 'zone', 6: 'battleground'}
+# UiMap types to keep: continents, zones and orphan maps (battlegrounds are orphans). Dungeons have no UiMap
+# in the Forever client yet. Each kept map's `kind` is continent, battleground, city or zone (see main()).
+KEEP_TYPES = {2, 3, 6}
+BATTLEGROUND = 3        # Map.InstanceType
+AREA_CAPITAL = 0x100    # AreaTable.Flags_0
 WEBP_QUALITY = 82
+THUMB_WIDTH = 334  # a third of a zone map; the Zones page shows them at up to about 16rem
 
 
 def get(url, binary=False):
@@ -116,6 +124,8 @@ def main():
     print(f'Forever build {build} (Classic Era {classic} for the "new in Forever" check)')
 
     ui_maps = {int(r['ID']): r for r in table('UiMap', build)}
+    instance_type = {int(r['ID']): int(r['InstanceType']) for r in table('Map', build)}
+    area_flags = {int(r['ID']): int(r['Flags_0']) for r in table('AreaTable', build)}
     classic_ids = {int(r['ID']) for r in table('UiMap', classic)}
     assign = {}
     for r in table('UiMapAssignment', build):
@@ -152,14 +162,19 @@ def main():
 
     zones = []
     for mid, m in sorted(ui_maps.items()):
-        kind = KEEP_TYPES.get(int(m['Type']))
         a = assign.get(mid, [])
         # Root-level duplicates (parent 0) are alternate copies of a continent or zone; the parented map is the real one.
-        if not kind or not a or int(m['ParentUiMapID']) == 0:
+        if int(m['Type']) not in KEEP_TYPES or not a or int(m['ParentUiMapID']) == 0:
             continue
         area = int(a[0]['AreaID'])
-        if kind == 'continent':
-            area = None
+        if int(m['Type']) == 2:
+            kind, area = 'continent', None
+        elif instance_type.get(int(a[0]['MapID'])) == BATTLEGROUND:
+            kind = 'battleground'
+        elif area_flags.get(area, 0) & AREA_CAPITAL:
+            kind = 'city'
+        else:
+            kind = 'zone'
         art = map_art.get(mid)
         st = style.get(art_style.get(art))
         if not art or not st or art not in tiles:
@@ -198,12 +213,20 @@ def main():
             img.save(out, 'WEBP', quality=WEBP_QUALITY, method=6)
             print(f'  {z["name"]}: {os.path.relpath(out, ROOT)} ({os.path.getsize(out) // 1024} KB)')
 
+    os.makedirs(os.path.join(IMG_DIR, 'thumb'), exist_ok=True)
     for z in zones:
         del z['_tiles'], z['_tile_size'], z['_overlays']
-        z['has_image'] = os.path.exists(os.path.join(ROOT, 'site', z['image'].lstrip('/')))
+        src = os.path.join(ROOT, 'site', z['image'].lstrip('/'))
+        z['has_image'] = os.path.exists(src)
+        z['thumb'] = None
+        if z['has_image']:
+            z['thumb'] = z['image'].replace('/assets/maps/', '/assets/maps/thumb/')
+            with Image.open(src) as img:
+                th = img.resize((THUMB_WIDTH, round(img.height * THUMB_WIDTH / img.width)), Image.LANCZOS)
+                th.save(os.path.join(ROOT, 'site', z['thumb'].lstrip('/')), 'WEBP', quality=WEBP_QUALITY, method=6)
     os.makedirs(os.path.dirname(DATA), exist_ok=True)
     doc = {
-        'source': 'WoW Forever client tables on wago.tools (UiMap, UiMapAssignment, UiMapXMapArt, UiMapArt, UiMapArtStyleLayer, UiMapArtTile)',
+        'source': 'WoW Forever client tables on wago.tools (UiMap, UiMapAssignment, UiMapXMapArt, UiMapArt, UiMapArtStyleLayer, UiMapArtTile, WorldMapOverlay, Map, AreaTable)',
         'source_url': f'{WAGO}/db2/UiMap?build={build}',
         'build': build,
         'classic_era_build': classic,

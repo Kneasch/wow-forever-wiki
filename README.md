@@ -61,4 +61,5 @@ See [research/professions/README.md](research/professions/README.md) for the dat
 
 Node pages show spawn points as pins on the zone's map. The maps are the WoW Forever client's own world maps
 (`site/assets/maps/<area id>.webp`), and `scripts/map.js` draws pins for each node type (mining, herbalism, fishing, skinning,
-treasure). See [research/maps/README.md](research/maps/README.md).
+treasure). The [Zones](site/w/Zones.html) page lists every map, and `node scripts/gen-zones.js` regenerates it.
+See [research/maps/README.md](research/maps/README.md).
