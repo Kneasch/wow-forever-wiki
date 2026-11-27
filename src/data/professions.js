@@ -3,6 +3,10 @@
 //   <Profession>   e.g. Mining: training, nodes, smelting/recipes, materials, camp, Forever changes
 //   <Node>         e.g. Copper Vein: required skill, skill-up colours, zones, spawn maps, contents
 //   <Material>     e.g. Copper Ore: item infobox, where it is gathered, what makes it, what uses it
+//   A node and a material with the same name (Peacebloom the herb and the plant it is picked from) share one
+//   page: the item's infobox and sections, plus the node's skill, locations and contents.
+// Wording that differs by profession comes from the research file: gather_verb ("Mining it gives"),
+// recipe_section (Mining's Smelting), materials_note. See research/professions/README.md.
 // Research data comes from scripts/fetch-professions.js (Wowhead Forever tooltip API) plus hand-written fields.
 const fs = require('fs');
 const path = require('path');
@@ -18,7 +22,9 @@ const newTags = (x) => [...(x?.new_in_forever ? [D.tag('New in Forever')] : []),
 // A zone name, linked to its zone page (src/data/zones.js) when it has one
 const zoneSegs = (id, name) => (name == null ? [D.unknown()] : zonePageFor(id) ? [D.link(zonePageFor(id))] : [name]);
 const RECIPE_HEAD = ['Recipe', 'Skill', 'Reagents', 'Creates'];
-const KIND_WORD = { ore: 'ore', stone: 'stone', gem: 'gem', bar: 'metal bar', tool: 'tool' };
+const KIND_WORD = { ore: 'ore', stone: 'stone', gem: 'gem', bar: 'metal bar', herb: 'herb', seed: 'seed', tool: 'tool' };
+// Material tables on the profession page, in this order; kinds not listed here (tools) get no table
+const MATERIAL_KINDS = ['ore', 'stone', 'gem', 'bar', 'herb', 'seed'];
 
 function profession(p, withPages, index) {
   const P = p.profession;
@@ -72,29 +78,126 @@ function profession(p, withPages, index) {
     ]);
   };
 
-  // ----- Node pages -----
+  // ----- Materials: what makes and uses each one -----
+  const madeBy = (id) => p.recipes.filter((r) => r.creates?.item_id === id);
+  const usedBy = (id) => p.recipes.filter((r) => r.reagents?.some((x) => x.item_id === id));
+  const plannedMadeBy = (id) => (p.recipes_unresearched || []).filter((r) => r.creates_item_id === id);
+  const plannedUsedBy = (id) => (p.recipes_unresearched || []).filter((r) => r.reagent_item_ids?.includes(id));
+  const campUses = (id) => p.camp.filter((c) => c.build_reagents?.some((x) => x.item_id === id));
+  const recipeRow = (r) => [
+    D.cell([...iconSeg(mat.get(r.creates?.item_id)?.icon), r.name]), D.cell(D.val(r.required_skill), 'num'),
+    D.cell(D.join(r.reagents.map(counted))), D.cell(r.creates ? counted(r.creates) : [D.unknown()]),
+  ];
+  const kindWord = (m) => KIND_WORD[m.kind] || m.kind;
+  const itemImage = (m) => {
+    const q = m.quality || 'common';
+    return { cls: `item-icon${q === 'poor' || q === 'common' ? '' : ' q-border-' + q}`, label: `${m.name} icon`, src: m.icon ? `/assets/icons/${m.icon}.jpg` : null };
+  };
+  const itemRows = (m) => {
+    const q = m.quality || 'common';
+    return [
+      { th: 'Quality', segs: m.quality ? [D.q(q, cap(q))] : [D.unknown()] },
+      { th: 'Type', segs: [cap(kindWord(m))] },
+      { th: 'Item level', segs: D.val(m.item_level) },
+      { th: 'Max stack', segs: D.val(m.max_stack) },
+      { th: 'Sell price', segs: D.val(m.sell_price) },
+      { th: 'Profession', segs: [D.link(P)] },
+    ];
+  };
+  // "Copper Ore is a common ore used as a crafting reagent." With no known quality the article goes with the kind.
+  const itemSentence = (m) => {
+    const q = m.quality || 'common';
+    return [
+      D.b(m.name), ` is ${article(m.quality || kindWord(m))} `, ...(m.quality ? [D.q(q, q), ' '] : []),
+      `${kindWord(m)}${m.kind === 'tool' ? '' : ' used as a crafting reagent'}.`,
+      // Scarcity is shown by the Scarce tag in tables and explained in each scarce material's note
+      `${m.new_in_forever ? ' It is new in WoW Forever.' : ''} `,
+    ];
+  };
+  // Sections about the item: other nodes it comes from, recipes that make or use it, drops, camp features
+  const itemSections = (m, self) => {
+    const nodes = groups.filter((g) => g !== self && g.contains.includes(m.item_id));
+    const made = madeBy(m.item_id), used = usedBy(m.item_id), camp = campUses(m.item_id);
+    const plannedMade = plannedMadeBy(m.item_id), plannedUsed = plannedUsedBy(m.item_id);
+    const names = (rs) => D.andList(rs.map((r) => [r.name]));
+    const how = nodes.length ? ['It is gathered with ', D.link(P), ' from ', ...D.andList(nodes.map((g) => [D.link(g.name)])), '.']
+      : made.length ? ['It is made with ', D.link(P), ' by ', ...names(made), '.']
+        : plannedMade.length ? ['It is made with ', D.link(P), ' by ', ...names(plannedMade), '.']
+          : m.kind === 'tool' ? ['It is needed to use ', D.link(P), '.'] : [];
+    const sections = [];
+    if (nodes.length) {
+      sections.push(D.section('Gathered_from', self ? 'Also gathered from' : 'Gathered from', [
+        { p: [p.nodes_contents_basis] },
+        D.table(['Node', 'Requires', 'Main zones (spawn points)'], nodes.map((g) => [D.cell([D.link(g.name)]), D.cell(D.val(g.req), 'num'), D.cell(zonesOf(g))])),
+      ]));
+    }
+    if (made.length || plannedMade.length) {
+      sections.push(D.section('Created_by', 'Created by', [
+        made.length && D.table(RECIPE_HEAD, made.map(recipeRow)),
+        plannedMade.length && { p: ['New in Forever, not yet confirmed on Wowhead:'] },
+        plannedMade.length && { ul: plannedMade.map((r) => [D.b(r.name), ' (', D.link(P), ` ${r.required_skill}): ${r.note}`]) },
+      ]));
+    }
+    if (m.dropped_by && !['bar', 'tool'].includes(m.kind)) {
+      sections.push(D.section('Drops', 'Dropped by', [{ p: [`Wowhead also lists it as dropped by ${m.dropped_by.npc}${m.dropped_by.drop_chance_pct != null ? ` (${m.dropped_by.drop_chance_pct}%)` : ''}.`] }]));
+    }
+    if (used.length || plannedUsed.length || camp.length) {
+      sections.push(D.section('Used_for', `Used in ${P}`, [
+        used.length && D.table(RECIPE_HEAD, used.map(recipeRow)),
+        plannedUsed.length && { ul: plannedUsed.map((r) => [D.b(r.name), ' (', D.link(P), ` ${r.required_skill}, not yet confirmed): ${r.note}`]) },
+        camp.length && { p: ['Camp features built with it:'] },
+        camp.length && { ul: camp.map((c) => [D.link(P), ' camp: ', D.b(c.name), ' needs ', ...D.join(c.build_reagents.map(counted))]) },
+      ]));
+    }
+    return { how, sections };
+  };
+  const byName = new Map(p.materials.map((m) => [m.name, m]));
+
+  // ----- Node pages (with the item, when a material has the node's name) -----
+  const gathers = p.gather_verb || 'Gathering';
   for (const g of groups) {
+    const m = byName.get(g.name) || null;
+    const item = m ? itemSections(m, g) : null;
+    const nodeSentence = [
+      ...(m ? [`The ${g.name.toLowerCase()} ${P.toLowerCase()} node needs `] : [D.b(g.name), ` is ${g.variant === 'ooze' ? 'an ooze-covered' : 'a'} ${P.toLowerCase()} node that needs `]),
+      D.link(P), ' ', ...D.val(g.req),
+      `.${!m && g.new_in_forever ? ' It is new in WoW Forever.' : ''} `,
+      ...(g.contains.length ? [`${gathers} it gives `, ...D.andList(g.contains.map((id) => matLink(id))), '.'] : ['What it contains is not known yet.']),
+    ];
+    const objectIds = { th: `Object ID${g.objs.length > 1 ? 's' : ''}`, segs: [g.objs.map((o) => o.object_id).join(', ')] };
     out.push({
       title: g.name,
       component: Doc(),
       props: {
-        title: g.name, tab: 'Object',
-        infobox: {
-          name: g.name,
-          rows: [
-            { th: 'Type', segs: [D.link(P), ' node'] },
-            { th: 'Requires', segs: [D.link(P), ' (', ...D.val(g.req), ')'] },
-            { th: 'Contains', segs: contentsOf(g.contains) },
-            { th: 'New in Forever', segs: [g.new_in_forever ? 'Yes' : 'No'] },
-            { sub: 'Database' },
-            { th: `Object ID${g.objs.length > 1 ? 's' : ''}`, segs: [g.objs.map((o) => o.object_id).join(', ')] },
-          ],
-        },
-        intro: [{ p: [
-          D.b(g.name), ` is ${g.variant === 'ooze' ? 'an ooze-covered' : 'a'} ${P.toLowerCase()} node that needs `, D.link(P), ' ', ...D.val(g.req),
-          `.${g.new_in_forever ? ' It is new in WoW Forever.' : ''} `,
-          ...(g.contains.length ? ['Mining it gives ', ...D.andList(g.contains.map((id) => matLink(id))), '.'] : ['What it contains is not known yet.']),
-        ] }],
+        title: g.name, tab: m ? 'Item' : 'Object',
+        infobox: m
+          ? {
+            name: g.name,
+            image: itemImage(m),
+            rows: [
+              ...itemRows(m),
+              { sub: 'Node' },
+              { th: 'Requires', segs: [D.link(P), ' (', ...D.val(g.req), ')'] },
+              { th: 'Contains', segs: contentsOf(g.contains) },
+              { th: 'New in Forever', segs: [g.new_in_forever ? 'Yes' : 'No'] },
+              { sub: 'Database' },
+              { th: 'Item ID', segs: [String(m.item_id)] },
+              objectIds,
+              { th: 'Source', segs: [D.ext(wowhead('item', m.item_id), 'Wowhead')] },
+            ],
+          }
+          : {
+            name: g.name,
+            rows: [
+              { th: 'Type', segs: [D.link(P), ' node'] },
+              { th: 'Requires', segs: [D.link(P), ' (', ...D.val(g.req), ')'] },
+              { th: 'Contains', segs: contentsOf(g.contains) },
+              { th: 'New in Forever', segs: [g.new_in_forever ? 'Yes' : 'No'] },
+              { sub: 'Database' },
+              objectIds,
+            ],
+          },
+        intro: [{ p: m ? [...itemSentence(m), ...nodeSentence, ...(item.how.length ? [' ', ...item.how] : []), ...(m.note ? [' ' + m.note] : [])] : nodeSentence }],
         sections: [
           D.section('Skill', 'Skill', [{ p: [D.skill(g.req)] }, { key: 'skill' }, { p: [p.skill_up_rule] }]),
           D.section('Locations', 'Locations', [
@@ -108,57 +211,16 @@ function profession(p, withPages, index) {
           D.section('Contents', 'Contents', g.contains.length
             ? [{ p: [p.nodes_contents_basis] }, { ul: g.contains.map((id) => matLink(id)) }]
             : [{ p: ['What this node contains is not known yet.'] }]),
+          ...(item ? item.sections : []),
         ],
       },
     });
   }
 
-  // ----- Material pages -----
-  const madeBy = (id) => p.recipes.filter((r) => r.creates?.item_id === id);
-  const usedBy = (id) => p.recipes.filter((r) => r.reagents?.some((x) => x.item_id === id));
-  const plannedMadeBy = (id) => (p.recipes_unresearched || []).filter((r) => r.creates_item_id === id);
-  const plannedUsedBy = (id) => (p.recipes_unresearched || []).filter((r) => r.reagent_item_ids?.includes(id));
-  const campUses = (id) => p.camp.filter((c) => c.build_reagents?.some((x) => x.item_id === id));
-  const recipeRow = (r) => [
-    D.cell([...iconSeg(mat.get(r.creates?.item_id)?.icon), r.name]), D.cell(D.val(r.required_skill), 'num'),
-    D.cell(D.join(r.reagents.map(counted))), D.cell(r.creates ? counted(r.creates) : [D.unknown()]),
-  ];
-
-  for (const m of p.materials) {
-    const nodes = groups.filter((g) => g.contains.includes(m.item_id));
-    const made = madeBy(m.item_id), used = usedBy(m.item_id), camp = campUses(m.item_id);
-    const plannedMade = plannedMadeBy(m.item_id), plannedUsed = plannedUsedBy(m.item_id);
-    const q = m.quality || 'common';
-    const names = (rs) => D.andList(rs.map((r) => [r.name]));
-    const how = nodes.length ? ['It is gathered with ', D.link(P), ' from ', ...D.andList(nodes.map((g) => [D.link(g.name)])), '.']
-      : made.length ? ['It is made with ', D.link(P), ' by ', ...names(made), '.']
-        : plannedMade.length ? ['It is made with ', D.link(P), ' by ', ...names(plannedMade), '.']
-          : m.kind === 'tool' ? ['It is needed to use ', D.link(P), '.'] : [];
-    const sections = [];
-    if (nodes.length) {
-      sections.push(D.section('Gathered_from', 'Gathered from', [
-        { p: [p.nodes_contents_basis] },
-        D.table(['Node', 'Requires', 'Main zones (spawn points)'], nodes.map((g) => [D.cell([D.link(g.name)]), D.cell(D.val(g.req), 'num'), D.cell(zonesOf(g))])),
-      ]));
-    }
-    if (made.length || plannedMade.length) {
-      sections.push(D.section('Created_by', 'Created by', [
-        made.length && D.table(RECIPE_HEAD, made.map(recipeRow)),
-        plannedMade.length && { p: ['New in Forever, not yet confirmed on Wowhead:'] },
-        plannedMade.length && { ul: plannedMade.map((r) => [D.b(r.name), ' (', D.link(P), ` ${r.required_skill}): ${r.note}`]) },
-      ]));
-    }
-    if (m.dropped_by && ['ore', 'stone', 'gem'].includes(m.kind)) {
-      sections.push(D.section('Drops', 'Dropped by', [{ p: [`Wowhead also lists it as dropped by ${m.dropped_by.npc}${m.dropped_by.drop_chance_pct != null ? ` (${m.dropped_by.drop_chance_pct}%)` : ''}.`] }]));
-    }
-    if (used.length || plannedUsed.length || camp.length) {
-      sections.push(D.section('Used_for', `Used in ${P}`, [
-        used.length && D.table(RECIPE_HEAD, used.map(recipeRow)),
-        plannedUsed.length && { ul: plannedUsed.map((r) => [D.b(r.name), ' (', D.link(P), ` ${r.required_skill}, not yet confirmed): ${r.note}`]) },
-        camp.length && { p: ['Camp features built with it:'] },
-        camp.length && { ul: camp.map((c) => [D.link(P), ' camp: ', D.b(c.name), ' needs ', ...D.join(c.build_reagents.map(counted))]) },
-      ]));
-    }
+  // ----- Material pages (materials without a node of the same name) -----
+  const nodeNames = new Set(groups.map((g) => g.name));
+  for (const m of p.materials.filter((x) => !nodeNames.has(x.name))) {
+    const { how, sections } = itemSections(m, null);
     out.push({
       title: m.name,
       component: Doc(),
@@ -166,27 +228,15 @@ function profession(p, withPages, index) {
         title: m.name, tab: 'Item',
         infobox: {
           name: m.name,
-          image: { cls: `item-icon${q === 'poor' || q === 'common' ? '' : ' q-border-' + q}`, label: `${m.name} icon`, src: m.icon ? `/assets/icons/${m.icon}.jpg` : null },
+          image: itemImage(m),
           rows: [
-            { th: 'Quality', segs: m.quality ? [D.q(q, cap(q))] : [D.unknown()] },
-            { th: 'Type', segs: [cap(KIND_WORD[m.kind] || m.kind)] },
-            { th: 'Item level', segs: D.val(m.item_level) },
-            { th: 'Max stack', segs: D.val(m.max_stack) },
-            { th: 'Sell price', segs: D.val(m.sell_price) },
-            { th: 'Profession', segs: [D.link(P)] },
+            ...itemRows(m),
             { sub: 'Database' },
             { th: 'Item ID', segs: [String(m.item_id)] },
             { th: 'Source', segs: [D.ext(wowhead('item', m.item_id), 'Wowhead')] },
           ],
         },
-        intro: [{ p: [
-          // "an uncommon ore", "a rare gem"; with no known quality, the article goes with the kind ("an ore")
-          D.b(m.name), ` is ${article(m.quality || KIND_WORD[m.kind] || m.kind)} `, ...(m.quality ? [D.q(q, q), ' '] : []),
-          `${KIND_WORD[m.kind] || m.kind}${m.kind === 'tool' ? '' : ' used as a crafting reagent'}.`,
-          // Scarcity is shown by the Scarce tag in tables and explained in each scarce material's note
-          `${m.new_in_forever ? ' It is new in WoW Forever.' : ''} `,
-          ...how, ...(m.note ? [' ' + m.note] : []),
-        ] }],
+        intro: [{ p: [...itemSentence(m), ...how, ...(m.note ? [' ' + m.note] : [])] }],
         toc: sections.length > 1,
         sections,
       },
@@ -241,21 +291,22 @@ function profession(p, withPages, index) {
           ])),
           { key: 'skill' },
         ]),
-        D.section('Smelting', 'Smelting', [
-          { p: ['Smelting needs a forge unless noted. Skill levels are the Classic values; reagents and results are from the Forever tooltips.'] },
+        // Recipes the gathering profession itself has (Mining's Smelting); described in the research file
+        p.recipe_section && D.section(p.recipe_section.id, p.recipe_section.label, [
+          { p: [p.recipe_section.intro] },
           D.table(RECIPE_HEAD, p.recipes.map(recipeRow)),
           planned.length && { p: ['New in Forever, from fan guides and not yet confirmed on Wowhead:'] },
           planned.length && { ul: planned },
         ]),
         D.section('Materials', 'Materials', [
-          ...['ore', 'stone', 'gem', 'bar'].filter((k) => byKind(k).length).flatMap((k) => [
+          ...MATERIAL_KINDS.filter((k) => byKind(k).length).flatMap((k) => [
             { h3: [`${cap(KIND_WORD[k])}s`], id: `${cap(k)}s` },
             D.table(['Item', 'Item level', 'Sells for', 'Source'], byKind(k).map((m) => [
               D.cell([...iconSeg(m.icon), D.link(m.name, 'q-' + (m.quality || 'common')), ...newTags(m)]),
               D.cell(D.val(m.item_level), 'num'), D.cell(D.val(m.sell_price)), D.cell(sourceOf(m)),
             ])),
           ]),
-          { p: ['Gems come from mining nodes as a bonus. Which nodes drop which gems has not been researched yet.'] },
+          p.materials_note && { p: [p.materials_note] },
         ]),
         D.section('Camp', 'Camp features', [
           { p: ['WoW Forever lets players build a campsite. Each profession has camp features that need a Campfire nearby, and all of them share a 1 hour cooldown.'] },
@@ -274,7 +325,7 @@ function profession(p, withPages, index) {
           { p: ['Not researched yet:'] }, { ul: p.gaps.map((g) => [g]) },
         ]),
         D.section('Sources', 'Sources', [{ ul: p.sources.map((s) => [D.ext(s.url, s.name), ...(s.used_for ? [` – ${s.used_for}`] : [])]) }]),
-      ],
+      ].filter(Boolean),
     },
   });
   return out;

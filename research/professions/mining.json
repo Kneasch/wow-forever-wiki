@@ -4,6 +4,7 @@
   "game_version": "WoW Forever",
   "icon": "trade_mining",
   "summary": "Mining is a gathering profession. Miners collect ore, stone and gems from mineral veins found across the world, and smelt ore into metal bars at a forge. Blacksmithing and Engineering use most of what miners gather.",
+  "gather_verb": "Mining",
   "ranks": [
     {
       "rank": "Apprentice",
@@ -3710,6 +3711,12 @@
       "note": "Fan guides say it needs Heavy Thorium Ore and a Molten Foundry. The items exist on Wowhead; the spell was not found on the tooltip API yet."
     }
   ],
+  "recipe_section": {
+    "id": "Smelting",
+    "label": "Smelting",
+    "intro": "Smelting needs a forge unless noted. Skill levels are the Classic values; reagents and results are from the Forever tooltips."
+  },
+  "materials_note": "Gems come from mining nodes as a bonus. Which nodes drop which gems has not been researched yet.",
   "camp": [
     {
       "blueprint_item_id": 279960,
