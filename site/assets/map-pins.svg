@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Map pin sprite. Each node type is a <symbol> drawn in a 24x32 box with the pin's tip at (12, 31).
+    Colours come from currentColor, so CSS sets them per type: the .pin-mining class in wiki.css, and so on.
+    (No double hyphens in this comment: XML forbids them there, and the whole sprite then fails to load.)
+    Used by scripts/map.js:  <use href="/assets/map-pins.svg#pin-mining" .../>
+    To add a type: add a symbol here, a colour and legend rule in wiki.css, and an entry in PIN_TYPES.
+  -->
+  <defs>
+    <g id="pin-body">
+      <path d="M12 31C12 31 2.5 19.6 2.5 12a9.5 9.5 0 0 1 19 0C21.5 19.6 12 31 12 31z" fill="currentColor" stroke="#1d130a" stroke-width="1.2" stroke-linejoin="round"/>
+      <circle cx="12" cy="12" r="6.9" fill="#fff8e8"/>
+    </g>
+  </defs>
+
+  <!-- Mining: pickaxe -->
+  <symbol id="pin-mining" viewBox="0 0 24 32">
+    <use href="#pin-body"/>
+    <g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" transform="rotate(-40 12 12)">
+      <path d="M7.4 10.6C9.4 8 14.6 8 16.6 10.6"/>
+      <path d="M12 9.2V16.6"/>
+    </g>
+  </symbol>
+
+  <!-- Herbalism: leaf -->
+  <symbol id="pin-herbalism" viewBox="0 0 24 32">
+    <use href="#pin-body"/>
+    <path d="M7.6 16.4C7.4 10.8 10.6 7.4 16.6 7.4C16.8 13.2 13.4 16.4 7.6 16.4Z" fill="currentColor"/>
+    <path d="M8.4 15.6L13.6 10.4" stroke="#fff8e8" stroke-width="1" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- Fishing: fish (pools and schools) -->
+  <symbol id="pin-fishing" viewBox="0 0 24 32">
+    <use href="#pin-body"/>
+    <path d="M6.6 12C8.6 9.1 12.8 9.1 15 12C12.8 14.9 8.6 14.9 6.6 12Z" fill="currentColor"/>
+    <path d="M14.4 12L17.6 9.4V14.6Z" fill="currentColor"/>
+    <circle cx="9" cy="11.5" r="0.75" fill="#fff8e8"/>
+  </symbol>
+
+  <!-- Skinning: paw (skinnable creature spawns) -->
+  <symbol id="pin-skinning" viewBox="0 0 24 32">
+    <use href="#pin-body"/>
+    <g fill="currentColor">
+      <ellipse cx="12" cy="14.2" rx="3" ry="2.4"/>
+      <circle cx="8.6" cy="11" r="1.25"/>
+      <circle cx="10.8" cy="9" r="1.25"/>
+      <circle cx="13.2" cy="9" r="1.25"/>
+      <circle cx="15.4" cy="11" r="1.25"/>
+    </g>
+  </symbol>
+
+  <!-- Treasure: chest -->
+  <symbol id="pin-treasure" viewBox="0 0 24 32">
+    <use href="#pin-body"/>
+    <path d="M7.4 11.4C7.4 8.8 16.6 8.8 16.6 11.4Z" fill="currentColor"/>
+    <rect x="7.4" y="11.9" width="9.2" height="4.7" rx="0.6" fill="currentColor"/>
+    <rect x="11.2" y="11.2" width="1.6" height="2.4" rx="0.3" fill="#fff8e8"/>
+  </symbol>
+
+  <!-- Anything else: plain dot -->
+  <symbol id="pin-other" viewBox="0 0 24 32">
+    <use href="#pin-body"/>
+    <circle cx="12" cy="12" r="3.4" fill="currentColor"/>
+  </symbol>
+</svg>

@@ -43,7 +43,7 @@ Limits of the tooltip API, which decide what has to be researched by hand:
   and objects 650000-662000. Forever's new objects seem to sit between about 610000 and 705000; only 650000-662000 has been read
   in full.
 
-Coordinates are the zone map percentages (0-100) Wowhead gives. Pages plot them as dots on a plain grid; there is no map image.
+Coordinates are the zone map percentages (0-100) Wowhead gives. Pages pin them on the zone's map; see [research/maps](../maps/README.md).
 
 ## Mining file shape
 
