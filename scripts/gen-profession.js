@@ -35,7 +35,6 @@ const unknown = '<span class="unknown">?</span>';
 const val = (v) => (v === null || v === undefined || v === '' ? unknown : esc(v));
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const article = (w) => (/^[aeiou]/i.test(w) ? 'an' : 'a');
-const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
 const list = (xs) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
 const newTag = (x) => (x?.new_in_forever ? '<span class="new-tag">New in Forever</span>' : '') + (x?.scarce ? '<span class="new-tag">Scarce</span>' : '');
 const wowhead = (type, id) => `https://www.wowhead.com/forever/${type}=${id}`;

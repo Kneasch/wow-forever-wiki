@@ -107,7 +107,7 @@ def render(zone, build):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--build', help='Forever client build (default: latest on wago.tools)')
-    ap.add_argument('--only', help='comma-separated area IDs to (re)fetch images for')
+    ap.add_argument('--only', help='comma-separated area IDs (or map-<ui map id> for a continent) to (re)fetch images for')
     ap.add_argument('--data-only', action='store_true', help='write zones.json without downloading images')
     args = ap.parse_args()
 
@@ -189,9 +189,9 @@ def main():
 
     if not args.data_only:
         os.makedirs(IMG_DIR, exist_ok=True)
-        only = {int(x) for x in args.only.split(',')} if args.only else None
+        only = {x.strip() for x in args.only.split(',')} if args.only else None
         for z in zones:
-            if only and z['area_id'] not in only:
+            if only and os.path.splitext(os.path.basename(z['image']))[0] not in only:
                 continue
             out = os.path.join(ROOT, 'site', z['image'].lstrip('/'))
             img = render(z, build)

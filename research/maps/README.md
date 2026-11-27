@@ -75,7 +75,7 @@ breaks the whole file, and then every pin disappears.
 ```bash
 pip install Pillow                                  # once; decodes the client's BLP textures
 python3 scripts/fetch-maps.py                       # latest Forever build, every map (a minute or two)
-python3 scripts/fetch-maps.py --only 12,16593       # just these area IDs
+python3 scripts/fetch-maps.py --only 12,map-1414    # just these maps (area ID, or map-<id> for a continent)
 python3 scripts/fetch-maps.py --data-only           # rewrite zones.json, keep the images
 python3 scripts/fetch-maps.py --build 1.60.1.71139  # a specific build
 ```

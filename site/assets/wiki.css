@@ -432,7 +432,8 @@ a.q-rare, a.q-epic, a.q-uncommon, a.q-legendary { font-weight: 600; }
   --pin-other: #7a58a8;
 }
 .zone-map { margin: 0.5rem 0 1rem; max-width: 40rem; }
-.zone-map-frame { position: relative; width: 100%; background: var(--body-light); border: 1px solid var(--body-border); overflow: hidden; }
+/* Not overflow: hidden, so a pin near the top edge (its icon sits above its tip) is not cut off */
+.zone-map-frame { position: relative; width: 100%; background: var(--body-light); border: 1px solid var(--body-border); }
 .zone-map-frame img { display: block; width: 100%; height: 100%; }
 .zone-map-pins { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
 .zone-map-pins .grid { stroke: var(--body-border); stroke-width: 1.2; opacity: 0.6; }
