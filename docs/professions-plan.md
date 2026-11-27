@@ -121,7 +121,18 @@ generation. "Data in hand" means it was already pulled from the tooltip API duri
 
 #### Mining (done in this PR, see §6)
 
-#### Herbalism
+#### Herbalism (node data done; see `research/professions/herbalism.json`)
+
+- **Done:** 51 herb node objects found by scanning object IDs (see "Finding objects" in
+  [research/professions/README.md](../research/professions/README.md)), with names, skill, main zone and spawn points from
+  the tooltip API; 37 herbs and 4 seeds; the Incense Candle (Herbalism 20, learned with the profession, like Mining's
+  Lodestone), Greenhouse and Seed Hybridizer; one page per herb that is both the item and its node. The scan also found
+  Tomb Weed (694732, Tirisfal Glades, Herbalism 1), a fourth new starting-zone herb, and a second Forever Stranglekelp
+  object (618987) with no spawn points.
+- **Still open:** no node in the scanned ranges gives Demonsage, Death Lotus, Marefoil, Cleansed Felbloom or the scarce
+  herbs; what the new starting-zone herbs give; seeds, Greenhouse growth and Seed Hybridizer tiers; trainers.
+
+The research notes this section started from:
 
 - **Pages:** Herbalism; one per herb node (most share their name with the herb item, so a single page covers both: "Peacebloom"
   is the node and the item); Greenhouse and Seed Hybridizer; seed items; scarce herbs.
@@ -179,7 +190,7 @@ guide or a manual pass.
 
 1. **This PR:** the plan; Professions hub (all 12 listed, Mining linked); Mining end to end (profession, 24 node pages,
    54 material pages); sidebar and main-page links; CI generates profession pages on every OS.
-2. **Herbalism, then Skinning.** Herbalism reuses the Mining code almost unchanged. Skinning needs the "skill bracket by
+2. **Herbalism, then Skinning.** Herbalism node data and pages are done (the object scan of 600000-720000 is finished). Skinning needs the "skill bracket by
    creature level" table instead of nodes. Finish the object scan of 610000-705000 first, to catch every new node.
 3. **Item registry** (the decision in §3), then **Alchemy and Blacksmithing**. They consume the Phase 2 materials and have
    the clearest Forever additions.

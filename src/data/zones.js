@@ -35,7 +35,8 @@ function pages() {
   const profs = profIndex.groups.flatMap((g) => g.professions).filter((p) => p.file).map((p) => json(`professions/${p.file}`));
   const nodesIn = (z) => profs.flatMap((p) => {
     const groups = new Map();
-    for (const o of p.nodes.filter((n) => n.zone_id === z.area_id)) {
+    // continents have no area ID; never match nodes whose zone is unknown (null) to them
+    for (const o of p.nodes.filter((n) => z.area_id != null && n.zone_id === z.area_id)) {
       if (!groups.has(o.name)) groups.set(o.name, { name: o.name, profession: p.profession, type: pinTypeFor(p.profession), req: o.required_skill ?? null, coords: [] });
       groups.get(o.name).coords.push(...(o.coords || []));
     }

@@ -7,6 +7,8 @@ profession is in [docs/professions-plan.md](../../docs/professions-plan.md).
 |---|---|
 | `index.json` | Every profession, grouped as gathering, production or secondary, for the Professions hub. `file` points at the profession's research file, or is `null` while its pages are not written. |
 | `mining.json` | Mining: ranks, nodes, materials, smelting, camp features, sources, conflicts and gaps. |
+| `herbalism.json` | Herbalism: ranks, herb nodes, herbs and seeds, camp features, quest objects, sources and gaps. No recipes. |
+| `object-scan.json` | Every gathering object (herb, mining node, fishing pool, chest) found by scanning object IDs on the tooltip API, for the professions still to come. See [Finding objects](#finding-objects). |
 
 ## Commands
 
@@ -44,20 +46,34 @@ Limits of the tooltip API, which decide what has to be researched by hand:
 
 Coordinates are the zone map percentages (0-100) Wowhead gives. Pages pin them on the zone's map; see [research/maps](../maps/README.md).
 
-## Mining file shape
+## Profession file shape
 
-Top level: `profession, kind, game_version, icon, summary, ranks[], tools[], abilities[], nodes[], nodes_contents_basis,
-materials[], recipes[], recipes_unresearched[], camp[], other_items[], skill_up_rule, sources[], conflicts[], gaps[], fetched`.
+Top level: `profession, kind, game_version, icon, summary, gather_verb, ranks[], tools[], abilities[], nodes[],
+nodes_contents_basis, materials[], recipes[], recipes_unresearched[], recipe_section?, materials_note?, camp[],
+other_items[], skill_up_rule, sources[], conflicts[], gaps[], fetched`. Herbalism adds `quest_objects[]`.
 
 - `nodes[]`: `{ object_id, contains: [item_id], variant: null|"ooze", new_in_forever? }` plus the fetched fields.
   Objects with the same name share one page.
-- `materials[]`: `{ item_id, kind: ore|stone|gem|bar|tool, new_in_forever?, note? }` plus the fetched fields. Every material
-  gets an item page.
+- `materials[]`: `{ item_id, kind: ore|stone|gem|bar|herb|seed|tool, new_in_forever?, scarce?, note? }` plus the fetched
+  fields. Every material gets an item page. When a material has the same name as a node (Peacebloom the herb and the
+  Peacebloom plant), the two share one page: the item's infobox and sections plus the node's skill, locations and contents.
+- Wording that differs by profession: `gather_verb` starts the node pages' "<verb> it gives ..." sentence (Mining:
+  "Mining"; Herbalism: "Gathering"). `recipe_section` (`{ id, label, intro }`) adds a recipe table to the profession page
+  for a gathering profession that has its own recipes (Mining's Smelting). `materials_note` ends the Materials section.
+- `quest_objects[]` (Herbalism): objects that need the profession but are not nodes, such as Gloom Weed. Recorded, no pages.
 - `recipes[]`: `{ spell_id, required_skill, skill_basis }` plus the fetched fields.
 - `recipes_unresearched[]`: recipes that guides describe but whose spell is not on the tooltip API yet:
   `{ name, required_skill, reagent_item_ids, creates_item_id, note }`.
 - `camp[]`: `{ blueprint_item_id, placed_item_id, kind: blueprint|item, note?, effect_note? }` plus the fetched fields.
   `effect_note` replaces the fetched effect when Wowhead's text is broken (the Lodestone's bonus does not render).
+
+## Finding objects
+
+The tooltip API has no search, so herb nodes were found by reading every object ID in ranges: 1-5,000, 140,000-145,000
+and 175,000-185,000 (where Classic's gathering objects are) and 600,000-720,000 (Forever's new objects), keeping every
+object whose tooltip says Herb, Mining Node, Fishing Pool or Chest, or "Requires <Profession> (N)". The results are kept in
+`object-scan.json`, so Fishing and treasure pages can start from them. The scan is a one-off research step: about 140,000
+requests at 6 at a time.
 
 A page title must not also be a dungeon item: the build (`collectPages()` in `src/build/render.js`) stops with an error
 when two page sources would write the same page.

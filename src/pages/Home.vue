@@ -20,10 +20,11 @@
         </table>
       </div>
       <h2 id="Professions">Professions</h2>
-      <p>Gathering, production and secondary professions, with Forever's new camp features and materials. <WikiLink to="Mining" /> is written so far: every mineral vein with its skill and zones, smelting, and ore, stone, gem and bar pages.</p>
+      <p>Gathering, production and secondary professions, with Forever's new camp features and materials. <WikiLink to="Mining" /> and <WikiLink to="Herbalism" /> are written so far: every mineral vein and herb with its skill, zones and spawn maps, smelting, and pages for every ore, stone, gem, bar, herb and seed.</p>
       <ul>
         <li><WikiLink to="Professions">All professions</WikiLink></li>
         <li><WikiLink to="Mining" /></li>
+        <li><WikiLink to="Herbalism" /></li>
       </ul>
       <h2 id="Zones">Zones</h2>
       <p>World maps for every zone, city and battleground, including Forever's new zones such as Zephras Isle and Riverglades.</p>

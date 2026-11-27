@@ -1,0 +1,1051 @@
+{
+  "what": "Every gathering object found by reading object tooltips on the Wowhead Forever tooltip API (https://nether.wowhead.com/forever/tooltip/object/<id>) over ID ranges, keeping objects whose tooltip type is Herb, Mining Node, Fishing Pool, Fishing Node, Treasure or Chest, or that require a profession. Coordinates are not stored here; fetch-professions.js reads them for the objects a profession file uses.",
+  "ranges_read": [
+    "1-5000",
+    "140000-145000",
+    "175000-185000",
+    "600000-720000"
+  ],
+  "scanned": "2026-11-27",
+  "counts": {
+    "Herb": 57,
+    "Mining Node": 26,
+    "Fishing Pool": 24,
+    "Chest": 22,
+    "other": 0
+  },
+  "objects": [
+    {
+      "object_id": 324,
+      "name": "Small Thorium Vein",
+      "type": "Mining Node",
+      "requires": "Mining 245",
+      "zone_id": 490,
+      "spawn_count": 58
+    },
+    {
+      "object_id": 1610,
+      "name": "Incendicite Mineral Vein",
+      "type": "Mining Node",
+      "requires": "Mining 65",
+      "zone_id": 11,
+      "spawn_count": 15
+    },
+    {
+      "object_id": 1617,
+      "name": "Silverleaf",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 16593,
+      "spawn_count": 267
+    },
+    {
+      "object_id": 1618,
+      "name": "Peacebloom",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 16593,
+      "spawn_count": 304
+    },
+    {
+      "object_id": 1619,
+      "name": "Earthroot",
+      "type": "Herb",
+      "requires": "Herbalism 15",
+      "zone_id": 16593,
+      "spawn_count": 142
+    },
+    {
+      "object_id": 1620,
+      "name": "Mageroyal",
+      "type": "Herb",
+      "requires": "Herbalism 50",
+      "zone_id": 44,
+      "spawn_count": 95
+    },
+    {
+      "object_id": 1621,
+      "name": "Briarthorn",
+      "type": "Herb",
+      "requires": "Herbalism 70",
+      "zone_id": 44,
+      "spawn_count": 142
+    },
+    {
+      "object_id": 1622,
+      "name": "Bruiseweed",
+      "type": "Herb",
+      "requires": "Herbalism 100",
+      "zone_id": 44,
+      "spawn_count": 104
+    },
+    {
+      "object_id": 1623,
+      "name": "Wild Steelbloom",
+      "type": "Herb",
+      "requires": "Herbalism 115",
+      "zone_id": 33,
+      "spawn_count": 89
+    },
+    {
+      "object_id": 1624,
+      "name": "Kingsblood",
+      "type": "Herb",
+      "requires": "Herbalism 125",
+      "zone_id": 33,
+      "spawn_count": 119
+    },
+    {
+      "object_id": 1628,
+      "name": "Grave Moss",
+      "type": "Herb",
+      "requires": "Herbalism 120",
+      "zone_id": 405,
+      "spawn_count": 37
+    },
+    {
+      "object_id": 1667,
+      "name": "Incendicite Mineral Vein",
+      "type": "Mining Node",
+      "requires": "Mining 65",
+      "zone_id": 11,
+      "spawn_count": 13
+    },
+    {
+      "object_id": 1731,
+      "name": "Copper Vein",
+      "type": "Mining Node",
+      "requires": "Mining 1",
+      "zone_id": 16593,
+      "spawn_count": 339
+    },
+    {
+      "object_id": 1732,
+      "name": "Tin Vein",
+      "type": "Mining Node",
+      "requires": "Mining 65",
+      "zone_id": 44,
+      "spawn_count": 171
+    },
+    {
+      "object_id": 1733,
+      "name": "Silver Vein",
+      "type": "Mining Node",
+      "requires": "Mining 75",
+      "zone_id": 45,
+      "spawn_count": 153
+    },
+    {
+      "object_id": 1734,
+      "name": "Gold Vein",
+      "type": "Mining Node",
+      "requires": "Mining 155",
+      "zone_id": 45,
+      "spawn_count": 125
+    },
+    {
+      "object_id": 1735,
+      "name": "Iron Deposit",
+      "type": "Mining Node",
+      "requires": "Mining 125",
+      "zone_id": 16591,
+      "spawn_count": 176
+    },
+    {
+      "object_id": 2040,
+      "name": "Mithril Deposit",
+      "type": "Mining Node",
+      "requires": "Mining 175",
+      "zone_id": 47,
+      "spawn_count": 123
+    },
+    {
+      "object_id": 2041,
+      "name": "Liferoot",
+      "type": "Herb",
+      "requires": "Herbalism 150",
+      "zone_id": 15,
+      "spawn_count": 85
+    },
+    {
+      "object_id": 2042,
+      "name": "Fadeleaf",
+      "type": "Herb",
+      "requires": "Herbalism 160",
+      "zone_id": 15,
+      "spawn_count": 53
+    },
+    {
+      "object_id": 2043,
+      "name": "Khadgar's Whisker",
+      "type": "Herb",
+      "requires": "Herbalism 185",
+      "zone_id": 33,
+      "spawn_count": 109
+    },
+    {
+      "object_id": 2044,
+      "name": "Wintersbite",
+      "type": "Herb",
+      "requires": "Herbalism 195",
+      "zone_id": 36,
+      "spawn_count": 43
+    },
+    {
+      "object_id": 2045,
+      "name": "Stranglekelp",
+      "type": "Herb",
+      "requires": "Herbalism 85",
+      "zone_id": 11,
+      "spawn_count": 107
+    },
+    {
+      "object_id": 2046,
+      "name": "Goldthorn",
+      "type": "Herb",
+      "requires": "Herbalism 170",
+      "zone_id": 33,
+      "spawn_count": 128
+    },
+    {
+      "object_id": 2047,
+      "name": "Truesilver Deposit",
+      "type": "Mining Node",
+      "requires": "Mining 230",
+      "zone_id": 618,
+      "spawn_count": 114
+    },
+    {
+      "object_id": 2054,
+      "name": "Tin Vein",
+      "type": "Mining Node",
+      "requires": "Mining 65",
+      "zone_id": 44,
+      "spawn_count": 39
+    },
+    {
+      "object_id": 2055,
+      "name": "Copper Vein",
+      "type": "Mining Node",
+      "requires": "Mining 1",
+      "zone_id": 44,
+      "spawn_count": 32
+    },
+    {
+      "object_id": 2653,
+      "name": "Lesser Bloodstone Deposit",
+      "type": "Mining Node",
+      "requires": "Mining 75",
+      "zone_id": 45,
+      "spawn_count": 13
+    },
+    {
+      "object_id": 2866,
+      "name": "Firebloom",
+      "type": "Herb",
+      "requires": "Herbalism 205",
+      "zone_id": 51,
+      "spawn_count": 117
+    },
+    {
+      "object_id": 3239,
+      "name": "Benedict's Chest",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 14,
+      "spawn_count": 2
+    },
+    {
+      "object_id": 3714,
+      "name": "Alliance Strongbox",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 17,
+      "spawn_count": 3
+    },
+    {
+      "object_id": 3724,
+      "name": "Peacebloom",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 17,
+      "spawn_count": 93
+    },
+    {
+      "object_id": 3725,
+      "name": "Silverleaf",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 17,
+      "spawn_count": 77
+    },
+    {
+      "object_id": 3726,
+      "name": "Earthroot",
+      "type": "Herb",
+      "requires": "Herbalism 15",
+      "zone_id": 17,
+      "spawn_count": 60
+    },
+    {
+      "object_id": 3727,
+      "name": "Mageroyal",
+      "type": "Herb",
+      "requires": "Herbalism 50",
+      "zone_id": 17,
+      "spawn_count": 181
+    },
+    {
+      "object_id": 3729,
+      "name": "Briarthorn",
+      "type": "Herb",
+      "requires": "Herbalism 70",
+      "zone_id": 17,
+      "spawn_count": 175
+    },
+    {
+      "object_id": 3730,
+      "name": "Bruiseweed",
+      "type": "Herb",
+      "requires": "Herbalism 100",
+      "zone_id": 17,
+      "spawn_count": 89
+    },
+    {
+      "object_id": 3763,
+      "name": "Copper Vein",
+      "type": "Mining Node",
+      "requires": "Mining 1",
+      "zone_id": 17,
+      "spawn_count": 53
+    },
+    {
+      "object_id": 3764,
+      "name": "Tin Vein",
+      "type": "Mining Node",
+      "requires": "Mining 65",
+      "zone_id": 17,
+      "spawn_count": 63
+    },
+    {
+      "object_id": 141853,
+      "name": "Violet Tragan",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 47,
+      "spawn_count": 5
+    },
+    {
+      "object_id": 142140,
+      "name": "Purple Lotus",
+      "type": "Herb",
+      "requires": "Herbalism 210",
+      "zone_id": 16,
+      "spawn_count": 86
+    },
+    {
+      "object_id": 142141,
+      "name": "Arthas' Tears",
+      "type": "Herb",
+      "requires": "Herbalism 220",
+      "zone_id": 139,
+      "spawn_count": 62
+    },
+    {
+      "object_id": 142142,
+      "name": "Sungrass",
+      "type": "Herb",
+      "requires": "Herbalism 230",
+      "zone_id": 357,
+      "spawn_count": 107
+    },
+    {
+      "object_id": 142143,
+      "name": "Blindweed",
+      "type": "Herb",
+      "requires": "Herbalism 235",
+      "zone_id": 8,
+      "spawn_count": 177
+    },
+    {
+      "object_id": 142144,
+      "name": "Ghost Mushroom",
+      "type": "Herb",
+      "requires": "Herbalism 245",
+      "zone_id": 47,
+      "spawn_count": 44
+    },
+    {
+      "object_id": 142145,
+      "name": "Gromsblood",
+      "type": "Herb",
+      "requires": "Herbalism 250",
+      "zone_id": 4,
+      "spawn_count": 42
+    },
+    {
+      "object_id": 175207,
+      "name": "Beached Sea Creature",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 148,
+      "spawn_count": 4
+    },
+    {
+      "object_id": 175404,
+      "name": "Rich Thorium Vein",
+      "type": "Mining Node",
+      "requires": "Mining 275",
+      "zone_id": 616,
+      "spawn_count": 112
+    },
+    {
+      "object_id": 175566,
+      "name": "Gloom Weed",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 85,
+      "spawn_count": 124
+    },
+    {
+      "object_id": 175928,
+      "name": "Incendia Agave",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 400,
+      "spawn_count": 15
+    },
+    {
+      "object_id": 176189,
+      "name": "Skeletal Sea Turtle",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 148,
+      "spawn_count": 2
+    },
+    {
+      "object_id": 176583,
+      "name": "Golden Sansam",
+      "type": "Herb",
+      "requires": "Herbalism 260",
+      "zone_id": 16,
+      "spawn_count": 81
+    },
+    {
+      "object_id": 176584,
+      "name": "Dreamfoil",
+      "type": "Herb",
+      "requires": "Herbalism 270",
+      "zone_id": 16,
+      "spawn_count": 90
+    },
+    {
+      "object_id": 176586,
+      "name": "Mountain Silversage",
+      "type": "Herb",
+      "requires": "Herbalism 280",
+      "zone_id": 618,
+      "spawn_count": 88
+    },
+    {
+      "object_id": 176587,
+      "name": "Plaguebloom",
+      "type": "Herb",
+      "requires": "Herbalism 285",
+      "zone_id": 139,
+      "spawn_count": 171
+    },
+    {
+      "object_id": 176588,
+      "name": "Icecap",
+      "type": "Herb",
+      "requires": "Herbalism 290",
+      "zone_id": 618,
+      "spawn_count": 170
+    },
+    {
+      "object_id": 176589,
+      "name": "Black Lotus",
+      "type": "Herb",
+      "requires": "Herbalism 300",
+      "zone_id": 46,
+      "spawn_count": 45
+    },
+    {
+      "object_id": 176636,
+      "name": "Sungrass",
+      "type": "Herb",
+      "requires": "Herbalism 230",
+      "zone_id": 361,
+      "spawn_count": 23
+    },
+    {
+      "object_id": 176637,
+      "name": "Gromsblood",
+      "type": "Herb",
+      "requires": "Herbalism 250",
+      "zone_id": 361,
+      "spawn_count": 61
+    },
+    {
+      "object_id": 176638,
+      "name": "Golden Sansam",
+      "type": "Herb",
+      "requires": "Herbalism 260",
+      "zone_id": 361,
+      "spawn_count": 30
+    },
+    {
+      "object_id": 176639,
+      "name": "Dreamfoil",
+      "type": "Herb",
+      "requires": "Herbalism 270",
+      "zone_id": 361,
+      "spawn_count": 42
+    },
+    {
+      "object_id": 176640,
+      "name": "Mountain Silversage",
+      "type": "Herb",
+      "requires": "Herbalism 280",
+      "zone_id": 361,
+      "spawn_count": 34
+    },
+    {
+      "object_id": 176641,
+      "name": "Plaguebloom",
+      "type": "Herb",
+      "requires": "Herbalism 285",
+      "zone_id": 361,
+      "spawn_count": 65
+    },
+    {
+      "object_id": 176642,
+      "name": "Arthas' Tears",
+      "type": "Herb",
+      "requires": "Herbalism 220",
+      "zone_id": 361,
+      "spawn_count": 32
+    },
+    {
+      "object_id": 176643,
+      "name": "Small Thorium Vein",
+      "type": "Mining Node",
+      "requires": "Mining 245",
+      "zone_id": 361,
+      "spawn_count": 45
+    },
+    {
+      "object_id": 176645,
+      "name": "Mithril Deposit",
+      "type": "Mining Node",
+      "requires": "Mining 175",
+      "zone_id": 361,
+      "spawn_count": 48
+    },
+    {
+      "object_id": 176753,
+      "name": "Doom Weed",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 85,
+      "spawn_count": 33
+    },
+    {
+      "object_id": 177388,
+      "name": "Ooze Covered Rich Thorium Vein",
+      "type": "Mining Node",
+      "requires": "Mining 275",
+      "zone_id": 1377,
+      "spawn_count": 97
+    },
+    {
+      "object_id": 178244,
+      "name": "Practice Lockbox",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 44,
+      "spawn_count": 4
+    },
+    {
+      "object_id": 178245,
+      "name": "Practice Lockbox",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 44,
+      "spawn_count": 3
+    },
+    {
+      "object_id": 178246,
+      "name": "Practice Lockbox",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 44,
+      "spawn_count": 4
+    },
+    {
+      "object_id": 179486,
+      "name": "Battered Footlocker",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 406,
+      "spawn_count": 54
+    },
+    {
+      "object_id": 179487,
+      "name": "Waterlogged Footlocker",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 331,
+      "spawn_count": 38
+    },
+    {
+      "object_id": 179488,
+      "name": "Battered Footlocker",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 267,
+      "spawn_count": 23
+    },
+    {
+      "object_id": 179489,
+      "name": "Waterlogged Footlocker",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 331,
+      "spawn_count": 21
+    },
+    {
+      "object_id": 179490,
+      "name": "Battered Footlocker",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 3,
+      "spawn_count": 18
+    },
+    {
+      "object_id": 179491,
+      "name": "Waterlogged Footlocker",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 405,
+      "spawn_count": 36
+    },
+    {
+      "object_id": 179492,
+      "name": "Dented Footlocker",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 3,
+      "spawn_count": 7
+    },
+    {
+      "object_id": 179493,
+      "name": "Mossy Footlocker",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 8,
+      "spawn_count": 39
+    },
+    {
+      "object_id": 179494,
+      "name": "Dented Footlocker",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 51,
+      "spawn_count": 51
+    },
+    {
+      "object_id": 179496,
+      "name": "Dented Footlocker",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 440,
+      "spawn_count": 19
+    },
+    {
+      "object_id": 179497,
+      "name": "Mossy Footlocker",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 16,
+      "spawn_count": 80
+    },
+    {
+      "object_id": 179498,
+      "name": "Scarlet Footlocker",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 139,
+      "spawn_count": 52
+    },
+    {
+      "object_id": 180164,
+      "name": "Sungrass",
+      "type": "Herb",
+      "requires": "Herbalism 230",
+      "zone_id": 1977,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180165,
+      "name": "Purple Lotus",
+      "type": "Herb",
+      "requires": "Herbalism 210",
+      "zone_id": 1977,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180166,
+      "name": "Mountain Silversage",
+      "type": "Herb",
+      "requires": "Herbalism 280",
+      "zone_id": 1977,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180167,
+      "name": "Golden Sansam",
+      "type": "Herb",
+      "requires": "Herbalism 260",
+      "zone_id": 1977,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180168,
+      "name": "Dreamfoil",
+      "type": "Herb",
+      "requires": "Herbalism 270",
+      "zone_id": 1977,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180184,
+      "name": "School of Fish",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180215,
+      "name": "Hakkari Thorium Vein",
+      "type": "Mining Node",
+      "requires": "Mining 275",
+      "zone_id": 1977,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180248,
+      "name": "School of Tastyfish",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180369,
+      "name": "Muddy Churning Waters",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180582,
+      "name": "Oily Blackmouth School",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180655,
+      "name": "Floating Debris",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180656,
+      "name": "Sagefish School",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180657,
+      "name": "Firefin Snapper School",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180658,
+      "name": "School of Deviate Fish",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180661,
+      "name": "Oil Spill",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180662,
+      "name": "Floating Wreckage",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180663,
+      "name": "Sagefish School",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180664,
+      "name": "Oily Blackmouth School",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180682,
+      "name": "Oily Blackmouth School",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180683,
+      "name": "Firefin Snapper School",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180684,
+      "name": "Greater Sagefish School",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180685,
+      "name": "Floating Wreckage",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180690,
+      "name": "Large Scarab Coffer",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 3428,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180691,
+      "name": "Scarab Coffer",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 3429,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180712,
+      "name": "Stonescale Eel Swarm",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180750,
+      "name": "Oily Blackmouth School",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180751,
+      "name": "Floating Wreckage",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180752,
+      "name": "Firefin Snapper School",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180753,
+      "name": "Patch of Elemental Water",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180900,
+      "name": "Oily Blackmouth School",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180901,
+      "name": "Floating Wreckage",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 180902,
+      "name": "Firefin Snapper School",
+      "type": "Fishing Pool",
+      "requires": null,
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 181068,
+      "name": "Small Obsidian Chunk",
+      "type": "Mining Node",
+      "requires": "Mining 305",
+      "zone_id": 1377,
+      "spawn_count": 35
+    },
+    {
+      "object_id": 181069,
+      "name": "Large Obsidian Chunk",
+      "type": "Mining Node",
+      "requires": "Mining 305",
+      "zone_id": 1377,
+      "spawn_count": 33
+    },
+    {
+      "object_id": 181108,
+      "name": "Truesilver Deposit",
+      "type": "Mining Node",
+      "requires": "Mining 230",
+      "zone_id": 361,
+      "spawn_count": 79
+    },
+    {
+      "object_id": 181109,
+      "name": "Gold Vein",
+      "type": "Mining Node",
+      "requires": "Mining 155",
+      "zone_id": 361,
+      "spawn_count": 38
+    },
+    {
+      "object_id": 618987,
+      "name": "Stranglekelp",
+      "type": "Herb",
+      "requires": "Herbalism 85",
+      "zone_id": null,
+      "spawn_count": null
+    },
+    {
+      "object_id": 654624,
+      "name": "Hyjal Silphium",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 616,
+      "spawn_count": 18
+    },
+    {
+      "object_id": 656160,
+      "name": "Wilted Peacebloom",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 215,
+      "spawn_count": 81
+    },
+    {
+      "object_id": 656161,
+      "name": "Stunted Silverleaf",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 215,
+      "spawn_count": 82
+    },
+    {
+      "object_id": 656332,
+      "name": "Chunk of Amber",
+      "type": "Mining Node",
+      "requires": "Mining 1",
+      "zone_id": 141,
+      "spawn_count": 21
+    },
+    {
+      "object_id": 656333,
+      "name": "Large Chunk of Amber",
+      "type": "Mining Node",
+      "requires": "Mining 1",
+      "zone_id": 141,
+      "spawn_count": 60
+    },
+    {
+      "object_id": 674124,
+      "name": "Traveler's Cache",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 33,
+      "spawn_count": 2
+    },
+    {
+      "object_id": 676349,
+      "name": "Narassin's Strongbox",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 148,
+      "spawn_count": 2
+    },
+    {
+      "object_id": 694732,
+      "name": "Tomb Weed",
+      "type": "Herb",
+      "requires": "Herbalism 1",
+      "zone_id": 85,
+      "spawn_count": 20
+    },
+    {
+      "object_id": 702301,
+      "name": "A Small Pack",
+      "type": "Chest",
+      "requires": null,
+      "zone_id": 46,
+      "spawn_count": 2
+    }
+  ]
+}
