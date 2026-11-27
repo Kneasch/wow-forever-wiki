@@ -49,3 +49,10 @@ Then open http://localhost:8080/w/Hammer_of_Divine_Might
 
 Rates are shown as a rounded `~1/N` rather than raw counts or percentages:
 `N = round(kills / drops)`, so 66 drops in 205 kills is `~1/3`.
+
+## Professions
+
+Profession pages (the Professions hub, Mining, every mining node and every ore, stone, gem and bar) are generated from
+`research/professions/` by `node scripts/gen-profession.js`. `scripts/fetch-professions.js` refreshes that data from Wowhead.
+See [research/professions/README.md](research/professions/README.md) for the data, and
+[docs/professions-plan.md](docs/professions-plan.md) for the plan to cover every profession.

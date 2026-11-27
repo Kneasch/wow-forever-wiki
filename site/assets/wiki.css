@@ -412,6 +412,21 @@ a.q-rare, a.q-epic, a.q-uncommon, a.q-legendary { font-weight: 600; }
 }
 .theme-toggle:hover { text-decoration: underline; }
 
+/* ---------- Professions ---------- */
+/* Skill-up colours, as in the game's recipe and node tooltips. Light fills in both themes, so text stays dark. */
+.sk-orange { background: #ff8a3d; }
+.sk-yellow { background: #ffe94d; }
+.sk-green { background: #5fd35f; }
+.sk-grey { background: #b5b5b5; }
+.skill-range { display: inline-flex; flex-wrap: wrap; gap: 2px; font-size: 0.78rem; font-variant-numeric: tabular-nums; }
+.skill-range span { color: #000; padding: 0 0.3rem; border-radius: 2px; white-space: nowrap; }
+.mini-icon { width: 18px; height: 18px; vertical-align: -4px; margin-right: 0.3rem; border: 1px solid var(--body-border); border-radius: 2px; }
+.new-tag { font-size: 0.7rem; font-weight: bold; color: var(--q-uncommon); margin-left: 0.3rem; white-space: nowrap; }
+.spawn-map { display: block; width: 100%; max-width: 30rem; height: auto; margin: 0.5rem 0; background: var(--body-light); border: 1px solid var(--body-border); }
+.spawn-map .grid { stroke: var(--body-border); stroke-width: 0.2; opacity: 0.6; }
+.spawn-map .dot { fill: #b8420f; stroke: #000; stroke-width: 0.2; }
+.spawn-map-caption { font-size: 0.78rem; color: var(--subtle); margin-top: 0; }
+
 /* ---------- Narrow screens ---------- */
 @media (max-width: 760px) {
   /* own row above the wordmark; absolute positioning overlapped it once the theme toggle was added */
