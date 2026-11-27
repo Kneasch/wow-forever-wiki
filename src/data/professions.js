@@ -6,7 +6,9 @@
 //   A node and a material with the same name (Peacebloom the herb and the plant it is picked from) share one
 //   page: the item's infobox and sections, plus the node's skill, locations and contents.
 // Wording that differs by profession comes from the research file: gather_verb ("Mining it gives"),
-// recipe_section (Mining's Smelting), materials_note. See research/professions/README.md.
+// recipe_section (Mining's Smelting), materials_note. Fishing pools have no required skill and no mapped
+// spawns, so the research file can name its nodes (node_word: "pool") and replace the skill bar and the
+// location maps with notes (node_skill_note, node_locations_note). See research/professions/README.md.
 // Research data comes from scripts/fetch-professions.js (Wowhead Forever tooltip API) plus hand-written fields.
 const fs = require('fs');
 const path = require('path');
@@ -22,9 +24,10 @@ const newTags = (x) => [...(x?.new_in_forever ? [D.tag('New in Forever')] : []),
 // A zone name, linked to its zone page (src/data/zones.js) when it has one
 const zoneSegs = (id, name) => (name == null ? [D.unknown()] : zonePageFor(id) ? [D.link(zonePageFor(id))] : [name]);
 const RECIPE_HEAD = ['Recipe', 'Skill', 'Reagents', 'Creates'];
-const KIND_WORD = { ore: 'ore', stone: 'stone', gem: 'gem', bar: 'metal bar', herb: 'herb', seed: 'seed', tool: 'tool' };
+const KIND_WORD = { ore: 'ore', stone: 'stone', gem: 'gem', bar: 'metal bar', herb: 'herb', seed: 'seed', fish: 'fish', catch: 'catch', tool: 'tool' };
 // Material tables on the profession page, in this order; kinds not listed here (tools) get no table
-const MATERIAL_KINDS = ['ore', 'stone', 'gem', 'bar', 'herb', 'seed'];
+const MATERIAL_KINDS = ['ore', 'stone', 'gem', 'bar', 'herb', 'seed', 'fish', 'catch'];
+const KIND_PLURAL = { fish: 'fish', catch: 'other catches' }; // otherwise the kind word plus "s"
 
 function profession(p, withPages, index) {
   const P = p.profession;
@@ -154,16 +157,25 @@ function profession(p, withPages, index) {
   const byName = new Map(p.materials.map((m) => [m.name, m]));
 
   // ----- Node pages (with the item, when a material has the node's name) -----
-  const gathers = p.gather_verb || 'Gathering';
+  const gives = p.gather_phrase || `${p.gather_verb || 'Gathering'} it gives`;
+  const nodeWord = p.node_word || 'node';
   for (const g of groups) {
     const m = byName.get(g.name) || null;
     const item = m ? itemSections(m, g) : null;
+    // Fishing pools need no skill of their own: say what the node is, without "that needs Fishing ?"
+    const noSkill = g.req == null && !!p.node_skill_note;
+    const mapped = g.objs.some((o) => o.zone);
     const nodeSentence = [
-      ...(m ? [`Its ${P.toLowerCase()} node needs `] : [D.b(g.name), ` is ${g.variant === 'ooze' ? 'an ooze-covered' : 'a'} ${P.toLowerCase()} node that needs `]),
-      D.link(P), ' ', ...D.val(g.req),
-      `.${!m && g.new_in_forever ? ' It is new in WoW Forever.' : ''} `,
-      ...(g.contains.length ? [`${gathers} it gives `, ...D.andList(g.contains.map((id) => matLink(id))), '.'] : ['What it contains is not known yet.']),
+      ...(noSkill
+        ? (m ? [] : [D.b(g.name), ` is a ${P.toLowerCase()} ${nodeWord}.${g.new_in_forever ? ' It is new in WoW Forever.' : ''} `])
+        : [
+          ...(m ? [`Its ${P.toLowerCase()} ${nodeWord} needs `] : [D.b(g.name), ` is ${g.variant === 'ooze' ? 'an ooze-covered' : 'a'} ${P.toLowerCase()} ${nodeWord} that needs `]),
+          D.link(P), ' ', ...D.val(g.req),
+          `.${!m && g.new_in_forever ? ' It is new in WoW Forever.' : ''} `,
+        ]),
+      ...(g.contains.length ? [`${gives} `, ...D.andList(g.contains.map((id) => matLink(id))), '.'] : ['What it contains is not known yet.']),
     ];
+    const requiresRow = noSkill ? [] : [{ th: 'Requires', segs: [D.link(P), ' (', ...D.val(g.req), ')'] }];
     const objectIds = { th: `Object ID${g.objs.length > 1 ? 's' : ''}`, segs: [g.objs.map((o) => o.object_id).join(', ')] };
     out.push({
       title: g.name,
@@ -176,8 +188,8 @@ function profession(p, withPages, index) {
             image: itemImage(m),
             rows: [
               ...itemRows(m),
-              { sub: 'Node' },
-              { th: 'Requires', segs: [D.link(P), ' (', ...D.val(g.req), ')'] },
+              { sub: cap(nodeWord) },
+              ...requiresRow,
               { th: 'Contains', segs: contentsOf(g.contains) },
               { th: 'New in Forever', segs: [g.new_in_forever ? 'Yes' : 'No'] },
               { sub: 'Database' },
@@ -189,8 +201,8 @@ function profession(p, withPages, index) {
           : {
             name: g.name,
             rows: [
-              { th: 'Type', segs: [D.link(P), ' node'] },
-              { th: 'Requires', segs: [D.link(P), ' (', ...D.val(g.req), ')'] },
+              { th: 'Type', segs: [D.link(P), ` ${nodeWord}`] },
+              ...requiresRow,
               { th: 'Contains', segs: contentsOf(g.contains) },
               { th: 'New in Forever', segs: [g.new_in_forever ? 'Yes' : 'No'] },
               { sub: 'Database' },
@@ -199,8 +211,8 @@ function profession(p, withPages, index) {
           },
         intro: [{ p: m ? [...itemSentence(m), ...nodeSentence, ...(item.how.length ? [' ', ...item.how] : []), ...(m.note ? [' ' + m.note] : [])] : nodeSentence }],
         sections: [
-          D.section('Skill', 'Skill', [{ p: [D.skill(g.req)] }, { key: 'skill' }, { p: [p.skill_up_rule] }]),
-          D.section('Locations', 'Locations', [
+          D.section('Skill', 'Skill', noSkill ? [{ p: [p.node_skill_note] }] : [{ p: [D.skill(g.req)] }, { key: 'skill' }, { p: [p.skill_up_rule] }]),
+          D.section('Locations', 'Locations', !mapped && p.node_locations_note ? [{ p: [p.node_locations_note] }, { p: [`Object ID${g.objs.length > 1 ? 's' : ''}: `, ...D.join(g.objs.map((o) => [D.ext(wowhead('object', o.object_id), o.object_id)]))] }] : [
             { p: [`Each object ID is a separate spawn set. Wowhead's tooltip data lists only the zone where each one spawns most, so ${g.name} may also appear in zones not listed here.`] },
             D.table(['Zone', 'Zone level', 'Spawn points', 'Object ID'], g.objs.map((o) => [
               D.cell(zoneSegs(o.zone_id, o.zone)), D.cell(D.val(o.zone_level), 'num'), D.cell(D.val(o.spawn_count), 'num'),
@@ -210,7 +222,7 @@ function profession(p, withPages, index) {
           ]),
           D.section('Contents', 'Contents', g.contains.length
             ? [{ p: [p.nodes_contents_basis] }, { ul: g.contains.map((id) => matLink(id)) }]
-            : [{ p: ['What this node contains is not known yet.'] }]),
+            : [{ p: [`What this ${nodeWord} contains is not known yet.`] }]),
           ...(item ? item.sections : []),
         ],
       },
@@ -245,6 +257,8 @@ function profession(p, withPages, index) {
 
   // ----- Profession page -----
   const byKind = (k) => p.materials.filter((m) => m.kind === k);
+  const anySkill = groups.some((g) => g.req != null);
+  const anyZone = groups.some((g) => g.objs.some((o) => o.zone));
   const sourceOf = (m) => {
     const ns = groups.filter((g) => g.contains.includes(m.item_id));
     if (ns.length) return D.join(ns.map((g) => [D.link(g.name)]));
@@ -266,7 +280,7 @@ function profession(p, withPages, index) {
           { th: 'Maximum skill', segs: [String(p.ranks[p.ranks.length - 1].max_skill)] },
           { th: 'Tool', segs: p.tools.length ? D.join(p.tools.map((t) => matLink(t.item_id, t.name))) : ['–'] },
           { th: 'Used by', segs: idx.feeds?.length ? D.join(idx.feeds.map((f) => (withPages.has(f) ? [D.link(f)] : [f]))) : ['–'] },
-          { th: 'Nodes', segs: [String(groups.length)] },
+          { th: `${cap(p.node_word || 'node')}s`, segs: [String(groups.length)] },
         ],
       },
       intro: [{ p: [D.b(P), ` is a ${p.kind} `, D.link('Professions', null, 'profession'), ` in WoW Forever. ${p.summary}`] }],
@@ -284,12 +298,16 @@ function profession(p, withPages, index) {
             ...p.abilities.map((a) => [D.b(a.name), ' (', D.ext(wowhead('spell', a.spell_id), `spell ${a.spell_id}`), `): ${a.note}`]),
           ] },
         ]),
-        D.section('Nodes', `${P} nodes`, [
-          { p: [`Nodes are listed by required skill. The colours show which skill levels a node still gives skill points at. Zones are the ones where each node spawns most (spawn points in brackets). ${p.nodes_contents_basis}`] },
-          D.table(['Node', 'Requires', 'Skill-up', 'Contains', 'Main zones'], groups.map((g) => [
-            D.cell([D.link(g.name), ...newTags(g)]), D.cell(D.val(g.req), 'num'), D.cell([D.skill(g.req)]), D.cell(contentsOf(g.contains)), D.cell(zonesOf(g)),
+        // Columns only when some node has the data: fishing pools have no required skill and no mapped zones
+        D.section('Nodes', p.nodes_label || `${P} nodes`, [
+          { p: [p.nodes_intro ? `${p.nodes_intro} ${p.nodes_contents_basis}` : `Nodes are listed by required skill. The colours show which skill levels a node still gives skill points at. Zones are the ones where each node spawns most (spawn points in brackets). ${p.nodes_contents_basis}`] },
+          D.table([cap(p.node_word || 'node'), ...(anySkill ? ['Requires', 'Skill-up'] : []), 'Contains', ...(anyZone ? ['Main zones'] : [])], groups.map((g) => [
+            D.cell([D.link(g.name), ...newTags(g)]),
+            ...(anySkill ? [D.cell(D.val(g.req), 'num'), D.cell([D.skill(g.req)])] : []),
+            D.cell(contentsOf(g.contains)),
+            ...(anyZone ? [D.cell(zonesOf(g))] : []),
           ])),
-          { key: 'skill' },
+          anySkill && { key: 'skill' },
         ]),
         // Recipes the gathering profession itself has (Mining's Smelting); described in the research file
         p.recipe_section && D.section(p.recipe_section.id, p.recipe_section.label, [
@@ -300,7 +318,7 @@ function profession(p, withPages, index) {
         ]),
         D.section('Materials', 'Materials', [
           ...MATERIAL_KINDS.filter((k) => byKind(k).length).flatMap((k) => [
-            { h3: [`${cap(KIND_WORD[k])}s`], id: `${cap(k)}s` },
+            { h3: [cap(KIND_PLURAL[k] || `${KIND_WORD[k]}s`)], id: cap(KIND_PLURAL[k] || `${k}s`).replace(/ /g, '_') },
             D.table(['Item', 'Item level', 'Sells for', 'Source'], byKind(k).map((m) => [
               D.cell([...iconSeg(m.icon), D.link(m.name, 'q-' + (m.quality || 'common')), ...newTags(m)]),
               D.cell(D.val(m.item_level), 'num'), D.cell(D.val(m.sell_price)), D.cell(sourceOf(m)),
