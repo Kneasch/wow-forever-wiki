@@ -1,7 +1,7 @@
 # Dungeon loot research: all 35 WoW Forever dungeons
 
 Raw research data for building item and dungeon pages. The site does not serve these files directly.
-`scripts/gen-dungeon.js` turns them into pages (see [Generating pages](#generating-pages)).
+`src/data/dungeons.js` turns them into pages (see [Generating pages](#generating-pages)).
 
 ## Which game, and which dungeons
 
@@ -113,7 +113,7 @@ Krol'Dok Stronghold is not on timesaver.gg, so all of its IDs came this way.
 ## Drop rates (important)
 
 The wiki's rule is `~1/N` with N to at most two decimal places: `N = kills / drops` when the counts are known, otherwise
-`N = 100 / drop_chance_pct`. Pages work the rate out from those fields (`rateOf` in `scripts/gen-dungeon.js`), so
+`N = 100 / drop_chance_pct`. Pages work the rate out from those fields (`rateOf` in `src/data/dungeons.js`), so
 `drop_rate_display` is only used when an item has neither, and older entries may still hold a rounded value there.
 
 Counts are rare: the tooltip only gives a percentage, and the Wowhead pages that hold the counts are rendered client-side.
@@ -209,11 +209,13 @@ Unknown values are `null`.
 ## Generating pages
 
 ```bash
-node scripts/fetch-icons.js                                 # icon names -> research/icons.json, images -> site/assets/icons/
-node scripts/gen-dungeon.js research/<file>.json            # writes site/w/<Page>.html, overwriting
-for f in research/*.json; do node scripts/gen-dungeon.js "$f"; done   # all 35
-WIKI_OUT=/some/dir node scripts/gen-dungeon.js research/<file>.json   # dry run elsewhere
+node scripts/fetch-icons.js   # icon names -> research/icons.json, images -> site/assets/icons/
+npm run dev                   # see the pages live at http://localhost:8080 while editing research files
+npm run build                 # every page of the wiki into dist/
 ```
+
+Every `research/*.json` file except `icons.json` is a dungeon; adding a file adds its pages, and the main page's dungeon table
+lists it by `order`.
 
 Item icons come from the same Wowhead tooltip endpoint as the stats (its `icon` field). The images are downloaded from
 Wowhead's icon CDN (56x56 JPG) and served locally. `fetch-icons.js` only fetches what is missing, so run it again after adding

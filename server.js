@@ -1,11 +1,16 @@
-// Lightweight local server for the wiki. Zero dependencies, Node 18+.
-// Mirrors nginx/default.conf: SSI includes, clean /w/ URLs, hidden _includes.
-// Add future backend endpoints to `routes` (e.g. '/api/search').
+// Local server for the wiki.
+//
+//   npm run dev       renders pages on request with Vue (src/), and restarts when src/, research/ or site/ change
+//   npm start         the same, without restarting
+//   npm run preview   serves a finished build (dist/) as a static host would (SITE_DIR=dist)
+//
+// Either way: clean /w/<Page> URLs, /404.html for anything else. Add future backend endpoints to `routes`.
 const http = require('http');
 const fs = require('fs/promises');
 const path = require('path');
 
-const ROOT = path.resolve(__dirname, process.env.SITE_DIR || 'site'); // SITE_DIR=dist to preview a build
+const STATIC_DIR = process.env.SITE_DIR ? path.resolve(__dirname, process.env.SITE_DIR) : null;
+const ASSETS = STATIC_DIR || path.join(__dirname, 'site');
 const PORT = process.env.PORT || 8080;
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -24,14 +29,22 @@ const routes = {
   // '/api/search': async (req, res, url) => { ... },
 };
 
-// Resolve a URL path to a file inside ROOT, or null if outside/missing.
-async function resolveFile(pathname, { allowUnderscore = false } = {}) {
-  const rel = decodeURIComponent(pathname);
-  const full = path.join(ROOT, rel);
-  if (!full.startsWith(ROOT + path.sep)) return null;
-  if (!allowUnderscore && rel.split('/').some((s) => s.startsWith('_'))) return null;
-  const candidates = [full, full + '.html', path.join(full, 'index.html')];
-  for (const c of candidates) {
+// Pages rendered live (no SITE_DIR): URL path -> page, from the same page sources the build uses
+let pages = null;
+let renderPage = null;
+if (!STATIC_DIR) {
+  const render = require('./src/build/render');
+  renderPage = render.renderPage;
+  const t = Date.now();
+  pages = new Map(render.collectPages().map((p) => [decodeURI(p.url), p]));
+  console.log(`Loaded ${pages.size} pages in ${Date.now() - t} ms`);
+}
+
+// Resolve a URL path to a file inside dir, or null if outside/missing.
+async function resolveFile(dir, pathname) {
+  const full = path.join(dir, decodeURIComponent(pathname));
+  if (!full.startsWith(dir + path.sep)) return null;
+  for (const c of [full, full + '.html', path.join(full, 'index.html')]) {
     try {
       if ((await fs.stat(c)).isFile()) return c;
     } catch {}
@@ -39,27 +52,14 @@ async function resolveFile(pathname, { allowUnderscore = false } = {}) {
   return null;
 }
 
-// nginx-style SSI: <!--# include virtual="/_includes/x.html" -->
-async function renderSSI(html, depth = 0) {
-  const re = /<!--#\s*include\s+virtual="([^"]+)"\s*-->/g;
-  const parts = [];
-  let last = 0, m;
-  while ((m = re.exec(html))) {
-    parts.push(html.slice(last, m.index));
-    const file = depth < 5 && (await resolveFile(m[1], { allowUnderscore: true }));
-    parts.push(file ? await renderSSI(await fs.readFile(file, 'utf8'), depth + 1) : `<!-- missing include ${m[1]} -->`);
-    last = re.lastIndex;
-  }
-  parts.push(html.slice(last));
-  return parts.join('');
+function send(res, status, type, body) {
+  res.writeHead(status, { 'Content-Type': type });
+  res.end(body);
 }
 
-async function sendFile(res, file, status = 200) {
-  const ext = path.extname(file);
-  let body = await fs.readFile(file);
-  if (ext === '.html') body = await renderSSI(body.toString('utf8'));
-  res.writeHead(status, { 'Content-Type': TYPES[ext] || 'application/octet-stream' });
-  res.end(body);
+async function notFound(res) {
+  if (pages) return send(res, 404, TYPES['.html'], await renderPage(pages.get('/404.html')));
+  send(res, 404, TYPES['.html'], await fs.readFile(path.join(STATIC_DIR, '404.html')));
 }
 
 const server = http.createServer(async (req, res) => {
@@ -68,14 +68,17 @@ const server = http.createServer(async (req, res) => {
     const handler = routes[url.pathname];
     if (handler) return await handler(req, res, url);
 
-    const file = await resolveFile(url.pathname === '/' ? '/index.html' : url.pathname);
-    if (file) return await sendFile(res, file);
-    await sendFile(res, path.join(ROOT, '404.html'), 404);
+    if (pages) {
+      const page = pages.get(decodeURIComponent(url.pathname));
+      if (page) return send(res, 200, TYPES['.html'], await renderPage(page));
+    }
+    const file = await resolveFile(ASSETS, url.pathname === '/' ? '/index.html' : url.pathname);
+    if (file) return send(res, 200, TYPES[path.extname(file)] || 'application/octet-stream', await fs.readFile(file));
+    await notFound(res);
   } catch (err) {
     console.error(err);
-    res.writeHead(500, { 'Content-Type': 'text/plain' });
-    res.end('Server error');
+    send(res, 500, 'text/plain', `Server error\n\n${err.stack}`);
   }
 });
 
-server.listen(PORT, () => console.log(`Wiki running at http://localhost:${PORT}`));
+server.listen(PORT, () => console.log(`Wiki running at http://localhost:${PORT}${STATIC_DIR ? ` (serving ${path.relative(__dirname, STATIC_DIR)}/)` : ''}`));

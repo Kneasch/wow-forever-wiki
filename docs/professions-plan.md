@@ -83,7 +83,7 @@ Profession data and pages are kept apart from the dungeon pipeline. The two only
 research/professions/index.json        hub: all 12 professions, kind, summary, camp features, which have a file
 research/professions/<profession>.json one per profession (see research/professions/README.md for the shape)
 scripts/fetch-professions.js           refreshes tooltip-backed fields, downloads icons
-scripts/gen-profession.js              writes Professions hub + every profession's pages
+src/data/professions.js                Professions hub + every profession's pages, as page models for Vue
 ```
 
 Page types (all titles go through `slug()`, so file names are portable):
@@ -97,19 +97,19 @@ Page types (all titles go through `slug()`, so file names are portable):
 | Recipe list section | Smelting on the Mining page | every profession |
 | Camp feature section | on each profession page | every profession |
 
-Shared rendering already in `gen-profession.js`: infobox, TOC, tables, skill-up colour bar (orange/yellow/green/grey), spawn
-maps (the zone's Forever map with a pin per spawn point, from `scripts/map.js`; see [research/maps](../research/maps/README.md)), material item pages with "gathered from / created by / used in" sections,
+Shared rendering already in `src/data/professions.js` and the Vue components: infobox, TOC, tables, skill-up colour bar (orange/yellow/green/grey), spawn
+maps (the zone's Forever map with a pin per spawn point, from `src/lib/maps.js`; see [research/maps](../research/maps/README.md)), material item pages with "gathered from / created by / used in" sections,
 and the camp features table.
 
 ### Decision needed before the production professions: one item registry
 
 Recipe items (`Plans:`, `Pattern:` and so on) and crafted gear will often already have pages from the dungeon generator. For
 example, "Pattern: Big Bag of Enchantment" is a dungeon drop, and many new Forever plans drop from dungeon bosses. Today
-`gen-profession.js` refuses to write a page whose title is a dungeon item. That is fine for Mining, which has no overlaps, but
+the build refuses to write a page whose title is also a dungeon item. That is fine for Mining, which has no overlaps, but
 production professions will overlap constantly.
 
 Recommendation: before Phase 3, add a single item index (`research/items/` or a build step) that both generators read. An
-item page would then render every source it has: dungeon drops, recipe sources, "created by" and "used in". `gen-dungeon.js`
+item page would then render every source it has: dungeon drops, recipe sources, "created by" and "used in". `src/data/dungeons.js`
 already merges sources across dungeon files the same way, and that pattern extends naturally.
 
 ## 4. Per-profession plan
