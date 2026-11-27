@@ -38,26 +38,32 @@ const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
 const zoneInfo = (zoneId) => byArea.get(Number(zoneId)) || null;
 const hasImage = (z) => !!z && fs.existsSync(path.join(ROOT, 'site', z.image));
+// Every map with an image has a page (scripts/gen-zones.js), titled with the map's name
+const zonePageTitle = (z) => z.name;
+// The zone page for an area ID, for linking from other generators; null when there is none
+const zonePageFor = (zoneId) => { const z = zoneInfo(zoneId); return hasImage(z) ? zonePageTitle(z) : null; };
 
 // A legend icon: the pin symbol on its own
 const pinIcon = (type) => `<svg class="pin-icon pin-${type}" viewBox="0 0 24 32" width="15" height="20" aria-hidden="true"><use href="${SPRITE}#pin-${type}"/></svg>`;
 
 /**
  * @param {object}   o
- * @param {number}   o.zoneId     area ID (Wowhead's zone ID)
+ * @param {number}  [o.zoneId]    area ID (Wowhead's zone ID)
+ * @param {object}  [o.zone]      a zones.json entry, instead of zoneId (continents have no area ID)
  * @param {string}  [o.zoneName]  shown when the zone is not in zones.json
- * @param {Array<{x:number,y:number,type:string,label?:string,href?:string}>} o.pins
+ * @param {Array<{x:number,y:number,type:string,label?:string,href?:string}>} [o.pins]
+ *                                With no pins, the map is drawn on its own (no legend), if it has an image
  * @param {string}  [o.caption]   replaces the default "N spawn points in Zone" sentence
  * @param {boolean} [o.dense]     force dots (true) or pins (false); default: more than DENSE pins
  */
-function zoneMap({ zoneId, zoneName, pins, caption, dense }) {
-  if (!pins?.length) return '';
+function zoneMap({ zoneId, zone: given, zoneName, pins = [], caption, dense }) {
   for (const p of pins) {
     if (!PIN_TYPES[p.type]) throw new Error(`unknown map pin type "${p.type}" (known: ${Object.keys(PIN_TYPES).join(', ')})`);
   }
-  const zone = zoneInfo(zoneId);
+  const zone = given || zoneInfo(zoneId);
   const name = zone?.name || zoneName || 'an unknown zone';
   const image = hasImage(zone);
+  if (!pins.length && !image) return '';
   const { width: W, height: H } = image ? zone : GRID;
   const asDots = dense ?? pins.length > DENSE;
   // Pins are sized in map pixels (30 px wide on a 1002 px map) so they scale with the image: about 19 px
@@ -83,7 +89,8 @@ function zoneMap({ zoneId, zoneName, pins, caption, dense }) {
   const toggles = counts.size > 1;
   const legend = [...counts].map(([t, n]) => `<li><label>${toggles ? `<input type="checkbox" value="${t}" checked> ` : ''}${pinIcon(t)} ${esc(PIN_TYPES[t].label)} (${n})</label></li>`).join('');
 
-  const what = caption || `${plural(pins.length, 'spawn point')} in ${esc(name)}.`;
+  const what = caption ?? `${plural(pins.length, 'spawn point')} in ${esc(name)}.`;
+  const hover = pins.length ? ' Hover a point for its coordinates.' : '';
   const source = image
     ? `Map from the WoW Forever game client${zone.new_in_forever ? ' (a zone new in Forever)' : ''}.`
     : `${esc(name)} has no map image yet, so the points are on the zone's 0&ndash;100 coordinate grid (lines every 10).`;
@@ -91,13 +98,12 @@ function zoneMap({ zoneId, zoneName, pins, caption, dense }) {
   return `    <figure class="zone-map${asDots ? ' dense' : ''}${image ? '' : ' no-image'}">
       <div class="zone-map-frame" style="aspect-ratio: ${W} / ${H}">
         ${image ? `<img src="${esc(zone.image)}" alt="Map of ${esc(name)}" width="${W}" height="${H}" loading="lazy" decoding="async">` : ''}
-        <svg class="zone-map-pins" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(`${plural(pins.length, 'point')} on the map of ${name}`)}">${grid}${marks.join('')}</svg>
+        ${pins.length ? `<svg class="zone-map-pins" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(`${plural(pins.length, 'point')} on the map of ${name}`)}">${grid}${marks.join('')}</svg>` : ''}
       </div>
       <figcaption>
-        <ul class="zone-map-legend">${legend}</ul>
-        ${what} Hover a point for its coordinates. ${source}
+        ${legend ? `<ul class="zone-map-legend">${legend}</ul>\n        ` : ''}${what}${hover} ${source}
       </figcaption>
     </figure>`;
 }
 
-module.exports = { zoneMap, zoneInfo, PIN_TYPES, MAPS };
+module.exports = { zoneMap, zoneInfo, zonePageTitle, zonePageFor, PIN_TYPES, MAPS };

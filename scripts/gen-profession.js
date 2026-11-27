@@ -13,7 +13,7 @@
 const fs = require('fs');
 const path = require('path');
 const { slug, slugRegistry } = require('./slug');
-const { zoneMap, PIN_TYPES } = require('./map');
+const { zoneMap, zonePageFor, PIN_TYPES } = require('./map');
 
 const ROOT = path.join(__dirname, '..');
 const DIR = path.join(ROOT, 'research', 'professions');
@@ -38,6 +38,8 @@ const article = (w) => (/^[aeiou]/i.test(w) ? 'an' : 'a');
 const list = (xs) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
 const newTag = (x) => (x?.new_in_forever ? '<span class="new-tag">New in Forever</span>' : '') + (x?.scarce ? '<span class="new-tag">Scarce</span>' : '');
 const wowhead = (type, id) => `https://www.wowhead.com/forever/${type}=${id}`;
+// A zone name, linked to its zone page (scripts/gen-zones.js) when it has one
+const zoneLink = (id, name) => (name == null ? unknown : zonePageFor(id) ? link(zonePageFor(id)) : esc(name));
 const iconImg = (icon, alt = '') => (icon && fs.existsSync(path.join(ROOT, 'site', 'assets', 'icons', icon + '.jpg'))
   ? `<img class="mini-icon" src="/assets/icons/${esc(icon)}.jpg" alt="${esc(alt)}" width="18" height="18">` : '');
 
@@ -120,7 +122,7 @@ function spawnMaps(name, objs, profession) {
     z.ids.push(o.object_id);
     z.coords.push(...o.coords);
   }
-  return [...zones.values()].map((z) => `    <h3>${val(z.zone)} (object${z.ids.length > 1 ? 's' : ''} ${z.ids.join(', ')})</h3>
+  return [...zones.values()].map((z) => `    <h3>${zoneLink(z.zoneId, z.zone)} (object${z.ids.length > 1 ? 's' : ''} ${z.ids.join(', ')})</h3>
 ${zoneMap({ zoneId: z.zoneId, zoneName: z.zone, pins: z.coords.map(([x, y]) => ({ x, y, type: pinType(profession), label: name })) })}`).join('\n');
 }
 
@@ -152,8 +154,12 @@ function build(p, write) {
   // "Zephras Isle (339), The Barrens (59)": objects that share a zone are added together, most spawns first
   const zonesOf = (g) => {
     const z = new Map();
-    for (const o of g.objs.filter((x) => x.zone)) z.set(o.zone, (z.get(o.zone) || 0) + (o.spawn_count || 0));
-    return [...z].sort((a, b) => b[1] - a[1]).map(([name, n]) => `${esc(name)}${n ? ` (${n})` : ''}`);
+    for (const o of g.objs.filter((x) => x.zone)) {
+      const e = z.get(o.zone) || { id: o.zone_id, n: 0 };
+      e.n += o.spawn_count || 0;
+      z.set(o.zone, e);
+    }
+    return [...z].sort((a, b) => b[1].n - a[1].n).map(([name, { id, n }]) => `${zoneLink(id, name)}${n ? ` (${n})` : ''}`);
   };
   const contentsOf = (ids) => (ids.length ? ids.map((id) => matLink(id)).join(', ') : unknown);
 
@@ -161,7 +167,7 @@ function build(p, write) {
   for (const g of groups) {
     const zones = zonesOf(g);
     const intro = `<b>${esc(g.name)}</b> is ${g.variant === 'ooze' ? 'an ooze-covered' : 'a'} ${esc(P.toLowerCase())} node that needs ${link(P)} ${g.req ?? unknown}.${g.new_in_forever ? ' It is new in WoW Forever.' : ''} ${g.contains.length ? `Mining it gives ${list(g.contains.map((id) => matLink(id)))}.` : 'What it contains is not known yet.'}`;
-    const locRows = g.objs.map((o) => [td(val(o.zone)), td(val(o.zone_level), 'num'), td(val(o.spawn_count), 'num'), td(`<a class="external" href="${esc(wowhead('object', o.object_id))}">${o.object_id}</a>`, 'num')]);
+    const locRows = g.objs.map((o) => [td(zoneLink(o.zone_id, o.zone)), td(val(o.zone_level), 'num'), td(val(o.spawn_count), 'num'), td(`<a class="external" href="${esc(wowhead('object', o.object_id))}">${o.object_id}</a>`, 'num')]);
     const maps = spawnMaps(g.name, g.objs, P);
     const body = `
     <table class="infobox">
