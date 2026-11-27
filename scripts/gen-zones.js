@@ -10,6 +10,7 @@ const ROOT = path.join(__dirname, '..');
 const OUT = process.env.WIKI_OUT || path.join(ROOT, 'site', 'w');
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const byName = (a, b) => a.name.localeCompare(b.name);
+const list = (xs) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
 const zones = MAPS.zones.filter((z) => z.has_image);
 const newTag = '<span class="new-tag">New in Forever</span>';
 
@@ -39,7 +40,7 @@ const fresh = zones.filter((z) => z.new_in_forever).sort(byName).map((z) => esc(
 
 const body = `
     <p>World maps for every zone in WoW Forever: ${counts.zone} zones, ${counts.city} cities, ${counts.battleground} battlegrounds and ${continents.length} continents. Select a map to open it full size.</p>
-    <p>${fresh.length} maps are new in Forever: ${fresh.slice(0, -1).join(', ')} and ${fresh[fresh.length - 1]}. The rest are the Classic zones, drawn from the Forever client, so they show any changes Forever has made.</p>
+    <p>${fresh.length ? `${fresh.length === 1 ? 'One map is' : `${fresh.length} maps are`} new in Forever: ${list(fresh)}. The rest are` : 'All of them are'} the Classic zones, drawn from the Forever client, so they show any changes Forever has made.</p>
 
     <nav class="toc" aria-label="Contents">
       <h2>Contents</h2>
