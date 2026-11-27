@@ -13,6 +13,7 @@
 const fs = require('fs');
 const path = require('path');
 const { slug, slugRegistry } = require('./slug');
+const { zoneMap, PIN_TYPES } = require('./map');
 
 const ROOT = path.join(__dirname, '..');
 const DIR = path.join(ROOT, 'research', 'professions');
@@ -108,14 +109,20 @@ const skillKey = `    <ul class="rarity-key" aria-label="Skill-up colour key">
       <li><span class="swatch sk-grey"></span>Grey: never does</li>
     </ul>`;
 
-// Spawn points as dots on a plain 0-100 grid (the map image is not included). Game maps are 3:2.
-function spawnMap(coords, zone) {
-  if (!coords?.length) return '';
-  const grid = [10, 20, 30, 40, 50, 60, 70, 80, 90]
-    .map((g) => `<line class="grid" x1="${g * 1.5}" y1="0" x2="${g * 1.5}" y2="100"/><line class="grid" x1="0" y1="${g}" x2="150" y2="${g}"/>`).join('');
-  const dots = coords.map(([x, y]) => `<circle class="dot" cx="${+(x * 1.5).toFixed(2)}" cy="${y}" r="0.9"/>`).join('');
-  return `    <svg class="spawn-map" viewBox="0 0 150 100" role="img" aria-label="${esc(`${coords.length} spawn points in ${zone || 'an unknown zone'}`)}">${grid}${dots}</svg>
-    <p class="spawn-map-caption">${plural(coords.length, 'spawn point')} in ${zone ? esc(zone) : unknown}, plotted on the zone's map coordinates (0&ndash;100). Gridlines are every 10.</p>`;
+// Node spawn points on the zone map (scripts/map.js). The pin icon follows the profession; one map per zone,
+// with every object of the node that spawns there.
+const pinType = (profession) => (PIN_TYPES[profession.toLowerCase()] ? profession.toLowerCase() : 'other');
+function spawnMaps(name, objs, profession) {
+  const zones = new Map();
+  for (const o of objs.filter((x) => x.coords?.length)) {
+    const key = o.zone_id ?? o.zone;
+    if (!zones.has(key)) zones.set(key, { zoneId: o.zone_id, zone: o.zone, ids: [], coords: [] });
+    const z = zones.get(key);
+    z.ids.push(o.object_id);
+    z.coords.push(...o.coords);
+  }
+  return [...zones.values()].map((z) => `    <h3>${val(z.zone)} (object${z.ids.length > 1 ? 's' : ''} ${z.ids.join(', ')})</h3>
+${zoneMap({ zoneId: z.zoneId, zoneName: z.zone, pins: z.coords.map(([x, y]) => ({ x, y, type: pinType(profession), label: name })) })}`).join('\n');
 }
 
 // ---------- Per profession ----------
@@ -156,7 +163,7 @@ function build(p, write) {
     const zones = zonesOf(g);
     const intro = `<b>${esc(g.name)}</b> is ${g.variant === 'ooze' ? 'an ooze-covered' : 'a'} ${esc(P.toLowerCase())} node that needs ${link(P)} ${g.req ?? unknown}.${g.new_in_forever ? ' It is new in WoW Forever.' : ''} ${g.contains.length ? `Mining it gives ${list(g.contains.map((id) => matLink(id)))}.` : 'What it contains is not known yet.'}`;
     const locRows = g.objs.map((o) => [td(val(o.zone)), td(val(o.zone_level), 'num'), td(val(o.spawn_count), 'num'), td(`<a class="external" href="${esc(wowhead('object', o.object_id))}">${o.object_id}</a>`, 'num')]);
-    const maps = g.objs.filter((o) => o.coords?.length).map((o) => `    <h3>${val(o.zone)} (object ${o.object_id})</h3>\n${spawnMap(o.coords, o.zone)}`).join('\n');
+    const maps = spawnMaps(g.name, g.objs, P);
     const body = `
     <table class="infobox">
       <tr><th colspan="2" class="infobox-header">${esc(g.name)}</th></tr>

@@ -97,8 +97,8 @@ Page types (all titles go through `slug()`, so file names are portable):
 | Recipe list section | Smelting on the Mining page | every profession |
 | Camp feature section | on each profession page | every profession |
 
-Shared rendering already in `gen-profession.js`: infobox, TOC, tables, skill-up colour bar (orange/yellow/green/grey), a spawn
-map drawn as SVG dots from coordinates (no map image), material item pages with "gathered from / created by / used in" sections,
+Shared rendering already in `gen-profession.js`: infobox, TOC, tables, skill-up colour bar (orange/yellow/green/grey), spawn
+maps (the zone's Forever map with a pin per spawn point, from `scripts/map.js`; see [research/maps](../research/maps/README.md)), material item pages with "gathered from / created by / used in" sections,
 and the camp features table.
 
 ### Decision needed before the production professions: one item registry
@@ -186,8 +186,8 @@ guide or a manual pass.
 4. **Remaining production professions:** Tailoring, Leatherworking, Engineering, Enchanting.
 5. **Secondary professions:** Fishing (pools reuse the node code), Cooking, First Aid.
 6. **Cross-cutting:** a Camp features page; crafting orders (Craftsman's Writs) and Waylaid Crates; leveling routes per
-   profession; zone map images behind the spawn dots (`wow.zamimg.com/images/wow/classic/maps/enus/zoom/<zone>.jpg` exists for
-   Classic zones but not for Forever's new ones).
+   profession. (Zone map images are done: every zone, including Forever's new ones, comes from the Forever client data. Pin
+   types for herbs, fishing pools, skinnable creatures and treasure are ready for those professions' node data.)
 
 Each phase updates `index.json` (`file` set) so the hub links the new profession, and records its `sources`, `conflicts` and
 `gaps` in its file.
