@@ -43,13 +43,23 @@ const val = (v) => (v === null || v === undefined || v === '' ? unknown : esc(v)
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const article = (w) => (/^[aeiou]/i.test(w) ? 'an' : 'a'); // "an uncommon", "an epic"
 const qBorder = (q) => (q === 'poor' || q === 'common' ? '' : ` q-border-${q}`);
-const rarityClass = (display) => {
-  if (display === null || display === undefined) return '';
-  const n = Number(String(display).replace(/[^0-9]/g, '').slice(1) || 1); // "~1/33" -> 33
-  return n <= 1 ? 'r-always' : n <= 9 ? 'r-common' : n <= 99 ? 'r-uncommon' : n <= 999 ? 'r-rare' : 'r-veryrare';
+// Drop rates are shown as ~1/N with N to at most two decimal places (~1/4.83, ~1/3.1, ~1/5).
+// N comes from counted kills and drops when Wowhead's dropped-by table gave them, else from its drop %.
+// drop_rate_display in the research is only a fallback for items that have neither.
+const rateOf = (it) => {
+  if (it.kills > 0 && it.drops > 0) return it.kills / it.drops;
+  if (it.drop_chance_pct > 0) return 100 / it.drop_chance_pct;
+  const m = String(it.drop_rate_display ?? '').match(/~1\/([\d.]+)/);
+  return m ? Number(m[1]) : null;
 };
+const rateText = (n) => `~1/${+n.toFixed(2)}`;
+const rarityClass = (n) => (n == null ? '' : n <= 1 ? 'r-always' : n < 10 ? 'r-common' : n < 100 ? 'r-uncommon' : n < 1000 ? 'r-rare' : 'r-veryrare');
 const bossNames = new Set(data.bosses.map((b) => b.name));
-const rateCell = (d) => `<td class="rarity ${rarityClass(d)}">${val(d)}</td>`;
+const rateCell = (it) => {
+  const n = rateOf(it);
+  const counted = it.kills > 0 && it.drops > 0 ? ` title="${it.drops} drop${it.drops === 1 ? '' : 's'} in ${it.kills} kills"` : '';
+  return `<td class="rarity ${rarityClass(n)}"${counted}>${n == null ? unknown : rateText(n)}</td>`;
+};
 const META_NOTE = /npc id|warcraft ?tavern|timesaver|wowtbc|verified|^level /i; // research notes, not lore
 
 // Research JSON is hand-collected and inconsistent. Clean it up before rendering:
@@ -140,13 +150,13 @@ ${entries.map(([id, label]) => `        <li><a href="#${esc(id)}">${esc(label)}<
 
 const rarityKey = `    <ul class="rarity-key" aria-label="Rarity key">
       <li><span class="swatch r-always"></span>Always</li>
-      <li><span class="swatch r-common"></span>Common (to 1/9)</li>
-      <li><span class="swatch r-uncommon"></span>Uncommon (1/10 &ndash; 1/99)</li>
-      <li><span class="swatch r-rare"></span>Rare (1/100 &ndash; 1/999)</li>
+      <li><span class="swatch r-common"></span>Common (better than 1/10)</li>
+      <li><span class="swatch r-uncommon"></span>Uncommon (1/10 &ndash; 1/99.99)</li>
+      <li><span class="swatch r-rare"></span>Rare (1/100 &ndash; 1/999.99)</li>
       <li><span class="swatch r-veryrare"></span>Very rare (1/1,000+)</li>
     </ul>`;
 
-const rateNote = `    <p>Drop rates are estimates rounded from Wowhead's drop percentage (for example 32.25% is shown as ~1/3), not from counted kills and drops.</p>`;
+const rateNote = `    <p>Drop rates are ~1/N to two decimal places. Most come from Wowhead's drop percentage (for example 32.25% is shown as ~1/3.1); where Wowhead listed counted kills and drops, N is kills divided by drops, and hovering the rate shows the counts.</p>`;
 
 // ---------- Item page ----------
 // Wowhead icon when we have one (site/assets/icons, see scripts/fetch-icons.js), else the placeholder hammer
@@ -217,7 +227,7 @@ function itemPage(it) {
   const intro = `<b>${esc(it.name)}</b> is ${article(knownQuality || words[0] || 'item')} ${desc}${lvlReq}. ${where}${it.source_type === 'quest_item' && !/quest item$/.test(desc) ? ' It is a quest item.' : ''}`;
   const sourceRows = sources.map((s) => {
     const lvl = s.d.bosses.find((b) => b.name === s.it.source)?.level ?? s.it.source_level ?? null;
-    return `          <tr><td>${srcLink(s)}</td><td class="num">${lvl ?? unknown}</td><td>${link(s.d.dungeon)}</td><td class="num">1</td>${rateCell(s.it.drop_rate_display)}</tr>`;
+    return `          <tr><td>${srcLink(s)}</td><td class="num">${lvl ?? unknown}</td><td>${link(s.d.dungeon)}</td><td class="num">1</td>${rateCell(s.it)}</tr>`;
   }).join('\n');
 
   const body = `
@@ -293,7 +303,7 @@ ${dropsSection}`;
 // ---------- Dungeon page ----------
 const lootRow = (i, extraCell = '') => {
   const b = best(i); // stats from the most complete record, drop rate from this dungeon's
-  return `          <tr><td>${link(i.name, 'q-' + (b.quality || 'common'))}</td><td>${val(b.slot)}</td><td>${val(b.type)}</td>${extraCell}${rateCell(i.drop_rate_display)}</tr>`;
+  return `          <tr><td>${link(i.name, 'q-' + (b.quality || 'common'))}</td><td>${val(b.slot)}</td><td>${val(b.type)}</td>${extraCell}${rateCell(i)}</tr>`;
 };
 
 function dungeonPage() {

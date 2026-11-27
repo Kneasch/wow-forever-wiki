@@ -112,10 +112,13 @@ Krol'Dok Stronghold is not on timesaver.gg, so all of its IDs came this way.
 
 ## Drop rates (important)
 
-The wiki's rule is `~1/N` with `N = round(kills / drops)`. **No source gave kill or drop counts**: the tooltip only gives a
-percentage, and the Wowhead pages that hold the counts are rendered client-side. So `kills`/`drops` are `null` everywhere, and
-`drop_rate_display` is `round(100 / drop_chance_pct)`. Each item records how it was calculated in `drop_rate_basis`. Before
-publishing, pull the real counts from the Wowhead item page in a browser if they are needed. Forever launched recently, so
+The wiki's rule is `~1/N` with N to at most two decimal places: `N = kills / drops` when the counts are known, otherwise
+`N = 100 / drop_chance_pct`. Pages work the rate out from those fields (`rateOf` in `scripts/gen-dungeon.js`), so
+`drop_rate_display` is only used when an item has neither, and older entries may still hold a rounded value there.
+
+Counts are rare: the tooltip only gives a percentage, and the Wowhead pages that hold the counts are rendered client-side.
+10 items have `kills`/`drops` from Wowhead's dropped-by tables (commit e82433f); everywhere else they are `null`. Each item
+records how its rate was found in `drop_rate_basis`. Pull the real counts from the Wowhead item page in a browser if needed. Forever launched recently, so
 sample sizes are small and the percentages will move.
 
 Most items carried over from classic have no "Drop Chance" on the Forever tooltip. Their drop % is left null, not guessed.

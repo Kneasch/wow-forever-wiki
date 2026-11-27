@@ -47,8 +47,10 @@ Then open http://localhost:8080/w/Hammer_of_Divine_Might
 
 ## Drop rates
 
-Rates are shown as a rounded `~1/N` rather than raw counts or percentages:
-`N = round(kills / drops)`, so 66 drops in 205 kills is `~1/3`.
+Rates are shown as `~1/N` with N to at most two decimal places, rather than raw counts or percentages:
+`N = kills / drops`, so 66 drops in 205 kills is `~1/3.11`. Without counts, `N = 100 / drop %`, so 32.25% is `~1/3.1`.
+`gen-dungeon.js` works the rate out from the research's `kills`/`drops` or `drop_chance_pct` (see `rateOf`), and
+hovering a counted rate shows the counts.
 
 ## Professions
 
