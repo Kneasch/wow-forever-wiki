@@ -7,7 +7,7 @@
       "blurb": "Gathering professions collect raw materials from the world. A character can learn two primary professions, gathering or production.",
       "professions": [
         { "name": "Mining", "file": "mining.json", "icon": "trade_mining", "spell_id": 2575, "summary": "Ore, stone and gems from mineral veins; smelting ore into bars.", "feeds": ["Blacksmithing", "Engineering"], "camp": ["Lodestone (20)", "Rock Garden (140)", "Molten Foundry (300)"] },
-        { "name": "Herbalism", "file": null, "icon": "spell_nature_naturetouchgrow", "spell_id": 2366, "summary": "Herbs from plants in the world. Forever adds seeds and new level 60 herbs.", "feeds": ["Alchemy"], "camp": ["Greenhouse (140)", "Seed Hybridizer (300)"] },
+        { "name": "Herbalism", "file": "herbalism.json", "icon": "spell_nature_naturetouchgrow", "spell_id": 2366, "summary": "Herbs from plants in the world. Forever adds seeds and new level 60 herbs.", "feeds": ["Alchemy"], "camp": ["Incense Candle (20)", "Greenhouse (140)", "Seed Hybridizer (300)"] },
         { "name": "Skinning", "file": null, "icon": "inv_misc_pelt_wolf_01", "spell_id": 8613, "summary": "Leather, hides and scales from the corpses of beasts.", "feeds": ["Leatherworking"], "camp": ["Field Guide (140)", "Trapper's Workbench (300)"] }
       ]
     },
