@@ -2,10 +2,16 @@
   "name": "wow-forever-wiki",
   "private": true,
   "scripts": {
-    "dev": "node --watch server.js",
+    "dev": "node --watch-path=src --watch-path=research --watch-path=site --watch-path=server.js server.js",
     "start": "node server.js",
-    "build": "node scripts/build.js",
-    "check": "node scripts/check-filenames.js",
+    "build": "node src/build/build.js",
+    "check": "node src/build/check.js",
     "preview": "SITE_DIR=dist PORT=4173 node server.js"
+  },
+  "dependencies": {
+    "vue": "3.5.46"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

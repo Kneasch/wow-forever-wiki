@@ -1,11 +1,11 @@
 # Profession research
 
-Research data for the profession pages. `scripts/gen-profession.js` turns it into pages. The plan for covering every
+Research data for the profession pages. `src/data/professions.js` turns it into pages. The plan for covering every
 profession is in [docs/professions-plan.md](../../docs/professions-plan.md).
 
 | File | What it holds |
 |---|---|
-| `index.json` | Every profession, grouped as gathering, production or secondary, for the [Professions](../../site/w/Professions.html) hub. `file` points at the profession's research file, or is `null` while its pages are not written. |
+| `index.json` | Every profession, grouped as gathering, production or secondary, for the Professions hub. `file` points at the profession's research file, or is `null` while its pages are not written. |
 | `mining.json` | Mining: ranks, nodes, materials, smelting, camp features, sources, conflicts and gaps. |
 
 ## Commands
@@ -13,8 +13,7 @@ profession is in [docs/professions-plan.md](../../docs/professions-plan.md).
 ```bash
 NODE_USE_ENV_PROXY=1 node scripts/fetch-professions.js     # refresh every file from Wowhead (NODE_USE_ENV_PROXY only behind a proxy)
 node scripts/fetch-professions.js research/professions/mining.json
-node scripts/gen-profession.js                             # hub + every profession page, overwriting site/w/
-WIKI_OUT=/some/dir node scripts/gen-profession.js          # dry run elsewhere
+npm run dev                                                # see the pages live while editing
 ```
 
 ## Where the data comes from
@@ -60,5 +59,5 @@ materials[], recipes[], recipes_unresearched[], camp[], other_items[], skill_up_
 - `camp[]`: `{ blueprint_item_id, placed_item_id, kind: blueprint|item, note?, effect_note? }` plus the fetched fields.
   `effect_note` replaces the fetched effect when Wowhead's text is broken (the Lodestone's bonus does not render).
 
-A page title must not also be a dungeon item. `gen-profession.js` stops with an error if it is, because `gen-dungeon.js`
-would overwrite the page (or the other way round).
+A page title must not also be a dungeon item: the build (`collectPages()` in `src/build/render.js`) stops with an error
+when two page sources would write the same page.

@@ -6,10 +6,10 @@ World map images for every WoW Forever zone, continent and battleground, and the
 |---|---|
 | `zones.json` | One entry per map: `area_id`, `ui_map_id`, `name`, `kind` (zone, city, battleground or continent: a battleground is a map whose `Map.InstanceType` is 3, and a city is an area with the capital flag 0x100), `parent`, `map_id`, `width`, `height`, `image`, `new_in_forever`, `has_image`, `thumb`. |
 | `../../site/assets/maps/thumb/<area id>.webp` | A 334px-wide thumbnail of each map, for the Zones page. `--data-only` remakes them from the full images. |
-| `../../scripts/gen-zones.js` | Writes the [Zones](../../site/w/Zones.html) page: every map, grouped by continent, then cities, battlegrounds and continents. |
+| `../../src/data/zones.js` | The Zones list (every map, grouped by continent, then cities, battlegrounds and continents) and one page per map: the map, its continent, the dungeons in it (from the dungeon research's `zone`) and the gathering nodes whose main zone it is, pinned on the map and linked to their node pages. |
 | `../../site/assets/maps/<area id>.webp` | The map, fully explored, 1002&times;668. Continents use `map-<ui map id>.webp`, since they have no area ID. |
 | `../../scripts/fetch-maps.py` | Fetches both of the above. |
-| `../../scripts/map.js` | `zoneMap({ zoneId, pins })`: the map with pins, as static HTML. |
+| `../../src/lib/maps.js`, `../../src/components/ZoneMap.vue` | `zoneMap({ zoneId, pins })` describes a map with pins; `ZoneMap.vue` draws it. |
 | `../../site/assets/map-pins.svg` | The pin icons, one `<symbol>` per type. |
 
 ## Source
@@ -46,7 +46,8 @@ zone without an image.
 
 ## Pins
 
-`zoneMap({ zoneId, zoneName?, pins: [{ x, y, type, label?, href? }], caption?, dense? })` returns a `<figure>`:
+`zoneMap({ zoneId, zoneName?, pins: [{ x, y, type, label?, href? }], caption?, dense? })` returns a map model, which
+`ZoneMap.vue` (or a `{ map }` block in the page model) renders as a `<figure>`:
 
 - The map `<img>` with an SVG layer of pins on top. Pins scale with the image, and each has a hover title with its label and
   coordinates. A pin with an `href` is a link.
@@ -66,7 +67,7 @@ Pin types, which are the same names as the professions:
 | `other` | dot | `--pin-other` purple | anything else |
 
 To add a type, add a `<symbol id="pin-<type>">` to `map-pins.svg`, a colour, a class and a legend rule to `wiki.css`, and an
-entry to `PIN_TYPES` in `map.js`. `gen-profession.js` picks the type from the profession name, so Herbalism and Fishing
+entry to `PIN_TYPES` in `src/lib/maps.js`. `src/data/professions.js` picks the type from the profession name, so Herbalism and Fishing
 research files get the right pins with no changes.
 
 The sprite is loaded by URL (`<use href="/assets/map-pins.svg#pin-mining">`). Keep it valid XML: a `--` inside an XML comment

@@ -1,6 +1,6 @@
-# Make sure the repo checks out, generates and builds on every OS contributors use.
-# A page name Windows cannot create (e.g. "Pattern:_Ghostweave_Pants.html") fails the
-# Windows checkout step itself, before any of our own checks run.
+# Make sure the repo checks out and the wiki builds on every OS contributors use.
+# Pages are not committed: the build renders them, so a page name Windows cannot create
+# (e.g. "Pattern:_Ghostweave_Pants.html") fails the Windows build step.
 name: Checks
 
 on:
@@ -27,21 +27,12 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
+          cache: npm
 
-      # Portable file names, no case-only collisions, no broken /w/ links
+      - run: npm ci
+
+      # Portable file names, no case-only collisions; every page renders with no broken /w/ links or assets
       - run: npm run check
 
-      # Regenerate every page into a scratch folder so the generator writes real files on this OS
-      - name: Generate all pages
-        run: |
-          out="$RUNNER_TEMP/wiki-pages"
-          mkdir -p "$out"
-          for f in research/*.json; do
-            [ "$(basename "$f")" = icons.json ] && continue
-            WIKI_OUT="$out" node scripts/gen-dungeon.js "$f" > /dev/null
-          done
-          WIKI_OUT="$out" node scripts/gen-profession.js > /dev/null
-          WIKI_OUT="$out" node scripts/gen-zones.js > /dev/null
-          echo "Generated $(ls "$out" | wc -l) pages"
-
+      # Render every page into dist/, so the pages are written as real files on this OS
       - run: npm run build
