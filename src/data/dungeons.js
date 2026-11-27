@@ -126,7 +126,7 @@ function pages() {
       { th: 'Type', segs: D.val(it.type) },
       { th: 'Binding', segs: D.val(it.binding) },
       { th: 'Sell price', segs: D.val(it.sell_price) },
-      ...(it.armor !== null ? [{ th: 'Armor', segs: [String(it.armor)] }] : []),
+      ...(it.armor != null ? [{ th: 'Armor', segs: [String(it.armor)] }] : []), // null or missing: no armor
       ...(w ? [
         { sub: 'Weapon' },
         { th: 'Damage', segs: [`${w.damage_min} – ${w.damage_max}`] },
@@ -144,7 +144,7 @@ function pages() {
       { split: [D.val(it.slot), [it.type ? String(it.type) : '']] },
       w && { split: [[`${w.damage_min} - ${w.damage_max} Damage`], [`Speed ${w.speed.toFixed(2)}`]] },
       w && { segs: [`(${w.dps} damage per second)`] },
-      it.armor !== null && { segs: [`${it.armor} Armor`] },
+      it.armor != null && { segs: [`${it.armor} Armor`] },
       ...it.stats.map((s) => ({ ...(/^Equip:/.test(s) ? { cls: 'tt-green' } : {}), segs: [s] })),
       { segs: ['Requires Level ', ...D.val(it.required_level)] },
       it.sell_price && { segs: [`Sell Price: ${it.sell_price}`] },

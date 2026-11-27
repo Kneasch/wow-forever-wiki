@@ -180,8 +180,11 @@ function profession(p, withPages, index) {
           ],
         },
         intro: [{ p: [
-          D.b(m.name), ` is ${article(m.quality || 'a')} `, ...(m.quality ? [D.q(q, q), ' '] : []),
-          `${KIND_WORD[m.kind] || m.kind}${m.kind === 'tool' ? '' : ' used as a crafting reagent'}.${newTags(m).length ? ' It is new in WoW Forever.' : ''} `,
+          // "an uncommon ore", "a rare gem"; with no known quality, the article goes with the kind ("an ore")
+          D.b(m.name), ` is ${article(m.quality || KIND_WORD[m.kind] || m.kind)} `, ...(m.quality ? [D.q(q, q), ' '] : []),
+          `${KIND_WORD[m.kind] || m.kind}${m.kind === 'tool' ? '' : ' used as a crafting reagent'}.`,
+          // Scarcity is shown by the Scarce tag in tables and explained in each scarce material's note
+          `${m.new_in_forever ? ' It is new in WoW Forever.' : ''} `,
           ...how, ...(m.note ? [' ' + m.note] : []),
         ] }],
         toc: sections.length > 1,
