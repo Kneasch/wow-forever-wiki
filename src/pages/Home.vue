@@ -50,7 +50,7 @@
             <h2 id="Featured_dungeon" class="mp-box-head">Featured dungeon</h2>
             <div class="mp-box-body">
               <p class="mp-featured-title"><WikiLink :to="featured.name" /><span v-if="featured.new_in_forever" class="new-tag">New in Forever</span></p>
-              <p>A level {{ featured.levels }} dungeon in {{ featured.zone }} with {{ featured.bossCount }} bosses and {{ featured.itemCount }} items of loot<template v-if="featured.finalBoss">, ending with <WikiLink :to="featured.finalBoss" /></template>.</p>
+              <p>A level {{ featured.levels }} dungeon in {{ featured.zone }} with {{ featured.bossCount }} and {{ featured.itemCount }} of loot<template v-if="featured.finalBoss">, ending with <WikiLink :to="featured.finalBoss" /></template>.</p>
               <p v-if="featured.location" class="mp-meta">{{ featured.location }}</p>
               <p class="mp-label">Bosses</p>
               <ul class="mp-inline-list">
@@ -81,11 +81,11 @@
             <h2 id="New_in_Forever" class="mp-box-head">New in Forever</h2>
             <div class="mp-box-body">
               <p>What Forever adds to the classic world.</p>
-              <p class="mp-label">{{ newDungeons.length }} new dungeons</p>
+              <p class="mp-label">{{ newDungeonsLabel }}</p>
               <ul class="mp-compact">
                 <li v-for="d in newDungeons" :key="d.name"><WikiLink :to="d.name" /> <span class="mp-meta mp-nowrap">{{ d.levels }}</span></li>
               </ul>
-              <p class="mp-label">{{ newZones.length }} new zones</p>
+              <p class="mp-label">{{ newZonesLabel }}</p>
               <ul class="mp-inline-list">
                 <li v-for="z in newZones" :key="z"><WikiLink :to="z" /></li>
               </ul>
@@ -113,10 +113,10 @@
           <section class="mp-box" aria-labelledby="Zones">
             <h2 id="Zones" class="mp-box-head">Zones</h2>
             <div class="mp-box-body">
-              <p>Maps of {{ zoneCounts.zone }} zones, {{ zoneCounts.city }} cities and {{ zoneCounts.battleground }} battlegrounds, with gathering nodes pinned on them.</p>
+              <p>Maps of {{ zoneCounts.zone }}, {{ zoneCounts.city }} and {{ zoneCounts.battleground }}, with gathering nodes pinned on them.</p>
               <ul class="mp-continents">
                 <li v-for="c in continents" :key="c.name">
-                  <WikiLink :to="c.name"><img :src="c.thumb" alt="" loading="lazy"><span class="mp-continent-name">{{ c.name }}</span><span class="mp-meta">{{ c.zones }} zones</span></WikiLink>
+                  <WikiLink :to="c.name"><img :src="c.thumb" alt="" loading="lazy"><span class="mp-continent-name">{{ c.name }}</span><span class="mp-meta">{{ c.zones }}</span></WikiLink>
                 </li>
               </ul>
               <p class="mp-more"><WikiLink to="Zones">All zone maps…</WikiLink></p>
@@ -142,7 +142,9 @@ export default {
     dungeonCount: { type: Number, required: true },
     newCount: { type: String, required: true },
     newDungeons: { type: Array, required: true },
+    newDungeonsLabel: { type: String, required: true },
     newZones: { type: Array, required: true },
+    newZonesLabel: { type: String, required: true },
     writtenProfs: { type: Array, required: true },
     campCount: { type: Number, required: true },
     zoneCounts: { type: Object, required: true },

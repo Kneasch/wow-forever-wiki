@@ -6,6 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const { ROOT, json, dungeonFiles } = require('./research');
 const { MAPS } = require('../lib/maps');
+const { plural } = require('../lib/wiki');
 
 const NUMBERS = ['No', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve'];
 const word = (n) => NUMBERS[n] || String(n);
@@ -20,7 +21,8 @@ const BRACKETS = [
   { id: 'Levels_50-60', label: 'Levels 50–60', max: Infinity },
 ];
 
-// The featured dungeon changes every week of the year (UTC) the site was built in
+// The featured dungeon is picked by the week of the year (UTC) the site is built in, so it changes with the first
+// deploy of a new week (pages.yml deploys on every push to main)
 function weekOfYear(d) {
   const start = Date.UTC(d.getUTCFullYear(), 0, 1);
   return Math.floor((d.getTime() - start) / (7 * 864e5));
@@ -57,8 +59,8 @@ function pages() {
     zone: featuredSrc.zone,
     location: featuredSrc.location || null,
     new_in_forever: !!featuredSrc.new_in_forever,
-    bossCount: bosses.length,
-    itemCount: (featuredSrc.items || []).length,
+    bossCount: plural(bosses.length, 'boss', 'bosses'),
+    itemCount: plural((featuredSrc.items || []).length, 'item'),
     // the last boss is the dungeon's end boss; show a few on the way
     bosses: bosses.slice(0, 6).map((b) => b.name),
     moreBosses: Math.max(0, bosses.length - 6),
@@ -81,10 +83,11 @@ function pages() {
   const continents = maps.filter((z) => z.kind === 'continent').sort((a, b) => a.name.localeCompare(b.name)).map((c) => ({
     name: c.name,
     thumb: c.thumb || c.image,
-    zones: maps.filter((z) => z.kind === 'zone' && z.parent === c.name).length,
+    zones: plural(maps.filter((z) => z.kind === 'zone' && z.parent === c.name).length, 'zone'),
   }));
   const newZones = maps.filter((z) => z.new_in_forever && z.kind !== 'continent').map((z) => z.name).sort();
-  const zoneCounts = ['zone', 'city', 'battleground'].reduce((o, k) => ({ ...o, [k]: maps.filter((z) => z.kind === k).length }), {});
+  const count = (kind, one, many) => plural(maps.filter((z) => z.kind === kind).length, one, many);
+  const zoneCounts = { zone: count('zone', 'zone'), city: count('city', 'city', 'cities'), battleground: count('battleground', 'battleground') };
 
   // Every article except the main page and 404 (required here, not at the top: render.js requires this file)
   const { collectPages } = require('../build/render');
@@ -102,7 +105,7 @@ function pages() {
   // Portal tiles under the banner. `href` for anchors on this page, `to` for wiki pages.
   const portals = [
     { label: 'Dungeons', href: '#Dungeons', icon: iconSrc('inv_banner_01'), note: `${dungeons.length} instances` },
-    { label: 'Bosses', href: '#Featured_dungeon', icon: iconSrc('spell_shadow_evileye'), note: `${bossNames.size} bosses` },
+    { label: 'Bosses', href: '#Dungeons', icon: iconSrc('spell_shadow_evileye'), note: `${bossNames.size} bosses` },
     { label: 'Professions', to: 'Professions', icon: iconSrc('trade_blacksmithing'), note: `${allProfs.length} professions` },
     { label: 'Zones', to: 'Zones', icon: iconSrc('ability_mount_whitedirewolf'), note: `${maps.length} maps` },
     { label: 'Mining', to: 'Mining', icon: iconSrc('trade_mining'), note: 'Veins & smelting' },
@@ -111,10 +114,14 @@ function pages() {
     { label: 'New in Forever', href: '#New_in_Forever', icon: iconSrc('spell_holy_innerfire'), note: `${newDungeons.length + newZones.length} additions` },
   ];
 
+  // Coverage with a real denominator: dungeons with both bosses and loot researched, professions written,
+  // and non-continent maps that have gathering nodes pinned on them
+  const nodeZones = new Set(writtenProfs.flatMap((p) => json(`professions/${p.file}`).nodes || []).map((n) => n.zone_id));
+  const areaMaps = maps.filter((z) => z.kind !== 'continent');
   const progress = [
-    { label: 'Dungeons', done: dungeons.length, total: dungeons.length },
+    { label: 'Dungeon loot', done: research.filter((d) => d.bosses.length && (d.items || []).length).length, total: research.length },
     { label: 'Professions', done: writtenProfs.length, total: allProfs.length },
-    { label: 'Zone maps', done: maps.length, total: maps.length },
+    { label: 'Gathering maps', done: areaMaps.filter((z) => z.area_id != null && nodeZones.has(z.area_id)).length, total: areaMaps.length },
   ];
 
   return [
@@ -126,7 +133,9 @@ function pages() {
         dungeonCount: dungeons.length,
         newCount: word(newDungeons.length),
         newDungeons: newDungeons.map((d) => ({ name: d.name, levels: d.levels, zone: d.zone })),
+        newDungeonsLabel: plural(newDungeons.length, 'new dungeon'),
         newZones,
+        newZonesLabel: plural(newZones.length, 'new zone'),
         writtenProfs: writtenProfs.map((p) => p.name),
         campCount,
         zoneCounts,

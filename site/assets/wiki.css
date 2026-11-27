@@ -568,7 +568,7 @@ a.q-rare, a.q-epic, a.q-uncommon, a.q-legendary { font-weight: 600; }
 .mp-continent-name { font-weight: 600; margin-top: 0.15rem; }
 
 .mp-progress { list-style: none; margin: 0.2rem 0 0.5rem; padding: 0; }
-.mp-progress li { display: grid; grid-template-columns: 6.5rem 1fr 3rem; align-items: center; gap: 0.5rem; padding: 0.15rem 0; font-size: 0.82rem; }
+.mp-progress li { display: grid; grid-template-columns: 7.5rem 1fr 3rem; align-items: center; gap: 0.5rem; padding: 0.15rem 0; font-size: 0.82rem; }
 .mp-progress .mp-meta { text-align: right; font-variant-numeric: tabular-nums; }
 .mp-progress-bar { height: 0.7rem; background: var(--body-main); border: 1px solid var(--body-border); }
 .mp-progress-bar span { display: block; height: 100%; background: var(--q-uncommon); }
