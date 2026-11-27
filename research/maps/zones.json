@@ -1,5 +1,5 @@
 {
-  "source": "WoW Forever client tables on wago.tools (UiMap, UiMapAssignment, UiMapXMapArt, UiMapArt, UiMapArtStyleLayer, UiMapArtTile)",
+  "source": "WoW Forever client tables on wago.tools (UiMap, UiMapAssignment, UiMapXMapArt, UiMapArt, UiMapArtStyleLayer, UiMapArtTile, WorldMapOverlay, Map, AreaTable)",
   "source_url": "https://wago.tools/db2/UiMap?build=1.60.1.71139",
   "build": "1.60.1.71139",
   "classic_era_build": "1.15.9.70576",
@@ -18,7 +18,8 @@
       "image": "/assets/maps/map-1415.webp",
       "new_in_forever": false,
       "parent": null,
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/map-1415.webp"
     },
     {
       "area_id": null,
@@ -32,7 +33,8 @@
       "image": "/assets/maps/map-1414.webp",
       "new_in_forever": false,
       "parent": null,
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/map-1414.webp"
     },
     {
       "area_id": 36,
@@ -46,7 +48,8 @@
       "image": "/assets/maps/36.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/36.webp"
     },
     {
       "area_id": 2597,
@@ -60,7 +63,8 @@
       "image": "/assets/maps/2597.webp",
       "new_in_forever": false,
       "parent": "Hillsbrad Foothills",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/2597.webp"
     },
     {
       "area_id": 3358,
@@ -74,7 +78,8 @@
       "image": "/assets/maps/3358.webp",
       "new_in_forever": false,
       "parent": "Arathi Highlands",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/3358.webp"
     },
     {
       "area_id": 45,
@@ -88,7 +93,8 @@
       "image": "/assets/maps/45.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/45.webp"
     },
     {
       "area_id": 331,
@@ -102,7 +108,8 @@
       "image": "/assets/maps/331.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/331.webp"
     },
     {
       "area_id": 16,
@@ -116,7 +123,8 @@
       "image": "/assets/maps/16.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/16.webp"
     },
     {
       "area_id": 3,
@@ -130,7 +138,8 @@
       "image": "/assets/maps/3.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/3.webp"
     },
     {
       "area_id": 4,
@@ -144,7 +153,8 @@
       "image": "/assets/maps/4.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/4.webp"
     },
     {
       "area_id": 46,
@@ -158,7 +168,8 @@
       "image": "/assets/maps/46.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/46.webp"
     },
     {
       "area_id": 148,
@@ -172,7 +183,8 @@
       "image": "/assets/maps/148.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/148.webp"
     },
     {
       "area_id": 16606,
@@ -186,13 +198,14 @@
       "image": "/assets/maps/16606.webp",
       "new_in_forever": true,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/16606.webp"
     },
     {
       "area_id": 1657,
       "ui_map_id": 1457,
       "name": "Darnassus",
-      "kind": "zone",
+      "kind": "city",
       "parent_ui_map_id": 1414,
       "map_id": 1,
       "width": 1002,
@@ -200,7 +213,8 @@
       "image": "/assets/maps/1657.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/1657.webp"
     },
     {
       "area_id": 41,
@@ -214,7 +228,8 @@
       "image": "/assets/maps/41.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/41.webp"
     },
     {
       "area_id": 405,
@@ -228,7 +243,8 @@
       "image": "/assets/maps/405.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/405.webp"
     },
     {
       "area_id": 1,
@@ -242,7 +258,8 @@
       "image": "/assets/maps/1.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/1.webp"
     },
     {
       "area_id": 14,
@@ -256,7 +273,8 @@
       "image": "/assets/maps/14.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/14.webp"
     },
     {
       "area_id": 10,
@@ -270,7 +288,8 @@
       "image": "/assets/maps/10.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/10.webp"
     },
     {
       "area_id": 15,
@@ -284,7 +303,8 @@
       "image": "/assets/maps/15.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/15.webp"
     },
     {
       "area_id": 139,
@@ -298,7 +318,8 @@
       "image": "/assets/maps/139.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/139.webp"
     },
     {
       "area_id": 12,
@@ -312,7 +333,8 @@
       "image": "/assets/maps/12.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/12.webp"
     },
     {
       "area_id": 361,
@@ -326,7 +348,8 @@
       "image": "/assets/maps/361.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/361.webp"
     },
     {
       "area_id": 357,
@@ -340,7 +363,8 @@
       "image": "/assets/maps/357.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/357.webp"
     },
     {
       "area_id": 267,
@@ -354,13 +378,14 @@
       "image": "/assets/maps/267.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/267.webp"
     },
     {
       "area_id": 1537,
       "ui_map_id": 1455,
       "name": "Ironforge",
-      "kind": "zone",
+      "kind": "city",
       "parent_ui_map_id": 1415,
       "map_id": 0,
       "width": 1002,
@@ -368,7 +393,8 @@
       "image": "/assets/maps/1537.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/1537.webp"
     },
     {
       "area_id": 38,
@@ -382,7 +408,8 @@
       "image": "/assets/maps/38.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/38.webp"
     },
     {
       "area_id": 493,
@@ -396,7 +423,8 @@
       "image": "/assets/maps/493.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/493.webp"
     },
     {
       "area_id": 616,
@@ -410,7 +438,8 @@
       "image": "/assets/maps/616.webp",
       "new_in_forever": true,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/616.webp"
     },
     {
       "area_id": 215,
@@ -424,13 +453,14 @@
       "image": "/assets/maps/215.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/215.webp"
     },
     {
       "area_id": 1637,
       "ui_map_id": 1454,
       "name": "Orgrimmar",
-      "kind": "zone",
+      "kind": "city",
       "parent_ui_map_id": 1414,
       "map_id": 1,
       "width": 1002,
@@ -438,7 +468,8 @@
       "image": "/assets/maps/1637.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/1637.webp"
     },
     {
       "area_id": 44,
@@ -452,7 +483,8 @@
       "image": "/assets/maps/44.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/44.webp"
     },
     {
       "area_id": 16591,
@@ -466,7 +498,8 @@
       "image": "/assets/maps/16591.webp",
       "new_in_forever": true,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/16591.webp"
     },
     {
       "area_id": 51,
@@ -480,7 +513,8 @@
       "image": "/assets/maps/51.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/51.webp"
     },
     {
       "area_id": 16651,
@@ -494,7 +528,8 @@
       "image": "/assets/maps/16651.webp",
       "new_in_forever": true,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/16651.webp"
     },
     {
       "area_id": 1377,
@@ -508,7 +543,8 @@
       "image": "/assets/maps/1377.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/1377.webp"
     },
     {
       "area_id": 130,
@@ -522,7 +558,8 @@
       "image": "/assets/maps/130.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/130.webp"
     },
     {
       "area_id": 406,
@@ -536,13 +573,14 @@
       "image": "/assets/maps/406.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/406.webp"
     },
     {
       "area_id": 1519,
       "ui_map_id": 1453,
       "name": "Stormwind City",
-      "kind": "zone",
+      "kind": "city",
       "parent_ui_map_id": 1415,
       "map_id": 0,
       "width": 1002,
@@ -550,7 +588,8 @@
       "image": "/assets/maps/1519.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/1519.webp"
     },
     {
       "area_id": 33,
@@ -564,7 +603,8 @@
       "image": "/assets/maps/33.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/33.webp"
     },
     {
       "area_id": 8,
@@ -578,7 +618,8 @@
       "image": "/assets/maps/8.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/8.webp"
     },
     {
       "area_id": 440,
@@ -592,7 +633,8 @@
       "image": "/assets/maps/440.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/440.webp"
     },
     {
       "area_id": 141,
@@ -606,7 +648,8 @@
       "image": "/assets/maps/141.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/141.webp"
     },
     {
       "area_id": 17,
@@ -620,7 +663,8 @@
       "image": "/assets/maps/17.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/17.webp"
     },
     {
       "area_id": 47,
@@ -634,7 +678,8 @@
       "image": "/assets/maps/47.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/47.webp"
     },
     {
       "area_id": 400,
@@ -648,13 +693,14 @@
       "image": "/assets/maps/400.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/400.webp"
     },
     {
       "area_id": 1638,
       "ui_map_id": 1456,
       "name": "Thunder Bluff",
-      "kind": "zone",
+      "kind": "city",
       "parent_ui_map_id": 1414,
       "map_id": 1,
       "width": 1002,
@@ -662,7 +708,8 @@
       "image": "/assets/maps/1638.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/1638.webp"
     },
     {
       "area_id": 85,
@@ -676,7 +723,8 @@
       "image": "/assets/maps/85.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/85.webp"
     },
     {
       "area_id": 490,
@@ -690,13 +738,14 @@
       "image": "/assets/maps/490.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/490.webp"
     },
     {
       "area_id": 1497,
       "ui_map_id": 1458,
       "name": "Undercity",
-      "kind": "zone",
+      "kind": "city",
       "parent_ui_map_id": 1415,
       "map_id": 0,
       "width": 1002,
@@ -704,7 +753,8 @@
       "image": "/assets/maps/1497.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/1497.webp"
     },
     {
       "area_id": 3277,
@@ -718,7 +768,8 @@
       "image": "/assets/maps/3277.webp",
       "new_in_forever": false,
       "parent": "The Barrens",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/3277.webp"
     },
     {
       "area_id": 28,
@@ -732,7 +783,8 @@
       "image": "/assets/maps/28.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/28.webp"
     },
     {
       "area_id": 40,
@@ -746,7 +798,8 @@
       "image": "/assets/maps/40.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/40.webp"
     },
     {
       "area_id": 11,
@@ -760,7 +813,8 @@
       "image": "/assets/maps/11.webp",
       "new_in_forever": false,
       "parent": "Eastern Kingdoms",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/11.webp"
     },
     {
       "area_id": 618,
@@ -774,7 +828,8 @@
       "image": "/assets/maps/618.webp",
       "new_in_forever": false,
       "parent": "Kalimdor",
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/618.webp"
     },
     {
       "area_id": 16593,
@@ -788,7 +843,8 @@
       "image": "/assets/maps/16593.webp",
       "new_in_forever": true,
       "parent": null,
-      "has_image": true
+      "has_image": true,
+      "thumb": "/assets/maps/thumb/16593.webp"
     }
   ]
 }
