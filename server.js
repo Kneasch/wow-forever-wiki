@@ -23,6 +23,35 @@ const routes = {
   // '/api/search': async (req, res, url) => { ... },
 };
 
+// Live Auction House prices. With BLIZZARD_CLIENT_ID/SECRET set, /data/ah/<region>-<ruleset>-<faction>.json
+// is built from the Blizzard API on request (cached per region, refreshed at most every AH_TTL_MIN
+// minutes; Blizzard updates snapshots about hourly). Without credentials the static files that
+// scripts/fetch-ah-prices.js wrote under site/data/ah/ are served as usual.
+const ahApi = require('./scripts/ah/blizzard');
+const AH_PATH = /^\/data\/ah\/(us|eu)-(pve|pvp|rp|rppvp)-(alliance|horde)\.json$/;
+const AH_TTL = (Number(process.env.AH_TTL_MIN) || 30) * 60_000;
+const ahCache = new Map(); // region -> { at, promise }
+function ahRegion(region) {
+  const hit = ahCache.get(region);
+  if (hit && Date.now() - hit.at < AH_TTL) return hit.promise;
+  const promise = ahApi.fetchRegion(region);
+  ahCache.set(region, { at: Date.now(), promise });
+  promise.catch(() => ahCache.delete(region)); // retry on the next request instead of caching the failure
+  return promise;
+}
+async function ahRoute(req, res, m) {
+  try {
+    const seg = (await ahRegion(m[1]))[m.slice(1, 4).join('-')];
+    if (!seg) { res.writeHead(404, { 'Content-Type': 'application/json' }); return res.end('null'); }
+    res.writeHead(200, { 'Content-Type': TYPES['.json'], 'Cache-Control': 'max-age=300' });
+    res.end(JSON.stringify(seg));
+  } catch (err) {
+    console.error('AH prices:', err.message);
+    res.writeHead(502, { 'Content-Type': 'application/json' });
+    res.end('null');
+  }
+}
+
 // Resolve a URL path to a file inside ROOT, or null if outside/missing.
 async function resolveFile(pathname, { allowUnderscore = false } = {}) {
   const rel = decodeURIComponent(pathname);
@@ -66,6 +95,8 @@ const server = http.createServer(async (req, res) => {
     const url = new URL(req.url, `http://${req.headers.host}`);
     const handler = routes[url.pathname];
     if (handler) return await handler(req, res, url);
+    const ah = ahApi.hasCredentials() && url.pathname.match(AH_PATH);
+    if (ah) return await ahRoute(req, res, ah);
 
     const file = await resolveFile(url.pathname === '/' ? '/index.html' : url.pathname);
     if (file) return await sendFile(res, file);

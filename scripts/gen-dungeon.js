@@ -5,6 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const { slug, slugRegistry } = require('./slug');
+const ah = require('./ah/markup');
 
 const RESEARCH = path.join(__dirname, '..', 'research');
 const load = (file) => {
@@ -173,6 +174,8 @@ function itemPage(it) {
     `      <tr><th>Binding</th><td>${val(it.binding)}</td></tr>`,
     `      <tr><th>Sell price</th><td>${val(it.sell_price)}</td></tr>`,
   ];
+  const tradable = ah.isTradable(it);
+  if (tradable) rows.push(ah.infoboxRow(it.item_id));
   if (it.armor !== null) rows.push(`      <tr><th>Armor</th><td>${it.armor}</td></tr>`);
   if (w) {
     rows.push(
@@ -233,13 +236,13 @@ ${rows.filter(Boolean).join('\n')}
 
     <p>${intro}</p>
 
-${toc([['Tooltip', 'Tooltip'], ['Item_sources', 'Item sources']])}
+${toc([['Tooltip', 'Tooltip'], ...(tradable ? [ah.toc] : []), ['Item_sources', 'Item sources']])}
 
     <h2 id="Tooltip">Tooltip</h2>
     <div class="wow-tooltip">
 ${tooltip}
     </div>
-
+${tradable ? '\n' + ah.section(it.item_id) + '\n' : ''}
     <h2 id="Item_sources">Item sources</h2>
 ${rateNote}
     <div class="table-scroll">

@@ -56,3 +56,32 @@ Profession pages (the Professions hub, Mining, every mining node and every ore, 
 `research/professions/` by `node scripts/gen-profession.js`. `scripts/fetch-professions.js` refreshes that data from Wowhead.
 See [research/professions/README.md](research/professions/README.md) for the data, and
 [docs/professions-plan.md](docs/professions-plan.md) for the plan to cover every profession.
+
+## Auction House prices
+
+Every tradable item page (not Binds when picked up, not a quest item) has an **Auction House** row in the infobox and an
+Auction House section. When the page loads, `site/assets/ah-price.js` fetches the price for the reader's chosen segment
+and fills both in. The reader picks the segment with three menus, and the choice is remembered:
+
+- **Region:** NA or EU
+- **Ruleset:** Normal (PvE), PvP, RP or RP-PvP. WoW Forever runs one realm per ruleset per region.
+- **Faction:** Alliance or Horde, which have separate auction houses. The neutral house is not counted.
+
+For each segment the widget shows the lowest buyout and the median buyout per unit, the quantity listed and the number of
+auctions. The median is weighted by quantity. Bid-only auctions are not counted.
+
+The prices come from the Blizzard Game Data API through a Battle.net API client
+(<https://develop.battle.net/access/clients>). They are served at `/data/ah/<region>-<ruleset>-<faction>.json`, for
+example `/data/ah/eu-rppvp-horde.json`. There are two ways to provide them:
+
+```bash
+# Static hosting: snapshot every segment into site/data/ah/ (git-ignored), then build
+BLIZZARD_CLIENT_ID=... BLIZZARD_CLIENT_SECRET=... npm run ah && npm run build
+
+# Live: server.js builds the same JSON from the API on request and caches it per region for 30 minutes (AH_TTL_MIN)
+BLIZZARD_CLIENT_ID=... BLIZZARD_CLIENT_SECRET=... npm start
+```
+
+`AH_NAMESPACE` sets the API namespace. The default is `dynamic-classic-{region}`, and `{region}` becomes `us` or
+`eu`. Change it if Blizzard publishes a separate namespace for Forever. `AH_REGIONS=us` limits the fetch to one region.
+Without price data the pages still load and say that prices are not available.

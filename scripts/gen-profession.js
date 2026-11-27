@@ -13,6 +13,7 @@
 const fs = require('fs');
 const path = require('path');
 const { slug, slugRegistry } = require('./slug');
+const ah = require('./ah/markup');
 
 const ROOT = path.join(__dirname, '..');
 const DIR = path.join(ROOT, 'research', 'professions');
@@ -207,6 +208,7 @@ ${maps}
         : plannedMade.length ? `It is made with ${link(P)} by ${list(plannedMade.map((r) => esc(r.name)))}.`
           : m.kind === 'tool' ? `It is needed to use ${link(P)}.` : '';
     const sections = [];
+    const tradable = ah.isTradable(m);
     if (nodes.length) {
       sections.push(['Gathered_from', 'Gathered from', `    <p>${esc(p.nodes_contents_basis)}</p>
 ${table(['Node', 'Requires', 'Main zones (spawn points)'], nodes.map((g) => [td(link(g.name)), td(val(g.req), 'num'), td(zonesOf(g).join(', ') || unknown)]))}`]);
@@ -227,6 +229,7 @@ ${table(['Node', 'Requires', 'Main zones (spawn points)'], nodes.map((g) => [td(
         camp.length ? `    <p>Camp features built with it:</p>\n${ul(camp.map((c) => `${link(P)} camp: <b>${esc(c.name)}</b> needs ${c.build_reagents.map(counted).join(', ')}`))}` : '',
       ].filter(Boolean).join('\n')]);
     }
+    if (tradable) sections.push([ah.toc[0], ah.toc[1], ah.section(m.item_id).replace(/^.*\n/, '')]); // heading comes from the section loop
     const body = `
     <table class="infobox">
       <tr><th colspan="2" class="infobox-header">${esc(m.name)}</th></tr>
@@ -242,7 +245,7 @@ ${table(['Node', 'Requires', 'Main zones (spawn points)'], nodes.map((g) => [td(
       <tr><th>Item level</th><td>${val(m.item_level)}</td></tr>
       <tr><th>Max stack</th><td>${val(m.max_stack)}</td></tr>
       <tr><th>Sell price</th><td>${val(m.sell_price)}</td></tr>
-      <tr><th>Profession</th><td>${link(P)}</td></tr>
+${tradable ? ah.infoboxRow(m.item_id) + '\n' : ''}      <tr><th>Profession</th><td>${link(P)}</td></tr>
       <tr><th colspan="2" class="infobox-subheader">Database</th></tr>
       <tr><th>Item ID</th><td>${m.item_id}</td></tr>
       <tr><th>Source</th><td><a class="external" href="${esc(wowhead('item', m.item_id))}">Wowhead</a></td></tr>

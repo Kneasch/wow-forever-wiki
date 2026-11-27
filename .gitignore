@@ -1,2 +1,4 @@
 dist/
 .DS_Store
+# Auction House price snapshots (scripts/fetch-ah-prices.js) are build output
+site/data/ah/

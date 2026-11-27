@@ -427,6 +427,24 @@ a.q-rare, a.q-epic, a.q-uncommon, a.q-legendary { font-weight: 600; }
 .spawn-map .dot { fill: #b8420f; stroke: #000; stroke-width: 0.2; }
 .spawn-map-caption { font-size: 0.78rem; color: var(--subtle); margin-top: 0; }
 
+/* ---------- Auction House prices (filled by assets/ah-price.js) ---------- */
+.ah-price {
+  max-width: min(100%, 30rem);
+  background: var(--body-light);
+  border: 1px solid var(--body-border);
+  padding: 0.6rem 0.8rem;
+  margin: 0.25rem 0 0.75rem;
+}
+.ah-controls { display: flex; flex-wrap: wrap; gap: 0.5rem 0.9rem; margin-bottom: 0.5rem; }
+.ah-field { display: flex; flex-direction: column; font-size: 0.8rem; color: var(--subtle); }
+.ah-field select { font: inherit; font-size: 0.9rem; color: var(--text); background: var(--input-bg); border: 1px solid var(--body-border); padding: 0.15rem 0.3rem; }
+.ah-stats { display: grid; grid-template-columns: max-content max-content; gap: 0.15rem 1rem; margin: 0; }
+.ah-stats dt { font-weight: 600; }
+.ah-stats dd { margin: 0; font-variant-numeric: tabular-nums; }
+.ah-status, .ah-note { margin: 0.25rem 0 0; }
+.ah-note, .ah-seg { font-size: 0.8rem; color: var(--subtle); }
+.ah-seg { display: block; }
+
 /* ---------- Narrow screens ---------- */
 @media (max-width: 760px) {
   /* own row above the wordmark; absolute positioning overlapped it once the theme toggle was added */
