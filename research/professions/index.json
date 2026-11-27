@@ -1,0 +1,38 @@
+{
+  "note": "List of professions for the Professions hub page. Each profession with a research file (research/professions/<file>) gets its own pages; the rest are listed as not written yet. Camp features are the Forever blueprints found on the Wowhead tooltip API (item IDs 273085-273141), with the skill each needs.",
+  "groups": [
+    {
+      "kind": "gathering",
+      "title": "Gathering professions",
+      "blurb": "Gathering professions collect raw materials from the world. A character can learn two primary professions, gathering or production.",
+      "professions": [
+        { "name": "Mining", "file": "mining.json", "icon": "trade_mining", "spell_id": 2575, "summary": "Ore, stone and gems from mineral veins; smelting ore into bars.", "feeds": ["Blacksmithing", "Engineering"], "camp": ["Lodestone (20)", "Rock Garden (140)", "Molten Foundry (300)"] },
+        { "name": "Herbalism", "file": null, "icon": "spell_nature_naturetouchgrow", "spell_id": 2366, "summary": "Herbs from plants in the world. Forever adds seeds and new level 60 herbs.", "feeds": ["Alchemy"], "camp": ["Greenhouse (140)", "Seed Hybridizer (300)"] },
+        { "name": "Skinning", "file": null, "icon": "inv_misc_pelt_wolf_01", "spell_id": 8613, "summary": "Leather, hides and scales from the corpses of beasts.", "feeds": ["Leatherworking"], "camp": ["Field Guide (140)", "Trapper's Workbench (300)"] }
+      ]
+    },
+    {
+      "kind": "production",
+      "title": "Production professions",
+      "blurb": "Production professions turn materials into gear, consumables and tools.",
+      "professions": [
+        { "name": "Alchemy", "file": null, "icon": "trade_alchemy", "spell_id": 2259, "summary": "Potions, elixirs, flasks and transmutes.", "feeds": [], "camp": ["Fermenter (140)", "Alchemy Laboratory (300)"] },
+        { "name": "Blacksmithing", "file": null, "icon": "trade_blacksmithing", "spell_id": 2018, "summary": "Mail and plate armor, weapons, and sharpening stones.", "feeds": [], "camp": ["Anvil (140)", "Master Forge (300)"] },
+        { "name": "Enchanting", "file": null, "icon": "trade_engraving", "spell_id": 7411, "summary": "Permanent enchants on gear, from materials got by disenchanting.", "feeds": [], "camp": ["Arcane Salvager (140)", "Arcane Forge (300)"] },
+        { "name": "Engineering", "file": null, "icon": "trade_engineering", "spell_id": 4036, "summary": "Gadgets, explosives, scopes, ammunition and goggles.", "feeds": [], "camp": ["Repair Bot (140)", "Anarchist's Workbench (300)"] },
+        { "name": "Leatherworking", "file": null, "icon": "inv_misc_armorkit_17", "spell_id": 2108, "summary": "Leather and mail armor and armor kits.", "feeds": [], "camp": ["Tanning Rack (125)", "Sewing Machine (300)"] },
+        { "name": "Tailoring", "file": null, "icon": "trade_tailoring", "spell_id": 3908, "summary": "Cloth armor and bags.", "feeds": [], "camp": ["Spinning Wheel (140)", "Loom (300)"] }
+      ]
+    },
+    {
+      "kind": "secondary",
+      "title": "Secondary professions",
+      "blurb": "Every character can learn all secondary professions alongside their two primary ones.",
+      "professions": [
+        { "name": "Cooking", "file": null, "icon": "inv_misc_food_15", "spell_id": 2550, "summary": "Food that restores health and mana and gives buffs.", "feeds": [], "camp": ["Journeyman Campfire (90)", "Cookie's Feast (140)", "Expert Campfire (200)", "Iron Oven (300)"] },
+        { "name": "First Aid", "file": null, "icon": "spell_holy_sealofsacrifice", "spell_id": 3273, "summary": "Bandages and anti-venoms from cloth.", "feeds": [], "camp": ["Toxin Study (140)", "Plague Doctor's Laboratory (300)"] },
+        { "name": "Fishing", "file": null, "icon": "trade_fishing", "spell_id": 7620, "summary": "Fish for Cooking, plus treasure and rare catches.", "feeds": ["Cooking"], "camp": ["Fishing Rack (140)", "Fishing Hut (300)"] }
+      ]
+    }
+  ]
+}
