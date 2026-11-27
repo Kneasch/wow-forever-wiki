@@ -159,7 +159,7 @@ function profession(p, withPages, index) {
     const m = byName.get(g.name) || null;
     const item = m ? itemSections(m, g) : null;
     const nodeSentence = [
-      ...(m ? [`The ${g.name.toLowerCase()} ${P.toLowerCase()} node needs `] : [D.b(g.name), ` is ${g.variant === 'ooze' ? 'an ooze-covered' : 'a'} ${P.toLowerCase()} node that needs `]),
+      ...(m ? [`Its ${P.toLowerCase()} node needs `] : [D.b(g.name), ` is ${g.variant === 'ooze' ? 'an ooze-covered' : 'a'} ${P.toLowerCase()} node that needs `]),
       D.link(P), ' ', ...D.val(g.req),
       `.${!m && g.new_in_forever ? ' It is new in WoW Forever.' : ''} `,
       ...(g.contains.length ? [`${gathers} it gives `, ...D.andList(g.contains.map((id) => matLink(id))), '.'] : ['What it contains is not known yet.']),
