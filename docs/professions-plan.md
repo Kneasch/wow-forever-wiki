@@ -40,7 +40,7 @@ Mulgore and Mount Hyjal. *(guides)*: a Legacy perk, Bountiful Harvest, raises ga
 | Tailoring | Spinning Wheel (140); Loom (300) | Unstable Sentinel; Baroness Anastari |
 | Cooking | Journeyman Campfire (90); Cookie's Feast (140); Expert Campfire (200); Iron Oven (300) | Lord Serpentis; Cookie; Slavecrusher Grox; Quartermaster Zigris |
 | First Aid | Toxin Study (140); Plague Doctor's Laboratory (300) | Commander Springvale; Doctor Theolen Krastinov |
-| Fishing | Fishing Rack (140); Fishing Hut (300) | Gelihast; Jammal'an the Prophet |
+| Fishing | Fish Bowl (20, not a blueprint); Fishing Rack (140); Fishing Hut (300) | Gelihast; Jammal'an the Prophet |
 
 Each level 300 feature is paired with a boss-dropped catalyst of the same boss (e.g. Golem Heart from Golem Lord Argelmach,
 Bottled Screams from Baroness Anastari), which suggests the top recipes need both. Confirm when researching each profession.
@@ -184,7 +184,7 @@ guide or a manual pass.
 |---|---|---|
 | **Cooking** | Cooking; recipe tables by skill; ingredients | 36 new recipes (e.g. Sweetpaw Jam, Barkskin Burrow reputation); new fruits (Shiny Green Apple to Hyjal Berries, item levels 5-55) and fruit pulps; four camp features, the most of any profession |
 | **First Aid** | First Aid; bandage table | 9 new recipes; Toxin Study and Plague Doctor's Laboratory; check whether anti-venoms changed |
-| **Fishing** | Fishing; fish items; pools as nodes (object tooltips give pool zones and coordinates like ore nodes) | New fish (e.g. Whimsyfin 251524, Seasonal Fish Steaks 273295); Fishing Rack and Fishing Hut; zone fishing skill requirements need a guide |
+| **Fishing** | Fishing; fish items; pools as nodes. Done: see `research/professions/fishing.json`. Object tooltips give no pool zones or coordinates (the plan assumed they did), so pools have no maps. | Only one new raw fish (Whimsyfin 251524) was found in items 248000-290500; Seasonal Fish Steaks 273295 is a Cooking reagent. Camp features: Fish Bowl (20), Fishing Rack (140), Fishing Hut (300). Zone fishing skill requirements and pool locations still need a guide or the Wowhead object pages |
 
 ## 5. Phases
 
@@ -195,7 +195,7 @@ guide or a manual pass.
 3. **Item registry** (the decision in §3), then **Alchemy and Blacksmithing**. They consume the Phase 2 materials and have
    the clearest Forever additions.
 4. **Remaining production professions:** Tailoring, Leatherworking, Engineering, Enchanting.
-5. **Secondary professions:** Fishing (pools reuse the node code), Cooking, First Aid.
+5. **Secondary professions:** Fishing (done: pools reuse the node code), Cooking, First Aid.
 6. **Cross-cutting:** a Camp features page; crafting orders (Craftsman's Writs) and Waylaid Crates; leveling routes per
    profession. (Zone map images are done: every zone, including Forever's new ones, comes from the Forever client data. Pin
    types for herbs, fishing pools, skinnable creatures and treasure are ready for those professions' node data.)

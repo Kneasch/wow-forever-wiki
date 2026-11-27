@@ -1,0 +1,804 @@
+{
+  "profession": "Fishing",
+  "kind": "secondary",
+  "game_version": "WoW Forever",
+  "icon": "trade_fishing",
+  "summary": "Fishing is a secondary profession. Anglers catch fish from any water with a fishing pole, and fish in pools (schools) for particular fish. Cooking uses most of what they catch.",
+  "gather_verb": "Fishing",
+  "gather_phrase": "Fishing in it catches",
+  "node_word": "pool",
+  "nodes_label": "Fishing pools",
+  "nodes_intro": "Pools (schools) are spots in the water where one kind of fish, or a mix of catches, can be fished up. Any water can be fished; a pool only changes what comes up.",
+  "node_skill_note": "Fishing pools have no skill requirement on their tooltips. In Classic the skill needed to fish a spot depended on the zone, not the pool; Forever's zone fishing levels are not on the tooltip API and have not been collected.",
+  "node_locations_note": "Wowhead's tooltip data has no locations for fishing pools, so there is no map yet. The Wowhead object pages may list them, but they could not be read from this environment.",
+  "ranks": [
+    {
+      "rank": "Apprentice",
+      "spell_id": 7733,
+      "max_skill": 75,
+      "requires_skill": null,
+      "requires_level": null,
+      "basis": "Max skill is the Classic value: the Forever spell tooltips for Fishing do not state it."
+    },
+    {
+      "rank": "Journeyman",
+      "spell_id": 7734,
+      "max_skill": 150,
+      "requires_skill": 50,
+      "requires_level": 10,
+      "basis": "Max skill, skill and level requirements are the Classic values, not confirmed for Forever."
+    },
+    {
+      "rank": "Expert",
+      "spell_id": 7736,
+      "max_skill": 225,
+      "requires_skill": 125,
+      "requires_level": 20,
+      "basis": "Max skill, skill and level requirements are the Classic values, not confirmed for Forever."
+    },
+    {
+      "rank": "Artisan",
+      "spell_id": 18249,
+      "max_skill": 300,
+      "requires_skill": 225,
+      "requires_level": 35,
+      "basis": "Max skill, skill and level requirements are the Classic values, not confirmed for Forever."
+    }
+  ],
+  "ranks_note": "Maximum skill, and the skill and level needed to train each rank, are the Classic values. The Forever Fishing spell tooltips do not state them, so none of them is confirmed for Forever.",
+  "tools": [
+    {
+      "name": "Fishing Pole",
+      "item_id": 6256,
+      "note": "A fishing pole must be equipped to fish. Sold by fishing trade supplies vendors."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Fishing",
+      "spell_id": 7620,
+      "note": "Equip a fishing pole and cast at a body of water. Higher skill improves the chance of catching fish in higher level areas."
+    }
+  ],
+  "nodes": [
+    {
+      "object_id": 180184,
+      "contains": [],
+      "variant": null,
+      "name": "School of Fish",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180248,
+      "contains": [],
+      "variant": null,
+      "name": "School of Tastyfish",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180369,
+      "contains": [],
+      "variant": null,
+      "name": "Muddy Churning Waters",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180582,
+      "contains": [
+        6358
+      ],
+      "variant": null,
+      "name": "Oily Blackmouth School",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180655,
+      "contains": [],
+      "variant": null,
+      "name": "Floating Debris",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180656,
+      "contains": [
+        21071
+      ],
+      "variant": null,
+      "name": "Sagefish School",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180657,
+      "contains": [
+        6359
+      ],
+      "variant": null,
+      "name": "Firefin Snapper School",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180658,
+      "contains": [
+        6522
+      ],
+      "variant": null,
+      "name": "School of Deviate Fish",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180661,
+      "contains": [],
+      "variant": null,
+      "name": "Oil Spill",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180662,
+      "contains": [],
+      "variant": null,
+      "name": "Floating Wreckage",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180663,
+      "contains": [
+        21071
+      ],
+      "variant": null,
+      "name": "Sagefish School",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180664,
+      "contains": [
+        6358
+      ],
+      "variant": null,
+      "name": "Oily Blackmouth School",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180682,
+      "contains": [
+        6358
+      ],
+      "variant": null,
+      "name": "Oily Blackmouth School",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180683,
+      "contains": [
+        6359
+      ],
+      "variant": null,
+      "name": "Firefin Snapper School",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180684,
+      "contains": [
+        21153
+      ],
+      "variant": null,
+      "name": "Greater Sagefish School",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180685,
+      "contains": [],
+      "variant": null,
+      "name": "Floating Wreckage",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180712,
+      "contains": [
+        13422
+      ],
+      "variant": null,
+      "name": "Stonescale Eel Swarm",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180750,
+      "contains": [
+        6358
+      ],
+      "variant": null,
+      "name": "Oily Blackmouth School",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180751,
+      "contains": [],
+      "variant": null,
+      "name": "Floating Wreckage",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180752,
+      "contains": [
+        6359
+      ],
+      "variant": null,
+      "name": "Firefin Snapper School",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180753,
+      "contains": [
+        7070
+      ],
+      "variant": null,
+      "name": "Patch of Elemental Water",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180900,
+      "contains": [
+        6358
+      ],
+      "variant": null,
+      "name": "Oily Blackmouth School",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180901,
+      "contains": [],
+      "variant": null,
+      "name": "Floating Wreckage",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    },
+    {
+      "object_id": 180902,
+      "contains": [
+        6359
+      ],
+      "variant": null,
+      "name": "Firefin Snapper School",
+      "required_skill": null,
+      "zone_id": null,
+      "zone": null,
+      "zone_level": null,
+      "spawn_count": null,
+      "coords": []
+    }
+  ],
+  "nodes_contents_basis": "Contents are listed only for pools named after their catch (and Stonescale Eel Swarm and Patch of Elemental Water), from Classic. The tooltip API does not list what a pool gives, so they are not confirmed for Forever.",
+  "materials": [
+    {
+      "item_id": 6291,
+      "kind": "fish",
+      "name": "Raw Brilliant Smallfish",
+      "quality": "common",
+      "icon": "inv_misc_fish_08",
+      "item_level": 5,
+      "sell_price": "1c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 6303,
+      "kind": "fish",
+      "name": "Raw Slitherskin Mackerel",
+      "quality": "common",
+      "icon": "inv_misc_fish_24",
+      "item_level": 5,
+      "sell_price": "1c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 6289,
+      "kind": "fish",
+      "name": "Raw Longjaw Mud Snapper",
+      "quality": "common",
+      "icon": "inv_misc_fish_32",
+      "item_level": 15,
+      "sell_price": "1c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 6308,
+      "kind": "fish",
+      "name": "Raw Bristle Whisker Catfish",
+      "quality": "common",
+      "icon": "inv_misc_fish_30",
+      "item_level": 25,
+      "sell_price": "2c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 6361,
+      "kind": "fish",
+      "name": "Raw Rainbow Fin Albacore",
+      "quality": "common",
+      "icon": "inv_misc_fish_25",
+      "item_level": 15,
+      "sell_price": "2c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 6317,
+      "kind": "fish",
+      "name": "Raw Loch Frenzy",
+      "quality": "common",
+      "icon": "inv_misc_fish_03",
+      "item_level": 15,
+      "sell_price": "2c",
+      "max_stack": 20,
+      "dropped_by": {
+        "npc": "Loch Frenzy",
+        "drop_chance_pct": 50.79
+      }
+    },
+    {
+      "item_id": 6362,
+      "kind": "fish",
+      "name": "Raw Rockscale Cod",
+      "quality": "common",
+      "icon": "inv_misc_fish_04",
+      "item_level": 35,
+      "sell_price": "4c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 8365,
+      "kind": "fish",
+      "name": "Raw Mithril Head Trout",
+      "quality": "common",
+      "icon": "inv_misc_fish_02",
+      "item_level": 35,
+      "sell_price": "4c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 4603,
+      "kind": "fish",
+      "name": "Raw Spotted Yellowtail",
+      "quality": "common",
+      "icon": "inv_misc_fish_01",
+      "item_level": 45,
+      "sell_price": "4c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 13754,
+      "kind": "fish",
+      "name": "Raw Glossy Mightfish",
+      "quality": "common",
+      "icon": "inv_misc_monsterhead_03",
+      "item_level": 45,
+      "sell_price": "6c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 13756,
+      "kind": "fish",
+      "name": "Raw Summer Bass",
+      "quality": "common",
+      "icon": "inv_misc_fish_03",
+      "item_level": 45,
+      "sell_price": "9c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 13758,
+      "kind": "fish",
+      "name": "Raw Redgill",
+      "quality": "common",
+      "icon": "inv_misc_fish_06",
+      "item_level": 45,
+      "sell_price": "4c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 13759,
+      "kind": "fish",
+      "name": "Raw Nightfin Snapper",
+      "quality": "common",
+      "icon": "inv_misc_fish_23",
+      "item_level": 45,
+      "sell_price": "10c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 13760,
+      "kind": "fish",
+      "name": "Raw Sunscale Salmon",
+      "quality": "common",
+      "icon": "inv_misc_fish_19",
+      "item_level": 45,
+      "sell_price": "10c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 13889,
+      "kind": "fish",
+      "name": "Raw Whitescale Salmon",
+      "quality": "common",
+      "icon": "inv_misc_fish_20",
+      "item_level": 55,
+      "sell_price": "5c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 13893,
+      "kind": "fish",
+      "name": "Large Raw Mightfish",
+      "quality": "common",
+      "icon": "inv_misc_monsterhead_02",
+      "item_level": 55,
+      "sell_price": "15c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 13755,
+      "kind": "fish",
+      "name": "Raw Winter Squid",
+      "quality": "common",
+      "icon": "inv_misc_fish_13",
+      "item_level": 45,
+      "sell_price": "7c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 13757,
+      "kind": "fish",
+      "name": "Lightning Eel",
+      "quality": "common",
+      "icon": "inv_misc_fish_12",
+      "item_level": 45,
+      "sell_price": "10c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 21071,
+      "kind": "fish",
+      "name": "Raw Sagefish",
+      "quality": "common",
+      "icon": "inv_misc_fish_20",
+      "item_level": 20,
+      "sell_price": "25c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 21153,
+      "kind": "fish",
+      "name": "Raw Greater Sagefish",
+      "quality": "common",
+      "icon": "inv_misc_fish_21",
+      "item_level": 40,
+      "sell_price": "1s 25c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 6358,
+      "kind": "fish",
+      "name": "Oily Blackmouth",
+      "quality": "common",
+      "icon": "inv_misc_monsterhead_04",
+      "item_level": 15,
+      "sell_price": "4c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 6359,
+      "kind": "fish",
+      "name": "Firefin Snapper",
+      "quality": "common",
+      "icon": "inv_misc_monsterhead_01",
+      "item_level": 25,
+      "sell_price": "5c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 13422,
+      "kind": "fish",
+      "name": "Stonescale Eel",
+      "quality": "common",
+      "icon": "inv_misc_fish_11",
+      "item_level": 45,
+      "sell_price": "10c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 6522,
+      "kind": "fish",
+      "name": "Deviate Fish",
+      "quality": "common",
+      "icon": "inv_misc_monsterhead_01",
+      "item_level": 15,
+      "sell_price": "4c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 251524,
+      "kind": "fish",
+      "new_in_forever": true,
+      "name": "Whimsyfin",
+      "note": "A new Forever fish. Cooking has a recipe named after it, Savory Whimsyfin Delight.",
+      "quality": "common",
+      "icon": "inv_misc_fish_68",
+      "item_level": 15,
+      "sell_price": "4c",
+      "max_stack": 20,
+      "dropped_by": null
+    },
+    {
+      "item_id": 7070,
+      "kind": "catch",
+      "name": "Elemental Water",
+      "quality": "common",
+      "icon": "inv_potion_03",
+      "item_level": 25,
+      "sell_price": "4s",
+      "max_stack": 20,
+      "dropped_by": null
+    }
+  ],
+  "recipes": [],
+  "recipes_unresearched": [],
+  "materials_note": "Fish not caught from a pool are caught in open water; which zones give which fish is not listed yet. Cooked fish and fish dishes (such as Grilled Squid and Plated Armorfish) belong to Cooking.",
+  "camp": [
+    {
+      "blueprint_item_id": 279967,
+      "placed_item_id": 279967,
+      "kind": "item",
+      "note": "Fish Bowl is the Fishing camp feature itself (not a blueprint). The Fishing Rack and Fishing Hut can be placed over it.",
+      "blueprint": "Fish Bowl",
+      "name": "Fish Bowl",
+      "required_skill": 20,
+      "blueprint_source": null,
+      "effect": "Places a small fish bowl that allows you and others sitting nearby to gain 8% increased stats, mutually exclusive with Blessing of Kings.",
+      "build_reagents": []
+    },
+    {
+      "blueprint_item_id": 273141,
+      "placed_item_id": 279965,
+      "kind": "blueprint",
+      "blueprint": "Blueprint: Fishing Rack",
+      "name": "Fishing Rack",
+      "required_skill": 140,
+      "blueprint_source": {
+        "npc": "Gelihast",
+        "drop_chance_pct": 7.33
+      },
+      "effect": "Places a Fishing Rack that grants the ability to catch uncommon fish for 1 hour, provides Fishing Skill lures, and provides all of the benefits of a Fish Bowl. Requires a Campfire nearby.",
+      "build_reagents": [
+        {
+          "name": "Simple Wood",
+          "item_id": 4470,
+          "count": 2
+        },
+        {
+          "name": "Crystal Vial",
+          "item_id": 8925,
+          "count": 1
+        },
+        {
+          "name": "Raw Mithril Head Trout",
+          "item_id": 8365,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "blueprint_item_id": 273119,
+      "placed_item_id": 279966,
+      "kind": "blueprint",
+      "blueprint": "Blueprint: Fishing Hut",
+      "name": "Fishing Hut",
+      "required_skill": 300,
+      "blueprint_source": {
+        "npc": "Jammal'an the Prophet",
+        "drop_chance_pct": 3.06
+      },
+      "effect": "Places a Fishing Hut that grants the ability to catch rare fish for 1 hour, provides Fishing Skill lures, and provides all of the benefits of a Fish Bowl. Requires a Campfire nearby.",
+      "build_reagents": [
+        {
+          "name": "Simple Wood",
+          "item_id": 4470,
+          "count": 5
+        },
+        {
+          "name": "Bolt of Runecloth",
+          "item_id": 14048,
+          "count": 2
+        },
+        {
+          "name": "Seasonal Fish Steaks",
+          "item_id": 273295,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "other_items": [
+    {
+      "item_id": 273295,
+      "name": "Seasonal Fish Steaks",
+      "note": "A crafting reagent for Cooking, made from seasonal fish."
+    },
+    {
+      "item_id": 273636,
+      "name": "Chef's Knife",
+      "note": "Requires Fishing 275. Used on unique fish to prepare them in a special way."
+    },
+    {
+      "item_id": 268880,
+      "name": "\"Secret\" Bait",
+      "note": "A conjured item: applied to a fishing pole, it gives +25 Fishing for 10 minutes."
+    },
+    {
+      "item_id": 286732,
+      "name": "Shiny Silver Coin",
+      "note": "Tossed into the water for +30 Fishing for 30 minutes."
+    },
+    {
+      "item_id": 285094,
+      "name": "Ravaged Fishing Pole",
+      "note": "A fishing pole with +15 Fishing; needs Fishing 50. Dropped by Lord Angler."
+    },
+    {
+      "item_id": 273495,
+      "name": "Enchant Gloves - Fishing",
+      "note": "Marked \"PTR Only\" on Wowhead; +2 fishing skill."
+    }
+  ],
+  "skill_up_rule": "In Classic every catch can give a skill point, with the chance falling as skill rises. Not confirmed for Forever.",
+  "sources": [
+    {
+      "name": "Wowhead Forever tooltip API",
+      "url": "https://nether.wowhead.com/forever/tooltip/",
+      "used_for": "pool names (object IDs found by scanning ID ranges); fish, pole, lure, blueprint and spell data (items 248000-290500 read in full for new Forever fish)"
+    }
+  ],
+  "conflicts": [],
+  "gaps": [
+    "The tooltip API has no locations for fishing pools, so pools have no zones or maps. The Wowhead object pages may list them, but could not be read from this environment. warcraft.wiki.gg describes the Classic zones of some pools in text (for example Oily Blackmouth Schools off Arathi Highlands, Desolace and Dustwallow Marsh), but that is Classic, not Forever.",
+    "Which fish each zone gives, and the fishing skill each zone needs, are not collected. Neither is on the tooltip API.",
+    "Pool contents are listed only where the pool is named after its catch. Floating Wreckage, Floating Debris, Oil Spill, School of Fish, School of Tastyfish and Muddy Churning Waters are not known yet.",
+    "No new Forever fishing pool was found in object IDs 600000-720000. Only one new raw fish was found (Whimsyfin); items 248000-290500 were read in full.",
+    "Max skill and rank requirements are the Classic values: the Fishing spell tooltips do not state them.",
+    "Fishing trainers, training costs and the Expert and Artisan rank sources are not covered."
+  ],
+  "fetched": "2026-11-27"
+}

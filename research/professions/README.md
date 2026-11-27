@@ -8,7 +8,8 @@ profession is in [docs/professions-plan.md](../../docs/professions-plan.md).
 | `index.json` | Every profession, grouped as gathering, production or secondary, for the Professions hub. `file` points at the profession's research file, or is `null` while its pages are not written. |
 | `mining.json` | Mining: ranks, nodes, materials, smelting, camp features, sources, conflicts and gaps. |
 | `herbalism.json` | Herbalism: ranks, herb nodes, herbs and seeds, camp features, quest objects, sources and gaps. No recipes. |
-| `object-scan.json` | Every gathering object (herb, mining node, fishing pool, chest) found by scanning object IDs on the tooltip API, for the professions still to come. See [Finding objects](#finding-objects). |
+| `fishing.json` | Fishing: 24 pool objects, 25 fish and 1 other catch (Elemental Water), camp features, other items, sources and gaps. Pools have no skill or locations on the tooltip API, so they have no maps. |
+| `object-scan.json` | Every gathering object (herb, mining node, fishing pool, chest) found by scanning object IDs on the tooltip API. Herbalism and Fishing start from it; chests are not used yet. See [Finding objects](#finding-objects). |
 
 ## Commands
 
@@ -60,6 +61,12 @@ other_items[], skill_up_rule, sources[], conflicts[], gaps[], fetched`. Herbalis
 - Wording that differs by profession: `gather_verb` starts the node pages' "<verb> it gives ..." sentence (Mining:
   "Mining"; Herbalism: "Gathering"). `recipe_section` (`{ id, label, intro }`) adds a recipe table to the profession page
   for a gathering profession that has its own recipes (Mining's Smelting). `materials_note` ends the Materials section.
+- Fishing pools differ from nodes in two ways: no required skill and no mapped spawns. `node_word` ("pool") names them,
+  `gather_phrase` replaces "<verb> it gives" ("Fishing in it catches"), `nodes_label` and `nodes_intro` head and introduce
+  the node table, and `node_skill_note` and `node_locations_note` replace the Skill bar and the location maps. The node
+  table drops its Requires, Skill-up and Main zones columns when no node has them. `ranks_note` replaces the sentence under
+  the rank table when the max skill is not from the Forever tooltips (Fishing's is not). Material kinds `fish` and `catch`
+  (things fished up that are not fish, such as Elemental Water) get their own tables.
 - `quest_objects[]` (Herbalism): objects that need the profession but are not nodes, such as Gloom Weed. Recorded, no pages.
 - `recipes[]`: `{ spell_id, required_skill, skill_basis }` plus the fetched fields.
 - `recipes_unresearched[]`: recipes that guides describe but whose spell is not on the tooltip API yet:
@@ -72,7 +79,7 @@ other_items[], skill_up_rule, sources[], conflicts[], gaps[], fetched`. Herbalis
 The tooltip API has no search, so herb nodes were found by reading every object ID in ranges: 1-5,000, 140,000-145,000
 and 175,000-185,000 (where Classic's gathering objects are) and 600,000-720,000 (Forever's new objects), keeping every
 object whose tooltip says Herb, Mining Node, Fishing Pool or Chest, or "Requires <Profession> (N)". The results are kept in
-`object-scan.json`, so Fishing and treasure pages can start from them. The scan is a one-off research step: about 140,000
+`object-scan.json`, so later professions (and treasure pages) can start from them. The scan is a one-off research step: about 140,000
 requests at 6 at a time.
 
 A page title must not also be a dungeon item: the build (`collectPages()` in `src/build/render.js`) stops with an error

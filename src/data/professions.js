@@ -1,6 +1,7 @@
 // Profession pages from research/professions/*.json, as JSON page models for src/pages/Doc.vue:
 //   Professions    hub listing every profession (research/professions/index.json)
 //   <Profession>   e.g. Mining: training, nodes, smelting/recipes, materials, camp, Forever changes
+//   (ranks_note replaces the sentence under the rank table when max skill is not from the Forever tooltips)
 //   <Node>         e.g. Copper Vein: required skill, skill-up colours, zones, spawn maps, contents
 //   <Material>     e.g. Copper Ore: item infobox, where it is gathered, what makes it, what uses it
 //   A node and a material with the same name (Peacebloom the herb and the plant it is picked from) share one
@@ -292,7 +293,7 @@ function profession(p, withPages, index) {
             D.cell(i === 0 ? ['None'] : [`${P} `, ...D.val(r.requires_skill), ', level ', ...D.val(r.requires_level)]),
             D.cell([D.ext(wowhead('spell', r.spell_id), r.spell_id)], 'num'),
           ])),
-          { p: ['Maximum skill comes from the Forever spell tooltips. The skill and level needed to train each rank are the Classic values and have not been confirmed for Forever.'] },
+          { p: [p.ranks_note || 'Maximum skill comes from the Forever spell tooltips. The skill and level needed to train each rank are the Classic values and have not been confirmed for Forever.'] },
           { ul: [
             ...p.tools.map((t) => [...matLink(t.item_id, t.name), `: ${t.note}`]),
             ...p.abilities.map((a) => [D.b(a.name), ' (', D.ext(wowhead('spell', a.spell_id), `spell ${a.spell_id}`), `): ${a.note}`]),
@@ -339,7 +340,7 @@ function profession(p, withPages, index) {
         ]),
         D.section('Other_items', 'Other items', [{ ul: p.other_items.map((o) => [D.ext(wowhead('item', o.item_id), o.name), `: ${o.note}`]) }]),
         D.section('Research_notes', 'Research notes', [
-          { p: ['Where sources disagree:'] }, { ul: p.conflicts.map((c) => [c]) },
+          ...(p.conflicts.length ? [{ p: ['Where sources disagree:'] }, { ul: p.conflicts.map((c) => [c]) }] : [{ p: ['No sources disagreed.'] }]),
           { p: ['Not researched yet:'] }, { ul: p.gaps.map((g) => [g]) },
         ]),
         D.section('Sources', 'Sources', [{ ul: p.sources.map((s) => [D.ext(s.url, s.name), ...(s.used_for ? [` – ${s.used_for}`] : [])]) }]),
