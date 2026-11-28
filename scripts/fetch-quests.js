@@ -241,11 +241,14 @@ function questPage(html) {
   if (!objectives.length && progressSection) {
     for (const [, table] of progressSection.matchAll(/<table class="icon-list">([\s\S]*?)<\/table>/g)) objectives.push(...iconList(table));
   }
-  const progress = disclosed('progress') ?? (progressSection ? text(progressSection.replace(/<table[\s\S]*?<\/table>/g, '')) || null : null);
+  // Text sections are usually collapsed blocks (id="...-progress"), but short ones can be plain sections
+  const plain = (s) => (s ? text(s.replace(/<table[\s\S]*?<\/table>/g, '')) || null : null);
+  const progress = disclosed('progress') ?? plain(progressSection);
+  const completion = disclosed('completion') ?? plain(section('Completion'));
 
   return {
     facts, objective, objectives, provided, description: description ? text(description) : null,
-    progress, completion: disclosed('completion'), rewards, gains, series,
+    progress, completion, rewards, gains, series,
   };
 }
 

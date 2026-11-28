@@ -1,0 +1,6309 @@
+{
+  "zone": "Thousand Needles",
+  "area_id": 400,
+  "source": "https://www.wowhead.com/forever/zone=400#quests",
+  "fetched": "2026-11-28",
+  "quests": [
+    {
+      "quest_id": 1099,
+      "name": "Goblins Win!",
+      "basis": "page",
+      "level": 1,
+      "required_level": 1,
+      "side": null,
+      "side_label": "None",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": true,
+      "difficulty": {
+        "yellow": 1,
+        "green": 4,
+        "grey": 6
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": null,
+      "objectives": [
+        {
+          "text": "Goblin Race Ticket",
+          "quantity": 1,
+          "type": "item",
+          "id": 5769
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 5858,
+            "name": "Goblin Prize Box",
+            "icon": "inv_misc_gift_04",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": null,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1174,
+      "name": "Gnomes Win!",
+      "basis": "page",
+      "level": 1,
+      "required_level": 1,
+      "side": null,
+      "side_label": "None",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": true,
+      "difficulty": {
+        "yellow": 1,
+        "green": 4,
+        "grey": 6
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": null,
+      "objectives": [
+        {
+          "text": "Gnome Race Ticket",
+          "quantity": 1,
+          "type": "item",
+          "id": 5768
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 5857,
+            "name": "Gnome Prize Box",
+            "icon": "inv_misc_gift_03",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": null,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 4542,
+      "name": "Message to Freewind Post",
+      "basis": "page",
+      "level": 25,
+      "required_level": 23,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10079,
+        "name": "Brave Moonhorn"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10537,
+        "name": "Cliffwatcher Longhorn"
+      },
+      "sharable": false,
+      "difficulty": {
+        "yellow": 23,
+        "green": 28,
+        "grey": 33
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Urgent Message to Cliffwatcher Longhorn at Freewind Post.",
+      "objectives": [
+        {
+          "text": "Urgent Message (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 11886
+        }
+      ],
+      "provided": [],
+      "description": "Brave traveler, the centaurs have increased their attacks in this area. Freewind Post must know about this renewed harassment immediately! Seek Cliffwatcher Longhorn at Freewind Post to the southeast and give him this urgent message.\n\nBe warned, avoid the Grimtotem Clan nearby... they have been acting strange toward us lately.",
+      "progress": "What do you want, <class>? An urgent message - for me?",
+      "completion": "More bad news! These centaurs have gone too far! They raided one of my supply caravans and slaughtered the whole party. This is an outrage, and it will not go unpunished!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "1s 75c"
+      },
+      "xp": 510,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 25
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 4542,
+            "name": "Message to Freewind Post",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 4841,
+            "name": "Pacify the Centaur",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 4841,
+      "name": "Pacify the Centaur",
+      "basis": "page",
+      "level": 25,
+      "required_level": 23,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10537,
+        "name": "Cliffwatcher Longhorn"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10537,
+        "name": "Cliffwatcher Longhorn"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 23,
+        "green": 28,
+        "grey": 33
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill 12 Galak Scouts, 10 Galak Wranglers, and 6 Galak Windchasers, and then return to Cliffwatcher Longhorn in Freewind Post.",
+      "objectives": [
+        {
+          "text": "Galak Scout slain",
+          "quantity": 12,
+          "type": "npc",
+          "id": 4094
+        },
+        {
+          "text": "Galak Wrangler slain",
+          "quantity": 10,
+          "type": "npc",
+          "id": 4093
+        },
+        {
+          "text": "Galak Windchaser slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 4096
+        }
+      ],
+      "provided": [],
+      "description": "<name>, I entreat you to hunt these centaur down. They shall feel the wrath of our revenge. Attack the centaur camp to the north of Freewind Post! Let wrath guide your hand!",
+      "progress": "Come now <name>, I know you haven't killed your share yet. Hunt them down, and I shall give you a reward for my gratitude.",
+      "completion": "For my gratitude, this is for you, <name>.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "18s"
+      },
+      "xp": 2000,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 4542,
+            "name": "Message to Freewind Post",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 4841,
+            "name": "Pacify the Centaur",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1149,
+      "name": "Test of Faith",
+      "basis": "page",
+      "level": 26,
+      "required_level": 25,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 2986,
+        "name": "Dorn Plainstalker"
+      },
+      "end": {
+        "type": "npc",
+        "id": 2986,
+        "name": "Dorn Plainstalker"
+      },
+      "sharable": false,
+      "difficulty": {
+        "yellow": 25,
+        "green": 29,
+        "grey": 34
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "If you have faith, leap from the planks overlooking Thousand Needles.",
+      "objectives": [
+        {
+          "text": "Explore Zone",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "So, you have sought me out, or perhaps destiny brings you to me? No matter. You are here now, and so your journey will begin anew.\n\nMany facets make up a being: the spirit, the body, the mind. Some of these can be measured by a culture's traditions. Others we can only hope exist within ourselves. If you agree, I shall test some of the facets within you.\n\nIf you pass, then you shall become stronger. If you fail, then you will realize the vastness of the Nether.\n\nThe first is a Test of Faith.",
+      "progress": "Faith. It is far more important than some realize.\n\nIt does not matter what you believe sometimes. It is just important that you believe in something.",
+      "completion": "It is not until faced with unforeseen adversity that we begin to see how strong our spirits are. You took the leap of faith even though you had no guarantees that you would survive. Your mind is open, and your spirit is prepared for what is to come.\n\nIf you are willing, then the next of your tests is ready.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1050,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1149,
+            "name": "Test of Faith",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1150,
+            "name": "Test of Endurance",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1151,
+            "name": "Test of Strength",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1152,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1154,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6627,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1159,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1160,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6628,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1394,
+            "name": "Final Passage",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 4821,
+      "name": "Alien Egg",
+      "basis": "page",
+      "level": 26,
+      "required_level": 24,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10539,
+        "name": "Hagar Lightninghoof"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10539,
+        "name": "Hagar Lightninghoof"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 24,
+        "green": 29,
+        "grey": 34
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Return the Alien Egg to Hagar Lightninghoof in Freewind Post.",
+      "objectives": [
+        {
+          "text": "Alien Egg",
+          "quantity": 1,
+          "type": "item",
+          "id": 12467
+        }
+      ],
+      "provided": [],
+      "description": "A rumor has surfaced about an alien egg here in Thousand Needles. Those that report seeing this egg have failed to even get close enough to examine it in detail. Serpents guard the egg as if it's one of their own.\n\nI want you to seek out this alien egg and bring it to me so that I may examine it. Reports say the egg is located within a serpent den, but there are several serpent dens along the base of the cliff walls south and northeast of Freewind Post.",
+      "progress": "I must know more about this mysterious egg, who knows what will hatch from it.",
+      "completion": "Yes, finally... the mysterious egg has finally been delivered to me. Now, let me take a closer look at this... What..! What is this..?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "15s"
+      },
+      "xp": 2100,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 4865,
+      "name": "Serpent Wild",
+      "basis": "page",
+      "level": 26,
+      "required_level": 24,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10539,
+        "name": "Hagar Lightninghoof"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10428,
+        "name": "Motega Firemane"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 24,
+        "green": 29,
+        "grey": 34
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Report your findings to Motega Firemane.",
+      "objectives": [],
+      "provided": [],
+      "description": "If I did not see that with my own eyes I would never have believed it to be true. Vengeance has come to Thousand Needles!\n\n<Hagar wipes his brow.>\n\n<name>, you must act quickly! Go now and seek out Motega Firemane; he is located at Whitereach Post just northwest of Freewind Post along the road. He will know what to do!",
+      "progress": null,
+      "completion": "Vengeance! So, the legend of Arikara is true. Indeed, this is a problem that must be resolved immediately.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1050,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 4865,
+            "name": "Serpent Wild",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 5062,
+            "name": "Sacred Fire",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 5062,
+      "name": "Sacred Fire",
+      "basis": "page",
+      "level": 27,
+      "required_level": 24,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10428,
+        "name": "Motega Firemane"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4046,
+        "name": "Magatha Grimtotem"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 24,
+        "yellow": 25,
+        "green": 30,
+        "grey": 35
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Gather 10 bushels of Incendia Agave, and then consult Magatha Grimtotem on Elder Rise in Thunderbluff.",
+      "objectives": [
+        {
+          "text": "Incendia Agave",
+          "quantity": 10,
+          "type": "item",
+          "id": 12732
+        }
+      ],
+      "provided": [],
+      "description": "Arikara is a deadly creature that must be dealt with swiftly. In order to hunt her down you will need to light the sacred fire of life - this will summon Arikara.\n\nGo now and harvest the rare Incendia agave plant. Once you have harvested enough agave, seek council with Magatha Grimtotem on Elder Rise in Thunder Bluff. She is a powerful shaman that can enchant the agave plant to create a powder that will light the fire.\n\nTravel northeast to the Boiling Pool and gather Incendia agave.",
+      "progress": "So, Motega Firemain sends word of Arikara...well now that is grave news.\n\n<Magatha looks around.>\n\nArikara is a deadly creature born only to seek vengeance against those who have committed heinous acts.\n\n<Magatha smiles.>",
+      "completion": "Good, you have gathered the essential amount of Incendia agave. This rare herb found only in Thousand Needles will help light the dormant sacred fire of life.\n\n<Magatha begins to enchant the Incendia agave.>",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "22s"
+      },
+      "xp": 2200,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 4865,
+            "name": "Serpent Wild",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 5062,
+            "name": "Sacred Fire",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 4881,
+      "name": "Assassination Plot",
+      "basis": "page",
+      "level": 28,
+      "required_level": 23,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 10638,
+        "name": "Kanati Greycloud"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 23,
+        "orange": 24,
+        "yellow": 26,
+        "green": 31,
+        "grey": 36
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Warn Kanati Greycloud at Whitereach Post of the plot to kill him.",
+      "objectives": [],
+      "provided": [],
+      "description": "The Tauren, Kanati Greycloud is bold to set up a hunting camp in Thousand Needles. We must kill him to rid this hunting camp and all who may follow him. We will converge at the small post Southwest of the Great Lift.",
+      "progress": null,
+      "completion": "They come to kill me? I will show them how a Tauren fights!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2300,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 4881,
+            "name": "Assassination Plot",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 4966,
+            "name": "Protect Kanati Greycloud",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 4966,
+      "name": "Protect Kanati Greycloud",
+      "basis": "page",
+      "level": 28,
+      "required_level": 23,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10638,
+        "name": "Kanati Greycloud"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10638,
+        "name": "Kanati Greycloud"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 23,
+        "orange": 24,
+        "yellow": 26,
+        "green": 31,
+        "grey": 36
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Protect Kanati Greycloud from the centaur attack.",
+      "objectives": [
+        {
+          "text": "Protect Kanati Greycloud",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "But, there may be more centaur than I thought, I ask you, <name>, to fight with me against these vile assassins.",
+      "progress": null,
+      "completion": "Thank you for your help, <name>. I couldn't have held them off without you.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 15461,
+            "name": "Lightheel Boots",
+            "icon": "inv_boots_08",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 15462,
+            "name": "Loamflake Bracers",
+            "icon": "inv_bracer_07",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 15463,
+            "name": "Palestrider Gloves",
+            "icon": "inv_gauntlets_09",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2300,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 4881,
+            "name": "Assassination Plot",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 4966,
+            "name": "Protect Kanati Greycloud",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 5064,
+      "name": "Grimtotem Spying",
+      "basis": "page",
+      "level": 28,
+      "required_level": 24,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10537,
+        "name": "Cliffwatcher Longhorn"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10537,
+        "name": "Cliffwatcher Longhorn"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 24,
+        "yellow": 26,
+        "green": 31,
+        "grey": 36
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Locate and retrieve the three Secret Notes in Darkcloud Pinnacle.",
+      "objectives": [
+        {
+          "text": "Secret Note #1",
+          "quantity": 1,
+          "type": "item",
+          "id": 12765
+        },
+        {
+          "text": "Secret Note #2",
+          "quantity": 1,
+          "type": "item",
+          "id": 12766
+        },
+        {
+          "text": "Secret Note #3",
+          "quantity": 1,
+          "type": "item",
+          "id": 12768
+        }
+      ],
+      "provided": [],
+      "description": "<name>, you have served us well in the past, so I now entrust to you an important mission. The Grimtotem Clan is up to something secretive. Three agents of unknown origin were seen visiting the Grimtotem over the recent weeks. We discovered that separate chests in Darkcloud Pinnacle hold these guarded messages.\n\n<name>, if you succeed in this dangerous mission, I will reward you in kind.",
+      "progress": "Have you discovered what the Grimtotem are up to?",
+      "completion": "Great Spirit Totem! This is dire news indeed. I must begin to plan for whatever may come.\n\n<name>, as promised, here is your reward for your brave service.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 15457,
+            "name": "Desert Shoulders",
+            "icon": "inv_shoulder_05",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 15458,
+            "name": "Tundra Boots",
+            "icon": "inv_boots_03",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 15459,
+            "name": "Grimtoll Wristguards",
+            "icon": "inv_bracer_02",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2300,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 5088,
+      "name": "Arikara",
+      "basis": "page",
+      "level": 28,
+      "required_level": 24,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": "Elite",
+      "start": {
+        "type": "npc",
+        "id": 4046,
+        "name": "Magatha Grimtotem"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10428,
+        "name": "Motega Firemane"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 24,
+        "yellow": 26,
+        "green": 31,
+        "grey": 36
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Slay Arikara. Bring her remains and the Incendia Powder to Motega Firemane in Whitereach Post as proof of your deed.",
+      "objectives": [
+        {
+          "text": "Incendia Powder (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 12785
+        },
+        {
+          "text": "Arikara Serpent Skin",
+          "quantity": 1,
+          "type": "item",
+          "id": 12925
+        },
+        {
+          "text": "Light the Sacred Fire of Life",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "Take this refined and purified Incendia Powder to Thousand Needles and toss it on the sacred fire of life. It is located in the Darkcloud Pinnacle on an isolated needle where they bury their dead.\n\nThe enchantment that I have weaved into the Incendia Powder will summon Arikara to you, <name>.\n\nI fear she may be stalking Cairne Bloodhoof; too much Tauren lore has changed, and I fear this has angered Arikara. Move quickly before all is lost, <class>!",
+      "progress": "Have you slain the vicious serpent Arikara, <name>?",
+      "completion": "This does not make sense. Why would Arikara be after Cairne Bloodhoof? Magatha could not be wrong, she is our most powerful shaman.\n\n<Motega shakes his head.>\n\nRegardless, your great deed to the Horde shall not go unnoticed - please, choose one of these as a reward for your aid.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 15464,
+            "name": "Brute Hammer",
+            "icon": "inv_hammer_16",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 15465,
+            "name": "Stingshot Wand",
+            "icon": "inv_wand_07",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 15466,
+            "name": "Clink Shield",
+            "icon": "inv_shield_21",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 270037,
+            "name": "Smouldering Leggings",
+            "icon": "inv_pants_02",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": "25s"
+      },
+      "xp": 2300,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 4767,
+      "name": "Wind Rider",
+      "basis": "page",
+      "level": 29,
+      "required_level": 25,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10377,
+        "name": "Elu"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10377,
+        "name": "Elu"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 25,
+        "yellow": 27,
+        "green": 32,
+        "grey": 37
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 10 Highperch Wyvern Eggs to Elu in Freewind Post.",
+      "objectives": [
+        {
+          "text": "Highperch Wyvern Egg",
+          "quantity": 10,
+          "type": "item",
+          "id": 12356
+        }
+      ],
+      "provided": [],
+      "description": "I've been tasked to recruit more wyverns for the master wind riders. Their numbers are growing and I myself hope to become a wind rider one day. However, we cannot train enough wyverns to keep up with the demand. Perhaps you can help me, <name>.\n\nI need you to travel to Highperch to gather some wyvern eggs. From here, head northwest along the canyon walls to a ramp that will lead you into Highperch. Be careful, wyverns are very protective over their eggs and they will not be kind to intruders.",
+      "progress": "<name>, have you retrieved the wyvern eggs that I seek? I'm really anxious to start my wind rider training!",
+      "completion": "Perfect! With these eggs I hope to take the next step to become a wind rider. Here is a token of my appreciation; may good hunting always shine upon you, <class>.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 4265,
+            "name": "Heavy Armor Kit",
+            "icon": "inv_misc_armorkit_16",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": "19s"
+      },
+      "xp": 1750,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 4770,
+      "name": "Homeward Bound",
+      "basis": "page",
+      "level": 29,
+      "required_level": 25,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10427,
+        "name": "Pao'ka Swiftmountain"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10428,
+        "name": "Motega Firemane"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 25,
+        "yellow": 27,
+        "green": 32,
+        "grey": 37
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Escort Pao'ka Swiftmountain from Highperch, and then talk to Motega Firemane in Whitereach Post.",
+      "objectives": [
+        {
+          "text": "Escort Pao'ka from Highperch",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "Please help me, <class>! I've been hiding here in Highperch for some time now and it's been days since I've seen a friendly face. I came here to study the wyvern and I think I got a little too close. After being chased away from one of the nests I got lost.\n\nI need to get back to Whitereach Post! Motega does not know that I am missing and will be furious to know that I ventured into Highperch by myself.\n\nWhitereach Post is just east of here... please take me there!",
+      "progress": null,
+      "completion": "What!? If I knew that Pao'ka Swiftmountain was going to snoop around Highperch, I would have chained him to a totem! His father was reluctant allowing him to come with me to Thousand Needles. We came here to study the different creatures that inhabit these beautiful lands.\n\nI appreciate the help you have shown Pao'ka. I hope this covers any misfortunes this deed has cost you.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "19s"
+      },
+      "xp": 2350,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 4904,
+      "name": "Free at Last",
+      "basis": "page",
+      "level": 29,
+      "required_level": 25,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10646,
+        "name": "Lakota Windsong"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10645,
+        "name": "Thalia Amberhide"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 25,
+        "yellow": 27,
+        "green": 32,
+        "grey": 37
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Escort Lakota Windsong from the Darkcloud Pinnacle, and then talk to Thalia Amberhide at Freewind Post.",
+      "objectives": [
+        {
+          "text": "Escort Lakota Windsong from the Darkcloud Pinnacle.",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "Arnak thinks we're going to be married... but after I declined his offer he came back that night and kidnapped me. My brother tried to stop him, but Arnak was too strong. He... he slew my brother and then brought me here. My poor brother...\n\n<name>, could you escort me out of the Darkcloud Pinnacle? Please... I need to get back to Thalia! She must be worried sick about me.",
+      "progress": null,
+      "completion": "Thank you, <name>. Deep in my bones I knew that she would find her way back to me. She told me of your bravery and how you helped her escape. These items belonged to her brother. I know she would want you to have them.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 15469,
+            "name": "Windsong Cinch",
+            "icon": "inv_belt_10",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 15468,
+            "name": "Windsong Drape",
+            "icon": "inv_misc_cape_05",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2350,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 5147,
+      "name": "WANTED: Arnak Grimtotem",
+      "basis": "page",
+      "level": 29,
+      "required_level": 25,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "object",
+        "id": 176115,
+        "name": "Wanted Poster - Arnak Grimtotem"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10537,
+        "name": "Cliffwatcher Longhorn"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 25,
+        "yellow": 27,
+        "green": 32,
+        "grey": 37
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Slay Arnak Grimtotem and bring proof of your deed to Cliffwatcher Longhorn in Freewind Post.",
+      "objectives": [
+        {
+          "text": "Arnak's Hoof",
+          "quantity": 1,
+          "type": "item",
+          "id": 12884
+        }
+      ],
+      "provided": [],
+      "description": "Wanted: Arnak Grimtotem\n\nArnak the outcast is wanted for the heinous crimes of murder and kidnapping. Handsome rewards will be given to those brave enough to bring this criminal to justice.\n\nArnak was last seen on the cliffs near the Darkcloud Pinnacle. Show the proof of your deed to Cliffwatcher Longhorn in Freewind Post in order to claim the reward.",
+      "progress": "Have you any news of that murderous Arnak Grimtotem?",
+      "completion": "Hah! Well, this is excellent news! I was starting to think that he would never be brought to justice!\n\nHere you are, <name>... and thanks. News of Arnak's foul deeds boiled my blood!",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 15471,
+            "name": "Brawnhide Armor",
+            "icon": "inv_chest_leather_01",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 15470,
+            "name": "Plainsguard Leggings",
+            "icon": "inv_pants_03",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2350,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 98155,
+      "name": "Pristine Pesterhide Pelts",
+      "basis": "page",
+      "level": 29,
+      "required_level": 24,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11826,
+        "name": "Kristy Grant"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11826,
+        "name": "Kristy Grant"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 24,
+        "orange": 25,
+        "yellow": 27,
+        "green": 32,
+        "grey": 37
+      },
+      "patch": "1.60.1.70170",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Bring 5 Pristine Pesterhide Pelts to Kristy Grant.",
+      "objectives": [
+        {
+          "text": "Pristine Pesterhide Pelt",
+          "quantity": 5,
+          "type": "item",
+          "id": 279472
+        }
+      ],
+      "provided": [],
+      "description": "The Pesterhide hyenas of Thousand Needles have the most gorgeous coats. I haven't seen such a brilliant hue of fur like that in all of my travels!\n\nI would like to send back some pelts to my sisters back in Stormwind, as I know they could make something incredible out of them.\n\nI don't have any fighting experience, so I would be very grateful if you could gather some of the Pesterhide pelts in my stead.",
+      "progress": "Were you able to collect the pelts? Rendow has promised to help me clean and tan them to send back home! I know my sisters will be very excited.",
+      "completion": "Thank you, <name>! These hides are in perfect condition. I can't imagine it was easy to get so many, but I am very grateful to you for your work.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2350,
+      "reputation": [
+        {
+          "faction_id": 72,
+          "faction": "Stormwind",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 98155,
+            "name": "Pristine Pesterhide Pelts",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 98156,
+            "name": "Packaged Pristine Pelts",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 98156,
+      "name": "Packaged Pristine Pelts",
+      "basis": "page",
+      "level": 29,
+      "required_level": 24,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11826,
+        "name": "Kristy Grant"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11827,
+        "name": "Kimberly Grant"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 24,
+        "orange": 25,
+        "yellow": 27,
+        "green": 32,
+        "grey": 37
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Bring the Package of Pristine Pelts to Kimberly Grant.",
+      "objectives": [],
+      "provided": [
+        {
+          "text": "Package of Pristine Pelts",
+          "quantity": 1,
+          "type": "item",
+          "id": 279481
+        }
+      ],
+      "description": "<name>, you have been so helpful to me I hate to ask for yet another favor. It will be some time until I am able to return home to Stormwind. I was wondering if you would mind delivering these pelts to my sisters in my stead?\n\nI am sure you are more likely to return there before I am able to. Please deliver these pelts to my sisters Kelly and Kimberly in Stormwind. They can usually be found in the Park.",
+      "progress": null,
+      "completion": "This is from our sister? We hadn't heard from her in some time. I hope she is doing well.\n\nMy, these pelts have such a beautiful color of fur! Kelly and I will make sure we put these to good use.\n\nThank you for making the long journey. It is good to know Kristy is still doing well and is thinking of us.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 281295,
+            "name": "Pelt Pants",
+            "icon": "inv_pants_09",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": "13s"
+      },
+      "xp": 2350,
+      "reputation": [
+        {
+          "faction_id": 72,
+          "faction": "Stormwind",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 98155,
+            "name": "Pristine Pesterhide Pelts",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 98156,
+            "name": "Packaged Pristine Pelts",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1104,
+      "name": "Salt Flat Venom",
+      "basis": "page",
+      "level": 30,
+      "required_level": 28,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4454,
+        "name": "Fizzle Brassbolts"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4454,
+        "name": "Fizzle Brassbolts"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 6 Salty Scorpid Venoms to Fizzle Brassbolts in the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Salty Scorpid Venom",
+          "quantity": 6,
+          "type": "item",
+          "id": 5794
+        }
+      ],
+      "provided": [],
+      "description": "I have so many designs for our rocket car! So many! And I must try them all!!\n\nI'm working on a new type of fuel. One that burns really really really hot!! I haven't gotten the mixture perfect, but I think I know what I need...\n\nThe scorpids who wander the Shimmering Flats have a venom with lots and lots of salt in it. It's very unique! And it's just what I need!\n\nBring me venom and trust me -- our car will fly!!",
+      "progress": "Hi hi hi! Did you get that venom??",
+      "completion": "All right! This venom is going to work great! Thanks, <name>!\n\nNow I just need to boil it down, apply skipper-otomer, add a nega-catalyst, and... Drat! Where are my notes!?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "25s"
+      },
+      "xp": 1850,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1105,
+      "name": "Hardened Shells",
+      "basis": "page",
+      "level": 30,
+      "required_level": 28,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4453,
+        "name": "Wizzle Brassbolts"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4453,
+        "name": "Wizzle Brassbolts"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 9 Hardened Tortoise Shells to Wizzle Brassbolts in the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Hardened Tortoise Shell",
+          "quantity": 9,
+          "type": "item",
+          "id": 5795
+        }
+      ],
+      "provided": [],
+      "description": "My brother is working on a new fuel for his rocket car. He's brilliant, he really is. So brilliant that... I think that new fuel he's designing is strong enough to eat right through the car's chassis!\n\nI want to reinforce its fuel tanks before that happens.\n\nThe tortoises out on the flats have very hard shells. I want to use them to create new tanks for our rocket car. Tanks that can hold my brother's new fuel.\n\nYou look responsible enough. Will you get me those shells?",
+      "progress": "My brother is making progress with his new fuel design, and that has me worried. I need to start work on a tortoise shell fuel tank as soon as possible!\n\n<name>, do you have those shells yet?",
+      "completion": "You got them! Thanks, <name>!\n\nWow, these shells are harder than I thought! Heh, when I work with them I'll probably bend a whole box full of tools!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "25s"
+      },
+      "xp": 2450,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1150,
+      "name": "Test of Endurance",
+      "basis": "page",
+      "level": 30,
+      "required_level": 25,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 2986,
+        "name": "Dorn Plainstalker"
+      },
+      "end": {
+        "type": "npc",
+        "id": 2986,
+        "name": "Dorn Plainstalker"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 25,
+        "orange": 26,
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Grenka's Claw to Dorn Plainstalker in Thousand Needles.",
+      "objectives": [
+        {
+          "text": "Grenka's Claw",
+          "quantity": 1,
+          "type": "item",
+          "id": 5843
+        },
+        {
+          "text": "Flank of Meat",
+          "quantity": 1,
+          "type": "item",
+          "id": 5845
+        }
+      ],
+      "provided": [],
+      "description": "I'm pleased to see your courage remains steadfast in light of what you've already done. Since your faith is intact, the time has come to test your body.\n\nFirst is a test of endurance. Go with friends to the Roguefeather Den west of Freewind Post. Make your way to the depths of their lair and destroy their foodstuffs. By then you should have provoked their fury, and if you are able to survive long enough, Grenka Bloodscreech herself will come for you--kill her and bring me her claw to complete your test.",
+      "progress": "You must be prepared spiritually, physically and mentally for the challenges that lie ahead of you.\n\nToo often do we rush forward before we are ready. I consider it my duty to the youth, no matter which tribe they belong to, to prepare them for the dangers they may face after they leave the sanctity of their home.",
+      "completion": "Grenka was powerful, even by <race> standards. You should be proud of your accomplishment this day.\n\nDuring your test of faith you displayed strength of spirit, and now you have shown endurance in battle by taking on the Roguefeather harpies, but the time has come for a new test.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2450,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1149,
+            "name": "Test of Faith",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1150,
+            "name": "Test of Endurance",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1151,
+            "name": "Test of Strength",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1152,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1154,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6627,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1159,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1160,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6628,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1394,
+            "name": "Final Passage",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1151,
+      "name": "Test of Strength",
+      "basis": "page",
+      "level": 30,
+      "required_level": 25,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": "Elite",
+      "start": {
+        "type": "npc",
+        "id": 2986,
+        "name": "Dorn Plainstalker"
+      },
+      "end": {
+        "type": "npc",
+        "id": 2986,
+        "name": "Dorn Plainstalker"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 25,
+        "orange": 26,
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Fragments of Rok'Alim to Dorn Plainstalker in Thousand Needles.",
+      "objectives": [
+        {
+          "text": "Fragments of Rok'Alim",
+          "quantity": 1,
+          "type": "item",
+          "id": 5844
+        }
+      ],
+      "provided": [],
+      "description": "During the time of the Old Gods, elementals inhabited much of this world. They worshipped the Old Gods, and the Gods, through their power, kept the elementals bound to this world. When the Old Gods were banished, the elementals faded from our world and now only return at the bidding of powerful mages.\n\nThere are exceptions though. Some elementals were powerful enough to remain here on their own. One such elemental is Rok'Alim.\n\nTo test your strength, find Rok'Alim in Thousand Needles and slay him.",
+      "progress": "Rok'Alim is also called the Pounder by the centaur tribes in Thousand Needles because of the thundering his fists make as he pummels the creatures brave, or stupid, enough to stand in his path.",
+      "completion": "The Test of Strength is done. You have shown strength and bravery, and you are now prepared for the final test before these rites are completed.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3050,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 150
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1149,
+            "name": "Test of Faith",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1150,
+            "name": "Test of Endurance",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1151,
+            "name": "Test of Strength",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1152,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1154,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6627,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1159,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1160,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6628,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1394,
+            "name": "Final Passage",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1152,
+      "name": "Test of Lore",
+      "basis": "page",
+      "level": 30,
+      "required_level": 26,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 2986,
+        "name": "Dorn Plainstalker"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4489,
+        "name": "Braug Dimspirit"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 26,
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Find Braug Dimspirit near the entrance to Talondeep Path in Stonetalon Mountains.",
+      "objectives": [],
+      "provided": [],
+      "description": "Your time with me is just about finished. I am knowledgeable, but the Test of Lore is not mine to give. There are lessons to be learned and places to visit that others claim domain over.\n\nIf you are prepared, then seek out Braug Dimspirit--he is a shaman of great wisdom. He will test you further, so heed his words, <name>.\n\nWhen you are ready, find the tunnel that connects the Stonetalon Mountains with Ashenvale: Braug dwells near there. And be careful, <name>, the night elves may wish to impede your test.",
+      "progress": null,
+      "completion": "The days and nights grow colder throughout the world as goblins rape the land, and the night elves point fingers at the younger races. The Forsaken and orcs are not the only ones to blame for the hardships found throughout Kalimdor and Lordaeron. Many of the intelligent races have contributed to the world's pain. Dorn knows this, and he has sent you to me because you have shown the attributes necessary to realize it also.\n\nNow you stand before Braug.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1200,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1149,
+            "name": "Test of Faith",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1150,
+            "name": "Test of Endurance",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1151,
+            "name": "Test of Strength",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1152,
+            "name": "Test of Lore",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1154,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6627,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1159,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1160,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6628,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1394,
+            "name": "Final Passage",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1154,
+      "name": "Test of Lore",
+      "basis": "page",
+      "level": 30,
+      "required_level": 26,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4489,
+        "name": "Braug Dimspirit"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4489,
+        "name": "Braug Dimspirit"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 26,
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.13.2.30550",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Find the Legacy of the Aspects and return it to Braug Dimspirit near the entrance to Talondeep Path in Stonetalon Mountains.",
+      "objectives": [
+        {
+          "text": "Legacy of the Aspects",
+          "quantity": 1,
+          "type": "item",
+          "id": 5860
+        }
+      ],
+      "provided": [],
+      "description": "You have passed Dorn's tests, and now you seek to pass your next trial. Very good. But up until now, your challenges have been childish. It is easy to test your body--your mind is another matter completely.\n\nI shall explain it simply: find the book I name, study it, and answer my question about its contents.\n\nWhat book, you must be asking? The Legacy of the Aspects. It can be found at the bottom of Dor'danil in southern Ashenvale, protected by the dead druids and their slayers.",
+      "progress": "Bring me the book after you've studied it. I will not ask you your question until after you have given me the book.",
+      "completion": "This is the book I named. There is hope you will answer my question correctly then... unless you've forgotten to study its contents.\n\nWhen you are prepared, speak to me again and I shall ask a question of you.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1850,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1149,
+            "name": "Test of Faith",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1150,
+            "name": "Test of Endurance",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1151,
+            "name": "Test of Strength",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1152,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1154,
+            "name": "Test of Lore",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 6627,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1159,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1160,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6628,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1394,
+            "name": "Final Passage",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1159,
+      "name": "Test of Lore",
+      "basis": "page",
+      "level": 30,
+      "required_level": 26,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4489,
+        "name": "Braug Dimspirit"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4488,
+        "name": "Parqual Fintallas"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 26,
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.13.2.30550",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Find Parqual Fintallas in Undercity.",
+      "objectives": [],
+      "provided": [],
+      "description": "Well done, <name>. You have passed the first portion of the Test of Lore, but there is still another question to be answered. But that question is not mine to ask.\n\nSeek out Parqual Fintallas in Lordaeron City. He was a great historian for the humans before the Plague overtook him. Now he continues to seek enlightenment, but of a different nature.\n\nHe will have another requirement of you before he asks you anything, but you have done masterfully thus far--I'm sure you will overcome his obstacle.",
+      "progress": null,
+      "completion": "Braug sent you? Impossible.\n\n<Parqual looks you up and down.>\n\nBraved Dor'Danil, took a leap of faith, fought and overpowered a powerful elemental? Bah! You're probably a farce; some adventurer that overheard talk in a tavern. And now you think you have what it takes to pass my test. So be it... <class>.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1200,
+      "reputation": [
+        {
+          "faction_id": 68,
+          "faction": "Undercity",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1149,
+            "name": "Test of Faith",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1150,
+            "name": "Test of Endurance",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1151,
+            "name": "Test of Strength",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1152,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1154,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6627,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1159,
+            "name": "Test of Lore",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1160,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6628,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1394,
+            "name": "Final Passage",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1176,
+      "name": "Load Lightening",
+      "basis": "page",
+      "level": 30,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4630,
+        "name": "Pozzik"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4630,
+        "name": "Pozzik"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 29,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Get 10 Hollow Vulture Bones for Pozzik in the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Hollow Vulture Bone",
+          "quantity": 10,
+          "type": "item",
+          "id": 5848
+        }
+      ],
+      "provided": [],
+      "description": "When it comes to racing, every bit counts! Whether it's a minor tweaking on the power output, a slight slackening on the tension coils, or lightening the weight of the frame, you have to take everything into account.\n\nWe use vulture bones for a lot of the minor structural tweaks we make to our racers, which offer the perfect balance of strength and weight. Even better, it's easy for us to get more, as the salt flats are littered with vultures.\n\nBring me some and I'll give you a good price on them.",
+      "progress": "Do you have those bones for me? I was just about to start working on lightening the steering rig, but I don't want to open her up without all the parts I need.",
+      "completion": "Great! I can get the crew working on this right away. Thanks, <name>!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "25s"
+      },
+      "xp": 1850,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1176,
+            "name": "Load Lightening",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1178,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1180,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1181,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1182,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1183,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1186,
+            "name": "The Eighteenth Pilot",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1187,
+            "name": "Razzeric's Tweaking",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1188,
+            "name": "Safety First",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1189,
+            "name": "Safety First",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1179,
+      "name": "The Brassbolts Brothers",
+      "basis": "page",
+      "level": 30,
+      "required_level": 28,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 2092,
+        "name": "Pilot Longbeard"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4453,
+        "name": "Wizzle Brassbolts"
+      },
+      "sharable": false,
+      "difficulty": {
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the crate of crash helmets to Wizzle Brassbolts in the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Crate of Crash Helmets (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5849
+        }
+      ],
+      "provided": [],
+      "description": "You ever heard of the Shimmering Flats? It's a stretch of salt flats way over in Kalimdor, just south of the Thousand Needles canyon. It's a great place for racing because, well, it's so flat!\n\nA couple of gnome brothers are out there, friends of mine, trying out their new rocket car, and from what I hear it's fast! Heh, so fast that their pilots keep crashing. Giving themselves concussions.\n\nSo they asked me for some Siege Engine helmets, but I have duties here. I can't make the trip!\n\nCan you?",
+      "progress": "Watch where you're stepping! Watch watch watch!! This is delicate stuff you see here, and if we're to win then it must all work perfectly!",
+      "completion": "Ah! Longbeard sent you with a load of helmets! Hooray!\n\nNow maybe we can talk a pilot into driving our car...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2450,
+      "reputation": [
+        {
+          "faction_id": 54,
+          "faction": "Gnomeregan Exiles",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 5151,
+      "name": "Hypercapacitor Gizmo",
+      "basis": "page",
+      "level": 30,
+      "required_level": 24,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": "Elite",
+      "start": {
+        "type": "npc",
+        "id": 10941,
+        "name": "Wizlo Bearingshiner"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10941,
+        "name": "Wizlo Bearingshiner"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 24,
+        "orange": 26,
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Slay the beast and bring back the Hypercapacitor Gizmo and Panther Cage Key to Wizlo Bearingshiner.",
+      "objectives": [
+        {
+          "text": "Panther Cage Key (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 12942
+        },
+        {
+          "text": "Hypercapacitor Gizmo",
+          "quantity": 1,
+          "type": "item",
+          "id": 12946
+        }
+      ],
+      "provided": [],
+      "description": "I am the only survivor from our caravan attack by the centaur! A rare yet mighty panther is guarding my best gizmo, which is around his neck. Hah! Even the centaur tremble in the presence of this ferocious beast!\n\nHere is the key to the cage. They took everything there, but left him alone. Slay this beast and bring back my hypercapacitor, and I shall reward you.\n\nThe wrecked caravan is just north of here.",
+      "progress": "Do you have my hypercapacitor?",
+      "completion": "My hypercapacitor! This will keep me busy for a while until I can figure out what it does...",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 15467,
+            "name": "Inventor's League Ring",
+            "icon": "inv_jewelry_ring_22",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 287066,
+            "name": "Wizlo's Tuning Wrench",
+            "icon": "inv_misc_wrench_01",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [
+          {
+            "type": "item",
+            "id": 15467,
+            "name": "Inventor's League Ring",
+            "icon": "inv_jewelry_ring_22",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3050,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 6627,
+      "name": "Test of Lore",
+      "basis": "page",
+      "level": 30,
+      "required_level": 26,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4489,
+        "name": "Braug Dimspirit"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4489,
+        "name": "Braug Dimspirit"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 26,
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.13.2.30550",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Answer Braug Dimspirit's question successfully and then speak to him again. He will remain in Stonetalon Mountains when you are ready.",
+      "objectives": [
+        {
+          "text": "Answer Braug Dimspirit's question correctly",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "You have brought me the book, and now it is time for your question. Are you ready?\n\nTime is not an issue, <class>, so do not feel pressured. You may take as long as you like to answer.",
+      "progress": "Life is full of questions, <class>. You will never be able to answer all of them, but with some time and study, perhaps you will become a little more knowledgeable.",
+      "completion": "Well done, <class>. You have studied the text I asked you to, and now you have passed another of our tests.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 250,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1149,
+            "name": "Test of Faith",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1150,
+            "name": "Test of Endurance",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1151,
+            "name": "Test of Strength",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1152,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1154,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6627,
+            "name": "Test of Lore",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1159,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1160,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6628,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1394,
+            "name": "Final Passage",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 6628,
+      "name": "Test of Lore",
+      "basis": "page",
+      "level": 30,
+      "required_level": 26,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4488,
+        "name": "Parqual Fintallas"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4488,
+        "name": "Parqual Fintallas"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 26,
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Answer Parqual Fintallas' question successfully and then speak to him again. He will remain in the Undercity until you are ready.",
+      "objectives": [
+        {
+          "text": "Answer Parqual Fintallas' question correctly",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "So the time is once again upon us. As a student of lore, you have shown great tenacity by undertaking my task.\n\nAnd so now I offer you your question. If you are ready, speak to me again, and take all the time you need, <name>--there is no pressure to answer quickly.",
+      "progress": "There is only one rule I feel you must know if you wish to survive in this world: the more you know, the more you'll see.\n\nIf you study, if you observe, then you will begin to see things in the world that no other <race> will see.",
+      "completion": "Well done, <name>. I had my doubts if you studied the text I asked you to get, but you've answered correctly.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 250,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1149,
+            "name": "Test of Faith",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1150,
+            "name": "Test of Endurance",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1151,
+            "name": "Test of Strength",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1152,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1154,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6627,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1159,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1160,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6628,
+            "name": "Test of Lore",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1394,
+            "name": "Final Passage",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 98069,
+      "name": "Stolen Freewind Supplies",
+      "basis": "page",
+      "level": 30,
+      "required_level": 25,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4877,
+        "name": "Jandia"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4877,
+        "name": "Jandia"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 25,
+        "orange": 26,
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.60.1.70170",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Bring 8 Stolen Freewind Supplies to Jandia in Freewind Post.",
+      "objectives": [
+        {
+          "text": "Stolen Freewind Supplies",
+          "quantity": 8,
+          "type": "item",
+          "id": 279383
+        }
+      ],
+      "provided": [],
+      "description": "Those wretched harpies! They attacked the last caravan I had scheduled to deliver supplies to Freewind Post. We have enough supplies for the moment, but without more supplies, we'll run short soon.\n\nI'm not sure what the harpies plan to do with the extra supplies, but I would be grateful if you would recover them for me. They make their lair west of here. They can be found both at the base of the cliffside and inside a cave at the top.",
+      "progress": "Have you been able to recover the supplies the harpies stole?",
+      "completion": "Thank you, <name>. These supplies will help get us through until the next shipment arrives.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2450,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 98070,
+      "name": "Stop the Screeching",
+      "basis": "page",
+      "level": 30,
+      "required_level": 25,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4877,
+        "name": "Jandia"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4877,
+        "name": "Jandia"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 25,
+        "orange": 26,
+        "yellow": 28,
+        "green": 33,
+        "grey": 38
+      },
+      "patch": "1.60.1.70170",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Slay 5 Screeching Harpies, 5 Screeching Roguefeather Harpies and 5 Screeching Windcaller Harpies.",
+      "objectives": [
+        {
+          "text": "Screeching Harpy slain",
+          "quantity": 5,
+          "type": "npc",
+          "id": 4100
+        },
+        {
+          "text": "Screeching Roguefeather slain",
+          "quantity": 5,
+          "type": "npc",
+          "id": 4101
+        },
+        {
+          "text": "Screeching Windcaller slain",
+          "quantity": 5,
+          "type": "npc",
+          "id": 4104
+        }
+      ],
+      "provided": [],
+      "description": "The Screeching Canyon is home to a local band of harpies known for their ferocious nature and raiding tactics. They have ambushed the last few supply caravans that have been brave enough to traverse this place.\n\nI fear if something isn't done soon, there will be no caravans that will dare make the trek to Freewind Post.\n\nGo, slay as many of these harpies as you are able. Return to me once the deed has been done, and I will reward you well for your efforts.",
+      "progress": "Have you dealt with those awful harpies? I can't wait for the roads to be safe for the caravans again.",
+      "completion": "This is wonderful news! I will send word to our suppliers that the harpies have been dealt with. At least that is one less threat the future caravans will need to worry about.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "25s"
+      },
+      "xp": 2450,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1110,
+      "name": "Rocket Car Parts",
+      "basis": "page",
+      "level": 31,
+      "required_level": 28,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 28,
+        "yellow": 29,
+        "green": 34,
+        "grey": 39
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 30 Rocket Car Parts to Kravel Koalbeard in the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Rocket Car Parts",
+          "quantity": 30,
+          "type": "item",
+          "id": 5798
+        }
+      ],
+      "provided": [],
+      "description": "Heh heh, with all the races they're running here, it's no surprise that a few mishaps happen along the way. If you look around the Shimmering Flats then you'll see evidence of past crashes -- scraps of rocket car parts are littered everywhere!\n\nAnd those parts are worth money to the gnomes and goblins. They're always looking for more contraptions to slap onto their cars.\n\nSo go out and get me parts. Bring me a heap and I'll pay you well.",
+      "progress": "<name>, have you been out into the Flats? Did you bring back that load of parts I wanted?",
+      "completion": "Whoa, look at all that! There's some good stuff in that heap of junk. I'm sure I can pawn it off for a hefty sum.\n\nAnd... is that an ear I see squashed between those two sheets of metal?? Ouch! Heh, I sure wouldn't want to be that pilot!\n\nThanks, <name>. Here's your pay. And here's some advice, free of charge...\n\nIf you look hard enough, you can always find profit in someone else's tragedy.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "30s"
+      },
+      "xp": 2500,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 5762,
+      "name": "Hemet Nesingwary",
+      "basis": "page",
+      "level": 31,
+      "required_level": 28,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "end": {
+        "type": "npc",
+        "id": 715,
+        "name": "Hemet Nesingwary"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 28,
+        "yellow": 29,
+        "green": 34,
+        "grey": 39
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Take Kravel's Crate to Hemet Nesingwary in Stranglethorn.",
+      "objectives": [
+        {
+          "text": "Kravel's Crate (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 14542
+        }
+      ],
+      "provided": [],
+      "description": "I have a package for an old customer of mine, a dwarf named Hemet Nesingwary. The package took weeks to arrive, and Hemet's long gone by now. He said he was going to Stranglethorn to hunt the beasts there, but he left me some money to send his delivery when I could.\n\nHemet's a rich dwarf and it's a good idea to keep up relations with the rich ones, yeah? So... you want to deliver the package for me?\n\nI heard Hemet has a camp in Stranglethorn, north of Grom'gol.",
+      "progress": "Is that desert dust on your collar?\n\nHm... if my nose tells true, I'd say it's not desert dust, it's desert salt! Been to the Shimmering Flats, have you?",
+      "completion": "Great, my package from Koalbeard! Thank you <name>. This crate holds special-gauge ammunition, and it'll serve us well out in the jungle!\n\nHere's your pay, and tell me, how is crusty old Kravel these days? Still up to no good I'd wager...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "30s"
+      },
+      "xp": 1250,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1175,
+      "name": "A Bump in the Road",
+      "basis": "page",
+      "level": 33,
+      "required_level": 28,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4629,
+        "name": "Trackmaster Zherin"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4629,
+        "name": "Trackmaster Zherin"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 28,
+        "orange": 29,
+        "yellow": 31,
+        "green": 36,
+        "grey": 42
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill 10 Saltstone Basilisks, 10 Saltstone Crystalhides and 6 Saltstone Gazers for Trackmaster Zherin on the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Saltstone Basilisk slain",
+          "quantity": 10,
+          "type": "npc",
+          "id": 4147
+        },
+        {
+          "text": "Saltstone Crystalhide slain",
+          "quantity": 10,
+          "type": "npc",
+          "id": 4151
+        },
+        {
+          "text": "Saltstone Gazer slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 4150
+        }
+      ],
+      "provided": [],
+      "description": "After the big crash with the goblins' Red Thunder racer and a basilisk, Kronkrider hired me on to take care of the track. I don't know what all the animals out on the flats are feeding on to grow so big, but we have to be careful to thin them out so they won't wander onto the track when a race is going on.\n\nTell you what. If you want to go out and make a little profit, go out and remove the basilisks from the area.",
+      "progress": "It's bad enough having to clear out the wreckage of the racers without having to pick them out of burnt animal parts.",
+      "completion": "I hope you didn't kill any of the basilisks on the tracks themselves! It takes a long time for the carcasses to decay in the sun, and I'd rather not have to take a shovel out to clean up.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "35s"
+      },
+      "xp": 2650,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1100,
+      "name": "Lonebrow's Journal",
+      "basis": "page",
+      "level": 34,
+      "required_level": 29,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": "Elite",
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 4048,
+        "name": "Falfindel Waywarder"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 29,
+        "orange": 30,
+        "yellow": 32,
+        "green": 37,
+        "grey": 43
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Read Henrig Lonebrow's Journal.",
+      "objectives": [
+        {
+          "text": "Lonebrow's Journal (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5790
+        }
+      ],
+      "provided": [],
+      "description": "You slowly open the weathered journal of Henrig Lonebrow....",
+      "progress": "From your look of concern, I can tell that something is amiss....",
+      "completion": "You say you found this journal on a deceased dwarf? Give me but a moment to peruse the pages...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1350,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1100,
+            "name": "Lonebrow's Journal",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1101,
+            "name": "The Crone of the Kraul",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1106,
+      "name": "Martek the Exiled",
+      "basis": "page",
+      "level": 35,
+      "required_level": 26,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4454,
+        "name": "Fizzle Brassbolts"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4618,
+        "name": "Martek the Exiled"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 26,
+        "orange": 31,
+        "yellow": 33,
+        "green": 38,
+        "grey": 44
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Fizzle's Letter to Martek the Exiled in the Badlands.",
+      "objectives": [
+        {
+          "text": "Fizzle Brassbolts' Letter (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5827
+        }
+      ],
+      "provided": [],
+      "description": "I'm developing a new engine that'll make the car go so fast! Fast enough to fly, I know it! I just need to make pistons that can handle very very heavy stress. All my trials have failed because I can't make pistons hard enough!\n\nBut there is someone who might know how.\n\nHis name is Martek the Exiled. He is a great smith and knows more about metal than anyone. Take him this letter, I know he can help!\n\nBut he's far far away -- in Azeroth, in the Badlands, in a camp, with a goblin!\n\nFind him!",
+      "progress": "Well, you found me. Good for you.\n\nAre you here about that axe I made for Gath'Ilzogg? Or are you here to reclaim Duchess Pamay's honor?\n\nActually, I don't care which it is. If you're here to fight, then let's get it over with...",
+      "completion": "Fizzle sent you? Well that changes things! Of course I'll help you. Fizzle and his brother are two of the few people who don't want me dead!\n\nSo Fizzle wants to make pistons, eh? Pistons strong enough to take whatever stresses he has planned, and if I know Fizzle, then this new car of his is a volcano on wheels!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1350,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1106,
+            "name": "Martek the Exiled",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1108,
+            "name": "Indurium",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1107,
+      "name": "Encrusted Tail Fins",
+      "basis": "page",
+      "level": 35,
+      "required_level": 28,
+      "side": "Both",
+      "side_label": "Both",
+      "type": "Elite",
+      "start": {
+        "type": "npc",
+        "id": 4453,
+        "name": "Wizzle Brassbolts"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4453,
+        "name": "Wizzle Brassbolts"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 28,
+        "orange": 31,
+        "yellow": 33,
+        "green": 38,
+        "grey": 44
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 10 Encrusted Tail Fins to Wizzle Brassbolts in the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Encrusted Tail Fin",
+          "quantity": 10,
+          "type": "item",
+          "id": 5796
+        }
+      ],
+      "provided": [],
+      "description": "Our rocket car is the fastest thing on the flats! So fast that ... I'm afraid friction is going to tear it apart!\n\nTo prevent that I need to create a composite to coat the car's moving parts. It must be hard but not brittle, and must be resistant to salt corrosion, or time spent on the Shimmering Flats will eat it away.\n\nHave you heard of the Vile Reef, <name>? It's off the coast of Stranglethorn Vale. Saltscale murlocs live there, and their tail fins are a crucial ingredient of my composite.",
+      "progress": "Do you have the tail fins? If I can't protect our car from its own speed, then it won't last long in these races.",
+      "completion": "Thank you, <name>! After I grind these down and fuse them with a few other ingredients, the composite will be ready. And after that, the car will be safe from its own speed.\n\nSafe, as long as it doesn't hit anything...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "75s"
+      },
+      "xp": 3450,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1147,
+      "name": "The Swarm Grows",
+      "basis": "page",
+      "level": 35,
+      "required_level": 29,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4483,
+        "name": "Moktar Krin"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4483,
+        "name": "Moktar Krin"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 29,
+        "orange": 31,
+        "yellow": 33,
+        "green": 38,
+        "grey": 44
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill 5 Silithid Searchers, 5 Silithid Hive Drones, and 5 Silithid Invaders and return to Moktar Krin in Thousand Needles.",
+      "objectives": [
+        {
+          "text": "Silithid Searcher slain",
+          "quantity": 5,
+          "type": "npc",
+          "id": 4130
+        },
+        {
+          "text": "Silithid Hive Drone slain",
+          "quantity": 5,
+          "type": "npc",
+          "id": 4133
+        },
+        {
+          "text": "Silithid Invader slain",
+          "quantity": 5,
+          "type": "npc",
+          "id": 4131
+        }
+      ],
+      "provided": [],
+      "description": "Hmm. Seems Belgrom thinks those monsters are a threat. He wants them pushed back into whatever depths they crawled up out of.\n\nI guess killing the dwarves sent by the Explorers' League wasn't enough--now I have to send a half-dead war party into another battle. We won't be able to do it ourselves; not while we're in this condition. The dig site's to the south of here. There shouldn't be anymore dwarves to deal with. Feel up to wielding a blade or staff and doing your part to aid us?",
+      "progress": "With the amount of travelers heading out to the Flats for those races, I'm sure we can convince enough adventure seekers to help push back those insects. My party and I won't be able to leave until we do.",
+      "completion": "Ha! That ichor you're covered in actually makes you prettier, <name>! It certainly does make you reek at the same time though. Don't stand too close to the kodo; you'll either start a stampede or cause them to go into heat.\n\nI think my companions would agree that your smell alone is proof you've done your part to help us against those insect creatures. Thank you, <name>.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "35s"
+      },
+      "xp": 2750,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1145,
+            "name": "The Swarm Grows",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1146,
+            "name": "The Swarm Grows",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1147,
+            "name": "The Swarm Grows",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1148,
+      "name": "Parts of the Swarm",
+      "basis": "page",
+      "level": 35,
+      "required_level": 28,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 3428,
+        "name": "Korran"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 28,
+        "orange": 31,
+        "yellow": 33,
+        "green": 38,
+        "grey": 44
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 1 Silithid Heart, 5 Silithid Talons, and 3 Intact Silithid Carapaces, to Korran at the Crossroads.",
+      "objectives": [
+        {
+          "text": "Silithid Heart",
+          "quantity": 1,
+          "type": "item",
+          "id": 5855
+        },
+        {
+          "text": "Silithid Talon",
+          "quantity": 5,
+          "type": "item",
+          "id": 5854
+        },
+        {
+          "text": "Intact Silithid Carapace",
+          "quantity": 3,
+          "type": "item",
+          "id": 5853
+        }
+      ],
+      "provided": [
+        {
+          "text": "Cracked Silithid Carapace",
+          "quantity": 1,
+          "type": "item",
+          "id": 5877
+        }
+      ],
+      "description": "You inspect the carapace carefully. As you turn it over in your hands you realize that the chitinous plating is interlaced in such a way that makes it incredibly strong. It's unlike anything you've ever seen. You inspect the rest of the corpse further and realize that these creatures are very powerful and highly evolved.\n\nLooking down at the carapace again, you think that Korran would enjoy studying more of these creatures. It could help him figure out what these creatures are, and where they come from.",
+      "progress": "Ah, it been a long time since you've come to see me, <name>. What can I do for you today? You be looking like you've seen the face of battle recently. Good... good for the Horde and good for you. The more battle you've seen, the more helpful you'll be; stronger, too.",
+      "completion": "Ahh, you've seen Moktar recently? He always be lookin' out for me. I'm sorry to hear he spends his time watching over his little war band instead of seeing battle, but I'm sure he be takin' great joy in killing members of the Explorers' League.\n\nYou be smart to bring me these specimens, <name>. Along with the eggs we be findin' in the Field of Giants, these should give me a good start in figuring out what these insects are, and what they be wantin'.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2750,
+      "reputation": [
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1148,
+            "name": "Parts of the Swarm",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1184,
+            "name": "Parts of the Swarm",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1184,
+      "name": "Parts of the Swarm",
+      "basis": "page",
+      "level": 35,
+      "required_level": 28,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3428,
+        "name": "Korran"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4485,
+        "name": "Belgrom Rockmaul"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 28,
+        "orange": 31,
+        "yellow": 33,
+        "green": 38,
+        "grey": 44
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Return to Belgrom Rockmaul in Orgrimmar.",
+      "objectives": [],
+      "provided": [],
+      "description": "Head back to Belgrom in Orgrimmar and tell him Moktar be doing his bidding well out in the Thousand Needles. Tell him also, that me studies progress, and I hope to be havin' learned more soon. That should please him greatly.",
+      "progress": null,
+      "completion": "I'm appreciative of your efforts, <class>. The warchief will enjoy hearing how tenacious you have been in your duties.\n\nOh, of course I will mention your name to him. He speaks to me often and values my opinions greatly.\n\nGo now, I have much to do. And if you speak to Korran soon, and he has news of these creatures, then return to me--I would think they are a threat that must be taken seriously.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 6737,
+            "name": "Dryleaf Pants",
+            "icon": "inv_pants_06",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 6738,
+            "name": "Bleeding Crescent",
+            "icon": "inv_axe_12",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": "18s"
+      },
+      "xp": 1350,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1148,
+            "name": "Parts of the Swarm",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1184,
+            "name": "Parts of the Swarm",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 5361,
+      "name": "Family Tree",
+      "basis": "page",
+      "level": 35,
+      "required_level": 32,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10537,
+        "name": "Cliffwatcher Longhorn"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11259,
+        "name": "Nataka Longhorn"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 32,
+        "yellow": 33,
+        "green": 38,
+        "grey": 44
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Deliver Cliffwatcher Longhorn Report to Nataka Longhorn at Ghost Walker Post in Desolace.",
+      "objectives": [
+        {
+          "text": "Cliffwatcher Longhorn Report (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 13507
+        }
+      ],
+      "provided": [],
+      "description": "My brother Nataka is stationed at Ghost Walker Post over in Desolace. I'd like to ask you... could you give this report to him for me? A year has passed since the last time I wrote, there has been unusual centaur activity since then and he should be informed.\n\nJourney to Stonetalon Mountain north of the Crossroads, and then head west into Charred Vale. From there, head south into Desolace; there you will find a road going south to Ghost Walker Post.",
+      "progress": "What news have you, <class>! Ah - a message from my brother you say? Well then, hand over the report!",
+      "completion": "I know not what connection you have with my brother but it would seem he has trust with you, <class>.\n\nI am Nataka Longhorn and would like to welcome you to Ghost Walker Post, we have many needs of a <class>! Talk with others, perhaps there is need of you here.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "25s"
+      },
+      "xp": 2050,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1111,
+      "name": "Wharfmaster Dizzywig",
+      "basis": "page",
+      "level": 36,
+      "required_level": 30,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3453,
+        "name": "Wharfmaster Dizzywig"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 30,
+        "orange": 32,
+        "yellow": 34,
+        "green": 39,
+        "grey": 45
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Kravel's Parts Order to Wharfmaster Dizzywig in Ratchet.",
+      "objectives": [
+        {
+          "text": "Kravel's Parts Order (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5799
+        }
+      ],
+      "provided": [],
+      "description": "I make it my job to get people what they need, and the gnomes over there need a parts order filled. Their parts were shipped to Ratchet a week ago, but I haven't been able to make the trip.\n\nSo, are you ready for some legwork? Go to Ratchet and give this parts order to Wharfmaster Dizzywig -- he'll probably be at the docks.\n\nDo this for me, and I'll have more jobs for you.\n\nJobs, my friend, with serious profit potential...",
+      "progress": "Speak up! Tell me, are you dropping off or picking up?",
+      "completion": "Oh yes. Parts for Kravel. I'm glad you're here. These things have been sitting out here for days, and I was afraid they'd rust!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1400,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1111,
+            "name": "Wharfmaster Dizzywig",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1112,
+            "name": "Parts for Kravel",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1112,
+      "name": "Parts for Kravel",
+      "basis": "page",
+      "level": 36,
+      "required_level": 30,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3453,
+        "name": "Wharfmaster Dizzywig"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 30,
+        "orange": 32,
+        "yellow": 34,
+        "green": 39,
+        "grey": 45
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Kravel's Parts to Kravel Koalbeard in the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Kravel's Parts (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5800
+        }
+      ],
+      "provided": [],
+      "description": "Here's Kravel's package, <name>. And when you deliver it, tell him... if he wants more special orders, then he'll have to pay his tab!",
+      "progress": "Did you make it to Ratchet and get those parts?",
+      "completion": "Great, you got them! Now we need to get them to the gnomes. But first...\n\nLet's take out one small item...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "20s"
+      },
+      "xp": 1400,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1111,
+            "name": "Wharfmaster Dizzywig",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1112,
+            "name": "Parts for Kravel",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1114,
+      "name": "Delivery to the Gnomes",
+      "basis": "page",
+      "level": 36,
+      "required_level": 30,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4454,
+        "name": "Fizzle Brassbolts"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 30,
+        "orange": 32,
+        "yellow": 34,
+        "green": 39,
+        "grey": 45
+      },
+      "patch": "1.13.2.30550",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Delicate Car Parts to Fizzle Brassbolts in Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Delicate Car Parts (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5802
+        }
+      ],
+      "provided": [],
+      "description": "Now that I have what I need, give these parts to Fizzle Brassbolts. He's been waiting a long time for them -- I'm sure he won't miss the little piece I removed from his order...\n\nAnd I wouldn't bother mentioning it to him. It was small and worthless.\n\nTrust me.",
+      "progress": "You have something for me? That's great! let's see it!",
+      "completion": "There they are! My hydro ratchets and repeater bolts! These will do just fine. Thank you!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "10s"
+      },
+      "xp": 700,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1115,
+      "name": "The Rumormonger",
+      "basis": "page",
+      "level": 36,
+      "required_level": 30,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "end": {
+        "type": "npc",
+        "id": 773,
+        "name": "Krazek"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 30,
+        "orange": 32,
+        "yellow": 34,
+        "green": 39,
+        "grey": 45
+      },
+      "patch": "1.13.2.30550",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Talk to Krazek in Booty Bay.",
+      "objectives": [],
+      "provided": [],
+      "description": "Now that we've done a service for the gnomes, it's time to do the goblins a favor!\n\nI hear that the goblin racer pilot, Nazz Steamboil, didn't always use that name. I wonder why he changed it. I wonder if it's a secret, and... I wonder if he values that secret.\n\nIf anyone knows the truth, then it's Krazek of Booty Bay, on the southern tip of Stranglethorn. Speak with Krazek and ask him about our goblin pilot.\n\nIf you can get useful information from him, then we might just turn a profit from it.",
+      "progress": null,
+      "completion": "You want to know about Nazz Steamboil? He's a racer pilot out in the Shimmering Flats, isn't he?\n\nYeah, I might be able to find something out about him... but it won't be easy. Or fast.\n\nOr cheap.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1400,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1115,
+            "name": "The Rumormonger",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1116,
+            "name": "Dream Dust in the Swamp",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1117,
+            "name": "Rumors for Kravel",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1116,
+      "name": "Dream Dust in the Swamp",
+      "basis": "page",
+      "level": 36,
+      "required_level": 30,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 773,
+        "name": "Krazek"
+      },
+      "end": {
+        "type": "npc",
+        "id": 773,
+        "name": "Krazek"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 30,
+        "orange": 32,
+        "yellow": 34,
+        "green": 39,
+        "grey": 45
+      },
+      "patch": "1.13.2.30550",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 10 Specks of Dream Dust to Krazek in Booty Bay. Dream Dust is gathered from the dragon whelps of the Swamp of Sorrows.",
+      "objectives": [
+        {
+          "text": "Speck of Dream Dust",
+          "quantity": 10,
+          "type": "item",
+          "id": 5803
+        }
+      ],
+      "provided": [],
+      "description": "Getting the information on Nazz is quite a favor, <name>. Yes, quite a favor. But you've come all the way from the Shimmering Flats to get it... are you willing to travel some more?\n\nWhile I contact my sources, why don't you gather something for me, eh?\n\nHm... what will it be? How about dream dust, from the dragon whelps of the Swamp of Sorrows. Yes, I'd love some dream dust for my snuff pouch!\n\nGet it for me, <name>, and I'll give you the information you seek.",
+      "progress": "Back so soon? Do you have my dream dust?",
+      "completion": "Well, look at that. You found the dream dust!\n\nAnd how did you like the swamp, <name>? It's not easy to get a hot meal there, is it?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3500,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1115,
+            "name": "The Rumormonger",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1116,
+            "name": "Dream Dust in the Swamp",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1117,
+            "name": "Rumors for Kravel",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1117,
+      "name": "Rumors for Kravel",
+      "basis": "page",
+      "level": 36,
+      "required_level": 30,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 773,
+        "name": "Krazek"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 30,
+        "orange": 32,
+        "yellow": 34,
+        "green": 39,
+        "grey": 45
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Goblin Rumors to Kravel Koalbeard in the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Goblin Rumors (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5804
+        }
+      ],
+      "provided": [],
+      "description": "I had to use some of my favors, and gave away a rare bottle of elven wine, and did some heavy deducing myself! But I found the information you seek.\n\nHere, I wrote a letter with some very interesting bits on our friend, Nazz Steamboil. Do with it what you will -- it's too dangerous for me to use.\n\nJust don't tell anyone where you got it!",
+      "progress": "Did you get anything on Nazz Steamboil? Anything he might want to keep a secret??",
+      "completion": "Well well! This is interesting... very interesting. Heh, perhaps I should bow to the goblin pilot the next time I see him.\n\nThis is worth plenty, <name>. I'm sure Nazz will pay a small fortune to keep his secret... a secret.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "75s"
+      },
+      "xp": 3500,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1115,
+            "name": "The Rumormonger",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1116,
+            "name": "Dream Dust in the Swamp",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1117,
+            "name": "Rumors for Kravel",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1394,
+      "name": "Final Passage",
+      "basis": "page",
+      "level": 36,
+      "required_level": 26,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4488,
+        "name": "Parqual Fintallas"
+      },
+      "end": {
+        "type": "npc",
+        "id": 2986,
+        "name": "Dorn Plainstalker"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 26,
+        "orange": 32,
+        "yellow": 34,
+        "green": 39,
+        "grey": 45
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak to Dorn Plainstalker in Thousand Needles.",
+      "objectives": [],
+      "provided": [],
+      "description": "You have done well, <name>. You have passed my test, and the tests before mine. Return to Dorn in Thousand Needles. He will sense the change within you, and see that your mind, body and spirit are strong enough that you should be rewarded for your efforts.\n\nStay true to the balance you've shown throughout these trials, <name>. Dorn will test you again in the future if you do.",
+      "progress": null,
+      "completion": "Ah, <name>. It has been a long time since you have last stepped into my home. It seems like many moons have passed since you took your first leap that set you upon your path.\n\nAnd now you return to me stronger than you once were... more enlightened. This pleases me. And you should be justly rewarded for seeing my tests to the end.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 6804,
+            "name": "Windstorm Hammer",
+            "icon": "inv_hammer_05",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 6806,
+            "name": "Dancing Flame",
+            "icon": "inv_wand_04",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 4200,
+      "reputation": [
+        {
+          "faction_id": 67,
+          "faction": "Horde",
+          "amount": 200
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1149,
+            "name": "Test of Faith",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1150,
+            "name": "Test of Endurance",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1151,
+            "name": "Test of Strength",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1152,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1154,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6627,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1159,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1160,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6628,
+            "name": "Test of Lore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1394,
+            "name": "Final Passage",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1178,
+      "name": "Goblin Sponsorship",
+      "basis": "page",
+      "level": 37,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4630,
+        "name": "Pozzik"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3391,
+        "name": "Gazlowe"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 29,
+        "orange": 33,
+        "yellow": 35,
+        "green": 40,
+        "grey": 46
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak to Gazlowe in Ratchet.",
+      "objectives": [],
+      "provided": [],
+      "description": "Our racing team is the pride of goblins everywhere. You'd be surprised at some of the people who contribute in one way or another to our team.\n\nYou know Gazlowe? He tracks down parts from around the world for us. He even came down to work on one of our rigs once!\n\nA few weeks ago, he said he'd send us a new prototype fuel regulator but it hasn't come yet. He's usually very prompt... Maybe you wouldn't mind going to Ratchet to ask him about it? I wouldn't be so pushy, but the gnomes are gaining on us!",
+      "progress": null,
+      "completion": "Pozzik sent you, huh? You know, Pozzik was one of the most respected tinkerers in Undermine before he retired to start working on the racers.\n\nThe first thing he did when he joined the team was develop the two engine model racers. Could be that the businesses will suffer without him working with the Tinkers' Union, but who cares, right? There's nothing like the races!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 710,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 25
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1176,
+            "name": "Load Lightening",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1178,
+            "name": "Goblin Sponsorship",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1180,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1181,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1182,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1183,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1186,
+            "name": "The Eighteenth Pilot",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1187,
+            "name": "Razzeric's Tweaking",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1188,
+            "name": "Safety First",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1189,
+            "name": "Safety First",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1180,
+      "name": "Goblin Sponsorship",
+      "basis": "page",
+      "level": 37,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3391,
+        "name": "Gazlowe"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4631,
+        "name": "Wharfmaster Lozgil"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 29,
+        "orange": 33,
+        "yellow": 35,
+        "green": 40,
+        "grey": 46
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak with Wharfmaster Lozgil in Booty Bay.",
+      "objectives": [],
+      "provided": [],
+      "description": "Back to what you came here about. I know I promised Pozzik that I'd deliver a new fuel regulator for him, but I still haven't received it yet. Revilgaz over in Booty Bay said he'd have it shipped over, but it might be it slipped through the cracks somehow.\n\nIf that's true, there's not much we can do about it. We can at least find out if it was dispatched from Booty Bay.\n\nCheck in with Wharfmaster Lozgil over there, he should be able to check the cargo records.",
+      "progress": null,
+      "completion": "Shipments to Ratchet? Let me just check the logbooks...\n\nNo, the most recent shipment I have on record of going out to Ratchet were boots from Drizzlik. Hasn't been much else, other than building supplies and tools. Definitely no race parts.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 710,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 25
+        },
+        {
+          "faction_id": 21,
+          "faction": "Booty Bay",
+          "amount": 25
+        },
+        {
+          "faction_id": 87,
+          "faction": "Bloodsail Buccaneers",
+          "amount": -125
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1176,
+            "name": "Load Lightening",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1178,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1180,
+            "name": "Goblin Sponsorship",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1181,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1182,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1183,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1186,
+            "name": "The Eighteenth Pilot",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1187,
+            "name": "Razzeric's Tweaking",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1188,
+            "name": "Safety First",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1189,
+            "name": "Safety First",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1181,
+      "name": "Goblin Sponsorship",
+      "basis": "page",
+      "level": 37,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4631,
+        "name": "Wharfmaster Lozgil"
+      },
+      "end": {
+        "type": "npc",
+        "id": 2496,
+        "name": "Baron Revilgaz"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 29,
+        "orange": 33,
+        "yellow": 35,
+        "green": 40,
+        "grey": 46
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak with Baron Revilgaz in Booty Bay.",
+      "objectives": [],
+      "provided": [],
+      "description": "I'm afraid I can't be of much more help to you, <name>. If you'd like to follow up on it more, I'd suggest you go hit up the Baron himself. If there's anyone who knows Revilgaz's business, it's Revilgaz.\n\nYou'll find him at the tavern across the harbor, top floor.",
+      "progress": null,
+      "completion": "Oh, sure of course I know what you're talking about. Nope, can't help you though. Some of my men were supposed to go track down the blueprints for the fuel regulator, but they came back empty-handed.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 290,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1176,
+            "name": "Load Lightening",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1178,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1180,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1181,
+            "name": "Goblin Sponsorship",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1182,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1183,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1186,
+            "name": "The Eighteenth Pilot",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1187,
+            "name": "Razzeric's Tweaking",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1188,
+            "name": "Safety First",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1189,
+            "name": "Safety First",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1182,
+      "name": "Goblin Sponsorship",
+      "basis": "page",
+      "level": 37,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 2496,
+        "name": "Baron Revilgaz"
+      },
+      "end": {
+        "type": "npc",
+        "id": 2496,
+        "name": "Baron Revilgaz"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 29,
+        "orange": 33,
+        "yellow": 35,
+        "green": 40,
+        "grey": 46
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Fuel Regulator Blueprints to Baron Revilgaz in Booty Bay.",
+      "objectives": [
+        {
+          "text": "Fuel Regulator Blueprints",
+          "quantity": 1,
+          "type": "item",
+          "id": 5852
+        },
+        {
+          "text": "Cozzle's Key",
+          "quantity": 1,
+          "type": "item",
+          "id": 5851
+        }
+      ],
+      "provided": [],
+      "description": "See, the Venture Company shredders out in Lake Nazferiti (in northern Stranglethorn) have been equipped with a new model fuel regulator. I was thinking that Pozzik would be able to take advantage of it, if he could get some details. Unfortunately, Cozzle, the foreman out there, appears to be a little more clever than I gave him credit for.\n\nYou seem like you might have more luck finding the blueprints though. I know he keeps them in his house, but they're almost certainly under lock and key.",
+      "progress": "Much as I hate to admit it, that gnome team they have out there is pretty good. Our boys need every edge they can get.",
+      "completion": "Now, let me just get a copy of these blueprints for my own notes and you can bring these straight to Pozzik. Wouldn't want him to think that one of his sponsors was abandoning him.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "40s"
+      },
+      "xp": 2850,
+      "reputation": [
+        {
+          "faction_id": 21,
+          "faction": "Booty Bay",
+          "amount": 100
+        },
+        {
+          "faction_id": 87,
+          "faction": "Bloodsail Buccaneers",
+          "amount": -500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1176,
+            "name": "Load Lightening",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1178,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1180,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1181,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1182,
+            "name": "Goblin Sponsorship",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1183,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1186,
+            "name": "The Eighteenth Pilot",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1187,
+            "name": "Razzeric's Tweaking",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1188,
+            "name": "Safety First",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1189,
+            "name": "Safety First",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1183,
+      "name": "Goblin Sponsorship",
+      "basis": "page",
+      "level": 37,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 2496,
+        "name": "Baron Revilgaz"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4630,
+        "name": "Pozzik"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 29,
+        "orange": 33,
+        "yellow": 35,
+        "green": 40,
+        "grey": 46
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Deliver the Fuel Regulator Blueprints to Pozzik on the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Fuel Regulator Blueprints (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5852
+        }
+      ],
+      "provided": [],
+      "description": "You should be all set to go. Give Pozzik my regards and tell him that if he ever needs anything, not to hesitate to ask. I'll be waiting for the news that he breaks the track record soon!",
+      "progress": "<name>! Did you manage to track down the fuel regulator?",
+      "completion": "I was hoping that it would be already assembled, but this does present the unique opportunity to improve on the design from the ground up. Thanks, <name>. I'll be able to sketch up some improved schematics, build the thing, and have it installed real soon.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 710,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1176,
+            "name": "Load Lightening",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1178,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1180,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1181,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1182,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1183,
+            "name": "Goblin Sponsorship",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1186,
+            "name": "The Eighteenth Pilot",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1187,
+            "name": "Razzeric's Tweaking",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1188,
+            "name": "Safety First",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1189,
+            "name": "Safety First",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1186,
+      "name": "The Eighteenth Pilot",
+      "basis": "page",
+      "level": 37,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4630,
+        "name": "Pozzik"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4706,
+        "name": "Razzeric"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 29,
+        "orange": 33,
+        "yellow": 35,
+        "green": 40,
+        "grey": 46
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak with Razzeric on the Shimmering Flats.",
+      "objectives": [],
+      "provided": [],
+      "description": "I'm going to be busy with working on integrating this new fuel regulator to our racer designs, but if you'd like to help out the team some more, talk to Razzeric. He's our pilot--well, our eighteenth pilot, to be exact--and he likes to add his own little modifications to the racers.\n\nHe's a little off his rocker, though, so try not to act too surprised.",
+      "progress": null,
+      "completion": "You're the <race> that's been helping Pozzik out, right? I was like you once, running around the pit area, helping with whatever work the mechanics would let me do.\n\nNow look at me! The goblin racing team's pilot extraordinaire!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 290,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1176,
+            "name": "Load Lightening",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1178,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1180,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1181,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1182,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1183,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1186,
+            "name": "The Eighteenth Pilot",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1187,
+            "name": "Razzeric's Tweaking",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1188,
+            "name": "Safety First",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1189,
+            "name": "Safety First",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1137,
+      "name": "News for Fizzle",
+      "basis": "page",
+      "level": 38,
+      "required_level": 28,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4618,
+        "name": "Martek the Exiled"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4454,
+        "name": "Fizzle Brassbolts"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 28,
+        "orange": 34,
+        "yellow": 36,
+        "green": 41,
+        "grey": 47
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak with Fizzle Brassbolts in the Shimmering Flats.",
+      "objectives": [],
+      "provided": [],
+      "description": "Indurium has an amazing resistance to heat! I'm sure it will work for Fizzle's pistons. But he'll need true indurium ore, not just the flakes.\n\nTo get the ore, it must be mined from deep within Uldaman, on the northern borders of the Badlands. That is the true source of indurium.\n\nSend Fizzle Brassbolts my regards, and tell him what I told you.\n\nSafe travels, <name>. And it won't surprise me if we meet again -- once Fizzle learns of indurium he'll probably send you to Uldaman to acquire it!",
+      "progress": null,
+      "completion": "<name>, you're back! You found Martek? You spoke with him? What did he say? Can he help??\n\nTell me, tell me, tell me!!",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 6729,
+            "name": "Fizzle's Zippy Lighter",
+            "icon": "inv_wand_11",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 6732,
+            "name": "Gnomish Mechanic's Gloves",
+            "icon": "inv_gauntlets_15",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1450,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 94930,
+      "name": "Lost Shipping Crate",
+      "basis": "page",
+      "level": 38,
+      "required_level": 36,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "object",
+        "id": 658117,
+        "name": "Lost Shipping Crate"
+      },
+      "end": {
+        "type": "npc",
+        "id": 255897,
+        "name": "Friz Frazzlespark"
+      },
+      "sharable": false,
+      "difficulty": {
+        "yellow": 36,
+        "green": 41,
+        "grey": 47
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Deliver the Lost Shipping Crate to Friz Frazzlespark at Powderfuse Port in the Riverglades.",
+      "objectives": [],
+      "provided": [
+        {
+          "text": "Lost Shipping Crate",
+          "quantity": 1,
+          "type": "item",
+          "id": 276067
+        }
+      ],
+      "description": "<A handwritten label appears on the side of the crate. On the right side is a map with a large red circle along a southeastern shoreline north of a poorly drawn temple surrounded by water and some kind of winged creatures. On the left is a note in massive font.>\n\nPROPERTY OF FRIZ FRAZZLESPARK\n\nPOWDERFUSE PORT\n\nWARNING: NOT for tampering. Do NOT open without supervision.\n\n<An additional note appears at the bottom of the label.>\n\nIf lost, return to FRIZ FRAZZLESPARK. Powderfuse Port. Riverglades.",
+      "progress": null,
+      "completion": "Where did you say you found this? I'm surprised you're still fully intact. Thanks, kid.\n\nY'know. If you're in the habit of doin' favors, I bet plenty of folk 'round here will have a use for ya. Why don'tcha stick around for a bit?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 290,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1108,
+      "name": "Indurium",
+      "basis": "page",
+      "level": 39,
+      "required_level": 28,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4618,
+        "name": "Martek the Exiled"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4618,
+        "name": "Martek the Exiled"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 28,
+        "orange": 35,
+        "yellow": 37,
+        "green": 42,
+        "grey": 48
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 10 Indurium Flakes to Martek the Exiled in the Badlands.",
+      "objectives": [
+        {
+          "text": "Indurium Flake",
+          "quantity": 10,
+          "type": "item",
+          "id": 5797
+        }
+      ],
+      "provided": [],
+      "description": "I'm not out here just to stay away from people. There is a wealth of metal in the Badlands, <name>, if you have the guts to get it.\n\nThe metal's called indurium and as luck would have it, it is rumored to possess high resistance to heat and stress. It might work for Fizzle's car.\n\nBut let's make sure. Get me samples of indurium and I'll test its properties.\n\nTrue indurium ore lies deep in Uldaman, but the Stonevault troggs of the Badlands sometimes have flakes of it on them. Bring me those flakes.",
+      "progress": "Did you find any indurium flakes, <name>. I have my forge heated up and ready to test them.",
+      "completion": "Ah yes, these will do fine. Now let's put them in some heat and see how they fare...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3000,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1106,
+            "name": "Martek the Exiled",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1108,
+            "name": "Indurium",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1187,
+      "name": "Razzeric's Tweaking",
+      "basis": "page",
+      "level": 41,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4706,
+        "name": "Razzeric"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4706,
+        "name": "Razzeric"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 29,
+        "orange": 37,
+        "yellow": 39,
+        "green": 44,
+        "grey": 51
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Retrieve the Seaforium Booster for Razzeric in the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Seaforium Booster",
+          "quantity": 1,
+          "type": "item",
+          "id": 5862
+        }
+      ],
+      "provided": [],
+      "description": "Pozzik's a great mechanic, I know that, but he's afraid to just load on the firepower and grab on for the ride. Not me, though.\n\nAfter Pozzik finishes with a racer, I take a little time to put my own modifications on--you know, loosening up the controls, removing parts of the frame, and adding more juice!\n\nI ordered a seaforium booster from Shreev at the Gizmorium in Gadgetzan, but apparently the zeppelin it was being sent on crashed in Dustwallow Marsh! I gotta have it, <name>!",
+      "progress": "How'm I supposed to show my face around the track without a little extra kick to get me going? It's a travesty, I tell you.",
+      "completion": "Just take a look at this beauty! Fifteen pounds of solid seaforium power! Once I get this strapped on to the side of my racer, I'll be around the track so fast I'll beat the gnomes twice!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "55s"
+      },
+      "xp": 3300,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1176,
+            "name": "Load Lightening",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1178,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1180,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1181,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1182,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1183,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1186,
+            "name": "The Eighteenth Pilot",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1187,
+            "name": "Razzeric's Tweaking",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1188,
+            "name": "Safety First",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1189,
+            "name": "Safety First",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1188,
+      "name": "Safety First",
+      "basis": "page",
+      "level": 41,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4706,
+        "name": "Razzeric"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4708,
+        "name": "Shreev"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 29,
+        "orange": 37,
+        "yellow": 39,
+        "green": 44,
+        "grey": 51
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Seaforium Booster to Shreev in Gadgetzan.",
+      "objectives": [
+        {
+          "text": "Seaforium Booster (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5862
+        }
+      ],
+      "provided": [],
+      "description": "But wait, what's this? Shreev left the safety on. That will limit the amount of power I can draw from the booster at any time. I told him I wanted it off! This is no good.\n\nYou have to take this to the Gadgetzan Gizmorium in the Tanaris Desert and have Shreev remove this.",
+      "progress": "As I'm sure you know, the Gizmorium can service all of your tinkering needs! How can I help you?",
+      "completion": "Only Razzeric would take a look at this and say that I'd somehow put some sort of safety lock on it. This booster is almost completely seaforium explosives. I already modified it so that more of its payload would be delivered upon use, but Razzeric is never content unless he goes to eleven!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 820,
+      "reputation": [
+        {
+          "faction_id": 369,
+          "faction": "Gadgetzan",
+          "amount": 25
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1176,
+            "name": "Load Lightening",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1178,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1180,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1181,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1182,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1183,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1186,
+            "name": "The Eighteenth Pilot",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1187,
+            "name": "Razzeric's Tweaking",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1188,
+            "name": "Safety First",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1189,
+            "name": "Safety First",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1189,
+      "name": "Safety First",
+      "basis": "page",
+      "level": 41,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4708,
+        "name": "Shreev"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4706,
+        "name": "Razzeric"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 29,
+        "orange": 37,
+        "yellow": 39,
+        "green": 44,
+        "grey": 51
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Return the Modified Seaforium Booster to Razzeric on the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Modified Seaforium Booster (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5865
+        }
+      ],
+      "provided": [],
+      "description": "There, I did what Razzeric wanted. Just tell him to be careful when he sets this off. If he makes the slightest mistake, he won't be moving forward, he'll just be a burnt spot on the track.\n\nWould be a shame, too, if that happened. Who knows if our nineteenth driver would be any good?",
+      "progress": "Can you believe Pozzik put a bucket of sand on the racer? How am I supposed to hit my maximum speed with a bucket of sand under the seat?",
+      "completion": "Now that's more like it! I wish I could see the look on the gnomes' eyes when they see me set this baby off.\n\nToo bad I'll be too busy pulling off a new course record!",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 6726,
+            "name": "Razzeric's Customized Seatbelt",
+            "icon": "inv_belt_15",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 6727,
+            "name": "Razzeric's Racing Grips",
+            "icon": "inv_gauntlets_24",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 820,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 25
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1176,
+            "name": "Load Lightening",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1178,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1180,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1181,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1182,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1183,
+            "name": "Goblin Sponsorship",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1186,
+            "name": "The Eighteenth Pilot",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1187,
+            "name": "Razzeric's Tweaking",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1188,
+            "name": "Safety First",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1189,
+            "name": "Safety First",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1190,
+      "name": "Keeping Pace",
+      "basis": "page",
+      "level": 41,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4630,
+        "name": "Pozzik"
+      },
+      "end": {
+        "type": "object",
+        "id": 20805,
+        "name": "Rizzle's Unguarded Plans"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 29,
+        "orange": 37,
+        "yellow": 39,
+        "green": 44,
+        "grey": 51
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Have Zamek create a diversion, then steal Rizzle's plans for Pozzik on the Shimmering Flats.",
+      "objectives": [],
+      "provided": [],
+      "description": "The Brassbolts brothers have discovered a new building material, that's the only explanation that makes sense. Their cars have been operating faster than before, but their designs, and all the other data we've gathered from their runs is identical.\n\nWhat we do know, is that Rizzle Brassbolts has been focused on the plans for this new discovery almost constantly.\n\nZamek can create a diversion for you, so that you can steal those plans from them.",
+      "progress": null,
+      "completion": "Scribbled in a hasty, hurried hand, a scroll of notes and designs for the refinement of some raw material.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1650,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1190,
+            "name": "Keeping Pace",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1194,
+            "name": "Rizzle's Schematics",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1191,
+      "name": "Zamek's Distraction",
+      "basis": "page",
+      "level": 41,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4709,
+        "name": "Zamek"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4709,
+        "name": "Zamek"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 29,
+        "orange": 37,
+        "yellow": 39,
+        "green": 44,
+        "grey": 51
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": null,
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": "Let's go!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": null,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1194,
+      "name": "Rizzle's Schematics",
+      "basis": "page",
+      "level": 41,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "object",
+        "id": 20805,
+        "name": "Rizzle's Unguarded Plans"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4630,
+        "name": "Pozzik"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 29,
+        "orange": 37,
+        "yellow": 39,
+        "green": 44,
+        "grey": 51
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Sample of Indurium Ore to Pozzik on the Shimmering Flats.",
+      "objectives": [],
+      "provided": [
+        {
+          "text": "Sample of Indurium Ore",
+          "quantity": 1,
+          "type": "item",
+          "id": 5866
+        }
+      ],
+      "description": "Rizzle's schematics describe the process of the refinement of indurium ore. From his scrawls, it is apparent that indurium ore is being obtained from the dwarven excavation site of Uldaman in the Badlands.\n\nMuch of the other notes relate to the heat resistant properties.\n\nUsed as a paperweight for the plans is a hunk of what appears to be unrefined indurium ore.",
+      "progress": null,
+      "completion": "Indurium? Interesting... If it is capable of resisting heat to the degree that you say, it would explain the performance increase the gnomes have displayed of late.\n\nThis sample you've brought to me will be invaluable, also. I will be able to perform some tests on this, but I'll need more for this to actually be of any use to us.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1650,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1190,
+            "name": "Keeping Pace",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1194,
+            "name": "Rizzle's Schematics",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1192,
+      "name": "Indurium Ore",
+      "basis": "page",
+      "level": 42,
+      "required_level": 29,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4630,
+        "name": "Pozzik"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4630,
+        "name": "Pozzik"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 29,
+        "orange": 38,
+        "yellow": 40,
+        "green": 45,
+        "grey": 52
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": null,
+      "objectives": [
+        {
+          "text": "Indurium Ore",
+          "quantity": 4,
+          "type": "item",
+          "id": 5833
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": "I'd like to integrate indurium into different parts of our racers, but I need large amounts of raw indurium to create these parts.\n\nYou can find indurium ore in the Uldaman excavation in the Badlands, across the sea in Khaz Modan.\n\nThe gnomes are getting their own supply of it, so it's important we get our own to keep pace with them.",
+      "completion": "Excellent! I'll get the crew to work right away on the parts we'll need for the next race.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "6s"
+      },
+      "xp": null,
+      "reputation": [],
+      "other_gains": [],
+      "series": null,
+      "repeatable": true
+    },
+    {
+      "quest_id": 1118,
+      "name": "Back to Booty Bay",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "end": {
+        "type": "npc",
+        "id": 2498,
+        "name": "Crank Fizzlebub"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Kravel's Scheme to Crank Fizzlebub in Booty Bay.",
+      "objectives": [
+        {
+          "text": "Kravel's Scheme (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5826
+        }
+      ],
+      "provided": [],
+      "description": "<name>, you're a <class> I can trust, both to get the job done and to keep your mouth shut while doing it.\n\nI've been brewing up a new scheme. It's risky, but if it works then we could both make a bundle! And I think you're just the person to see it through.\n\nTo start, you must go back to Booty Bay. I apologize, good <name>. I know my last task took you there. But this time, speak with Crank Fizzlebub.\n\nGive him this letter. And if he requires aid, do your best to help him. It will be worth the effort.",
+      "progress": "Hello hello. And what brings a noble <race> such as you down to Booty Bay?",
+      "completion": "I see. Kravel has a big scheme planned. He has a sinister mind -- I like that about him.\n\nSo you'll need something to addle wits, eh? Something powerful...\n\nI wonder if the mixture Zanzil feeds his zombies could be used...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 890,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1119,
+      "name": "Zanzil's Mixture and a Fool's Stout",
+      "basis": "page",
+      "level": 44,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 2498,
+        "name": "Crank Fizzlebub"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 40,
+        "yellow": 42,
+        "green": 47,
+        "grey": 54
+      },
+      "patch": "1.13.2.31687",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Fool's Stout back to Kravel in the Shimmering Flats.",
+      "objectives": [
+        {
+          "text": "Fool's Stout (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5806
+        }
+      ],
+      "provided": [],
+      "description": "I figured out how to use Zanzil's mixture with stout to make a powerful libation. A Fool's Stout. I think it'll be just what Kravel needs, but try it out and let me know how it works.\n\nAnd <name>, don't keep this stuff too long without using it. Zanzil's mixture has a weird effect on the stout's yeast, kicking it into high gear. So it won't stay fresh forever.",
+      "progress": "Hello, <name>. Was Fizzlebub able to help us?",
+      "completion": "Wonderful! Fizzlebub came through! I'll remember that next time I see him.\n\nAnd thank you, <name>. You're doing a great job, and we both stand to make a lot of money from this...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3750,
+      "reputation": [],
+      "other_gains": [],
+      "series": null,
+      "timer": "2 hours"
+    },
+    {
+      "quest_id": 1120,
+      "name": "Get the Gnomes Drunk",
+      "basis": "page",
+      "level": 44,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4495,
+        "name": "Gnome Pit Boss"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 40,
+        "yellow": 42,
+        "green": 47,
+        "grey": 54
+      },
+      "patch": "1.13.2.31687",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Fool's Stout to the Gnome Pit Boss.",
+      "objectives": [
+        {
+          "text": "Fool's Stout (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5806
+        }
+      ],
+      "provided": [],
+      "description": "We need to try the Fool's Stout on one of the pit crews. If you want to try it on the gnomes, then here -- take the stout and give it to the gnome pit boss.\n\nAnd don't wait too long. This stout will go bad eventually.",
+      "progress": "Hi! You have something for me?",
+      "completion": "Stout? How considerate! Thank you!\n\nWe shouldn't be drinking with the race coming up, but... maybe my boys could do with just a little. Besides, it can't be that strong, can it?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 380,
+      "reputation": [],
+      "other_gains": [],
+      "series": null,
+      "timer": "2 hours"
+    },
+    {
+      "quest_id": 1121,
+      "name": "Get the Goblins Drunk",
+      "basis": "page",
+      "level": 44,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4496,
+        "name": "Goblin Pit Boss"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 40,
+        "yellow": 42,
+        "green": 47,
+        "grey": 54
+      },
+      "patch": "1.13.2.31687",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Fool's Stout to the Goblin Pit Boss.",
+      "objectives": [
+        {
+          "text": "Fool's Stout (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5806
+        }
+      ],
+      "provided": [],
+      "description": "We need to try the Fool's Stout on one of the pit crews. If you want to try it on the goblins, then here -- take the stout and give it to the goblin pit boss.\n\nAnd don't wait too long. This stout will go bad eventually.",
+      "progress": "What are you looking at?",
+      "completion": "What do we have here? Booze, eh?\n\nWell, I don't mind if we have just a little...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 380,
+      "reputation": [],
+      "other_gains": [],
+      "series": null,
+      "timer": "2 hours"
+    },
+    {
+      "quest_id": 1122,
+      "name": "Report Back to Fizzlebub",
+      "basis": "page",
+      "level": 44,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4452,
+        "name": "Kravel Koalbeard"
+      },
+      "end": {
+        "type": "npc",
+        "id": 2498,
+        "name": "Crank Fizzlebub"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 40,
+        "yellow": 42,
+        "green": 47,
+        "grey": 54
+      },
+      "patch": "1.13.2.31687",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Fool's Stout report to Crank Fizzlebub in Booty Bay.",
+      "objectives": [
+        {
+          "text": "Fool's Stout Report (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5807
+        }
+      ],
+      "provided": [],
+      "description": "That Fool's Stout worked great! I placed a bet on the next race, and... let's hope the crew you got drunk did a number on their car!\n\nThere's only one more task for you -- take this note back to Crank Fizzlebub in Booty Bay. He'll want to know of the successful test.\n\nAnd hopefully we can get more of that Fool's Stout for future races!",
+      "progress": "Hello <name>. How'd that stout work out? It's strong stuff, isn't it?",
+      "completion": "It says here that the fool's stout was a success. That's good news!\n\nIf you ever want more of the stuff, then let me know and I'll have you gather more of Zanzil's Mixture.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1850,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 2769,
+      "name": "The Brassbolts Brothers",
+      "basis": "page",
+      "level": 46,
+      "required_level": 40,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": "Dungeon",
+      "start": {
+        "type": "npc",
+        "id": 6169,
+        "name": "Klockmort Spannerspan"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4453,
+        "name": "Wizzle Brassbolts"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 40,
+        "orange": 42,
+        "yellow": 44,
+        "green": 49,
+        "grey": 56
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak with Wizzle Brassbolts in the Shimmering Flats.",
+      "objectives": [],
+      "provided": [],
+      "description": "Have you met the Brassbolts brothers? They're over in the Shimmering Flats, in Kalimdor, racing their rocket car against the goblins. They usually win which is no surprise--the goblin car blows up so much it barely ever crosses the finish line!\n\nBut even then, the Brassbolts brothers are always looking for new ways to make their car go faster, and Wizzle told me he needs a very rare component for his next experiment.\n\nHe probably needs help getting that part. Speak to him and find out.",
+      "progress": null,
+      "completion": "Ah, you want to help me? Great!\n\nThere's a part I want for an experiment I'm working on, and I need a brave <class> like you to help me get it!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 410,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 2769,
+            "name": "The Brassbolts Brothers",
+            "side": "Alliance",
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 2770,
+            "name": "Gahz'rilla",
+            "side": null
+          }
+        ]
+      ]
+    }
+  ],
+  "related": [
+    {
+      "quest_id": 1146,
+      "name": "The Swarm Grows",
+      "level": 33,
+      "required_level": 29,
+      "side": "Horde",
+      "category_id": 1637,
+      "xp": 1950,
+      "money": null
+    },
+    {
+      "quest_id": 1196,
+      "name": "The Sacred Flame",
+      "level": 29,
+      "required_level": 20,
+      "side": "Horde",
+      "category_id": 1638,
+      "xp": 590,
+      "money": null
+    },
+    {
+      "quest_id": 1197,
+      "name": "The Sacred Flame",
+      "level": 29,
+      "required_level": 20,
+      "side": "Horde",
+      "category_id": 1638,
+      "xp": 2350,
+      "money": null
+    },
+    {
+      "quest_id": 1531,
+      "name": "Call of Air",
+      "level": 30,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 2450,
+      "money": null
+    },
+    {
+      "quest_id": 1532,
+      "name": "Call of Air",
+      "level": 30,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 2450,
+      "money": null
+    },
+    {
+      "quest_id": 1949,
+      "name": "Hidden Secrets",
+      "level": 38,
+      "required_level": 30,
+      "side": "Both",
+      "category_id": -161,
+      "xp": 1450,
+      "money": null
+    },
+    {
+      "quest_id": 1950,
+      "name": "Get the Scoop",
+      "level": 30,
+      "required_level": 30,
+      "side": "Both",
+      "category_id": -161,
+      "xp": 1850,
+      "money": null
+    },
+    {
+      "quest_id": 1951,
+      "name": "Rituals of Power",
+      "level": 40,
+      "required_level": 30,
+      "side": "Both",
+      "category_id": -161,
+      "xp": 3150,
+      "money": null
+    },
+    {
+      "quest_id": 2770,
+      "name": "Gahz'rilla",
+      "level": 50,
+      "required_level": 40,
+      "side": "Both",
+      "category_id": 1176,
+      "xp": 7100,
+      "money": "75s"
+    },
+    {
+      "quest_id": 3841,
+      "name": "An Orphan Looking For a Home",
+      "level": 47,
+      "required_level": 38,
+      "side": "Alliance",
+      "category_id": 357,
+      "xp": 1050,
+      "money": null
+    },
+    {
+      "quest_id": 3842,
+      "name": "A Short Incubation",
+      "level": 47,
+      "required_level": 38,
+      "side": "Alliance",
+      "category_id": 357,
+      "xp": 2100,
+      "money": null
+    },
+    {
+      "quest_id": 3843,
+      "name": "The Newest Member of the Family",
+      "level": 47,
+      "required_level": 38,
+      "side": "Alliance",
+      "category_id": 357,
+      "xp": 4200,
+      "money": null
+    },
+    {
+      "quest_id": 5881,
+      "name": "Calling in the Reserves",
+      "level": 28,
+      "required_level": 23,
+      "side": "Horde",
+      "category_id": 406,
+      "xp": 1150,
+      "money": "12s"
+    },
+    {
+      "quest_id": 8682,
+      "name": "Skyseer the Elder",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": -366,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 8724,
+      "name": "Morningdew the Elder",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": -366,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 79360,
+      "name": "Elemental Aid",
+      "level": 33,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 3300,
+      "money": "35s"
+    },
+    {
+      "quest_id": 79361,
+      "name": "Storm, Earth, and Fire",
+      "level": 43,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 3600,
+      "money": "60s"
+    },
+    {
+      "quest_id": 79364,
+      "name": "Eyes on the Sky",
+      "level": 33,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 265,
+      "money": null
+    },
+    {
+      "quest_id": 79365,
+      "name": "With Wind Beneath Your Wings",
+      "level": 40,
+      "required_level": 100,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 79366,
+      "name": "Heed My Call",
+      "level": 40,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 3150,
+      "money": "50s"
+    },
+    {
+      "quest_id": 79442,
+      "name": "The Tempest's Weapons",
+      "level": 40,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 3900,
+      "money": null
+    },
+    {
+      "quest_id": 92101,
+      "name": "Lifted by Legacy",
+      "level": 58,
+      "required_level": 54,
+      "side": "Both",
+      "category_id": 616,
+      "xp": 6200,
+      "money": "1g 70s 50c"
+    },
+    {
+      "quest_id": 92102,
+      "name": "Praise",
+      "level": 58,
+      "required_level": 54,
+      "side": "Both",
+      "category_id": 616,
+      "xp": 6200,
+      "money": null
+    },
+    {
+      "quest_id": 94218,
+      "name": "Craftsman's Writ: Elixir of Defense",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 94227,
+      "name": "Craftsman's Writ: Big Bronze Knife",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 94236,
+      "name": "Craftsman's Writ: Big Bronze Bomb",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 94245,
+      "name": "Craftsman's Writ: Barbaric Gloves",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 94254,
+      "name": "Craftsman's Writ: Greater Adept's Robe",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 96016,
+      "name": "The Tempest's Weapons",
+      "level": 40,
+      "required_level": 30,
+      "side": "Alliance",
+      "category_id": -82,
+      "xp": 3900,
+      "money": null
+    },
+    {
+      "quest_id": 96136,
+      "name": "Call of Air",
+      "level": 35,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 2750,
+      "money": "35s"
+    }
+  ],
+  "skipped": [
+    {
+      "quest_id": 4323,
+      "name": "<NYI> <TXT> Get those Hyenas!!!"
+    }
+  ]
+}
