@@ -3,12 +3,13 @@
 // Usage: npm run build   -> dist/
 // - Pages come from src/data (research JSON -> page models) and src/pages (Vue templates); see src/build/render.js.
 //   They are not committed: CI and the GitHub Pages workflow build them.
-// - Static files (site/assets: CSS, icons, maps, the pin sprite) are copied as they are.
+// - Static files (site/assets: CSS, scripts, icons, maps, the pin sprite) are copied as they are.
+// - search-index.json: every page title, for the search box (site/assets/search.js).
 // Pages are dist/w/<Page>.html, dist/index.html and dist/404.html. Netlify, Cloudflare Pages and GitHub Pages
 // serve those at the clean /w/<Page> URLs the links use, and 404.html as the not-found page.
 const fs = require('fs');
 const path = require('path');
-const { collectPages, renderPage } = require('./render');
+const { collectPages, renderPage, searchIndex } = require('./render');
 
 const ROOT = path.join(__dirname, '..', '..');
 const SITE = path.join(ROOT, 'site');
@@ -36,5 +37,7 @@ function copy(dir) {
   copy('');
   const pages = collectPages();
   for (const page of pages) fs.writeFileSync(path.join(DIST, page.file), rebase(await renderPage(page)));
+  // Page titles for site/assets/search.js; its URLs are root paths, and the script adds the base path itself
+  fs.writeFileSync(path.join(DIST, 'search-index.json'), JSON.stringify(searchIndex(pages)));
   console.log(`Built ${pages.length} pages and ${files} assets into ${path.relative(ROOT, DIST) || '.'}/ in ${((Date.now() - start) / 1000).toFixed(1)}s${BASE ? ` (base path ${BASE})` : ''}`);
 })().catch((err) => { console.error(err); process.exit(1); });

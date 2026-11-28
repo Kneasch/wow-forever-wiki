@@ -17,7 +17,7 @@ const { slug } = require('../lib/wiki');
 
 // Order matters only for dungeons, where a later file's page of the same title replaces an earlier one
 // (an item shared by the Scarlet Monastery wings has the same page from every wing).
-const SOURCES = ['home', 'zones', 'professions', 'dungeons', 'quests'];
+const SOURCES = ['home', 'zones', 'professions', 'dungeons', 'quests', 'special'];
 
 // Components every template can use without importing them
 const GLOBALS = {
@@ -57,6 +57,7 @@ function shell(page, body) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/assets/wiki.css">
 <script src="/assets/theme.js"></script>
+<script src="/assets/search.js" defer></script>
 <title>${esc(page.docTitle)}</title>
 </head>
 <body>
@@ -78,4 +79,17 @@ async function renderPage(page) {
   return shell(page, html.replace(/<!--\[-->|<!--\]-->|<!---->/g, ''));
 }
 
-module.exports = { collectPages, renderPage, SOURCES };
+// Kinds of page for search results, for pages whose props do not name a tab
+const KIND = { ZonesList: 'Zones' };
+/**
+ * The search index the browser searches (site/assets/search.js): one entry per article, as [title, url, kind, note].
+ * A page can leave the index with `search: false`, and add a note (zone and level for quests) with `searchNote`.
+ */
+function searchIndex(pages) {
+  return pages.filter((p) => p.title && p.search !== false && p.file !== '404.html').map((p) => {
+    const kind = p.props?.tab || p.props?.zone?.kindLabel || KIND[p.component?.name] || (p.url === '/' ? 'Main page' : 'Page');
+    return [p.title, p.url, kind, ...(p.searchNote ? [p.searchNote] : [])];
+  });
+}
+
+module.exports = { collectPages, renderPage, searchIndex, SOURCES };

@@ -238,6 +238,82 @@ a.external::after { content: " \2197"; font-size: 0.8em; }
 }
 .search input:focus { outline: 2px solid var(--link); outline-offset: -1px; background: var(--input-focus-bg); }
 
+/* ---------- Search (site/assets/search.js) ---------- */
+.search { position: relative; }
+.search-suggest {
+  position: absolute;
+  z-index: 20;
+  top: 100%;
+  right: 0;
+  width: max(100%, 22rem);
+  max-width: calc(100vw - 2rem);
+  margin: 2px 0 0;
+  padding: 0;
+  list-style: none;
+  background: var(--input-focus-bg);
+  border: 1px solid var(--body-border);
+  box-shadow: 0 3px 8px var(--shadow);
+  font-size: 0.8rem;
+}
+/* The box sits in the tab bar: undo the tab list's flex row and tab styling */
+.tabs .search-suggest { display: block; gap: 0; }
+.tabs .search-suggest li a {
+  display: block;
+  padding: 0.35rem 0.55rem;
+  color: var(--text);
+  background: none;
+  border: 0;
+  font-size: 0.8rem;
+}
+.tabs .search-suggest li a:hover, .tabs .search-suggest li[aria-selected] a { background: var(--body-light); text-decoration: none; }
+.search-suggest-title { display: block; }
+.search-suggest-kind { display: block; font-size: 0.7rem; color: var(--subtle); }
+.search-suggest-more { border-top: 1px solid var(--body-border); }
+.tabs .search-suggest-more a { color: var(--link); }
+.search-page-form { display: flex; gap: 0.4rem; max-width: 34rem; margin: 0.5rem 0 0.75rem; }
+.search-page-form input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  padding: 0.4rem 0.6rem;
+  background: var(--input-bg);
+  border: 1px solid var(--body-border);
+  border-radius: 2px;
+}
+.search-page-form input:focus { outline: 2px solid var(--link); outline-offset: -1px; background: var(--input-focus-bg); }
+.search-page-form button {
+  font: inherit;
+  padding: 0.4rem 0.9rem;
+  background: var(--body-mid);
+  color: var(--text);
+  border: 1px solid var(--body-border);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.search-status { color: var(--subtle); }
+.search-results { padding-left: 1.6rem; }
+.search-results li { margin: 0.3rem 0; }
+.search-result-kind { margin-left: 0.5rem; font-size: 0.8rem; color: var(--subtle); }
+.search-about { font-size: 0.8rem; color: var(--subtle); margin-top: 1.5rem; }
+
+/* ---------- Read-only notice ---------- */
+.site-notice {
+  margin: 0 0 1rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8rem;
+  background: var(--msg-bg);
+  border: 1px solid var(--msg-border);
+  color: var(--text);
+}
+.read-only-pill {
+  font-size: 0.75rem !important;
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--link-on-bg);
+  border-radius: 999px;
+}
+.read-only-pill:hover { text-decoration: none; background: var(--tab-bottom); }
+#site-panel .nav-disabled { color: var(--subtle); opacity: 0.7; cursor: not-allowed; }
+
 #content {
   background: var(--body-main);
   border: 1px solid var(--body-border);

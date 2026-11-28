@@ -1,7 +1,7 @@
 # WoW Forever Wiki
 
 A static wiki generated from JSON research data with Vue. Every page is rendered to plain HTML at build time; readers get
-no JavaScript beyond the theme toggle. The generated pages are not committed: GitHub Actions builds them.
+only two small scripts: the theme toggle and search (`site/assets/search.js`). The generated pages are not committed: GitHub Actions builds them.
 
 ```
 research/               the wiki's data: dungeon research, professions, zone maps (JSON)
@@ -39,7 +39,7 @@ npm run dev     # http://localhost:8080 (PORT=3000 to change port)
 ```
 
 The dev server renders each page when it is requested, straight from `research/` and `src/`, and restarts when either
-changes, so there is no build step while editing. It has a `routes` table for future backend endpoints like `/api/search`.
+changes, so there is no build step while editing. It has a `routes` table for backend endpoints; it serves `/search-index.json` from it, which the build writes as a file.
 
 ```bash
 npm run check   # portable file names; every page renders, every /w/ link and /assets/ file resolves
@@ -94,3 +94,17 @@ Quest pages (the Quests hub, a quest list per zone and a page per quest) are gen
 `src/data/quests.js`, laid out like the OSRS Wiki's quest pages. `scripts/fetch-quests.js` fetches a zone's quests from
 Wowhead. Zones are being done region by region, starting with Desolace. See [research/quests/README.md](research/quests/README.md)
 and [docs/quests-plan.md](docs/quests-plan.md).
+
+## Search
+
+The build writes `search-index.json`: every page's title, URL, kind (Quest, Item, Zone, ...) and, for quests, zone and
+level (`searchIndex()` in `src/build/render.js`). `site/assets/search.js` searches it in the browser, so it works on any
+static host: the search box suggests pages as you type and goes straight to an exact title on Enter, the `Search` page
+(`/w/Search?q=...`) lists every match, and `/w/Search?random` is the sidebar's Random page. Search matches titles only.
+
+## Read-only for now
+
+The wiki has no accounts, editing or discussion yet. Every page shows a read-only notice (`src/components/SiteNotice.vue`),
+the header has no Log in or Create account links, articles have no Discussion tab, and sidebar entries that need accounts
+or are not written yet are greyed out (`src/layout/SiteSidebar.vue`). The `About the wiki` page (`src/data/special.js`)
+explains it. Undo those to open the wiki for editing.

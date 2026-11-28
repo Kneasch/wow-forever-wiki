@@ -36,7 +36,11 @@ if (!STATIC_DIR) {
   const render = require('./src/build/render');
   renderPage = render.renderPage;
   const t = Date.now();
-  pages = new Map(render.collectPages().map((p) => [decodeURI(p.url), p]));
+  const all = render.collectPages();
+  pages = new Map(all.map((p) => [decodeURI(p.url), p]));
+  // The build writes this file into dist/; live, it is made from the same pages
+  const index = JSON.stringify(render.searchIndex(all));
+  routes['/search-index.json'] = async (req, res) => send(res, 200, TYPES['.json'], index);
   console.log(`Loaded ${pages.size} pages in ${Date.now() - t} ms`);
 }
 

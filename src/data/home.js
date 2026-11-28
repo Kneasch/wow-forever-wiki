@@ -91,7 +91,7 @@ function pages() {
 
   // Every article except the main page and 404 (required here, not at the top: render.js requires this file)
   const { collectPages } = require('../build/render');
-  const pageCount = collectPages({ sources: ['zones', 'professions', 'dungeons', 'quests'] }).length;
+  const pageCount = collectPages({ sources: ['zones', 'professions', 'dungeons', 'quests', 'special'] }).length;
 
   const newDungeons = dungeons.filter((d) => d.new_in_forever);
   const stats = [
