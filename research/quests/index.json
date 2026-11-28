@@ -1,0 +1,290 @@
+{
+  "note": "Quest coverage by region, in the order the zones are being done. file is the zone's research file in this folder, or null while its quests are not fetched. See docs/quests-plan.md.",
+  "regions": [
+    {
+      "region": "Kalimdor: Desolace and its neighbours",
+      "note": "Desolace first, then the zones whose quest chains run into it.",
+      "zones": [
+        {
+          "key": "desolace",
+          "name": "Desolace",
+          "area_id": 405,
+          "file": "desolace.json"
+        },
+        {
+          "key": "shendralas",
+          "name": "Shen'dralas",
+          "area_id": 16651,
+          "file": null
+        },
+        {
+          "key": "feralas",
+          "name": "Feralas",
+          "area_id": 357,
+          "file": null
+        },
+        {
+          "key": "stonetalon-mountains",
+          "name": "Stonetalon Mountains",
+          "area_id": 406,
+          "file": null
+        },
+        {
+          "key": "thousand-needles",
+          "name": "Thousand Needles",
+          "area_id": 400,
+          "file": null
+        }
+      ]
+    },
+    {
+      "region": "Kalimdor: the rest",
+      "zones": [
+        {
+          "key": "durotar",
+          "name": "Durotar",
+          "area_id": 14,
+          "file": null
+        },
+        {
+          "key": "mulgore",
+          "name": "Mulgore",
+          "area_id": 215,
+          "file": null
+        },
+        {
+          "key": "teldrassil",
+          "name": "Teldrassil",
+          "area_id": 141,
+          "file": null
+        },
+        {
+          "key": "darkshore",
+          "name": "Darkshore",
+          "area_id": 148,
+          "file": null
+        },
+        {
+          "key": "the-barrens",
+          "name": "The Barrens",
+          "area_id": 17,
+          "file": null
+        },
+        {
+          "key": "ashenvale",
+          "name": "Ashenvale",
+          "area_id": 331,
+          "file": null
+        },
+        {
+          "key": "dustwallow-marsh",
+          "name": "Dustwallow Marsh",
+          "area_id": 15,
+          "file": null
+        },
+        {
+          "key": "tanaris",
+          "name": "Tanaris",
+          "area_id": 440,
+          "file": null
+        },
+        {
+          "key": "azshara",
+          "name": "Azshara",
+          "area_id": 16,
+          "file": null
+        },
+        {
+          "key": "ungoro-crater",
+          "name": "Un'Goro Crater",
+          "area_id": 490,
+          "file": null
+        },
+        {
+          "key": "felwood",
+          "name": "Felwood",
+          "area_id": 361,
+          "file": null
+        },
+        {
+          "key": "silithus",
+          "name": "Silithus",
+          "area_id": 1377,
+          "file": null
+        },
+        {
+          "key": "moonglade",
+          "name": "Moonglade",
+          "area_id": 493,
+          "file": null
+        },
+        {
+          "key": "winterspring",
+          "name": "Winterspring",
+          "area_id": 618,
+          "file": null
+        },
+        {
+          "key": "mount-hyjal",
+          "name": "Mount Hyjal",
+          "area_id": 616,
+          "file": null
+        }
+      ]
+    },
+    {
+      "region": "Eastern Kingdoms",
+      "zones": [
+        {
+          "key": "elwynn-forest",
+          "name": "Elwynn Forest",
+          "area_id": 12,
+          "file": null
+        },
+        {
+          "key": "dun-morogh",
+          "name": "Dun Morogh",
+          "area_id": 1,
+          "file": null
+        },
+        {
+          "key": "tirisfal-glades",
+          "name": "Tirisfal Glades",
+          "area_id": 85,
+          "file": null
+        },
+        {
+          "key": "westfall",
+          "name": "Westfall",
+          "area_id": 40,
+          "file": null
+        },
+        {
+          "key": "loch-modan",
+          "name": "Loch Modan",
+          "area_id": 38,
+          "file": null
+        },
+        {
+          "key": "silverpine-forest",
+          "name": "Silverpine Forest",
+          "area_id": 130,
+          "file": null
+        },
+        {
+          "key": "redridge-mountains",
+          "name": "Redridge Mountains",
+          "area_id": 44,
+          "file": null
+        },
+        {
+          "key": "duskwood",
+          "name": "Duskwood",
+          "area_id": 10,
+          "file": null
+        },
+        {
+          "key": "wetlands",
+          "name": "Wetlands",
+          "area_id": 11,
+          "file": null
+        },
+        {
+          "key": "hillsbrad-foothills",
+          "name": "Hillsbrad Foothills",
+          "area_id": 267,
+          "file": null
+        },
+        {
+          "key": "riverglades",
+          "name": "Riverglades",
+          "area_id": 16591,
+          "file": null
+        },
+        {
+          "key": "alterac-mountains",
+          "name": "Alterac Mountains",
+          "area_id": 36,
+          "file": null
+        },
+        {
+          "key": "arathi-highlands",
+          "name": "Arathi Highlands",
+          "area_id": 45,
+          "file": null
+        },
+        {
+          "key": "stranglethorn-vale",
+          "name": "Stranglethorn Vale",
+          "area_id": 33,
+          "file": null
+        },
+        {
+          "key": "badlands",
+          "name": "Badlands",
+          "area_id": 3,
+          "file": null
+        },
+        {
+          "key": "swamp-of-sorrows",
+          "name": "Swamp of Sorrows",
+          "area_id": 8,
+          "file": null
+        },
+        {
+          "key": "the-hinterlands",
+          "name": "The Hinterlands",
+          "area_id": 47,
+          "file": null
+        },
+        {
+          "key": "searing-gorge",
+          "name": "Searing Gorge",
+          "area_id": 51,
+          "file": null
+        },
+        {
+          "key": "blasted-lands",
+          "name": "Blasted Lands",
+          "area_id": 4,
+          "file": null
+        },
+        {
+          "key": "burning-steppes",
+          "name": "Burning Steppes",
+          "area_id": 46,
+          "file": null
+        },
+        {
+          "key": "western-plaguelands",
+          "name": "Western Plaguelands",
+          "area_id": 28,
+          "file": null
+        },
+        {
+          "key": "eastern-plaguelands",
+          "name": "Eastern Plaguelands",
+          "area_id": 139,
+          "file": null
+        },
+        {
+          "key": "deadwind-pass",
+          "name": "Deadwind Pass",
+          "area_id": 41,
+          "file": null
+        }
+      ]
+    },
+    {
+      "region": "Islands",
+      "zones": [
+        {
+          "key": "zephras-isle",
+          "name": "Zephras Isle",
+          "area_id": 16593,
+          "file": null
+        }
+      ]
+    }
+  ]
+}

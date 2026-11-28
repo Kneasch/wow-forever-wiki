@@ -15,7 +15,7 @@
       <ul>
         <li><a href="#">Items</a></li>
         <li><a href="#">NPCs</a></li>
-        <li><a href="#">Quests</a></li>
+        <li><a href="/w/Quests">Quests</a></li>
         <li><a href="/w/Zones">Zones</a></li>
         <li><a href="/#Dungeons">Dungeons &amp; raids</a></li>
       </ul>
