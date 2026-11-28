@@ -118,6 +118,7 @@ function questPage(q, zone, zoneTitle) {
       { th: 'Requires level', segs: D.val(q.required_level) },
       { th: 'Side', segs: sideSegs(q) },
       ...(q.type ? [{ th: 'Type', segs: [q.type] }] : []),
+      ...(q.facts_extra?.includes('Repeatable') ? [{ th: 'Repeatable', segs: ['Yes'] }] : []),
       { th: 'Start', segs: whoSegs(q.start) },
       { th: 'End', segs: whoSegs(q.end) },
       { th: 'Sharable', segs: q.sharable == null ? [D.unknown()] : [q.sharable ? 'Yes' : 'No'] },
@@ -254,8 +255,10 @@ function zoneList({ region, zone, data }) {
       intro: [
         { p: [`Wowhead files ${plural(qs.length, 'quest')} under `, ...(zoneTitle ? [D.link(zoneTitle)] : [zone.name]),
           `, from level ${Math.min(...levels)} to ${Math.max(...levels)}. Each has its own page with its objective, rewards and place in its quest chain.`] },
-        { p: [`So far ${full.length} of them have their full Wowhead page recorded (giver, quest text, item rewards, reputation and series). `,
-          'The rest have the objective, experience and money from the tooltip data, and show "?" for the rest until their page is read.'] },
+        ...(full.length < qs.length ? [{ p: [`So far ${full.length} of them have their full Wowhead page recorded (giver, quest text, item rewards, reputation and series). `,
+          'The rest have the objective, experience and money from the tooltip data, and show "?" for the rest until their page is read.'] }] : []),
+        ...(full.length ? [{ p: [`${plural(qs.filter((q) => q.new_in_forever).length, 'quest is', 'quests are')} new in WoW Forever, and `,
+          `${plural(qs.filter((q) => seriesOf(q)).length, 'quest is', 'quests are')} part of a chain.`] }] : []),
       ],
       toc: true,
       sections: [

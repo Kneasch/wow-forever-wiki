@@ -127,7 +127,8 @@ function quickFacts(html) {
 }
 
 // Rows of an icon-list table: { text, quantity, link }
-const iconList = (html) => [...html.matchAll(/<tr[^>]*?(?:data-icon-list-quantity="([^"]*)")?[^>]*>\s*<th>[\s\S]*?<\/th>\s*<td>([\s\S]*?)<\/td>\s*<\/tr>/g)].map(([, qty, td]) => {
+const iconList = (html) => [...html.matchAll(/<tr([^>]*)>\s*<th[^>]*>[\s\S]*?<\/th>\s*<td>([\s\S]*?)<\/td>\s*<\/tr>/g)].map(([, attrs, td]) => {
+  const qty = (attrs.match(/data-icon-list-quantity="([^"]*)"/) || [])[1];
   const link = linkIn(td);
   return {
     text: text(td.replace(/<span class="icon-list-quantity-wrapper"[\s\S]*?<\/span>\)?<\/span>/, '')).replace(/\s*\(\d+\)$/, ''),
@@ -216,9 +217,17 @@ function questPage(html) {
       }));
   }
 
+  // Repeatable turn-ins have no objective or description: their text is a plain "Progress" section, with the
+  // items to hand in as an icon list inside it
+  const progressSection = section('Progress');
+  if (!objectives.length && progressSection) {
+    for (const [, table] of progressSection.matchAll(/<table class="icon-list">([\s\S]*?)<\/table>/g)) objectives.push(...iconList(table));
+  }
+  const progress = disclosed('progress') ?? (progressSection ? text(progressSection.replace(/<table[\s\S]*?<\/table>/g, '')) || null : null);
+
   return {
     facts, objective, objectives, provided, description: description ? text(description) : null,
-    progress: disclosed('progress'), completion: disclosed('completion'), rewards, gains, series,
+    progress, completion: disclosed('completion'), rewards, gains, series,
   };
 }
 

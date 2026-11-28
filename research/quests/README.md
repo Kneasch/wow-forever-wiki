@@ -6,7 +6,7 @@ being done in are in [docs/quests-plan.md](../../docs/quests-plan.md).
 | File | What it holds |
 |---|---|
 | `index.json` | Regions in the order they are being done, each with its zones: `key`, `name`, `area_id`, and `file` (the zone's research file, or `null` while not fetched). |
-| `desolace.json` | Desolace: 88 quests, 30 related quests, 5 placeholders. |
+| `desolace.json` | Desolace: 88 quests (all with full page data), 30 related quests, 5 placeholders. |
 
 ## Commands
 

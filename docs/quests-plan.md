@@ -32,16 +32,15 @@ every region and zone with progress, and the zone page links to its quest list.
 | Tooltip API, `nether.wowhead.com/forever/tooltip/quest/<id>` | Name, objective sentence, requirement list with counts | No giver, rewards, text or chain |
 
 `www.wowhead.com` refuses plain HTTP clients. The tooltip API is the endpoint the rest of the wiki already uses and can be
-read freely. **Decision needed:** loading every quest page through a headless browser (`--pages` in the fetch script) works,
-but it goes around Wowhead's bot protection, so it is not run without the owner's go-ahead. The options:
+read freely. **Decided (November 2026):** the owner approved loading quest pages through a headless browser
+(`--pages` in the fetch script), slowly: 3 pages at a time, each page cached in `.cache/quests/` so it is loaded once.
+Desolace was about 90 pages. Pages saved by hand from a normal browser into `.cache/quests/` work too.
 
-1. Allow `--pages` runs, slowly (3 pages at a time, cached so each page is loaded once). About 90 pages for Desolace.
-2. Save pages by hand from a normal browser into `.cache/quests/` (`quest-<id>.html`); the script reads them.
-3. Use an open Classic quest database (e.g. the cMaNGOS or VMaNGOS `quest_template` tables) for the Classic quests' givers,
-   rewards and chains, marked with `basis: "classic"` the way profession skill levels are, and Wowhead only for Forever's new
-   quests. Forever has changed and added chains (Desolace's centaur chain gained 92xxx quests), so Classic data needs checking.
+The alternatives considered were tooltip data only, and an open Classic quest database (cMaNGOS or VMaNGOS
+`quest_template`) for the Classic quests. The second was dropped because Forever has changed and added chains
+(Desolace's centaur chain gained 92xxx quests).
 
-Until then a quest with no page has `basis: "tooltip"`: its objective, requirements, XP and money are filled in, and the page
+A quest whose page has not been read has `basis: "tooltip"`: its objective, requirements, XP and money are filled in, and the page
 shows "?" for the giver, quest text, item rewards, reputation and series. A tooltip-only quest still gets its series when
 another quest's recorded series names it.
 
@@ -94,6 +93,9 @@ pages with `npm run dev` and `npm run check`.
 ## 6. Desolace, as built
 
 - 123 quests on Wowhead's Desolace list: 88 filed under Desolace, 30 related, 5 placeholders.
-- Full page data for 3 quests (Bone Collector, A Conqueror's Crown, Khan Jehn); tooltip data for the other 85.
+- Full page data for all 88: 29 are new in Forever (patch 1.60.1), 47 are part of a series, 32 give items (27 with a
+  choice of rewards).
 - Pages: Quests, Desolace quests and 88 quest pages; the Desolace zone page links its quest list.
-- Open: the giver, text, rewards and chain of 85 quests, waiting on the source decision in §2.
+- Open: The Corrupter (1) starts from an item (Flayed Demon Skin), which Wowhead's Quick Facts do not name, so its start
+  shows "?". Fourteen talk-to and escort quests have no objective list, as on Wowhead. The centaur chain's Horde steps
+  are in Shen'dralas, so they link to Wowhead until that zone is done.
