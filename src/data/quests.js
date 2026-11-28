@@ -14,7 +14,14 @@ const D = require('../lib/doc');
 const Doc = () => require('../pages/Doc.vue');
 const SIDES = ['Alliance', 'Horde'];
 // Wowhead files some quests under places that are not maps: dungeons, classes, crafting orders
-const CATEGORY_NAMES = { 2100: 'Maraudon', 1583: 'Blackrock Spire', 16941: 'Crafting orders', '-141': 'Paladin' };
+const CATEGORY_NAMES = {
+  2100: 'Maraudon', 1583: 'Blackrock Spire', 1176: "Zul'Farrak", 719: 'Blackfathom Deeps', 721: 'Gnomeregan',
+  722: 'Razorfen Downs', 16941: 'Crafting orders',
+  // Wowhead's negative categories: class quests, seasonal events and Forever's camping quests
+  '-61': 'Warlock', '-81': 'Warrior', '-82': 'Shaman', '-141': 'Paladin', '-161': 'Mage', '-162': 'Rogue',
+  '-261': 'Hunter', '-262': 'Priest', '-263': 'Druid', '-666': 'Camping', '-366': 'Lunar Festival', '-1001': 'Winter Veil',
+  '-1003': "Hallow's End", '-1005': 'Midsummer Fire Festival', '-1006': 'Seasonal',
+};
 const categoryName = (id) => CATEGORY_NAMES[id] || MAPS.zones.find((z) => z.area_id === id)?.name || `category ${id}`;
 const listTitle = (zone) => `${zone} quests`;
 const num = (n) => Number(n).toLocaleString('en-GB');
@@ -120,7 +127,10 @@ function questPage(q, zone, zoneTitle) {
       { th: 'Requires level', segs: D.val(q.required_level) },
       { th: 'Side', segs: sideSegs(q) },
       ...(q.type ? [{ th: 'Type', segs: [q.type] }] : []),
-      ...(q.facts_extra?.includes('Repeatable') ? [{ th: 'Repeatable', segs: ['Yes'] }] : []),
+      ...(q.races ? [{ th: q.races.length > 1 ? 'Races' : 'Race', segs: [q.races.join(', ')] }] : []),
+      ...(q.classes ? [{ th: q.classes.length > 1 ? 'Classes' : 'Class', segs: [q.classes.join(', ')] }] : []),
+      ...(q.timer ? [{ th: 'Timer', segs: [q.timer] }] : []),
+      ...(q.repeatable ? [{ th: 'Repeatable', segs: ['Yes'] }] : []),
       { th: 'Start', segs: whoSegs(q.start, full) },
       { th: 'End', segs: whoSegs(q.end) },
       { th: 'Sharable', segs: q.sharable == null ? [D.unknown()] : [q.sharable ? 'Yes' : 'No'] },

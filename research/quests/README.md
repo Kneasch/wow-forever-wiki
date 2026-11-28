@@ -32,7 +32,7 @@ Top level: `zone, area_id, source, fetched, quests[], related[], skipped[]`.
     `sharable`, `difficulty` (`{ red, orange, yellow, green, grey }` levels), `patch`, `patch_label`, `new_in_forever`
     (patch 1.60 or later), `provided[]`, `description`, `progress`, `completion`, `rewards.choice[]`, `rewards.items[]`,
     `rewards.spells[]` (`{ type, id, name, icon, quality, count }`), `reputation[]` (`{ faction_id, faction, amount }`),
-    `other_gains[]`, `series` (steps in order, each a list of `{ quest_id, name, side, current? }`).
+    `other_gains[]`, `races[]` and `classes[]` (only when restricted), `timer`, `repeatable`, `series` (steps in order, each a list of `{ quest_id, name, side, current? }`).
   - Hand-written, kept by the script: `notes`, `walkthrough`.
 - `related[]`: quests on the zone's Wowhead list that are filed elsewhere (`category_id`), with the zone list fields only.
 - `skipped[]`: placeholder quests (`<UNUSED>`, `<nyi>`).

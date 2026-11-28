@@ -4257,8 +4257,8 @@
       ],
       "other_gains": [],
       "series": null,
-      "facts_extra": [
-        "Race:"
+      "races": [
+        "Tauren"
       ]
     }
   ],

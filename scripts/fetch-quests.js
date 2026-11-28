@@ -30,6 +30,8 @@ const SITE = 'https://www.wowhead.com/forever';
 const IMAGE = (icon) => `https://wow.zamimg.com/images/wow/icons/large/${icon}.jpg`;
 const SIDE = { 1: 'Alliance', 2: 'Horde', 3: 'Both' };
 const QUALITY = ['poor', 'common', 'uncommon', 'rare', 'epic', 'legendary', 'artifact'];
+const RACES = { 1: 'Human', 2: 'Orc', 3: 'Dwarf', 4: 'Night Elf', 5: 'Undead', 6: 'Tauren', 7: 'Gnome', 8: 'Troll' };
+const CLASSES = { 1: 'Warrior', 2: 'Paladin', 3: 'Hunter', 4: 'Rogue', 5: 'Priest', 7: 'Shaman', 8: 'Mage', 9: 'Warlock', 11: 'Druid' };
 const KEEP = ['notes', 'walkthrough']; // hand-written fields, never overwritten
 const JUNK = /<\s*(unused|nyi|txt)\s*>|^\[?unused\]?/i; // placeholder quests that were never in the game
 // Pages loaded at once; --parallel=N to change (keep the total across runs at about 6)
@@ -121,6 +123,10 @@ function quickFacts(html) {
       out.patch = (li.match(/\[acronym="([^"]+)"\]/) || [])[1] || null;
       out.patch_label = plain.replace(/^Added in patch\s*/, '');
     } else if (/^Type:/.test(plain)) out.type = plain.replace(/^Type:\s*/, '');
+    else if (/^Races?:/.test(plain)) out.races = [...li.matchAll(/\[race=(\d+)\]/g)].map(([, id]) => RACES[id] || `race ${id}`);
+    else if (/^Class(es)?:/.test(plain)) out.classes = [...li.matchAll(/\[class=(\d+)\]/g)].map(([, id]) => CLASSES[id] || `class ${id}`);
+    else if (/^Timer:/.test(plain)) out.timer = plain.replace(/^Timer:\s*/, '');
+    else if (/^Repeatable/.test(plain)) out.repeatable = true;
     else out.extra.push(plain);
   }
   if (!out.extra.length) delete out.extra;
@@ -320,6 +326,8 @@ async function tooltip(id) {
             rewards: { ...p.rewards, money: p.rewards.money || q.money }, xp: p.gains.xp ?? q.xp,
             reputation: p.gains.reputation, other_gains: p.gains.other,
             series: p.series?.map((step) => step.map((e) => (e.current ? { ...e, quest_id: q.quest_id } : e))) ?? null,
+            ...(f.races?.length ? { races: f.races } : {}), ...(f.classes?.length ? { classes: f.classes } : {}),
+            ...(f.timer ? { timer: f.timer } : {}), ...(f.repeatable ? { repeatable: true } : {}),
             ...(f.extra ? { facts_extra: f.extra } : {}),
             ...keep.get(q.quest_id),
           });
