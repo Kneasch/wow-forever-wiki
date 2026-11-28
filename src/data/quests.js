@@ -67,7 +67,9 @@ const questLink = (id, name, asTitle = false) => {
   return t ? [D.link(t, null, t === name || asTitle ? undefined : name)] : id != null ? [D.ext(wowhead('quest', id), name)] : [name];
 };
 // An NPC, object or item that starts or ends a quest. There are no NPC pages yet, so these go to Wowhead.
-const whoSegs = (w) => (!w ? [D.unknown()] : w.id ? [D.ext(wowhead(w.type, w.id), w.name), ...(w.type !== 'npc' ? [` (${w.type})`] : [])] : [w.name]);
+// A quest page with no Start line: Wowhead names no giver, which is how quests started by an item show
+const NO_GIVER = 'Not listed (usually an item that starts the quest)';
+const whoSegs = (w, page = false) => (!w ? [D.unknown(page ? NO_GIVER : true)] : w.id ? [D.ext(wowhead(w.type, w.id), w.name), ...(w.type !== 'npc' ? [` (${w.type})`] : [])] : [w.name]);
 const sideSegs = (q) => [q.side === 'Both' || (!q.side && q.side_label === 'Both') ? 'Both' : q.side || (q.side_label ? `${q.side_label} (as Wowhead lists it)` : 'Not listed')];
 // A reward item: icon and quality colour; a wiki link when the item already has a page (dungeon loot)
 const itemSegs = (it) => {
@@ -119,7 +121,7 @@ function questPage(q, zone, zoneTitle) {
       { th: 'Side', segs: sideSegs(q) },
       ...(q.type ? [{ th: 'Type', segs: [q.type] }] : []),
       ...(q.facts_extra?.includes('Repeatable') ? [{ th: 'Repeatable', segs: ['Yes'] }] : []),
-      { th: 'Start', segs: whoSegs(q.start) },
+      { th: 'Start', segs: whoSegs(q.start, full) },
       { th: 'End', segs: whoSegs(q.end) },
       { th: 'Sharable', segs: q.sharable == null ? [D.unknown()] : [q.sharable ? 'Yes' : 'No'] },
       { th: 'Series', segs: chain ? [`Part ${chain.at + 1} of ${chain.steps.length}`] : full ? ['None'] : [D.unknown()] },
@@ -148,10 +150,11 @@ function questPage(q, zone, zoneTitle) {
   const objectives = (q.objectives || []).map((o) => [
     o.type === 'npc' || o.type === 'item' || o.type === 'object' ? D.ext(wowhead(o.type, o.id), o.text) : o.text,
     ...(typeof o.quantity === 'number' ? [` ×${o.quantity}`] : typeof o.quantity === 'string' ? [` (${o.quantity})`] : []),
+    ...(o.counts_from?.length ? [': any of ', ...D.join(o.counts_from.map((m) => [m.id ? D.ext(wowhead(m.type, m.id), m.text) : m.text]))] : []),
   ]);
   const detailRow = (label, segs) => [D.cell([D.b(label)]), D.cell(segs)];
   const details = D.table(['', ''], [
-    detailRow('Start point', q.start ? [...whoSegs(q.start), ' in ', ...zoneSeg] : [D.unknown()]),
+    detailRow('Start point', q.start ? [...whoSegs(q.start), ' in ', ...zoneSeg] : whoSegs(null, full)),
     detailRow('Objective', q.objective ? [q.objective] : [D.unknown()]),
     detailRow('Requirements', D.join(reqs, '; ')),
     detailRow('Ends at', whoSegs(q.end)),

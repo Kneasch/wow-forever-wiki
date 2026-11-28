@@ -157,12 +157,23 @@ function questPage(html) {
 
   // Objectives: icon-list tables before the first section heading
   const firstH2 = after.search(/<h2 class="heading-size-3"/);
-  const head = after.slice(0, firstH2 === -1 ? after.length : firstH2);
+  // Grouped objectives ("Shen'dralas wildlife slain with the blade (8)") hide the creatures that count in a nested
+  // icon list. Replace each group with a GROUP<n> marker before reading the tables, and keep the group's creatures
+  // (minus "[DNT]" kill-credit placeholders) as `counts_from`.
+  const groups = [];
+  const head = after.slice(0, firstH2 === -1 ? after.length : firstH2).replace(
+    /<a href="javascript:"[^>]*npcgroup-\d+[^>]*><span>([\s\S]*?)<\/span><\/a>\s*(?:&nbsp;)?\s*\((\d+)\)<div id="npcgroup-\d+"[^>]*>([\s\S]*?<\/table>)\s*<\/div>\s*<\/div>/g,
+    (_, label, n, inner) => {
+      const members = iconList(inner).filter((m) => !/^\[DNT\]/i.test(m.text)).map((m) => ({ text: m.text, type: m.type, id: m.id }));
+      groups.push({ text: text(label), quantity: Number(n), counts_from: members });
+      return `GROUP${groups.length - 1}`;
+    });
   const objectives = [];
   const provided = [];
   for (const [whole, table] of head.matchAll(/<table class="icon-list">([\s\S]*?)<\/table>/g)) {
     const before = head.slice(Math.max(0, head.indexOf(whole) - 200), head.indexOf(whole));
-    (/Provided item/i.test(before) ? provided : objectives).push(...iconList(table));
+    const rows = iconList(table).map((r) => { const g = r.text.match(/^GROUP(\d+)/); return g ? groups[Number(g[1])] : r; });
+    (/Provided item/i.test(before) ? provided : objectives).push(...rows.filter((r) => !/^\[DNT\]/i.test(r.text)));
   }
 
   const section = (name) => {
