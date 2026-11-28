@@ -39,6 +39,7 @@
         </div>
         <ZoneMap :map="s.map" />
       </template>
+      <p v-else-if="s.quests">Wowhead files {{ plural(s.quests.count, 'quest') }} under {{ zone.name }}. See <WikiLink :to="s.quests.title" /> for the list, the quest chains and a page for each quest.</p>
       <MapSource v-else-if="s.source" :source="source" />
     </template>
   </Article>

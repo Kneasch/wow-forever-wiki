@@ -70,6 +70,8 @@ function pages() {
         map: zoneMap({ zone: z, pins, caption: `${plural(pins.length, 'spawn point')} of ${plural(nodes.length, 'node')}.` }),
       });
     }
+    const quests = z.area_id != null ? require('./quests').questListFor(z.area_id) : null;
+    if (quests) sections.push({ id: 'Quests', label: 'Quests', quests });
     sections.push({ id: 'Sources', label: 'Sources', source: true });
     return {
       title: zonePageTitle(z),

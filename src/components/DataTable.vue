@@ -1,8 +1,8 @@
-<!-- A wiki table: { head: [text], rows: [[{ segs, cls?, title? }]], cls } -->
+<!-- A wiki table: { head: [text], rows: [[{ segs, cls?, title? }]], cls }. All-empty head: no header row. -->
 <template>
     <div class="table-scroll">
       <table :class="t.cls">
-        <thead><tr><th v-for="h in t.head">{{ h }}</th></tr></thead>
+        <thead v-if="t.head.some((h) => h)"><tr><th v-for="h in t.head">{{ h }}</th></tr></thead>
         <tbody>
           <tr v-for="row in t.rows"><td v-for="c in row" v-bind="attrs(c)"><Rich :segs="c.segs" /></td></tr>
         </tbody>

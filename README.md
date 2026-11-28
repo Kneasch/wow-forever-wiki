@@ -87,3 +87,10 @@ Node pages show spawn points as pins on the zone's map. The maps are the WoW For
 treasure). The Zones page lists every map, and each map has its own page (dungeons and gathering nodes in the zone), from
 `src/data/zones.js`.
 See [research/maps/README.md](research/maps/README.md).
+
+## Quests
+
+Quest pages (the Quests hub, a quest list per zone and a page per quest) are generated from `research/quests/` by
+`src/data/quests.js`, laid out like the OSRS Wiki's quest pages. `scripts/fetch-quests.js` fetches a zone's quests from
+Wowhead. Zones are being done region by region, starting with Desolace. See [research/quests/README.md](research/quests/README.md)
+and [docs/quests-plan.md](docs/quests-plan.md).

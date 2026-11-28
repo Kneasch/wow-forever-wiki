@@ -1,0 +1,3914 @@
+{
+  "zone": "Desolace",
+  "area_id": 405,
+  "source": "https://www.wowhead.com/forever/zone=405#quests",
+  "fetched": "2026-11-28",
+  "quests": [
+    {
+      "quest_id": 5421,
+      "name": "Fish in a Bucket",
+      "basis": "tooltip",
+      "level": 25,
+      "required_level": 25,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "I'll reward anyone who makes my life a bit easier... I enjoy doing as little as possible, mon!\n\nBelow the docks here in Shadowprey Village, I've many shellfish traps. If you're kind enough to do my work and collect me my shellfish, then I'll reward you with something you want... get my drift mon? For every five shellfish you bring me I will give you a fine Bloodbelly fish!",
+      "objectives": [
+        {
+          "text": "Shellfish",
+          "quantity": 5
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": null,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1366,
+      "name": "Centaur Bounty",
+      "basis": "tooltip",
+      "level": 31,
+      "required_level": 30,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring 15 Centaur Ears to Felgur Twocuts in Desolace.",
+      "objectives": [
+        {
+          "text": "Centaur Ear",
+          "quantity": 15
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 3750,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1387,
+      "name": "Centaur Bounty",
+      "basis": "tooltip",
+      "level": 31,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring 15 Centaur Ears to Corporal Melkins at Nijel's Point in Desolace.",
+      "objectives": [
+        {
+          "text": "Centaur Ear",
+          "quantity": 15
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 3750,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 5763,
+      "name": "Hunting in Stranglethorn",
+      "basis": "tooltip",
+      "level": 31,
+      "required_level": 28,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring Roon's Kodo Horn to Hemet Nesingwary in Stranglethorn.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 1250,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1361,
+      "name": "Regthar Deathgate",
+      "basis": "tooltip",
+      "level": 32,
+      "required_level": 30,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Speak with Regthar Deathgate.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 640,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1362,
+      "name": "The Kolkar of Desolace",
+      "basis": "tooltip",
+      "level": 32,
+      "required_level": 30,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Speak with Felgur Twocuts at Ghost Walker Post in Desolace.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 640,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1384,
+      "name": "Raid on the Kolkar",
+      "basis": "tooltip",
+      "level": 32,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Gelkis, and bring 10 Crude Charms to Uthek the Wise in the Gelkis Village in Desolace.",
+      "objectives": [
+        {
+          "text": "Crude Charm",
+          "quantity": 10
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2550,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1386,
+      "name": "Assault on the Kolkar",
+      "basis": "tooltip",
+      "level": 32,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Magram. Kill 12 Kolkar Centaurs, 12 Kolkar Scouts and 6 Kolkar Maulers, then return to Warug in the Magram Village in Desolace.",
+      "objectives": [
+        {
+          "text": "Kolkar Centaur",
+          "quantity": 12
+        },
+        {
+          "text": "Kolkar Scout",
+          "quantity": 12
+        },
+        {
+          "text": "Kolkar Mauler",
+          "quantity": 6
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2550,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1367,
+      "name": "Magram Alliance",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 30,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Gain a Friendly reputation with the Magram, then speak with Warug.",
+      "objectives": [
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 660,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1368,
+      "name": "Gelkis Alliance",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 30,
+      "side": null,
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Gain a Friendly reputation with the Gelkis, then speak with Uthek the Wise.",
+      "objectives": [
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 660,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1369,
+      "name": "Broken Tears",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Magram, and bring 3 Broken Tears to Warug in the Magram Village.",
+      "objectives": [
+        {
+          "text": "Broken Tears",
+          "quantity": 3
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2650,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1433,
+      "name": "Alliance Relations",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 30,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Speak to Maurin Bonesplitter in Desolace.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 265,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1434,
+      "name": "Befouled by Satyr",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 25,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Slay 7 Hatefury Rogues, 7 Hatefury Felsworn, 7 Hatefury Betrayers, and 7 Hatefury Hellcallers, and return to Takata Steelblade in Desolace.",
+      "objectives": [
+        {
+          "text": "Hatefury Rogue",
+          "quantity": 7
+        },
+        {
+          "text": "Hatefury Felsworn",
+          "quantity": 7
+        },
+        {
+          "text": "Hatefury Betrayer",
+          "quantity": 7
+        },
+        {
+          "text": "Hatefury Hellcaller",
+          "quantity": 7
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2650,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1435,
+      "name": "The Burning of Spirits",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 25,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Return the Burning Gem and 15 Infused Burning Gems to Maurin Bonesplitter in Desolace.",
+      "objectives": [
+        {
+          "text": "Infused Burning Gem",
+          "quantity": 15
+        },
+        {
+          "text": "Flayed Demon Skin (old2)",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2650,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1437,
+      "name": "Vahlarriel's Search",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Find and search Tyranis and Dalinda Malem's wagon in Desolace.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 1950,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1438,
+      "name": "Vahlarriel's Search",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Find Dalinda Malem in Desolace.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2650,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1439,
+      "name": "Search for Tyranis",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Find Tyranis Malem in Desolace.",
+      "objectives": [
+        {
+          "text": "Tyranis' Pendant",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2650,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1440,
+      "name": "Return to Vahlarriel",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Escort Dalinda Malem from Thunder Axe Fortress and then return to Vahlarriel Demonslayer in Desolace.",
+      "objectives": [
+        {
+          "text": "Rescue Dalinda Malem",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 3300,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1458,
+      "name": "Reagents for Reclaimers Inc.",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring 10 Hatefury Claws, and 10 Hatefury Horns to Kreldig Ungor in Desolace.",
+      "objectives": [
+        {
+          "text": "Hatefury Claw",
+          "quantity": 10
+        },
+        {
+          "text": "Hatefury Horn",
+          "quantity": 10
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "35s"
+      },
+      "xp": 2650,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1465,
+      "name": "Vahlarriel's Search",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Return the Malem Pendant to Vahlarriel Demonslayer in Desolace.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 1950,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1480,
+      "name": "The Corrupter",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 25,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring the Flayed Demon Skin to Maurin Bonesplitter in Desolace.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 1300,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1481,
+      "name": "The Corrupter",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 25,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring a Shadowstalker Scalp to Maurin Bonesplitter in Desolace.",
+      "objectives": [
+        {
+          "text": "Shadowstalker Scalp",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2650,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1484,
+      "name": "The Corrupter",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 25,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Speak to Takata Steelblade in Desolace.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 265,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 5741,
+      "name": "Sceptre of Light",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Get the Sceptre of Light and then return it to Azore Aldamort at the tower in Ethel Rethor.",
+      "objectives": [
+        {
+          "text": "Sceptre of Light",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "35s"
+      },
+      "xp": 2650,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 97265,
+      "name": "Hate the Hatefury",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 28,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Defeat a variety of Hatefury satyr at Sargeron in Desolace and then return to Aka'rai in Shadowprey Village.",
+      "objectives": [
+        {
+          "text": "Hatefury Trickster",
+          "quantity": 2
+        },
+        {
+          "text": "Hatefury Hellcaller",
+          "quantity": 2
+        },
+        {
+          "text": "Hatefury Shadowstalker",
+          "quantity": 2
+        },
+        {
+          "text": "Hatefury Felsworn",
+          "quantity": 2
+        },
+        {
+          "text": "Hatefury Rogue",
+          "quantity": 2
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "35s"
+      },
+      "xp": 2650,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 97284,
+      "name": "Vahlarriel's Vengeance",
+      "basis": "tooltip",
+      "level": 33,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Slay Burning Blade orcs at Thunder Axe Fortress in the Desolace, then return to Vahlarriel Demonslayer at Nijel's Point.",
+      "objectives": [
+        {
+          "text": "Burning Blade Augur",
+          "quantity": 4
+        },
+        {
+          "text": "Burning Blade Reaver",
+          "quantity": 4
+        },
+        {
+          "text": "Burning Blade Adept",
+          "quantity": 4
+        },
+        {
+          "text": "Burning Blade Felsworn",
+          "quantity": 4
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "65s"
+      },
+      "xp": 2650,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 5561,
+      "name": "Kodo Roundup",
+      "basis": "tooltip",
+      "level": 34,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring five Tamed Kodos and the Kodo Kombobulator back to Smeed Scrabblescrew at Scrabblescrew's Camp.",
+      "objectives": [
+        {
+          "text": "Kodos Tamed",
+          "quantity": 5
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2000,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1365,
+      "name": "Khan Dez'hepah",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 30,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring Khan Dez'hepah's Head to Felgur Twocuts in Desolace.",
+      "objectives": [
+        {
+          "text": "Khan Dez'hepah's Head",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 3450,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1370,
+      "name": "Stealing Supplies",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring 6 bags of Crudely Dried Meat to Uthek the Wise in the Gelkis Village.",
+      "objectives": [
+        {
+          "text": "Crudely Dried Meat",
+          "quantity": 6
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 1350,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1371,
+      "name": "Gizmo for Warug",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Magram, and bring an Advanced Target Dummy to Warug in the Magram Village in Desolace.",
+      "objectives": [
+        {
+          "text": "Advanced Target Dummy",
+          "quantity": null
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2050,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1382,
+      "name": "Strange Alliance",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Gain a Friendly reputation with the Gelkis, then speak with Uthek the Wise.",
+      "objectives": [
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2050,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1385,
+      "name": "Brutal Politics",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Gain a Friendly reputation with the Magram, then speak with Warug.",
+      "objectives": [
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2050,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1459,
+      "name": "Reagents for Reclaimers Inc.",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring 7 vials of Scorpashi Venom and 3 Aged Kodo Hides to Kreldig Ungor in Desolace.",
+      "objectives": [
+        {
+          "text": "Scorpashi Venom",
+          "quantity": 7
+        },
+        {
+          "text": "Aged Kodo Hide",
+          "quantity": 3
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "25s"
+      },
+      "xp": 2750,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1482,
+      "name": "The Corrupter",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 25,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring an Oracle Crystal to Maurin Bonesplitter in Desolace.",
+      "objectives": [
+        {
+          "text": "Oracle Crystal",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2750,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 5821,
+      "name": "Bodyguard for Hire",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Escort the Gizelton Caravan past the Kolkar Centaur village. Talk with Smeed at Scrabblescrew's Camp for your reward.",
+      "objectives": [
+        {
+          "text": "Escort Gizelton Caravan past Kolkar Centaur Village",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2750,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 6142,
+      "name": "Clam Bait",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 31,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Find 10 pieces of Soft-shelled Clam Meat and bring it back to Mai'Lahii at Shadowprey Village.",
+      "objectives": [
+        {
+          "text": "Soft-shelled Clam Meat",
+          "quantity": 10
+        },
+        {
+          "text": "Soft-shelled Clam",
+          "quantity": 10
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2750,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 92754,
+      "name": "A New Need for Shadow Protection",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 30,
+      "side": null,
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Magram, and bring 3 Greater Shadow Protection Potions to Mirda in the Magram Village in Desolace.",
+      "objectives": [
+        {
+          "text": "Greater Shadow Protection Potion",
+          "quantity": 3
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "18s"
+      },
+      "xp": 2050,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 92755,
+      "name": "Mysterious Mysticism",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Gelkis, and bring 3 Greater Mystic Essences to Halea in the Gelkis Village in Desolace.",
+      "objectives": [
+        {
+          "text": "Greater Mystic Essence",
+          "quantity": 3
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "18s"
+      },
+      "xp": 2050,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 92814,
+      "name": "I Need a Tailor",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Gelkis, and bring a White Bandit Mask to Molkar in the Gelkis Village in Desolace.",
+      "objectives": [
+        {
+          "text": "White Bandit Mask",
+          "quantity": null
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "18s"
+      },
+      "xp": 2050,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 92817,
+      "name": "Leather Technique",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Gelkis, and bring a Barbaric Harness to Talra in the Gelkis Village in Desolace.",
+      "objectives": [
+        {
+          "text": "Barbaric Harness",
+          "quantity": null
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "18s"
+      },
+      "xp": 2050,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 92818,
+      "name": "Big, No, MASSIVE Iron Axes",
+      "basis": "tooltip",
+      "level": 35,
+      "required_level": 30,
+      "side": null,
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Magram, and bring 2 Massive Iron Axes to Grolkar in the Magram Village in Desolace.",
+      "objectives": [
+        {
+          "text": "Massive Iron Axe",
+          "quantity": 2
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "18s"
+      },
+      "xp": 2050,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 6143,
+      "name": "Other Fish to Fry",
+      "basis": "tooltip",
+      "level": 36,
+      "required_level": 32,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Slay 7 Slitherblade Myrmidon, 7 Slitherblade Naga, and 5 Slitherblade Sorceresses, and then talk to Drulzegar at Shadowprey in Desolace.",
+      "objectives": [
+        {
+          "text": "Slitherblade Myrmidon",
+          "quantity": 7
+        },
+        {
+          "text": "Slitherblade Naga",
+          "quantity": 7
+        },
+        {
+          "text": "Slitherblade Sorceress",
+          "quantity": 5
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "40s"
+      },
+      "xp": 2800,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 6161,
+      "name": "Claim Rackmore's Treasure!",
+      "basis": "tooltip",
+      "level": 36,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Find Rackmore's Silver Key. Find Rackmore's Golden Key. Find and open Rackmore's Chest.",
+      "objectives": [
+        {
+          "text": "Rackmore's Silver Key",
+          "quantity": null
+        },
+        {
+          "text": "Rackmore's Golden Key",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "1g 15s"
+      },
+      "xp": 2800,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1373,
+      "name": "Ongeku",
+      "basis": "tooltip",
+      "level": 37,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Gelkis, and bring a Draenethyst Shard to Uthek the Wise in the Gelkis Village in Desolace.",
+      "objectives": [
+        {
+          "text": "Draenethyst Shard",
+          "quantity": null
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2850,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1375,
+      "name": "Khan Shaka",
+      "basis": "tooltip",
+      "level": 37,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Magram, and bring the Head of Khan Shaka to Warug in the Magram Village in Desolace.",
+      "objectives": [
+        {
+          "text": "Khan Shaka's Head",
+          "quantity": null
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2850,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 5386,
+      "name": "Catch of the Day",
+      "basis": "tooltip",
+      "level": 37,
+      "required_level": 32,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Talk to Jinar'Zillen at Shadowprey Village, and then bring Nataka Longhorn 2 Bloodbelly fish.",
+      "objectives": [
+        {
+          "text": "Bloodbelly Fish",
+          "quantity": 2
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2100,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 5381,
+      "name": "Hand of Iruxos",
+      "basis": "tooltip",
+      "level": 38,
+      "required_level": 32,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Retrieve the Demon Box from Thunder Axe Fortress, and return it, along with the Demon Pick to Taiga Wisemane in Shadowprey Village.",
+      "objectives": [
+        {
+          "text": "Demon Box",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "45s"
+      },
+      "xp": 2850,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 5581,
+      "name": "Portals of the Legion",
+      "basis": "tooltip",
+      "level": 38,
+      "required_level": 32,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Banish 6 Portals at Mannoroc Coven and return to Taiga Wisemane at Shadowprey Village.",
+      "objectives": [
+        {
+          "text": "Portals Banished",
+          "quantity": 6
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "45s"
+      },
+      "xp": 3550,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 5943,
+      "name": "Gizelton Caravan",
+      "basis": "tooltip",
+      "level": 38,
+      "required_level": 32,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Escort the Gizelton Caravan through Mannoroc Coven. Talk with Smeed at Scrabblescrew's Camp for your reward.",
+      "objectives": [
+        {
+          "text": "Escort Gizelton Caravan past Mannoroc Coven",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2850,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 6027,
+      "name": "Book of the Ancients",
+      "basis": "tooltip",
+      "level": 38,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Get the Book of the Ancients and return it to Azore Aldamort at the tower in Ethel Rethor.",
+      "objectives": [
+        {
+          "text": "Book of the Ancients",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "45s"
+      },
+      "xp": 3550,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 93044,
+      "name": "A Cleansing Cry",
+      "basis": "tooltip",
+      "level": 38,
+      "required_level": 35,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Gelkis, and bring Tears of Theradras back to Uthek the Wise in Gelkis Village.",
+      "objectives": [
+        {
+          "text": "Speak with Mulara",
+          "quantity": null
+        },
+        {
+          "text": "Tear of Theradras",
+          "quantity": 3
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2150,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 93045,
+      "name": "Test Your Theory",
+      "basis": "tooltip",
+      "level": 38,
+      "required_level": 35,
+      "side": null,
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Gelkis, and dispel the necromantic curse present on the Accursed Skull. Once successful, report back to Nerlokh near the Valley of Bones.",
+      "objectives": [
+        {
+          "text": "Uthek's Draenethyst Staff",
+          "quantity": null
+        },
+        {
+          "text": "Dispel the Accursed Skull",
+          "quantity": null
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        },
+        {
+          "text": "Uthek's Staff",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 710,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 94841,
+      "name": "Lost Shipping Crate",
+      "basis": "tooltip",
+      "level": 38,
+      "required_level": 36,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Deliver the Lost Shipping Crate to Friz Frazzlespark at Powderfuse Port in the Riverglades.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 285,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 94895,
+      "name": "Lost Shipping Crate",
+      "basis": "tooltip",
+      "level": 38,
+      "required_level": 36,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Deliver the Lost Shipping Crate to Friz Frazzlespark at Powderfuse Port in the Riverglades.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 285,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 261,
+      "name": "Down the Scarlet Path",
+      "basis": "tooltip",
+      "level": 39,
+      "required_level": 34,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Destroy 30 Undead Ravagers, then return to Brother Anton at Nijel's Point.",
+      "objectives": [
+        {
+          "text": "Undead Ravager",
+          "quantity": 30
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "45s"
+      },
+      "xp": 3000,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1454,
+      "name": "The Karnitol Shipwreck",
+      "basis": "tooltip",
+      "level": 39,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Find Karnitol's Chest in Desolace.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 3000,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1455,
+      "name": "The Karnitol Shipwreck",
+      "basis": "tooltip",
+      "level": 39,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Return to Kreldig Ungor in Desolace.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 1500,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1456,
+      "name": "The Karnitol Shipwreck",
+      "basis": "tooltip",
+      "level": 39,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Find Karnitol's Satchel and return it to Kreldig Ungor in Desolace.",
+      "objectives": [
+        {
+          "text": "Karnitol's Satchel",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 3000,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1457,
+      "name": "The Karnitol Shipwreck",
+      "basis": "tooltip",
+      "level": 39,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring Karnitol's Satchel to Roetten Stonehammer in Ironforge.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2250,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 5501,
+      "name": "Bone Collector",
+      "basis": "page",
+      "level": 39,
+      "required_level": 33,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11438,
+        "name": "Bibbly F'utzbuckle"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11438,
+        "name": "Bibbly F'utzbuckle"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 33,
+        "orange": 35,
+        "yellow": 37,
+        "green": 42,
+        "grey": 48
+      },
+      "patch": "1.13.2.30682",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 10 Kodo Bones from the Kodo Graveyard to Bibbly F'utzbuckle at Kormek's Hut.",
+      "objectives": [],
+      "provided": [],
+      "description": "We're sitting on a goldmine here, I tell you - a goldmine! Kodo bones will change the world forever... I have customers making furniture, music instruments, and even blasting powder out of them.\n\nThere's a caravan that comes by and picks up my Kodo bones and then sells them at Shadowprey Village. If you can travel to the kodo graveyard south of here and bring me ten Kodo bones, I'll give you something in return. Is it a deal?",
+      "progress": "Do you have the bones? The caravan will be here any moment. I need just ten more kodo bones to reach a career high. A career high, I tell you!",
+      "completion": "Ah, goodie! My bones!\n\nI can't wait till the chaps at home see my face on the front cover of Goblin'preneur. I'll be the richest goblin in the world... and my physical education teacher said I would never amount to anything.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 15690,
+            "name": "Kodobone Necklace",
+            "icon": "inv_jewelry_necklace_09",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2250,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 6132,
+      "name": "Get Me Out of Here!",
+      "basis": "tooltip",
+      "level": 39,
+      "required_level": 34,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Escort Melizza Brimbuzzle, then speak with Hornizz Brimbuzzle at the Kodo Graveyard in Desolace.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "45s"
+      },
+      "xp": 2250,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 6134,
+      "name": "Ghost-o-plasm Round Up",
+      "basis": "tooltip",
+      "level": 39,
+      "required_level": 34,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring 8 Ghost-o-plasms and the Crate of Ghost Magnets to Hornizz Brimbuzzle in Desolace.",
+      "objectives": [
+        {
+          "text": "Ghost-o-plasm",
+          "quantity": 8
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "45s"
+      },
+      "xp": 2250,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 6141,
+      "name": "Brother Anton",
+      "basis": "tooltip",
+      "level": 39,
+      "required_level": 34,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Speak with Brother Anton in Desolace.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 300,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1052,
+      "name": "Down the Scarlet Path",
+      "basis": "tooltip",
+      "level": 40,
+      "required_level": 34,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Take Brother Anton's Letter of Commendation to Raleigh the Devout in Southshore.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 1550,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1466,
+      "name": "Reagents for Reclaimers Inc.",
+      "basis": "tooltip",
+      "level": 40,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring 10 Felhound Brains, 10 Nether Wings, and 10 vials of Doomwarder Blood to Kreldig Ungor in Desolace.",
+      "objectives": [
+        {
+          "text": "Felhound Brain",
+          "quantity": 10
+        },
+        {
+          "text": "Nether Wing",
+          "quantity": 10
+        },
+        {
+          "text": "Doomwarder Blood",
+          "quantity": 10
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "35s"
+      },
+      "xp": 3150,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1467,
+      "name": "Reagents for Reclaimers Inc.",
+      "basis": "tooltip",
+      "level": 40,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring Leftwitch's Package back to Roetten Stonehammer in Ironforge.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "35s"
+      },
+      "xp": 3150,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1488,
+      "name": "The Corrupter",
+      "basis": "tooltip",
+      "level": 40,
+      "required_level": 26,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Slay Lord Azrethoc and Jugkar Grim'rod and return to Takata Steelblade in Desolace.",
+      "objectives": [
+        {
+          "text": "Lord Azrethoc",
+          "quantity": null
+        },
+        {
+          "text": "Jugkar Grim'rod",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 3900,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 79229,
+      "name": "Highway Robbery",
+      "basis": "tooltip",
+      "level": 40,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Find someone in Desolace who knows about the pillaged campsite.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "25s"
+      },
+      "xp": 1550,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 79235,
+      "name": "On the Lam",
+      "basis": "tooltip",
+      "level": 40,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Find one of the Desolace marauders.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 1550,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 79236,
+      "name": "Cherry for Your Thoughts?",
+      "basis": "tooltip",
+      "level": 40,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring a Cherry Grog to Tokal, in Booty Bay, to hear the rest of her story.",
+      "objectives": [
+        {
+          "text": "Cherry Grog",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 1550,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 79242,
+      "name": "No Honor Among Thieves",
+      "basis": "tooltip",
+      "level": 40,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Find Illari Duskfeather on the coast of Arathi Highlands, and get access to her cache of stolen loot.",
+      "objectives": [
+        {
+          "text": "Found Illari Duskfeather",
+          "quantity": null
+        },
+        {
+          "text": "Illari's Key",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "1g"
+      },
+      "xp": 3900,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 92743,
+      "name": "A Conqueror's Crown",
+      "basis": "page",
+      "level": 40,
+      "required_level": 30,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 5398,
+        "name": "Warug"
+      },
+      "end": {
+        "type": "npc",
+        "id": 5398,
+        "name": "Warug"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 30,
+        "orange": 36,
+        "yellow": 38,
+        "green": 43,
+        "grey": 49
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Magram, and return a Conqueror's Crown from the Badlands to Warug in Magram Village.",
+      "objectives": [
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null,
+          "type": "faction",
+          "id": 93
+        }
+      ],
+      "provided": [],
+      "description": "As the strongest centaur clan in all the land, we deserve armaments with ferocity that matches our strength!\n\nWarug needs one most of all. A helm... no, a crown! A conqueror's crown! I heard legends of a fearsome conqueror across the seas. Go to a place they call the Badlands and seek out a crypt there. Return to me only when you have found the crown.\n\nDo this for me, and I will reveal the Magram's greatest strength.",
+      "progress": "No crown, no talk!",
+      "completion": "Look at this! Look at it! What a crown! Befitting of a Khan... but to be worn by Warug. I am pleased.\n\nAre you ready to learn the Magram's newest weapon against our foes?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3150,
+      "reputation": [
+        {
+          "faction_id": 93,
+          "faction": "Magram Clan Centaur",
+          "amount": 1000
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1385,
+            "name": "Brutal Politics",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1367,
+            "name": "Magram Alliance",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 1386,
+            "name": "Assault on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1369,
+            "name": "Broken Tears",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92743,
+            "name": "A Conqueror's Crown",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 92841,
+            "name": "Valley of Bones",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92844,
+            "name": "Mountain of Bones",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92846,
+            "name": "Outcast Necromancers",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92847,
+            "name": "Corrupting Tears",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92873,
+            "name": "Proof of Concept",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92893,
+            "name": "No Mercy for the Weak",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92894,
+            "name": "Bone Raising",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93066,
+            "name": "Bristleback Retreat",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93072,
+            "name": "Long-Term Solutions",
+            "side": null
+          },
+          {
+            "quest_id": 93129,
+            "name": "Threat of Starvation",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93188,
+            "name": "Return to Orgrul",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93196,
+            "name": "Khan Jehn",
+            "side": "Horde"
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93224,
+      "name": "Carved Centaur Totems",
+      "basis": "tooltip",
+      "level": 40,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Acquire 5 Carved Centaur Totems by slaying centaur of any clan throughout Desolace, then return them to Captain Pentigast at Nijel's Point.",
+      "objectives": [
+        {
+          "text": "Carved Centaur Totem",
+          "quantity": 5
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2350,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 93225,
+      "name": "Carved Centaur Totems",
+      "basis": "tooltip",
+      "level": 40,
+      "required_level": 30,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Acquire 5 Carved Centaur Totems by slaying centaur of any clan throughout Desolace, then return them to Gurda Wildmane at Ghost Walker Post.",
+      "objectives": [
+        {
+          "text": "Carved Centaur Totem",
+          "quantity": 5
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 2350,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 93465,
+      "name": "Notes on Draenethyst",
+      "basis": "tooltip",
+      "level": 40,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Take Gimashi's notes on Draenethyst, and bring them back to Azore Aldamort.",
+      "objectives": [
+        {
+          "text": "Gimashi's Findings",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "50s"
+      },
+      "xp": 3150,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 93678,
+      "name": "Abridged Notes on Draenethyst",
+      "basis": "tooltip",
+      "level": 40,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Take Azore's transcribed notes back to Magtoor at the Harborage in Swamp of Sorrows.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 1550,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1380,
+      "name": "Khan Hratha",
+      "basis": "tooltip",
+      "level": 42,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Gelkis, and bring the Maraudine Key Fragment to Uthek the Wise in the Gelkis Village.",
+      "objectives": [
+        {
+          "text": "Maraudine Key Fragment",
+          "quantity": null
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        },
+        {
+          "text": "War Horn Mouthpiece",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 4300,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 1381,
+      "name": "Khan Hratha",
+      "basis": "tooltip",
+      "level": 42,
+      "required_level": 30,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your Magram reputation, and bring the Maraudine Key Fragment to Warug in the Magram Village in Desolace.",
+      "objectives": [
+        {
+          "text": "Maraudine Key Fragment",
+          "quantity": null
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null
+        },
+        {
+          "text": "War Horn Mouthpiece",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 4300,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 93128,
+      "name": "Khan Jehn",
+      "basis": "page",
+      "level": 42,
+      "required_level": 35,
+      "side": null,
+      "side_label": "None",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "end": {
+        "type": "npc",
+        "id": 5397,
+        "name": "Uthek the Wise"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 38,
+        "yellow": 40,
+        "green": 45,
+        "grey": 52
+      },
+      "patch": "1.60.1.70235",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Gelkis, and slay Khan Jhen at Magram Village. Once you have succeeded, report to Uthek the Wise in Gelkis Village in Desolace.",
+      "objectives": [
+        {
+          "text": "Khan Jehn slain",
+          "quantity": null,
+          "type": "npc",
+          "id": 5601
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null,
+          "type": "faction",
+          "id": 92
+        }
+      ],
+      "provided": [],
+      "description": "As much as I would like Uthek or Khan Shaka to give the order, I fear our window of opportunity is short. Too short to consult those at Gelkis Village.\n\nI believe with the situation unfolding here at the Valley of Bones that the Magram have left Khan Jehn with minimal defenses. If there was ever a time to attack another clan's Khan, it is now.\n\nBut <name>, a Khan is not to be trifled with, least of all Jehn. If you are brave enough to make your move, you must be swift but do not underestimate him.",
+      "progress": "I felt a shift in the wind as you approached. Do you bring good news from the Valley of Bones?",
+      "completion": "Khan Jehn has been slain!?\n\nI do not believe it. I cannot believe it. This was brazen! Foolish! Nerlokh had no authority to suggest such an attack!\n\nYet, if you are speaking the truth, I cannot deny that the defeat of Jehn bodes well for the future of our clan. A new Khan will soon take his place, but we have time to prepare our next move.\n\nI will speak with our Khan. For now, your work here is done. Bask in today's victory, but do not tempt fate further.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 271801,
+            "name": "Abandoned Ferocity",
+            "icon": "inv_axe_17",
+            "quality": "rare",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 271805,
+            "name": "Thrice-Damned Effigy",
+            "icon": "inv_misc_orb_01",
+            "quality": "rare",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 271802,
+            "name": "Bludgeon of Betrayed Virtues",
+            "icon": "inv_hammer_08",
+            "quality": "rare",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [
+          {
+            "type": "spell",
+            "id": 1261774,
+            "name": "Character Title Unlock",
+            "icon": "inv_scroll_11",
+            "quality": null,
+            "count": 1
+          }
+        ],
+        "money": null
+      },
+      "xp": 3450,
+      "reputation": [
+        {
+          "faction_id": 92,
+          "faction": "Gelkis Clan Centaur",
+          "amount": 6000
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 93058,
+            "name": "Saving Our Own",
+            "side": null
+          },
+          {
+            "quest_id": 93062,
+            "name": "Bone Burying",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93122,
+            "name": "Checking Things Out",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93128,
+            "name": "Khan Jehn",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93196,
+      "name": "Khan Jehn",
+      "basis": "tooltip",
+      "level": 42,
+      "required_level": 35,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Maintain your reputation with the Magram and perform a necromancy ritual to resurrect Khan Jehn. The ritual site can be found in a tent at the central lake of Magram Village.",
+      "objectives": [
+        {
+          "text": "Khan Jehn resurrected",
+          "quantity": null
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 3450,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 96222,
+      "name": "Khan Hratha",
+      "basis": "tooltip",
+      "level": 42,
+      "required_level": 35,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring the Maraudine Key Fragment to Umarak in the Desolace.",
+      "objectives": [
+        {
+          "text": "Maraudine Key Fragment",
+          "quantity": null
+        },
+        {
+          "text": "War Horn Mouthpiece",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "1g 15s"
+      },
+      "xp": 4300,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 93226,
+      "name": "Buying Friendship: Magram",
+      "basis": "tooltip",
+      "level": 45,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring the Totem Tote to the Magram Quartermaster at Magram Village in the Desolace to significantly increase your reputation with that clan. You must be of at least Neutral standing with the Magram Clan Centaur.",
+      "objectives": [
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 390,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 93227,
+      "name": "Buying Friendship: Gelkis",
+      "basis": "tooltip",
+      "level": 45,
+      "required_level": 30,
+      "side": "Alliance",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring the Totem Tote to the Gelkis Quartermaster at Gelkis Village in the Desolace to significantly increase your reputation with that clan. You must be of at least Neutral standing with the Gelkis Clan Centaur.",
+      "objectives": [
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 390,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 94872,
+      "name": "Buying Friendship: Magram",
+      "basis": "tooltip",
+      "level": 45,
+      "required_level": 30,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring the Totem Tote to the Magram Quartermaster at Magram Village in the Desolace to significantly increase your reputation with that clan. You must be of at least Neutral standing with the Magram Clan Centaur.",
+      "objectives": [
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 390,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 94873,
+      "name": "Buying Friendship: Gelkis",
+      "basis": "tooltip",
+      "level": 45,
+      "required_level": 30,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Bring the Totem Tote to the Gelkis Quartermaster at Gelkis Village in the Desolace to significantly increase your reputation with that clan. You must be of at least Neutral standing with the Gelkis Clan Centaur.",
+      "objectives": [
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": null
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": 390,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 6568,
+      "name": "The Testament of Rexxar",
+      "basis": "tooltip",
+      "level": 60,
+      "required_level": 55,
+      "side": "Horde",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Deliver Rexxar's Testament to Myranda the Hag in the Western Plaguelands.",
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": "1g 48s 50c"
+      },
+      "xp": 4950,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 92811,
+      "name": "Economic Warfare",
+      "basis": "tooltip",
+      "level": 60,
+      "required_level": 1,
+      "side": null,
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "One thing that war has taught us: money is power.\n\nAll centaur in Desolace have come to an agreement to barter with intricately carved wood that shares tales of a centaur's own glory and conquests. It serves as the only reprieve from battle, and only the most level-headed are permitted to engage with other clans.\n\nI have seen your kind trade in gold and silver. Worthless to us, as our totems are to you. Bring me some, and the Magram Clan will be pleased.",
+      "objectives": [
+        {
+          "text": "Carved Centaur Totem",
+          "quantity": 5
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": null,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    },
+    {
+      "quest_id": 92812,
+      "name": "Economic Warfare",
+      "basis": "tooltip",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": null,
+      "difficulty": null,
+      "patch": null,
+      "patch_label": null,
+      "new_in_forever": null,
+      "objective": "Long ago, all of the centaur clans in the Desolace agreed to trade in story. Specifically, carved totems that represent an individual or clan's great accomplishments. Despite the endless conflict, all clans continue to honor this tradition, even if trade opportunities between us have become few and far between.\n\nShould you collect any, such as from fallen centaur of other clans, bring them to me. The Gelkis can use more bartering power, and I will inform the Khan of your assistance.",
+      "objectives": [
+        {
+          "text": "Carved Centaur Totem",
+          "quantity": 5
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": null,
+        "items": null,
+        "spells": null,
+        "money": null
+      },
+      "xp": null,
+      "reputation": null,
+      "other_gains": null,
+      "series": null
+    }
+  ],
+  "related": [
+    {
+      "quest_id": 1432,
+      "name": "Alliance Relations",
+      "level": 30,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": 1637,
+      "xp": 1200,
+      "money": null
+    },
+    {
+      "quest_id": 1436,
+      "name": "Alliance Relations",
+      "level": 33,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": 1637,
+      "xp": 2650,
+      "money": null
+    },
+    {
+      "quest_id": 1453,
+      "name": "Reclaimers' Business in Desolace",
+      "level": 33,
+      "required_level": 30,
+      "side": "Alliance",
+      "category_id": 1537,
+      "xp": 1300,
+      "money": null
+    },
+    {
+      "quest_id": 5361,
+      "name": "Family Tree",
+      "level": 35,
+      "required_level": 32,
+      "side": "Horde",
+      "category_id": 400,
+      "xp": 2050,
+      "money": "25s"
+    },
+    {
+      "quest_id": 6567,
+      "name": "The Champion of the Horde",
+      "level": 60,
+      "required_level": 55,
+      "side": "Horde",
+      "category_id": 1637,
+      "xp": 3300,
+      "money": null
+    },
+    {
+      "quest_id": 6601,
+      "name": "Ascension...",
+      "level": 60,
+      "required_level": 55,
+      "side": "Horde",
+      "category_id": 15,
+      "xp": 4950,
+      "money": "1g 48s 50c"
+    },
+    {
+      "quest_id": 6602,
+      "name": "Blood of the Black Dragon Champion",
+      "level": 60,
+      "required_level": 55,
+      "side": "Horde",
+      "category_id": 1583,
+      "xp": 9950,
+      "money": null
+    },
+    {
+      "quest_id": 7028,
+      "name": "Twisted Evils",
+      "level": 47,
+      "required_level": 41,
+      "side": "Both",
+      "category_id": 2100,
+      "xp": 5250,
+      "money": null
+    },
+    {
+      "quest_id": 7029,
+      "name": "Vyletongue Corruption",
+      "level": 47,
+      "required_level": 41,
+      "side": "Horde",
+      "category_id": 2100,
+      "xp": 5250,
+      "money": null
+    },
+    {
+      "quest_id": 7041,
+      "name": "Vyletongue Corruption",
+      "level": 47,
+      "required_level": 41,
+      "side": "Alliance",
+      "category_id": 2100,
+      "xp": 5250,
+      "money": null
+    },
+    {
+      "quest_id": 7064,
+      "name": "Corruption of Earth and Seed",
+      "level": 51,
+      "required_level": 45,
+      "side": "Horde",
+      "category_id": 2100,
+      "xp": 6100,
+      "money": null
+    },
+    {
+      "quest_id": 7065,
+      "name": "Corruption of Earth and Seed",
+      "level": 51,
+      "required_level": 45,
+      "side": "Alliance",
+      "category_id": 2100,
+      "xp": 6100,
+      "money": null
+    },
+    {
+      "quest_id": 7067,
+      "name": "The Pariah's Instructions",
+      "level": 48,
+      "required_level": 39,
+      "side": "Both",
+      "category_id": 2100,
+      "xp": 5450,
+      "money": "1g 40s"
+    },
+    {
+      "quest_id": 79939,
+      "name": "The Broken Hammer",
+      "level": 40,
+      "required_level": 35,
+      "side": "Alliance",
+      "category_id": -141,
+      "xp": 2350,
+      "money": null
+    },
+    {
+      "quest_id": 92841,
+      "name": "Valley of Bones",
+      "level": 40,
+      "required_level": 35,
+      "side": "Horde",
+      "category_id": 16651,
+      "xp": 315,
+      "money": null
+    },
+    {
+      "quest_id": 93034,
+      "name": "Valley of Bones",
+      "level": 38,
+      "required_level": 35,
+      "side": null,
+      "category_id": 16651,
+      "xp": 285,
+      "money": null
+    },
+    {
+      "quest_id": 93035,
+      "name": "Ravaging Ravagers",
+      "level": 38,
+      "required_level": 35,
+      "side": "Horde",
+      "category_id": 16651,
+      "xp": 1450,
+      "money": null
+    },
+    {
+      "quest_id": 93037,
+      "name": "Outing Outcasts",
+      "level": 40,
+      "required_level": 35,
+      "side": "Horde",
+      "category_id": 16651,
+      "xp": 2350,
+      "money": null
+    },
+    {
+      "quest_id": 93041,
+      "name": "Facing the Truth",
+      "level": 38,
+      "required_level": 35,
+      "side": null,
+      "category_id": 16651,
+      "xp": 710,
+      "money": null
+    },
+    {
+      "quest_id": 93058,
+      "name": "Saving Our Own",
+      "level": 42,
+      "required_level": 35,
+      "side": "Horde",
+      "category_id": 16651,
+      "xp": 2550,
+      "money": null
+    },
+    {
+      "quest_id": 93062,
+      "name": "Bone Burying",
+      "level": 42,
+      "required_level": 35,
+      "side": "Horde",
+      "category_id": 16651,
+      "xp": 3450,
+      "money": null
+    },
+    {
+      "quest_id": 93122,
+      "name": "Checking Things Out",
+      "level": 43,
+      "required_level": 35,
+      "side": "Horde",
+      "category_id": 16651,
+      "xp": 360,
+      "money": null
+    },
+    {
+      "quest_id": 93125,
+      "name": "Going Home",
+      "level": 43,
+      "required_level": 35,
+      "side": "Horde",
+      "category_id": 16651,
+      "xp": 2700,
+      "money": "45s"
+    },
+    {
+      "quest_id": 93464,
+      "name": "The Visiting Mage",
+      "level": 38,
+      "required_level": 30,
+      "side": "Both",
+      "category_id": 8,
+      "xp": 1450,
+      "money": null
+    },
+    {
+      "quest_id": 94257,
+      "name": "Craftsman's Writ: Lesser Invisibility Potion",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 94269,
+      "name": "Craftsman's Writ: Inlaid Mithril Cylinder",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 94281,
+      "name": "Craftsman's Writ: Advanced Target Dummy",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 94293,
+      "name": "Craftsman's Writ: Guardian Cloak",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 94305,
+      "name": "Craftsman's Writ: Shadoweave Gloves",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 96438,
+      "name": "Battle at the Mannoroc Coven",
+      "level": 40,
+      "required_level": 35,
+      "side": "Alliance",
+      "category_id": -141,
+      "xp": 2350,
+      "money": null
+    }
+  ],
+  "skipped": [
+    {
+      "quest_id": 1277,
+      "name": "<nyi> <TXT> The Centaur Hoofprints"
+    },
+    {
+      "quest_id": 1441,
+      "name": "<UNUSED>"
+    },
+    {
+      "quest_id": 1460,
+      "name": "<UNUSED>"
+    },
+    {
+      "quest_id": 1461,
+      "name": "<UNUSED>"
+    },
+    {
+      "quest_id": 8458,
+      "name": "<UNUSED>"
+    }
+  ]
+}
