@@ -6,9 +6,10 @@
   <Layout>
     <nav class="tabs" aria-label="Page">
       <ul class="tabs-left"><li class="selected"><a href="/">Main page</a></li></ul>
-      <form class="search" role="search" action="#"><input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki"></form>
+      <SearchForm />
     </nav>
     <main id="content" class="mainpage">
+      <SiteNotice />
       <h1 class="page-title visually-hidden">WoW Forever Wiki</h1>
 
       <header class="mp-welcome">
@@ -130,7 +131,7 @@
 
 <script>
 export default {
-  components: { Layout: require('../layout/Layout.vue') },
+  components: { Layout: require('../layout/Layout.vue'), SearchForm: require('../components/SearchForm.vue'), SiteNotice: require('../components/SiteNotice.vue') },
   props: {
     stats: { type: Array, required: true },
     portals: { type: Array, required: true },

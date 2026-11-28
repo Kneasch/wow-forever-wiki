@@ -218,7 +218,8 @@ function questPage(q, zone, zoneTitle) {
       [D.ext(wowhead('quest', q.quest_id), `Wowhead Forever: ${q.name}`), full ? ' (quest page)' : ' (tooltip data and the zone quest list)'],
     ] }]),
   ];
-  return { title, component: Doc(), props: { title, tab: 'Quest', infobox, intro, toc: true, sections } };
+  const searchNote = [zone, q.level != null ? `level ${q.level}` : null, SIDES.includes(q.side) ? q.side : null].filter(Boolean).join(', ');
+  return { title, searchNote, component: Doc(), props: { title, tab: 'Quest', infobox, intro, toc: true, sections } };
 }
 
 function zoneList({ region, zone, data }) {
