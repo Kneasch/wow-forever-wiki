@@ -718,8 +718,8 @@
     "Every rank after the first and the level it is trained at (only Slam, Charge and Intercept ranks are noted from fan sites).",
     "Passive talents (Bloodthrill, Weaponmaster, Lingering Rage, Gore Drinker and others); no new capstone passives were found, so passive_talents is empty.",
     "Tactical Mastery (a trained passive, spell 1310185, level 14) and other passives are not listed as abilities.",
-    "Spells not checked on the tooltip API: Classic Warrior spells such as Heroic Throw and Intervene do not exist in Forever and were not looked for.",
-    "Fan sites list only these abilities; quest-learned warrior spells were not checked."
+    "Quest-learned warrior spells were not checked.",
+    "Thrown and ranged weapon skills (Throw, Shoot Bow/Crossbow/Gun) are left out as general skills."
   ],
   "sources": [
     {

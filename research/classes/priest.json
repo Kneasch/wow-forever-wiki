@@ -16,7 +16,7 @@
       "icon": "spell_shadow_shadowwordpain"
     }
   ],
-  "talent_levels_note": "A talent ability can be taken once you can reach its row: the first talent point comes at level 10 and each row needs 5 more points, so row N opens at level 10 + 5 × (N − 1). Talent rows are from wowforevertalent.com; the Forever tooltips of Holy Nova (20), Mind Flay (20), Vampiric Embrace (30) and Prayer of Mending (40) show the same levels as their rows.",
+  "talent_levels_note": "A talent ability can be taken once you can reach its row: the first talent point comes at level 10 and each row needs 5 more points, so row N opens at level 10 + 5 × (N − 1). Talent rows are from wowforevertalent.com; the Forever tooltips of Holy Nova (20), Mind Flay (20) and Prayer of Mending (40) show the same levels as their rows.",
   "abilities": [
     {
       "spell_id": 585,
@@ -968,7 +968,9 @@
   ],
   "conflicts": [
     "Penance: wowforevertalent.com places it at row 5 (level 30), but the rank 1 tooltip says Requires level 40. The table uses the row level.",
-    "Racial spells are attributed to races from wowforevertalent.com and the Warcraft Tavern guide; the exact race list for Desperate Prayer, Fear Ward and Devouring Plague is not confirmed by the tooltips."
+    "Racial spells are attributed to races from wowforevertalent.com and the Warcraft Tavern guide; the exact race list for Desperate Prayer, Fear Ward and Devouring Plague is not confirmed by the tooltips.",
+    "Vampiric Embrace: row 4 would open at level 25, but its tooltip says Requires level 30. The table uses the row level.",
+    "Penance (1240720) does not carry the Talent label on Wowhead (it is a trained-rank spell ID), although wowforevertalent.com lists the talent in Discipline row 5."
   ],
   "gaps": [
     "Every rank after the first and the level it is trained at.",
