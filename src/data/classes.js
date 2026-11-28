@@ -22,7 +22,9 @@ const levelSegs = (a) => D.val(a.level);
 const ROW_WORD = (row) => `row ${row}`;
 // A talent ability is listed at its row's level. When Wowhead's tooltip gives a different real level (not 1, and not a
 // stray single-digit value), say so, since either source can be out of date.
-const tooltipLevel = (a) => (a.talent && a.tooltip_level >= 10 && a.tooltip_level !== a.level
+// Not when spell_id is a later rank (later_rank: the first rank is missing from Wowhead), or the note already says it.
+const tooltipLevel = (a) => (a.talent && a.tooltip_level >= 10 && a.tooltip_level !== a.level && !a.later_rank
+  && !(a.note || '').includes(`level ${a.tooltip_level}`)
   ? [' ', D.unknown(`Wowhead's tooltip says level ${a.tooltip_level}.`)] : []);
 
 function classPage(c, idx) {

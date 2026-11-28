@@ -5,7 +5,7 @@
 // Only fields the tooltip API is authoritative for are overwritten:
 //   abilities[], passive_talents[]   spell tooltip -> name, icon, level, tooltip_level, is_talent, cost, cast,
 //                                    cooldown, reagent, text, summary (the first sentence of text)
-// Hand-written fields (spell_id, tab, talent, note, new_in_forever) are left alone. A talent spell's own
+// Hand-written fields (spell_id, tab, talent, note, new_in_forever, later_rank) are left alone. A talent spell's own
 // "Requires level" is often missing or 1, so for talents `level` is the row's level instead (10 + 5 x (row - 1)).
 // Spell, class and talent-tree icons are downloaded to site/assets/icons/.
 const fs = require('fs');
@@ -42,38 +42,45 @@ const text = (html) => html.replace(/<br\s*\/?>/g, '\n').replace(/<!--[^>]*-->/g
 // - talent clauses, "[Improved Fire Ward: and grants a 0% chance ...]" or "[Venom: with talent / without]": the
 //   without-talent text is kept (after " / "), otherwise the clause is dropped, so the text describes the spell alone
 // - scaling formulas, "[10.8 * (((1)))]", "[108 + (Ranged Attack Power * (0.05))]", "(4 * 41.5)": evaluated at their
-//   base value, with stat terms (spell power, attack power, healing) at 0, as for a character with no gear. These are
-//   damage and healing amounts, which the game shows as whole numbers (Immolate rank 1: 11), so the result is rounded.
-//   The closing "]" is sometimes missing; the formula then ends at the first lowercase word outside brackets.
+//   base value, with stat terms (STAT below, and Wowhead variables such as $mcrit) at 0, as for a character with no
+//   gear. A formula with any other word is left as it is. Amounts of 10 or more are rounded, as the game shows damage
+//   and healing (Immolate rank 1: 11); smaller ones keep one decimal (0.5%, 1.5 sec).
+//   The closing "]" is sometimes missing; the formula then ends at the first word that is not a stat term.
+const STAT = /^(?:\$[a-z]+|(?:Ranged )?Attack Power|(?:[A-Z][a-z]+ )?[Ss]pell [Pp]ower|Healing|Spirit|Intellect|Strength|Agility|Stamina)/;
 function evalFormula(expr) {
-  let n = expr.replace(/[A-Za-z][A-Za-z ]*[A-Za-z]|[A-Za-z]/g, '0').trim();
-  if (!/^[\d.+\-*/() ]+$/.test(n) || !/\d/.test(n)) return null;
+  if (!/\d/.test(expr)) return null;
+  let n = expr.trim();
+  for (let m; (m = n.match(/(?:^|[^A-Za-z$])((?:\$[a-z]+|[A-Za-z][A-Za-z ]*[A-Za-z]|[A-Za-z]))/)); ) {
+    const word = m[1].trim();
+    if (!STAT.test(word) || word.replace(STAT, '').trim()) return null;
+    n = n.replace(m[1], ' 0 ');
+  }
+  if (!/^[\d.+\-*/() ]+$/.test(n)) return null;
   n += ')'.repeat(Math.max(0, (n.match(/\(/g) || []).length - (n.match(/\)/g) || []).length));
   try {
     const v = Function(`"use strict"; return (${n});`)();
-    return Number.isFinite(v) ? String(Math.round(v)) : null;
+    if (!Number.isFinite(v)) return null;
+    return String(Math.abs(v) >= 10 ? Math.round(v) : Number(v.toFixed(1)));
   } catch { return null; }
 }
+const DROPPED = '\u0000'; // where a talent clause was removed, so only those spaces are tidied
 function formulas(s) {
   s = s.replace(/\[\(30 \+ Spirit\) \* \(1\)\]/g, '30 + Spirit')
-    .replace(/\[[A-Z][A-Za-z' ]*: ([^\[\]]*)\]/g, (_, body) => (body.includes(' / ') ? body.split(' / ').pop() : ''))
-    .replace(/\(([\d.]+) \* \(*([\d.]+)\)*\)/g, (_, a, b) => String(Math.round(Number(a) * Number(b))));
+    .replace(/\[[A-Z][A-Za-z' ]*: ([^\[\]]*)\]/g, (_, body) => (body.includes(' / ') ? body.split(' / ').pop() : DROPPED))
+    .replace(/\(([\d.]+) \* \(*([\d.]+)\)*\)/g, (all, a, b) => evalFormula(`${a} * ${b}`) ?? all);
   let out = '';
   let i = 0;
   while (i < s.length) {
     if (s[i] !== '[') { out += s[i++]; continue; }
-    // Scan the formula: numbers, operators, brackets and stat names; lowercase words only inside parentheses
+    // Scan the formula: numbers, operators, brackets, and stat terms
     let j = i + 1;
-    let depth = 0;
     let closed = false;
     while (j < s.length) {
       const c = s[j];
       if (c === ']') { closed = true; break; }
-      if (c === '(') { depth++; j++; continue; }
-      if (c === ')') { depth--; j++; continue; }
-      if (/[\d.+\-*/ ]/.test(c)) { j++; continue; }
-      const word = s.slice(j).match(/^[A-Za-z]+/);
-      if (word && (depth > 0 || /^[A-Z]/.test(word[0]))) { j += word[0].length; continue; }
+      if (/[\d.+\-*/() ]/.test(c)) { j++; continue; }
+      const stat = s.slice(j).match(STAT);
+      if (stat) { j += stat[0].length; continue; }
       break;
     }
     const v = evalFormula(s.slice(i + 1, j));
@@ -82,7 +89,7 @@ function formulas(s) {
     i = closed ? j + 1 : j;
     while (!closed && s[i] === ' ') i++;
   }
-  return out.replace(/ {2,}/g, ' ').replace(/ ([.,])/g, '$1');
+  return out.replace(new RegExp(` *${DROPPED} *([.,])`, 'g'), '$1').replace(new RegExp(` *${DROPPED} *`, 'g'), ' ');
 }
 
 const rowLevel = (row) => 10 + 5 * (row - 1);

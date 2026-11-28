@@ -9,7 +9,7 @@ turns them into pages: the hub, and a page per class that has a file.
   `NODE_USE_ENV_PROXY=1 node scripts/fetch-classes.js`. It writes `name`, `icon`, `level`, `tooltip_level`, `is_talent`,
   `cost`, `cast`, `cooldown`, `reagent`, `text` and `summary` (the first sentence of `text`), and downloads the icons.
   Numbers in the text are rank 1 values.
-- **Hand-written**: `spell_id` (the first rank), `tab` (the spellbook tab), `talent: { tree, row }` for abilities that
+- **Hand-written**: `spell_id` (the first rank; `later_rank: true` when Wowhead has no first rank and this is the lowest one found), `tab` (the spellbook tab), `talent: { tree, row }` for abilities that
   come from a talent, `note` and `new_in_forever`. A refresh never changes them.
 - Wowhead's list pages (`www.wowhead.com/forever/spells/...`) refuse plain HTTP clients, so the spell list itself is
   hand-made: Classic's Warlock spells checked one by one against the Forever tooltips (Curse of Shadow and Dark Pact

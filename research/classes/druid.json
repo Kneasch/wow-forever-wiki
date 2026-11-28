@@ -668,7 +668,8 @@
       "cooldown": null,
       "reagent": null,
       "text": "Lacerates the enemy target, making them bleed for 50 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target.",
-      "summary": "Lacerates the enemy target, making them bleed for 50 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target."
+      "summary": "Lacerates the enemy target, making them bleed for 50 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target.",
+      "later_rank": true
     },
     {
       "spell_id": 407995,
@@ -890,7 +891,8 @@
       "cooldown": null,
       "reagent": null,
       "text": "Brings a dead player back to life with 160 health and 300 mana. Cannot be cast when in combat.",
-      "summary": "Brings a dead player back to life with 160 health and 300 mana."
+      "summary": "Brings a dead player back to life with 160 health and 300 mana.",
+      "later_rank": true
     },
     {
       "spell_id": 18562,
