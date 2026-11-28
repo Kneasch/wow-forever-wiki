@@ -32,7 +32,8 @@ const SIDE = { 1: 'Alliance', 2: 'Horde', 3: 'Both' };
 const QUALITY = ['poor', 'common', 'uncommon', 'rare', 'epic', 'legendary', 'artifact'];
 const KEEP = ['notes', 'walkthrough']; // hand-written fields, never overwritten
 const JUNK = /<\s*(unused|nyi|txt)\s*>|^\[?unused\]?/i; // placeholder quests that were never in the game
-const PARALLEL = 3;
+// Pages loaded at once; --parallel=N to change (keep the total across runs at about 6)
+const PARALLEL = Number((process.argv.find((a) => a.startsWith('--parallel=')) || '').split('=')[1]) || 3;
 
 const allowPages = process.argv.includes('--pages');
 const keys = process.argv.slice(2).filter((a) => !a.startsWith('--'));
