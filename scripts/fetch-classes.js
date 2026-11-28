@@ -38,11 +38,52 @@ async function pool(items, fn, n = 6) {
 const text = (html) => html.replace(/<br\s*\/?>/g, '\n').replace(/<!--[^>]*-->/g, '').replace(/<[^>]+>/g, '')
   .replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#39;/g, "'")
   .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n))).replace(/&amp;/g, '&').replace(/[ \t]+/g, ' ').trim();
-// Unevaluated scaling formulas, e.g. "[10.8 * (((1)))]" or "(4 * 41.5)": evaluate the simple ones. These are damage and
-// healing amounts, which the game shows as whole numbers (Immolate rank 1: 11), so the result is rounded.
-const formulas = (s) => s
-  .replace(/\[\(30 \+ Spirit\) \* \(1\)\]/g, '30 + Spirit')
-  .replace(/[[(]([\d.]+) \* \({0,3}([\d.]+)\){0,3}[\])]/g, (_, a, b) => String(Math.round(Number(a) * Number(b))));
+// Tooltip text that Wowhead leaves unevaluated:
+// - talent clauses, "[Improved Fire Ward: and grants a 0% chance ...]" or "[Venom: with talent / without]": the
+//   without-talent text is kept (after " / "), otherwise the clause is dropped, so the text describes the spell alone
+// - scaling formulas, "[10.8 * (((1)))]", "[108 + (Ranged Attack Power * (0.05))]", "(4 * 41.5)": evaluated at their
+//   base value, with stat terms (spell power, attack power, healing) at 0, as for a character with no gear. These are
+//   damage and healing amounts, which the game shows as whole numbers (Immolate rank 1: 11), so the result is rounded.
+//   The closing "]" is sometimes missing; the formula then ends at the first lowercase word outside brackets.
+function evalFormula(expr) {
+  let n = expr.replace(/[A-Za-z][A-Za-z ]*[A-Za-z]|[A-Za-z]/g, '0').trim();
+  if (!/^[\d.+\-*/() ]+$/.test(n) || !/\d/.test(n)) return null;
+  n += ')'.repeat(Math.max(0, (n.match(/\(/g) || []).length - (n.match(/\)/g) || []).length));
+  try {
+    const v = Function(`"use strict"; return (${n});`)();
+    return Number.isFinite(v) ? String(Math.round(v)) : null;
+  } catch { return null; }
+}
+function formulas(s) {
+  s = s.replace(/\[\(30 \+ Spirit\) \* \(1\)\]/g, '30 + Spirit')
+    .replace(/\[[A-Z][A-Za-z' ]*: ([^\[\]]*)\]/g, (_, body) => (body.includes(' / ') ? body.split(' / ').pop() : ''))
+    .replace(/\(([\d.]+) \* \(*([\d.]+)\)*\)/g, (_, a, b) => String(Math.round(Number(a) * Number(b))));
+  let out = '';
+  let i = 0;
+  while (i < s.length) {
+    if (s[i] !== '[') { out += s[i++]; continue; }
+    // Scan the formula: numbers, operators, brackets and stat names; lowercase words only inside parentheses
+    let j = i + 1;
+    let depth = 0;
+    let closed = false;
+    while (j < s.length) {
+      const c = s[j];
+      if (c === ']') { closed = true; break; }
+      if (c === '(') { depth++; j++; continue; }
+      if (c === ')') { depth--; j++; continue; }
+      if (/[\d.+\-*/ ]/.test(c)) { j++; continue; }
+      const word = s.slice(j).match(/^[A-Za-z]+/);
+      if (word && (depth > 0 || /^[A-Z]/.test(word[0]))) { j += word[0].length; continue; }
+      break;
+    }
+    const v = evalFormula(s.slice(i + 1, j));
+    if (v == null) { out += s[i++]; continue; }
+    out += v + (closed ? '' : ' ');
+    i = closed ? j + 1 : j;
+    while (!closed && s[i] === ' ') i++;
+  }
+  return out.replace(/ {2,}/g, ' ').replace(/ ([.,])/g, '$1');
+}
 
 const rowLevel = (row) => 10 + 5 * (row - 1);
 // The first sentence of the first line (multi-line texts, such as Demonic Sacrifice's per-demon list, stop at the line)

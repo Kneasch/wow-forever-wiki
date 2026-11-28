@@ -23,7 +23,17 @@ turns them into pages: the hub, and a page per class that has a file.
   or "Requires level 1"; where they do have one (Siphon Life, Shadowburn, Conflagrate, Wrack, Incinerate) it matches.
   The script warns when a spell marked as a talent is not a talent on Wowhead, or the other way round.
 
-## Warlock
+Where a talent ability's tooltip gives a different level (Stormstrike, Penance, Repentance, ...), the page lists it at
+the row's level and shows the tooltip's level next to it. Either can be out of date.
 
-55 abilities: 44 trained and 11 from talents. Talent rows come from wowforevertalent.com. Not covered yet: demon pet
-abilities, later ranks, quest-learned spells and passive talents (see `gaps` in the file).
+## Text
+
+Wowhead leaves some tooltip text unevaluated. The script drops talent clauses (`[Improved Fire Ward: ...]`, keeping the
+text after ` / ` when there is one) and evaluates formulas at their base value, with stat terms (spell power, attack
+power, healing) at 0, so the numbers are what a character with no gear sees.
+
+## Classes
+
+All nine classes have a file. Warlock was researched by hand; the other eight were researched the same way, each
+noting its own conflicts and gaps in the file. Not covered for any class yet: pet abilities, later ranks, which spells
+are learned from quests, and most passive talents.

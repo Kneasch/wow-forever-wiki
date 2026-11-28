@@ -79,7 +79,7 @@
       "cast": "Instant",
       "cooldown": null,
       "reagent": null,
-      "text": "Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : [1 + (5 * 1-[5 + (5 * 1 damage\n 2 points: [1 + (2 * 5 * 1-[5 + (2 * 5 * 1 damage\n 3 points: [1 + (3 * 5 * 1-[5 + (3 * 5 * 1 damage\n 4 points: [1 + (4 * 5 * 1-[5 + (4 * 5 * 1 damage\n 5 points: [1 + (5 * 5 * 1-[5 + (5 * 5 * 1 damage",
+      "text": "Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : 6-10 damage\n 2 points: 11-15 damage\n 3 points: 16-20 damage\n 4 points: 21-25 damage\n 5 points: 26-30 damage",
       "summary": "Finishing move that causes damage per combo point, increased by Attack Power:"
     },
     {
@@ -160,7 +160,7 @@
       "cast": "Instant",
       "cooldown": null,
       "reagent": null,
-      "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : [(6.18) * (4 + 0 / 2)] damage over [(8 + 0)] secs\n 2 points: [(7.36) * (5 + 0 / 2)] damage over [(10 + 0)] secs\n 3 points: [(8.54) * (6 + 0 / 2)] damage over [(12 + 0)] secs\n 4 points: [(9.72) * (7 + 0 / 2)] damage over [(14 + 0)] secs\n 5 points: [(10.9) * (8 + 0 / 2)] damage over [(16 + 0)] secs",
+      "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 25 damage over 8 secs\n 2 points: 37 damage over 10 secs\n 3 points: 51 damage over 12 secs\n 4 points: 68 damage over 14 secs\n 5 points: 87 damage over 16 secs",
       "summary": "Finishing move that causes damage over time, increased by your Attack Power."
     },
     {
@@ -324,8 +324,8 @@
       "cast": "Instant",
       "cooldown": "10 sec cooldown",
       "reagent": null,
-      "text": "Instantly strike with your off-hand weapon, dealing 50% weapon damage [Venom: increasing your Poison damage dealt by 30% and your chance to apply Poisons by 20% for 6 sec / ]and generating 15 Energy. [Boot Knife: 100% chance to award 2 Combo Points] Shank cannot Miss.",
-      "summary": "Instantly strike with your off-hand weapon, dealing 50% weapon damage [Venom: increasing your Poison damage dealt by 30% and your chance to apply Poisons by 20% for 6 sec / ]and generating 15 Energy."
+      "text": "Instantly strike with your off-hand weapon, dealing 50% weapon damage and generating 15 Energy. Shank cannot Miss.",
+      "summary": "Instantly strike with your off-hand weapon, dealing 50% weapon damage and generating 15 Energy."
     },
     {
       "spell_id": 1752,
@@ -541,7 +541,7 @@
       "cast": "Instant",
       "cooldown": null,
       "reagent": null,
-      "text": "Incapacitates the target for up to 25 sec. Only works on Humanoids that are not in combat. Any damage taken will break the effect. Only [Quick Getaway: 2] targets may be sapped at a time. Does not break Stealth.",
+      "text": "Incapacitates the target for up to 25 sec. Only works on Humanoids that are not in combat. Any damage taken will break the effect. Only targets may be sapped at a time. Does not break Stealth.",
       "summary": "Incapacitates the target for up to 25 sec."
     },
     {

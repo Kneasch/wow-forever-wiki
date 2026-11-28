@@ -84,7 +84,7 @@ See [research/professions/README.md](research/professions/README.md) for the dat
 
 Class pages (the Classes hub and a page per class) are generated from `research/classes/` by `src/data/classes.js`. Each
 class page lists every ability at the level it is first learned and marks the ones that come from talents.
-`scripts/fetch-classes.js` refreshes the spell data from the Wowhead Forever tooltip API. Warlock is the first class done.
+`scripts/fetch-classes.js` refreshes the spell data from the Wowhead Forever tooltip API. All nine classes are done.
 See [research/classes/README.md](research/classes/README.md).
 
 ## Zone maps

@@ -219,8 +219,8 @@
       "cast": "Instant",
       "cooldown": "10 sec cooldown",
       "reagent": null,
-      "text": "Places a spell on the target that heals them for [(172 + (Healing * 0.42899999)) * 1 the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time per caster.",
-      "summary": "Places a spell on the target that heals them for [(172 + (Healing * 0.42899999)) * 1 the next time they take damage or receive non-periodic healing."
+      "text": "Places a spell on the target that heals them for 172 the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time per caster.",
+      "summary": "Places a spell on the target that heals them for 172 the next time they take damage or receive non-periodic healing."
     },
     {
       "spell_id": 1277331,

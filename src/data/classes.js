@@ -20,6 +20,10 @@ const spellSegs = (a) => [...iconSeg(a.icon), D.ext(wowhead('spell', a.spell_id)
 const byLevel = (a, b) => (a.level ?? Infinity) - (b.level ?? Infinity) || a.name.localeCompare(b.name);
 const levelSegs = (a) => D.val(a.level);
 const ROW_WORD = (row) => `row ${row}`;
+// A talent ability is listed at its row's level. When Wowhead's tooltip gives a different real level (not 1, and not a
+// stray single-digit value), say so, since either source can be out of date.
+const tooltipLevel = (a) => (a.talent && a.tooltip_level >= 10 && a.tooltip_level !== a.level
+  ? [' ', D.unknown(`Wowhead's tooltip says level ${a.tooltip_level}.`)] : []);
 
 function classPage(c, idx) {
   const C = c.class;
@@ -60,7 +64,7 @@ function classPage(c, idx) {
             D.cell(spellSegs(a)),
             D.cell([a.tab]),
             howLearned(a),
-            D.cell([a.summary || '', ...(a.note ? [' ', D.b('Note:'), ` ${a.note}`] : [])]),
+            D.cell([a.summary || '', ...(a.note ? [' ', D.b('Note:'), ` ${a.note}`] : []), ...tooltipLevel(a)]),
           ])),
         ]),
         D.section('Talent_abilities', 'Abilities from talents', [
@@ -70,7 +74,7 @@ function classPage(c, idx) {
             .map((a) => [
               D.cell([...iconSeg(c.trees.find((t) => t.name === a.talent.tree)?.icon), a.talent.tree]),
               D.cell([String(a.talent.row)], 'num'),
-              D.cell(levelSegs(a), 'num'),
+              D.cell([...levelSegs(a), ...(tooltipLevel(a).length ? [' ', D.unknown(`(${a.tooltip_level}?)`)] : [])], 'num'),
               D.cell(spellSegs(a)),
               D.cell([castLine(a) || '–']),
             ])),

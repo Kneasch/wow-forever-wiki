@@ -340,8 +340,8 @@
       "cast": null,
       "cooldown": "6 sec cooldown",
       "reagent": null,
-      "text": "Command a hawk to dive-bomb your targeted enemy, dealing [108 + (Ranged Attack Power * (0.05))] Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.",
-      "summary": "Command a hawk to dive-bomb your targeted enemy, dealing [108 + (Ranged Attack Power * (0.05))] Physical damage and continuing its assault for 18 sec."
+      "text": "Command a hawk to dive-bomb your targeted enemy, dealing 108 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.",
+      "summary": "Command a hawk to dive-bomb your targeted enemy, dealing 108 Physical damage and continuing its assault for 18 sec."
     },
     {
       "spell_id": 3044,

@@ -181,8 +181,8 @@
       "cast": "Instant",
       "cooldown": null,
       "reagent": null,
-      "text": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional [(216 / 87 + (0.0765 * Spell Power))] to [(216 / 25 + (0.12 * Spell Power))] Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time.",
-      "summary": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional [(216 / 87 + (0.0765 * Spell Power))] to [(216 / 25 + (0.12 * Spell Power))] Holy damage."
+      "text": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 2 to 9 Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time.",
+      "summary": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 2 to 9 Holy damage."
     },
     {
       "spell_id": 21082,
