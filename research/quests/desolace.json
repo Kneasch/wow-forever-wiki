@@ -64,9 +64,7 @@
       "reputation": [],
       "other_gains": [],
       "series": null,
-      "facts_extra": [
-        "Repeatable"
-      ]
+      "repeatable": true
     },
     {
       "quest_id": 1366,

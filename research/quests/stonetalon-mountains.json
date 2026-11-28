@@ -1,0 +1,4508 @@
+{
+  "zone": "Stonetalon Mountains",
+  "area_id": 406,
+  "source": "https://www.wowhead.com/forever/zone=406#quests",
+  "fetched": "2026-11-28",
+  "quests": [
+    {
+      "quest_id": 1061,
+      "name": "The Spirits of Stonetalon",
+      "basis": "page",
+      "level": 17,
+      "required_level": 13,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4047,
+        "name": "Zor Lonetree"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4049,
+        "name": "Seereth Stonebreak"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 13,
+        "yellow": 15,
+        "green": 20,
+        "grey": 24
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak with Seereth Stonebreak in the Stonetalon Mountains.",
+      "objectives": [],
+      "provided": [],
+      "description": "The spirits of the Stonetalon Mountains are angered, for goblins and their servants are plundering and burning the land. So the land has cried out, and those who listen for such things... have heard.\n\nSeereth Stonebreak, a promising shaman of the Horde, was sent to Stonetalon. She reports massive deforestation at the hands of the goblins, and requests aid.\n\nMeet Seereth in Stonetalon. To reach her, follow the road west of the Barrens' Crossroads. She is camped near the Greatwood Vale.",
+      "progress": null,
+      "completion": "Ah, a <class>. Very good. We will need your skills to deal with these plunderers!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 320,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 25
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1061,
+            "name": "The Spirits of Stonetalon",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1062,
+            "name": "Goblin Invaders",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1063,
+      "name": "The Elder Crone",
+      "basis": "page",
+      "level": 18,
+      "required_level": 13,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4049,
+        "name": "Seereth Stonebreak"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4046,
+        "name": "Magatha Grimtotem"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 13,
+        "orange": 14,
+        "yellow": 16,
+        "green": 21,
+        "grey": 25
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak with Magatha in Thunder Bluff.",
+      "objectives": [],
+      "provided": [],
+      "description": "To truly tend the spirits of Stonetalon we must consult the tauren elders.\n\nI do not know many of their leaders' names, but I do know of one: Magatha. I have heard that she is very old, and she knows much. If anyone can marshal spiritual aid from the tauren, it is she.\n\nMagatha resides in the tauren capital of Thunder Bluff, on Elder Rise -- the city's northeastern bluff. Speak with Magatha, and tell her of the peril of Stonetalon Mountains.",
+      "progress": null,
+      "completion": "I bid you greetings. You are here seeking counsel?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 680,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 6401,
+      "name": "Kaya's Alive",
+      "basis": "page",
+      "level": 18,
+      "required_level": 12,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11857,
+        "name": "Makaba Flathoof"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11864,
+        "name": "Tammra Windfield"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 12,
+        "orange": 14,
+        "yellow": 16,
+        "green": 21,
+        "grey": 25
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Tell Tammra Windfield in Sun Rock Retreat the good news.",
+      "objectives": [],
+      "provided": [],
+      "description": "Tell Tammra Windfield, Kaya's aunt who's at Sun Rock Retreat, about the good news! Kaya is alive! We had thought she was lost after the brutal attack on our village. Follow the path to the west to get to Sun Rock Retreat.",
+      "progress": null,
+      "completion": "My goodness, my niece Kaya is alive! That is good news indeed. Thank you, <name>.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "7s"
+      },
+      "xp": 1000,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 6523,
+            "name": "Protect Kaya",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6401,
+            "name": "Kaya's Alive",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 6421,
+      "name": "Boulderslide Ravine",
+      "basis": "page",
+      "level": 18,
+      "required_level": 14,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11861,
+        "name": "Mor'rogal"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11861,
+        "name": "Mor'rogal"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 14,
+        "yellow": 16,
+        "green": 21,
+        "grey": 25
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Explore deep into the cave at Boulderslide Ravine and bring back 10 Resonite Crystals for Mor'rogal at Sun Rock Retreat to investigate.",
+      "objectives": [
+        {
+          "text": "Resonite Crystal",
+          "quantity": 10,
+          "type": "item",
+          "id": 16581
+        },
+        {
+          "text": "Explore Zone",
+          "quantity": 1
+        },
+        {
+          "text": "Investigate Cave in Boulderslide Ravine",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "Something is amiss here in Stonetalon. Can you feel the tension in the air, <name>?\n\nSoutheast of here lies a deep cave in Boulderslide Ravine. The kobolds there are frantically mining a rare crystal called Resonite. I need you to bring back some ore samples so that I can understand what's happening in that cave. I also need you to investigate the depth of that cave.\n\nGo young <class>, it's imperative I know what evil lurks under these mountains.",
+      "progress": "What news have you discovered from Boulderslide Ravine? I recall some legend that deals with Resonite... I just cannot place my hoof on it. Perhaps knowing what lies at the bottom of the cave will illuminate their devious intentions.",
+      "completion": "Ah... Yes! That's it; the Resonite crystals have a trace of Earthen magic. The kobolds must have dug deep uncovering an Earthen.\n\nLegend states that the Earthen are creatures created by the Titans. They were used to create the land our feet walk on. This most definitely is a threat that cannot be ignored.\n\n<Mor'rogal shakes his head.>\n\nPerhaps I can enchant these ore samples to use against this kobold plot.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "10s"
+      },
+      "xp": 1350,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 6523,
+      "name": "Protect Kaya",
+      "basis": "page",
+      "level": 18,
+      "required_level": 12,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11856,
+        "name": "Kaya Flathoof"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11857,
+        "name": "Makaba Flathoof"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 12,
+        "orange": 14,
+        "yellow": 16,
+        "green": 21,
+        "grey": 25
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Escort Kaya Flathoof to Camp Aparaje, and then return to Makaba Flathoof near the southeastern edge of Stonetalon.",
+      "objectives": [
+        {
+          "text": "Kaya Escorted to Camp Aparaje",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "Thank you for rescuing me! We must leave quickly before they discover that I am free. Please escort me to Camp Aparaje. From there, I know my way.\n\nMy father, Makaba Flathoof, will be desperate to know that I am safe.",
+      "progress": null,
+      "completion": "Kaya is alive! <name>, I have you to thank for rescuing her.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "10s"
+      },
+      "xp": 1350,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 6523,
+            "name": "Protect Kaya",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 6401,
+            "name": "Kaya's Alive",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 6548,
+      "name": "Avenge My Village",
+      "basis": "page",
+      "level": 18,
+      "required_level": 12,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11857,
+        "name": "Makaba Flathoof"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11857,
+        "name": "Makaba Flathoof"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 12,
+        "orange": 14,
+        "yellow": 16,
+        "green": 21,
+        "grey": 25
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill 8 Grimtotem Ruffians and 6 Grimtotem Mercenaries, and then return to Makaba Flathoof near the southeastern edge of Stonetalon.",
+      "objectives": [
+        {
+          "text": "Grimtotem Ruffian slain",
+          "quantity": 8,
+          "type": "npc",
+          "id": 11910
+        },
+        {
+          "text": "Grimtotem Mercenary slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 11911
+        }
+      ],
+      "provided": [],
+      "description": "The Grimtotem Clan raided my village and killed most everyone. I killed all I could, but barely escaped with my life.\n\n<name>, all I wish now is that more of them are dead. You will find them just to the west of here.",
+      "progress": "Have you killed them yet?",
+      "completion": "<name>, I thank you... but I will never forget what the Grimtotem have done to my village.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "10s"
+      },
+      "xp": 1350,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 6548,
+            "name": "Avenge My Village",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 6629,
+            "name": "Kill Grundig Darkcloud",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 6629,
+      "name": "Kill Grundig Darkcloud",
+      "basis": "page",
+      "level": 18,
+      "required_level": 12,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11857,
+        "name": "Makaba Flathoof"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11857,
+        "name": "Makaba Flathoof"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 12,
+        "orange": 14,
+        "yellow": 16,
+        "green": 21,
+        "grey": 25
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill Grundig Darkcloud and 6 Grimtotem Brutes, and return to Makaba Flathoof near the southeastern edge of Stonetalon.",
+      "objectives": [
+        {
+          "text": "Grundig Darkcloud slain",
+          "quantity": 1,
+          "type": "npc",
+          "id": 11858
+        },
+        {
+          "text": "Grimtotem Brute slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 11912
+        }
+      ],
+      "provided": [],
+      "description": "<name>, you've done a fine job killing Grimtotem. If you dare, Grundig Darkcloud and his personal band of brutes is by far the worst of the lot. He was the one who led the brutal attack on my village.\n\nYou will find him in Grimtotem Post a bit further up the path to the west. Kill him, and I will be forever grateful.",
+      "progress": "Have you killed Grundig Darkcloud and his personal band of Brutes?",
+      "completion": "Grundig Darkcloud is dead! <name>, I will always be grateful for what you've done here today.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "10s"
+      },
+      "xp": 1350,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 6548,
+            "name": "Avenge My Village",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6629,
+            "name": "Kill Grundig Darkcloud",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1062,
+      "name": "Goblin Invaders",
+      "basis": "page",
+      "level": 19,
+      "required_level": 13,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4049,
+        "name": "Seereth Stonebreak"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4049,
+        "name": "Seereth Stonebreak"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 13,
+        "orange": 15,
+        "yellow": 17,
+        "green": 22,
+        "grey": 26
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill 15 Venture Co. Loggers, then return to Seereth Stonebreak on the border of Stonetalon and the Barrens.",
+      "objectives": [
+        {
+          "text": "Venture Co. Logger slain",
+          "quantity": 15,
+          "type": "npc",
+          "id": 3989
+        }
+      ],
+      "provided": [],
+      "description": "The goblin-run Venture Company moved into the Stonetalon Mountains, chopping down trees and burning huge stretches of forest. The spirits of this place are nearly blind with pain and rage. We must stop the Venture Company!\n\nHead northwest, beyond the Greatwood Vale and into the Windshear Crag. You will find the goblins and their servants at work -- show them the Horde will not allow the exploitation of Stonetalon. Show them in the language they best understand...\n\nViolence.",
+      "progress": "The Greatwood Vale lies to the northwest, <name>. Go. Strike fear into those who would pillage this land!",
+      "completion": "Bravely done, <name>.\n\nWe may ultimately need the wisdom of tauren elders to calm the spirits of Stonetalon, but...\n\nRidding the Venture Company of its personnel is a good first move against them.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "11s"
+      },
+      "xp": 1450,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1061,
+            "name": "The Spirits of Stonetalon",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1062,
+            "name": "Goblin Invaders",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 6461,
+      "name": "Blood Feeders",
+      "basis": "page",
+      "level": 19,
+      "required_level": 13,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 12816,
+        "name": "Xen'Zilla"
+      },
+      "end": {
+        "type": "npc",
+        "id": 12816,
+        "name": "Xen'Zilla"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 13,
+        "orange": 15,
+        "yellow": 17,
+        "green": 22,
+        "grey": 26
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Xen'zilla at Malaka'Jin needs you to kill 10 Deepmoss Creepers and 7 Deepmoss Venomspitters.",
+      "objectives": [
+        {
+          "text": "Deepmoss Creeper slain",
+          "quantity": 10,
+          "type": "npc",
+          "id": 4005
+        },
+        {
+          "text": "Deepmoss Venomspitter slain",
+          "quantity": 7,
+          "type": "npc",
+          "id": 4007
+        }
+      ],
+      "provided": [],
+      "description": "We Trolls here at Malaka'Jin have prospered from the land; Stonetalon Mountain offers great hunting for us to live on.\n\nLately, we have attracted the wrong dinner guests... the spiders in these mountains have been raiding our camps at night looking to steal our hunt.\n\nIf you were to help us kill off these ghastly beasts we at Malaka'Jin would be in your debt. Spiders are everywhere in Stonetalon - just head north from here and you will see what I am talking about.",
+      "progress": "Hey mon, have you slain the hairy blood feeders? I fear none here in Stonetalon but I don't go walking around here at night... if you know what I mean mon!\n\nAs long as I stay off their dinner plate then all is well.\n\nGood luck to you, <class>!",
+      "completion": "Sweet, mon! Good news, perhaps we will have fewer unwanted dinner guests tonight.\n\nMany thanks, <name>. We are forever in your debt.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "11s"
+      },
+      "xp": 1450,
+      "reputation": [
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 6542,
+      "name": "Report to Kadrak",
+      "basis": "page",
+      "level": 19,
+      "required_level": 17,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11821,
+        "name": "Darn Talongrip"
+      },
+      "end": {
+        "type": "npc",
+        "id": 8582,
+        "name": "Kadrak"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 17,
+        "green": 22,
+        "grey": 26
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Report to Kadrak at the watch tower in northern Barrens.",
+      "objectives": [],
+      "provided": [],
+      "description": "Have you ever been to Ashenvale, to the north? The horde has recently set up an outpost on the Zoram Strand there, and we can always use some new recruits to help defend our new fronts.\n\nIf you think you are up to it, see Kadrak in the northern Barrens, at the watch tower. He is heading up the Ashenvale campaign and can give you further orders.",
+      "progress": null,
+      "completion": "Ashenvale is a divided land, but our most recent efforts have been very successful. We not only have an outpost at the Zoram Strand, but another just north of here called Splintertree.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 150,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 6541,
+            "name": "Report to Kadrak",
+            "side": null
+          },
+          {
+            "quest_id": 6542,
+            "name": "Report to Kadrak",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 6543,
+            "name": "The Warsong Reports",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 6481,
+      "name": "Earthen Arise",
+      "basis": "page",
+      "level": 20,
+      "required_level": 14,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": "Elite",
+      "start": {
+        "type": "npc",
+        "id": 11861,
+        "name": "Mor'rogal"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11861,
+        "name": "Mor'rogal"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 14,
+        "orange": 16,
+        "yellow": 18,
+        "green": 23,
+        "grey": 27
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Open the Resonite cask with the Enchanted Resonite Crystal, and then slay Goggeroc. Return to Mor'rogal with the news and Enchanted Resonite Crystal.",
+      "objectives": [
+        {
+          "text": "Goggeroc slain",
+          "quantity": 1,
+          "type": "npc",
+          "id": 11920
+        },
+        {
+          "text": "Enchanted Resonite Crystal (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 16603
+        }
+      ],
+      "provided": [],
+      "description": "You have uncovered a dark threat to the land, <class>. The Resonite cask you have found in that cave houses a slumbering Earthen by the name of Goggeroc.\n\nI have changed the mixture of the Resonite crystals that you gathered with my shamanistic powers. Take the enchanted Resonite crystal and smash open the Resonite cask, which houses the Earthen.\n\nWhen awakened, Goggeroc will be weakened... Slay him, <name>!",
+      "progress": "I fear if we do not dispose of this threat immediately, all of Stonetalon will be lost. The might of an Earthen can not be matched by any means. When awakened, Goggeroc will be weak from his long slumber, this will be the opportunity that you must take advantage of... go now <name>!",
+      "completion": "You bear good news, <class>! I fear the possibilities of what an Earthen would mean to Kalimdor.\n\nSlaying Goggeroc was a task for no one less than a hero. You have done well; all of Stonetalon and Kalimdor are indebted to you, noble <class>.\n\nAccept this as your reward most honored one.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 16981,
+            "name": "Owlbeard Bracers",
+            "icon": "inv_bracer_10",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 1306,
+            "name": "Wolfmane Wristguards",
+            "icon": "inv_bracer_04",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 270010,
+            "name": "Raptorcrest Bracers",
+            "icon": "inv_bracer_03",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1550,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1071,
+      "name": "A Gnome's Respite",
+      "basis": "page",
+      "level": 21,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4077,
+        "name": "Gaxim Rustfizzle"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4077,
+        "name": "Gaxim Rustfizzle"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 17,
+        "yellow": 19,
+        "green": 24,
+        "grey": 28
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill 10 Venture Co. Loggers, and 10 Venture Co. Deforesters and return to Gaxim Rustfizzle in Stonetalon.",
+      "objectives": [
+        {
+          "text": "Venture Co. Logger slain",
+          "quantity": 10,
+          "type": "npc",
+          "id": 3989
+        },
+        {
+          "text": "Venture Co. Deforester slain",
+          "quantity": 10,
+          "type": "npc",
+          "id": 3991
+        }
+      ],
+      "provided": [],
+      "description": "You see, <name>, I'm a member of the Enlightened Assembly of Arcanology, Alchemy and Engineering Sciences, and it's my goal... nay, my DUTY! to show the night elves that a blend of magic, mixtures, and mechanisms can help save their forests.\n\nBut it's a hard fought war, and the goblins reproduce like rabbits it seems. I haven't even had time to build my newest inventions!\n\nI need some time to plan and organize. But to do that, I need your help keeping the goblins at bay in Windshear Crag to the east...",
+      "progress": "How goes the battle on your end, <name>?",
+      "completion": "Thanks so much for your help, <name>. You're actually back just in time.\n\nI think I've got a perfect plan... explosives. No, that's not the plan, but it's part of the plan.\n\nSee, I've been using high explosives--don't worry, they're not as dangerous as everyone thinks--to scare the goblins back a bit. I can herd 'em pretty good with a few key detonations along the mountains' edges, but I've been low on supplies now for a few days...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1650,
+      "reputation": [
+        {
+          "faction_id": 54,
+          "faction": "Gnomeregan Exiles",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1070,
+            "name": "On Guard in Stonetalon",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1085,
+            "name": "On Guard in Stonetalon",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1071,
+            "name": "A Gnome's Respite",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1072,
+      "name": "An Old Colleague",
+      "basis": "page",
+      "level": 21,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4077,
+        "name": "Gaxim Rustfizzle"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4081,
+        "name": "Lomac Gearstrip"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 17,
+        "yellow": 19,
+        "green": 24,
+        "grey": 28
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak to Lomac Gearstrip in Ironforge.",
+      "objectives": [],
+      "provided": [],
+      "description": "The device I'm thinking about is my most advanced version to date. But we'll need a special potion if it's to work. I'm thinking we might as well get the good stuff since this mission could be your last.\n\nAnd for that, we're going to need some potent explosives: Nitromirglyceronium.\n\nThe only person who can make NG-5 is an old friend of mine: Lomac Gearstrip. Look for him in Tinker Town.\n\nYou talk him into making us some NG-5, I'll get to work on placement for my devices.",
+      "progress": null,
+      "completion": "Ahhh.... Gaxim sent you, huh? How do I know you're not lying to me?! Hmm? Hmm...?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 830,
+      "reputation": [
+        {
+          "faction_id": 54,
+          "faction": "Gnomeregan Exiles",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1072,
+            "name": "An Old Colleague",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1073,
+            "name": "Ineptitude + Chemicals = Fun",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1074,
+            "name": "Ineptitude + Chemicals = Fun",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1073,
+      "name": "Ineptitude + Chemicals = Fun",
+      "basis": "page",
+      "level": 21,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4081,
+        "name": "Lomac Gearstrip"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4081,
+        "name": "Lomac Gearstrip"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 17,
+        "yellow": 19,
+        "green": 24,
+        "grey": 28
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 4 Minor Mana Potions and 2 Elixirs of Minor Fortitude to Lomac Gearstrip in Ironforge.",
+      "objectives": [
+        {
+          "text": "Minor Mana Potion",
+          "quantity": 4,
+          "type": "item",
+          "id": 2455
+        },
+        {
+          "text": "Elixir of Minor Fortitude",
+          "quantity": 2,
+          "type": "item",
+          "id": 2458
+        }
+      ],
+      "provided": [],
+      "description": "Hahaha... you need Nitromirglyceronium to stop goblins from destroying a forest?!\n\nI don't care if you know Gaxim or not... I'll give you the stuff just to see you or them explode into itty bitty pieces.\n\nThere's a problem though: I'm all out.\n\nBut I'll tell you what, you bring me the correct potions, and I'll make some up for you right away.\n\nThe least you can do is prove you've got some skill as an alchemist before I just give you a sample of my greatest creation.",
+      "progress": "I can't make any Nitromirglyceronium if I don't have the potions... they're vital to its creation.",
+      "completion": "This'll do nicely.\n\nIf I didn't know better, stranger, I'd say you knew somethin' about alchemy. Good, good... the world's not all about swords and sorcery, you know?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1650,
+      "reputation": [
+        {
+          "faction_id": 54,
+          "faction": "Gnomeregan Exiles",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1072,
+            "name": "An Old Colleague",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1073,
+            "name": "Ineptitude + Chemicals = Fun",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1074,
+            "name": "Ineptitude + Chemicals = Fun",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1074,
+      "name": "Ineptitude + Chemicals = Fun",
+      "basis": "page",
+      "level": 21,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4081,
+        "name": "Lomac Gearstrip"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4077,
+        "name": "Gaxim Rustfizzle"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 17,
+        "yellow": 19,
+        "green": 24,
+        "grey": 28
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Nitromirglyceronium back to Gaxim Rustfizzle in Stonetalon.",
+      "objectives": [
+        {
+          "text": "NG-5 (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5732
+        }
+      ],
+      "provided": [],
+      "description": "Here you go, stranger. Take heed with it though... it's volatile stuff.\n\nIf you're really a friend of Gaxim's, then tell him I say hello. If you're not, then have fun blowin' yerself up.",
+      "progress": "Ah, goodie goodie, you're back.",
+      "completion": "Your task has been done flawlessly, <name>.\n\nNG-5 is the unequivocal component in the recipe to ignite the wagons of dynamite.\n\nWhat? Yes, dynamite... wagons of it. It's the perfect distraction, I tell you... just wait and see.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 830,
+      "reputation": [
+        {
+          "faction_id": 54,
+          "faction": "Gnomeregan Exiles",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1072,
+            "name": "An Old Colleague",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1073,
+            "name": "Ineptitude + Chemicals = Fun",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1074,
+            "name": "Ineptitude + Chemicals = Fun",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1075,
+      "name": "A Scroll from Mauren",
+      "basis": "page",
+      "level": 21,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4077,
+        "name": "Gaxim Rustfizzle"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4078,
+        "name": "Collin Mauren"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 17,
+        "yellow": 19,
+        "green": 24,
+        "grey": 28
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Find Collin Mauren in Stormwind.",
+      "objectives": [],
+      "provided": [],
+      "description": "Okay, now for the remote detonation part of my plan... oh, I haven't explained that yet, have I?\n\nOkay, so the short of it is this: with a little magic, I can make it so the explosives go off while you're not around. I'm putting together a device that'll allow you to push just one button and have the NG-5 explode when you're ready.\n\nBut I need a spell from a friend in Stormwind--Collin Mauren is his name. You can find him in the mage quarter there. He's human, so he shouldn't be hard to miss.",
+      "progress": null,
+      "completion": "Now, this spell you need; one that will allow you detonate explosives from a distance... hmmm.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 830,
+      "reputation": [
+        {
+          "faction_id": 54,
+          "faction": "Gnomeregan Exiles",
+          "amount": 50
+        },
+        {
+          "faction_id": 72,
+          "faction": "Stormwind",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1075,
+            "name": "A Scroll from Mauren",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1076,
+            "name": "Devils in Westfall",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1076,
+      "name": "Devils in Westfall",
+      "basis": "page",
+      "level": 21,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4078,
+        "name": "Collin Mauren"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4078,
+        "name": "Collin Mauren"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 17,
+        "yellow": 19,
+        "green": 24,
+        "grey": 28
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Dust Devil Debris to Collin Mauren in Stormwind.",
+      "objectives": [
+        {
+          "text": "Dust Devil Debris",
+          "quantity": 1,
+          "type": "item",
+          "id": 5669
+        }
+      ],
+      "provided": [],
+      "description": "Ah, I think I have it. A messaging spell... I believe that's the effect he's looking for.\n\nI'll have to create a scroll with the spell impressed upon it. To do that I'll need debris from a dust devil.\n\nWhile I gather the rest of the components, why don't you head to Westfall and find one of the foul creatures? They are dangerous, but I'm sure it's nothing you can't handle if you're willing to subject yourself to one of Gaxim's experiments.\n\nI'll be here when you return.",
+      "progress": "Hello, <name>. Have you found the component I need?",
+      "completion": "Allow me just a few moments and I shall have your scroll ready for you.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1650,
+      "reputation": [
+        {
+          "faction_id": 54,
+          "faction": "Gnomeregan Exiles",
+          "amount": 100
+        },
+        {
+          "faction_id": 72,
+          "faction": "Stormwind",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1075,
+            "name": "A Scroll from Mauren",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1076,
+            "name": "Devils in Westfall",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1077,
+      "name": "Special Delivery for Gaxim",
+      "basis": "page",
+      "level": 21,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4078,
+        "name": "Collin Mauren"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4077,
+        "name": "Gaxim Rustfizzle"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 17,
+        "yellow": 19,
+        "green": 24,
+        "grey": 28
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Scroll of Messaging to Gaxim Rustfizzle in Stonetalon.",
+      "objectives": [
+        {
+          "text": "Scroll of Messaging (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5731
+        }
+      ],
+      "provided": [],
+      "description": "Here you are, <name>. This should do nicely.\n\nPlease give my regards to Gaxim when next you see him. I look forward to hearing about this adventure when it sees its completion.\n\nFare well.",
+      "progress": "Haha! you're back! Do you have it? Do you have the spell?",
+      "completion": "This is perfect, <name>! Well done.\n\nThis spell, mixed with the NG-5, shall make the perfect remote explosive.\n\nWe'll be able to create the perfect distraction for you so you can sneak in and steal the Venture Co.'s letters and engineering plans.\n\nThat will surely slow down their deforestation acts.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 830,
+      "reputation": [
+        {
+          "faction_id": 54,
+          "faction": "Gnomeregan Exiles",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1093,
+      "name": "Super Reaper 6000",
+      "basis": "page",
+      "level": 21,
+      "required_level": 16,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4201,
+        "name": "Ziz Fizziks"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4201,
+        "name": "Ziz Fizziks"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 16,
+        "orange": 17,
+        "yellow": 19,
+        "green": 24,
+        "grey": 28
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Get the Super Reaper 6000 Blueprints for Ziz Fizziks in the Stonetalon Mountains.",
+      "objectives": [
+        {
+          "text": "Super Reaper 6000 Blueprints",
+          "quantity": 1,
+          "type": "item",
+          "id": 5734
+        }
+      ],
+      "provided": [],
+      "description": "Terrible what the Venture Company has done here, eh? What were they thinking? Goblin company hiring a gnome!\n\nLucky for me, Sputtervalve knows a genius when he sees one. Hired me just after I'd been kicked out!\n\nTells me they built some enormous woodcutting machine, and Sput' wants me to steal the plans for him. Unfortunately, Gerenzo--bloody gnome--wants me dead on sight... maybe you could steal the plans for me? You should be able to find them on one of their operators.",
+      "progress": "Did you find those plans? I'm eager to impress the new boss. Hopefully, once he's convinced of my loyalty--well, as much as he can be convinced... goblin's honor, you know?--he'll feel comfortable making use of my rather impressive genius.",
+      "completion": "Hey, is that what I think it is? Great!\n\nNow, let's see. Ugh... how am I supposed to understand this stuff... can't figure out the way gnomes think. Lemme tell you, I'm surprised they could build the wheel, let alone those flying machines they like so much.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1650,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1483,
+            "name": "Ziz Fizziks",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1093,
+            "name": "Super Reaper 6000",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1094,
+            "name": "Further Instructions",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1095,
+            "name": "Further Instructions",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1096,
+            "name": "Gerenzo Wrenchwhistle",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1094,
+      "name": "Further Instructions",
+      "basis": "page",
+      "level": 21,
+      "required_level": 16,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4201,
+        "name": "Ziz Fizziks"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3442,
+        "name": "Sputtervalve"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 16,
+        "orange": 17,
+        "yellow": 19,
+        "green": 24,
+        "grey": 28
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Deliver the Sealed Envelope to Sputtervalve in the Barrens.",
+      "objectives": [
+        {
+          "text": "Sealed Envelope (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5735
+        }
+      ],
+      "provided": [],
+      "description": "This envelope has all the information I was able to snatch as they booted me out the door... Venture Company internal documents, some manuals, technical things... Oh, and of course the Super Reaper 6000 blueprints.\n\nSputtervalve has taken up residence at Ratchet in the Barrens. Shouldn't have much trouble finding him, he's a little green fellow.",
+      "progress": "Hello there! How can I help you?",
+      "completion": "Fizziks, eh? Can't say I trust him, but this information seems good enough. What I wouldn't give to have the Venture Company out of my hair.\n\nThey do come up with some good machines though... I can't deny that we've benefited from using some of the improvements they've devised.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 830,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1483,
+            "name": "Ziz Fizziks",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1093,
+            "name": "Super Reaper 6000",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1094,
+            "name": "Further Instructions",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1095,
+            "name": "Further Instructions",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1096,
+            "name": "Gerenzo Wrenchwhistle",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 6284,
+      "name": "Arachnophobia",
+      "basis": "page",
+      "level": 21,
+      "required_level": 15,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": "Elite",
+      "start": {
+        "type": "object",
+        "id": 177904,
+        "name": "Wanted Poster: Besseleth"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11860,
+        "name": "Maggran Earthbinder"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 15,
+        "orange": 17,
+        "yellow": 19,
+        "green": 24,
+        "grey": 28
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill Besseleth and bring Besseleth's Fang to Maggran at Sun Rock Retreat.",
+      "objectives": [
+        {
+          "text": "Besseleth's Fang",
+          "quantity": 1,
+          "type": "item",
+          "id": 16192
+        }
+      ],
+      "provided": [],
+      "description": "Warning: Proceed into Sishir Canyon west of here at your own risk.\n\nBesseleth and her eight-legged children of the forest have claimed this canyon as their webbed lair.\n\nMaggran Earthbinder in Sun Rock Retreat has placed a bounty on Besseleth. Slay her and bring proof of your killing to Maggran; there you will receive your reward for disposing this eight-legged menace.",
+      "progress": "Besseleth is a ruthless predator... I fear for those that travel Webwinder Path at night. It's then that she and her children prey upon innocent travelers. I myself fell prey to her two-foot fang of death, but luckily I was able to fend her off and get to safety. I would give anything to see that monster destroyed.",
+      "completion": "Good hunting, <name>! Besseleth is an old predator in these parts... I will miss her not. Take this reward as a token for being the forest champion.\n\nPerhaps now many more will travel to Sun Rock Retreat without fearing what lurks in the dark.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 16891,
+            "name": "Claystone Shortsword",
+            "icon": "inv_sword_23",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 16894,
+            "name": "Clear Crystal Rod",
+            "icon": "inv_wand_07",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1650,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1079,
+      "name": "Covert Ops - Alpha",
+      "basis": "page",
+      "level": 22,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4077,
+        "name": "Gaxim Rustfizzle"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4077,
+        "name": "Gaxim Rustfizzle"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 17,
+        "orange": 18,
+        "yellow": 20,
+        "green": 25,
+        "grey": 29
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Retrieve the Venture Co.'s Engineering Plans from the lumber mill in Windshear Crag.",
+      "objectives": [
+        {
+          "text": "Venture Co. Engineering Plans",
+          "quantity": 1,
+          "type": "item",
+          "id": 5718
+        },
+        {
+          "text": "NG-5 Explosives (Blue)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5695
+        },
+        {
+          "text": "NG-5 Explosives (Red)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5694
+        },
+        {
+          "text": "Remote Detonator (Blue)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5693
+        },
+        {
+          "text": "Remote Detonator (Red)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5692
+        }
+      ],
+      "provided": [
+        {
+          "text": "Covert Ops Pack",
+          "quantity": 1,
+          "type": "item",
+          "id": 5738
+        }
+      ],
+      "description": "This is it, <name>. Pay close attention. The devices are done, and ready to be used.\n\nTake these pages--they'll explain more about the detonators and explosives, and where you should place them.\n\nRemember, the success of your mission doesn't depend on how much destruction you cause. Plan Alpha's success depends on you bringing back the Venture Co.'s engineering plans from inside the lumber mill south of Cragpool Lake.",
+      "progress": "Did you get the plans, <name>?",
+      "completion": "Truly amazing! This is a huge blow to the Venture Co.\n\nWe'll be able to find weaknesses in their machines and also incorporate their designs into our own creations. This is a wonderful day, indeed.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2200,
+      "reputation": [
+        {
+          "faction_id": 54,
+          "faction": "Gnomeregan Exiles",
+          "amount": 150
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1080,
+      "name": "Covert Ops - Beta",
+      "basis": "page",
+      "level": 22,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4077,
+        "name": "Gaxim Rustfizzle"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4077,
+        "name": "Gaxim Rustfizzle"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 17,
+        "orange": 18,
+        "yellow": 20,
+        "green": 25,
+        "grey": 29
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Retrieve the Venture Co. Letters from Windshear Mine at the east end of Windshear Crag.",
+      "objectives": [
+        {
+          "text": "Venture Co. Letters",
+          "quantity": 1,
+          "type": "item",
+          "id": 5717
+        }
+      ],
+      "provided": [
+        {
+          "text": "Covert Ops Pack",
+          "quantity": 1,
+          "type": "item",
+          "id": 5738
+        }
+      ],
+      "description": "Plan Beta's just like Plan Alpha, <name>.\n\nWe cause a distraction and then steal their precious letters.\n\nThe key is to get their letters... remember that.\n\nThe pages I gave you already will tell you where to plant the explosives. Just get back here alive and with those letters....",
+      "progress": "How'd it go, <name>?",
+      "completion": "Incredible, <name>! Kaela and the Sentinels will be so happy. With your skill and my creations, we're unstoppable.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2200,
+      "reputation": [
+        {
+          "faction_id": 54,
+          "faction": "Gnomeregan Exiles",
+          "amount": 150
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1082,
+      "name": "Update for Sentinel Thenysil",
+      "basis": "page",
+      "level": 22,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4080,
+        "name": "Kaela Shadowspear"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4079,
+        "name": "Sentinel Thenysil"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 17,
+        "orange": 18,
+        "yellow": 20,
+        "green": 25,
+        "grey": 29
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Return to Sentinel Thenysil in Ashenvale.",
+      "objectives": [],
+      "provided": [],
+      "description": "<name>, you have done a great deed by lending a hand here.\n\nThe Sentinels of Ashenvale will reward you well if you informed them that Gaxim and I are alive. Tell them we are well on our way to stopping the Venture Co. and healing the lands.\n\nFind Tara Thenysil in Astranaar; she will be pleased to see you've returned with good news.",
+      "progress": null,
+      "completion": "Thank you, <name>. You have done a service to the Sentinels.\n\nI'm glad to see Kaela... and even Gaxim, are doing well.\n\nYou've earned our appreciation.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 870,
+      "reputation": [
+        {
+          "faction_id": 69,
+          "faction": "Darnassus",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1082,
+            "name": "Update for Sentinel Thenysil",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1081,
+            "name": "Reception from Tyrande",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1090,
+      "name": "Gerenzo's Orders",
+      "basis": "page",
+      "level": 22,
+      "required_level": 17,
+      "side": "Both",
+      "side_label": "Both",
+      "type": "Elite",
+      "start": {
+        "type": "npc",
+        "id": 4276,
+        "name": "Piznik"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4276,
+        "name": "Piznik"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 17,
+        "orange": 18,
+        "yellow": 20,
+        "green": 25,
+        "grey": 29
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Get the mysterious ore from Piznik after he finishes mining it.",
+      "objectives": [
+        {
+          "text": "Keep Piznik safe while he mines the mysterious ore",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "You know, I was once the second most important person here at this site. That all changed when Gerenzo took over. Fired my boss, Ziz Fizziks, and sent me down to work in the mines. Ziz told me to stay here and gather information, though. His new boss will pay us well if we can find out what Gerenzo's plans are.\n\nAnyways, what I do know is that Gerenzo has ordered large amounts of this gold-green ore to be mined. I can get you a sample to bring to Ziz, but you'll have to watch for patrols while I get it.",
+      "progress": "Look out, there are patrols and workers constantly walking by this area, and it might get ugly if we get caught.",
+      "completion": "Thanks, <name>. It was looking a little dicey there for a second and we've probably drawn far too much attention to ourselves.\n\nThe important part is that we have the ore sample, though, and we should get it to Ziz as soon as possible.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "14s"
+      },
+      "xp": 2200,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 150
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1090,
+            "name": "Gerenzo's Orders",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1092,
+            "name": "Gerenzo's Orders",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1091,
+      "name": "Kaela's Update",
+      "basis": "page",
+      "level": 22,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4077,
+        "name": "Gaxim Rustfizzle"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4080,
+        "name": "Kaela Shadowspear"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 17,
+        "orange": 18,
+        "yellow": 20,
+        "green": 25,
+        "grey": 29
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Venture Co. Letters to Kaela Shadowspear.",
+      "objectives": [
+        {
+          "text": "Venture Co. Letters (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5717
+        }
+      ],
+      "provided": [],
+      "description": "<name>, take these letters to Kaela. I'm sure she'll want to know about this. Or at least the Sentinels will.\n\nMake sure you tell her how successful we were and how we couldn't have done it without a little bit of magic.",
+      "progress": "Yes, <name>? What can I do for you?",
+      "completion": "This is interesting indeed.\n\nYou and Gaxim have done very well, <name>. Thank you.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 180,
+      "reputation": [
+        {
+          "faction_id": 69,
+          "faction": "Darnassus",
+          "amount": 25
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1092,
+      "name": "Gerenzo's Orders",
+      "basis": "page",
+      "level": 22,
+      "required_level": 17,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4276,
+        "name": "Piznik"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4201,
+        "name": "Ziz Fizziks"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 17,
+        "orange": 18,
+        "yellow": 20,
+        "green": 25,
+        "grey": 29
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Deliver the Unidentified Ore to Ziz Fizziks in the Stonetalon Mountains.",
+      "objectives": [
+        {
+          "text": "Unidentified Ore (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 5733
+        }
+      ],
+      "provided": [],
+      "description": "I guess I'd better think about getting out of here, also. It won't take long for word of what happened here to spread to the higher ups, and I'm sure they wouldn't take too kindly to meeting me again.\n\nI'll sneak out and meet with Ziz. Hopefully, he'll be able to find me a new job!\n\nI'll try and clean up this mess a little, but you should take the ore sample to Ziz right away. He told me that he'd set up camp somewhere on the western side of Windshear Crag. Good luck.",
+      "progress": "Something I can help you with?",
+      "completion": "Ahhh, I knew that I did the right thing by telling Piznik to stay behind. I'm sure the engineers in Undermine will be most interested to look at this...\n\nOf course I'll want to keep a little piece for myself, but what they don't know won't hurt them, yes?",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 6666,
+            "name": "Dredge Boots",
+            "icon": "inv_boots_01",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1300,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1090,
+            "name": "Gerenzo's Orders",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1092,
+            "name": "Gerenzo's Orders",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1068,
+      "name": "Shredding Machines",
+      "basis": "page",
+      "level": 23,
+      "required_level": 13,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4049,
+        "name": "Seereth Stonebreak"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4049,
+        "name": "Seereth Stonebreak"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 13,
+        "orange": 19,
+        "yellow": 21,
+        "green": 26,
+        "grey": 31
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill the shredders XT:4 and XT:9, then return to Seereth Stonebreak at the border of the Stonetalon Mountains and the Barrens.",
+      "objectives": [
+        {
+          "text": "XT:4 slain",
+          "quantity": 1,
+          "type": "npc",
+          "id": 4073
+        },
+        {
+          "text": "XT:9 slain",
+          "quantity": 1,
+          "type": "npc",
+          "id": 4074
+        }
+      ],
+      "provided": [],
+      "description": "There is a relation to the spiritual magic of shamans and the natural magic of druids. This is why we shamans can hear the plea of the spirits of Stonetalon. Many of their whisperings are lost to me, but one message, one vision, is clear...\n\nI saw a vision of two man-shaped machines in Windshear Crag, northwest of Greatwood Vale, felling trees with impossible speed. These metal beasts must be stopped!\n\nIn my vision, the machines were marked with strange symbols:\n\nXT:4 and XT:9.",
+      "progress": "The tree spirits wail at the loss of their brethren, <name>. You must destroy the shredders XT:4 and XT:9, or I fear Stonetalon will never be healed.",
+      "completion": "The destruction of the machines XT:4 and XT:9 have soothed many of the spirits of Stonetalon, <name>. With their loss, let us hope the Venture Company will remove itself from these mountains.\n\nFor if they do not, then I fear the atrocities this place has suffered will pale to what lies ahead.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "15s"
+      },
+      "xp": 1850,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 6301,
+      "name": "Cycle of Rebirth",
+      "basis": "page",
+      "level": 23,
+      "required_level": 17,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11864,
+        "name": "Tammra Windfield"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11864,
+        "name": "Tammra Windfield"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 17,
+        "orange": 19,
+        "yellow": 21,
+        "green": 26,
+        "grey": 31
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Tammra Windfield at Sun Rock Retreat wants you to gather 10 Gaea Seeds.",
+      "objectives": [
+        {
+          "text": "Gaea Seed",
+          "quantity": 10,
+          "type": "item",
+          "id": 16205
+        }
+      ],
+      "provided": [],
+      "description": "Industrial greed and continuous war have wrecked the lands of Stonetalon. Only the blessings of the Earthmother can cure such injury.\n\n<name>, I will require you to seek a special seed, the Gaea seed. They are only found here in Stonetalon Mountain, north of Sun Rock Retreat at Mirkfallon Lake, near the water's edge.\n\nOnce you bring me the seeds I will imbue them with shamanistic power to speed their growth.",
+      "progress": "The continuous destruction caused by war and those that seek a profit from lumber pains me deeply. To aid the cycle of rebirth and replenish the lands, I need Gaea seeds. Do you have them, <class>?",
+      "completion": "Ah, <name>, you have the Gaea seeds. Watch and see how the blessing of the Earthmother can cause even these small kernels of life to bloom and flourish.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "12s"
+      },
+      "xp": 1400,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 79980,
+      "name": "Scramble",
+      "basis": "page",
+      "level": 24,
+      "required_level": 14,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "object",
+        "id": 424005,
+        "name": "Pocket Litter"
+      },
+      "end": {
+        "type": "object",
+        "id": 424012,
+        "name": "Mound of Dirt"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 14,
+        "orange": 20,
+        "yellow": 22,
+        "green": 27,
+        "grey": 32
+      },
+      "patch": "1.60.1.69913",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Find what awaits you.",
+      "objectives": [],
+      "provided": [],
+      "description": "\"Not so bad, eh? Since you're reading this, it means my stash is still there. Take a hundred paces due north and don't break your ankles going down the steep cliffside. There should be enough to keep you going.\"",
+      "progress": null,
+      "completion": "You pull a messenger bag out of the ground. Stuffed in with the supplies is a dirty parchment.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 3463,
+            "name": "Silver Star",
+            "icon": "ability_upgrademoonglaive",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 217314,
+            "name": "Moonsight Rifle",
+            "icon": "inv_weapon_rifle_06",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 217315,
+            "name": "Precision Bow",
+            "icon": "inv_weapon_bow_04",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [
+          {
+            "type": "item",
+            "id": 3464,
+            "name": "Feathered Arrow",
+            "icon": "inv_ammo_arrow_02",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 3465,
+            "name": "Exploding Shot",
+            "icon": "inv_ammo_bullet_02",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 216619,
+            "name": "Student Fodder",
+            "icon": "inv_misc_food_pinenut",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": "35s"
+      },
+      "xp": 200,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 79007,
+            "name": "... and that note you found",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 79008,
+            "name": "... and that note you found",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 79192,
+            "name": "Stepping Stones",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 79980,
+            "name": "Scramble",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 79974,
+            "name": "Wet Job",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 79975,
+            "name": "Eagle's Fist",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 79976,
+            "name": "This Must Be The Place",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 86574,
+      "name": "Stonetalon Supply Run",
+      "basis": "page",
+      "level": 24,
+      "required_level": 20,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 268925,
+        "name": "Night Elf Courier"
+      },
+      "end": {
+        "type": "npc",
+        "id": 16458,
+        "name": "Innkeeper Faralia"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 20,
+        "yellow": 22,
+        "green": 27,
+        "grey": 32
+      },
+      "patch": "1.60.1.69913",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Collect 6 Stonetalon Supplies from Pridewing Wyverns and deliver them to Innkeeper Faralia.",
+      "objectives": [
+        {
+          "text": "Stonetalon Supply Bundle",
+          "quantity": 6,
+          "type": "item",
+          "id": 277917
+        },
+        {
+          "text": "Stonetalon Supply Satchel (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 277915
+        }
+      ],
+      "provided": [],
+      "description": "<The unfortunate body here bears the marks of many strikes from the Pridewing wyverns. The pack nearby is rumpled and discarded, with its contents missing, and only a small note clutched in the courier's hand to indicate what was lost: a shipment meant for Innkeeper Faralia at Stonetalon Peak.>\n\n<The wyverns have probably carried off the supply bundles to line their nests.>",
+      "progress": "I hope that shipment comes soon...",
+      "completion": "You found the missing shipment?\n\nOh, I had no idea that the courier didn't make it. That is... a tragic state of affairs...\n\nI'll put these supplies to good use to make sure that her loss is not in vain.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 281251,
+            "name": "Courier's Wristguards",
+            "icon": "inv_bracer_02",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": "17s"
+      },
+      "xp": 1950,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1087,
+      "name": "Cenarius' Legacy",
+      "basis": "page",
+      "level": 25,
+      "required_level": 20,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4198,
+        "name": "Braelyn Firehand"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4198,
+        "name": "Braelyn Firehand"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 20,
+        "orange": 21,
+        "yellow": 23,
+        "green": 28,
+        "grey": 33
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill 4 Sons of Cenarius, 4 Daughters of Cenarius and 4 Cenarion Botanists for Braelyn Firehand near Sun Rock Retreat.",
+      "objectives": [
+        {
+          "text": "Son of Cenarius slain",
+          "quantity": 4,
+          "type": "npc",
+          "id": 4057
+        },
+        {
+          "text": "Daughter of Cenarius slain",
+          "quantity": 4,
+          "type": "npc",
+          "id": 4053
+        },
+        {
+          "text": "Cenarion Botanist slain",
+          "quantity": 4,
+          "type": "npc",
+          "id": 4051
+        }
+      ],
+      "provided": [],
+      "description": "You cannot imagine the hatred I possess for this wretched land. The ilk of Cenarius and the kaldorei druids at the peak employ their pathetic powers to stifle the flow of magic, even so far south of their pathetic holdings... their beloved forests.\n\nWould that I could return to Jaedenar and exult in the flow of magic, but my master will not allow me to return until my work is done.\n\nI have no doubt you love the night elves and their allies as little as I. Aid me, and both our ends might be satisfied.",
+      "progress": "Here, channeling magic is like drawing water from a well with a bucket full of holes.",
+      "completion": "Already I can feel it... yes... power so sweet... the rushing flood. The kaldorei are foolish to spurn the gifts of this world, to reject the coursing of magic as it flows singing through your veins.\n\nWhat a pale mockery life is without its burning embrace!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1500,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1087,
+            "name": "Cenarius' Legacy",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1088,
+            "name": "Ordanus",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1089,
+            "name": "The Den",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 6381,
+      "name": "New Life",
+      "basis": "page",
+      "level": 25,
+      "required_level": 17,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11864,
+        "name": "Tammra Windfield"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11864,
+        "name": "Tammra Windfield"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 17,
+        "orange": 21,
+        "yellow": 23,
+        "green": 28,
+        "grey": 33
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Plant 10 Gaea Seeds in Gaea Dirt Mounds, and then return the remaining Enchanted Gaea Seeds to Tammra at Sun Rock Retreat.",
+      "objectives": [
+        {
+          "text": "Gaea seed planted",
+          "quantity": 10,
+          "type": "object",
+          "id": 177929
+        },
+        {
+          "text": "Enchanted Gaea Seeds (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 16208
+        }
+      ],
+      "provided": [],
+      "description": "As you have seen, <class>, though the land is in pain, the cycle of life is a powerful thing. Now we must do our part help it along. You must plant these seeds at the center of the destruction, to the west, in the Charred Vale. Beware, for harpies and angry fire elementals still plague the scarred land.\n\n<name>, take these enchanted Gaea seeds and plant them in fertile mounds of soil. The cycle of life must go on!",
+      "progress": "These seeds you plant are strong, resisting corruption, and making a foothold for other life. They will grow and grow, first preventing corruption and healing the scarred land, and then one day, restoring Stonetalon to a lush forest, once again.\n\nHave you planted all of the Gaea seeds?",
+      "completion": "This is great victory for the land. In time, other things will come to pass: the Venture Co. will pack up their buzz saws and axes, the angry fire spirits will calm, and the harpies will be pushed out by the land.\n\nOnly then <name>, will Stonetalon be truly at peace.\n\nYou have done well <class>; take one of these items as thanks for the new life you have created here today.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 16985,
+            "name": "Windseeker Boots",
+            "icon": "inv_boots_05",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 16986,
+            "name": "Sandspire Gloves",
+            "icon": "inv_gauntlets_09",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2000,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 6393,
+      "name": "Elemental War",
+      "basis": "page",
+      "level": 25,
+      "required_level": 19,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11862,
+        "name": "Tsunaman"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11862,
+        "name": "Tsunaman"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 19,
+        "orange": 21,
+        "yellow": 23,
+        "green": 28,
+        "grey": 33
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 10 Incendrites to Tsunaman at Sun Rock Retreat.",
+      "objectives": [
+        {
+          "text": "Incendrites",
+          "quantity": 10,
+          "type": "item",
+          "id": 16312
+        }
+      ],
+      "provided": [],
+      "description": "The Tribunal of the Tides has sent me to wage war on the fire elementals here in Stonetalon Mountain. Neptulon the Tidehunter, Lord of all water elementals, has taken a personal interest in seeing our fiery cousins extinguished.\n\n<name>, you can help me gain favor with the Tribunal by destroying the fire elementals in Charred Vale. When destroyed, the fire elementals leave Incendrites. Return these to me and be rewarded.",
+      "progress": "The Tribunal of the Tides grows impatient. They seek to end this war that has raged across all dimensions for eons. My brethren are anxious to hear news of the glorious victory over the hated fire elementals. Have you the Incendrites that I require?",
+      "completion": "The water spirits within me bubble with the excitement. <name>, you have given me a glorious victory to report to the Tribunal of the Tides.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "18s"
+      },
+      "xp": 2000,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1058,
+      "name": "Jin'Zil's Forest Magic",
+      "basis": "page",
+      "level": 26,
+      "required_level": 20,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3995,
+        "name": "Witch Doctor Jin'Zil"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3995,
+        "name": "Witch Doctor Jin'Zil"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 20,
+        "orange": 22,
+        "yellow": 24,
+        "green": 29,
+        "grey": 34
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Witch Doctor Jin'Zil at Malaka'jin wants 5 portions of Stonetalon Sap, 5 Twilight Whiskers, 30 Courser Eyes and a Fey Dragon Scale.",
+      "objectives": [
+        {
+          "text": "Stonetalon Sap",
+          "quantity": 5,
+          "type": "item",
+          "id": 5582
+        },
+        {
+          "text": "Twilight Whisker",
+          "quantity": 5,
+          "type": "item",
+          "id": 5584
+        },
+        {
+          "text": "Courser Eye",
+          "quantity": 30,
+          "type": "item",
+          "id": 5585
+        },
+        {
+          "text": "Fey Dragon Scale",
+          "quantity": 1,
+          "type": "item",
+          "id": 5583
+        }
+      ],
+      "provided": [],
+      "description": "So excited I am!\n\nThree little cages for three little elves! But what shall we do with our lovely tree-hugging friends? Why, let's give them a taste of... what do they call it... forest magic!\n\nI'll need a good mess of Stonetalon sap. From those horrid felines, bring me some twilight whiskers. This calls for plenty of courser eyes, of course -- can never have enough eyes. Oh, and lest we forget, a precious scale from a fey dragon.\n\nHurry to Stonetalon Peak, <name>, so I can brew some forest magic!",
+      "progress": "Look at our poor little elf friends. All caged up with no forest to frolic in!\n\nNow were you able to find me some sap? How about the whiskers from the twilight runners? Don't suppose you have that fey dragon scale on you?\n\nAnd eyes! I'll need so many eyes! You just can't mix up a fierce forest magic brew without a good helping of eyes!",
+      "completion": "Oh how happy these little woodland nymphs shall be! We'll make them feel right at home with this special concoction!",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 6664,
+            "name": "Voodoo Mantle",
+            "icon": "inv_shoulder_05",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 6665,
+            "name": "Hexed Bracers",
+            "icon": "inv_bracer_07",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2100,
+      "reputation": [
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1078,
+      "name": "Retrieval for Mauren",
+      "basis": "page",
+      "level": 26,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4078,
+        "name": "Collin Mauren"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4078,
+        "name": "Collin Mauren"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 17,
+        "orange": 22,
+        "yellow": 24,
+        "green": 29,
+        "grey": 34
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 8 Crystalized Scales to Collin Mauren in Stormwind.",
+      "objectives": [
+        {
+          "text": "Crystalized Scales",
+          "quantity": 8,
+          "type": "item",
+          "id": 5675
+        }
+      ],
+      "provided": [],
+      "description": "Travelers keep asking me about the Stonetalon Mountains. It seems to be a popular place for adventure--it doesn't matter if you're seeking wyvern, elementals, or you have business with the Venture Co.\n\nWithin the Charred Vale, deep in Stonetalon, there used to be a species of basilisks whose scales, when ground to dust, made a wonderful reagent for some spells I've created.\n\nIf those basilisks still live, I would love to have a few of their scales.\n\nTake your time, it is no rush, but I can pay well.",
+      "progress": "Hello again, <name>.\n\nHave you already returned from the Vale in Stonetalon with those scales?",
+      "completion": "This is perfect, <name>. Thank you greatly.\n\nPerhaps one day in the future I'll be able to help you as you have helped me.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 6677,
+            "name": "Spellcrafter Wand",
+            "icon": "inv_wand_05",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2100,
+      "reputation": [
+        {
+          "faction_id": 54,
+          "faction": "Gnomeregan Exiles",
+          "amount": 100
+        },
+        {
+          "faction_id": 72,
+          "faction": "Stormwind",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1083,
+      "name": "Enraged Spirits",
+      "basis": "page",
+      "level": 26,
+      "required_level": 20,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4080,
+        "name": "Kaela Shadowspear"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4080,
+        "name": "Kaela Shadowspear"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 20,
+        "orange": 22,
+        "yellow": 24,
+        "green": 29,
+        "grey": 34
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 8 Smoldering Embers from any of the fire elementals in the Charred Vale to Kaela Shadowspear in Stonetalon.",
+      "objectives": [
+        {
+          "text": "Smoldering Embers",
+          "quantity": 8,
+          "type": "item",
+          "id": 5659
+        }
+      ],
+      "provided": [],
+      "description": "I'm unsure what the Venture Co. did to the Vale, but it's obvious they were overpowered by the creatures there.\n\nThey set the forest aflame, and used their inventions of destruction to decimate as much of the Vale as possible.\n\nBut in their ignorance they also released something else: burning spirits, elementals of flame, stone and rage.\n\nThe land has no chance to see Elune's smile while these creatures roam free.\n\nBring me their smoldering embers to show you've reduced their numbers.",
+      "progress": "The first time I saw the Charred Vale I almost wept, <name>.",
+      "completion": "The remains of our enemy... your strength serves us well, <name>. Thank you.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "20s"
+      },
+      "xp": 2100,
+      "reputation": [
+        {
+          "faction_id": 69,
+          "faction": "Darnassus",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 6282,
+      "name": "Harpies Threaten",
+      "basis": "page",
+      "level": 26,
+      "required_level": 18,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11860,
+        "name": "Maggran Earthbinder"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11860,
+        "name": "Maggran Earthbinder"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 18,
+        "orange": 22,
+        "yellow": 24,
+        "green": 29,
+        "grey": 34
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Maggran Earthbinder in Sun Rock Retreat wants you to slay 7 Bloodfury Harpies, 7 Bloodfury Ambushers, 7 Bloodfury Slayers and 7 Bloodfury Roguefeathers.",
+      "objectives": [
+        {
+          "text": "Bloodfury Harpy slain",
+          "quantity": 7,
+          "type": "npc",
+          "id": 4022
+        },
+        {
+          "text": "Bloodfury Ambusher slain",
+          "quantity": 7,
+          "type": "npc",
+          "id": 4025
+        },
+        {
+          "text": "Bloodfury Slayer slain",
+          "quantity": 7,
+          "type": "npc",
+          "id": 4024
+        },
+        {
+          "text": "Bloodfury Roguefeather slain",
+          "quantity": 7,
+          "type": "npc",
+          "id": 4023
+        }
+      ],
+      "provided": [],
+      "description": "Tauren take pride as the protectors of these lands. Undoubtedly you can guess why I am alarmed with the number of harpies that dwell here in Stonetalon.\n\nThe Bloodfuries are the source of the increasing number of harpies in Kalimdor; they encroach upon all likes of life preventing the innocent from leaving their boundaries.\n\nI need you to cull the harpies, <name>!",
+      "progress": "Do not be weary of Charred Vale; many evil creatures reside in those hills. Stay strong <name>, and you shall prevail over this threat to our people. Go now and strike hard - our children shall never know of the evil of what was.",
+      "completion": "This is most excellent news! Tell me again how you cast fear into the cold hearts of those vile harpies. The Bloodfuries have been dealt a serious blow!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "20s"
+      },
+      "xp": 2100,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 6282,
+            "name": "Harpies Threaten",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 6283,
+            "name": "Bloodfury Bloodline",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 6283,
+      "name": "Bloodfury Bloodline",
+      "basis": "page",
+      "level": 26,
+      "required_level": 18,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": "Elite",
+      "start": {
+        "type": "npc",
+        "id": 11860,
+        "name": "Maggran Earthbinder"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11860,
+        "name": "Maggran Earthbinder"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 18,
+        "orange": 22,
+        "yellow": 24,
+        "green": 29,
+        "grey": 34
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Maggran at Sun Rock Retreat wishes you to slay Bloodfury Ripper and bring her remains as proof of your deed.",
+      "objectives": [
+        {
+          "text": "Bloodfury Ripper's Remains",
+          "quantity": 1,
+          "type": "item",
+          "id": 16190
+        }
+      ],
+      "provided": [],
+      "description": "Limiting the number of Bloodfury Harpies will not be enough. The only true cure for their disease would be to slay their leader, Bloodfury Ripper!\n\nShe is all but a queen to those filthy creatures. Slay her and their numbers will surely diminish.\n\nGo back into the Charred Vale and you will find her along the western hills. She will not be easy to vanquish, but the reward will be great.",
+      "progress": "Bloodfury Ripper is a nasty creature! You will have success finding her along the western hill line in the Charred Vale.\n\nThe bloodfuries will be helpless with out... surely we can vanquish them forever!",
+      "completion": "Already I feel the anger leave me. What will I do with my time? Knowing evil moves near my land kept my thoughts moving, though now they are silent. Perhaps this is a good thing... maybe now I can focus on the good, as all Tauren should.\n\nPlease accept this as a reward for your troubles.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 16990,
+            "name": "Spritekin Cloak",
+            "icon": "inv_misc_cape_02",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 16987,
+            "name": "Screecher Belt",
+            "icon": "inv_belt_05",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 270028,
+            "name": "Harpy Bangles",
+            "icon": "inv_bracer_11",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2100,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 6282,
+            "name": "Harpies Threaten",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6283,
+            "name": "Bloodfury Bloodline",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 86576,
+      "name": "Bloodfury Trinkets",
+      "basis": "page",
+      "level": 26,
+      "required_level": 18,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11860,
+        "name": "Maggran Earthbinder"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11861,
+        "name": "Mor'rogal"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 18,
+        "orange": 22,
+        "yellow": 24,
+        "green": 29,
+        "grey": 34
+      },
+      "patch": "1.60.1.69913",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Bring 15 Glittering Sunstones to Mor'rogal.",
+      "objectives": [
+        {
+          "text": "Glittering Sunstone",
+          "quantity": 15,
+          "type": "item",
+          "id": 277936
+        }
+      ],
+      "provided": [],
+      "description": "In addition to spreading their filth across the Charred Vale, the Bloodfury harpies gather anything shiny that they can find. I'm told that they collect a variety of golden-yellow sunstones for decoration. I have no use for such trinkets, but Mor'rogal has mentioned using them before.\n\nWhile you're fighting the harpies of the Vale, keep your eye out for Glittering Sunstones. Bring any that you find to Mor'rogal, up on the hills above us.",
+      "progress": "I have important matters to consider, <class>. Be quick.",
+      "completion": "Ah, you have brought sunstones that the harpies collect! The harpies love to gather objects that are shiny, but they do not know the true value of the stones. By capturing the dazzling light of the sun, these stones reflect its majesty and allow us to adorn our shrines and homes with tiny motes of light in its honor. The moon, too, illuminates them with its silver beauty at night.\n\nThese stones remind us of the connection we have to the lights of the skies.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 281252,
+            "name": "Harpy Claw Ring",
+            "icon": "inv_jewelry_ring_03",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": "20s"
+      },
+      "xp": 2100,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 97538,
+      "name": "Pigments for Paints",
+      "basis": "page",
+      "level": 26,
+      "required_level": 20,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3024,
+        "name": "Tah Winterhoof"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3024,
+        "name": "Tah Winterhoof"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 20,
+        "orange": 22,
+        "yellow": 24,
+        "green": 29,
+        "grey": 34
+      },
+      "patch": "1.60.1.69913",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Tah Winterhoof in Thunder Bluff wants 30 Mirkweed Pods from Mirkfallon Lake.",
+      "objectives": [
+        {
+          "text": "Mirkweed Pods",
+          "quantity": 30,
+          "type": "item",
+          "id": 278201
+        }
+      ],
+      "provided": [],
+      "description": "Greetings, friend. I wonder if I may ask a favor of you? I have just run out of red pigment for my paints, and I am looking for one with younger hooves to make the long journey into the Stonetalon Mountains on my behalf.\n\nIn the middle of the mountain pass there lies a large circular lake, Mirkfallon Lake, that has a unique plant that grows within its waters. The pods of this plant, mirkweed, turn a vibrant red when dried. Gather the pods of this plant for me, and I will reward you well for your efforts.",
+      "progress": "You have returned! Were you able to find the mirkweed plant pods in Mirkfallon Lake?\n\nWe tauren have used this plant pigment in our paints for generations, so any amount you manage to bring would be appreciated. Though there are many ways to get a red pigment, I find the mirkweed to give the richest and most vibrant hue of the methods I'm familiar with.",
+      "completion": "Ah, thank you, <name>.\n\nIt means much to me to have you venture all the way out there for what must seem a trivial notion from an old tauren, but with your kindness I will have enough pigment for the rest of the season.\n\nThank you for supporting my livelihood, and I will strive to create something magnificent with the pigments you have brought.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "20s"
+      },
+      "xp": 2100,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1057,
+      "name": "Reclaiming the Charred Vale",
+      "basis": "page",
+      "level": 27,
+      "required_level": 20,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3994,
+        "name": "Keeper Albagorm"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3994,
+        "name": "Keeper Albagorm"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 20,
+        "orange": 23,
+        "yellow": 25,
+        "green": 30,
+        "grey": 35
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Keeper Albagorm on Stonetalon Peak wants you to slay 6 Bloodfury Harpies, 6 Bloodfury Ambushers, 6 Bloodfury Slayers and 6 Bloodfury Roguefeathers.",
+      "objectives": [
+        {
+          "text": "Bloodfury Harpy slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 4022
+        },
+        {
+          "text": "Bloodfury Ambusher slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 4025
+        },
+        {
+          "text": "Bloodfury Slayer slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 4024
+        },
+        {
+          "text": "Bloodfury Roguefeather slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 4023
+        }
+      ],
+      "provided": [],
+      "description": "As a protector of the forest spirits you can undoubtedly guess why I am alarmed.\n\nYou have traveled through these mountains to reach this peak. Surely you have seen the travesty which has befallen the land. Greed has led to the destruction of these sacred hills.\n\nThe Charred Vale to the south was set afire by the greedy mechanized army of industrialists. Worse yet, the Bloodfuries that have encroached on the land refuse us passage in to begin regrowth.\n\nDrive the wretched harpies out, <name>!",
+      "progress": "There is much work to be done before the Charred Vale can be restored to the lush forest it once was.\n\nClear the area of those foul menaces, <name>! Only then can we begin to reclaim what belongs to nature.",
+      "completion": "Now that the Bloodfuries have suffered such a great loss, perhaps the true work of restoring the land can begin....",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2200,
+      "reputation": [
+        {
+          "faction_id": 69,
+          "faction": "Darnassus",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1057,
+            "name": "Reclaiming the Charred Vale",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1059,
+            "name": "Reclaiming the Charred Vale",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1059,
+      "name": "Reclaiming the Charred Vale",
+      "basis": "page",
+      "level": 27,
+      "required_level": 20,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3994,
+        "name": "Keeper Albagorm"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4048,
+        "name": "Falfindel Waywarder"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 20,
+        "orange": 23,
+        "yellow": 25,
+        "green": 30,
+        "grey": 35
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Travel to Falfindel Waywarder on the border of Thousand Needles and Feralas.",
+      "objectives": [],
+      "provided": [],
+      "description": "The Bloodfuries have been subdued. But they will regroup soon enough if action is not taken.\n\nFar south of the Barrens lies a land known as Thousand Needles. If you travel west in Thousand Needles until you reach the lush forest's edge of Feralas, you will find a druid named Falfindel Waywarder.\n\nThis great and wise druid is capable of calling forth great forest spirits which can aid in the reclamation of the Charred Vale.\n\nSend word of our need! Seek him out at once!",
+      "progress": null,
+      "completion": "Keeper Albagorm was wise to send you with such urgency.\n\nLet us see if we cannot call forth aid from the great forest to travel to the Charred Vale before it is too late.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 6675,
+            "name": "Tempered Bracers",
+            "icon": "inv_bracer_06",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 6676,
+            "name": "Constable Buckler",
+            "icon": "inv_shield_09",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 270035,
+            "name": "Reclaimer's Robes",
+            "icon": "inv_shirt_06",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2200,
+      "reputation": [
+        {
+          "faction_id": 69,
+          "faction": "Darnassus",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1057,
+            "name": "Reclaiming the Charred Vale",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1059,
+            "name": "Reclaiming the Charred Vale",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1095,
+      "name": "Further Instructions",
+      "basis": "page",
+      "level": 27,
+      "required_level": 16,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3442,
+        "name": "Sputtervalve"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4201,
+        "name": "Ziz Fizziks"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 16,
+        "orange": 23,
+        "yellow": 25,
+        "green": 30,
+        "grey": 35
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the new orders to Ziz Fizziks in the Stonetalon Mountains.",
+      "objectives": [],
+      "provided": [],
+      "description": "The matter of this gnome that has been hired by the Venture Company has caused a bit of a stir in Undermine. The trade princes do not approve of Razdunk's consorting with this Gerenzo.\n\nRiddlevox has asked me to take care of the problem, and I'm sure he was instructed to do so by one or more of the trade princes. Of course, the Director didn't tell me that. Let's just say I have a hunch.\n\nWhatever the case, Gerenzo must be removed, and it would be a fitting test to have Fizziks take care of him.",
+      "progress": null,
+      "completion": "Eliminate Gerenzo? Now there is a prospect that I have no objections to.\n\nGnomes are bad enough as it is, but what I learned about Gerenzo only makes it worse. Apparently, he was one of the head engineers in Gnomeregan, where he was working on their secret project--we could never infiltrate Dun Morogh well enough to find out specific details. It was a failure. Our reports say that whatever it was literally exploded in their faces.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1100,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1483,
+            "name": "Ziz Fizziks",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1093,
+            "name": "Super Reaper 6000",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1094,
+            "name": "Further Instructions",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1095,
+            "name": "Further Instructions",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1096,
+            "name": "Gerenzo Wrenchwhistle",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1096,
+      "name": "Gerenzo Wrenchwhistle",
+      "basis": "page",
+      "level": 27,
+      "required_level": 16,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4201,
+        "name": "Ziz Fizziks"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4201,
+        "name": "Ziz Fizziks"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 16,
+        "orange": 23,
+        "yellow": 25,
+        "green": 30,
+        "grey": 35
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Gerenzo Wrenchwhistle's Mechanical Arm to Ziz Fizziks in the Stonetalon Mountains.",
+      "objectives": [
+        {
+          "text": "Gerenzo's Mechanical Arm",
+          "quantity": 1,
+          "type": "item",
+          "id": 5736
+        }
+      ],
+      "provided": [],
+      "description": "I met Gerenzo once, but let me tell you, he's not easy on the eyes. His flesh looks like it's rotting away, and he's grafted metal and gears onto his body, replaced some of his limbs with mechanical ones.\n\nNortheast of here, far above Cragpool Lake, up near the water wheel is where Gerenzo watches over the entire site. There's no way I could fight my way up there, not to mention take on Gerenzo... But you look like you might be able to make it.\n\nIf you kill him for me, I'll make it worth your while!",
+      "progress": "Sputtervalve will want some sort of proof that Gerenzo's dead. I think his mechanical arm will probably do.",
+      "completion": "Look at that thing... it'd take a gnome to come up with something like that. I can't understand why you'd cut off an arm, and replace it with that, when you could just keep both arms and add a third!\n\nGnomes, I tell you...\n\nAt least Gerenzo's out of commission. Hopefully that'll be enough proof, and Sputtervalve will assign me to one of the Tinkers' Union workshops in Gadgetzan or maybe even Undermine.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 6667,
+            "name": "Engineer's Cloak",
+            "icon": "inv_misc_cape_13",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 6668,
+            "name": "Draftsman Boots",
+            "icon": "inv_boots_03",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": "22s"
+      },
+      "xp": 2200,
+      "reputation": [
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1483,
+            "name": "Ziz Fizziks",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1093,
+            "name": "Super Reaper 6000",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1094,
+            "name": "Further Instructions",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1095,
+            "name": "Further Instructions",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1096,
+            "name": "Gerenzo Wrenchwhistle",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1081,
+      "name": "Reception from Tyrande",
+      "basis": "page",
+      "level": 28,
+      "required_level": 17,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4079,
+        "name": "Sentinel Thenysil"
+      },
+      "end": {
+        "type": "npc",
+        "id": 7999,
+        "name": "Tyrande Whisperwind"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 17,
+        "orange": 24,
+        "yellow": 26,
+        "green": 31,
+        "grey": 36
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Find Tyrande Whisperwind in Darnassus.",
+      "objectives": [],
+      "provided": [],
+      "description": "<name>, I am sure Tyrande Whisperwind herself would like to thank you for taking part in this mission.\n\nIt may not appear so on the surface, but what you've helped start could very well strengthen our foothold in the Stonetalon Mountains.\n\nIf you consider yourself our ally against these atrocities, go see Tyrande in the Temple of the Moon in Darnassus.",
+      "progress": null,
+      "completion": "Hello, <name>. I have indeed heard your name before, and although you are still full of youth, I am pleased to see the path you have set for yourself.\n\nYou would do me a great honor if you would accept this as a gift of appreciation.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 7334,
+            "name": "Efflorescent Robe",
+            "icon": "inv_chest_cloth_10",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 7335,
+            "name": "Grizzly Tunic",
+            "icon": "inv_chest_leather_06",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 7336,
+            "name": "Wildwood Chain",
+            "icon": "inv_chest_chain",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [
+          {
+            "type": "item",
+            "id": 6678,
+            "name": "Band of Elven Grace",
+            "icon": "inv_belt_32",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3400,
+      "reputation": [
+        {
+          "faction_id": 469,
+          "faction": "Alliance",
+          "amount": 200
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1082,
+            "name": "Update for Sentinel Thenysil",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1081,
+            "name": "Reception from Tyrande",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1084,
+      "name": "Wounded Ancients",
+      "basis": "page",
+      "level": 28,
+      "required_level": 22,
+      "side": "Alliance",
+      "side_label": "Alliance",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4080,
+        "name": "Kaela Shadowspear"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4080,
+        "name": "Kaela Shadowspear"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 22,
+        "orange": 24,
+        "yellow": 26,
+        "green": 31,
+        "grey": 36
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring a piece of Corroded Shrapnel to Kaela Shadowspear in Stonetalon.",
+      "objectives": [
+        {
+          "text": "Corroded Shrapnel",
+          "quantity": 1,
+          "type": "item",
+          "id": 5664
+        }
+      ],
+      "provided": [],
+      "description": "It seems obvious to me that the protectors of the Vale--the treants--had something to do with the Venture Co. being driven back. Unfortunately, even those once great guardians have now become corrupt.\n\nGaxim thinks their corruption is somehow linked to the weapons the goblins used during their retreat.\n\nI told him I'd collect a sample from a wounded treant and allow him to study it in order to figure out if that's true.\n\nBring me some of the shrapnel so the gnome can tell me more...",
+      "progress": "I have a feeling Gaxim will find a use for the shrapnel regardless of how the Venture Co. has used it in the past.",
+      "completion": "Thank you, <name>.\n\nThis should be more than sufficient for Gaxim to figure out how the treants were corrupted. I shall give this to him right away.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "25s"
+      },
+      "xp": 2300,
+      "reputation": [
+        {
+          "faction_id": 69,
+          "faction": "Darnassus",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 5881,
+      "name": "Calling in the Reserves",
+      "basis": "page",
+      "level": 28,
+      "required_level": 23,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11860,
+        "name": "Maggran Earthbinder"
+      },
+      "end": {
+        "type": "npc",
+        "id": 12576,
+        "name": "Grish Longrunner"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 23,
+        "orange": 24,
+        "yellow": 26,
+        "green": 31,
+        "grey": 36
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Maggran wishes you to deliver a letter to Grish Longrunner at the Great Lift in the Barrens.",
+      "objectives": [
+        {
+          "text": "Maggran's Reserve Letter (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 16189
+        }
+      ],
+      "provided": [],
+      "description": "The Horde does well keeping our troops fresh... since the Great War we have been prosperous here in Kalimdor.\n\nI need you to do me a favor, I have a lad by the name of Grish Longrunner protecting the Great Lift in the southern barrens. Give him this letter; the letter will let him know that I have a reserve warrior coming to relieve him of duty so that he can visit his family. He requested this sometime ago and he would be happy to hear the news.",
+      "progress": "You have news from Maggran Earthbinder?",
+      "completion": "This is great news; I have been sitting here guarding this hunk of wood for too long. Now I can spend some time with my family... Yippee!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "12s"
+      },
+      "xp": 1150,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 1088,
+      "name": "Ordanus",
+      "basis": "page",
+      "level": 29,
+      "required_level": 20,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 4198,
+        "name": "Braelyn Firehand"
+      },
+      "end": {
+        "type": "npc",
+        "id": 4198,
+        "name": "Braelyn Firehand"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 20,
+        "orange": 25,
+        "yellow": 27,
+        "green": 32,
+        "grey": 37
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Ordanus' head to Braelyn Firehand near Sun Rock Retreat.",
+      "objectives": [
+        {
+          "text": "Ordanus' Head",
+          "quantity": 1,
+          "type": "item",
+          "id": 5686
+        }
+      ],
+      "provided": [],
+      "description": "They thought that they could halt the flow of magic. They were mistaken. They thought that they could hide Ordanus, but I will have his head!\n\nMagic grants me true sight. Yes... there he is. A crossroads... At the top of a great tree in Ashenvale Forest. A name... Raynewood. One of the eldest sons of the forest god. They spirited him away from the peak before I could find him, but his time runs short.\n\nBring it to me and I will share with you a mighty gift.",
+      "progress": "When my master bade me to the peak of Stonetalon, I expected that all I would need was to lay waste to the night elves that crawled the sacred ruins of our ancient temple of Azshara, their touch despoiling its sanctity... but Ordanus had slipped my grasp.",
+      "completion": "I knew Ordanus once, long ago. He had the arrogance of his kind, holding himself above even the Highborne.\n\nHis head does not rise so high now, does it, <name>?\n\nI promised you a reward, and you shall have it. Attend to me.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2350,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1087,
+            "name": "Cenarius' Legacy",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1088,
+            "name": "Ordanus",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 1089,
+            "name": "The Den",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 1089,
+      "name": "The Den",
+      "basis": "page",
+      "level": 29,
+      "required_level": 20,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": "Elite",
+      "start": {
+        "type": "npc",
+        "id": 4198,
+        "name": "Braelyn Firehand"
+      },
+      "end": {
+        "type": "object",
+        "id": 19599,
+        "name": "Talon Den Hoard"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 20,
+        "orange": 25,
+        "yellow": 27,
+        "green": 32,
+        "grey": 37
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Travel to the Den on Stonetalon Peak. Using the Gatekeeper's Key, obtain the druids' hidden items. Use these items to open the Talon Den Hoard.",
+      "objectives": [
+        {
+          "text": "Sleepers' Key",
+          "quantity": 1,
+          "type": "item",
+          "id": 5689
+        },
+        {
+          "text": "Claw Key",
+          "quantity": 1,
+          "type": "item",
+          "id": 5690
+        },
+        {
+          "text": "Barrow Key",
+          "quantity": 1,
+          "type": "item",
+          "id": 5691
+        },
+        {
+          "text": "Gatekeeper's Key",
+          "quantity": 1,
+          "type": "item",
+          "id": 5687
+        }
+      ],
+      "provided": [],
+      "description": "The druids built the Talon Den on Stonetalon Peak, where they keep many powerful items.\n\nThey devised a complex scheme to keep them from falling into the wrong hands.\n\nLuckily, I managed to... extract some details from one of them.\n\nHidden in a small lantern at the entrance of the Den, you will find the Gatekeeper's Key--with it you will be able to open caches around the Den. The items from these caches will allow you to open their hoard, located in one of the central areas.",
+      "progress": "Three keyholes are carved into the stone.",
+      "completion": "As the three keys are slid into their matching openings, in the middle of the glowing light a number of items appear.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 6669,
+            "name": "Sacred Band",
+            "icon": "inv_jewelry_ring_12",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 6670,
+            "name": "Panther Armor",
+            "icon": "inv_chest_leather_01",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 6671,
+            "name": "Juggernaut Leggings",
+            "icon": "inv_pants_03",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2950,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1087,
+            "name": "Cenarius' Legacy",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1088,
+            "name": "Ordanus",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 1089,
+            "name": "The Den",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 79974,
+      "name": "Wet Job",
+      "basis": "page",
+      "level": 32,
+      "required_level": 14,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "object",
+        "id": 424012,
+        "name": "Mound of Dirt"
+      },
+      "end": {
+        "type": "object",
+        "id": 424007,
+        "name": "Carved Figurine"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 14,
+        "orange": 28,
+        "yellow": 30,
+        "green": 35,
+        "grey": 41
+      },
+      "patch": "1.60.1.69913",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Dusting off a messenger bag emerging from the soil, you find a parchment nestled among the supplies.",
+      "objectives": [],
+      "provided": [],
+      "description": "\"Always like to keep a reserve stash nearby in the off chance I've got to flee in a hurry.\n\nThe face of this mountainside is so beautiful you might say it was carved from the waterfalls of time.\nThat's the eagles nest, that's what you're looking for.\"",
+      "progress": null,
+      "completion": "Dwarven Engineering, always a marvel.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 5432,
+            "name": "Hickory Pipe",
+            "icon": "inv_misc_pipe_01",
+            "quality": "poor",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 20709,
+            "name": "Rumsey Rum Light",
+            "icon": "inv_drink_08",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": "30s"
+      },
+      "xp": 2550,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 79007,
+            "name": "... and that note you found",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 79008,
+            "name": "... and that note you found",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 79192,
+            "name": "Stepping Stones",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 79980,
+            "name": "Scramble",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 79974,
+            "name": "Wet Job",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 79975,
+            "name": "Eagle's Fist",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 79976,
+            "name": "This Must Be The Place",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 80001,
+      "name": "Rekindle",
+      "basis": "page",
+      "level": 40,
+      "required_level": 1,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "object",
+        "id": 424082,
+        "name": "Firepit"
+      },
+      "end": {
+        "type": "object",
+        "id": 424082,
+        "name": "Firepit"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 1,
+        "orange": 36,
+        "yellow": 38,
+        "green": 43,
+        "grey": 49
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": null,
+      "objectives": [
+        {
+          "text": "Simple Wood",
+          "quantity": 1,
+          "type": "item",
+          "id": 4470
+        },
+        {
+          "text": "Flint and Tinder",
+          "quantity": 1,
+          "type": "item",
+          "id": 4471
+        }
+      ],
+      "provided": [],
+      "description": null,
+      "progress": "An extinguished fire pit. The wood is even dry enough to catch a flame.",
+      "completion": "You put your scout skills to work.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 4471,
+            "name": "Flint and Tinder",
+            "icon": "inv_stone_11",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": null,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 97446,
+      "name": "Your First Riding Kodo",
+      "basis": "page",
+      "level": 40,
+      "required_level": 40,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 269152,
+        "name": "Tylana Clawhoof"
+      },
+      "end": {
+        "type": "npc",
+        "id": 269152,
+        "name": "Tylana Clawhoof"
+      },
+      "sharable": false,
+      "difficulty": {
+        "yellow": 40,
+        "green": 43,
+        "grey": 49
+      },
+      "patch": "1.60.1.70862",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Inspect the riding kodos to choose your first mount.",
+      "objectives": [
+        {
+          "text": "Grey Riding Kodo",
+          "quantity": 1,
+          "type": "npc",
+          "id": 269139
+        },
+        {
+          "text": "Brown Riding Kodo",
+          "quantity": 1,
+          "type": "npc",
+          "id": 269140
+        },
+        {
+          "text": "White Riding Kodo",
+          "quantity": 1,
+          "type": "npc",
+          "id": 269138
+        },
+        {
+          "text": "Lavender Riding Kodo",
+          "quantity": 1,
+          "type": "npc",
+          "id": 269141
+        }
+      ],
+      "provided": [],
+      "description": "Ah, I've been expecting you <class>. It would seem the winds have brought you to me this day. You have come seeking a kodo, correct?\n\nThe kodo is a noble beast that is slow to anger, and you would be hard pressed to find a more dependable companion.\n\nToday you have an important choice to make. You and your kodo will travel the world together, so find which one speaks to you. Fear not, whatever choice you make will be the right one.\n\nGo examine the kodos and return to me when you have made your choice.",
+      "progress": "Have you made your choice? These kodos have carried our ancestors across the plains for generations. They are a steadfast and mighty beasts.\n\nYou will not find a more loyal and noble mount for your travels.",
+      "completion": "Excellent, <name>. I can see in your eyes that you have made a choice.\n\nI am happy to be able to provide you with one of our fine kodo. I must say the one you have picked seems fond of you already. I hope you will take good care of it, and it of you.\n\nMay the Earthmother guide you both.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 275993,
+            "name": "White Kodo",
+            "icon": "ability_mount_kodo_01",
+            "quality": "rare",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 15290,
+            "name": "Brown Kodo",
+            "icon": "ability_mount_kodo_03",
+            "quality": "rare",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 15277,
+            "name": "Gray Kodo",
+            "icon": "ability_mount_kodo_01",
+            "quality": "rare",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 277960,
+            "name": "Lavender Kodo",
+            "icon": "ability_mount_kodo_01",
+            "quality": "rare",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": null,
+      "reputation": [
+        {
+          "faction_id": 81,
+          "faction": "Thunder Bluff",
+          "amount": 25
+        }
+      ],
+      "other_gains": [],
+      "series": null,
+      "races": [
+        "Tauren"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "quest_id": 1056,
+      "name": "Journey to Stonetalon Peak",
+      "level": 18,
+      "required_level": 18,
+      "side": "Alliance",
+      "category_id": 331,
+      "xp": 680,
+      "money": null
+    },
+    {
+      "quest_id": 1060,
+      "name": "Letter to Jin'Zil",
+      "level": 20,
+      "required_level": 15,
+      "side": "Horde",
+      "category_id": 17,
+      "xp": 1550,
+      "money": null
+    },
+    {
+      "quest_id": 1070,
+      "name": "On Guard in Stonetalon",
+      "level": 21,
+      "required_level": 17,
+      "side": "Alliance",
+      "category_id": 331,
+      "xp": 830,
+      "money": null
+    },
+    {
+      "quest_id": 1085,
+      "name": "On Guard in Stonetalon",
+      "level": 21,
+      "required_level": 17,
+      "side": "Alliance",
+      "category_id": 331,
+      "xp": 165,
+      "money": null
+    },
+    {
+      "quest_id": 1152,
+      "name": "Test of Lore",
+      "level": 30,
+      "required_level": 26,
+      "side": "Horde",
+      "category_id": 400,
+      "xp": 1200,
+      "money": null
+    },
+    {
+      "quest_id": 1154,
+      "name": "Test of Lore",
+      "level": 30,
+      "required_level": 26,
+      "side": "Horde",
+      "category_id": 400,
+      "xp": 1850,
+      "money": null
+    },
+    {
+      "quest_id": 1159,
+      "name": "Test of Lore",
+      "level": 30,
+      "required_level": 26,
+      "side": "Horde",
+      "category_id": 400,
+      "xp": 1200,
+      "money": null
+    },
+    {
+      "quest_id": 1483,
+      "name": "Ziz Fizziks",
+      "level": 21,
+      "required_level": 16,
+      "side": "Both",
+      "category_id": 17,
+      "xp": 415,
+      "money": null
+    },
+    {
+      "quest_id": 1510,
+      "name": "News of Dogran",
+      "level": 20,
+      "required_level": 20,
+      "side": "Horde",
+      "category_id": -61,
+      "xp": 780,
+      "money": null
+    },
+    {
+      "quest_id": 1511,
+      "name": "Ken'zigla's Draught",
+      "level": 20,
+      "required_level": 20,
+      "side": "Horde",
+      "category_id": -61,
+      "xp": 1550,
+      "money": null
+    },
+    {
+      "quest_id": 2931,
+      "name": "Castpipe's Task",
+      "level": 28,
+      "required_level": 25,
+      "side": "Alliance",
+      "category_id": 721,
+      "xp": 230,
+      "money": null
+    },
+    {
+      "quest_id": 6562,
+      "name": "Trouble in the Deeps",
+      "level": 22,
+      "required_level": 17,
+      "side": "Horde",
+      "category_id": 719,
+      "xp": 435,
+      "money": null
+    },
+    {
+      "quest_id": 6567,
+      "name": "The Champion of the Horde",
+      "level": 60,
+      "required_level": 55,
+      "side": "Horde",
+      "category_id": 1637,
+      "xp": 3300,
+      "money": null
+    },
+    {
+      "quest_id": 6568,
+      "name": "The Testament of Rexxar",
+      "level": 60,
+      "required_level": 55,
+      "side": "Horde",
+      "category_id": 405,
+      "xp": 4950,
+      "money": "1g 48s 50c"
+    },
+    {
+      "quest_id": 6601,
+      "name": "Ascension...",
+      "level": 60,
+      "required_level": 55,
+      "side": "Horde",
+      "category_id": 15,
+      "xp": 4950,
+      "money": "1g 48s 50c"
+    },
+    {
+      "quest_id": 6602,
+      "name": "Blood of the Black Dragon Champion",
+      "level": 60,
+      "required_level": 55,
+      "side": "Horde",
+      "category_id": 1583,
+      "xp": 9950,
+      "money": null
+    },
+    {
+      "quest_id": 6627,
+      "name": "Test of Lore",
+      "level": 30,
+      "required_level": 26,
+      "side": "Horde",
+      "category_id": 400,
+      "xp": 245,
+      "money": null
+    },
+    {
+      "quest_id": 78270,
+      "name": "Goblin Lockpicks",
+      "level": 23,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": -162,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 79192,
+      "name": "Stepping Stones",
+      "level": 24,
+      "required_level": 14,
+      "side": "Both",
+      "category_id": 17,
+      "xp": 1950,
+      "money": null
+    },
+    {
+      "quest_id": 94216,
+      "name": "Craftsman's Writ: Elixir of Lesser Agility",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 94225,
+      "name": "Craftsman's Writ: Rough Bronze Leggings",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 94234,
+      "name": "Craftsman's Writ: Shadow Goggles",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 94243,
+      "name": "Craftsman's Writ: Heavy Quiver",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 94252,
+      "name": "Craftsman's Writ: Red Woolen Boots",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": 16941,
+      "xp": null,
+      "money": null
+    }
+  ],
+  "skipped": []
+}

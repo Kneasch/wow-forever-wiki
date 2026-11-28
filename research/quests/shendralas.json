@@ -1,0 +1,4572 @@
+{
+  "zone": "Shen'dralas",
+  "area_id": 16651,
+  "source": "https://www.wowhead.com/forever/zone=16651#quests",
+  "fetched": "2026-11-28",
+  "quests": [
+    {
+      "quest_id": 93034,
+      "name": "Valley of Bones",
+      "basis": "page",
+      "level": 38,
+      "required_level": 35,
+      "side": null,
+      "side_label": "None",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 5397,
+        "name": "Uthek the Wise"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 35,
+        "yellow": 36,
+        "green": 41,
+        "grey": 47
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Improve your reputation with the Gelkis, and locate Nerlokh near the Valley of Bones far east of Gelkis Village.",
+      "objectives": [
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 92
+        }
+      ],
+      "provided": [],
+      "description": "One of our scouts returned to the village while you were away, with news that confirmed my fears.\n\nThe Magram are up to something, <name>. It is not good.\n\nThe Valley of Bones far to the east is a cursed land that few centaur dared to enter and fewer still ever return home. Our enemy has found something there, something evil, and we need to learn what it is.\n\nSeek out the scout Nerlokh at the southern entrance, but you may have to prove yourself further to the Gelkis.",
+      "progress": "You must be the ally that Uthek spoke of. I am Nerlokh of the Gelkis, but our time for introductions stops there.",
+      "completion": "Behold, the Valley of Bones. Forever cursed, a place where not even the great Theradras would smile upon. No clan had dared to step hoof in this place for generations, yet now the Magram seem to have claimed it as their own!\n\nI am poorly trained and unequipped for combat--these arches are the farthest I will go. You, <name>, must fight on behalf of the Gelkis.\n\nYou have done much for us, but your work has only begun.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 290,
+      "reputation": [
+        {
+          "faction_id": 92,
+          "faction": "Gelkis Clan Centaur",
+          "amount": 125
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1382,
+            "name": "Strange Alliance",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1368,
+            "name": "Gelkis Alliance",
+            "side": null
+          },
+          {
+            "quest_id": 1384,
+            "name": "Raid on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1370,
+            "name": "Stealing Supplies",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1373,
+            "name": "Ongeku",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 93034,
+            "name": "Valley of Bones",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93035,
+            "name": "Ravaging Ravagers",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 93037,
+            "name": "Outing Outcasts",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93041,
+            "name": "Facing the Truth",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93044,
+            "name": "A Cleansing Cry",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 93045,
+            "name": "Test Your Theory",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93035,
+      "name": "Ravaging Ravagers",
+      "basis": "page",
+      "level": 38,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 35,
+        "yellow": 36,
+        "green": 41,
+        "grey": 47
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Gelkis Clan and slay 6 Undead Ravagers, then return to Nerlokh at the southern entrance to Valley of Bones.",
+      "objectives": [
+        {
+          "text": "Undead Ravager slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 11561
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 92
+        }
+      ],
+      "provided": [],
+      "description": "You need not peer far to see the undead shambling about ahead of us, but have you noticed something unusual about them?\n\nThey walk on two legs, not four! These skeletons are not even our fallen kin. The Magram must be defiling the bodies of those who died long before the Desolace was our domain. I cannot imagine how they justified turning their backs on Mother Theradras and took to desecrating corpses that have rested here for centuries.\n\nPut the undead to rest, <name>.",
+      "progress": "Be swift and merciful, <name>. Whoever these bones belong to were never meant to be a part of our war.",
+      "completion": "You looked battered and beaten, but not broken. Your efforts have made a difference to those that have been put back to rest, but I am sure you have noticed the turmoil in the valley has only risen.\n\nI fear it won't be long before those same bones you buried are back on their feet.\n\nWe must press on.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1450,
+      "reputation": [
+        {
+          "faction_id": 92,
+          "faction": "Gelkis Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1382,
+            "name": "Strange Alliance",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1368,
+            "name": "Gelkis Alliance",
+            "side": null
+          },
+          {
+            "quest_id": 1384,
+            "name": "Raid on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1370,
+            "name": "Stealing Supplies",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1373,
+            "name": "Ongeku",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 93034,
+            "name": "Valley of Bones",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93035,
+            "name": "Ravaging Ravagers",
+            "side": "Horde",
+            "current": true
+          },
+          {
+            "quest_id": 93037,
+            "name": "Outing Outcasts",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93041,
+            "name": "Facing the Truth",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93044,
+            "name": "A Cleansing Cry",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 93045,
+            "name": "Test Your Theory",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93041,
+      "name": "Facing the Truth",
+      "basis": "page",
+      "level": 38,
+      "required_level": 35,
+      "side": null,
+      "side_label": "None",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "end": {
+        "type": "npc",
+        "id": 5397,
+        "name": "Uthek the Wise"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 35,
+        "yellow": 36,
+        "green": 41,
+        "grey": 47
+      },
+      "patch": "1.60.1.70235",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Gelkis Clan, and bring an Accursed Skull and Gelkis Necromantic Garb to Uthek the Wise in Gelkis Village.",
+      "objectives": [
+        {
+          "text": "Accursed Skull",
+          "quantity": 1,
+          "type": "item",
+          "id": 255945
+        },
+        {
+          "text": "Gelkis Necromantic Garb (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 255941
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 92
+        }
+      ],
+      "provided": [],
+      "description": "This discovery is devastating for our clan, but it is in our best interest to keep this only to those who need to know. Uthek is one such person who needs to be aware of what is going on here. I suspect she will know how to proceed.\n\nTake this to show her. For good measure, we should also bring evidence of the necromancy itself to her. Find a skull that looks recently cursed. I suspect they may be hoarding them in the maws of one of the goliath's skeletons.",
+      "progress": "I did not expect to see you back so soon. Is this a bad omen?",
+      "completion": "<Uthek listened to your explanation with an expression of doubt, until you presented the material evidence.>\n\nI noticed our dwindling numbers, <name>, but never would I have expected this! Necromancy... shamelessly wielded by those foul Magram. Now I learn that my clan is involved too?\n\nI will speak with the Khan. For now, you will prepare to return to the front lines.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 710,
+      "reputation": [
+        {
+          "faction_id": 92,
+          "faction": "Gelkis Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1382,
+            "name": "Strange Alliance",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1368,
+            "name": "Gelkis Alliance",
+            "side": null
+          },
+          {
+            "quest_id": 1384,
+            "name": "Raid on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1370,
+            "name": "Stealing Supplies",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1373,
+            "name": "Ongeku",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 93034,
+            "name": "Valley of Bones",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93035,
+            "name": "Ravaging Ravagers",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 93037,
+            "name": "Outing Outcasts",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93041,
+            "name": "Facing the Truth",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93044,
+            "name": "A Cleansing Cry",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 93045,
+            "name": "Test Your Theory",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 92841,
+      "name": "Valley of Bones",
+      "basis": "page",
+      "level": 40,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 5398,
+        "name": "Warug"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 36,
+        "yellow": 38,
+        "green": 43,
+        "grey": 49
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Improve your reputation with the Magram, and locate Orgrul near the Valley of Bones south of Magram Village.",
+      "objectives": [
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 93
+        }
+      ],
+      "provided": [],
+      "description": "It is time, outsider, for you to learn of our great discovery... but Warug will not be the one to tell it!\n\nHead south to the other end of the village. Look for a big, stinky centaur named Orgrul.\n\nYou will know when you get there.\nYou will know when you see him.\nIf he thinks you deserve to know, you will know.\n\nAnd if he doesn't? Well. You can be happy knowing Warug has a new crown.",
+      "progress": null,
+      "completion": "So the rumors are true. Unfortunate that Warug has had you running around with frivolous tasks. At least you proved your worth.\n\nPeer down into the valley below, what do you see? Bones and bodies. Roaming undead. And the Twin Goliaths.\n\nThis place was cursed long before our arrival, and I suspect it will remain as such for many generations to come. Our clan was the first to brave the horrors below, and ours will be the only one to claim its power.\n\nAre you as eager as I to rule over all of Desolace?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 320,
+      "reputation": [
+        {
+          "faction_id": 93,
+          "faction": "Magram Clan Centaur",
+          "amount": 125
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1385,
+            "name": "Brutal Politics",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1367,
+            "name": "Magram Alliance",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 1386,
+            "name": "Assault on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1369,
+            "name": "Broken Tears",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92743,
+            "name": "A Conqueror's Crown",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92841,
+            "name": "Valley of Bones",
+            "side": "Horde",
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 92844,
+            "name": "Mountain of Bones",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92846,
+            "name": "Outcast Necromancers",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92847,
+            "name": "Corrupting Tears",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92873,
+            "name": "Proof of Concept",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92893,
+            "name": "No Mercy for the Weak",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92894,
+            "name": "Bone Raising",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93066,
+            "name": "Bristleback Retreat",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93072,
+            "name": "Long-Term Solutions",
+            "side": null
+          },
+          {
+            "quest_id": 93129,
+            "name": "Threat of Starvation",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93188,
+            "name": "Return to Orgrul",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93196,
+            "name": "Khan Jehn",
+            "side": "Horde"
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 92846,
+      "name": "Outcast Necromancers",
+      "basis": "page",
+      "level": 40,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 36,
+        "yellow": 38,
+        "green": 43,
+        "grey": 49
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Magram, and slay Outcast Necromancers within the Valley of Bones.",
+      "objectives": [
+        {
+          "text": "Outcast Necromancer slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 11559
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 93
+        }
+      ],
+      "provided": [],
+      "description": "Have you noticed the puny centaur stomping about around here? Those are of Gelkis descent.\n\nWe Magram have already established a foothold deeper into the canyon. When the Gelkis took notice of our presence here, some among them chose to follow in our footsteps. I know not whether they wish to join us or attempt to overthrow us, but I do know that their clanmates have sentenced them all to exile.\n\nThey're lone wolves meddling in powers that do not belong to them. I want them dead.",
+      "progress": "Take note of the color of their flesh and fur, <race>. We will know if you kill any of ours, and such an act will not reflect kindly upon you.",
+      "completion": "Bwahaha, I heard their cries from here!\n\nThe Gelkis ought to learn to slaughter their own kin who betray their heritage. Failing to do so puts the burden on us to clean up their mess, and I am not here to tidy up after an inferior clan.\n\nIf you see more, be sure to snuff out the lights in their eyes. Once a Gelkis, always a Gelkis.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2350,
+      "reputation": [
+        {
+          "faction_id": 93,
+          "faction": "Magram Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1385,
+            "name": "Brutal Politics",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1367,
+            "name": "Magram Alliance",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 1386,
+            "name": "Assault on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1369,
+            "name": "Broken Tears",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92743,
+            "name": "A Conqueror's Crown",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92841,
+            "name": "Valley of Bones",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92844,
+            "name": "Mountain of Bones",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92846,
+            "name": "Outcast Necromancers",
+            "side": "Horde",
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 92847,
+            "name": "Corrupting Tears",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92873,
+            "name": "Proof of Concept",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92893,
+            "name": "No Mercy for the Weak",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92894,
+            "name": "Bone Raising",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93066,
+            "name": "Bristleback Retreat",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93072,
+            "name": "Long-Term Solutions",
+            "side": null
+          },
+          {
+            "quest_id": 93129,
+            "name": "Threat of Starvation",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93188,
+            "name": "Return to Orgrul",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93196,
+            "name": "Khan Jehn",
+            "side": "Horde"
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 92894,
+      "name": "Bone Raising",
+      "basis": "page",
+      "level": 40,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 36,
+        "yellow": 38,
+        "green": 43,
+        "grey": 49
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Magram Clan, and use the Enhanced Necromancy Staff to fully raise undead that are struggling to emerge throughout the Valley of Bones. Return to Orgrul once the Magram army has grown.",
+      "objectives": [
+        {
+          "text": "Summon or Slay Haggard Bones",
+          "quantity": 10,
+          "type": "npc",
+          "id": 253446
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 93
+        }
+      ],
+      "provided": [
+        {
+          "text": "Enhanced Necromancy Staff",
+          "quantity": 1,
+          "type": "item",
+          "id": 255403
+        }
+      ],
+      "description": "I can see the excitement in your eyes, outsider. Do you grasp the potential of necromancy yet?\n\nOf course you do. And that is why I am ordering you to hone your skills further.\n\nAs you venture deeper into the Valley of Bones, you will see the remains of failed attempts at raising the dead. Gelkis attempts, no doubt. Hardly able to claw out from the dirt. Funny, were it not so pathetic.\n\nI have imbued your staff with greater power. Use this to grow our army, and crush the ones that fight back!",
+      "progress": "Look for bones partially emerged from the soil in the Valley of Bones, <race>, and use your staff on them. You will know if it worked, and continue to try even if it doesn't.",
+      "completion": "<Orgrul listens to your explanation, unable to suppress a grin.>\n\nDo not fret, outsider, for this experiment was anything but a failure. We now know how weak and fragile the Gelkis' form of necromancy is. They have a long way to go before they will match our might.\n\nThe fact that you were able to seize control of any of them speaks highly of you, too. Despite those wasted skeletons, you have demonstrated your impressive capabilities.\n\nI will take the staff for now. There is more work to do.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2350,
+      "reputation": [
+        {
+          "faction_id": 93,
+          "faction": "Magram Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1385,
+            "name": "Brutal Politics",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1367,
+            "name": "Magram Alliance",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 1386,
+            "name": "Assault on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1369,
+            "name": "Broken Tears",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92743,
+            "name": "A Conqueror's Crown",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92841,
+            "name": "Valley of Bones",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92844,
+            "name": "Mountain of Bones",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92846,
+            "name": "Outcast Necromancers",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92847,
+            "name": "Corrupting Tears",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92873,
+            "name": "Proof of Concept",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92893,
+            "name": "No Mercy for the Weak",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92894,
+            "name": "Bone Raising",
+            "side": "Horde",
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93066,
+            "name": "Bristleback Retreat",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93072,
+            "name": "Long-Term Solutions",
+            "side": null
+          },
+          {
+            "quest_id": 93129,
+            "name": "Threat of Starvation",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93188,
+            "name": "Return to Orgrul",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93196,
+            "name": "Khan Jehn",
+            "side": "Horde"
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93037,
+      "name": "Outing Outcasts",
+      "basis": "page",
+      "level": 40,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 36,
+        "yellow": 38,
+        "green": 43,
+        "grey": 49
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Gelkis Clan, and bring 1 Necromantic Garb to Nerlokh at the entrance of the Valley of Bones.",
+      "objectives": [
+        {
+          "text": "Necromantic Garb",
+          "quantity": 1,
+          "type": "item",
+          "id": 255875
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 92
+        }
+      ],
+      "provided": [],
+      "description": "While I waited for your arrival, I peered a bit further between the arches and noticed something I need you to confirm for me.\n\nI cannot bear saying it aloud. Not until my suspicions have been proven true.\n\n<name>, while you are getting your bearings in the valley, slay some of the necromancers that look weaker than the others. Tear off their ritual garb, carefully, and bring it to me. I must know whether I am of clear mind and vision.",
+      "progress": "You have my word that I will share my suspicion with you once you have completed the task.\n\nFor the sake of our clan, let us hope my eyes were playing tricks on me.",
+      "completion": "<Nerlokh swiftly takes the cloth and accessories from you and his expression grows cold. After observing only a few from the collection, he sets the rest aside.>\n\n<name>. These lesser necromancers are Gelkis.\n\nI see now why our clan seems to be losing numbers more frequently than our skirmishes would indicate. Some among us are defecting, presumably in effort to impress the Magram.\n\nOur clan is losing this war.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2350,
+      "reputation": [
+        {
+          "faction_id": 92,
+          "faction": "Gelkis Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1382,
+            "name": "Strange Alliance",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1368,
+            "name": "Gelkis Alliance",
+            "side": null
+          },
+          {
+            "quest_id": 1384,
+            "name": "Raid on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1370,
+            "name": "Stealing Supplies",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1373,
+            "name": "Ongeku",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 93034,
+            "name": "Valley of Bones",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93035,
+            "name": "Ravaging Ravagers",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 93037,
+            "name": "Outing Outcasts",
+            "side": "Horde",
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93041,
+            "name": "Facing the Truth",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93044,
+            "name": "A Cleansing Cry",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 93045,
+            "name": "Test Your Theory",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 92873,
+      "name": "Proof of Concept",
+      "basis": "page",
+      "level": 41,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 37,
+        "yellow": 39,
+        "green": 44,
+        "grey": 51
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Magram Clan, then bring 426 Well Cursed Bones from a successful ritual back to Orgrul.",
+      "objectives": [
+        {
+          "text": "Well Cursed Bone",
+          "quantity": 426,
+          "type": "item",
+          "id": 254842
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 93
+        }
+      ],
+      "provided": [
+        {
+          "text": "Rudimentary Necromancy Staff",
+          "quantity": 1,
+          "type": "item",
+          "id": 254870
+        }
+      ],
+      "description": "We already know these crystals are capable of more than sundering the ground--the Gelkis have proven that they can be twisted for necromantic power. Do you remember the bones I had you collect? I assembled them as best I could just up the hill. There was enough for two workable skeletons.\n\n<Orgrul hands you a newly made staff.>\n\nI will deliver the Necrokhan's staff while you play with your new toy. Return only once you can prove that you know how to use it.",
+      "progress": "Despite your aid thus far, if you are unable to raise the dead then your usefulness with the Magram has come to an end.",
+      "completion": "I can see a new fire burn brightly in your eyes, outsider. You have demonstrated your ability to create your own armaments, summon minions to do your bidding, and most importantly to assert your dominance when they refuse to follow your command.\n\nA shame you have no centaur blood in you. You would be well on your way to become the next Khan.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 271796,
+            "name": "Blade of the Magram Clan",
+            "icon": "inv_sword_07",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 271797,
+            "name": "Staff of Revelations",
+            "icon": "inv_staff_08",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 271798,
+            "name": "Desperate Barrier",
+            "icon": "inv_shield_05",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2450,
+      "reputation": [
+        {
+          "faction_id": 93,
+          "faction": "Magram Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1385,
+            "name": "Brutal Politics",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1367,
+            "name": "Magram Alliance",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 1386,
+            "name": "Assault on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1369,
+            "name": "Broken Tears",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92743,
+            "name": "A Conqueror's Crown",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92841,
+            "name": "Valley of Bones",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92844,
+            "name": "Mountain of Bones",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92846,
+            "name": "Outcast Necromancers",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92847,
+            "name": "Corrupting Tears",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92873,
+            "name": "Proof of Concept",
+            "side": "Horde",
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 92893,
+            "name": "No Mercy for the Weak",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92894,
+            "name": "Bone Raising",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93066,
+            "name": "Bristleback Retreat",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93072,
+            "name": "Long-Term Solutions",
+            "side": null
+          },
+          {
+            "quest_id": 93129,
+            "name": "Threat of Starvation",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93188,
+            "name": "Return to Orgrul",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93196,
+            "name": "Khan Jehn",
+            "side": "Horde"
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 96010,
+      "name": "Fragments of the Pylons",
+      "basis": "page",
+      "level": 41,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253471,
+        "name": "Mordent Evenshade"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253471,
+        "name": "Mordent Evenshade"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 37,
+        "yellow": 39,
+        "green": 44,
+        "grey": 51
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Recover shards and fragments of the pylons, found guarded at the Magram and Gelkis villages. Return them to Mordent Evenshade.",
+      "objectives": [
+        {
+          "text": "Pylon Fragment",
+          "quantity": 1,
+          "type": "item",
+          "id": 255656
+        },
+        {
+          "text": "Pylon Shard",
+          "quantity": 1,
+          "type": "item",
+          "id": 255657
+        }
+      ],
+      "provided": [],
+      "description": "Although I am sure we can attribute the damage to both pylons to the reckless centaur stomping about, I suspect the timing of their rampage resulted in the shards being separated. I know little about their quarrels, but I do know there are at least two main factions that have trespassed into Shen'dralas: the ferocious Magram and the cunning Gelkis.\n\nKeeping these treasures in the midst of a battlefield would be unwise. By now, I am assuming they have taken their trophies back to their own villages.",
+      "progress": "I would rather not further draw the centaur's attention toward me or my fallen kin, else I would seek out the crystals myself.",
+      "completion": "The crystals are in a few more pieces than I was expecting, but this looks to be all of it. I will hold onto these for the moment. Thank you, <name>.\n\nYour next step will be to gather mana that is malleable enough to serve as both an adhesive for the broken pieces, and a conduit for the leylines to surge through thereafter.\n\nIt is quite a remarkable process, but gathering the mana may prove to be an inconvenience.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2450,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 92914,
+            "name": "Strange Pylons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 96010,
+            "name": "Fragments of the Pylons",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 96018,
+            "name": "Powering the Pylons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93016,
+            "name": "A Brief History Lesson",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93394,
+            "name": "Meeting the Magister",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 92844,
+      "name": "Mountain of Bones",
+      "basis": "page",
+      "level": 42,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 38,
+        "yellow": 40,
+        "green": 45,
+        "grey": 52
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Magram, and bring 426 Gently Cursed Bones to Orgrul south of the Magram Village in Desolace.",
+      "objectives": [
+        {
+          "text": "Gently Cursed Bone",
+          "quantity": 426,
+          "type": "item",
+          "id": 254663
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 93
+        }
+      ],
+      "provided": [],
+      "description": "Some sort of necromantic energy has permeated throughout the Valley of Bones, for reasons we have yet to understand.\n\nThose reasons are also of no importance to us. The magic is ours now, and those who do not fight with blade or mallet are trained in this new magic.\n\nIf you think I intend to start you off with a challenging task, think again. For now, go into the Valley of Bones and fetch some bones for me. I am sure you can handle that.",
+      "progress": "For every bone short you are for the task, I will take one of yours to make up the difference.",
+      "completion": "<Orgrul begins to count the bones, but begins to skip numbers as they gain a second digit and eventually loses count. He tries a second time, but glares your direction partway through when your expression contorts while observing.>\n\nBah. I will count them later. This looks like enough. You had best not be deceiving me.\n\nI will hold onto these.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "30s"
+      },
+      "xp": 3450,
+      "reputation": [
+        {
+          "faction_id": 93,
+          "faction": "Magram Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1385,
+            "name": "Brutal Politics",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1367,
+            "name": "Magram Alliance",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 1386,
+            "name": "Assault on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1369,
+            "name": "Broken Tears",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92743,
+            "name": "A Conqueror's Crown",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92841,
+            "name": "Valley of Bones",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92844,
+            "name": "Mountain of Bones",
+            "side": "Horde",
+            "current": true
+          },
+          {
+            "quest_id": 92846,
+            "name": "Outcast Necromancers",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92847,
+            "name": "Corrupting Tears",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92873,
+            "name": "Proof of Concept",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92893,
+            "name": "No Mercy for the Weak",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92894,
+            "name": "Bone Raising",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93066,
+            "name": "Bristleback Retreat",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93072,
+            "name": "Long-Term Solutions",
+            "side": null
+          },
+          {
+            "quest_id": 93129,
+            "name": "Threat of Starvation",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93188,
+            "name": "Return to Orgrul",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93196,
+            "name": "Khan Jehn",
+            "side": "Horde"
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 92847,
+      "name": "Corrupting Tears",
+      "basis": "page",
+      "level": 42,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 38,
+        "yellow": 40,
+        "green": 45,
+        "grey": 52
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Magram, and bring 3 Petrified Bark and 3 Imbued Tears back to Orgrul.",
+      "objectives": [
+        {
+          "text": "Petrified Bark",
+          "quantity": 3,
+          "type": "item",
+          "id": 254841
+        },
+        {
+          "text": "Imbued Tears",
+          "quantity": 3,
+          "type": "item",
+          "id": 254840
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 93
+        }
+      ],
+      "provided": [],
+      "description": "Outsider, did you notice the weapon that the outcast necromancers held in their hands? We will ensure the Gelkis will not live long enough to master the ways of necromancy, but their methods of channeling caught my interest. They even use those same crystals Warug asked you to steal.\n\nI think we can use this technique to our advantage. Venture back into the valley to recover some wood from the accursed trees, and see if Warug will part with some of his crystals. I will make staves from them.",
+      "progress": "These staves may be the missing piece we need to secure the rest of the Valley of Bones. Go now, <race>, let us make use of the Gelkis' ways before their next discovery.",
+      "completion": "Only three? Hmmph, Warug is being stingy as always. Give me a moment while I create the staves.\n\nI will take one. The second will go to the Necrokhan that patrols along the chokepoint toward the elven ruins.\n\nThe third is yours. You are a part of this war, now more than ever.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3450,
+      "reputation": [
+        {
+          "faction_id": 93,
+          "faction": "Magram Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1385,
+            "name": "Brutal Politics",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1367,
+            "name": "Magram Alliance",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 1386,
+            "name": "Assault on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1369,
+            "name": "Broken Tears",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92743,
+            "name": "A Conqueror's Crown",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92841,
+            "name": "Valley of Bones",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92844,
+            "name": "Mountain of Bones",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92846,
+            "name": "Outcast Necromancers",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92847,
+            "name": "Corrupting Tears",
+            "side": "Horde",
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 92873,
+            "name": "Proof of Concept",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92893,
+            "name": "No Mercy for the Weak",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92894,
+            "name": "Bone Raising",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93066,
+            "name": "Bristleback Retreat",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93072,
+            "name": "Long-Term Solutions",
+            "side": null
+          },
+          {
+            "quest_id": 93129,
+            "name": "Threat of Starvation",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93188,
+            "name": "Return to Orgrul",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93196,
+            "name": "Khan Jehn",
+            "side": "Horde"
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 92893,
+      "name": "No Mercy for the Weak",
+      "basis": "page",
+      "level": 42,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 38,
+        "yellow": 40,
+        "green": 45,
+        "grey": 52
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Magram Clan, and slay 5 Gelkis Captives scattered around the Valley of Bones. Return to Orgrul after the task is complete.",
+      "objectives": [
+        {
+          "text": "Gelkis Captive slain",
+          "quantity": 5,
+          "type": "npc",
+          "id": 253431
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 93
+        }
+      ],
+      "provided": [],
+      "description": "As you tread further into the Valley of Bones, you will find Gelkis wanderers that dared to enter our territory. I instructed they be kept alive so they could feed the bone worms burrowing about, but they seem uninterested in their prey being alive.\n\nThis task is simple. Find the prisoners, then snuff out their life. Don't give them a brief glimmer of hope for freedom.",
+      "progress": null,
+      "completion": "As much as I would have loved to hang their skulls from my tent, their bodies are far more valuable to the Magram left in the valley.\n\nThe bone worms will devour their flesh by the next morning, and we will have many new skeletons to raise thereafter.\n\nWith each Gelkis death, the Magram army grows stronger!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2550,
+      "reputation": [
+        {
+          "faction_id": 93,
+          "faction": "Magram Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1385,
+            "name": "Brutal Politics",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1367,
+            "name": "Magram Alliance",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 1386,
+            "name": "Assault on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1369,
+            "name": "Broken Tears",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92743,
+            "name": "A Conqueror's Crown",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92841,
+            "name": "Valley of Bones",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92844,
+            "name": "Mountain of Bones",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92846,
+            "name": "Outcast Necromancers",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92847,
+            "name": "Corrupting Tears",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92873,
+            "name": "Proof of Concept",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92893,
+            "name": "No Mercy for the Weak",
+            "side": "Horde",
+            "current": true
+          },
+          {
+            "quest_id": 92894,
+            "name": "Bone Raising",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93066,
+            "name": "Bristleback Retreat",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93072,
+            "name": "Long-Term Solutions",
+            "side": null
+          },
+          {
+            "quest_id": 93129,
+            "name": "Threat of Starvation",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93188,
+            "name": "Return to Orgrul",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93196,
+            "name": "Khan Jehn",
+            "side": "Horde"
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93058,
+      "name": "Saving Our Own",
+      "basis": "page",
+      "level": 42,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 38,
+        "yellow": 40,
+        "green": 45,
+        "grey": 52
+      },
+      "patch": "1.60.1.70235",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Gelkis clan, and rescue 5 Gelkis Captives within the Valley of Bones. Return to Nerlokh near the entrance when you are done.",
+      "objectives": [
+        {
+          "text": "Gelkis Captive rescued",
+          "quantity": 5,
+          "type": "npc",
+          "id": 254825
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 92
+        }
+      ],
+      "provided": [],
+      "description": "There was a brief battle between a few of the necromancers just around the hill, and I used that to take a closer look inside.\n\n<name>, not all of our recent losses were defectors. There are Gelkis being held captive further in the valley! I was not able to investigate their situation because a hulking Magram brute started charging my direction. I consider myself fortunate he lost interest quickly.\n\nYou must go back into the Valley of Bones and free them. The Gelkis stand together.",
+      "progress": null,
+      "completion": "When I first heard the stamping of hooves, I thought I was about to be pushed back to the village. Imagine my delight the moment I saw my brethren retreating past these arches, alive and well!\n\nI have directed the survivors to report to Uthek to share anything they might have learned. I do not anticipate reinforcements, <name>, but this bodes well for the future of our clan.\n\nLet us remain focused in our task.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2550,
+      "reputation": [
+        {
+          "faction_id": 92,
+          "faction": "Gelkis Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 93058,
+            "name": "Saving Our Own",
+            "side": null,
+            "current": true
+          },
+          {
+            "quest_id": 93062,
+            "name": "Bone Burying",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93122,
+            "name": "Checking Things Out",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93128,
+            "name": "Khan Jehn",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93062,
+      "name": "Bone Burying",
+      "basis": "page",
+      "level": 42,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 38,
+        "yellow": 40,
+        "green": 45,
+        "grey": 52
+      },
+      "patch": "1.60.1.70235",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Gelkis Clan, and dispel the curses from 8 failed summons throughout the Valley of Bones.",
+      "objectives": [
+        {
+          "text": "Haggard Bones laid to rest",
+          "quantity": 8,
+          "type": "npc",
+          "id": 253446
+        },
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 92
+        }
+      ],
+      "provided": [
+        {
+          "text": "Uthek's Draenethyst Staff",
+          "quantity": 1,
+          "type": "item",
+          "id": 258661
+        }
+      ],
+      "description": "About this staff of yours. I recognize it as one of Uthek's, and you mentioned it was constructed with Theradras' Tears, augmented with a Draenethyst Crystal, and that it can dispel dark magic?\n\nI noticed that there are skeletons stuck just underneath the rocky soil further into the valley. I believe these are failed summons from the Outcast Necromancers, doomed perhaps forever to an existence smothered in dirt.\n\nLaying them to rest again would be good for our cause, and their spirits.",
+      "progress": null,
+      "completion": "There is a weight lifted off my shoulders knowing that you restored peace to so many bodies.\n\nAll my life I expected our clan wars to inevitably end in brutality and bloodshed. Never would I have guessed that I would be staring death in the face, with death staring right back.\n\nThank you, again, <name>.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3450,
+      "reputation": [
+        {
+          "faction_id": 92,
+          "faction": "Gelkis Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 93058,
+            "name": "Saving Our Own",
+            "side": null
+          },
+          {
+            "quest_id": 93062,
+            "name": "Bone Burying",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93122,
+            "name": "Checking Things Out",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93128,
+            "name": "Khan Jehn",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93450,
+      "name": "Phantasmal Problems",
+      "basis": "page",
+      "level": 42,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 254717,
+        "name": "Vindael"
+      },
+      "end": {
+        "type": "npc",
+        "id": 254717,
+        "name": "Vindael"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 38,
+        "yellow": 40,
+        "green": 45,
+        "grey": 52
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Take Vindael's unfinished sword and figure out a way to usher it into the spirit realm, then return the Phantasmal Blade to him at Shen'dralas.",
+      "objectives": [
+        {
+          "text": "Phantasmal Blade",
+          "quantity": 1,
+          "type": "item",
+          "id": 258735
+        },
+        {
+          "text": "Unfinished Masterwork Sword",
+          "quantity": 1,
+          "type": "item",
+          "id": 258734
+        }
+      ],
+      "provided": [],
+      "description": "Being corporeal has its challenges, as you know, but being INcorporeal is a whole other situation. Will I fall through THIS chair? Will I trip over THAT cat? Worst of all, however, it makes everyday work impossible!\n\nDo you see this sword on my anvil? I began work on this thousands of years ago, but met my demise before it was finished. Now it taunts me, AND takes up precious real estate! I cannot work with it! I cannot MOVE it!\n\nI need you to help, uh, \"ferry\" it to the spirit realm. What do you say?",
+      "progress": "I know of only one way to get things into the spirit realm, <race>, but I am sure you can come up with something better.",
+      "completion": "Wait... you did it? Err, I mean... you did it!\n\nMy problem was very real but my desired solution certainly was not. I am unsure what surprises me the most. That you made the plunge? That the blade followed you into the spirit realm?\n\n<Vindael eyes you up and down once, then again with suspicion overtaking his expression.>\n\nYou still seem very much alive for someone who has tasted death. Why not share your secret with the rest of us?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 860,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 93450,
+            "name": "Phantasmal Problems",
+            "side": null,
+            "current": true
+          },
+          {
+            "quest_id": 93451,
+            "name": "Phantasmal Problems",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93546,
+            "name": "Spectral Iron Ore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 96060,
+            "name": "Tempered Expectations",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93451,
+      "name": "Phantasmal Problems",
+      "basis": "page",
+      "level": 42,
+      "required_level": 35,
+      "side": null,
+      "side_label": "None",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 38,
+        "yellow": 40,
+        "green": 45,
+        "grey": 52
+      },
+      "patch": "1.60.1.70862",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Locate Vindael's unfinished sword and return it to him in Shen'dralas.",
+      "objectives": [
+        {
+          "text": "Phantasmal Blade",
+          "quantity": 1,
+          "type": "item",
+          "id": 258735
+        }
+      ],
+      "provided": [],
+      "description": "Ah, you look to be a sensible individual. Likely more sense than the last oaf that passed by. I need a small favor of you.\n\nYou see, I had a problem. My greatest masterpiece of swordsmithing was left unfinished before my passing, and I needed someone to assist in bringing it into the spirit world so that I may finish it. The last person was gracious enough to help, and they succeeded!\n\nNow I have a new problem. Through every fault of his own, the previous adventurer can no longer bring it back to me.",
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 860,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 93450,
+            "name": "Phantasmal Problems",
+            "side": null
+          },
+          {
+            "quest_id": 93451,
+            "name": "Phantasmal Problems",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93546,
+            "name": "Spectral Iron Ore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 96060,
+            "name": "Tempered Expectations",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93546,
+      "name": "Spectral Iron Ore",
+      "basis": "page",
+      "level": 42,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 254717,
+        "name": "Vindael"
+      },
+      "end": {
+        "type": "npc",
+        "id": 254717,
+        "name": "Vindael"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 38,
+        "yellow": 40,
+        "green": 45,
+        "grey": 52
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Search for Spectral Iron Deposits around Shen'dralas and collect 10 Spectral Iron Ore. Return to Vindael in Shen'dralas once you have found enough.",
+      "objectives": [
+        {
+          "text": "Spectral Iron Ore",
+          "quantity": 10,
+          "type": "item",
+          "id": 259226
+        }
+      ],
+      "provided": [
+        {
+          "text": "Vindael's Spectral Pickaxe",
+          "quantity": 1,
+          "type": "item",
+          "id": 259229
+        }
+      ],
+      "description": "Finally, FINALLY I can use this anvil for something other than a monumentally heavy table. I am delighted to finally hone my craft again after centuries of missed practice.\n\nNow, you are probably thinking, \"Vindael, this sounds like you are setting the stage for another request.\" And you would be correct!\n\nI need to replenish my supply of iron, but your iron has a similar predicament to my blade. Fortunately, the solution is MUCH simpler.\n\n<He hands you a ghostly pickaxe, without a chance to refuse.>",
+      "progress": "Regular iron just won't do, I'm afraid. By now I am sure you understand why.",
+      "completion": "Wow, what a haul! You are tremendously helpful for someone that has to waste a third of your life sleeping. Where do you find the time to help a stranger out?\n\nAh, a reward? You were expecting a reward?\n\nNo, I don't think I'm quite ready to offer you one just yet.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 2550,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 93450,
+            "name": "Phantasmal Problems",
+            "side": null
+          },
+          {
+            "quest_id": 93451,
+            "name": "Phantasmal Problems",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93546,
+            "name": "Spectral Iron Ore",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 96060,
+            "name": "Tempered Expectations",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 96060,
+      "name": "Tempered Expectations",
+      "basis": "page",
+      "level": 42,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 254717,
+        "name": "Vindael"
+      },
+      "end": {
+        "type": "npc",
+        "id": 254717,
+        "name": "Vindael"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 38,
+        "yellow": 40,
+        "green": 45,
+        "grey": 52
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Use the Phantasmal Blade to execute 8 wildlife in Shen'dralas, then return to Vindael at the temple.",
+      "objectives": [
+        {
+          "text": "Shen'dralas wildlife slain with the blade",
+          "quantity": 8,
+          "counts_from": [
+            {
+              "text": "Blind Screecher",
+              "type": "npc",
+              "id": 255174
+            },
+            {
+              "text": "Prowler",
+              "type": "npc",
+              "id": 255207
+            },
+            {
+              "text": "Bear",
+              "type": "npc",
+              "id": 263681
+            }
+          ]
+        }
+      ],
+      "provided": [
+        {
+          "text": "Phantasmal Blade",
+          "quantity": 1,
+          "type": "item",
+          "id": 271992
+        }
+      ],
+      "description": "Let me be the first to share that I was a master swordsman in life. I forged weapons by day and wielded them by night.\n\nAs you are quite well aware, my relationship with this particular blade is now extraordinarily complicated. Though I think I could swing it around, I'm not convinced it would be of much use unless I was fighting other spirits. Is that really of any value to me in Shen'dralas?\n\nNonetheless, I would like its capabilities tested and I think our forests could use a gentle culling.",
+      "progress": "How has that blade been working out for you?",
+      "completion": "Marvelous! Spectacular even! After all these years, I am delighted to hear that this sword managed to shed blood at least once in its existence.\n\nAnd those ghosts you saw--what an unexpected, peculiar surprise. I am less enthusiastic about that, as it likely means we will need to eradicate those same creatures a second time if they have managed to entangle themselves in our spirit realm.\n\nNot a task I intend to bother you with, at least not today. Carry on with whatever it is you are doing here.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 272181,
+            "name": "Phantasmal Shiv",
+            "icon": "inv_weapon_shortblade_05",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 272180,
+            "name": "Spectral Magister's Commission",
+            "icon": "inv_sword_41",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 272179,
+            "name": "Greatsword of Great Pasts",
+            "icon": "inv_sword_23",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3450,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 93450,
+            "name": "Phantasmal Problems",
+            "side": null
+          },
+          {
+            "quest_id": 93451,
+            "name": "Phantasmal Problems",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93546,
+            "name": "Spectral Iron Ore",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 96060,
+            "name": "Tempered Expectations",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 92914,
+      "name": "Strange Pylons",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "object",
+        "id": 577959,
+        "name": "Shen'dralar Pylon"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253471,
+        "name": "Mordent Evenshade"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Explore Shen'dralas in an effort to find other pylons like the one you found.",
+      "objectives": [],
+      "provided": [],
+      "description": "<You approach the strange crystal, guarded mere moments ago by emaciated mana elementals.\n\nIts pedestal, though ancient, is noticeably less dilapidated than the elven ruins it is built upon.\n\nA weak hum of power radiates from the fractured gemstone, but with its magic so heavily depleted its purpose will ultimately remain a mystery for the time being.\n\nPerhaps there is more to discover nearby.>",
+      "progress": "A living <race>, all the way out here? Your presence honors me. I was beginning to think that I would spend the remainder of my mortality skulking in the shadows away from the centaur. To what do I owe this surprise encounter?",
+      "completion": "To hear that the crystal within the temple shines brightly is an immense weight off my shoulders. I was worried that the centaur had breached the temple grounds now, too. It would seem they continue to be off-put by what's inside.\n\nAs for the other pylons, if elementals are still standing vigilant over them, then they are quite capable of being restored.\n\nI hope the temple's denizens didn't frighten you. They are friendly enough, just bitter. Understandably bitter.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "30s"
+      },
+      "xp": 3600,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 92914,
+            "name": "Strange Pylons",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 96010,
+            "name": "Fragments of the Pylons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 96018,
+            "name": "Powering the Pylons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93016,
+            "name": "A Brief History Lesson",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93394,
+            "name": "Meeting the Magister",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93016,
+      "name": "A Brief History Lesson",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253471,
+        "name": "Mordent Evenshade"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253471,
+        "name": "Mordent Evenshade"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Speak with Mordent Evenshade in Shen'dralas for information about the crystals you repaired.",
+      "objectives": [
+        {
+          "text": "Speak with Mordent Evenshade",
+          "quantity": 1,
+          "type": "npc",
+          "id": 253623
+        }
+      ],
+      "provided": [],
+      "description": "You will have to forgive me for sending you on such a series of tasks without providing any context. I hadn't considered how suspicious this may have seemed, more so now that the skies have taken on such a dramatic appearance.\n\nI will gladly answer your questions.",
+      "progress": "Do you have further questions?",
+      "completion": "I hope that explanation alleviated any concerns you might have had, <name>. As you see, I was not acting out of any foul intent, and my failure to explain the situation thoroughly from the start was purely due to my enthusiasm of having a chance to see the crystals' lights shine again.\n\nI am excited to visit the temple of Shen'dralas again, though it may take some time before I muster the courage to speak with the Shen'dralar there.\n\nYou, on the other hand...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 360,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 92914,
+            "name": "Strange Pylons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 96010,
+            "name": "Fragments of the Pylons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 96018,
+            "name": "Powering the Pylons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93016,
+            "name": "A Brief History Lesson",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93394,
+            "name": "Meeting the Magister",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93066,
+      "name": "Bristleback Retreat",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253851,
+        "name": "Hagiak"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Magram, and slay quilboar at Bristleback Retreat. Then report to Hagiak at the Magram Front on the other side of Valley of Bones in Desolace.",
+      "objectives": [
+        {
+          "text": "Bristleback Nomad slain",
+          "quantity": 4,
+          "type": "npc",
+          "id": 253524
+        },
+        {
+          "text": "Bristleback Thornweaver slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 253525
+        },
+        {
+          "text": "Bristleback Skullcrusher slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 253526
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 93
+        }
+      ],
+      "provided": [],
+      "description": "On the other side of the valley, we have established a small foothold to prepare to march into the forest nearby. Before you head straight there, I want you to deal with a recent Bristleback intrusion along the way. They seem to have arrived right around the same time we did, but managed to secure an artifact from the nearby temple that has kept us at bay.\n\nThis task is simple. Look for the thorns and the pigs. Kill a bunch, indiscriminately. Then report to Hagiak at the camp I mentioned.",
+      "progress": "Ah. You must be the outsider running favors for Orgrul.\n\nHow lucky you are that you are terrible at sneaking around. Had my scouts not seen you stomping around on his behalf, your head would be on a bloodied pike.",
+      "completion": "I am sorry you have come all this way, outsider, but you are not needed at the Magram front. Already you have distracted me long enough to delay our work.\n\nReturn to Orgrul and tell him--\n\nOn second thought, I do have something for a disposable soldier such as yourself. This will be quick, for better or worse.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "60s"
+      },
+      "xp": 3600,
+      "reputation": [
+        {
+          "faction_id": 93,
+          "faction": "Magram Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1385,
+            "name": "Brutal Politics",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1367,
+            "name": "Magram Alliance",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 1386,
+            "name": "Assault on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1369,
+            "name": "Broken Tears",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92743,
+            "name": "A Conqueror's Crown",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92841,
+            "name": "Valley of Bones",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92844,
+            "name": "Mountain of Bones",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92846,
+            "name": "Outcast Necromancers",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92847,
+            "name": "Corrupting Tears",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92873,
+            "name": "Proof of Concept",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92893,
+            "name": "No Mercy for the Weak",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92894,
+            "name": "Bone Raising",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93066,
+            "name": "Bristleback Retreat",
+            "side": "Horde",
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93072,
+            "name": "Long-Term Solutions",
+            "side": null
+          },
+          {
+            "quest_id": 93129,
+            "name": "Threat of Starvation",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93188,
+            "name": "Return to Orgrul",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93196,
+            "name": "Khan Jehn",
+            "side": "Horde"
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93072,
+      "name": "Long-Term Solutions",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253851,
+        "name": "Hagiak"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253851,
+        "name": "Hagiak"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Magram clan and slay 2 Outcast Scouts, 6 Outcast Marauders, and 8 Outcast Necromancers then return to Hagiak at the Magram Front.",
+      "objectives": [
+        {
+          "text": "Outcast Scout slain",
+          "quantity": 2,
+          "type": "npc",
+          "id": 254283
+        },
+        {
+          "text": "Outcast Marauder slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 254284
+        },
+        {
+          "text": "Outcast Necromancer slain",
+          "quantity": 8,
+          "type": "npc",
+          "id": 11559
+        }
+      ],
+      "provided": [],
+      "description": "There is a second centaur village out here, to the southwest. That one belongs to the Gelkis. You expect me to send you over just to spill some blood, right? Good. That had best be your first thought, else I would cast doubt on your allegiance to the Magram!\n\nWhat are you waiting for? Go! Kill!",
+      "progress": null,
+      "completion": "My scouts have already reported your success. Now perhaps we can continue our training in peace. The Gelkis need to learn that this place, and the Desolace, belong to centaur born of Magram blood.\n\nIf you see any stragglers, cut off their heads too. They should be afraid to ever step hoof outside of their little hovel.\n\nThat will belong to us too, someday soon.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "30s"
+      },
+      "xp": 3600,
+      "reputation": [
+        {
+          "faction_id": 93,
+          "faction": "Magram Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1385,
+            "name": "Brutal Politics",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1367,
+            "name": "Magram Alliance",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 1386,
+            "name": "Assault on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1369,
+            "name": "Broken Tears",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92743,
+            "name": "A Conqueror's Crown",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92841,
+            "name": "Valley of Bones",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92844,
+            "name": "Mountain of Bones",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92846,
+            "name": "Outcast Necromancers",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92847,
+            "name": "Corrupting Tears",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92873,
+            "name": "Proof of Concept",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92893,
+            "name": "No Mercy for the Weak",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92894,
+            "name": "Bone Raising",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93066,
+            "name": "Bristleback Retreat",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93072,
+            "name": "Long-Term Solutions",
+            "side": null,
+            "current": true
+          },
+          {
+            "quest_id": 93129,
+            "name": "Threat of Starvation",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93188,
+            "name": "Return to Orgrul",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93196,
+            "name": "Khan Jehn",
+            "side": "Horde"
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93122,
+      "name": "Checking Things Out",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70235",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Gelkis, and investigate centaur points of interest within Shen'dralas. Then return to Nerlokh at the entrance of Valley of Bones with your findings.",
+      "objectives": [],
+      "provided": [],
+      "description": "We have all underestimated the power and presence of the Magram clan in this area, but this could prove an advantage.\n\nWith so many of their own distracted and their refusal to accept other clans' exiles, who is left to defend the village? What of their Khan?\n\nI need you to go into the valley, deeper than you have gone before, and look around. If the Magram are as well fortified here as they seem, they may have left themselves vulnerable at their village...",
+      "progress": "Back already, <name>? What is the word?",
+      "completion": "<You summarize your findings.>\n\nNot one, but TWO camps?\n\n<You clarify that one camp is unquestionably Magram, but the other looks to belong to the outcasts.>\n\nThis means that the Magram are likely in an active conflict. <name>, I think this may be our opportunity.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 360,
+      "reputation": [
+        {
+          "faction_id": 92,
+          "faction": "Gelkis Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 93058,
+            "name": "Saving Our Own",
+            "side": null
+          },
+          {
+            "quest_id": 93062,
+            "name": "Bone Burying",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93122,
+            "name": "Checking Things Out",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93128,
+            "name": "Khan Jehn",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93125,
+      "name": "Going Home",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 254040,
+        "name": "Rokren"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253177,
+        "name": "Nerlokh"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70235",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Gelkis, and escort Rokren out of the Outcast Hideaway. Then inform Nerlokh near the Valley of Bones about what happened.",
+      "objectives": [
+        {
+          "text": "Gelkis Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 92
+        },
+        {
+          "text": "Escort Rokren out of the Outcast Hideaway",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "You! I saw you outside fighting the outcasts. I know not where you come from, but I need your help.\n\nI was lured here by my Gelkis brethren with an assurance of safety. I knew the war in the Desolace was escalating beyond our control, but I never imagined my own people turning to necromancy in a convoluted bid to defect to the Magram clan. When I spoke out against this, they threatened to kill me if I ever stepped hoof outside this tent!\n\nPlease help.",
+      "progress": null,
+      "completion": "Rokren, yes! We spoke briefly as he passed by. I am grateful that he is alive and well.\n\nBetween the other Gelkis you rescued and Rokren, I am feeling a renewed sense of hope and courage. Our clan's true numbers are higher than we thought, and so many \"outcasts\" here were Gelkis lured out and held against their will.\n\nThere is a chance the Gelkis will survive this, <name>.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "45s"
+      },
+      "xp": 2700,
+      "reputation": [
+        {
+          "faction_id": 92,
+          "faction": "Gelkis Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 93129,
+      "name": "Threat of Starvation",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253851,
+        "name": "Hagiak"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253851,
+        "name": "Hagiak"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Magram, and bring 6 Stolen Supplies back to Hagiak at the Magram Front.",
+      "objectives": [
+        {
+          "text": "Stolen Supplies",
+          "quantity": 6,
+          "type": "item",
+          "id": 256892
+        },
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 93
+        }
+      ],
+      "provided": [],
+      "description": "Since you seem overly eager to help our clan, I am sure you would be willing to fetch some supplies while you are over in the Outcast Hideaway.\n\nFelling our foes should be enough motivation for a Magram, but I see no reason why we could not profit from the endeavor, too.\n\nWhen we have the exiles dealt with, we can secure this place for the Magram and raise an army to bring the other clans to their knees!",
+      "progress": "Slay their soldiers and starve the survivors. Their little hideaway should never be a sufficient staging ground against our clan again!",
+      "completion": "<Hagiak peeks into several of the crates without a word at first.>\n\nOf all things to bring out to the front lines, I would have never expected... nevermind. Some of these crates have food in them, and that's what matters. We've shortened the time they can survive here significantly.\n\nThe ultimate victory for our clan grows nearer.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1800,
+      "reputation": [
+        {
+          "faction_id": 93,
+          "faction": "Magram Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1385,
+            "name": "Brutal Politics",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1367,
+            "name": "Magram Alliance",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 1386,
+            "name": "Assault on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1369,
+            "name": "Broken Tears",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92743,
+            "name": "A Conqueror's Crown",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92841,
+            "name": "Valley of Bones",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92844,
+            "name": "Mountain of Bones",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92846,
+            "name": "Outcast Necromancers",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92847,
+            "name": "Corrupting Tears",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92873,
+            "name": "Proof of Concept",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92893,
+            "name": "No Mercy for the Weak",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92894,
+            "name": "Bone Raising",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93066,
+            "name": "Bristleback Retreat",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93072,
+            "name": "Long-Term Solutions",
+            "side": null
+          },
+          {
+            "quest_id": 93129,
+            "name": "Threat of Starvation",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93188,
+            "name": "Return to Orgrul",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93196,
+            "name": "Khan Jehn",
+            "side": "Horde"
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93188,
+      "name": "Return to Orgrul",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253851,
+        "name": "Hagiak"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253136,
+        "name": "Orgrul"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70205",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Maintain your reputation with the Magram, and report back to Orgrul near the northern entrance to Valley of Bones.",
+      "objectives": [
+        {
+          "text": "Magram Clan Centaur",
+          "quantity": "Honored",
+          "type": "faction",
+          "id": 93
+        }
+      ],
+      "provided": [],
+      "description": "You have done enough on the front lines. We can handle ourselves.\n\nTell Orgrul that you have served your purpose. The Magram Front is stronger now, and we have our sights set on the outcast encampment as our next settlement when another fleet of fighters joins the fray.\n\nWell? Get going!",
+      "progress": null,
+      "completion": "An interesting development has unfolded within Magram Village during your brief absence. It was an act of war, carefully executed by an outsider fighting under the Gelkis banner.\n\nHad this taken place a few months prior, I would have demanded execution of you and all other outsiders ignorantly playing deception with our clans.\n\nBut this is no ordinary circumstance.\n\nThis is an opportunity. For you, for the Magram, for the war.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 360,
+      "reputation": [
+        {
+          "faction_id": 93,
+          "faction": "Magram Clan Centaur",
+          "amount": 500
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1385,
+            "name": "Brutal Politics",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1367,
+            "name": "Magram Alliance",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 1386,
+            "name": "Assault on the Kolkar",
+            "side": "Alliance"
+          }
+        ],
+        [
+          {
+            "quest_id": 1369,
+            "name": "Broken Tears",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92743,
+            "name": "A Conqueror's Crown",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 92841,
+            "name": "Valley of Bones",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92844,
+            "name": "Mountain of Bones",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92846,
+            "name": "Outcast Necromancers",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92847,
+            "name": "Corrupting Tears",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92873,
+            "name": "Proof of Concept",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 92893,
+            "name": "No Mercy for the Weak",
+            "side": "Horde"
+          },
+          {
+            "quest_id": 92894,
+            "name": "Bone Raising",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93066,
+            "name": "Bristleback Retreat",
+            "side": "Horde"
+          }
+        ],
+        [
+          {
+            "quest_id": 93072,
+            "name": "Long-Term Solutions",
+            "side": null
+          },
+          {
+            "quest_id": 93129,
+            "name": "Threat of Starvation",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93188,
+            "name": "Return to Orgrul",
+            "side": "Horde",
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93196,
+            "name": "Khan Jehn",
+            "side": "Horde"
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93341,
+      "name": "Forlorn Gardens",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 254578,
+        "name": "Mithera"
+      },
+      "end": {
+        "type": "npc",
+        "id": 254578,
+        "name": "Mithera"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Investigate the Forlorn Gardens near Shen'dralas and then return to Mithera at the nearby temple.",
+      "objectives": [],
+      "provided": [],
+      "description": "As the garden's caretaker, it was my responsibility to ensure it thrived.\n\nI knew there would come a day when I could no longer maintain it, so I enchanted a necklace gifted from my daughter to transform a new generation of saplings into treants, so they could watch over the garden in my stead. I placed it on an enchanted pedestal, sheltered within a small shrine.\n\nThe garden was in great hands. I must know what happened.",
+      "progress": "When our pylons were at their weakest, I was unable to approach the garden to investigate the problem. Now that the haze has been lifted, I can't bring myself to get close again. I worry for the treants.\n\nI do not want my memory of such a wonderful place to be further tainted.",
+      "completion": "<Mithera listens quietly to your explanation of the situation.>\n\nThe pedestal is empty? My necklace is... missing?\n\n<A great sadness washes over her expression.>\n\nI should have expected as much. The quilboar and the centaur have been ravaging these lands for such a short amount of time, but the damage they have already done is immeasurable.\n\n<name>, even if the magic is gone from the necklace, I am clinging onto hope that I may have it back. Would you be willing to help?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1800,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 93362,
+      "name": "What They've Done to My Peonies",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 254578,
+        "name": "Mithera"
+      },
+      "end": {
+        "type": "npc",
+        "id": 254578,
+        "name": "Mithera"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Cull plants in the Forlorn Garden and then return to Mithera at Shen'dralas.",
+      "objectives": [
+        {
+          "text": "Rowdy Rose slain",
+          "quantity": 4,
+          "type": "npc",
+          "id": 254566
+        },
+        {
+          "text": "Terrible Tulip slain",
+          "quantity": 4,
+          "type": "npc",
+          "id": 254567
+        },
+        {
+          "text": "Malevolent Marigold slain",
+          "quantity": 20,
+          "type": "npc",
+          "id": 254572
+        }
+      ],
+      "provided": [],
+      "description": "Please spare the details of how the life may have been twisted there. My heart is broken enough with the loss of my necklace.\n\nBut while I weep, the plants suffer.\n\n<name>, I would like you to go back to the garden and cull some of the angered flora. Please be swift and merciful; they can feel pain, and they have been hurt enough. If you intend to go hunting for my necklace as well, I would ask you to prioritize that before visiting the gardens again... in the unlikely chance you find it.",
+      "progress": null,
+      "completion": "Eventually, I think the gardens will bloom beautifully again. Those flowers you culled today will give themselves back to the soil. It may take some time, perhaps a few generations, but someday it will be restored.\n\nYou have done a very kind deed, <name>. You have my personal gratitude.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3600,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 93394,
+      "name": "Meeting the Magister",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253471,
+        "name": "Mordent Evenshade"
+      },
+      "end": {
+        "type": "npc",
+        "id": 254656,
+        "name": "Magister Kirandis"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Locate Magister Kirandis inside the temple of Shen'dralas.",
+      "objectives": [],
+      "provided": [],
+      "description": "I suspect your curiosity is luring you toward the grand structure now, yes? Good!\n\nThe Shen'dralar there are unlikely to welcome you with open arms, but so long as you tread respectfully, I do not think you will run into any trouble.\n\nWith any luck, my old friend Kirandis might be easy to find. Of everyone, he is the most likely to be amicable to your presence.",
+      "progress": null,
+      "completion": "It is remarkable to see that the pylons' power burns brightly once more. I am surprised I hadn't noticed before you arrived. I was beginning to think that this one would soon suffer the same fate, and we would be lost to time.\n\nThank you for tethering us back in full to Shen'dralas. Try to meet some of our denizens. They may be wary of you, but that will pass.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 360,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 92914,
+            "name": "Strange Pylons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 96010,
+            "name": "Fragments of the Pylons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 96018,
+            "name": "Powering the Pylons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93016,
+            "name": "A Brief History Lesson",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93394,
+            "name": "Meeting the Magister",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93594,
+      "name": "Word of the Woods",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 254578,
+        "name": "Mithera"
+      },
+      "end": {
+        "type": "npc",
+        "id": 254674,
+        "name": "Woodwyrd"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Find Woodwyrd in the Forlorn Gardens at Shen'dralas in the Desolace.",
+      "objectives": [],
+      "provided": [],
+      "description": "Among the treants borne of the necklace, one in particular stood above all the others to have received the gift of life and sentience. I suspect if they have fallen, he may be the only one that remains.\n\nHe spent his days tending to each and every bloom and bud, and his evenings rooted in the ground to serve as a nest for the smaller critters.\n\nIf he is alive, and I pray that to be true, then he may know what happened.\n\nI am holding out hope for my good friend, Woodwyrd.",
+      "progress": null,
+      "completion": "It is too late. For these gardens.\n\nI am the last of my generation of caretakers. Without the gift, more cannot take my place.\n\nThe weeds have overtaken the land. The flowers are restless. The trees wither.\n\n<Woodwyrd slowly turns toward the towering ancient illuminating the sky with its endless fire.>",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 360,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 93594,
+            "name": "Word of the Woods",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93404,
+            "name": "Rot and Regret",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93601,
+            "name": "Passing the Blame",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93604,
+            "name": "Agamaggan's Blood",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 96018,
+      "name": "Powering the Pylons",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253471,
+        "name": "Mordent Evenshade"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253471,
+        "name": "Mordent Evenshade"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Acquire the Mana Sieve from within the temple in Shen'dralas and use it to collect Ancient Mana Crystals. Once you have acquired enough mana, empower the pylons and return to Mordent Evenshade.",
+      "objectives": [
+        {
+          "text": "Mana Sieve",
+          "quantity": 1,
+          "type": "item",
+          "id": 255662
+        },
+        {
+          "text": "Western pylon repaired",
+          "quantity": 1,
+          "type": "npc",
+          "id": 263435
+        },
+        {
+          "text": "Eastern pylon repaired",
+          "quantity": 1,
+          "type": "npc",
+          "id": 263436
+        },
+        {
+          "text": "Pile of Pylon Parts (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 271882
+        },
+        {
+          "text": "Coalesced Mana Crystal",
+          "quantity": 1,
+          "type": "item",
+          "id": 255667
+        }
+      ],
+      "provided": [],
+      "description": "You may have seen the floating sparks of mana scattered throughout Shen'dralas. This is a new phenomenon, likely the result of the damage the pylons have endured.\n\nWe need this mana back in a semicrystallized form. We can accomplish this by using the Mana Sieve found within the temple. Borrow the sieve and collect any floating mana orbs you find.\n\nThe temple's denizens will not appreciate their precious artifact being borrowed without their consent, but they will understand in time.",
+      "progress": "It is good to see you again, <name>.",
+      "completion": "I see you have successfully repaired the pylons--how could I not notice?\n\n<Mordent gestures up and toward the skies, his gaze briefly followed in that direction as well. As his attention returns to you, he lofts his brow as he takes note of your seemingly lesser levels of enthusiasm.>",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3600,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 92914,
+            "name": "Strange Pylons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 96010,
+            "name": "Fragments of the Pylons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 96018,
+            "name": "Powering the Pylons",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93016,
+            "name": "A Brief History Lesson",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93394,
+            "name": "Meeting the Magister",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 99257,
+      "name": "A Heart of Crystal",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 255486,
+        "name": "Historian Biraxas"
+      },
+      "end": {
+        "type": "npc",
+        "id": 255486,
+        "name": "Historian Biraxas"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Slay a Decrepit Pylon Protector for their Depleted Crystal Heart and bring it to Historian Biraxas within the temple of Shen'dralas.",
+      "objectives": [
+        {
+          "text": "Depleted Crystal Heart",
+          "quantity": 1,
+          "type": "item",
+          "id": 286647
+        }
+      ],
+      "provided": [],
+      "description": "While I watched in horror as you frolicked through the haunted woods with my precious relic, your meddling did inspire an idea.\n\nThe unstable rifts you encountered are the precursors to our pylon guards. We have been unable to conjure more for centuries, and I worry what might happen when those that remain inevitably flicker out.\n\nI know it seems counterintuitive, but see if you can find another pylon protector nearly on the verge of collapse and recover their Crystal Heart. I'll explain more after.",
+      "progress": "I assure you I am not looking to sabotage one of our only means of defense. If a protector does not look as lively and well-nourished as those in our temple, then they are on the last hundred years or so of their lifecycle. If anything, it is a mercy killing.",
+      "completion": "You were successful, I see! And what a heart you recovered. I am excited to know that the passing of centuries did little to tarnish the craftsmanship of this gemstone.\n\nMost importantly, this is a promising discovery. It would seem that, indeed, mana is temporary, but gemstones are forever.\n\nAre you eager to learn what comes next?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3600,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 99257,
+            "name": "A Heart of Crystal",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 99258,
+            "name": "Mana Mania",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 99258,
+      "name": "Mana Mania",
+      "basis": "page",
+      "level": 43,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": "Elite",
+      "start": {
+        "type": "npc",
+        "id": 255486,
+        "name": "Historian Biraxas"
+      },
+      "end": {
+        "type": "npc",
+        "id": 255486,
+        "name": "Historian Biraxas"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 39,
+        "yellow": 41,
+        "green": 46,
+        "grey": 53
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Throw the Depleted Crystal Heart into an Unstable Mana Rift. Return to Historian Biraxas within the temple of Shen'dralas with proof of success or failure.",
+      "objectives": [
+        {
+          "text": "Nascent Pylon Protector slain",
+          "quantity": 1,
+          "type": "npc",
+          "id": 276401
+        }
+      ],
+      "provided": [
+        {
+          "text": "Depleted Crystal Heart",
+          "quantity": 1,
+          "type": "item",
+          "id": 286648
+        }
+      ],
+      "description": "While sourcing the gems necessary to conjure the elementals is a challenge itself, the bigger concern is whether there is still enough loose mana in Shen'dralas to create them. With this heart, we can confirm once and for all whether we need to begin researching other means of defense.\n\nFor you, the task is simple. Simply toss this gem into one of those unstable rifts. If we're lucky, you'll have a fight on your hands. Don't feel compelled to hold back, if it works once, it will work again.",
+      "progress": null,
+      "completion": "It worked! It worked!!\n\nI struggle to find words, <name>! I did not expect this to prove successful. With each passing decade I worried that whatever chance there might have been had passed.\n\nThis may seem unimportant or perhaps even mundane to you, but rest assured that this is unlife changing for us.\n\nI will begin planning next steps. I have no further tasks for you, but others might appreciate your aid.\n\nThank you. Truly.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 4450,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 99257,
+            "name": "A Heart of Crystal",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 99258,
+            "name": "Mana Mania",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93568,
+      "name": "Partially Digested Collar",
+      "basis": "page",
+      "level": 45,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 255385,
+        "name": "Liranne"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 41,
+        "yellow": 43,
+        "green": 48,
+        "grey": 55
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Return the Partially Digested Collar to someone who knows about it. Presumably, they can be found in or near Shen'dralas in Desolace.",
+      "objectives": [
+        {
+          "text": "Partially Digested Collar",
+          "quantity": 1,
+          "type": "item",
+          "id": 259461
+        }
+      ],
+      "provided": [],
+      "description": "<You hold a grimy collar retrieved from the belly of a slain creature. The material is of a high-quality leather, clearly stitched with care.\n\nA tag dangles from a corroded buckle. You swipe away the gunk and can see Thalassian text, though the letters are stylized beyond readability, perhaps even to those familiar with the language.\n\nNow, you are presented with a choice. Do you disregard this and move on with your life, or do you attempt the impossible and seek to bring closure to its owner?>",
+      "progress": "<Liranne takes the collar and inspects it. She gently cradles the metal tag in her other hand, and flashes a brief smile upon reading it.>",
+      "completion": "This belonged to Dahlia, my best friend and favorite feline. Dahlia... I never was creative with names. It fit her though, she was a vibrant, blooming flower in my life.\n\nThe origin of it isn't very exciting. I was passing by some dahlia flowers in the garden when this little kitten leapt out at me! So playfully menacing. She followed me back to the temple and... that was that!\n\nNo need to stick around while I reminisce. Here's something for your trouble, thank you for resurfacing some old memories.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3900,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 93574,
+      "name": "Corpsefeeder's Carapace",
+      "basis": "page",
+      "level": 45,
+      "required_level": 35,
+      "side": null,
+      "side_label": "None",
+      "type": null,
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 253527,
+        "name": "Kog'thug the Brave"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 41,
+        "yellow": 43,
+        "green": 48,
+        "grey": 55
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Find someone interested in Corpsefeeder's Carapace.",
+      "objectives": [
+        {
+          "text": "Corpsefeeder's Carapace",
+          "quantity": 1,
+          "type": "item",
+          "id": 259893
+        }
+      ],
+      "provided": [],
+      "description": "<With a terrible crunch, you removed a piece of the worm's carapace upon its demise.\n\nDespite its enormous size and hefty weight, it is disappointingly ordinary. This creature was seemingly not the result of a cruel experiment nor carefully bred to be an all-devouring beast.\n\nIt is simply an impressive shell, likely desired only by collectors. Perhaps you could find one, though other than the centaur, who else might be alive around here?>",
+      "progress": "<Kog'thug has a blade to your throat before you manage to say a word.>",
+      "completion": "<The quilboar's eyes dart over toward the carapace jutting out from your backpack. He snorts once. Twice. Three times even, before pulling his blade away.>\n\nBig Worm dead?\n\nBig Worm dig through Bristleback land. Eat our dead. Devour our young.\n\nBig worm dead. Big <race> hero of Bristleback. Big <race> allowed in quilboar land. For now.\n\nWhat Big <race> want?",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 271810,
+            "name": "Corpsefeeder's Shedding",
+            "icon": "inv_misc_cape_11",
+            "quality": "rare",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 271811,
+            "name": "Clacking Carapace Spaulders",
+            "icon": "inv_shoulder_29",
+            "quality": "rare",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 271812,
+            "name": "Discarded Circlet",
+            "icon": "inv_crown_01",
+            "quality": "rare",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": "1g 30s"
+      },
+      "xp": 4850,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 93601,
+      "name": "Passing the Blame",
+      "basis": "page",
+      "level": 45,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 254674,
+        "name": "Woodwyrd"
+      },
+      "end": {
+        "type": "npc",
+        "id": 253527,
+        "name": "Kog'thug the Brave"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 35,
+        "orange": 41,
+        "yellow": 43,
+        "green": 48,
+        "grey": 55
+      },
+      "patch": "1.60.1.70862",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Seek out a quilboar of significance at the Bristleback Retreat.",
+      "objectives": [],
+      "provided": [],
+      "description": "If you wish to recover the woman's gift, march north into the Valley of Bones.\n\nIt was stolen. The quilboar are to blame. I saw it. With my own two eyebulbs.\n\nThey are why this garden is doomed to die.\n\nDo not forgive them.",
+      "progress": null,
+      "completion": "Big <race> want necklace? Well, Big <race> can't have!\n\nThornweavers need necklace. Land is deader than dead. Thorns no sprout without necklace! Centaur tread where thorns no sprout. See problem, or Big <race> blind?\n\nKog'thug have idea. Want trade?",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "6s"
+      },
+      "xp": 390,
+      "reputation": [],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 93594,
+            "name": "Word of the Woods",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93404,
+            "name": "Rot and Regret",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 93601,
+            "name": "Passing the Blame",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 93604,
+            "name": "Agamaggan's Blood",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 93606,
+      "name": "Not on Squealing Terms",
+      "basis": "page",
+      "level": 45,
+      "required_level": 35,
+      "side": null,
+      "side_label": "None",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 253527,
+        "name": "Kog'thug the Brave"
+      },
+      "end": {
+        "type": "npc",
+        "id": 255678,
+        "name": "Quolga the Wise"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 41,
+        "yellow": 43,
+        "green": 48,
+        "grey": 55
+      },
+      "patch": "1.60.1.70862",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Quell the quilboar's quarrel by bringing Quolga a Benevolent Bouquet and the Virulent Blood of Agamaggan. The flowers to make the bouquet can be acquired at the Forlorn Gardens, near Shen'dralas in the Desolace.",
+      "objectives": [
+        {
+          "text": "Virulent Blood of Agamaggan (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 260237
+        },
+        {
+          "text": "Benevolent Bouquet",
+          "quantity": 1,
+          "type": "item",
+          "id": 260244
+        },
+        {
+          "text": "Vibrant Flower",
+          "quantity": 5,
+          "type": "item",
+          "id": 260245
+        }
+      ],
+      "provided": [],
+      "description": "Quolga the Wise is Kog'thug's life mate. Quolga great thornweaver, that why Kog'thug like her. Quolga also has necklace Big <race> seeks.\n\nProblem? We not on squealing terms. She mad we stole necklace in first place. Then why use it? That what Kog'thug want know!\n\nBUT! Quolga like flowers as much as thorns. Know where we can get flowers? Where we got necklace!\n\nMaybe she not be mad at Kog'thug if Big <race> bring flowers and this blood for him? Maybe she trade necklace!\n\nTell her Kog'thug sorry.",
+      "progress": "<Quolga looks at you with a confused expression and nearly-crossed eyes.>\n\nWhat you want with Quolga? Did Kog'thug send you, too?",
+      "completion": "I see. Kog'thug never say sorry face-to-face. Always sending someone to speak for him. Are these flowers from him? Or did Kog'thug send you to fetch these too?\n\n<Quolga listens to your overly truthful explanation of the situation. The thornweaver is extremely unamused by the facts and heaves out a sigh.>\n\nStupid boar.\n\nThis trinket ran out of power weeks ago and no longer serves us any purpose.\n\nIt's yours now. Leave the blood. Keep the flowers.\n\nGo away.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 260247,
+            "name": "Forlorn Necklace",
+            "icon": "inv_jewelry_necklace_zulgurub_02",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 271618,
+            "name": "Rejected Roses",
+            "icon": "inv_offhand_1h_creepybouquet_b_01",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 3900,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 93609,
+      "name": "Forlorn Necklace",
+      "basis": "page",
+      "level": 45,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 254578,
+        "name": "Mithera"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 41,
+        "yellow": 43,
+        "green": 48,
+        "grey": 55
+      },
+      "patch": "1.60.1.70862",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Bring the Forlorn Necklace to Mithera at the temple of Shen'dralas in the Desolace.",
+      "objectives": [
+        {
+          "text": "Forlorn Necklace",
+          "quantity": 1,
+          "type": "item",
+          "id": 260247
+        }
+      ],
+      "provided": [],
+      "description": "<The necklace you have been seeking is at last in your possession, but unfortunately the magic contained within has been entirely depleted. While not ideal for your current situation, at least it made its acquisition from the quilboar relatively easy.\n\nIt is probably best to bring this back to Mithera.>",
+      "progress": "<Mithera stares toward the gardens. She did not notice you approach, at least until you entered into her field of view.>\n\nHello again, <name>. I am grateful to see you again, though I expect you do not bring good news.",
+      "completion": "Is that my daughter's necklace? Oh <name>... I assumed the worst.\n\nYou are saying the quilboar had this? I am truly surprised that they took such good care of it. But...\n\nI can no longer feel the magic within. This is terrible news, <name>, but it is something we can address. For now, I need to consider our options... and gather my feelings.\n\nReturn to me again in the future. For now, I need time to ponder.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 272184,
+            "name": "Amulet of Vengeance",
+            "icon": "inv_jewelry_necklace_05",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 272185,
+            "name": "Amulet of Forgiveness",
+            "icon": "inv_jewelry_necklace_06",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": "1g 30s"
+      },
+      "xp": 4850,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 93644,
+      "name": "Tattered Journal",
+      "basis": "page",
+      "level": 45,
+      "required_level": 35,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 253471,
+        "name": "Mordent Evenshade"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 35,
+        "orange": 41,
+        "yellow": 43,
+        "green": 48,
+        "grey": 55
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "The text suggests the author of this journal may be somewhere in Shen'dralas.",
+      "objectives": [
+        {
+          "text": "Tattered Journal",
+          "quantity": 1,
+          "type": "item",
+          "id": 260347
+        }
+      ],
+      "provided": [],
+      "description": "<Found near Shen'dralas, this dirty old tome no longer holds most of its knowledge.\n\nOf the text that remains, individual letters are difficult to distinguish from words. It may prove challenging to read at first, but one of them appears to be a surname.\n\nPerhaps its author, \"Evenshade\", may be found nearby.>",
+      "progress": "Is there something you need?",
+      "completion": "My journal? Certainly not, it was lost centuries ago.\n\n<Mordent reclaims the dirty tome and examines the cover. His brow lifts in surprise, but it falls after he opens the covers.>\n\nYou have indeed found my journal, but alas, all that I had written is gone. I have not forgotten what was within, but I do not wish to speak any of it aloud.\n\nShould its pages have also survived somehow, you have my permission to attempt to restore it.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "65s"
+      },
+      "xp": 3900,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    }
+  ],
+  "related": [
+    {
+      "quest_id": 93045,
+      "name": "Test Your Theory",
+      "level": 38,
+      "required_level": 35,
+      "side": null,
+      "category_id": 405,
+      "xp": 710,
+      "money": null
+    },
+    {
+      "quest_id": 93128,
+      "name": "Khan Jehn",
+      "level": 42,
+      "required_level": 35,
+      "side": null,
+      "category_id": 405,
+      "xp": 3450,
+      "money": null
+    },
+    {
+      "quest_id": 93196,
+      "name": "Khan Jehn",
+      "level": 42,
+      "required_level": 35,
+      "side": "Horde",
+      "category_id": 405,
+      "xp": 3450,
+      "money": null
+    },
+    {
+      "quest_id": 93404,
+      "name": "Rot and Regret",
+      "level": 49,
+      "required_level": 35,
+      "side": "Both",
+      "category_id": 2100,
+      "xp": 5700,
+      "money": null
+    },
+    {
+      "quest_id": 93604,
+      "name": "Agamaggan's Blood",
+      "level": 45,
+      "required_level": 35,
+      "side": null,
+      "category_id": 722,
+      "xp": 3900,
+      "money": "65s"
+    }
+  ],
+  "skipped": []
+}

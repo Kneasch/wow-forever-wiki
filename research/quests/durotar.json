@@ -1,0 +1,5908 @@
+{
+  "zone": "Durotar",
+  "area_id": 14,
+  "source": "https://www.wowhead.com/forever/zone=14#quests",
+  "fetched": "2026-11-28",
+  "quests": [
+    {
+      "quest_id": 787,
+      "name": "The New Horde",
+      "basis": "page",
+      "level": 1,
+      "required_level": 1,
+      "side": null,
+      "side_label": "None",
+      "type": null,
+      "start": null,
+      "end": null,
+      "sharable": true,
+      "difficulty": {
+        "yellow": 1,
+        "green": 4,
+        "grey": 6
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Report to Gornek in the Den.",
+      "objectives": [],
+      "provided": [],
+      "description": "Throm'ka, <class>. I am Eitrigg, charged by Thrall to oversee the training of recruits.\n\nThe Horde has changed from what it once was. There was a time where I left the Horde, disillusioned by the growing influence of the power-hungry pawns of the Burning Legion. During my exile, I was taken prisoner by a group of humans, but was rescued by the Warchief. Hearing his vision of the Horde free of demonic influence, guided by the shamans, I returned.\n\nGornek will have further instructions for you.",
+      "progress": null,
+      "completion": null,
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 40,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 50
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 787,
+            "name": "The New Horde",
+            "side": null,
+            "current": true
+          },
+          {
+            "quest_id": 4641,
+            "name": "Your Place in the World",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 788,
+            "name": "Cutting Teeth",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 4641,
+      "name": "Your Place in the World",
+      "basis": "page",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10176,
+        "name": "Kaltunk"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3143,
+        "name": "Gornek"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 1,
+        "green": 4,
+        "grey": 6
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak with Gornek. You recall Kaltunk marking your map with his location and mentioning that Gornek resided in the Den, a building to the west.",
+      "objectives": [],
+      "provided": [],
+      "description": "Finally, you are of age, <name>... of age to battle in the name of the Horde. To conquer for the glory of the Warchief.\n\nYes...\n\n<Kaltunk looks you over.>\n\nYou will do nicely.\n\nNo doubt you wish to find a great dragon or demon and strangle it with your bare hands, but perhaps it would be wise to start on something less... dangerous.\n\n<Kaltunk laughs.>\n\nReport to Gornek, he should be able to assign a task better suited to a young <class>. You will find Gornek in the Den, to the west.",
+      "progress": null,
+      "completion": "Another one of Kaltunk's recruits, hm?\n\nA sorry state of affairs we find ourselves in if this is the best the Horde can produce. No matter. By the time we think you're ready to leave the Valley, you'll be a proud warrior of the Horde.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 40,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 50
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 787,
+            "name": "The New Horde",
+            "side": null
+          },
+          {
+            "quest_id": 4641,
+            "name": "Your Place in the World",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 788,
+            "name": "Cutting Teeth",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 5843,
+      "name": "Welcome!",
+      "basis": "page",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 11943,
+        "name": "Magga"
+      },
+      "sharable": false,
+      "difficulty": {
+        "yellow": 1,
+        "green": 4,
+        "grey": 6
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Valley of Trials Gift Voucher to Magga.",
+      "objectives": [
+        {
+          "text": "Valley of Trials Gift Voucher (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 14649
+        }
+      ],
+      "provided": [],
+      "description": "Welcome to the World of Warcraft!\n\nAs special thanks for purchasing the World of Warcraft Collector's Edition, turn in this gift voucher to Magga in the Valley of Trials. You'll then be given a gift: a little companion to join you on your quest for adventure and glory.\n\nThanks again, and enjoy your stay in the World of Warcraft!",
+      "progress": "Hello! It is a pleasure to meet you!\n\nI see you have a special voucher. Give it to me and I will offer you something in exchange.",
+      "completion": "You are indeed a special hero, <name>. We welcome you to the world of Azeroth, and offer you one of these unique gifts!",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 13584,
+            "name": "Diablo Stone",
+            "icon": "inv_diablostone",
+            "quality": "rare",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 13583,
+            "name": "Panda Collar",
+            "icon": "inv_belt_05",
+            "quality": "rare",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 13582,
+            "name": "Zergling Leash",
+            "icon": "spell_shadow_summonfelhunter",
+            "quality": "rare",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": null,
+      "reputation": [],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 788,
+      "name": "Cutting Teeth",
+      "basis": "page",
+      "level": 2,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3143,
+        "name": "Gornek"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3143,
+        "name": "Gornek"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 1,
+        "green": 5,
+        "grey": 7
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill 10 Mottled Boars then return to Gornek at the Den.",
+      "objectives": [
+        {
+          "text": "Mottled Boar slain",
+          "quantity": 10,
+          "type": "npc",
+          "id": 3098
+        }
+      ],
+      "provided": [],
+      "description": "The first order of business will be to put a little strength in your backbone. I could send you out to the Barrens to hunt kodo, but well, in all honesty, you're more useful to us alive than dead.\n\nI believe you would find a good match with the mottled boars you'll find to the north of here.",
+      "progress": "I hope you haven't returned to try and convince me that you have completed your task, <name>? No, of course not. I would think better of you.",
+      "completion": "Hmmm, not bad, <name>. But don't let it get to your head...you'll fight tougher than boars in your career.\n\nNonetheless, you've proven yourself well, and your next trial will be against a considerably more dangerous opponent, so you'll need some extra protection.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 4915,
+            "name": "Soft Wool Boots",
+            "icon": "inv_boots_05",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4914,
+            "name": "Battleworn Leather Gloves",
+            "icon": "inv_gauntlets_05",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 170,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 787,
+            "name": "The New Horde",
+            "side": null
+          },
+          {
+            "quest_id": 4641,
+            "name": "Your Place in the World",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 788,
+            "name": "Cutting Teeth",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 97279,
+      "name": "Wayward Weapons",
+      "basis": "page",
+      "level": 2,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3143,
+        "name": "Gornek"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3159,
+        "name": "Kzan Thornslash"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 1,
+        "green": 5,
+        "grey": 7
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Collect 6 Abandoned Training Weapons, then return to Kzan Thornslash in the Den.",
+      "objectives": [
+        {
+          "text": "Abandoned Training Weapon",
+          "quantity": 6,
+          "type": "item",
+          "id": 277653
+        }
+      ],
+      "provided": [],
+      "description": "With an influx of new recruits like yourself, it's been hard to keep our weapons supplied. Our weaponsmith, Kzan, is running low on training weapons and I'd like to see what kinds of skills you possess to get an idea of what I have to work with. Luckily for you, I have a solution to both.\n\nWhile you're out there cutting your teeth on boars, salvage six abandoned training weapons. Our failed recruits left them laying on the ground. Once you do, return them to our weaponsmith Kzan behind me in the Den.",
+      "progress": "Throm'ka, <class>. Gorak told me I should be expecting you. It is good to see you in one piece!\n\nWere you able to collect the training weapons I requested?",
+      "completion": "Thank you for returning these weapons, <name>. I will get to work repairing them for the next wave of recruits.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 170,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 789,
+      "name": "Sting of the Scorpid",
+      "basis": "page",
+      "level": 3,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3143,
+        "name": "Gornek"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3143,
+        "name": "Gornek"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 1,
+        "green": 6,
+        "grey": 8
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Get 10 Scorpid Worker Tails for Gornek in the Den.",
+      "objectives": [
+        {
+          "text": "Scorpid Worker Tail",
+          "quantity": 10,
+          "type": "item",
+          "id": 4862
+        }
+      ],
+      "provided": [],
+      "description": "Powerful warrior and awkward novice alike have fallen to the venomous sting of the scorpid. You will find large numbers of scorpids northwest of here. Bring me ten of their tails as proof of your prowess in battle.\n\nThe antidote for their sting is actually made from venom extracted from their stingers. We keep large quantities of antidote for scorpid venom on hand to heal young bloods just like you...\n\nBut I'm sure you won't be needing any of that, will you?",
+      "progress": "The carapace of a scorpid isn't so thick that the strength of a determined warrior will be deterred. Strike strongly and without doubt, and the scorpids should prove easy prey.",
+      "completion": "There is an important lesson that you must take away from fighting scorpids. The smallest or largest of opponents can still send you to your doom. In fierce combat, any number of things can prove your downfall.\n\nI have no more to teach you, <name>. You have done well, and I will watch your progress with interest.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 4919,
+            "name": "Soft Wool Belt",
+            "icon": "inv_belt_03",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4920,
+            "name": "Battleworn Cape",
+            "icon": "inv_misc_cape_11",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 250,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 4402,
+      "name": "Galgar's Cactus Apple Surprise",
+      "basis": "page",
+      "level": 3,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 9796,
+        "name": "Galgar"
+      },
+      "end": {
+        "type": "npc",
+        "id": 9796,
+        "name": "Galgar"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 1,
+        "green": 6,
+        "grey": 8
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Galgar 10 Cactus Apples. You remember him saying that they could be found near cactuses.",
+      "objectives": [
+        {
+          "text": "Cactus Apple",
+          "quantity": 10,
+          "type": "item",
+          "id": 11583
+        }
+      ],
+      "provided": [],
+      "description": "It sure gets hot out here in the Valley of Trials.\n\n<Galgar wipes his brow.>\n\nIf only I had some cactus apples, I could make my famous cactus apple surprise! Nothing cools you off faster than a piece of that delicious treat.\n\nI'll tell you what, <name>. If you bring me 10 cactus apples, I'll make you a few portions of cactus apple surprise to take with you on your adventures, and a free training manual, too. If you're interested, you can find cactus apples growing near the cactus plants around here.",
+      "progress": "Have you finished collecting cactus apples?",
+      "completion": "Wonderful, <name>! As promised, here is your cactus apple surprise plus a little something extra.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 247840,
+            "name": "Mining for Dummies",
+            "icon": "inv_10_specialization_professionbook_mining_orig",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 247841,
+            "name": "Wild Harvest",
+            "icon": "inv_10_specialization_professionbook_herbalism_color1",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 247846,
+            "name": "Pelt Collecting for Beginners",
+            "icon": "inv_10_specialization_professionbook_skinning_color1",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [
+          {
+            "type": "item",
+            "id": 11584,
+            "name": "Cactus Apple Surprise",
+            "icon": "inv_misc_food_19",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": "50c"
+      },
+      "xp": 380,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 200
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 200
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 792,
+      "name": "Vile Familiars",
+      "basis": "page",
+      "level": 4,
+      "required_level": 2,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3145,
+        "name": "Zureetha Fargaze"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3145,
+        "name": "Zureetha Fargaze"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 2,
+        "green": 7,
+        "grey": 9
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill 12 Vile Familiars.\n\nReturn to Zureetha Fargaze outside the Den.",
+      "objectives": [
+        {
+          "text": "Vile Familiar slain",
+          "quantity": 12,
+          "type": "npc",
+          "id": 3101
+        }
+      ],
+      "provided": [],
+      "description": "I trust the Valley of Trials will teach you much, young <class>.\n\nI was sent to the Valley to guide you, but I have discovered a growing taint here...\n\nA group that calls itself the Burning Blade has a coven here in the Valley of Trials. They are skulking in a cave to the northeast, and their Vile Familiars have spilled from its mouth to cause havoc.\n\nAs your first task against the Burning Blade, I bid you, defeat these familiars. Slay many and, if you survive, return to me.",
+      "progress": "To prove yourself against the Burning Blade, you must first defeat its Vile Familiars. Return to me when you have done this.",
+      "completion": "You have done well, <name>.\n\nAlthough the Vile Familiars were merely pets of the darker powers within the Burning Blade, your success against them foretells greater deeds ahead.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 4924,
+            "name": "Primitive Club",
+            "icon": "inv_mace_10",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4925,
+            "name": "Primitive Hand Blade",
+            "icon": "inv_weapon_shortblade_05",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4923,
+            "name": "Primitive Hatchet",
+            "icon": "inv_throwingaxe_01",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 5778,
+            "name": "Primitive Walking Stick",
+            "icon": "inv_staff_02",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 450,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 150
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 150
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1485,
+            "name": "Vile Familiars",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 792,
+            "name": "Vile Familiars",
+            "side": null,
+            "current": true
+          },
+          {
+            "quest_id": 1499,
+            "name": "Vile Familiars",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 794,
+            "name": "Burning Blade Medallion",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 805,
+            "name": "Report to Sen'jin Village",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 5441,
+      "name": "Lazy Peons",
+      "basis": "page",
+      "level": 4,
+      "required_level": 3,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11378,
+        "name": "Foreman Thazz'ril"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11378,
+        "name": "Foreman Thazz'ril"
+      },
+      "sharable": false,
+      "difficulty": {
+        "yellow": 3,
+        "green": 7,
+        "grey": 9
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Use the Foreman's Blackjack on Lazy Peons when they're sleeping. Wake up 5 peons, then return the Foreman's Blackjack to Foreman Thazz'ril in the Valley of Trials.",
+      "objectives": [
+        {
+          "text": "Peons Awoken",
+          "quantity": 5,
+          "type": "npc",
+          "id": 10556
+        },
+        {
+          "text": "Foreman's Blackjack (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 16114
+        }
+      ],
+      "provided": [],
+      "description": "Cursed peons! They work hard gathering lumber from the trees of the valley, but they're always taking naps! I need someone to help keep the peons in line.\n\nYou look like the right <race> for my task. Here, you take this blackjack and use it on any lazy peons you find sleeping on the job. A good smack will get them right back to work! Return the blackjack when you're done.\n\nLousy slacking peons...",
+      "progress": "No good lazy...\n\nEh? Do you have my blackjack? Did you catch any peons sleeping on the job?!",
+      "completion": "Good, good. Maybe they'll think twice before slacking next time! Thanks for the help!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 450,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 150
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 150
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 5441,
+            "name": "Lazy Peons",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 6394,
+            "name": "Thazz'ril's Pick",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 6394,
+      "name": "Thazz'ril's Pick",
+      "basis": "page",
+      "level": 4,
+      "required_level": 3,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 11378,
+        "name": "Foreman Thazz'ril"
+      },
+      "end": {
+        "type": "npc",
+        "id": 11378,
+        "name": "Foreman Thazz'ril"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 3,
+        "green": 7,
+        "grey": 9
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Thazz'ril's Pick to Foreman Thazz'ril.",
+      "objectives": [
+        {
+          "text": "Thazz'ril's Pick",
+          "quantity": 1,
+          "type": "item",
+          "id": 16332
+        }
+      ],
+      "provided": [],
+      "description": "<name>, you are a dependable <race>. Can I count on you for another task?\n\nSome time ago I was surveying the cave to the north for minerals, and I left my favorite pick behind. When I later returned to retrieve it I found the cave was filled with vicious beasts! Will you go into the cave, the Burning Blade Coven, and get my pick?\n\nI left it in a chamber with waterfalls. My pick has a spell on it so you can see it in the dark, so you won't have to worry about finding it... just what's guarding it!",
+      "progress": "Have you entered the Burning Blade Coven, <name>? Did you find my pick?",
+      "completion": "Great, you got it! Thanks a lot, <name>. This is my favorite pick! Now if my peons ever finish chopping down these trees, maybe we can find a nice cave to mine!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "1s 50c"
+      },
+      "xp": 450,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 150
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 150
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 5441,
+            "name": "Lazy Peons",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 6394,
+            "name": "Thazz'ril's Pick",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 790,
+      "name": "Sarkoth",
+      "basis": "page",
+      "level": 5,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3287,
+        "name": "Hana'zua"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3287,
+        "name": "Hana'zua"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 1,
+        "yellow": 3,
+        "green": 8,
+        "grey": 11
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill Sarkoth and bring his claw back to Hana'zua.",
+      "objectives": [
+        {
+          "text": "Sarkoth's Mangled Claw",
+          "quantity": 1,
+          "type": "item",
+          "id": 4905
+        }
+      ],
+      "provided": [],
+      "description": "<class>! I thought I would die out here with none to know of it. While I was hunting the scorpids of the Valley, I came across a particularly vicious-looking one. Hurling myself at it, I managed to inflict a massive blow to its claw before it closed around my leg.\n\nI wasn't ready for its stinger though, and it sliced down and into my chest, cutting into my flesh and letting my blood. Please, you must kill the scorpid for me! My honor must be upheld! I fought it up on the plateau to the south.",
+      "progress": "Ahhh... my father always said I would never amount to much, and here, lying beneath a tree as life seeps away, I'm afraid it looks like he was right.\n\nAt least I wish to die knowing that my last enemy in life lays dead.",
+      "completion": "My blow was not enough to kill him, but looking at the damage I inflicted gives me some small measure of pride. That small measure will be all I have to sustain myself if I die, and in that light, the short list of my life's accomplishments fills me with anger.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 450,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 790,
+            "name": "Sarkoth",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 804,
+            "name": "Sarkoth",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 794,
+      "name": "Burning Blade Medallion",
+      "basis": "page",
+      "level": 5,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3145,
+        "name": "Zureetha Fargaze"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3145,
+        "name": "Zureetha Fargaze"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 1,
+        "yellow": 3,
+        "green": 8,
+        "grey": 11
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the Burning Blade Medallion to Zureetha Fargaze, outside The Den.",
+      "objectives": [
+        {
+          "text": "Burning Blade Medallion",
+          "quantity": 1,
+          "type": "item",
+          "id": 4859
+        }
+      ],
+      "provided": [],
+      "description": "Through my divinations, I see that an item of power hides deep within the Burning Blade Coven, guarded by beasts and black magic.\n\nIt is called the Burning Blade Medallion, and your next task is to find it and remove it from the coven.\n\nBut be wary, for the medallion may be possessed by an agent of the Burning Blade, and if so then the agent's power would be greater than the familiars you have already encountered.\n\nGo, <name>. You will find the coven in a cave, to the north and west.",
+      "progress": "Is your task complete, <name>? Do you have the Burning Blade Medallion?",
+      "completion": "You retrieved it! Well done!\n\nYour efforts within the Burning Blade Coven are key in rooting out this cult in the Valley of Trials. But I fear they have further aims in our land.\n\nWe have not seen the end of them.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 4921,
+            "name": "Dust-covered Leggings",
+            "icon": "inv_pants_02",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4922,
+            "name": "Jagged Chain Vest",
+            "icon": "inv_chest_chain",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 6713,
+            "name": "Ripped Pants",
+            "icon": "inv_pants_07",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [
+          {
+            "type": "item",
+            "id": 118,
+            "name": "Minor Healing Potion",
+            "icon": "inv_potion_49",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 670,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 200
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 200
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1485,
+            "name": "Vile Familiars",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 792,
+            "name": "Vile Familiars",
+            "side": null
+          },
+          {
+            "quest_id": 1499,
+            "name": "Vile Familiars",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 794,
+            "name": "Burning Blade Medallion",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 805,
+            "name": "Report to Sen'jin Village",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 804,
+      "name": "Sarkoth",
+      "basis": "page",
+      "level": 5,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3287,
+        "name": "Hana'zua"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3143,
+        "name": "Gornek"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 1,
+        "yellow": 3,
+        "green": 8,
+        "grey": 11
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring the news of Hana'zua's plight to Gornek at the Den.",
+      "objectives": [],
+      "provided": [],
+      "description": "Seeing the deed you have done for me steels my heart. I cannot fall so easily! I must endure!\n\nBut it remains that I cannot make the trek back to the Den unassisted. Please, <name>, return to the Den and tell Gornek of my situation. Perhaps he can help me.",
+      "progress": null,
+      "completion": "From your description of the beast, I believe you must be speaking of Sarkoth! It is no wonder that Hana'zua was overtaken by it. Aid will be dispatched to him immediately, trouble yourself no more with Hana'zua's plight.\n\nHowever, I must say, I am most impressed to hear that you brought Sarkoth to death. It is a feat to be proud of, <name>. And that you would fight for a stranger's honor, while other tasks occupied your time, your own honor is heightened.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 4916,
+            "name": "Soft Wool Vest",
+            "icon": "inv_shirt_14",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4917,
+            "name": "Battleworn Chain Leggings",
+            "icon": "inv_pants_03",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 110,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 25
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 25
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 790,
+            "name": "Sarkoth",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 804,
+            "name": "Sarkoth",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 805,
+      "name": "Report to Sen'jin Village",
+      "basis": "page",
+      "level": 5,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3145,
+        "name": "Zureetha Fargaze"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3188,
+        "name": "Master Gadrin"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 1,
+        "yellow": 3,
+        "green": 8,
+        "grey": 11
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak with Master Gadrin in Sen'jin Village.",
+      "objectives": [],
+      "provided": [],
+      "description": "Your trials against the Burning Blade are finished... here in the Valley. But I want you to report your findings.\n\nGo to the troll village of Sen'jin and seek out Master Gadrin. Sen'jin Village is east out of the valley, then right at the fork.\n\nTell Gadrin of the Burning Blade, and that they have reached the Valley of Trials. Discover from him if they have yet reached Sen'jin.\n\nGo, <name>, and be swift. I fear the evil found in the Burning Blade Coven is but the herald of a larger threat...",
+      "progress": null,
+      "completion": "Hm... your report comes at a bad time. The Burning Blade is not seen here in Sen'jin, but their evil has taken seed off the coast, on the Echo Isles.\n\nThe orcs are friends of the Darkspear Trolls. Honorable friends. We want to help the orcs, but... we need help too.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 230,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 50
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 1485,
+            "name": "Vile Familiars",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 792,
+            "name": "Vile Familiars",
+            "side": null
+          },
+          {
+            "quest_id": 1499,
+            "name": "Vile Familiars",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 794,
+            "name": "Burning Blade Medallion",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 805,
+            "name": "Report to Sen'jin Village",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 2161,
+      "name": "A Peon's Burden",
+      "basis": "page",
+      "level": 5,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 6786,
+        "name": "Ukor"
+      },
+      "end": {
+        "type": "npc",
+        "id": 6928,
+        "name": "Innkeeper Grosk"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 1,
+        "yellow": 3,
+        "green": 8,
+        "grey": 11
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Ukor's Burden to Innkeeper Grosk in Razor Hill.",
+      "objectives": [
+        {
+          "text": "Ukor's Burden (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 7629
+        }
+      ],
+      "provided": [],
+      "description": "Excuse me? Can you help me?\n\nI have a load of food here. I walked along the road and braved scorpids and spiders and worse! I brought the food to the Valley of Trials because I thought they needed it and I like to help out. But they don't need any food! Now I have to take it back to Razor Hill and I'm afraid of all the beasts along the way...\n\nCan you take it for me? I'm just a peon, but you're a hero. You fear nothing!\n\nTake it to Innkeeper Grosk at the Razor Hill inn. Thank you!",
+      "progress": "Welcome to Razor Hill!",
+      "completion": "Ah, this is the food Ukor brought to the Valley of Trials. Did they not need it? Well, I guess they like to starve you heroes in training. Builds spirit, they say!\n\nThank you for returning the food. I'll stick it back on the shelves... but here, let me offer you some refreshment first!\n\nAnd don't forget to rest here in the inn. You may be a brave <class> ready to take on the world, but if your energy is sapped you won't be doing yourself, or the Horde, much good.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 4540,
+            "name": "Tough Hunk of Bread",
+            "icon": "inv_misc_food_11",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 159,
+            "name": "Refreshing Spring Water",
+            "icon": "inv_drink_07",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 110,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 25
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 25
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 96821,
+      "name": "Legging It",
+      "basis": "page",
+      "level": 6,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3194,
+        "name": "Vel'rin Fang"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3139,
+        "name": "Gar'Thok"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 1,
+        "orange": 2,
+        "yellow": 4,
+        "green": 9,
+        "grey": 12
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Kill 6 Ridgeshade Creepers and 6 Ridgeshade Lurkers in southern Durotar, then report to Gar'thok in Razor Hill.",
+      "objectives": [
+        {
+          "text": "Ridgeshade Creeper slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 266850
+        },
+        {
+          "text": "Ridgeshade Lurker slain",
+          "quantity": 6,
+          "type": "npc",
+          "id": 266849
+        }
+      ],
+      "provided": [],
+      "description": "We see fewer and fewer travelers from Razor Hill these days. The scorpids were never much fun, but now I hear there are spiders making their nest along the road.\n\nIf your travels take you up north, kill some of the spiders on your way. Then, let Razor Hill know the path's a bit safer for them.",
+      "progress": null,
+      "completion": "The peons have been scared to travel south for some time, <name>. Now that you've cleared the path a bit, we can get them back to work.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 540,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 96825,
+      "name": "This Fruit Could Bite Back",
+      "basis": "page",
+      "level": 6,
+      "required_level": 3,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3191,
+        "name": "Cook Torka"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3191,
+        "name": "Cook Torka"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 3,
+        "yellow": 4,
+        "green": 9,
+        "grey": 12
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Cook Torka in Razor Hill wants you to collect 8 Prickly Pear Fruit from the Razormane Grounds west of town.",
+      "objectives": [
+        {
+          "text": "Prickly Pear Fruit",
+          "quantity": 8,
+          "type": "item",
+          "id": 275718
+        }
+      ],
+      "provided": [],
+      "description": "Our hunters and fishers bring back plenty of savory food for our troops - but it's rare that they get a sweet treat.\n\nI've seen a cactus that produces a prickly, tasty fruit. But it only grows in the hills to the west, where the wretched quilboars make their camps. Make your way past the quilboars and bring me some of those fruits. And be careful - the fruits are as spiny as the quilboars!",
+      "progress": "Did you find the fruits?",
+      "completion": "I'll use these to prepare something tasty, and save the seeds for planting. Someday we'll have prickly pears growing all around Orgrimmar!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 540,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 784,
+      "name": "Vanquish the Betrayers",
+      "basis": "page",
+      "level": 7,
+      "required_level": 3,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3139,
+        "name": "Gar'Thok"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3139,
+        "name": "Gar'Thok"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 3,
+        "yellow": 5,
+        "green": 10,
+        "grey": 13
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill 10 Kul Tiras Sailors, 8 Kul Tiras Marines and Lieutenant Benedict and return to Gar'Thok in Razor Hill.",
+      "objectives": [
+        {
+          "text": "Kul Tiras Sailor slain",
+          "quantity": 10,
+          "type": "npc",
+          "id": 3128
+        },
+        {
+          "text": "Kul Tiras Marine slain",
+          "quantity": 8,
+          "type": "npc",
+          "id": 3129
+        },
+        {
+          "text": "Lieutenant Benedict slain",
+          "quantity": 1,
+          "type": "npc",
+          "id": 3192
+        }
+      ],
+      "provided": [],
+      "description": "Led by Admiral Proudmoore, the humans of Kul Tiras encroached on Durotar, violating the Warchief's pact made with Jaina Proudmoore in order to defeat Archimonde years ago.\n\nThe human aggression was repelled and Tiragarde Keep fell. But recently, the Admiral's reserves, led by Lieutenant Benedict, have retaken the keep and once again pose a threat to our homeland. These humans show no respect for diplomacy.\n\nProve your honor and travel south to Tiragarde Keep to eliminate the human invaders.",
+      "progress": "You have your orders, <name>. The safety of Durotar is in question. Complete the task before you or hang your head in shame.\n\nShow your honor and defeat the humans of Tiragarde Keep.",
+      "completion": "Word of your bravery travels fast, <class>. Tales of your victory at Tiragarde Keep will be heralded in Orgrimmar.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "1s 75c"
+      },
+      "xp": 630,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 784,
+            "name": "Vanquish the Betrayers",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 825,
+            "name": "From The Wreckage....",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 791,
+      "name": "Carry Your Weight",
+      "basis": "page",
+      "level": 7,
+      "required_level": 4,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3147,
+        "name": "Furl Scornbrow"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3147,
+        "name": "Furl Scornbrow"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 4,
+        "yellow": 5,
+        "green": 10,
+        "grey": 13
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Furl Scornbrow in the Razor Hill watchtower wants 8 Canvas Scraps.",
+      "objectives": [
+        {
+          "text": "Canvas Scraps",
+          "quantity": 8,
+          "type": "item",
+          "id": 4870
+        }
+      ],
+      "provided": [],
+      "description": "Age has rendered me useless in battle. Now I make myself useful in other ways.\n\nFrom this vantage point I watch for invaders. As our strength here grows, I find myself blowing the signal horn less and less.\n\nTo pass the time I fashion goods to help younger, more able warriors defend our homeland.\n\nFor you, I can fashion you a bag for your belongings. If such an item would be of use to you, bring me some canvas, a material common to the humans and centaurs.",
+      "progress": "I fought proudly alongside the Warchief when these lands were pioneered. The scars of battle mark my skin.\n\nThe honor of the Horde has been upheld with the help of my axe and battlecry during the defeat of Archimonde, when the unholy alliance was made with the humans and elves, wrought from necessity.\n\nBut my position as watchman and provider has given me a new sense of worth.",
+      "completion": "Most excellent, <name>. Any good <class> will surely find a use for this bag on the battlefield.\n\nI salute your vigor and willingness to die in the name of the Horde!",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 11845,
+            "name": "Handmade Leather Bag",
+            "icon": "inv_misc_bag_10",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 630,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 818,
+      "name": "A Solvent Spirit",
+      "basis": "page",
+      "level": 7,
+      "required_level": 5,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3304,
+        "name": "Master Vornal"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3304,
+        "name": "Master Vornal"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 5,
+        "green": 10,
+        "grey": 13
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 4 Intact Makrura Eyes and 8 vials of Crawler Mucus to Master Vornal in Sen'jin Village.",
+      "objectives": [
+        {
+          "text": "Intact Makrura Eye",
+          "quantity": 4,
+          "type": "item",
+          "id": 4887
+        },
+        {
+          "text": "Crawler Mucus",
+          "quantity": 8,
+          "type": "item",
+          "id": 4888
+        }
+      ],
+      "provided": [],
+      "description": "Although my eyes fail me, I still can see clearly enough. More often I must rely on my alchemical skills to aid me in magics that once came easily. But I refuse to take on an apprentice--no troll or orc worthy enough has ever come forward.\n\nAre you worthy? Yes, of course you are... of course you think you are.\n\nI need a few things. Will you get them for me?\n\nI need intact makrura eyes, and vials of crawler mucus. You can find them on any makrura or crawler in Durotar. We shall speak again soon.",
+      "progress": "Time is the true test of your strength and will. Lose patience or give in to weakness, and your true self will be shown.",
+      "completion": "Well done, young one... well done indeed.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 4941,
+            "name": "Really Sticky Glue",
+            "icon": "inv_potion_01",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": "1s 75c"
+      },
+      "xp": 630,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 823,
+      "name": "Report to Orgnil",
+      "basis": "page",
+      "level": 7,
+      "required_level": 4,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3188,
+        "name": "Master Gadrin"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3142,
+        "name": "Orgnil Soulscar"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 4,
+        "yellow": 5,
+        "green": 10,
+        "grey": 13
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak with Orgnil Soulscar in Razor Hill.",
+      "objectives": [],
+      "provided": [],
+      "description": "We at Sen'jin Village are not without our own troubles, and we thank you for your aid. But the news you bring regarding the Burning Blade could be trouble for everyone.\n\nThere is an orc stationed at Razor Hill, Orgnil Soulscar, who polices Durotar from evils such as the Burning Blade! Go to Orgnil and tell him of our plight, as well as your news from the Valley of Trials. He will want to know these things.\n\nRazor Hill lies to the north.",
+      "progress": null,
+      "completion": "Yes? You have something to report? Well then, let's have it!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 320,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 50
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 830,
+      "name": "The Admiral's Orders",
+      "basis": "page",
+      "level": 7,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 3139,
+        "name": "Gar'Thok"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 1,
+        "orange": 3,
+        "yellow": 5,
+        "green": 10,
+        "grey": 13
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Take Admiral Proudmoore's Orders to Gar'Thok in Razor Hill.",
+      "objectives": [
+        {
+          "text": "Admiral Proudmoore's Orders (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 4883
+        }
+      ],
+      "provided": [],
+      "description": "You open the aged and weathered envelope and discover an official looking document. You recognize the seal of Admiral Proudmoore.\n\nThis looks important. Perhaps Gar'Thok, the commander of Razor Hill, would be interested in having this information.",
+      "progress": "There is a look of concern on your face, <class>. What have you there?",
+      "completion": "This does not bode well at all. You were wise to bring this information to my attention.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 630,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 830,
+            "name": "The Admiral's Orders",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 831,
+            "name": "The Admiral's Orders",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 831,
+      "name": "The Admiral's Orders",
+      "basis": "page",
+      "level": 7,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3139,
+        "name": "Gar'Thok"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3230,
+        "name": "Nazgrel"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 1,
+        "orange": 3,
+        "yellow": 5,
+        "green": 10,
+        "grey": 13
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Deliver Admiral Proudmoore's Orders to Nazgrel in Thrall's chamber in Orgrimmar.",
+      "objectives": [
+        {
+          "text": "Admiral Proudmoore's Orders (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 4883
+        }
+      ],
+      "provided": [],
+      "description": "Humans cannot be trusted. We fought alongside them with a weary heart, knowing they would betray us one day.\n\nAdmiral Proudmoore's death was not enough to stop his legacy of deceit. The human scum had his plans well laid out before he ever met his demise.\n\nHis reign won't even die with Benedict it seems. Who knows how long it will be before the next waves of Proudmoore's men land upon our shores.\n\nWe need to get these orders to Nazgrel in Orgrimmar immediately! He can be found in Thrall's chamber.",
+      "progress": "Can you not see that I am busy? This had better be pressing....",
+      "completion": "Countless times I urged the Warchief not to trust the humans, but personal pride is not what is at stake here.\n\nYou have served the Horde honorably, young <class>.\n\nNow excuse me, I must counsel Thrall on these matters at once....",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "1s 75c"
+      },
+      "xp": 630,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 830,
+            "name": "The Admiral's Orders",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 831,
+            "name": "The Admiral's Orders",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 96822,
+      "name": "For Honor",
+      "basis": "page",
+      "level": 7,
+      "required_level": 3,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 266940,
+        "name": "Turroc"
+      },
+      "end": {
+        "type": "npc",
+        "id": 266940,
+        "name": "Turroc"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 3,
+        "yellow": 5,
+        "green": 10,
+        "grey": 13
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Collect the Raider's Battleaxe, Raider's Bow, and Raider's Shield from the Tiragarde Keep outskirts, then return them to Turroc in Razor Hill.",
+      "objectives": [
+        {
+          "text": "Raider's Bow",
+          "quantity": 1,
+          "type": "item",
+          "id": 275713
+        },
+        {
+          "text": "Raider's Battleaxe",
+          "quantity": 1,
+          "type": "item",
+          "id": 275716
+        },
+        {
+          "text": "Raider's Shield",
+          "quantity": 1,
+          "type": "item",
+          "id": 275717
+        }
+      ],
+      "provided": [],
+      "description": "We lost many brave warriors of the Horde when we sacked Tiragarde Keep. Now that the humans have reinforced the ruins, we cannot collect their remains to properly honor their deaths.\n\nGo to the ruins surrounding the keep, and search for the weapons left by our fallen kin. We will display them in a place of honor.",
+      "progress": "Have you done what I asked?",
+      "completion": "These warriors will always be remembered, <name>. You have made sure of that.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 480,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 786,
+      "name": "Thwarting Kolkar Aggression",
+      "basis": "page",
+      "level": 8,
+      "required_level": 5,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3140,
+        "name": "Lar Prowltusk"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3140,
+        "name": "Lar Prowltusk"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 5,
+        "yellow": 6,
+        "green": 11,
+        "grey": 14
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Lar Prowltusk outside of Sen'jin Village wants you to destroy the 3 sets of Attack Plans held within Kolkar Crag.",
+      "objectives": [
+        {
+          "text": "Attack Plan: Valley of Trials destroyed",
+          "quantity": 1,
+          "type": "object",
+          "id": 3189
+        },
+        {
+          "text": "Attack Plan: Sen'jin Village destroyed",
+          "quantity": 1,
+          "type": "object",
+          "id": 3190
+        },
+        {
+          "text": "Attack Plan: Orgrimmar destroyed",
+          "quantity": 1,
+          "type": "object",
+          "id": 3192
+        }
+      ],
+      "provided": [],
+      "description": "Lower your voice, <class>. The Kolkar centaurs lie just over the ridge to the west in Kolkar Crag.\n\nLast night while they were raiding, I snuck into their village and discovered that the dirty beasts have a three-tiered attack planned on the trolls and orcs of Durotar.\n\nWe mustn't let their invasion come to fruition. Perhaps you can muster the might needed to infiltrate Kolkar Crag and destroy their attack plans.\n\nLast I saw, they had divided them up amongst three of their leaders.",
+      "progress": "The centaurs have proven to be a consistent nuisance to the Horde. Their intentions to lay siege to our homeland cannot be tolerated.",
+      "completion": "The Horde would surely prevail if the Kolkar centaurs were to attack. But by preventing such an attack, we have spared our mighty warriors unnecessary bloodshed.\n\nAnd as sure as there is sand in the Tanaris desert, we know that there will be blood spilled before these trying times are through.\n\nYou have served your people well, <class>.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 4933,
+            "name": "Seasoned Fighter's Cloak",
+            "icon": "inv_misc_cape_08",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 6062,
+            "name": "Heavy Cord Bracers",
+            "icon": "inv_bracer_07",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 700,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 786,
+            "name": "Thwarting Kolkar Aggression",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 815,
+      "name": "Break a Few Eggs",
+      "basis": "page",
+      "level": 8,
+      "required_level": 6,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3191,
+        "name": "Cook Torka"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3191,
+        "name": "Cook Torka"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 6,
+        "green": 11,
+        "grey": 14
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 3 Taillasher Eggs to Cook Torka in Razor Hill.",
+      "objectives": [
+        {
+          "text": "Taillasher Egg",
+          "quantity": 3,
+          "type": "item",
+          "id": 4890
+        }
+      ],
+      "provided": [],
+      "description": "Bah! I almost forgot I need to get breakfast ready.\n\n<name>, get yourself movin' and get me some taillasher eggs. I'll need at least three of them if I'm going to have enough for tomorrow's meal.\n\nThe Bloodtalon taillashers can be fierce, and protect their eggs to the death more often than not. They sometimes bury their eggs too deep in the earth to uncover safely, but if you head to the Echo Isles to the southeast of Sen'jin Village, you can usually find them all over those islands.",
+      "progress": "Breakfast, lunch, dinner! Who cares which meal it is? It still has to be cooked by someone--namely me!",
+      "completion": "You might be weak, but at least you're not clumsy, <name>.\n\nHere, take this and get outta my way. I've got cooking to do.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 4540,
+            "name": "Tough Hunk of Bread",
+            "icon": "inv_misc_food_11",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 117,
+            "name": "Tough Jerky",
+            "icon": "inv_misc_food_16",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": "2s 25c"
+      },
+      "xp": 700,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 817,
+      "name": "Practical Prey",
+      "basis": "page",
+      "level": 8,
+      "required_level": 5,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3194,
+        "name": "Vel'rin Fang"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3194,
+        "name": "Vel'rin Fang"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 5,
+        "yellow": 6,
+        "green": 11,
+        "grey": 14
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 4 Durotar Tiger Furs to Vel'rin Fang in Sen'jin Village.",
+      "objectives": [
+        {
+          "text": "Durotar Tiger Fur",
+          "quantity": 4,
+          "type": "item",
+          "id": 4892
+        }
+      ],
+      "provided": [],
+      "description": "Many of the hides we use come from Durotar tigers, <name>. Blankets, armor, tents: there are a great many reasons we hunt the beasts, and many reasons we let them thrive at the same time.\n\nThe time has come for us to cull the flock, so to speak. Our numbers grow, and our needs are beginning to overwhelm our stocks. I need more hides if I'm to prepare suitable goods for our people.\n\nBring me 4 Durotar tiger furs, and I shall reward you. You can find them on the islands south of here.",
+      "progress": "I remember my first tiger hunt, <name>. I chose to hunt on the largest of the Echo Isles, and I sat perfectly still in the shadows of its foliage for almost a full day... watching... waiting.\n\nMy muscles were taut, and I was ready to strike. It was one of my greatest victories when that tiger finally took the bait.",
+      "completion": "I am pleased, <name>. Because of your help, our people will be protected, and not go cold as the seasons change.\n\nThank you.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "2s 25c"
+      },
+      "xp": 700,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 825,
+      "name": "From The Wreckage....",
+      "basis": "page",
+      "level": 8,
+      "required_level": 3,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3139,
+        "name": "Gar'Thok"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3139,
+        "name": "Gar'Thok"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 3,
+        "orange": 4,
+        "yellow": 6,
+        "green": 11,
+        "grey": 14
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Gar'Thok of Razor Hill wants you to retrieve 3 Gnomish Tools from the wreckage off the coast.",
+      "objectives": [
+        {
+          "text": "Gnomish Tools",
+          "quantity": 3,
+          "type": "item",
+          "id": 4863
+        }
+      ],
+      "provided": [],
+      "description": "One of my most observant scouts brings back word that the wreckage of Proudmoore's fleet still remains off the coast of Durotar, just east of Tiragarde Keep.\n\nIt is no secret that the humans, in alliance with those foul little creatures known as gnomes, have an advanced knowledge of mechanics. We must have a complete understanding of all our potential enemies. And our people will benefit from this new knowledge as well.\n\nSwim through the wreckage, <name>, and retrieve for me the tools of the Alliance.",
+      "progress": "Once we learn how the humans operate their strange machinery, we will stand a greater chance of defeating them in future battles.\n\nWith our new gained knowledge, the Horde only stands to grow in strength.",
+      "completion": "Your recovery mission was a success, <class>. I will see to it that these tools get to Orgrimmar with the next caravan.\n\nNicely done.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 4936,
+            "name": "Dirt-trodden Boots",
+            "icon": "inv_boots_08",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4928,
+            "name": "Sandrunner Wristguards",
+            "icon": "inv_bracer_12",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4935,
+            "name": "Wide Metal Girdle",
+            "icon": "inv_belt_03",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 700,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 784,
+            "name": "Vanquish the Betrayers",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 825,
+            "name": "From The Wreckage....",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 96873,
+      "name": "A Pain in the Neck",
+      "basis": "page",
+      "level": 8,
+      "required_level": 5,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 266881,
+        "name": "Pa'zula"
+      },
+      "end": {
+        "type": "npc",
+        "id": 266881,
+        "name": "Pa'zula"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 5,
+        "yellow": 6,
+        "green": 11,
+        "grey": 14
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Pa'zula in Sen'jin Village wants you to collect 3 Luminous Residue. Luminous Residue can be obtained by disenchanting Hexed Pendants dropped by trolls in the Echo Isles.",
+      "objectives": [
+        {
+          "text": "Luminous Residue",
+          "quantity": 3,
+          "type": "item",
+          "id": 247884
+        }
+      ],
+      "provided": [],
+      "description": "The trolls east of here have lost their will to the witchdoctor, Zalazane. He uses many cruel magics to keep hold of his prisoners' minds, but one of his favorite tricks is to make them wear pendants wrapped in evil binding spells.\n\nPractice your enchanting skills by stripping the magic from these pendants, and bring me the results. And don't accidentally put one around your neck, if you value your freedom!",
+      "progress": "What do you have for me, <name>?",
+      "completion": "Fine work. A shame about the slain trolls, but with the binding spells removed, their spirits can rest.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "1s 10c"
+      },
+      "xp": 530,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 96876,
+      "name": "Ukor's Lost Pack",
+      "basis": "page",
+      "level": 8,
+      "required_level": 5,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": "Elite",
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 6786,
+        "name": "Ukor"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 5,
+        "yellow": 6,
+        "green": 11,
+        "grey": 14
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Return the pack to Ukor in southern Durotar.",
+      "objectives": [
+        {
+          "text": "Ukor's Lost Pack (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 275722
+        }
+      ],
+      "provided": [],
+      "description": "The pack has the name \"Ukor\" crudely stitched along the flap.",
+      "progress": "Something need doing?",
+      "completion": "My pack! When I dropped it to run from that huge spider, I thought I'd never see it again. You really are a hero!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "1s 10c"
+      },
+      "xp": 880,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 99123,
+      "name": "Lost in the Shadows",
+      "basis": "page",
+      "level": 8,
+      "required_level": 4,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 275811,
+        "name": "Pal'juh"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3304,
+        "name": "Master Vornal"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 4,
+        "yellow": 6,
+        "green": 11,
+        "grey": 14
+      },
+      "patch": "1.60.1.69913",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Help Pal'juh escape Kolkar Crag and bring news of your success to Master Vornal in Sen'jin Village.",
+      "objectives": [
+        {
+          "text": "Escort Pal'juh out of Kolkar Crag.",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "I decided to do a bit of scouting in the crag on my own. Unfortunately my magic ran out at the wrong time and I've been stuck hiding here since.\n\nIf you could help me escape, I would appreciate it.",
+      "progress": null,
+      "completion": "Ah, Pal'juh got herself in trouble again, did she?\n\nHopefully she learns her lesson about going alone this time. Thank you for helping her. She's a promising hunter, just tends to act more like a raptor than a tiger.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 286728,
+            "name": "Kolkar Hammer",
+            "icon": "inv_hammer_16",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 286729,
+            "name": "Kolkar Bow",
+            "icon": "inv_weapon_bow_12",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 700,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 808,
+      "name": "Minshina's Skull",
+      "basis": "page",
+      "level": 9,
+      "required_level": 4,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3188,
+        "name": "Master Gadrin"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3188,
+        "name": "Master Gadrin"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 4,
+        "orange": 5,
+        "yellow": 7,
+        "green": 12,
+        "grey": 15
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Retrieve Minshina's skull from the circle of power on the Echo Isles.\n\nBring it to Master Gadrin in Sen'jin Village.",
+      "objectives": [
+        {
+          "text": "Minshina's Skull",
+          "quantity": 1,
+          "type": "item",
+          "id": 4864
+        }
+      ],
+      "provided": [],
+      "description": "I hear the voice of my brother, Minshina, calling to me in my dreams.\n\nHe was taken by Zalazane, the warlock on the Echo Isles to the east. And he is dead.\n\nBut death is not freedom for my brother. Minshina's spirit was trapped within his own skull by Zalazane's magics. In my dreams I see it with other skulls, in a circle of power on the largest Echo Isle. As long as it remains there my brother's soul is doomed.\n\nPlease, <name>. Find the circle and retrieve Minshina's skull. Bring it to me.\n\nFree him!",
+      "progress": "Do you have my brother's skull, <name>? Is he finally free?",
+      "completion": "Thank you, <name>. You have saved Minshina. You have saved my brother's spirit from slavery!",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 4945,
+            "name": "Faintly Glowing Skull",
+            "icon": "inv_misc_bone_dwarfskull_01",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 780,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 812,
+      "name": "Need for a Cure",
+      "basis": "page",
+      "level": 9,
+      "required_level": 7,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3190,
+        "name": "Rhinag"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3190,
+        "name": "Rhinag"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 7,
+        "green": 12,
+        "grey": 15
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Find Kor'ghan in Orgrimmar and get the Venomtail Antidote. Then bring the antidote to Rhinag near the northwestern border of Durotar.",
+      "objectives": [
+        {
+          "text": "Venomtail Antidote",
+          "quantity": 1,
+          "type": "item",
+          "id": 4904
+        }
+      ],
+      "provided": [],
+      "description": "<name>... your timing is perfect. I just hope I can compliment your haste as well.\n\nI was careless while fighting a few of the venomtails nearby, and one of them stung me deeply. I can feel its poison weakening me even as we speak. At this rate, I got maybe an hour left to live. But I'll need your help if I'm to do so...\n\nKor'ghan in Orgrimmar knows how to make the antidote. Find him... and hurry, <name>. I won't be able to last much longer. He should be in the Cleft of Shadow.",
+      "progress": "I'm almost glad I can't return to Sen'jin as I am now. My weakness and stupidity would surely be mocked.",
+      "completion": "<name>, you've saved my life. Thank you.\n\nPlease take this; I hope it can at least help you in your travels, if not bring you some coin. From what you say, I won't be usin' it anytime soon. Kor'ghan is gonna march me through more of his rituals until I prove myself. More killin' boars, more gatherin' scorpid tails...",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 4937,
+            "name": "Charging Buckler",
+            "icon": "inv_shield_09",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4929,
+            "name": "Light Scorpid Armor",
+            "icon": "inv_chest_leather_01",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 980,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 150
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 150
+        }
+      ],
+      "other_gains": [],
+      "series": null,
+      "timer": "45 minutes"
+    },
+    {
+      "quest_id": 813,
+      "name": "Finding the Antidote",
+      "basis": "page",
+      "level": 9,
+      "required_level": 7,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3189,
+        "name": "Kor'ghan"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3189,
+        "name": "Kor'ghan"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 7,
+        "green": 12,
+        "grey": 15
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring 4 Venomtail Poison Sacs to Kor'ghan in Orgrimmar.",
+      "objectives": [
+        {
+          "text": "Venomtail Poison Sac",
+          "quantity": 4,
+          "type": "item",
+          "id": 4886
+        }
+      ],
+      "provided": [],
+      "description": "Venomtails are some of the deadliest scorpids in Durotar. It was unwise for Rhinag to hunt them without having some of the antidote with him, but right now, chastising is the last thing he needs.\n\nBring me a few venomtail poison sacs from any of the venomtails near the entrance of Orgrimmar and I'll make an antidote for him.\n\nMake haste, <name>. One of our own needs your help.",
+      "progress": "Remember, no matter what creature you hunt, you would do well to study it and understand its behavior. That knowledge could save your life.",
+      "completion": "Here is the antidote, <name>. Take it to Rhinag as soon as you can, and be cautious.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 4904,
+            "name": "Venomtail Antidote",
+            "icon": "inv_potion_12",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": null,
+      "reputation": [],
+      "other_gains": [],
+      "series": null,
+      "repeatable": true
+    },
+    {
+      "quest_id": 834,
+      "name": "Winds in the Desert",
+      "basis": "page",
+      "level": 9,
+      "required_level": 7,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3293,
+        "name": "Rezlak"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3293,
+        "name": "Rezlak"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 7,
+        "green": 12,
+        "grey": 15
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Retrieve 5 Sacks of Supplies and return them to Rezlak near Orgrimmar.",
+      "objectives": [
+        {
+          "text": "Sack of Supplies",
+          "quantity": 5,
+          "type": "item",
+          "id": 4918
+        }
+      ],
+      "provided": [],
+      "description": "I'm Rezlak, one of Gazlowe's boys. Boss sent me to help the orcs here in Durotar. Things'd been going good except for the caravans. Can't manage to keep them safe! Makes my job a little harder, you know?\n\nThe last shipment--they promised it'd get through!--was snatched by the Dustwind harpies of...where was it...Razorwind Canyon?\n\nI gotta have those supplies or I'll never get anything done! Follow the big canyon to the south, you'll find the ravine cut right into the west and east sides of the walls.",
+      "progress": "I'm great at what I do, don't get me wrong, but this is ridiculous! What am I supposed to do, build sand castles?",
+      "completion": "Hey, now isn't that just the thing! You've got our supplies back for us. That's great. I'll be able to get back to work just as soon as I can find someone to haul these sacks for me.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "3s"
+      },
+      "xp": 780,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        },
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 834,
+            "name": "Winds in the Desert",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 835,
+            "name": "Securing the Lines",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 97223,
+      "name": "Bloodtalon Matriarch",
+      "basis": "page",
+      "level": 9,
+      "required_level": 5,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 7953,
+        "name": "Xar'Ti"
+      },
+      "end": {
+        "type": "npc",
+        "id": 7953,
+        "name": "Xar'Ti"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 5,
+        "yellow": 7,
+        "green": 12,
+        "grey": 15
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Bring Eggs of the Bloodtalon Matriarch to Xar'Ti in Sen'jin Village.",
+      "objectives": [
+        {
+          "text": "Bloodtalon Matriarch Eggs",
+          "quantity": 1,
+          "type": "item",
+          "id": 277128
+        }
+      ],
+      "provided": [],
+      "description": "All of the raptors you see before you are ones I have trained myself. They come from all over Kalimdor, but some of the finest come from the Bloodtalon raptors on the isles off our coast.\n\nOne raptor amongst them, the Bloodtalon Matriarch, is particularly savage and has killed many from our village and has become too dangerous to leave at our borders. If you can strike her down, return with her eggs so that we can raise the hatchlings as allies instead of enemies.",
+      "progress": "The Bloodtalon are known for their cunning and swiftness, and make fine companions when raised from egg to adult.\n\nUnfortunately adult raptors are very difficult to train, and I have tried to capture the Matriarch on more than one occasion. But she had become too dangerous of late.\n\nStill I hope to preserve her legacy by raising her children as companions here in Sen'Jin.",
+      "completion": "Thank you, <name>. I am happy we will be able to preserve her bloodline and raise them to be our allies. You have done a great service for our tribe.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 281267,
+            "name": "Raptorscale Pants",
+            "icon": "inv_pants_03",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 780,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 97225,
+      "name": "Forgotten Loa Idols",
+      "basis": "page",
+      "level": 9,
+      "required_level": 4,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3304,
+        "name": "Master Vornal"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3188,
+        "name": "Master Gadrin"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 4,
+        "orange": 5,
+        "yellow": 7,
+        "green": 12,
+        "grey": 15
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Collect 8 Forgotten Loa Idols from the Echo Isles. Bring them to Master Gadrin in Sen'jin Village.",
+      "objectives": [
+        {
+          "text": "Forgotten Loa Idol",
+          "quantity": 8,
+          "type": "item",
+          "id": 277135
+        }
+      ],
+      "provided": [],
+      "description": "When we fled the isles that Zalazane and his ilk now inhabit, we left behind many precious idols that help us commune with spirits we worship: our loa. They are of grave importance to our tribe.\n\nThe followers of Zalazane show no reverence for our loa and have scattered these idols across the largest of the isles.\n\nThis is an action that will not go unnoticed if we are not able to collect these idols, and offending a loa is a grave matter.\n\nGo, find as many loa idols as you can and return them to me.",
+      "progress": "Have you found our loa idols, <name>? We must begin our rituals again soon.",
+      "completion": "You have done a great deed for our tribe today.\n\nUnlike some tribes, our kinship with our loa is one of reverence and respect, and we owe them much.\n\nI would not want the Darkspear to fall out of favor with them.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 281268,
+            "name": "Depleted Ritual Band",
+            "icon": "inv_jewelry_ring_06",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 780,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 99048,
+      "name": "A Missing Hand",
+      "basis": "page",
+      "level": 9,
+      "required_level": 8,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3142,
+        "name": "Orgnil Soulscar"
+      },
+      "end": {
+        "type": "npc",
+        "id": 275657,
+        "name": "Heglan Shadeeye"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 8,
+        "green": 12,
+        "grey": 15
+      },
+      "patch": "1.60.1.69913",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Find Heglan Shadeeye north of Tiragarde Keep.",
+      "objectives": [],
+      "provided": [],
+      "description": "A member of the Shattered Hand, a group of more... subtle fighters, was watching Tiragarde Keep from a distance. Her reports suddenly stopped coming in.\n\nI doubt the humans would have caught her, so I'm concerned something more dangerous is at play. See if you can find her. Hopefully the messages are just delayed.",
+      "progress": null,
+      "completion": "Heglan's body lies cold within the wreckage of the hut.\n\nWhatever killed her doesn't seem to be human. There may be signs of what happened nearby.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 80,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 10
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 10
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 99049,
+      "name": "Threat from Below",
+      "basis": "page",
+      "level": 9,
+      "required_level": 8,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 275657,
+        "name": "Heglan Shadeeye"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3142,
+        "name": "Orgnil Soulscar"
+      },
+      "sharable": true,
+      "difficulty": {
+        "yellow": 8,
+        "green": 12,
+        "grey": 15
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Find signs of what attacked Heglan Shadeeye.",
+      "objectives": [
+        {
+          "text": "Orcish Dagger",
+          "quantity": 1,
+          "type": "item",
+          "id": 286012
+        },
+        {
+          "text": "Banner Scrap",
+          "quantity": 1,
+          "type": "item",
+          "id": 286011
+        },
+        {
+          "text": "Broken Bone Trident",
+          "quantity": 1,
+          "type": "item",
+          "id": 286010
+        }
+      ],
+      "provided": [],
+      "description": "The nearby area is destroyed with obvious signs of a skirmish. Whatever ambushed Heglan didn't make it out unscathed. There's probably signs nearby of what happened.\n\nOrgnil will probably want to see any evidence left by the attackers.",
+      "progress": "Did you find her?",
+      "completion": "This banner and blade piece belong to the naga! They must have come down the coast from the north.\n\nWe cannot let them establish a foothold here. The pressure from both directions would be too much for Razor Hill.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 390,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 50
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 826,
+      "name": "Zalazane",
+      "basis": "page",
+      "level": 10,
+      "required_level": 4,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3188,
+        "name": "Master Gadrin"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3188,
+        "name": "Master Gadrin"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 4,
+        "orange": 6,
+        "yellow": 8,
+        "green": 13,
+        "grey": 16
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Defeat Zalazane.\n\nKill 8 Voodoo Trolls and 8 Hexed Trolls.\n\nBring Zalazane's Head to Gadrin.",
+      "objectives": [
+        {
+          "text": "Hexed Troll slain",
+          "quantity": 8,
+          "type": "npc",
+          "id": 3207
+        },
+        {
+          "text": "Voodoo Troll slain",
+          "quantity": 8,
+          "type": "npc",
+          "id": 3206
+        },
+        {
+          "text": "Zalazane's Head",
+          "quantity": 1,
+          "type": "item",
+          "id": 4866
+        }
+      ],
+      "provided": [],
+      "description": "The witchdoctor Zalazane dwells on the Echo Isles to the east. They are the isles we once called home.\n\nFrom there he sends his trolls to the mainland, to hex our people and drag more of them under his sway.\n\nHe must be stopped.\n\nDefeat Zalazane and his minions -- former Darkspear trolls, now lost to us. Bring me his head and I will know his reign of evil is over.",
+      "progress": "Is Zalazane defeated, <name>?",
+      "completion": "With Zalazane gone, our tribe can again sleep in peace.\n\nThank you, <name>. The Darkspear tribe owes you much. If you suffer from an ailment, visit my assistant Bom'bay, behind me. His voodoo is strong...",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 4946,
+            "name": "Lightweight Boots",
+            "icon": "inv_boots_01",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4940,
+            "name": "Veiled Grips",
+            "icon": "inv_gauntlets_05",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 840,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 837,
+      "name": "Encroachment",
+      "basis": "page",
+      "level": 10,
+      "required_level": 6,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3139,
+        "name": "Gar'Thok"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3139,
+        "name": "Gar'Thok"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 6,
+        "yellow": 8,
+        "green": 13,
+        "grey": 16
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill 4 Razormane Quilboars, 4 Razormane Scouts, 4 Razormane Dustrunners and 4 Razormane Battleguards for Gar'Thok at Razor Hill.",
+      "objectives": [
+        {
+          "text": "Razormane Quilboar slain",
+          "quantity": 4,
+          "type": "npc",
+          "id": 3111
+        },
+        {
+          "text": "Razormane Scout slain",
+          "quantity": 4,
+          "type": "npc",
+          "id": 3112
+        },
+        {
+          "text": "Razormane Dustrunner slain",
+          "quantity": 4,
+          "type": "npc",
+          "id": 3113
+        },
+        {
+          "text": "Razormane Battleguard slain",
+          "quantity": 4,
+          "type": "npc",
+          "id": 3114
+        }
+      ],
+      "provided": [],
+      "description": "When we arrived, the Razormane quilboars possessed much of the land, and proved a thorn in our sides. Through our efforts we have driven out the largest part of their numbers, but still they remain well-fortified in some areas.\n\nIt has gone on long enough, however. For our own protection, we cannot allow the Razormane any hold in our lands. Their camps can be found to the west of here. Look for the brambles and you will find them. Today we drive them from Durotar, tomorrow, perhaps from all of Kalimdor.",
+      "progress": "Though they do possess some intelligence and some organization, I find it constantly amazing that the quilboars were able to capture and hold so much territory in Kalimdor. Perhaps they are more crafty an enemy than I give them credit for...",
+      "completion": "I will pass along word that the quilboars have been removed from their lairs, and that their structures may be set to fire. The removal of the Razormane from Durotar brings us closer to fully securing the borders of our new homeland.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "2s 50c"
+      },
+      "xp": 630,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 75
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 96874,
+      "name": "This Is Spinal Axe",
+      "basis": "page",
+      "level": 10,
+      "required_level": 6,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 10266,
+        "name": "Ug'thok"
+      },
+      "end": {
+        "type": "npc",
+        "id": 10266,
+        "name": "Ug'thok"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 6,
+        "yellow": 8,
+        "green": 13,
+        "grey": 16
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Ug'thok in Orgrimmar wants you to collect 5 Weathered Spines from beasts in Thunder Ridge, along with 5 Rough Grinding Stones.",
+      "objectives": [
+        {
+          "text": "Weathered Spine",
+          "quantity": 5,
+          "type": "item",
+          "id": 275719
+        },
+        {
+          "text": "Rough Grinding Stone",
+          "quantity": 5,
+          "type": "item",
+          "id": 3470
+        }
+      ],
+      "provided": [],
+      "description": "Have you seen the huge beasts of Thunder Ridge? I keep thinking the spines on their backs would be perfect for crafting the head of a mighty axe. Saru laughed when I told him... but what does he know!?\n\nAs part of your smithing lessons, you can help me out! Bring me some of those spines, along with grinding stones to sharpen them.",
+      "progress": "Yes?",
+      "completion": "These spines are tougher than I expected, <name>! Crafting with them may not be as easy as I thought... but I'll keep working on it!",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 277673,
+            "name": "Plans: Rough Copper Chain Boots",
+            "icon": "inv_scroll_06",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": "1s 75c"
+      },
+      "xp": 840,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 96875,
+      "name": "Beasts of Thunder Ridge",
+      "basis": "page",
+      "level": 10,
+      "required_level": 6,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 5811,
+        "name": "Kamari"
+      },
+      "end": {
+        "type": "npc",
+        "id": 5811,
+        "name": "Kamari"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 6,
+        "yellow": 8,
+        "green": 13,
+        "grey": 16
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Kamari in Orgrimmar wants you to collect 5 Rough Lizard Hide from beasts in Thunder Ridge, along with 2 Cured Light Hides.",
+      "objectives": [
+        {
+          "text": "Rough Lizard Hide",
+          "quantity": 5,
+          "type": "item",
+          "id": 275720
+        },
+        {
+          "text": "Cured Light Hide",
+          "quantity": 2,
+          "type": "item",
+          "id": 4231
+        }
+      ],
+      "provided": [],
+      "description": "Orgrimmar is always expanding, <class>. And when the peons need hides to line the walls and roofs of our new buildings, they come to me!\n\nThe hides of the lizards in Thunder Ridge are typically too thick for armor, but they make excellent building material. Bring me some of their hides, along with a few lighter cured hides. Let's see your skill with leather!",
+      "progress": "Yes?",
+      "completion": "Your work helps Orgrimmar grow. Know that as you walk the city's paths.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 277716,
+            "name": "Pattern: Light Leather Reagent Bag",
+            "icon": "inv_scroll_03",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": "1s 75c"
+      },
+      "xp": 840,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 97282,
+      "name": "Stormy Potential",
+      "basis": "page",
+      "level": 10,
+      "required_level": 6,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3293,
+        "name": "Rezlak"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3293,
+        "name": "Rezlak"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 6,
+        "yellow": 8,
+        "green": 13,
+        "grey": 16
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Bring 5 Charged Thunder Lizard Organs to Rezlak near Drygulch Ravine.",
+      "objectives": [
+        {
+          "text": "Charged Thunder Lizard Organ",
+          "quantity": 5,
+          "type": "item",
+          "id": 277665
+        }
+      ],
+      "provided": [],
+      "description": "\"Rezlack, when an opportunity comes knocking make sure you're ready to seize it.\" That's another gem Gazlowe taught me and that's exactly what I intend to do.\n\nThis orb doesn't seem damaged, it just looks like it's out of juice, but I've the idea to supercharge it back to full strength!\n\nThere are a bunch of thunder lizards in a gorge west of here. They have organs that hold a strong electrical charge that would be perfect for this.\n\nGo harvest some and bring them back to me!",
+      "progress": "It might come as a surprise that with a name like thunder lizard they shoot lightning instead of roaring like thunder.\n\nWell, they do. Shoot lightning, I mean.\n\nTrust me, it's a lesson you only get to learn once if you're lucky.",
+      "completion": "Hey, thanks pal! You've been a really big help to me here and I appreciate it.\n\nHere's to hoping I can get this all charged up using these organs. I bet it'll make those no good harpies think twice about attacking my caravan again. I sure hope this works.\n\nEither way you've done your side of the deal. Take this for your trouble.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 281274,
+            "name": "Makeshift Stormcaller",
+            "icon": "inv_staff_14",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 287060,
+            "name": "Rezlak's Spare Knife",
+            "icon": "inv_weapon_shortblade_05",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [
+          {
+            "type": "item",
+            "id": 281274,
+            "name": "Makeshift Stormcaller",
+            "icon": "inv_staff_14",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 840,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        },
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 97281,
+            "name": "A Simmering Storm",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 97282,
+            "name": "Stormy Potential",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 816,
+      "name": "Lost But Not Forgotten",
+      "basis": "page",
+      "level": 11,
+      "required_level": 8,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3193,
+        "name": "Misha Tor'kren"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3193,
+        "name": "Misha Tor'kren"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 8,
+        "yellow": 9,
+        "green": 14,
+        "grey": 17
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring a sign of Kron's fate to Misha Tor'kren at the farmstead northwest of Razor Hill.",
+      "objectives": [
+        {
+          "text": "Kron's Amulet",
+          "quantity": 1,
+          "type": "item",
+          "id": 4891
+        }
+      ],
+      "provided": [],
+      "description": "<name>, please, can you help me? My son Kron went hunting days ago, and he still hasn't returned. He went west towards the Barrens to hunt crocolisks along Southfury River. I fear the worst.\n\nAs strong as he was, his stubborn pride has always drawn him into trouble. I warned him that the crocolisks were powerful and vicious. He grew angry and stormed off.\n\nIf you can't find him, at least bring me a sign of his fate... even if you have to open up the stomach of every crocolisk along the Southfury's banks.",
+      "progress": "I pray that Kron will return to me, but I'm almost certain I know his fate already.",
+      "completion": "Oh, my son... my beautiful son.\n\nUncertain of my son's fate, I have tormented myself since he left. Now that I know what's happened, perhaps I can finally begin to mourn.\n\nThank you, <name>. Please take this. I was going to give it to Kron as a gift when he returned successful. Now that I know he is dead, I cannot bear to look at it.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 4944,
+            "name": "Handsewn Cloak",
+            "icon": "inv_misc_cape_11",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 880,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 835,
+      "name": "Securing the Lines",
+      "basis": "page",
+      "level": 11,
+      "required_level": 7,
+      "side": "Both",
+      "side_label": "Both",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3293,
+        "name": "Rezlak"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3293,
+        "name": "Rezlak"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 7,
+        "yellow": 9,
+        "green": 14,
+        "grey": 17
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Kill 12 Dustwind Savages and 8 Dustwind Storm Witches for Rezlak near Drygulch Ravine.",
+      "objectives": [
+        {
+          "text": "Dustwind Savage slain",
+          "quantity": 12,
+          "type": "npc",
+          "id": 3117
+        },
+        {
+          "text": "Dustwind Storm Witch slain",
+          "quantity": 8,
+          "type": "npc",
+          "id": 3118
+        }
+      ],
+      "provided": [],
+      "description": "Gazlowe told me once, \"Rezlak. There's one thing you need to know in life, and that's if you want something done well, do it yourself.\"\n\nI can't deal with losing all our caravans, so I'm just going to take matters into my own hands. Drygulch Ravine lies through the eastern part of Razorwind Canyon. If we kill all the harpies there, the routes will be safe.\n\nOf course, there was one other thing that Gazlowe taught me, and that's \"You can get anything done for a price.\" So, going to help me out, <name>?",
+      "progress": "You wouldn't think it from a guy like my boss Gazlowe, but he always seemed to know the score. \"Don't be afraid to take that big step,\" he said.\n\nHarpies won't stop bothering us and the caravans won't stop being attacked unless we do something about it, eh?",
+      "completion": "I think I can breathe easy now, knowing that the harpies won't be bothering our supply caravans anymore. And not one moment too soon, either. I hear I'm being sent some fun little toys with the next shipment!\n\nYou're pretty good at what you do, <name>, you ought to track down my boss in Ratchet. I'll bet he could find some work for you.\n\nOh, and don't worry, I wouldn't forget to pay you for the service you provided me.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 4932,
+            "name": "Harpy Wing Clipper",
+            "icon": "inv_sword_04",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4931,
+            "name": "Hickory Shortbow",
+            "icon": "inv_weapon_bow_05",
+            "quality": "common",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4938,
+            "name": "Blemished Wooden Staff",
+            "icon": "inv_staff_21",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 880,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        },
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 834,
+            "name": "Winds in the Desert",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 835,
+            "name": "Securing the Lines",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 97281,
+      "name": "A Simmering Storm",
+      "basis": "page",
+      "level": 11,
+      "required_level": 7,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 3293,
+        "name": "Rezlak"
+      },
+      "sharable": false,
+      "difficulty": {
+        "orange": 7,
+        "yellow": 9,
+        "green": 14,
+        "grey": 17
+      },
+      "patch": "1.60.1.69913",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Bring the Dull Stormy Orb to Rezlak near Drygulch Ravine.",
+      "objectives": [],
+      "provided": [],
+      "description": "<Before you is a strange orb with a dull surface. When picked up a small electrical current seems to vibrate from within. Upon closer inspection, it looks as if a dark mist swirls within and every so often a small electrical spark can be seen.\n\nIt is clear the harpy was using it for some purpose. Perhaps Rezlak would be interested in this object?>",
+      "progress": null,
+      "completion": "Woah, where did you find a neat thing like that? Ya know it reminds me of the other thing my boss Gazlowe always used to tell me...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 880,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        },
+        {
+          "faction_id": 470,
+          "faction": "Ratchet",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 97281,
+            "name": "A Simmering Storm",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 97282,
+            "name": "Stormy Potential",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 99051,
+      "name": "Threat from Below",
+      "basis": "page",
+      "level": 11,
+      "required_level": 8,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3142,
+        "name": "Orgnil Soulscar"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3142,
+        "name": "Orgnil Soulscar"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 8,
+        "yellow": 9,
+        "green": 14,
+        "grey": 17
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Collect 9 Naga Spinefins.",
+      "objectives": [
+        {
+          "text": "Naga Spinefin",
+          "quantity": 9,
+          "type": "item",
+          "id": 286008
+        }
+      ],
+      "provided": [],
+      "description": "It wouldn't be the first time those snakes bothered us. They need to be taught that their presence is not tolerated here.\n\nFind where their scouts are setting up camp and slaughter them. Bring me back their fins as proof. We need to act fast to make sure they understand.",
+      "progress": "Hopefully those snake scum aren't giving you trouble?",
+      "completion": "Hopefully that sends them packing back to the north. I'll have some grunts keep an eye out for any stragglers or funny business.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "3s"
+      },
+      "xp": 880,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 99052,
+      "name": "Threat from Below",
+      "basis": "page",
+      "level": 11,
+      "required_level": 8,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": "Elite",
+      "start": {
+        "type": "npc",
+        "id": 3142,
+        "name": "Orgnil Soulscar"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3142,
+        "name": "Orgnil Soulscar"
+      },
+      "sharable": true,
+      "difficulty": {
+        "orange": 8,
+        "yellow": 9,
+        "green": 14,
+        "grey": 17
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Kill the sea giant along Durotar's north coast and bring back proof of your accomplishment.",
+      "objectives": [
+        {
+          "text": "Aggor's Belt",
+          "quantity": 1,
+          "type": "item",
+          "id": 286009
+        }
+      ],
+      "provided": [],
+      "description": "One of my scouts has reported a sea giant followed those naga down here. Not sure if they brought him intentionally or what, but he's dangerous in any case.\n\nIt's a young one, but it could still rip an orc in half in a heartbeat if they were caught off guard. I need him gone. But I'd suggest you find some help to deal with it.",
+      "progress": "Give 'em blood and thunder!",
+      "completion": "Ha! I could hear his body fall from here!\n\nBe proud of your kill today; not many can claim they survived a fight with a sea giant.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 286730,
+            "name": "Pristine Orcish Dagger",
+            "icon": "inv_weapon_shortblade_14",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 286731,
+            "name": "Aggor's Refitted Belt",
+            "icon": "inv_belt_09",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1100,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 806,
+      "name": "Dark Storms",
+      "basis": "page",
+      "level": 12,
+      "required_level": 4,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3142,
+        "name": "Orgnil Soulscar"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3142,
+        "name": "Orgnil Soulscar"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 4,
+        "orange": 8,
+        "yellow": 10,
+        "green": 15,
+        "grey": 18
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring Fizzle's Claw to Orgnil Soulscar in Razor Hill.",
+      "objectives": [
+        {
+          "text": "Fizzle's Claw",
+          "quantity": 1,
+          "type": "item",
+          "id": 4869
+        }
+      ],
+      "provided": [],
+      "description": "We cannot allow the Burning Blade a foothold in Durotar! We must destroy them before their evil festers!\n\nI have undergone my own investigations and found that a Burning Blade warlock, the goblin Fizzle Darkstorm, has camped within Thunder Ridge to the northwest. There he and his cultist minions spread chaos.\n\nFind and defeat Fizzle, and bring me his dead claw!",
+      "progress": "Did you find Fizzle, <name>? He, and rest of the Burning Blade, must be scoured from our lands!",
+      "completion": "Aha! You got him!\n\nYou do your clan proud, <name>. And because of you, Durotar is free of one more agent of evil.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 4942,
+            "name": "Tiger Hide Boots",
+            "icon": "inv_boots_08",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 910,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 827,
+      "name": "Skull Rock",
+      "basis": "page",
+      "level": 12,
+      "required_level": 4,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3208,
+        "name": "Margoz"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3208,
+        "name": "Margoz"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 4,
+        "orange": 8,
+        "yellow": 10,
+        "green": 15,
+        "grey": 18
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Gather Searing Collars from the cultists in Skull Rock.\n\nBring them to Margoz at his camp.",
+      "objectives": [
+        {
+          "text": "Searing Collar",
+          "quantity": 6,
+          "type": "item",
+          "id": 4871
+        }
+      ],
+      "provided": [],
+      "description": "<name>. The Burning Blade has infested the cave east of Orgrimmar known as Skull Rock. Inside that cave they perform vile rituals, and burn their own flesh with Searing Collars.\n\nBy wearing these collars, I believe the cultists attune themselves to demonic power. But to confirm this, I must have a collection of the collars to study.\n\nGo to Skull Rock and gather Searing Collars from the cultists you find there. Bring them to me, and I will uncover their secrets.",
+      "progress": "Have you yet entered Skull Rock, <name>? Do you have the Searing Collars?",
+      "completion": "Good. Hiding within these collars is the secret behind the Burning Blade. And I will uncover that secret...",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 4947,
+            "name": "Jagged Dagger",
+            "icon": "inv_weapon_shortblade_02",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4939,
+            "name": "Steady Bastard Sword",
+            "icon": "inv_sword_34",
+            "quality": "uncommon",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 4948,
+            "name": "Stinging Mace",
+            "icon": "inv_mace_01",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 910,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 828,
+            "name": "Margoz",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 827,
+            "name": "Skull Rock",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 828,
+      "name": "Margoz",
+      "basis": "page",
+      "level": 12,
+      "required_level": 4,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3142,
+        "name": "Orgnil Soulscar"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3208,
+        "name": "Margoz"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 4,
+        "orange": 8,
+        "yellow": 10,
+        "green": 15,
+        "grey": 18
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak with Margoz.",
+      "objectives": [],
+      "provided": [],
+      "description": "One of our Shamans, Margoz, knows more of the Burning Blade's corruption. He speaks of a cave called Skull Rock in the mountains - just outside Orgrimmar! - that shelters a large band of Burning Blade cultists.\n\nBefore you go to Skull Rock speak with Margoz. He is wise and his council is valued.\n\nHe is camped to the northeast, between the coast and Drygulch Ravine.\n\nFollow his advice, but whatever Margoz says, <name>, I still want you to crush those cultists!",
+      "progress": null,
+      "completion": "Welcome, <name>. Word reached me of your coming, and of your exploits in Durotar.\n\nYou are a <class> of growing skill and renown.\n\nStay on the pure path, and your future will be great indeed.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 90,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 10
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 10
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 828,
+            "name": "Margoz",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 827,
+            "name": "Skull Rock",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 829,
+      "name": "Neeru Fireblade",
+      "basis": "page",
+      "level": 12,
+      "required_level": 4,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3208,
+        "name": "Margoz"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3216,
+        "name": "Neeru Fireblade"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 4,
+        "orange": 8,
+        "yellow": 10,
+        "green": 15,
+        "grey": 18
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Bring an Example Collar to Neeru Fireblade in Orgrimmar.",
+      "objectives": [
+        {
+          "text": "Example Collar (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 6658
+        }
+      ],
+      "provided": [],
+      "description": "The Searing Collars you brought me are powerful, demonic implements. Divining their origin is, I'm afraid, beyond my skills as a shaman. We will need a warlock to study them.\n\nTake a searing collar to Neeru Fireblade. Although he is a skilled warlock, he professes to use his powers to thwart demons, and claims his research in the occult is benign. Be that true or false, we may need his aid against the demonic cult in Durotar.\n\nYou may find Neeru in Orgrimmar in the Cleft of Shadow.",
+      "progress": "My most humble greetings, <class>. How might I help my <race> brother today?",
+      "completion": "Ah, and where did you get this? Good Margoz in Razor Hill sent you to me, did he?\n\nWell, let me take a closer look...",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 460,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 50
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 829,
+            "name": "Neeru Fireblade",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 809,
+            "name": "Ak'Zeloth",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 924,
+            "name": "The Demon Seed",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 832,
+      "name": "Burning Shadows",
+      "basis": "page",
+      "level": 12,
+      "required_level": 4,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 3216,
+        "name": "Neeru Fireblade"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 4,
+        "orange": 8,
+        "yellow": 10,
+        "green": 15,
+        "grey": 18
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Take this eye to Neeru Fireblade.",
+      "objectives": [
+        {
+          "text": "Eye of Burning Shadow (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 4903
+        }
+      ],
+      "provided": [],
+      "description": "<Words emanate from the pendant and into your mind.>\n\nGazz'uz?\n\nGazz'uz...report!\n\nThere is word of your discovery in Skull Rock. You must prepare for an attack!\n\nGazz'uz, I order you to speak! Speak or I will make sure Neeru Fireblade knows of your presence, and he will descend on you with swift brutality.\n\nDo not test your skills against Neeru...\n\n...Gazz'uz, are you there...?",
+      "progress": "You have something vital to report. I can sense it behind your eyes.",
+      "completion": "<Examines the Eye of Burning Shadow.>\n\nIntriguing. The voice you heard mentioned my name? I am known for hunting down enemies of our Warchief, but...it is strange that I was singled out. Stranger still that the Burning Blade cultists from whom you recovered this pendant have a name so close to my own.\n\nI must study this pendant. I must study and, and must ponder the meaning of its message.\n\nThank you for bringing this to my attention, <name>. You have done your people a great service.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 680,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 75
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 840,
+      "name": "Conscript of the Horde",
+      "basis": "page",
+      "level": 12,
+      "required_level": 10,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3336,
+        "name": "Takrin Pathseeker"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3337,
+        "name": "Kargal Battlescar"
+      },
+      "sharable": false,
+      "difficulty": {
+        "yellow": 10,
+        "green": 15,
+        "grey": 18
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Follow the western road from Razor Hill to the Barrens over a bridge.\n\nStop at the orc outpost across the bridge.\n\nGive Kargal Battlescar at the Barrens outpost your recruitment letter.",
+      "objectives": [
+        {
+          "text": "Recruitment Letter (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 4992
+        }
+      ],
+      "provided": [],
+      "description": "Hmm, you look pretty strong.\n\nListen, my good friend Kargal needs some new recruits for Barrens duty. I know you want to do what's right for the Horde. Well, this is your chance.\n\nTake this recruitment letter to Kargal and see if he'll sign it.",
+      "progress": "What do you want, pup? If you're not here for recruitment, I don't have time for you.",
+      "completion": "Oh, so Takrin sent you? He's an excellent scout, I'm not sure what I'd do without him.\n\nI'll sign your recruitment letter, but what we really need is someone at the Crossroads.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 460,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 50
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 840,
+            "name": "Conscript of the Horde",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 842,
+            "name": "Crossroads Conscription",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 842,
+      "name": "Crossroads Conscription",
+      "basis": "page",
+      "level": 12,
+      "required_level": 10,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3337,
+        "name": "Kargal Battlescar"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3338,
+        "name": "Sergra Darkthorn"
+      },
+      "sharable": false,
+      "difficulty": {
+        "yellow": 10,
+        "green": 15,
+        "grey": 18
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Follow the western road from Kargal's Far Watch Outpost.\n\nAt the T intersection, turn left and follow the road south.\n\nFind Sergra Darkthorn at the crossing of roads within the Crossroads.",
+      "objectives": [
+        {
+          "text": "Signed Recruitment Letter (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 4995
+        }
+      ],
+      "provided": [],
+      "description": "Take this signed recruitment letter to the Crossroads.\n\nSergra Darkthorn, curse her hide, is in charge there. She's a nasty shaman who will talk your head in circles before she lets you do anything useful. Thrall is convinced she's something special, but I'm not so sure.\n\nYou'll just have to decide for yourself, pup...",
+      "progress": "Well well well, what do we have here? Has Kargal deemed me worthy of another recruit?",
+      "completion": "Alright, <name>. You want to earn your keep with the Horde? Well there's plenty to do here, so listen close and do what you're told.\n\nI see that look in your eyes, do not think I will tolerate any insolence. Thrall himself has declared the Hordes females to be on equal footing with you men. Disrespect me in the slightest, and you will know true pain.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 910,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 100
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 100
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 840,
+            "name": "Conscript of the Horde",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 842,
+            "name": "Crossroads Conscription",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 96877,
+      "name": "Halikor's Hoof",
+      "basis": "page",
+      "level": 12,
+      "required_level": 6,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": null,
+      "end": {
+        "type": "npc",
+        "id": 5811,
+        "name": "Kamari"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 6,
+        "orange": 8,
+        "yellow": 10,
+        "green": 15,
+        "grey": 18
+      },
+      "patch": "1.60.1.69893",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Deliver Halikor's Hoof to Orgrimmar.",
+      "objectives": [
+        {
+          "text": "Halikor's Hoof (Provided)",
+          "quantity": 1,
+          "type": "item",
+          "id": 275723
+        }
+      ],
+      "provided": [],
+      "description": "The enormous hoof serves as proof of your victory over the mighty lizard.",
+      "progress": "Yes?",
+      "completion": "What a trophy, <class>! That must have been some fight!",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": "2s 50c"
+      },
+      "xp": 1150,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 75
+        }
+      ],
+      "other_gains": [],
+      "series": null
+    },
+    {
+      "quest_id": 809,
+      "name": "Ak'Zeloth",
+      "basis": "page",
+      "level": 13,
+      "required_level": 4,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3216,
+        "name": "Neeru Fireblade"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3521,
+        "name": "Ak'Zeloth"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 4,
+        "orange": 9,
+        "yellow": 11,
+        "green": 16,
+        "grey": 19
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Speak with Ak'Zeloth in the Barrens.",
+      "objectives": [
+        {
+          "text": "Destroy the Demon Seed",
+          "quantity": 1
+        }
+      ],
+      "provided": [],
+      "description": "Since the last great war when the Burning Legion was defeated, I have searched for sources of demonic corruption in orc society. The collar you brought me confirms my fears.\n\nIt belongs to the Burning Blade, a cult that rallies around an item of demonic power. It is called the Demon Seed, and it resides in the Barrens atop Dreadmist Peak. It must be destroyed!\n\nGo to Far Watch Post, on the border of the Barrens to the west, and speak with my assistant, Ak'Zeloth. He will direct you further.",
+      "progress": null,
+      "completion": "Neeru wants the Demon Seed destroyed, does he? Strange...\n\nVery well. If he wishes the seed gone, then I will tell you how to remove it.",
+      "rewards": {
+        "choice": [],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": 460,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 50
+        },
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 50
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 829,
+            "name": "Neeru Fireblade",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 809,
+            "name": "Ak'Zeloth",
+            "side": null,
+            "current": true
+          }
+        ],
+        [
+          {
+            "quest_id": 924,
+            "name": "The Demon Seed",
+            "side": null
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 924,
+      "name": "The Demon Seed",
+      "basis": "page",
+      "level": 14,
+      "required_level": 9,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 3521,
+        "name": "Ak'Zeloth"
+      },
+      "end": {
+        "type": "npc",
+        "id": 3521,
+        "name": "Ak'Zeloth"
+      },
+      "sharable": false,
+      "difficulty": {
+        "red": 9,
+        "orange": 10,
+        "yellow": 12,
+        "green": 17,
+        "grey": 21
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": "Grab a Flawed Power Stone. Bring it to the Altar of Fire before the stone expires, then return to Ak'Zeloth.",
+      "objectives": [
+        {
+          "text": "Destroy the Demon Seed",
+          "quantity": 1,
+          "type": "object",
+          "id": 3525
+        }
+      ],
+      "provided": [],
+      "description": "The Demon Seed is a powerful tool for the Burning Legion. It rests in a cave on Dreadmist Peak, above a demonic altar of fire.\n\nI have prepared power stones that when placed near the Seed will disrupt its connection to the Legion.\n\nTake a stone from the table and bring it to the altar of fire atop Dreadmist Peak. Travel west, then north when the road forks. The Peak will be to your left. The safest climb to the top is on its northern face.\n\nAnd hurry--the stone's power will consume itself in time.",
+      "progress": "The Demon Seed still exists. I can sense its power...",
+      "completion": "Your task is complete. You have destroyed the Demon Seed as Neeru bid. But this is not the end...\n\nThe destruction of the Demon Seed sent waves of power through the ether, waves of staggering force. I felt them, and I am sure other beings did as well. Others who will wonder why their toy was broken...\n\nBut regardless of future troubles, I have something for you. Neeru sent it as payment. And he bid me thank you.\n\nSo, thank you.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 5420,
+            "name": "Banshee Armor",
+            "icon": "inv_shirt_07",
+            "quality": "uncommon",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": 1250,
+      "reputation": [
+        {
+          "faction_id": 76,
+          "faction": "Orgrimmar",
+          "amount": 150
+        }
+      ],
+      "other_gains": [],
+      "series": [
+        [
+          {
+            "quest_id": 829,
+            "name": "Neeru Fireblade",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 809,
+            "name": "Ak'Zeloth",
+            "side": null
+          }
+        ],
+        [
+          {
+            "quest_id": 924,
+            "name": "The Demon Seed",
+            "side": null,
+            "current": true
+          }
+        ]
+      ]
+    },
+    {
+      "quest_id": 926,
+      "name": "Flawed Power Stone",
+      "basis": "page",
+      "level": 14,
+      "required_level": 1,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "object",
+        "id": 5621,
+        "name": "Flawed Power Stones"
+      },
+      "end": {
+        "type": "object",
+        "id": 5619,
+        "name": "Flawed Power Stone"
+      },
+      "sharable": true,
+      "difficulty": {
+        "red": 1,
+        "orange": 10,
+        "yellow": 12,
+        "green": 17,
+        "grey": 21
+      },
+      "patch": "1.13.2.30406",
+      "patch_label": "1.13.2 \"Classic\"",
+      "new_in_forever": false,
+      "objective": null,
+      "objectives": [],
+      "provided": [],
+      "description": null,
+      "progress": null,
+      "completion": "These stones are infused with magical energy, but purposefully flawed. They are very unstable and once removed from the table they will consume themselves quickly.",
+      "rewards": {
+        "choice": [],
+        "items": [
+          {
+            "type": "item",
+            "id": 4986,
+            "name": "Flawed Power Stone",
+            "icon": "inv_misc_gem_diamond_02",
+            "quality": "common",
+            "count": 1
+          }
+        ],
+        "spells": [],
+        "money": null
+      },
+      "xp": null,
+      "reputation": [],
+      "other_gains": [],
+      "series": null,
+      "repeatable": true
+    },
+    {
+      "quest_id": 96989,
+      "name": "Your First Riding Raptor",
+      "basis": "page",
+      "level": 40,
+      "required_level": 40,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 7952,
+        "name": "Zjolnir"
+      },
+      "end": {
+        "type": "npc",
+        "id": 7952,
+        "name": "Zjolnir"
+      },
+      "sharable": false,
+      "difficulty": {
+        "yellow": 40,
+        "green": 43,
+        "grey": 49
+      },
+      "patch": "1.60.1.70790",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Inspect the riding raptors to choose your first mount.",
+      "objectives": [
+        {
+          "text": "Emerald Riding Raptor",
+          "quantity": 1,
+          "type": "npc",
+          "id": 267291
+        },
+        {
+          "text": "Turquoise Riding Raptor",
+          "quantity": 1,
+          "type": "npc",
+          "id": 267297
+        },
+        {
+          "text": "Violet Riding Raptor",
+          "quantity": 1,
+          "type": "npc",
+          "id": 267298
+        }
+      ],
+      "provided": [],
+      "description": "Ey mon! Today be a big day for ya, I see. Ya think you're ready to take de reins of one of these fierce creatures, huh?\n\nMost be underestimatin' how intelligent and savage these beasts be. Ya won't be findin' a better, faster or more lethal companion once ya be bonded with it.\n\nSo, you be havin' an important choice to make. Ya raptor and you will be traversin' the world together, and the raptor will also be needin' to choose ya in return.\n\nGo an' take a look and return to me when ya made ya choice.",
+      "progress": "Have ya made ya choice? We trolls have been huntin' with raptors since the dawn of time. There is no bond deeper than that between a <race> and their raptor.\n\nRiding these beautiful predators be one of the most impressive things any Darkspear could be hoping to master. Many be trying to subdue or befriend them, but many be losing their lives instead.\n\nOnce bonded though, ya be hard pressed to find a more loyal and lethal companion.",
+      "completion": "Ah, good. I be seein' in your eyes that you have made a choice. A fine one at that.\n\nDe one you have picked seems fond of you already, though I am not surprised. I hope you two be taking good care of each other out there in de world.\n\nBlessings of Gonk go wit ya both.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 8588,
+            "name": "Whistle of the Emerald Raptor",
+            "icon": "ability_mount_raptor",
+            "quality": "rare",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 8591,
+            "name": "Whistle of the Turquoise Raptor",
+            "icon": "ability_mount_raptor",
+            "quality": "rare",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 8592,
+            "name": "Whistle of the Violet Raptor",
+            "icon": "ability_mount_raptor",
+            "quality": "rare",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": null,
+      "reputation": [
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 25
+        }
+      ],
+      "other_gains": [],
+      "series": null,
+      "races": [
+        "Troll"
+      ]
+    },
+    {
+      "quest_id": 99218,
+      "name": "An Epic Ride",
+      "basis": "page",
+      "level": 60,
+      "required_level": 60,
+      "side": "Horde",
+      "side_label": "Horde",
+      "type": null,
+      "start": {
+        "type": "npc",
+        "id": 7952,
+        "name": "Zjolnir"
+      },
+      "end": {
+        "type": "npc",
+        "id": 7952,
+        "name": "Zjolnir"
+      },
+      "sharable": false,
+      "difficulty": {
+        "yellow": 60,
+        "green": 63,
+        "grey": 72
+      },
+      "patch": "1.60.1.70938",
+      "patch_label": "1.60.1",
+      "new_in_forever": true,
+      "objective": "Inspect the armored riding raptors to choose your epic mount.",
+      "objectives": [
+        {
+          "text": "Swift Blue Raptor",
+          "quantity": 1,
+          "type": "npc",
+          "id": 276803
+        },
+        {
+          "text": "Swift Olive Raptor",
+          "quantity": 1,
+          "type": "npc",
+          "id": 276800
+        },
+        {
+          "text": "Swift Orange Raptor",
+          "quantity": 1,
+          "type": "npc",
+          "id": 276801
+        }
+      ],
+      "provided": [],
+      "description": "Ey, <name>! Today be a big day for ya, I see. It seems ya be ready to take de reins of our fastest and fiercest raptors.\n\nNow that you be ridin' a raptor, you know how intelligent and savage these beasts be. I think you be ready for a real raptor now. An armored raptor.\n\nSo, you be havin' an important choice to make. Ya raptor and ya will be traversin' the world together, and the raptor will also be needin' to choose ya in return.\n\nGo an' take a look and return ta me when ya made ya choice.",
+      "progress": null,
+      "completion": "Ah, good. I be seein' in your eyes that you have made a choice. A fine one at that.\n\nDe one you have picked seems fond of you already, though I am not surprised. I hope you two be taking good care of each other out there in de world.\n\nBlessings of Gonk go wit ya both.",
+      "rewards": {
+        "choice": [
+          {
+            "type": "item",
+            "id": 18788,
+            "name": "Swift Blue Raptor",
+            "icon": "ability_mount_raptor",
+            "quality": "epic",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 18789,
+            "name": "Swift Olive Raptor",
+            "icon": "ability_mount_raptor",
+            "quality": "epic",
+            "count": 1
+          },
+          {
+            "type": "item",
+            "id": 18790,
+            "name": "Swift Orange Raptor",
+            "icon": "ability_mount_raptor",
+            "quality": "epic",
+            "count": 1
+          }
+        ],
+        "items": [],
+        "spells": [],
+        "money": null
+      },
+      "xp": null,
+      "reputation": [
+        {
+          "faction_id": 530,
+          "faction": "Darkspear Trolls",
+          "amount": 25
+        }
+      ],
+      "other_gains": [],
+      "series": null,
+      "races": [
+        "Troll"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "quest_id": 584,
+      "name": "Bloodscalp Clan Heads",
+      "level": 41,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": 33,
+      "xp": 3300,
+      "money": null
+    },
+    {
+      "quest_id": 585,
+      "name": "Speaking with Nezzliok",
+      "level": 40,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": 33,
+      "xp": 2350,
+      "money": null
+    },
+    {
+      "quest_id": 586,
+      "name": "Speaking with Gan'zulah",
+      "level": 46,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": 33,
+      "xp": 4050,
+      "money": null
+    },
+    {
+      "quest_id": 588,
+      "name": "The Fate of Yenniku",
+      "level": 45,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": 33,
+      "xp": 390,
+      "money": null
+    },
+    {
+      "quest_id": 1261,
+      "name": "Marg Speaks",
+      "level": 40,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": 15,
+      "xp": 3150,
+      "money": null
+    },
+    {
+      "quest_id": 1463,
+      "name": "Earth Sapta",
+      "level": 4,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 1464,
+      "name": "Fire Sapta",
+      "level": 13,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 1485,
+      "name": "Vile Familiars",
+      "level": 4,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -61,
+      "xp": 355,
+      "money": null
+    },
+    {
+      "quest_id": 1499,
+      "name": "Vile Familiars",
+      "level": 4,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -61,
+      "xp": 35,
+      "money": null
+    },
+    {
+      "quest_id": 1505,
+      "name": "Veteran Uzzek",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -81,
+      "xp": 85,
+      "money": null
+    },
+    {
+      "quest_id": 1506,
+      "name": "Gan'rul's Summons",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -61,
+      "xp": 210,
+      "money": null
+    },
+    {
+      "quest_id": 1516,
+      "name": "Call of Earth",
+      "level": 4,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 1517,
+      "name": "Call of Earth",
+      "level": 4,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 1518,
+      "name": "Call of Earth",
+      "level": 4,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 445,
+      "money": null
+    },
+    {
+      "quest_id": 1520,
+      "name": "Call of Earth",
+      "level": 4,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 180,
+      "money": null
+    },
+    {
+      "quest_id": 1521,
+      "name": "Call of Earth",
+      "level": 4,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 445,
+      "money": null
+    },
+    {
+      "quest_id": 1524,
+      "name": "Call of Fire",
+      "level": 11,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 660,
+      "money": null
+    },
+    {
+      "quest_id": 1525,
+      "name": "Call of Fire",
+      "level": 12,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 910,
+      "money": null
+    },
+    {
+      "quest_id": 1526,
+      "name": "Call of Fire",
+      "level": 13,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 1150,
+      "money": null
+    },
+    {
+      "quest_id": 1527,
+      "name": "Call of Fire",
+      "level": 13,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 1150,
+      "money": null
+    },
+    {
+      "quest_id": 1839,
+      "name": "Ula'elek and the Brutal Gauntlets",
+      "level": 30,
+      "required_level": 20,
+      "side": "Horde",
+      "category_id": -81,
+      "xp": 1200,
+      "money": null
+    },
+    {
+      "quest_id": 1842,
+      "name": "Satyr Hooves",
+      "level": 30,
+      "required_level": 20,
+      "side": "Horde",
+      "category_id": -81,
+      "xp": 1200,
+      "money": null
+    },
+    {
+      "quest_id": 1843,
+      "name": "Brutal Gauntlets",
+      "level": 30,
+      "required_level": 20,
+      "side": "Horde",
+      "category_id": -81,
+      "xp": 1850,
+      "money": null
+    },
+    {
+      "quest_id": 1859,
+      "name": "Therzok",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -162,
+      "xp": 210,
+      "money": null
+    },
+    {
+      "quest_id": 1883,
+      "name": "Speak with Un'thuwa",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -161,
+      "xp": 85,
+      "money": null
+    },
+    {
+      "quest_id": 1884,
+      "name": "Ju-Ju Heaps",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -161,
+      "xp": 840,
+      "money": null
+    },
+    {
+      "quest_id": 2380,
+      "name": "To Orgrimmar!",
+      "level": 16,
+      "required_level": 16,
+      "side": "Horde",
+      "category_id": -162,
+      "xp": 115,
+      "money": null
+    },
+    {
+      "quest_id": 2383,
+      "name": "Simple Parchment",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -81,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 2935,
+      "name": "Consult Master Gadrin",
+      "level": 45,
+      "required_level": 40,
+      "side": "Horde",
+      "category_id": 47,
+      "xp": 2900,
+      "money": null
+    },
+    {
+      "quest_id": 2936,
+      "name": "The Spider God",
+      "level": 45,
+      "required_level": 40,
+      "side": "Horde",
+      "category_id": 1176,
+      "xp": 4850,
+      "money": null
+    },
+    {
+      "quest_id": 2937,
+      "name": "Summoning Shadra",
+      "level": 55,
+      "required_level": 40,
+      "side": "Horde",
+      "category_id": 47,
+      "xp": 8450,
+      "money": "2g 69c"
+    },
+    {
+      "quest_id": 2983,
+      "name": "Call of Fire",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 420,
+      "money": null
+    },
+    {
+      "quest_id": 2985,
+      "name": "Call of Water",
+      "level": 20,
+      "required_level": 20,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 780,
+      "money": null
+    },
+    {
+      "quest_id": 3065,
+      "name": "Simple Tablet",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -81,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 3082,
+      "name": "Etched Tablet",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -261,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 3083,
+      "name": "Encrypted Tablet",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -162,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 3084,
+      "name": "Rune-Inscribed Tablet",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 3085,
+      "name": "Hallowed Tablet",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -262,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 3086,
+      "name": "Glyphic Tablet",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -161,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 3087,
+      "name": "Etched Parchment",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -261,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 3088,
+      "name": "Encrypted Parchment",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -162,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 3089,
+      "name": "Rune-Inscribed Parchment",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 3090,
+      "name": "Tainted Parchment",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -61,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 5648,
+      "name": "Garments of Spirituality",
+      "level": 4,
+      "required_level": 5,
+      "side": "Horde",
+      "category_id": -262,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 5649,
+      "name": "In Favor of Spirituality",
+      "level": 4,
+      "required_level": 5,
+      "side": "Horde",
+      "category_id": -262,
+      "xp": 90,
+      "money": null
+    },
+    {
+      "quest_id": 5654,
+      "name": "Hex of Weakness",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -262,
+      "xp": 210,
+      "money": null
+    },
+    {
+      "quest_id": 5660,
+      "name": "Touch of Weakness",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -262,
+      "xp": 210,
+      "money": null
+    },
+    {
+      "quest_id": 5727,
+      "name": "Hidden Enemies",
+      "level": 12,
+      "required_level": 9,
+      "side": "Horde",
+      "category_id": 1637,
+      "xp": 455,
+      "money": null
+    },
+    {
+      "quest_id": 6062,
+      "name": "Taming the Beast",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -261,
+      "xp": 840,
+      "money": null
+    },
+    {
+      "quest_id": 6067,
+      "name": "The Hunter's Path",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -261,
+      "xp": 85,
+      "money": null
+    },
+    {
+      "quest_id": 6068,
+      "name": "The Hunter's Path",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -261,
+      "xp": 85,
+      "money": null
+    },
+    {
+      "quest_id": 6069,
+      "name": "The Hunter's Path",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -261,
+      "xp": 85,
+      "money": null
+    },
+    {
+      "quest_id": 6070,
+      "name": "The Hunter's Path",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -261,
+      "xp": 85,
+      "money": null
+    },
+    {
+      "quest_id": 6081,
+      "name": "Training the Beast",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -261,
+      "xp": 420,
+      "money": null
+    },
+    {
+      "quest_id": 6082,
+      "name": "Taming the Beast",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -261,
+      "xp": 840,
+      "money": null
+    },
+    {
+      "quest_id": 6083,
+      "name": "Taming the Beast",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -261,
+      "xp": 840,
+      "money": null
+    },
+    {
+      "quest_id": 8150,
+      "name": "Honoring a Hero",
+      "level": 60,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": -1005,
+      "xp": 6600,
+      "money": null
+    },
+    {
+      "quest_id": 8358,
+      "name": "Incoming Gumdrop",
+      "level": 60,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -1003,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 8670,
+      "name": "Runetotem the Elder",
+      "level": 60,
+      "required_level": 1,
+      "side": "Both",
+      "category_id": -366,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 8827,
+      "name": "Winter's Presents",
+      "level": 1,
+      "required_level": 1,
+      "side": "Alliance",
+      "category_id": -1001,
+      "xp": 10,
+      "money": null
+    },
+    {
+      "quest_id": 8828,
+      "name": "Winter's Presents",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -1001,
+      "xp": 10,
+      "money": null
+    },
+    {
+      "quest_id": 8860,
+      "name": "New Year Celebrations!",
+      "level": 60,
+      "required_level": 1,
+      "side": "Alliance",
+      "category_id": -1006,
+      "xp": null,
+      "money": "9s"
+    },
+    {
+      "quest_id": 8861,
+      "name": "New Year Celebrations!",
+      "level": 60,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -1006,
+      "xp": null,
+      "money": "9s"
+    },
+    {
+      "quest_id": 94374,
+      "name": "Call of Earth",
+      "level": 4,
+      "required_level": 4,
+      "side": "Alliance",
+      "category_id": -82,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 94375,
+      "name": "Call of Earth",
+      "level": 4,
+      "required_level": 4,
+      "side": "Alliance",
+      "category_id": -82,
+      "xp": 445,
+      "money": null
+    },
+    {
+      "quest_id": 94467,
+      "name": "Call of Fire",
+      "level": 14,
+      "required_level": 10,
+      "side": "Alliance",
+      "category_id": -82,
+      "xp": 1250,
+      "money": null
+    },
+    {
+      "quest_id": 94468,
+      "name": "Call of Fire",
+      "level": 14,
+      "required_level": 10,
+      "side": "Alliance",
+      "category_id": -82,
+      "xp": 1250,
+      "money": null
+    },
+    {
+      "quest_id": 96078,
+      "name": "A Tale Spun Around the Fire",
+      "level": 40,
+      "required_level": 30,
+      "side": "Horde",
+      "category_id": 33,
+      "xp": 2350,
+      "money": "35s"
+    },
+    {
+      "quest_id": 96102,
+      "name": "Camping 101: Tailoring",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 96604,
+      "name": "The Great Outdoors",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 405,
+      "money": null
+    },
+    {
+      "quest_id": 96652,
+      "name": "The Adventurer",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 405,
+      "money": null
+    },
+    {
+      "quest_id": 96655,
+      "name": "Camping 101: Cooking",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 96999,
+      "name": "Wrap Return",
+      "level": 58,
+      "required_level": 54,
+      "side": "Horde",
+      "category_id": 616,
+      "xp": 6200,
+      "money": null
+    },
+    {
+      "quest_id": 97200,
+      "name": "Learning to Ride",
+      "level": 40,
+      "required_level": 40,
+      "side": "Horde",
+      "category_id": 1637,
+      "xp": null,
+      "money": null
+    },
+    {
+      "quest_id": 97899,
+      "name": "Camping 101: Alchemy",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 97900,
+      "name": "Camping 101: Blacksmithing",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 97901,
+      "name": "Camping 101: Enchanting",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 97902,
+      "name": "Camping 101: Engineering",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 97903,
+      "name": "Camping 101: First Aid",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 97904,
+      "name": "Camping 101: Fishing",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 97905,
+      "name": "Camping 101: Herbalism",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 97906,
+      "name": "Camping 101: Leatherworking",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 97907,
+      "name": "Camping 101: Mining",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 97908,
+      "name": "Camping 101: Skinning",
+      "level": 6,
+      "required_level": 4,
+      "side": "Horde",
+      "category_id": -666,
+      "xp": 270,
+      "money": null
+    },
+    {
+      "quest_id": 98517,
+      "name": "Call of Fire",
+      "level": 10,
+      "required_level": 10,
+      "side": "Horde",
+      "category_id": -82,
+      "xp": 420,
+      "money": null
+    },
+    {
+      "quest_id": 98575,
+      "name": "Tainted Tablet",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -61,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 98576,
+      "name": "Glyphic Parchment",
+      "level": 1,
+      "required_level": 1,
+      "side": "Horde",
+      "category_id": -161,
+      "xp": 40,
+      "money": null
+    },
+    {
+      "quest_id": 99201,
+      "name": "Swift as the Wind",
+      "level": 60,
+      "required_level": 60,
+      "side": "Horde",
+      "category_id": 1637,
+      "xp": null,
+      "money": null
+    }
+  ],
+  "skipped": [
+    {
+      "quest_id": 807,
+      "name": "<UNUSED>"
+    },
+    {
+      "quest_id": 810,
+      "name": "<UNUSED>"
+    },
+    {
+      "quest_id": 814,
+      "name": "<UNUSED>"
+    },
+    {
+      "quest_id": 820,
+      "name": "<UNUSED>"
+    }
+  ]
+}

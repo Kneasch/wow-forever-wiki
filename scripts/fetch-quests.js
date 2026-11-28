@@ -30,9 +30,12 @@ const SITE = 'https://www.wowhead.com/forever';
 const IMAGE = (icon) => `https://wow.zamimg.com/images/wow/icons/large/${icon}.jpg`;
 const SIDE = { 1: 'Alliance', 2: 'Horde', 3: 'Both' };
 const QUALITY = ['poor', 'common', 'uncommon', 'rare', 'epic', 'legendary', 'artifact'];
+const RACES = { 1: 'Human', 2: 'Orc', 3: 'Dwarf', 4: 'Night Elf', 5: 'Undead', 6: 'Tauren', 7: 'Gnome', 8: 'Troll' };
+const CLASSES = { 1: 'Warrior', 2: 'Paladin', 3: 'Hunter', 4: 'Rogue', 5: 'Priest', 7: 'Shaman', 8: 'Mage', 9: 'Warlock', 11: 'Druid' };
 const KEEP = ['notes', 'walkthrough']; // hand-written fields, never overwritten
 const JUNK = /<\s*(unused|nyi|txt)\s*>|^\[?unused\]?/i; // placeholder quests that were never in the game
-const PARALLEL = 3;
+// Pages loaded at once; --parallel=N to change (keep the total across runs at about 6)
+const PARALLEL = Number((process.argv.find((a) => a.startsWith('--parallel=')) || '').split('=')[1]) || 3;
 
 const allowPages = process.argv.includes('--pages');
 const keys = process.argv.slice(2).filter((a) => !a.startsWith('--'));
@@ -120,6 +123,10 @@ function quickFacts(html) {
       out.patch = (li.match(/\[acronym="([^"]+)"\]/) || [])[1] || null;
       out.patch_label = plain.replace(/^Added in patch\s*/, '');
     } else if (/^Type:/.test(plain)) out.type = plain.replace(/^Type:\s*/, '');
+    else if (/^Races?:/.test(plain)) out.races = [...li.matchAll(/\[race=(\d+)\]/g)].map(([, id]) => RACES[id] || `race ${id}`);
+    else if (/^Class(es)?:/.test(plain)) out.classes = [...li.matchAll(/\[class=(\d+)\]/g)].map(([, id]) => CLASSES[id] || `class ${id}`);
+    else if (/^Timer:/.test(plain)) out.timer = plain.replace(/^Timer:\s*/, '');
+    else if (/^Repeatable/.test(plain)) out.repeatable = true;
     else out.extra.push(plain);
   }
   if (!out.extra.length) delete out.extra;
@@ -156,12 +163,23 @@ function questPage(html) {
 
   // Objectives: icon-list tables before the first section heading
   const firstH2 = after.search(/<h2 class="heading-size-3"/);
-  const head = after.slice(0, firstH2 === -1 ? after.length : firstH2);
+  // Grouped objectives ("Shen'dralas wildlife slain with the blade (8)") hide the creatures that count in a nested
+  // icon list. Replace each group with a GROUP<n> marker before reading the tables, and keep the group's creatures
+  // (minus "[DNT]" kill-credit placeholders) as `counts_from`.
+  const groups = [];
+  const head = after.slice(0, firstH2 === -1 ? after.length : firstH2).replace(
+    /<a href="javascript:"[^>]*npcgroup-\d+[^>]*><span>([\s\S]*?)<\/span><\/a>\s*(?:&nbsp;)?\s*\((\d+)\)<div id="npcgroup-\d+"[^>]*>([\s\S]*?<\/table>)\s*<\/div>\s*<\/div>/g,
+    (_, label, n, inner) => {
+      const members = iconList(inner).filter((m) => !/^\[DNT\]/i.test(m.text)).map((m) => ({ text: m.text, type: m.type, id: m.id }));
+      groups.push({ text: text(label), quantity: Number(n), counts_from: members });
+      return `GROUP${groups.length - 1}`;
+    });
   const objectives = [];
   const provided = [];
   for (const [whole, table] of head.matchAll(/<table class="icon-list">([\s\S]*?)<\/table>/g)) {
     const before = head.slice(Math.max(0, head.indexOf(whole) - 200), head.indexOf(whole));
-    (/Provided item/i.test(before) ? provided : objectives).push(...iconList(table));
+    const rows = iconList(table).map((r) => { const g = r.text.match(/^GROUP(\d+)/); return g ? groups[Number(g[1])] : r; });
+    (/Provided item/i.test(before) ? provided : objectives).push(...rows.filter((r) => !/^\[DNT\]/i.test(r.text)));
   }
 
   const section = (name) => {
@@ -223,11 +241,14 @@ function questPage(html) {
   if (!objectives.length && progressSection) {
     for (const [, table] of progressSection.matchAll(/<table class="icon-list">([\s\S]*?)<\/table>/g)) objectives.push(...iconList(table));
   }
-  const progress = disclosed('progress') ?? (progressSection ? text(progressSection.replace(/<table[\s\S]*?<\/table>/g, '')) || null : null);
+  // Text sections are usually collapsed blocks (id="...-progress"), but short ones can be plain sections
+  const plain = (s) => (s ? text(s.replace(/<table[\s\S]*?<\/table>/g, '')) || null : null);
+  const progress = disclosed('progress') ?? plain(progressSection);
+  const completion = disclosed('completion') ?? plain(section('Completion'));
 
   return {
     facts, objective, objectives, provided, description: description ? text(description) : null,
-    progress, completion: disclosed('completion'), rewards, gains, series,
+    progress, completion, rewards, gains, series,
   };
 }
 
@@ -308,6 +329,8 @@ async function tooltip(id) {
             rewards: { ...p.rewards, money: p.rewards.money || q.money }, xp: p.gains.xp ?? q.xp,
             reputation: p.gains.reputation, other_gains: p.gains.other,
             series: p.series?.map((step) => step.map((e) => (e.current ? { ...e, quest_id: q.quest_id } : e))) ?? null,
+            ...(f.races?.length ? { races: f.races } : {}), ...(f.classes?.length ? { classes: f.classes } : {}),
+            ...(f.timer ? { timer: f.timer } : {}), ...(f.repeatable ? { repeatable: true } : {}),
             ...(f.extra ? { facts_extra: f.extra } : {}),
             ...keep.get(q.quest_id),
           });

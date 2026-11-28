@@ -14,7 +14,14 @@ const D = require('../lib/doc');
 const Doc = () => require('../pages/Doc.vue');
 const SIDES = ['Alliance', 'Horde'];
 // Wowhead files some quests under places that are not maps: dungeons, classes, crafting orders
-const CATEGORY_NAMES = { 2100: 'Maraudon', 1583: 'Blackrock Spire', 16941: 'Crafting orders', '-141': 'Paladin' };
+const CATEGORY_NAMES = {
+  2100: 'Maraudon', 1583: 'Blackrock Spire', 1176: "Zul'Farrak", 719: 'Blackfathom Deeps', 721: 'Gnomeregan',
+  722: 'Razorfen Downs', 16941: 'Crafting orders',
+  // Wowhead's negative categories: class quests, seasonal events and Forever's camping quests
+  '-61': 'Warlock', '-81': 'Warrior', '-82': 'Shaman', '-141': 'Paladin', '-161': 'Mage', '-162': 'Rogue',
+  '-261': 'Hunter', '-262': 'Priest', '-263': 'Druid', '-666': 'Camping', '-366': 'Lunar Festival', '-1001': 'Winter Veil',
+  '-1003': "Hallow's End", '-1005': 'Midsummer Fire Festival', '-1006': 'Seasonal',
+};
 const categoryName = (id) => CATEGORY_NAMES[id] || MAPS.zones.find((z) => z.area_id === id)?.name || `category ${id}`;
 const listTitle = (zone) => `${zone} quests`;
 const num = (n) => Number(n).toLocaleString('en-GB');
@@ -36,27 +43,34 @@ function otherTitles() {
 }
 
 // quest id -> page title. A name only one quest has is the title. When several share a name:
-// - "(Alliance)" / "(Horde)" when that tells them all apart
-// - otherwise "(1)", "(2)" ... by level, then ID (not chain order: chains are not known for every quest
-//   yet, and the numbers must not change, or the page URLs would, when they are)
+// - quests in different zones get the zone first: "Lost Shipping Crate (Desolace, Alliance)", so adding a zone
+//   never renumbers another zone's quests
+// - within a zone, "(Alliance)" / "(Horde)" when that tells them all apart
+// - otherwise "(1)", "(2)" ... by level, then ID (not chain order: the numbers must not change when chains change)
 let titles = null;
 function questTitles() {
   if (titles) return titles;
   titles = new Map();
-  const all = zoneFiles().flatMap((f) => f.data.quests);
+  const all = zoneFiles().flatMap((f) => f.data.quests.map((q) => ({ q, zone: f.zone.name })));
   const byName = new Map();
-  for (const q of all) { if (!byName.has(q.name)) byName.set(q.name, []); byName.get(q.name).push(q); }
+  for (const e of all) { if (!byName.has(e.q.name)) byName.set(e.q.name, []); byName.get(e.q.name).push(e); }
   const taken = otherTitles();
-  for (const [name, qs] of byName) {
-    const base = taken.has(name.toLowerCase()) ? `${name} (quest)` : name;
-    if (qs.length === 1) { titles.set(qs[0].quest_id, base); continue; }
+  const tell = (qs) => {
+    if (qs.length === 1) return new Map([[qs[0].quest_id, null]]);
     const sides = qs.map((q) => q.side);
-    if (sides.every((s) => SIDES.includes(s)) && new Set(sides).size === qs.length) {
-      for (const q of qs) titles.set(q.quest_id, `${name} (${q.side})`);
+    if (sides.every((x) => SIDES.includes(x)) && new Set(sides).size === qs.length) return new Map(qs.map((q) => [q.quest_id, q.side]));
+    return new Map([...qs].sort((a, b) => a.level - b.level || a.quest_id - b.quest_id).map((q, i) => [q.quest_id, String(i + 1)]));
+  };
+  for (const [name, es] of byName) {
+    const zones = [...new Set(es.map((e) => e.zone))];
+    if (zones.length === 1) {
+      const base = taken.has(name.toLowerCase()) && es.length === 1 ? `${name} (quest)` : name;
+      for (const [id, tag] of tell(es.map((e) => e.q))) titles.set(id, tag ? `${name} (${tag})` : base);
       continue;
     }
-    [...qs].sort((a, b) => a.level - b.level || a.quest_id - b.quest_id)
-      .forEach((q, i) => titles.set(q.quest_id, `${name} (${i + 1})`));
+    for (const zone of zones) {
+      for (const [id, tag] of tell(es.filter((e) => e.zone === zone).map((e) => e.q))) titles.set(id, `${name} (${zone}${tag ? ', ' + tag : ''})`);
+    }
   }
   return titles;
 }
@@ -67,7 +81,9 @@ const questLink = (id, name, asTitle = false) => {
   return t ? [D.link(t, null, t === name || asTitle ? undefined : name)] : id != null ? [D.ext(wowhead('quest', id), name)] : [name];
 };
 // An NPC, object or item that starts or ends a quest. There are no NPC pages yet, so these go to Wowhead.
-const whoSegs = (w) => (!w ? [D.unknown()] : w.id ? [D.ext(wowhead(w.type, w.id), w.name), ...(w.type !== 'npc' ? [` (${w.type})`] : [])] : [w.name]);
+// A quest page with no Start line: Wowhead names no giver, which is how quests started by an item show
+const NO_GIVER = 'Not listed (usually an item that starts the quest)';
+const whoSegs = (w, page = false) => (!w ? [D.unknown(page ? NO_GIVER : true)] : w.id ? [D.ext(wowhead(w.type, w.id), w.name), ...(w.type !== 'npc' ? [` (${w.type})`] : [])] : [w.name]);
 const sideSegs = (q) => [q.side === 'Both' || (!q.side && q.side_label === 'Both') ? 'Both' : q.side || (q.side_label ? `${q.side_label} (as Wowhead lists it)` : 'Not listed')];
 // A reward item: icon and quality colour; a wiki link when the item already has a page (dungeon loot)
 const itemSegs = (it) => {
@@ -118,8 +134,11 @@ function questPage(q, zone, zoneTitle) {
       { th: 'Requires level', segs: D.val(q.required_level) },
       { th: 'Side', segs: sideSegs(q) },
       ...(q.type ? [{ th: 'Type', segs: [q.type] }] : []),
-      ...(q.facts_extra?.includes('Repeatable') ? [{ th: 'Repeatable', segs: ['Yes'] }] : []),
-      { th: 'Start', segs: whoSegs(q.start) },
+      ...(q.races ? [{ th: q.races.length > 1 ? 'Races' : 'Race', segs: [q.races.join(', ')] }] : []),
+      ...(q.classes ? [{ th: q.classes.length > 1 ? 'Classes' : 'Class', segs: [q.classes.join(', ')] }] : []),
+      ...(q.timer ? [{ th: 'Timer', segs: [q.timer] }] : []),
+      ...(q.repeatable ? [{ th: 'Repeatable', segs: ['Yes'] }] : []),
+      { th: 'Start', segs: whoSegs(q.start, full) },
       { th: 'End', segs: whoSegs(q.end) },
       { th: 'Sharable', segs: q.sharable == null ? [D.unknown()] : [q.sharable ? 'Yes' : 'No'] },
       { th: 'Series', segs: chain ? [`Part ${chain.at + 1} of ${chain.steps.length}`] : full ? ['None'] : [D.unknown()] },
@@ -148,10 +167,11 @@ function questPage(q, zone, zoneTitle) {
   const objectives = (q.objectives || []).map((o) => [
     o.type === 'npc' || o.type === 'item' || o.type === 'object' ? D.ext(wowhead(o.type, o.id), o.text) : o.text,
     ...(typeof o.quantity === 'number' ? [` ×${o.quantity}`] : typeof o.quantity === 'string' ? [` (${o.quantity})`] : []),
+    ...(o.counts_from?.length ? [': any of ', ...D.join(o.counts_from.map((m) => [m.id ? D.ext(wowhead(m.type, m.id), m.text) : m.text]))] : []),
   ]);
   const detailRow = (label, segs) => [D.cell([D.b(label)]), D.cell(segs)];
   const details = D.table(['', ''], [
-    detailRow('Start point', q.start ? [...whoSegs(q.start), ' in ', ...zoneSeg] : [D.unknown()]),
+    detailRow('Start point', q.start ? [...whoSegs(q.start), ' in ', ...zoneSeg] : whoSegs(null, full)),
     detailRow('Objective', q.objective ? [q.objective] : [D.unknown()]),
     detailRow('Requirements', D.join(reqs, '; ')),
     detailRow('Ends at', whoSegs(q.end)),

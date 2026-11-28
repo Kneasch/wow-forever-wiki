@@ -6,12 +6,13 @@ being done in are in [docs/quests-plan.md](../../docs/quests-plan.md).
 | File | What it holds |
 |---|---|
 | `index.json` | Regions in the order they are being done, each with its zones: `key`, `name`, `area_id`, and `file` (the zone's research file, or `null` while not fetched). |
-| `desolace.json` | Desolace: 88 quests (all with full page data), 30 related quests, 5 placeholders. |
+| `<zone key>.json` | One per fetched zone: Desolace, Shen'dralas, Feralas, Stonetalon Mountains, Thousand Needles, Durotar. Every quest has full page data. Counts are in [docs/quests-plan.md §6](../../docs/quests-plan.md). |
 
 ## Commands
 
 ```bash
-NODE_USE_ENV_PROXY=1 node scripts/fetch-quests.js desolace   # refresh a zone (NODE_USE_ENV_PROXY only behind a proxy)
+NODE_USE_ENV_PROXY=1 node scripts/fetch-quests.js desolace                        # re-read a zone from the cache
+NODE_USE_ENV_PROXY=1 node scripts/fetch-quests.js --pages --parallel=1 feralas   # load missing pages (see the plan)
 ```
 
 The script needs the zone page in `.cache/quests/zone-<area id>.html` and reads any `quest-<id>.html` saved there. Only
@@ -32,7 +33,7 @@ Top level: `zone, area_id, source, fetched, quests[], related[], skipped[]`.
     `sharable`, `difficulty` (`{ red, orange, yellow, green, grey }` levels), `patch`, `patch_label`, `new_in_forever`
     (patch 1.60 or later), `provided[]`, `description`, `progress`, `completion`, `rewards.choice[]`, `rewards.items[]`,
     `rewards.spells[]` (`{ type, id, name, icon, quality, count }`), `reputation[]` (`{ faction_id, faction, amount }`),
-    `other_gains[]`, `series` (steps in order, each a list of `{ quest_id, name, side, current? }`).
+    `other_gains[]`, `races[]` and `classes[]` (only when restricted), `timer`, `repeatable`, `series` (steps in order, each a list of `{ quest_id, name, side, current? }`).
   - Hand-written, kept by the script: `notes`, `walkthrough`.
 - `related[]`: quests on the zone's Wowhead list that are filed elsewhere (`category_id`), with the zone list fields only.
 - `skipped[]`: placeholder quests (`<UNUSED>`, `<nyi>`).
