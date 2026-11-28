@@ -61,8 +61,10 @@ src/data/quests.js              Quests hub, <Zone> quests, and one page per ques
   quests of the new zone Shen'dralas. These are kept in `related[]`, listed on the zone's quest list, and get their pages
   with their own zone.
 - **Titles:** a quest's name is its title. Names several quests share are told apart by side when that works ("Centaur
-  Bounty (Horde)"), otherwise numbered by level then ID ("The Corrupter (1)"). The numbering does not use chain order,
-  so URLs stay put when chains are filled in later. A quest named like another page (an item, a zone) gets "(quest)".
+  Bounty (Horde)"), otherwise numbered by level then ID ("The Corrupter (1)"). When the quests are in different zones,
+  the zone comes first ("Lost Shipping Crate (Desolace, Alliance)"), so adding a zone never renumbers another zone's
+  quests. The numbering does not use chain order, so URLs stay put when chains change. A quest named like another page
+  (an item, a zone) gets "(quest)".
 - **Links:** quests with pages are wiki links, other quests go to Wowhead. NPCs, objects, factions and most reward items
   go to Wowhead until those page types exist; reward items that already have a dungeon item page link to it.
 - **Placeholders** (`<UNUSED>`, `<nyi>`) are dropped and kept in `skipped[]`.
@@ -71,8 +73,8 @@ src/data/quests.js              Quests hub, <Zone> quests, and one page per ques
 
 | Phase | Region | Zones | Why |
 |---|---|---|---|
-| 1 | Kalimdor: Desolace and its neighbours | **Desolace** (done: 88 quests), Shen'dralas, Feralas, Stonetalon Mountains, Thousand Needles | Desolace's centaur chain continues into Shen'dralas, a new Forever zone; the neighbours share chains with Desolace |
-| 2 | Kalimdor: the rest | Starting zones first, then by level | |
+| 1 | Kalimdor: Desolace and its neighbours | **All done:** Desolace (88 quests), Shen'dralas (39), Feralas (84), Stonetalon Mountains (53), Thousand Needles (71) | Desolace's centaur chain continues into Shen'dralas, a new Forever zone; the neighbours share chains with Desolace |
+| 2 | Kalimdor: the rest | **Durotar done (62).** Then the other starting zones, then by level | |
 | 3 | Eastern Kingdoms | Starting zones first, then by level, including Riverglades (new) | |
 | 4 | Islands | Zephras Isle (new) | |
 | 5 | Cities, dungeons, classes | Capital-city chains, dungeon quests on the dungeon pages, class quests | These are the `related[]` quests |
@@ -90,7 +92,26 @@ pages with `npm run dev` and `npm run check`.
 - **Quest chain pages** for long chains (the Desolace centaur chain is 13 steps across two zones).
 - **Reputation:** the Magram and Gelkis rewards, now 1,000-6,000 per quest in Forever, deserve a faction page.
 
-## 6. Desolace, as built
+## 6. Zones done
+
+Fetched with `--pages --parallel=1`, one zone per run, five runs at once (five pages loading at most).
+
+| Zone | Quests | New in Forever | In a series | Item rewards | Related |
+|---|---|---|---|---|---|
+| Desolace | 88 | 29 | 47 | 32 | 30 |
+| Shen'dralas | 39 | 39 | 31 | 5 | 5 |
+| Feralas | 84 | 5 | 53 | 24 | 55 |
+| Stonetalon Mountains | 53 | 7 | 30 | 17 | 24 |
+| Thousand Needles | 71 | 5 | 41 | 14 | 30 |
+| Durotar | 62 | 20 | 26 | 32 | 88 |
+
+What the runs taught the parser: grouped kill objectives ("... slain with the blade (8)") with the creatures that count
+and "[DNT]" kill-credit placeholders; repeatable turn-ins whose text is a plain Progress or Completion section; Race,
+Class, Timer and Repeatable facts. What stays open, because Wowhead does not give it: the starting item of quests started
+by an item (about 20, shown as "Not listed (usually an item that starts the quest)"), and the objectives of talk-to and
+escort quests. Quests 1099 and 1174 (Goblins Win!, Gnomes Win!) and 95555 (Corrupted Nature) have almost no data on Wowhead.
+
+### Desolace, the worked example
 
 - 123 quests on Wowhead's Desolace list: 88 filed under Desolace, 30 related, 5 placeholders.
 - Full page data for all 88: 29 are new in Forever (patch 1.60.1), 47 are part of a series, 32 give items (27 with a

@@ -43,27 +43,34 @@ function otherTitles() {
 }
 
 // quest id -> page title. A name only one quest has is the title. When several share a name:
-// - "(Alliance)" / "(Horde)" when that tells them all apart
-// - otherwise "(1)", "(2)" ... by level, then ID (not chain order: chains are not known for every quest
-//   yet, and the numbers must not change, or the page URLs would, when they are)
+// - quests in different zones get the zone first: "Lost Shipping Crate (Desolace, Alliance)", so adding a zone
+//   never renumbers another zone's quests
+// - within a zone, "(Alliance)" / "(Horde)" when that tells them all apart
+// - otherwise "(1)", "(2)" ... by level, then ID (not chain order: the numbers must not change when chains change)
 let titles = null;
 function questTitles() {
   if (titles) return titles;
   titles = new Map();
-  const all = zoneFiles().flatMap((f) => f.data.quests);
+  const all = zoneFiles().flatMap((f) => f.data.quests.map((q) => ({ q, zone: f.zone.name })));
   const byName = new Map();
-  for (const q of all) { if (!byName.has(q.name)) byName.set(q.name, []); byName.get(q.name).push(q); }
+  for (const e of all) { if (!byName.has(e.q.name)) byName.set(e.q.name, []); byName.get(e.q.name).push(e); }
   const taken = otherTitles();
-  for (const [name, qs] of byName) {
-    const base = taken.has(name.toLowerCase()) ? `${name} (quest)` : name;
-    if (qs.length === 1) { titles.set(qs[0].quest_id, base); continue; }
+  const tell = (qs) => {
+    if (qs.length === 1) return new Map([[qs[0].quest_id, null]]);
     const sides = qs.map((q) => q.side);
-    if (sides.every((s) => SIDES.includes(s)) && new Set(sides).size === qs.length) {
-      for (const q of qs) titles.set(q.quest_id, `${name} (${q.side})`);
+    if (sides.every((x) => SIDES.includes(x)) && new Set(sides).size === qs.length) return new Map(qs.map((q) => [q.quest_id, q.side]));
+    return new Map([...qs].sort((a, b) => a.level - b.level || a.quest_id - b.quest_id).map((q, i) => [q.quest_id, String(i + 1)]));
+  };
+  for (const [name, es] of byName) {
+    const zones = [...new Set(es.map((e) => e.zone))];
+    if (zones.length === 1) {
+      const base = taken.has(name.toLowerCase()) && es.length === 1 ? `${name} (quest)` : name;
+      for (const [id, tag] of tell(es.map((e) => e.q))) titles.set(id, tag ? `${name} (${tag})` : base);
       continue;
     }
-    [...qs].sort((a, b) => a.level - b.level || a.quest_id - b.quest_id)
-      .forEach((q, i) => titles.set(q.quest_id, `${name} (${i + 1})`));
+    for (const zone of zones) {
+      for (const [id, tag] of tell(es.filter((e) => e.zone === zone).map((e) => e.q))) titles.set(id, `${name} (${zone}${tag ? ', ' + tag : ''})`);
+    }
   }
   return titles;
 }

@@ -15,25 +15,25 @@
           "key": "shendralas",
           "name": "Shen'dralas",
           "area_id": 16651,
-          "file": null
+          "file": "shendralas.json"
         },
         {
           "key": "feralas",
           "name": "Feralas",
           "area_id": 357,
-          "file": null
+          "file": "feralas.json"
         },
         {
           "key": "stonetalon-mountains",
           "name": "Stonetalon Mountains",
           "area_id": 406,
-          "file": null
+          "file": "stonetalon-mountains.json"
         },
         {
           "key": "thousand-needles",
           "name": "Thousand Needles",
           "area_id": 400,
-          "file": null
+          "file": "thousand-needles.json"
         }
       ]
     },
@@ -44,7 +44,7 @@
           "key": "durotar",
           "name": "Durotar",
           "area_id": 14,
-          "file": null
+          "file": "durotar.json"
         },
         {
           "key": "mulgore",
