@@ -37,7 +37,7 @@ let others = null;
 function otherTitles() {
   if (!others) {
     const { collectPages } = require('../build/render');
-    others = new Set(collectPages({ sources: ['zones', 'professions', 'dungeons'] }).map((p) => p.title.toLowerCase()));
+    others = new Set(collectPages({ sources: ['zones', 'professions', 'classes', 'dungeons'] }).map((p) => p.title.toLowerCase()));
   }
   return others;
 }

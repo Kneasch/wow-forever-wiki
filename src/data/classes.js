@@ -16,14 +16,17 @@ const iconSeg = (name) => (iconExists(name) ? [D.icon(name)] : []);
 const newTag = (a) => (a.new_in_forever ? [D.tag('New in Forever')] : []);
 // The ability's name with its icon, linked to its Wowhead Forever spell
 const spellSegs = (a) => [...iconSeg(a.icon), D.ext(wowhead('spell', a.spell_id), a.name), ...newTag(a)];
-const byLevel = (a, b) => a.level - b.level || a.name.localeCompare(b.name);
+// Abilities with no known level go last
+const byLevel = (a, b) => (a.level ?? Infinity) - (b.level ?? Infinity) || a.name.localeCompare(b.name);
+const levelSegs = (a) => D.val(a.level);
 const ROW_WORD = (row) => `row ${row}`;
 
 function classPage(c, idx) {
   const C = c.class;
   const abilities = [...c.abilities].sort(byLevel);
   const talents = abilities.filter((a) => a.talent);
-  const levels = [...new Set(abilities.map((a) => a.level))];
+  const levels = [...new Set(abilities.map((a) => a.level).filter((l) => l != null))];
+  const changes = c.changes || [], conflicts = c.conflicts || [], gaps = c.gaps || [], sources = c.sources || [];
   const howLearned = (a) => (a.talent
     ? D.cell([D.b('Talent'), ` (${a.talent.tree}, ${ROW_WORD(a.talent.row)})`], 'talent')
     : D.cell(['Trainer']));
@@ -41,8 +44,8 @@ function classPage(c, idx) {
           { th: 'Role', segs: [idx.role] },
           { th: 'Talent trees', segs: D.join(c.trees.map((t) => [...iconSeg(t.icon), t.name])) },
           { th: 'Abilities', segs: [`${abilities.length}, of which ${plural(talents.length, 'is a talent', 'are talents')}`] },
-          { th: 'First ability', segs: ['Level 1'] },
-          { th: 'Last new ability', segs: [`Level ${levels[levels.length - 1]}`] },
+          { th: 'First ability', segs: levels.length ? [`Level ${levels[0]}`] : [D.unknown()] },
+          { th: 'Last new ability', segs: levels.length ? [`Level ${levels[levels.length - 1]}`] : [D.unknown()] },
         ],
       },
       intro: [
@@ -53,7 +56,7 @@ function classPage(c, idx) {
         D.section('Abilities_by_level', 'Abilities by level', [
           { p: [`Each ability is listed once, at the level its first rank is learned. Later ranks are trained as you level and are not listed. Talent abilities are listed at the first level their talent row can be reached.`] },
           D.table(['Level', 'Ability', 'Tree', 'Learned from', 'Description'], abilities.map((a) => [
-            D.cell([String(a.level)], 'num'),
+            D.cell(levelSegs(a), 'num'),
             D.cell(spellSegs(a)),
             D.cell([a.tab]),
             howLearned(a),
@@ -67,20 +70,20 @@ function classPage(c, idx) {
             .map((a) => [
               D.cell([...iconSeg(c.trees.find((t) => t.name === a.talent.tree)?.icon), a.talent.tree]),
               D.cell([String(a.talent.row)], 'num'),
-              D.cell([String(a.level)], 'num'),
+              D.cell(levelSegs(a), 'num'),
               D.cell(spellSegs(a)),
               D.cell([castLine(a) || '–']),
             ])),
           (c.passive_talents || []).length && { p: ['Passive talents are not abilities and are left out of the tables, apart from these new ones:'] },
           (c.passive_talents || []).length && { ul: c.passive_talents.map((t) => [...spellSegs(t), ` (${t.tree}, ${ROW_WORD(t.row)}, level ${t.level}): ${t.note}`]) },
         ]),
-        D.section('Changes', 'Changes in Forever', [{ ul: c.changes.map((x) => [x]) }]),
+        changes.length && D.section('Changes', 'Changes in Forever', [{ ul: changes.map((x) => [x]) }]),
         D.section('Research_notes', 'Research notes', [
-          ...(c.conflicts.length ? [{ p: ['Where sources disagree:'] }, { ul: c.conflicts.map((x) => [x]) }] : [{ p: ['No sources disagreed.'] }]),
-          { p: ['Not researched yet:'] }, { ul: c.gaps.map((g) => [g]) },
+          ...(conflicts.length ? [{ p: ['Where sources disagree:'] }, { ul: conflicts.map((x) => [x]) }] : [{ p: ['No sources disagreed.'] }]),
+          ...(gaps.length ? [{ p: ['Not researched yet:'] }, { ul: gaps.map((g) => [g]) }] : []),
         ]),
-        D.section('Sources', 'Sources', [{ ul: c.sources.map((s) => [D.ext(s.url, s.name), ...(s.used_for ? [` – ${s.used_for}`] : [])]) }]),
-      ],
+        sources.length && D.section('Sources', 'Sources', [{ ul: sources.map((s) => [D.ext(s.url, s.name), ...(s.used_for ? [` – ${s.used_for}`] : [])]) }]),
+      ].filter(Boolean),
     },
   };
 }

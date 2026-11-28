@@ -3,7 +3,8 @@
 // Usage: NODE_USE_ENV_PROXY=1 node scripts/fetch-classes.js [research/classes/warlock.json ...]   (default: every file)
 //
 // Only fields the tooltip API is authoritative for are overwritten:
-//   abilities[], passive_talents[]   spell tooltip -> name, icon, level, cost, cast, cooldown, reagent, text
+//   abilities[], passive_talents[]   spell tooltip -> name, icon, level, tooltip_level, is_talent, cost, cast,
+//                                    cooldown, reagent, text, summary (the first sentence of text)
 // Hand-written fields (spell_id, tab, talent, note, new_in_forever) are left alone. A talent spell's own
 // "Requires level" is often missing or 1, so for talents `level` is the row's level instead (10 + 5 x (row - 1)).
 // Spell, class and talent-tree icons are downloaded to site/assets/icons/.
@@ -35,18 +36,21 @@ async function pool(items, fn, n = 6) {
 }
 
 const text = (html) => html.replace(/<br\s*\/?>/g, '\n').replace(/<!--[^>]*-->/g, '').replace(/<[^>]+>/g, '')
-  .replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/[ \t]+/g, ' ').trim();
-// Unevaluated scaling formulas, e.g. "[10.8 * (((1)))]" or "(4 * 41.5)": evaluate the simple ones, otherwise drop the brackets
+  .replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#39;/g, "'")
+  .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n))).replace(/&amp;/g, '&').replace(/[ \t]+/g, ' ').trim();
+// Unevaluated scaling formulas, e.g. "[10.8 * (((1)))]" or "(4 * 41.5)": evaluate the simple ones. These are damage and
+// healing amounts, which the game shows as whole numbers (Immolate rank 1: 11), so the result is rounded.
 const formulas = (s) => s
   .replace(/\[\(30 \+ Spirit\) \* \(1\)\]/g, '30 + Spirit')
   .replace(/[[(]([\d.]+) \* \({0,3}([\d.]+)\){0,3}[\])]/g, (_, a, b) => String(Math.round(Number(a) * Number(b))));
 
 const rowLevel = (row) => 10 + 5 * (row - 1);
-const firstSentence = (s) => (s.match(/^.*?[.!](?=\s|$)/) || [s])[0];
+// The first sentence of the first line (multi-line texts, such as Demonic Sacrifice's per-demon list, stop at the line)
+const firstSentence = (s) => { const line = s.split('\n')[0]; return (line.match(/^.*?[.!](?=\s|$)/) || [line])[0]; };
 
 async function refreshSpell(a) {
   const d = await get(API(a.spell_id));
-  if (!d || d.error) return console.warn(`  spell ${a.spell_id}: not found`);
+  if (!d || d.error || !d.tooltip) return console.warn(`  spell ${a.spell_id}: not found`);
   const tip = d.tooltip;
   // Header: name, cost, range, cast time, cooldown, requirements. Tags become line breaks so "Level 60" and "25 Mana" stay apart.
   const head = text(tip.split(/<div class="q">/)[0].replace(/<\/(td|th|tr|div|span)>/g, '\n'));
@@ -55,9 +59,12 @@ async function refreshSpell(a) {
   a.name = d.name;
   a.icon = d.icon || null;
   a.is_talent = /<div class="q0">Talent<\/div>/.test(tip);
-  a.level = a.talent ? rowLevel(a.talent.row) : (a.row ? rowLevel(a.row) : (level ? Number(level[1]) : null));
+  const row = a.talent ? a.talent.row : a.row;
+  // Keep the last known level when the tooltip has none
+  a.level = row ? rowLevel(row) : (level ? Number(level[1]) : a.level ?? null);
+  if (a.level == null) console.warn(`  ${d.name} (${a.spell_id}): no level`);
   a.tooltip_level = level ? Number(level[1]) : null;
-  a.cost = (head.match(/(\d+% of base mana|\d+ Mana|\d+ Health[^\n]*?per sec|\d+ Health)/) || [])[1] || null;
+  a.cost = (head.match(/([\d,]+% of base mana|[\d,]+ Mana|[\d,]+ Health[^\n]*?per sec|[\d,]+ Health)/) || [])[1] || null;
   a.cast = (head.match(/(Instant|Channeled(?: \(\d+ sec cast\))?|[\d.]+ sec cast)/) || [])[1] || null;
   a.cooldown = (head.match(/([\d.]+ (?:sec|min|hour)s? cooldown)/) || [])[1] || null;
   a.reagent = (tip.match(/Reagents:<br \/><div class="indent q1">(?:<a [^>]*>)?([^<]+)/) || [])[1]?.trim() || null;
