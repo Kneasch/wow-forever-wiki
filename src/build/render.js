@@ -17,7 +17,7 @@ const { slug } = require('../lib/wiki');
 
 // Order matters only for dungeons, where a later file's page of the same title replaces an earlier one
 // (an item shared by the Scarlet Monastery wings has the same page from every wing).
-const SOURCES = ['home', 'zones', 'professions', 'dungeons', 'quests', 'special'];
+const SOURCES = ['home', 'zones', 'professions', 'classes', 'dungeons', 'quests', 'special'];
 
 // Components every template can use without importing them
 const GLOBALS = {

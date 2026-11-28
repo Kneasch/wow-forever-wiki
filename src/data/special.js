@@ -5,7 +5,7 @@ const D = require('../lib/doc');
 function pages() {
   // Counted from the other sources (required here, not at the top: render.js requires this file)
   const { collectPages } = require('../build/render');
-  const count = collectPages({ sources: ['zones', 'professions', 'dungeons', 'quests'] }).length;
+  const count = collectPages({ sources: ['zones', 'professions', 'classes', 'dungeons', 'quests'] }).length;
   return [
     { title: 'Search', component: require('../pages/SearchPage.vue'), props: { count: count.toLocaleString('en-GB') }, search: false },
     {
@@ -13,7 +13,7 @@ function pages() {
       component: require('../pages/Doc.vue'),
       props: {
         title: 'About the wiki', tab: 'Project page', toc: true,
-        intro: [{ p: [D.b('The WoW Forever Wiki'), ' is an unofficial fan wiki for World of Warcraft Forever. Every page is generated from research data: dungeon loot, professions, zone maps and quests.'] }],
+        intro: [{ p: [D.b('The WoW Forever Wiki'), ' is an unofficial fan wiki for World of Warcraft Forever. Every page is generated from research data: dungeon loot, professions, class abilities, zone maps and quests.'] }],
         sections: [
           D.section('Read-only', 'Read-only for now', [
             { p: ['The wiki is read-only while its first pages are built from research data. These are switched off until it opens for editing:'] },
@@ -22,7 +22,7 @@ function pages() {
           ]),
           D.section('Sources', 'Where the data comes from', [
             { ul: [
-              ['Items, objects and quests: ', D.ext('https://www.wowhead.com/forever', 'Wowhead Forever'), ', read from its tooltip data and pages.'],
+              ['Items, objects, quests and class spells: ', D.ext('https://www.wowhead.com/forever', 'Wowhead Forever'), ', read from its tooltip data and pages.'],
               ['Zone maps: the WoW Forever game client\'s own world maps.'],
               ['Drop rates are rounded approximations of Wowhead\'s figures.'],
             ] },

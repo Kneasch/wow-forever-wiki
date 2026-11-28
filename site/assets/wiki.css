@@ -498,6 +498,8 @@ a.q-rare, a.q-epic, a.q-uncommon, a.q-legendary { font-weight: 600; }
 .skill-range span { color: #000; padding: 0 0.3rem; border-radius: 2px; white-space: nowrap; }
 .mini-icon { width: 18px; height: 18px; vertical-align: -4px; margin-right: 0.3rem; border: 1px solid var(--body-border); border-radius: 2px; }
 .new-tag { font-size: 0.7rem; font-weight: bold; color: var(--q-uncommon); margin-left: 0.3rem; white-space: nowrap; }
+/* Class pages: abilities that come from a talent (src/data/classes.js) */
+.wikitable td.talent b { color: var(--q-epic); }
 /* ---------- Zone maps with pins (scripts/map.js, site/assets/map-pins.svg) ---------- */
 :root {
   --pin-mining: #c25e12;

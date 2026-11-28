@@ -91,7 +91,7 @@ function pages() {
 
   // Every article except the main page and 404 (required here, not at the top: render.js requires this file)
   const { collectPages } = require('../build/render');
-  const pageCount = collectPages({ sources: ['zones', 'professions', 'dungeons', 'quests', 'special'] }).length;
+  const pageCount = collectPages({ sources: ['zones', 'professions', 'classes', 'dungeons', 'quests', 'special'] }).length;
 
   const newDungeons = dungeons.filter((d) => d.new_in_forever);
   const stats = [
@@ -119,10 +119,12 @@ function pages() {
   const nodeZones = new Set(writtenProfs.flatMap((p) => json(`professions/${p.file}`).nodes || []).map((n) => n.zone_id));
   const questRegions = json('quests/index.json').regions.flatMap((r) => r.zones);
   const questZones = { done: questRegions.filter((z) => z.file).length, total: questRegions.length };
+  const classIndex = json('classes/index.json').classes;
   const areaMaps = maps.filter((z) => z.kind !== 'continent');
   const progress = [
     { label: 'Dungeon loot', done: research.filter((d) => d.bosses.length && (d.items || []).length).length, total: research.length },
     { label: 'Professions', done: writtenProfs.length, total: allProfs.length },
+    { label: 'Class abilities', done: classIndex.filter((c) => c.file).length, total: classIndex.length },
     { label: 'Zone quests', done: questZones.done, total: questZones.total },
     { label: 'Gathering maps', done: areaMaps.filter((z) => z.area_id != null && nodeZones.has(z.area_id)).length, total: areaMaps.length },
   ];

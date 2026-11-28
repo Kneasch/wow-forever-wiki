@@ -43,7 +43,7 @@ export default {
         { label: 'Dungeons & raids', href: '/#Dungeons' },
       ] },
       { title: 'Guides', links: [
-        { label: 'Classes', why: NOT_YET },
+        { label: 'Classes', href: '/w/Classes' },
         { label: 'Professions', href: '/w/Professions' },
         { label: 'Reputation', why: NOT_YET },
       ] },

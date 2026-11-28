@@ -1,0 +1,14 @@
+{
+  "note": "List of classes for the Classes hub page. Each class with a research file (research/classes/<file>) gets its own page; a class with file null is listed as not written yet.",
+  "classes": [
+    { "name": "Druid", "file": "druid.json", "icon": "classicon_druid", "role": "Tank, healer, melee or ranged damage", "summary": "Shapeshifter who can fill every role." },
+    { "name": "Hunter", "file": "hunter.json", "icon": "classicon_hunter", "role": "Ranged damage", "summary": "Ranged fighter with a tamed beast companion." },
+    { "name": "Mage", "file": "mage.json", "icon": "classicon_mage", "role": "Ranged damage", "summary": "Arcane, Fire and Frost caster who conjures food, water and portals." },
+    { "name": "Paladin", "file": "paladin.json", "icon": "classicon_paladin", "role": "Tank, healer or melee damage", "summary": "Holy warrior with blessings, auras and heals." },
+    { "name": "Priest", "file": "priest.json", "icon": "classicon_priest", "role": "Healer or ranged damage", "summary": "Healer who can turn to Shadow magic." },
+    { "name": "Rogue", "file": "rogue.json", "icon": "classicon_rogue", "role": "Melee damage", "summary": "Stealthy melee fighter with poisons and combo points." },
+    { "name": "Shaman", "file": "shaman.json", "icon": "classicon_shaman", "role": "Healer, melee or ranged damage", "summary": "Elemental caster who uses totems." },
+    { "name": "Warlock", "file": "warlock.json", "icon": "classicon_warlock", "role": "Ranged damage", "summary": "Shadow and Fire caster who summons demons and drains life and mana." },
+    { "name": "Warrior", "file": "warrior.json", "icon": "classicon_warrior", "role": "Tank or melee damage", "summary": "Armoured melee fighter who builds rage." }
+  ]
+}

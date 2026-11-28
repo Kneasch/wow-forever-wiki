@@ -80,6 +80,13 @@ Profession pages (the Professions hub, Mining, every mining node and every ore, 
 See [research/professions/README.md](research/professions/README.md) for the data, and
 [docs/professions-plan.md](docs/professions-plan.md) for the plan to cover every profession.
 
+## Classes
+
+Class pages (the Classes hub and a page per class) are generated from `research/classes/` by `src/data/classes.js`. Each
+class page lists every ability at the level it is first learned and marks the ones that come from talents.
+`scripts/fetch-classes.js` refreshes the spell data from the Wowhead Forever tooltip API. All nine classes are done.
+See [research/classes/README.md](research/classes/README.md).
+
 ## Zone maps
 
 Node pages show spawn points as pins on the zone's map. The maps are the WoW Forever client's own world maps
